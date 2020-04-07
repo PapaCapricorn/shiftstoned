@@ -1,0 +1,20 @@
+{
+  "metaTitle": "Test Site",
+  "url": "http://localhost:8080/",
+  "url-real": "https://sometestsite.com/",
+  "twitter": "@Site",
+  "author": {
+    "name": "Site-Author",
+    "email": "Site@Author-Email",
+    "twitter": "@Site-Author"
+  },
+  "social": {
+    "facebook": "",
+    "twitter": "",
+    "twitch": "",
+    "youtube": "",
+    "reddit": "",
+    "discord": ""
+  },
+  "description": "Proident voluptate cupidatat proident dolor commodo sit est Lorem Lorem tempor ad aliqua officia nulla."
+}

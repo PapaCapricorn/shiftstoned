@@ -1,0 +1,12 @@
+# don't ignore package-lock.json if using GitHub Actions
+# using 'npm ci' instead of 'npm install' in the automated environment
+# which requires an existing package-lock.json file
+
+# npm dependencies
+/node_modules
+
+# site build
+/dist
+
+# secrets and errors
+.env

@@ -1,0 +1,9 @@
+---
+permalink: scripts/site.js
+---
+{# capture the JAVASCRIPT content as a Nunjucks variable -#}
+{%- set js -%}
+{# {% include "js/some.js" -%} #}
+{%- endset -%}
+{#- output-#}
+{{- js | safe -}}

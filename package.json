@@ -1,0 +1,24 @@
+{
+  "name": "SSG-Sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve --watch",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PapaCapricorn/SSG-Sandbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PapaCapricorn/SSG-Sandbox/issues"
+  },
+  "homepage": "https://github.com/PapaCapricorn/SSG-Sandbox#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}

@@ -1,0 +1,16 @@
+---
+permalink: styles/site.css
+---
+/**
+* Theme variables (i.e var(--some-color), etc) are set in theme css files (ex. theme-light.css)
+* Non-theme root variables (i.e var(--some-height), etc) are set in the base.css partial
+*/
+{# capture the CSS content as a Nunjucks variable -#}
+{%- set css -%}
+  {%- include "css/base.css" -%}
+  {%- include "css/header.css" -%}
+  {%- include "css/body.css" -%}
+  {%- include "css/footer.css" -%}
+{%- endset -%}
+{#- output-#}
+{{- css | safe -}}

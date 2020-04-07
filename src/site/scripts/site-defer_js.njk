@@ -1,0 +1,10 @@
+---
+permalink: scripts/site-defer.js
+---
+{# capture the JAVASCRIPT content as a Nunjucks variable -#}
+{%- set js -%}
+{# {% include "js/base.js" %} #}
+{# {% include "js/header.js" %} #}
+{%- endset -%}
+{#- output-#}
+{{- js | safe -}}

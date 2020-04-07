@@ -1,0 +1,36 @@
+/* Set variables */
+:root {
+  --body-bg-color: #f7f7f7;
+  --text-color: black;
+
+  --header-text-color: black;
+  --header-logo-text: #333;
+  --header-logo-secondary: red;
+  --header-bg-color: white;
+  /* --font-header1: ; */
+
+  --nav-text-color: lightgrey;
+  --nav-text-hover: white;
+  --nav-bg-color: #333;
+  --nav-bg-hover: #111;
+  --nav-drop-text-color: black;
+  --nav-drop-text-hover: red;
+  --nav-drop-bg: #f9f9f9;
+  --nav-drop-hover: #f1f1f1;
+
+  --main-bg-color: lightgrey;
+  --article-bg-color: white;
+  --sidebar-bg-color: navy;
+
+  --footer-text-color: lightgrey;
+  --footer-link-color: white;
+  --footer-link-hover: red;
+  --footer-bg-color: #333;
+
+  --chat-bg-color: #ffebeb;
+
+  --link-color: red;
+  --link-underline-color: rgb(220, 169, 169);
+
+  --button-color: hotpink;
+}
