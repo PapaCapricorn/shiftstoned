@@ -1,3 +1,7 @@
+---
+title: Markdown Sample
+---
+
 An h1 header
 ============
 
