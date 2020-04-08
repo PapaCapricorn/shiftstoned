@@ -7,3 +7,4 @@ Testing repository to figure out static site generators. This sandbox will use [
 * [Node and NPM](https://nodejs.org/)
 
 ## This is a test change to trigger a GH action
+## This is another test change to trigger another GH action
