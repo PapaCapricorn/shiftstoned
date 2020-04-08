@@ -66,6 +66,8 @@ module.exports = function(eleventyConfig) {
     templateFormats : ["njk", "html", "md"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine : "njk",
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
+    // Set prefix url for GitHub pages hosting
+    pathPrefix: "/SSG-Sandbox/"
   };
 };
