@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Site-Author">
+    <meta name="description" content="Proident voluptate cupidatat proident dolor commodo sit est Lorem Lorem tempor ad aliqua officia nulla.">
+    <title>404 - not found - Test Site</title>
+<!--
+  SOCIAL MEDIA TAGS
+-->
+    <!-- Facebook / Open Graph protocol -->
+    <meta property="og:site_name" content="Test Site">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/opengraph-logo.png">
+    <meta property="og:url" content="http://localhost:8080/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="@Site-Author">
+    <!-- Document-specific tags -->
+    <meta property="og:title" content="404 - not found">
+    <meta name="twitter:title" content="404 - not found">
+    <meta property="og:description" content="Proident voluptate cupidatat proident dolor commodo sit est Lorem Lorem tempor ad aliqua officia nulla.">
+    <meta property="description" content="Proident voluptate cupidatat proident dolor commodo sit est Lorem Lorem tempor ad aliqua officia nulla.">
+    <meta property="twitter:description" content="Proident voluptate cupidatat proident dolor commodo sit est Lorem Lorem tempor ad aliqua officia nulla.">
+<!--
+  Support for the HTML5 semantic elements in non-HTML5 browsers, even for 
+    Internet Explorer (8 and older, with fallback where it's is configured 
+    not to use scripting).
+  Note: This code will cause the HTML validator to return errors.
+-->
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("article");
+        document.createElement("aside");
+        document.createElement("footer");
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("time");
+      </script>
+    <![endif]-->
+    <noscript>
+      <div class="js-notification">
+        <p><strong>This web page requires JavaScript to be enabled.</strong></p>
+        <p>JavaScript is an object-oriented computer programming language 
+          commonly used to create interactive effects within web browsers.</p>
+        <p><a href="https://goo.gl/koeeaJ">How to enable JavaScript?</a></p>
+      </div>
+    </noscript>
+<!--
+  ICON
+-->
+    
+    <!-- basic favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+<!--
+  THEME
+  Set initial theme based on system or browser light/dark preference (with fallback)
+-->
+    <script>
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, theme-light.css will be downloaded with `highest` priority.
+      if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML(
+            'beforeend',
+            '<link href="/styles/theme-light.css" rel="stylesheet" onload="document.documentElement.style.display = \'\'">'
+        );
+      }
+    </script>
+    <!--
+      If `prefers-color-scheme` is supported, load matching theme with `highest` priority.
+    -->
+    <link href="/styles/theme-dark.css" rel="stylesheet" media="(prefers-color-scheme: dark)">
+    <link href="/styles/theme-light.css" rel="stylesheet" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+<!--
+  CSS
+-->
+    <link href="/styles/site.css" rel="stylesheet" type="text/css">
+<!--
+  JAVASCRIPT
+-->
+    <!-- load critical js -->
+    <script src="/scripts/site.js" type="text/javascript"></script>
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+    <!-- inline page-specific js is located after <body> -->
+  </head>
+<!--
+  PAGE BODY
+-->
+  <body>
+
+    <header class="page-header">
+  <!-- Footer content here -->
+</header>
+    
+<main class="page-content ">
+  <p>We’re sorry, but that content can’t be found. Please go <a href="/">back to home</a>.</p>
+
+</main>
+
+<footer class="page-footer">
+  <!-- Footer content here -->
+</footer>
+
+  </body>
+
+<!--
+  JAVASCRIPT (inline, page-specific)
+-->
+</html>

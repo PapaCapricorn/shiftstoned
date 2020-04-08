@@ -1,0 +1,67 @@
+/**
+* Theme variables (i.e var(--some-color), etc) are set in theme css files (ex. theme-light.css)
+* Non-theme root variables (i.e var(--some-height), etc) are set in the base.css partial
+*/
+/* ----------------------------------------------------- 
+ * Base styles
+ * ----------------------------------------------------- */
+:root {
+  /* non-theme css-variables */
+  --example-height-variable: 5rem;
+}
+
+* {
+  background-repeat: no-repeat;
+}
+
+/* hide from view, but leave enabled for screen reader accessability
+ * (see https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link) */
+ .visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+/* allow the element to be focusable when navigated to via the keyboard */
+.hidden-focusable:active,
+.hidden-focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	white-space: normal;
+	width: auto;
+}
+
+/* Style HTML5 semantic elements for older, unsupported browsers */
+article, aside, footer, header, nav, section {
+display:block;
+}
+
+/* Style "Javascript disabled" notification/warning */
+.js-notification {
+  padding: 1rem 2rem;
+  border: 2px solid red;
+  margin: 1rem;
+}
+/* -----------------------------------------------------
+ * Header styles
+ * ----------------------------------------------------- */
+.page-header {
+}
+/* -----------------------------------------------------
+ * Body content styles
+ * ----------------------------------------------------- */
+body {
+}
+/* -----------------------------------------------------
+ * Footer styles
+ * ----------------------------------------------------- */
+ .page-footer {
+}

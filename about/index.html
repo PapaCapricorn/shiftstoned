@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Site-Author">
+    <meta name="description" content="Proident voluptate cupidatat proident dolor commodo sit est Lorem Lorem tempor ad aliqua officia nulla.">
+    <title>About - Test Site</title>
+<!--
+  SOCIAL MEDIA TAGS
+-->
+    <!-- Facebook / Open Graph protocol -->
+    <meta property="og:site_name" content="Test Site">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/opengraph-logo.png">
+    <meta property="og:url" content="http://localhost:8080/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="@Site-Author">
+    <!-- Document-specific tags -->
+    <meta property="og:title" content="About">
+    <meta name="twitter:title" content="About">
+    <meta property="og:description" content="Proident voluptate cupidatat proident dolor commodo sit est Lorem Lorem tempor ad aliqua officia nulla.">
+    <meta property="description" content="Proident voluptate cupidatat proident dolor commodo sit est Lorem Lorem tempor ad aliqua officia nulla.">
+    <meta property="twitter:description" content="Proident voluptate cupidatat proident dolor commodo sit est Lorem Lorem tempor ad aliqua officia nulla.">
+<!--
+  Support for the HTML5 semantic elements in non-HTML5 browsers, even for 
+    Internet Explorer (8 and older, with fallback where it's is configured 
+    not to use scripting).
+  Note: This code will cause the HTML validator to return errors.
+-->
+    <!--[if lt IE 9]>
+      <script>
+        document.createElement("article");
+        document.createElement("aside");
+        document.createElement("footer");
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("time");
+      </script>
+    <![endif]-->
+    <noscript>
+      <div class="js-notification">
+        <p><strong>This web page requires JavaScript to be enabled.</strong></p>
+        <p>JavaScript is an object-oriented computer programming language 
+          commonly used to create interactive effects within web browsers.</p>
+        <p><a href="https://goo.gl/koeeaJ">How to enable JavaScript?</a></p>
+      </div>
+    </noscript>
+<!--
+  ICON
+-->
+    
+    <!-- basic favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+<!--
+  THEME
+  Set initial theme based on system or browser light/dark preference (with fallback)
+-->
+    <script>
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, theme-light.css will be downloaded with `highest` priority.
+      if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML(
+            'beforeend',
+            '<link href="/styles/theme-light.css" rel="stylesheet" onload="document.documentElement.style.display = \'\'">'
+        );
+      }
+    </script>
+    <!--
+      If `prefers-color-scheme` is supported, load matching theme with `highest` priority.
+    -->
+    <link href="/styles/theme-dark.css" rel="stylesheet" media="(prefers-color-scheme: dark)">
+    <link href="/styles/theme-light.css" rel="stylesheet" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+<!--
+  CSS
+-->
+    <link href="/styles/site.css" rel="stylesheet" type="text/css">
+<!--
+  JAVASCRIPT
+-->
+    <!-- load critical js -->
+    <script src="/scripts/site.js" type="text/javascript"></script>
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+    <!-- inline page-specific js is located after <body> -->
+  </head>
+<!--
+  PAGE BODY
+-->
+  <body>
+
+    <header class="page-header">
+  <!-- Footer content here -->
+</header>
+    
+<main class="page-content ">
+  <h1>About Test Site</h1>
+<p>Eu est ea magna ut commodo. Id occaecat in elit proident pariatur. Deserunt tempor proident ullamco nisi laboris officia veniam aute mollit. Quis ut nostrud culpa ea quis. Ex officia do ut fugiat nostrud nostrud ad labore et ut fugiat reprehenderit minim.</p>
+<p>Fugiat cupidatat cillum sunt esse ipsum laborum et exercitation ad qui laborum do velit. Eiusmod eu Lorem laborum est cupidatat Lorem cupidatat tempor pariatur fugiat nostrud est. Cupidatat deserunt veniam dolore aliquip officia et consequat commodo commodo elit aliqua. Deserunt labore ea mollit commodo. Laborum ad magna occaecat cupidatat est. Consequat nulla excepteur reprehenderit irure reprehenderit Lorem nulla. Lorem incididunt adipisicing id magna dolore aute culpa anim aliquip veniam pariatur nostrud nisi.</p>
+<p>Cupidatat proident aliquip cupidatat proident duis cillum nisi fugiat nostrud minim deserunt. Ad minim sunt quis nisi labore adipisicing qui consectetur mollit dolor occaecat tempor. Cillum culpa elit adipisicing dolor. Lorem sit laboris id mollit culpa est sit laboris eu fugiat in ipsum. Ut voluptate in fugiat sunt Lorem veniam do exercitation id ex dolor.</p>
+
+</main>
+
+<footer class="page-footer">
+  <!-- Footer content here -->
+</footer>
+
+  </body>
+
+<!--
+  JAVASCRIPT (inline, page-specific)
+-->
+</html>
