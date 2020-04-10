@@ -42,7 +42,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("limit", function(array, limit) {
     return array.slice(0, limit);
   });
-  
+
   // Universal Shortcodes (adds to Liquid, Nunjucks, Handlebars & JavaScript)
 /*     // format date & time
   eleventyConfig.addShortcode("date", require("./src/utils/shortcodes/date.js"));
@@ -55,6 +55,9 @@ module.exports = function(eleventyConfig) {
   // check & format output
     // minify the html output
   // eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js"));
+
+  // insert faction icon
+eleventyConfig.addShortcode("icon", require("./src/utils/shortcodes/icon.js"));
 
   return {
     dir: {
