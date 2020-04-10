@@ -50,14 +50,13 @@ module.exports = function(eleventyConfig) {
     // format site buttons
   eleventyConfig.addPairedShortcode("button", require("./src/utils/shortcodes/button.js"));
   eleventyConfig.addShortcode("svg", require("./src/utils/shortcodes/svg-icon.js")); */
+  // insert faction icon
+eleventyConfig.addShortcode("icon", require("./src/utils/shortcodes/icon.js"));
 
 
   // check & format output
     // minify the html output
   // eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js"));
-
-  // insert faction icon
-eleventyConfig.addShortcode("icon", require("./src/utils/shortcodes/icon.js"));
 
   return {
     dir: {
