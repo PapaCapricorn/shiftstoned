@@ -3,6 +3,6 @@ title: An example article
 date: Last Modified
 ---
 
-<a href="../">Link to articles index</a>
+This is in the MD: <a href="../">Link to articles index</a>
 
-An example article
+This is in the MD: An example article
