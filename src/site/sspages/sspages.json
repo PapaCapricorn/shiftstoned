@@ -1,4 +1,0 @@
-{
-    "layout" : "layouts/ssbase.njk",
-    "templateEngineOverride": "njk,md",
-  }
