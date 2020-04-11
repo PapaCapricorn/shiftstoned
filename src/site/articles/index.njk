@@ -1,0 +1,14 @@
+---
+title: Example articles pages
+layout: layouts/base.njk
+override:tags: []
+---
+    <h2>List of articles:</h2>
+    <ul>
+    {%- for page in collections.news %}
+        <li>
+            <a href="{{ page.url | url }}">{{ page.data.title }}</a> -
+            <time datetime="{{ page.date }}">{{ page.date}}</time>
+        </li>
+    {%- endfor %}
+    </ul>
