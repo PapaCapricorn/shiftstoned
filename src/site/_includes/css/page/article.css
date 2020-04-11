@@ -1,14 +1,14 @@
-/* css for articles */
+    /* css for articles */
 
-body {
-  background-color: coral;
-}
+    body {
+      background-color: coral;
+    }
 
-#background {
-    position: fixed;
-    width: 100%;
-    z-index: -1;
-    top: -100px;
-    left: 0px;
-    margin: 0px auto;
-}
+    #background {
+        position: fixed;
+        width: 100%;
+        z-index: -1;
+        top: -100px;
+        left: 0px;
+        margin: 0px auto;
+    }
