@@ -8,12 +8,15 @@ page_style: article.css
 
 {% include "partials/shiftstoned-header.njk" %}
 
+<main class="page-content {{ page_class }}">
+
 <div id="guide_body" style="border: 1px solid blue;">
 
-<main class="page-content {{ page_class }}">
   {{ content | safe }}
-</main>
 
 </div>
+
+</main>
+
 
 {% include "partials/footer.njk" %}
