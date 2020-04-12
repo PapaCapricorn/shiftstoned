@@ -2,10 +2,7 @@
 * Theme variables (i.e var(--some-color), etc) are set in theme css files (ex. theme-light.css)
 * Non-theme root variables (i.e var(--some-height), etc) are set in the base.css partial
 */
-#css_test {
-      background-color: red;
-      color: white;
-    }/* -----------------------------------------------------
+/* -----------------------------------------------------
  * Base styles
  * ----------------------------------------------------- */
 :root {
