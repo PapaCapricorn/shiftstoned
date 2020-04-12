@@ -51,6 +51,51 @@ display:block;
   margin: 1rem;
 }
 
+/* ================================== */
+
+/*
+    Fonts
+*/
+
+@font-face {
+    font-family: 'Open Sans Condensed Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url(open-sans-condensed-bold.woff2) format('woff2'),
+            url(open-sans-condensed-bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    src: url(open-sans-extra-bold.woff2) format('woff2'),
+            url(open-sans-extra-bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(open-sans-regular.woff2) format('woff2'),
+            url(open-sans-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: url(merriweather-regular.woff2) format('woff2'),
+            url(merriweather-regular.woff) format('woff');
+}
+
+body {
+    background-color: #17141D;
+    font-family: 'Open Sans Condensed Bold', sans-serif;
+    font-size: 16px;
+    color: #E7E4E6;
+}
+
 /* Background image for pages */
 .background {
     position: fixed;
