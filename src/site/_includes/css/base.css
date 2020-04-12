@@ -116,11 +116,17 @@ display:block;
     width: 1250px;
 }
 
-/* Positioning for logo in headbanner - this should probably be handled better to make it more responsive */
+/* Positioning for images in headbanner - these should probably be handled better to make it more responsive */
 .shiftstoned-img {
     position: absolute;
     left: 23px;
     top: 27px;
+}
+
+.power-calculator-img {
+    position: absolute;
+    left: 308px;
+    top: 16px;
 }
 
 /* Container for base page content */
