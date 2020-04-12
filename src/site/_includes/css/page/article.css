@@ -21,3 +21,8 @@
         width: 1250px;
         min-height: 1350px;
     }
+
+    #css_test {
+      background-color: red;
+      color: white;
+    }
