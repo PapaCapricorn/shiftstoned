@@ -55,8 +55,8 @@
         {{- site.description -}}
       {%- endif %}">
 <!--
-  Support for the HTML5 semantic elements in non-HTML5 browsers, even for 
-    Internet Explorer (8 and older, with fallback where it's is configured 
+  Support for the HTML5 semantic elements in non-HTML5 browsers, even for
+    Internet Explorer (8 and older, with fallback where it's is configured
     not to use scripting).
   Note: This code will cause the HTML validator to return errors.
 -->
@@ -74,7 +74,7 @@
     <noscript>
       <div class="js-notification">
         <p><strong>This web page requires JavaScript to be enabled.</strong></p>
-        <p>JavaScript is an object-oriented computer programming language 
+        <p>JavaScript is an object-oriented computer programming language
           commonly used to create interactive effects within web browsers.</p>
         <p><a href="https://goo.gl/koeeaJ">How to enable JavaScript?</a></p>
       </div>
@@ -116,7 +116,7 @@
 <!--
   CSS
 -->
-    <link href="/styles/site.css" rel="stylesheet" type="text/css">
+    <link href="{{ "/styles/site.css" | url }}" rel="stylesheet" type="text/css">
 
     {#- if `page_style` data is passed, include that CSS partial here -#}
   {%- if page_style %}
