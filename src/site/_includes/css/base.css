@@ -58,6 +58,13 @@ display:block;
 }
 
 /* Container for base page content */
+.heading-top {
+    position: relative;
+    width: 100%;
+    height: 65px;
+}
+
+/* Container for base page content */
 .bodyGrid {
     margin-left: 40px;
     background-color: #17141D;
