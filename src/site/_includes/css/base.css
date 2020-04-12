@@ -47,12 +47,7 @@ display:block;
   margin: 1rem;
 }
 
-/* Test */
-.css_test {
-  background-color: red;
-  color: white;
-}
-
+/* Background image for pages */
 .background {
     position: fixed;
     width: 100%;
@@ -62,6 +57,7 @@ display:block;
     margin: 0px auto;
 }
 
+/* Container for base page content */
 .bodyGrid {
     margin-left: 40px;
     background-color: #17141D;
