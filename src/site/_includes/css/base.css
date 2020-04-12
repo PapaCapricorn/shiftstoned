@@ -85,13 +85,6 @@ display:block;
             url(merriweather-regular.woff) format('woff');
 }
 
-body {
-    background-color: #17141D;
-    font-family: 'Open Sans Condensed Bold', sans-serif;
-    font-size: 16px;
-    color: #E7E4E6;
-}
-
 /* Background image for pages */
 .background {
     position: fixed;

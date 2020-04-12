@@ -3,4 +3,8 @@
  * Body content styles
  * ----------------------------------------------------- */
 body {
+  background-color: #17141D;
+  font-family: 'Open Sans Condensed Bold', sans-serif;
+  font-size: 16px;
+  color: #E7E4E6;
 }
