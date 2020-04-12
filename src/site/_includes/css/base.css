@@ -1,4 +1,4 @@
-/* ----------------------------------------------------- 
+/* -----------------------------------------------------
  * Base styles
  * ----------------------------------------------------- */
 :root {
@@ -45,4 +45,10 @@ display:block;
   padding: 1rem 2rem;
   border: 2px solid red;
   margin: 1rem;
+}
+
+/* Test */
+.css_test {
+  background-color: red;
+  color: white;
 }
