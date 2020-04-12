@@ -120,6 +120,13 @@ display:block;
     width: 1250px;
 }
 
+/* Positioning for logo in headbanner - this should probably be handled better to make it more responsive */
+.shiftstoned-img {
+    position: absolute;
+    left: 23px;
+    top: 27px;
+}
+
 /* Container for base page content */
 .bodyGrid {
     margin-left: 40px;
