@@ -12,6 +12,9 @@ module.exports = function(eleventyConfig) {
     // Copy CSS files from styles to `dist/styles/`
     // Use NJK files in `site/styles/` to compile CSS partials from `_includes/css/`
   eleventyConfig.addPassthroughCopy("./src/site/styles/*.css");
+  // Use NJK files in `site/styles/` to compile woffs from `_includes/css/`
+  eleventyConfig.addPassthroughCopy("./src/site/styles/*.woff");
+  eleventyConfig.addPassthroughCopy("./src/site/styles/*.woff2");
     // Copy JS files from `site/scripts/` to `dist/scripts/`
     // Use NJK files in `site/scripts/` to compile JS partials from `_includes/js/`
   eleventyConfig.addPassthroughCopy("./src/site/scripts/*.js");
