@@ -4,6 +4,9 @@ permalink: scripts/site.js
 {# capture the JAVASCRIPT content as a Nunjucks variable -#}
 {%- set js -%}
 {# {% include "js/some.js" -%} #}
+{%- include "js/jquery-1.12.4.min.js" -%}
+{%- include "js/semantic.min.js" -%}
+{%- include "js/epc.min.js" -%}
 {%- endset -%}
 {#- output-#}
 {{- js | safe -}}
