@@ -1,17 +1,7 @@
 ---
-title: Example articles pages
+title: Shiftstoned Drafter
 layout: layouts/drafter.njk
 override:tags: []
 ---
 
-    <a href="example-article/">Link to example article</a>
-
-    <h2>List of articles:</h2>
-    <ul>
-    {%- for page in collections.news %}
-        <li>
-            <a href="{{ page.url | url }}">{{ page.data.title }}</a> -
-            <time datetime="{{ page.date }}">{{ page.date}}</time>
-        </li>
-    {%- endfor %}
-    </ul>
+Default layout will go here
