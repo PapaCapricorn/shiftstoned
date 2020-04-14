@@ -1,12 +1,14 @@
 ---
 title: Example articles pages
-layout: layouts/base.njk
+layout: layouts/article.njk
 override:tags: []
 ---
 
     <a href="example-article/">Link to example article</a>
 
-    <h2>List of articles:</h2>
+
+    {# Automated index feature to be implemented #}
+    {# <h2>List of articles:</h2>
     <ul>
     {%- for page in collections.news %}
         <li>
@@ -14,4 +16,4 @@ override:tags: []
             <time datetime="{{ page.date }}">{{ page.date}}</time>
         </li>
     {%- endfor %}
-    </ul>
+    </ul> #}
