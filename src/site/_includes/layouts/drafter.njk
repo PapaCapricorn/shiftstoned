@@ -1,0 +1,18 @@
+---
+layout: layouts/0html.njk
+page_style: article.css
+---
+
+<img class="background" src="../images/HeaderDrafter.png" />
+
+<main class="page-content {{ page_class }}">
+
+<div class="bodyGrid">
+
+  {{ content | safe }}
+
+</div>
+
+</main>
+
+{% include "partials/footer.njk" %}
