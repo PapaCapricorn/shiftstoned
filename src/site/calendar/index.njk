@@ -1,0 +1,52 @@
+---
+layout: layouts/html.njk
+{# page_style: mainpage.css #}
+---
+
+{# Layout for the Calendar placeholder #}
+
+<img class="background" src="https://www.shiftstoned.com/calendar/SecretPages.jpeg" />
+
+{# {% include "partials/header.njk" %} #}
+
+{# Border styles are temporary tools for debugging and layout  #}
+
+<div class="shiftstoned-heading" style="border: 0px solid blue;">
+
+  <div class="heading-top" style="border: 0px solid red;">
+
+    <a href="/SSG-Sandbox/"><img class="shiftstoned-img" src="https://www.shiftstoned.com/global/images/shiftstoned.png" /></a><a href="../calendar"><img alt="Calendar" class="power-calculator-img" src="https://www.shiftstoned.com/calendar/community_calendar.png" title="Calendar" /></a>
+
+    {% include "partials/navMenu.njk" %}
+
+  </div>
+
+  <div class="heading-page-top">
+    &nbsp;
+  </div>
+
+</div>
+
+
+<main class="page-content mainpage">
+
+  <section>
+
+    <div class="bodyGrid">
+
+      <a href="epc/">Link to Eternal Power Calculator (Sandbox)</a>
+      <br><br>
+      <a href="drafter/">Link to Shiftstoned drafting tool mock-up</a>
+      <br><br>
+      <a href="articles/">Link to Articles section mock-up</a>
+
+      {# <img src="images/sandbox.jpg" style="  display: block; margin-left: auto; margin-right: auto; width: 70%;"> #}
+
+    </div>
+
+  </section>
+
+
+</main>
+
+{% include "partials/footer.njk" %}
