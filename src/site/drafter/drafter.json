@@ -1,0 +1,5 @@
+{
+    "layout" : "layouts/drafter.njk",
+    "tags" : "drafter",
+    "templateEngineOverride": "njk,md"
+  }
