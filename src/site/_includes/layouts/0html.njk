@@ -146,13 +146,12 @@
 
     {{ content | safe }}
 
-    This is 0html with links to /SSG-Sandbox/scripts/ added
-    7:30 confirmation following reversions - did it work?
+    {% include "partials/jsSrc.njk" %}
 
-    <script type="text/javascript" src="/SSG-Sandbox/scripts/jquery-1.12.4.min.js"></script>
+    {# <script type="text/javascript" src="/SSG-Sandbox/scripts/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="/SSG-Sandbox/scripts/semantic.min.js"></script>
     <script type="text/javascript" src="/SSG-Sandbox/scripts/epc.min.js"></script>
-    <script type="text/javascript">$(".ui.dropdown").dropdown();</script>
+    <script type="text/javascript">$(".ui.dropdown").dropdown();</script> #}
 
   </body>
 
