@@ -198,9 +198,16 @@ display:block;
 
 /* Container for individual card in Drafter */
 .cardPocket {
-    background-color: #333333;
+    width: 170px;
+    /* background-color: #333333; */
     border: 1px solid white;
     padding: 10px;
+}
+
+/* Formatting for Drafter card images */
+.cardDrafterImg {
+    width: 150px;
+    /* background-color: #333333; */
 }
 
 /* -----------------------------------------------------
