@@ -141,7 +141,6 @@ display:block;
     position: absolute;
     top: 10px;
     left: 1176px;
-
     width: 2px;
     height: 44px;
     background-color: #FFFFFF;
@@ -158,7 +157,6 @@ display:block;
 #navigation-menu .menu {
     left: auto;
     right: 0px;
-
     background-color: #2E2C3D;
     border: 1px solid #FFFFFF;
 }
@@ -198,24 +196,43 @@ display:block;
 
 /* Container for individual card in Drafter */
 .cardPocket {
-    width: 170px;
+    width: 200px;
+    height: 328px;
     /* background-color: #333333; */
-    border: 1px solid white;
+    border: 1px solid #666666;
+    border-radius: 5px;
     padding: 0px;
+    text-align: center;
+
+}
+
+/* Formatting for Drafter card pocket label header */
+.cardPocketHeader {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #666666;
+    font-family: 'Open Sans Condensed', sans-serif;"
+}
+
+/* Formatting for Drafter card pocket label */
+.cardPocketLabel {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 10px;
+}
+
+/* Formatting for Drafter card pocket grade label */
+.cardPocketGradeLabel {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 800;"
 }
 
 /* Formatting for Drafter card images */
 .cardDrafterImg {
-    width: 150px;
-    margin: 10px;
+    width: 160px;
+    /* margin: 10px; */
     /* background-color: #333333; */
-}
-
-
-/* Formatting for Drafter card pocket label */
-.cardPocketLabel {
-    font-size: 15px;
-    color: purple;
 }
 
 /* -----------------------------------------------------
