@@ -201,13 +201,21 @@ display:block;
     width: 170px;
     /* background-color: #333333; */
     border: 1px solid white;
-    padding: 10px;
+    padding: 0px;
 }
 
 /* Formatting for Drafter card images */
 .cardDrafterImg {
     width: 150px;
+    margin: 10px;
     /* background-color: #333333; */
+}
+
+
+/* Formatting for Drafter card pocket label */
+.cardPocketLabel {
+    font-size: 15px;
+    color: purple;
 }
 
 /* -----------------------------------------------------
