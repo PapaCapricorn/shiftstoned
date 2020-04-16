@@ -4,5 +4,5 @@ date: Last Modified
 ---
 
 <div class="cardPocket">
-  <img src="https://cards.eternalwarcry.com/cards/full/Fire_Sigil.png">
+  <img class="cardDrafterImg" src="https://cards.eternalwarcry.com/cards/full/Fire_Sigil.png">
 </div>
