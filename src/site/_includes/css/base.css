@@ -191,3 +191,10 @@ display:block;
     width: 1250px;
     min-height: 1350px;
 }
+
+/* Container for individual card in Drafter */
+.cardPocket {
+    background-color: #333333;
+    border: 1px solid white;
+    padding: 10px;
+}
