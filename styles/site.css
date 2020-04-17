@@ -184,6 +184,23 @@ display:block;
     min-height: 1px;
 }
 
+.cardset select {
+   background-color: #FFFFFF;
+   width: 268px;
+   height: 30px;
+   padding: 5px;
+   /* font-size: 16px; */
+   line-height: 1;
+   border: 1px solid #458A9E;
+   border-radius: 7px;
+   /* -webkit-appearance: none; */
+   outline: none;
+   color: #458A9E;
+   opacity: 1; /* Firefox */
+   font-style: italic;
+   font-family: 'Exo 2', sans-serif;
+   }
+
 /* Container for base page content */
 .bodyGrid {
     margin-left: 40px;
@@ -201,6 +218,8 @@ display:block;
     /* background-color: #333333; */
     border: 1px solid #666666;
     border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
     text-align: center;
     float: left;
 }
