@@ -197,9 +197,8 @@ display:block;
     /* background-color: #333333; */
     border: 1px solid #666666;
     border-radius: 5px;
-    padding: 0px;
     text-align: center;
-
+    float: left;
 }
 
 /* Formatting for Drafter card pocket label header */
@@ -208,14 +207,25 @@ display:block;
     line-height: 30px;
     text-align: center;
     vertical-align: middle;
-    border: 1px solid #666666;
     font-family: 'Open Sans Condensed', sans-serif;"
+    font-weight: 200;
+    font-size: 10px;
 }
 
 /* Formatting for Drafter card pocket label */
 .cardPocketLabel {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 10px;
+}
+
+/* Formatting for Drafter card pocket label */
+.cardPocketGradeRow {
+    height: 30px;
+    line-height: 30px;
+    background-color: #533D4F;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 /* Formatting for Drafter card pocket grade label */
