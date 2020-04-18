@@ -207,6 +207,7 @@ display:block;
     min-height: 1350px;
 }
 
+/* Background color and frame for base page layout grid */
 .newBodyGrid {
     margin-left: 40px;
     background-color: #17141D;
@@ -222,59 +223,19 @@ display:block;
   float: left;
 }
 
-.cardPocket {
-    width: 200px;
-    height: 328px;
-    /* background-color: #333333; */
-    border: 1px solid #666666;
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-top: 10px;
-    text-align: center;
-    float: left;
-}
-
-/* Formatting for Drafter card pocket label header */
-.cardPocketHeader {
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    vertical-align: middle;
-    font-family: 'Open Sans Condensed', sans-serif;"
-    font-weight: 200;
-    font-size: 10px;
-}
-
-/* Formatting for Drafter card pocket label */
-.cardPocketLabel {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 10px;
-}
-
-/* Formatting for Drafter card pocket label */
-.cardPocketGradeRow {
-    height: 30px;
-    line-height: 30px;
-    background-color: #533D4F;
-    font-family: 'Merriweather', serif;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-/* Formatting for Drafter card pocket grade label */
-.cardPocketGradeLabel {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 800;"
-}
-
+/* Formatting for Drafter card block circular grade label */
 .gradeCircle {
   position: absolute;
-  top: 15px;
-  left: 95px;
-  background-color: green;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  padding: 12px;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  text-align: center;
+  background-color: orange;
+  border: solid 3px green;
+  top: 10px;
+  left: 110px;
   opacity: .9;
   border-radius: 50%;
 }
