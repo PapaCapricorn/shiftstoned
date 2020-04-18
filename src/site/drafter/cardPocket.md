@@ -11,7 +11,7 @@ date: Last Modified
   <div class="searchLabel" style="margin-left: 50px; margin-right: 10px; float: left; font-family: 'Open Sans Condensed', sans-serif;">P A C K</div>
 
   <div class="cardset" style="border: solid 0px white; margin-left: 10px;">
-    <select>
+    <select class="ui fluid search selection dropdown">
       <option>Echoes of Eternity</option>
       <option>Eternal Draft Pack</option>
       <option>All</option>

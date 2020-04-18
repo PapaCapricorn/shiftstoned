@@ -207,7 +207,21 @@ display:block;
     min-height: 1350px;
 }
 
+.newBodyGrid {
+    margin-left: 40px;
+    background-color: #17141D;
+    border: 0px solid;
+    border-bottom: none;
+    width: 1140px;
+    min-height: 1350px;
+}
+
 /* Container for individual card in Drafter */
+.cardBlock {
+  position: relative;
+  float: left;
+}
+
 .cardPocket {
     width: 200px;
     height: 328px;
@@ -251,6 +265,18 @@ display:block;
 .cardPocketGradeLabel {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 800;"
+}
+
+.gradeCircle {
+  position: absolute;
+  top: 15px;
+  left: 95px;
+  background-color: green;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: .9;
+  border-radius: 50%;
 }
 
 /* Formatting for Drafter card images */
