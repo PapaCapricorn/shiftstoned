@@ -95,6 +95,40 @@ display:block;
     margin: 0px auto;
 }
 
+/* Something for headbanner */
+.heading-top {
+    position: relative;
+    width: 100%;
+    height: 65px;
+}
+
+/* What even is this? */
+.heading-page-top {
+    width: 100%;
+    height: 39px;
+    background-color: #17141D;
+}
+
+/* Another something for headbanner - combine with above? */
+.shiftstoned-heading {
+    margin-left: 40px;
+    height: 104px;
+    width: 1250px;
+}
+
+/* Positioning for images in headbanner - these should probably be handled better to make it more responsive */
+.shiftstoned-img {
+    position: absolute;
+    left: 23px;
+    top: 27px;
+}
+
+.power-calculator-img {
+    position: absolute;
+    left: 308px;
+    top: 16px;
+}
+
 /*
     The nagivation menu in the upper right
 */
@@ -111,15 +145,6 @@ display:block;
 #navigation-menu {
     position: absolute;
     left: 1200px;
-    top: 10px;
-
-    font-family: 'Open Sans ExtraBold', sans-serif;
-}
-
-#newNavigation-menu {
-    position: absolute;
-    /* left: 1200px; */
-    left: 1080px;
     top: 10px;
 
     font-family: 'Open Sans ExtraBold', sans-serif;
@@ -159,15 +184,17 @@ display:block;
    background-color: #FFFFFF;
    width: 268px;
    height: 30px;
-   padding: 0px;
+   padding: 5px;
+   /* font-size: 16px; */
    line-height: 1;
-   border: 0px solid #458A9E;
+   border: 1px solid #458A9E;
    border-radius: 7px;
+   /* -webkit-appearance: none; */
    outline: none;
-   /* color: #458A9E; */
+   color: #458A9E;
    opacity: 1; /* Firefox */
-   /* font-style: italic; */
-   font-family: 'Open Sans', sans-serif;
+   font-style: italic;
+   font-family: 'Exo 2', sans-serif;
    }
 
 /* Container for base page content */
@@ -194,13 +221,7 @@ display:block;
 .cardBlock {
   position: relative;
   float: left;
-  margin: 15px;
 }
-
-.cardBlock img {
-    width: 160px;
-}
-
 
 /* Formatting for Drafter card block circular grade label */
 .gradeCircle {
@@ -217,4 +238,11 @@ display:block;
   left: 110px;
   opacity: .9;
   border-radius: 50%;
+}
+
+/* Formatting for Drafter card images */
+.cardDrafterImg {
+    width: 160px;
+    /* margin: 10px; */
+    /* background-color: #333333; */
 }
