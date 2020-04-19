@@ -168,6 +168,18 @@ display:block;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
+
+global_header_home {
+  display: block;
+  color: #ffffff;
+  border: 0px solid;
+  margin-left: 325px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 250px;
+  font: 30px Open Sans Condensed Bold,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  line-height: 1.2;
+}
 /* -----------------------------------------------------
  * Base styles
  * ----------------------------------------------------- */
@@ -333,6 +345,18 @@ display:block;
   float: left;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
+}
+
+global_header_home {
+  display: block;
+  color: #ffffff;
+  border: 0px solid;
+  margin-left: 325px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 250px;
+  font: 30px Open Sans Condensed Bold,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  line-height: 1.2;
 }
 /*
 Styles for the headbanner
