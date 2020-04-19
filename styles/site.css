@@ -99,66 +99,225 @@ display:block;
     margin: 0px auto;
 }
 
-
 /*
-Styles for the headbanner
+    The nagivation menu in the upper right
 */
 
-/* Something for headbanner */
-.heading-top {
-    position: relative;
+#navigation-separator {
+    position: absolute;
+    top: 10px;
+    left: 1176px;
+    width: 2px;
+    height: 44px;
+    background-color: #FFFFFF;
+}
+
+#navigation-menu {
+    position: absolute;
+    left: 1200px;
+    top: 10px;
+
+    font-family: 'Open Sans ExtraBold', sans-serif;
+}
+
+#newNavigation-menu {
+    position: absolute;
+    /* left: 1200px; */
+    left: 1080px;
+    top: 10px;
+
+    font-family: 'Open Sans ExtraBold', sans-serif;
+}
+
+#navigation-menu .menu {
+    left: auto;
+    right: 0px;
+    background-color: #2E2C3D;
+    border: 1px solid #FFFFFF;
+}
+
+#navigation-menu .menu > .item {
+    padding: 0px !important;
+}
+
+#navigation-menu a:hover {
+    border-radius: 5px;
+    background-color: #443D66;
+}
+
+#navigation-menu a {
+    padding: 14px;
+    display: block;
     width: 100%;
-    height: 65px;
+    height: 100%;
+    color: #FFFFFF;
 }
 
-/* Something for headbanner */
-.newHeading-top {
-    position: relative;
-    width: 1140px;
-    height: 65px;
+.navigation-menu-indent {
+    float: left;
+    width: 30px;
+    min-height: 1px;
 }
 
-/* What even is this? */
-.heading-page-top {
-    width: 100%;
-    height: 39px;
-    background-color: #17141D;
-}
+.cardset select {
+   background-color: #FFFFFF;
+   width: 268px;
+   height: 30px;
+   padding: 0px;
+   line-height: 1;
+   border: 0px solid #458A9E;
+   border-radius: 7px;
+   outline: none;
+   /* color: #458A9E; */
+   opacity: 1; /* Firefox */
+   /* font-style: italic; */
+   font-family: 'Open Sans', sans-serif;
+   }
 
-/* What even is this? */
-.newHeading-page-top {
-    width: 1140px;
-    height: 39px;
-    background-color: #17141D;
-}
-
-/* Another something for headbanner - combine with above? */
-.shiftstoned-heading {
+/* Container for base page content */
+.bodyGrid {
     margin-left: 40px;
-    height: 104px;
+    background-color: #17141D;
+    border: 0px solid;
+    border-bottom: none;
     width: 1250px;
+    min-height: 1350px;
 }
 
-/* Another something for headbanner - combine with above? */
-.newShiftstoned-heading {
+/* Background color and frame for base page layout grid */
+.newBodyGrid {
     margin-left: 40px;
-    height: 104px;
+    background-color: #17141D;
+    border: 0px solid;
+    border-bottom: none;
     width: 1140px;
+    min-height: 1350px;
 }
 
-/* Positioning for images in headbanner - these should probably be handled better to make it more responsive */
-.shiftstoned-img {
-    position: absolute;
-    left: 23px;
-    top: 27px;
+/* Container for individual card in Drafter */
+.cardBlock {
+  position: relative;
+  float: left;
+  margin: 15px;
 }
 
-.power-calculator-img {
-    position: absolute;
-    left: 308px;
-    top: 16px;
+.cardBlock img {
+    width: 160px;
 }
 
+
+/* Formatting for Drafter card block circular grade label */
+.gradeCircle {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  padding: 12px;
+  color: white;
+  text-align: center;
+  background-color: orange;
+  border: solid 3px green;
+  top: 10px;
+  left: 110px;
+  opacity: .9;
+  border-radius: 50%;
+}
+/* -----------------------------------------------------
+ * Base styles
+ * ----------------------------------------------------- */
+:root {
+  /* non-theme css-variables */
+  --example-height-variable: 5rem;
+}
+
+* {
+  background-repeat: no-repeat;
+}
+
+/* hide from view, but leave enabled for screen reader accessability
+ * (see https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link) */
+ .visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+/* allow the element to be focusable when navigated to via the keyboard */
+.hidden-focusable:active,
+.hidden-focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	white-space: normal;
+	width: auto;
+}
+
+/* Style HTML5 semantic elements for older, unsupported browsers */
+article, aside, footer, header, nav, section {
+display:block;
+}
+
+/* Style "Javascript disabled" notification/warning */
+.js-notification {
+  padding: 1rem 2rem;
+  border: 2px solid red;
+  margin: 1rem;
+}
+
+/* ================================== */
+
+/*
+    Fonts
+*/
+
+@font-face {
+    font-family: 'Open Sans Condensed Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url(open-sans-condensed-bold.woff2) format('woff2'),
+            url(open-sans-condensed-bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    src: url(open-sans-extra-bold.woff2) format('woff2'),
+            url(open-sans-extra-bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(open-sans-regular.woff2) format('woff2'),
+            url(open-sans-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: url(merriweather-regular.woff2) format('woff2'),
+            url(merriweather-regular.woff) format('woff');
+}
+
+/* Background image for pages */
+.background {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    top: -100px;
+    left: 0px;
+    margin: 0px auto;
+}
 
 /*
     The nagivation menu in the upper right
@@ -283,12 +442,58 @@ Styles for the headbanner
   opacity: .9;
   border-radius: 50%;
 }
+/*
+Styles for the headbanner
+*/
 
-/* -----------------------------------------------------
- * Header styles
- * ----------------------------------------------------- */
-.page-header {
-} /*
+/* Something for headbanner */
+.heading-top {
+    position: relative;
+    width: 100%;
+    height: 65px;
+}
+
+/* Something for headbanner */
+.newHeading-top {
+    position: relative;
+    width: 1140px;
+    height: 65px;
+}
+
+/* What even is this? */
+.heading-page-top {
+    width: 100%;
+    height: 39px;
+    background-color: #17141D;
+}
+
+/* What even is this? */
+.newHeading-page-top {
+    width: 1140px;
+    height: 39px;
+    background-color: #17141D;
+}
+
+/* Another something for headbanner - combine with above? */
+.shiftstoned-heading {
+    margin-left: 40px;
+    height: 104px;
+    width: 1250px;
+}
+
+/* Positioning for images in headbanner - these should probably be handled better to make it more responsive */
+.shiftstoned-img {
+    position: absolute;
+    left: 23px;
+    top: 27px;
+}
+
+.power-calculator-img {
+    position: absolute;
+    left: 308px;
+    top: 16px;
+}
+ /*
  * # Semantic UI - 2.3.1
  * https://github.com/Semantic-Org/Semantic-UI
  * http://www.semantic-ui.com/
