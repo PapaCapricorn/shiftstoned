@@ -7,31 +7,28 @@
     {% include "partials/icons.njk" %}
     {% include "partials/themes.njk" %}
 
+    <!-- CSS -->
+      <link href="{{ "/styles/site.css" | url }}" rel="stylesheet" type="text/css">
 
-<!--
-  CSS
--->
-    <link href="{{ "/styles/site.css" | url }}" rel="stylesheet" type="text/css">
+      {#- if `page_style` data is passed, include that CSS partial here -#}
+        {%- if page_style %}
+      <!-- page-specific styles -->
+        <style>
+          {% include "css/page/" + page_style %}
+        </style>
+        {%- endif %}
 
-    {#- if `page_style` data is passed, include that CSS partial here -#}
-  {%- if page_style %}
-    <!-- page-specific styles -->
-    <style>
-{% include "css/page/" + page_style %}
-    </style>
-  {%- endif %}
-<!--
-  JAVASCRIPT
--->
-    <!-- load critical js -->
-    <script src="/scripts/site.js" type="text/javascript"></script>
-    <!-- defer loading non-critical js -->
-    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
-    <!-- inline page-specific js is located after <body> -->
+    <!-- JAVASCRIPT -->
+      <!-- load critical js -->
+      <script src="/scripts/site.js" type="text/javascript"></script>
+
+      <!-- defer loading non-critical js -->
+      {# <script defer src="/scripts/site-defer.js" type="text/javascript"></script> #}
+      <!-- inline page-specific js is located after <body> -->
+
   </head>
-<!--
-  PAGE BODY
--->
+
+<!-- PAGE BODY -->
   <body>
 
     {{ content | safe }}
@@ -40,14 +37,14 @@
 
   </body>
 
-<!--
-  JAVASCRIPT (inline, page-specific)
--->
+  <!-- JAVASCRIPT (inline, page-specific) -->
+
     {#- if `page_script` data is passed, include that js partial here -#}
-  {%- if page_script %}
-    <!-- page-specific js -->
-    <script type="text/javascript">
-{% include "js/page/" + page_script %}
-    </script>
-  {%- endif %}
+      {%- if page_script %}
+      <!-- page-specific js -->
+      <script type="text/javascript">
+      {% include "js/page/" + page_script %}
+      </script>
+      {%- endif %}
+
 </html>
