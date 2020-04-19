@@ -222,6 +222,12 @@ display:block;
   opacity: .9;
   border-radius: 50%;
 }
+
+.controlLabel {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
 /* -----------------------------------------------------
  * Base styles
  * ----------------------------------------------------- */
@@ -441,6 +447,12 @@ display:block;
   left: 110px;
   opacity: .9;
   border-radius: 50%;
+}
+
+.controlLabel {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
 }
 /*
 Styles for the headbanner
