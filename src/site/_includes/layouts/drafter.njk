@@ -2,20 +2,18 @@
 layout: layouts/base.njk
 ---
 
-<img class="background" src="/SSG-Sandbox/images/Mercy-of-Kodosh-Wallpaper2560x1600.jpg" />
+    <img class="background" src="/SSG-Sandbox/images/Mercy-of-Kodosh-Wallpaper2560x1600.jpg" />
 
-{% include "partials/drafter-header.njk" %}
+    {% include "partials/drafter-header.njk" %}
 
-<main class="page-content {{ page_class }}">
+    <main class="page-content {{ page_class }}">
 
-<div class="bodyGrid">
+    <div class="bodyGrid">
 
-  {# Using the drafter.njk template #}
+      {{ content | safe }}
 
-  {{ content | safe }}
+    </div>
 
-</div>
+    </main>
 
-</main>
-
-{% include "partials/footer.njk" %}
+    {# {% include "partials/footer.njk" %} #}
