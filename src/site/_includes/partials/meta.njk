@@ -11,22 +11,22 @@ Meta data for base.njk head goes here - temporarily hidden
   {{- site.metaTitle -}}
 </title> #}
 
-<!--
+{# <!--
 SOCIAL MEDIA TAGS
--->
+--> #}
 
-<!-- Facebook / Open Graph protocol -->
+{# <!-- Facebook / Open Graph protocol --> #}
 {# <meta property="og:site_name" content="{{ site.metaTitle }}">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/images/opengraph-logo.png">
 <meta property="og:url" content="{{ site.url }}"> #}
 
-<!-- Twitter -->
+{# <!-- Twitter --> #}
 {# <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="{{ site.social.twitter }}">
 <meta name="twitter:creator" content="{{ site.author.twitter }}"> #}
 
-<!-- Document-specific tags -->
+{# <!-- Document-specific tags --> #}
 {# <meta property="og:title" content="
   {%- if title or (renderData and renderData.title) -%}
     {{- title or (renderData and renderData.title)  | safe -}}
