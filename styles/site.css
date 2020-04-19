@@ -99,6 +99,60 @@ display:block;
     margin: 0px auto;
 }
 
+
+/*
+Styles for the headbanner
+*/
+
+/* Something for headbanner */
+.heading-top {
+    position: relative;
+    width: 100%;
+    height: 65px;
+}
+
+/* Something for headbanner */
+.newHeading-top {
+    position: relative;
+    width: 1140px;
+    height: 65px;
+}
+
+/* What even is this? */
+.heading-page-top {
+    width: 100%;
+    height: 39px;
+    background-color: #17141D;
+}
+
+/* What even is this? */
+.newHeading-page-top {
+    width: 1140px;
+    height: 39px;
+    background-color: #17141D;
+}
+
+/* Another something for headbanner - combine with above? */
+.shiftstoned-heading {
+    margin-left: 40px;
+    height: 104px;
+    width: 1250px;
+}
+
+/* Positioning for images in headbanner - these should probably be handled better to make it more responsive */
+.shiftstoned-img {
+    position: absolute;
+    left: 23px;
+    top: 27px;
+}
+
+.power-calculator-img {
+    position: absolute;
+    left: 308px;
+    top: 16px;
+}
+
+
 /*
     The nagivation menu in the upper right
 */
@@ -221,58 +275,6 @@ display:block;
   left: 110px;
   opacity: .9;
   border-radius: 50%;
-}
-
-/*
-Styles for the headbanner
-*/
-
-/* Something for headbanner */
-.heading-top {
-    position: relative;
-    width: 100%;
-    height: 65px;
-}
-
-/* Something for headbanner */
-.newHeading-top {
-    position: relative;
-    width: 1140px;
-    height: 65px;
-}
-
-/* What even is this? */
-.heading-page-top {
-    width: 100%;
-    height: 39px;
-    background-color: #17141D;
-}
-
-/* What even is this? */
-.newHeading-page-top {
-    width: 1140px;
-    height: 39px;
-    background-color: #17141D;
-}
-
-/* Another something for headbanner - combine with above? */
-.shiftstoned-heading {
-    margin-left: 40px;
-    height: 104px;
-    width: 1250px;
-}
-
-/* Positioning for images in headbanner - these should probably be handled better to make it more responsive */
-.shiftstoned-img {
-    position: absolute;
-    left: 23px;
-    top: 27px;
-}
-
-.power-calculator-img {
-    position: absolute;
-    left: 308px;
-    top: 16px;
 }
 
 /* -----------------------------------------------------
