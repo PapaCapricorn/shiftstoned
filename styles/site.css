@@ -180,6 +180,18 @@ global_header_home {
   font: 30px Open Sans Condensed Bold,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   line-height: 1.2;
 }
+
+global_body {
+  display: block;
+  border: 10x solid;
+  margin-left: 325px;
+  width: 600px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color: #ffffff;
+  font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  line-height: 1.6;
+}
 /* -----------------------------------------------------
  * Base styles
  * ----------------------------------------------------- */
@@ -357,6 +369,18 @@ global_header_home {
   margin-right: 250px;
   font: 30px Open Sans Condensed Bold,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   line-height: 1.2;
+}
+
+global_body {
+  display: block;
+  border: 10x solid;
+  margin-left: 325px;
+  width: 600px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color: #ffffff;
+  font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  line-height: 1.6;
 }
 /*
 Styles for the headbanner
