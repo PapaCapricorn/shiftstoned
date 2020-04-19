@@ -1,59 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="{{ site.author.name }}">
-    <meta name="description" content="{{ site.description }}">
-    <title>
-      {%- if title or (renderData and renderData.title) -%}
-        {{- title or (renderData and renderData.title)  | safe }} - {% endif -%}
-      {{- site.metaTitle -}}
-    </title>
-<!--
-  SOCIAL MEDIA TAGS
--->
-    <!-- Facebook / Open Graph protocol -->
-    <meta property="og:site_name" content="{{ site.metaTitle }}">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="/images/opengraph-logo.png">
-    <meta property="og:url" content="{{ site.url }}">
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="{{ site.social.twitter }}">
-    <meta name="twitter:creator" content="{{ site.author.twitter }}">
-    <!-- Document-specific tags -->
-    <meta property="og:title" content="
-      {%- if title or (renderData and renderData.title) -%}
-        {{- title or (renderData and renderData.title)  | safe -}}
-      {%- else -%}
-        {{ site.metaTitle }}
-      {%- endif %}">
-    <meta name="twitter:title" content="
-      {%- if title or (renderData and renderData.title) -%}
-        {{- title or (renderData and renderData.title)  | safe -}}
-      {%- else -%}
-        {{ site.metaTitle }}
-      {%- endif %}">
-    <meta property="og:description" content="
-      {%- if description -%}
-        {{- description | safe -}}
-      {%- else -%}
-        {{- site.description -}}
-      {%- endif %}">
-    <meta property="description" content="
-      {%- if description -%}
-        {{- description | safe -}}
-      {%- else -%}
-        {{- site.description -}}
-      {%- endif %}">
-    <meta property="twitter:description" content="
-      {%- if description -%}
-        {{- description | safe -}}
-      {%- else -%}
-        {{- site.description -}}
-      {%- endif %}">
+
+    {% include "partials/meta.njk" %}
+
 <!--
   Support for the HTML5 semantic elements in non-HTML5 browsers, even for
     Internet Explorer (8 and older, with fallback where it's is configured
