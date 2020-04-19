@@ -5,28 +5,9 @@
     {% include "partials/meta.njk" %}
     {% include "partials/compatibility.njk" %}
     {% include "partials/icons.njk" %}
+    {% include "partials/themes.njk" %}
 
 
-<!--
-  THEME
-  Set initial theme based on system or browser light/dark preference (with fallback)
--->
-    <script>
-      // If `prefers-color-scheme` is not supported, fall back to light mode.
-      // In this case, theme-light.css will be downloaded with `highest` priority.
-      if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
-        document.documentElement.style.display = 'none';
-        document.head.insertAdjacentHTML(
-            'beforeend',
-            '<link href="/styles/theme-light.css" rel="stylesheet" onload="document.documentElement.style.display = \'\'">'
-        );
-      }
-    </script>
-    <!--
-      If `prefers-color-scheme` is supported, load matching theme with `highest` priority.
-    -->
-    <link href="/styles/theme-dark.css" rel="stylesheet" media="(prefers-color-scheme: dark)">
-    <link href="/styles/theme-light.css" rel="stylesheet" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
 <!--
   CSS
 -->
