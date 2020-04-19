@@ -95,6 +95,66 @@ display:block;
     margin: 0px auto;
 }
 
+/*
+    The nagivation menu in the upper right
+*/
+
+#navigation-separator {
+    position: absolute;
+    top: 10px;
+    left: 1176px;
+    width: 2px;
+    height: 44px;
+    background-color: #FFFFFF;
+}
+
+#navigation-menu {
+    position: absolute;
+    left: 1200px;
+    top: 10px;
+
+    font-family: 'Open Sans ExtraBold', sans-serif;
+}
+
+#newNavigation-menu {
+    position: absolute;
+    /* left: 1200px; */
+    left: 1080px;
+    top: 10px;
+
+    font-family: 'Open Sans ExtraBold', sans-serif;
+}
+
+#navigation-menu .menu {
+    left: auto;
+    right: 0px;
+    background-color: #2E2C3D;
+    border: 1px solid #FFFFFF;
+}
+
+#navigation-menu .menu > .item {
+    padding: 0px !important;
+}
+
+#navigation-menu a:hover {
+    border-radius: 5px;
+    background-color: #443D66;
+}
+
+#navigation-menu a {
+    padding: 14px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+}
+
+.navigation-menu-indent {
+    float: left;
+    width: 30px;
+    min-height: 1px;
+}
+
 .cardset select {
    background-color: #FFFFFF;
    width: 268px;
