@@ -37,6 +37,13 @@ Styles for the headbanner
     width: 1250px;
 }
 
+/* Another something for headbanner - combine with above? */
+.newShiftstoned-heading {
+    margin-left: 40px;
+    height: 104px;
+    width: 1140px;
+}
+
 /* Positioning for images in headbanner - these should probably be handled better to make it more responsive */
 .shiftstoned-img {
     position: absolute;
