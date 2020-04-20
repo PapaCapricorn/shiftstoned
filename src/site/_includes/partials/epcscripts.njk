@@ -1,0 +1,40 @@
+<!-- hack to allow us to create node modules for tests -->
+<script type="text/javascript">window.module = {};</script>
+
+<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="semantic.min.js"></script>
+
+
+<script type="text/javascript" src="epc.min.js"></script>
+
+
+<script type="text/javascript">
+var graphStyle;
+
+graphStyle = {
+    marginLeft: 64,
+    marginRight: 48,
+    marginBottom: 54,
+    fontSize: 18,
+    iconSize: 30,
+    dotSize: 9,
+    font: "'Open Sans Condensed Bold', sans-serif",
+    textColor: "rgb(231, 228, 230)",
+    borderColor: "rgb(192, 192, 192)",
+    backgroundColor: "rgb(0, 0, 0)",
+    interiorLineColor: "rgb(67, 67, 67)",
+
+    fireColorSolid: "rgb(204, 0, 0)",
+    fireColorTranslucent: "rgba(204, 0, 0, 0.3)",
+    timeColorSolid: "rgb(241, 194, 50)",
+    timeColorTranslucent: "rgba(241, 194, 50, 0.3)",
+    justiceColorSolid: "rgb(106, 168, 79)",
+    justiceColorTranslucent: "rgba(106, 168, 79, 0.3)",
+    primalColorSolid: "rgb(60, 120, 216)",
+    primalColorTranslucent: "rgba(60, 120, 216, 0.3)",
+    shadowColorSolid: "rgb(166, 77, 121)",
+    shadowColorTranslucent: "rgba(166, 77, 121, 0.3)"
+};
+
+buildEpcUI(graphStyle);
+</script>
