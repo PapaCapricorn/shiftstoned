@@ -6,25 +6,7 @@ page_style: mainpage.css
 <!-- Background Image -->
 <img class="background" src="https://www.shiftstoned.com/epc/Trove.jpg" />
 
-{# Homepage section banner for logo and navigation menu #}
-
-{# &EDIT: Re-organize to create unique layout for homepage #}
-
-<div class="shiftstoned-heading">
-
-  <div class="heading-top">
-
-    <a href="/SSG-Sandbox/"><img class="shiftstoned-img" src="https://www.shiftstoned.com/global/images/shiftstoned.png" /></a></a><a href="../epc/"><img alt="Eternal Power Calculator" class="power-calculator-img" src="https://www.shiftstoned.com/epc/power-calculator.png" title="Eternal Power Calculator" /></a>
-
-    {% include "partials/navMenu.njk" %}
-
-  </div>
-
-  <div class="heading-page-top">
-    &nbsp;
-  </div>
-
-</div>
+{% include "partials/epc-header.njk" %}
 
 <main class="page-content mainpage">
 
