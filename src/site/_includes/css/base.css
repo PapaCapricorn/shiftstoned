@@ -262,6 +262,20 @@ hr.cbody {
 }
 
 /* Styling for decklist */
+
+.deckBox {
+  background-color: #2E2C3D;
+  padding: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  width: 97%;
+  min-height: 800px;
+  margin-top: 34px;
+  border-left: 1px solid #458A9E;
+  border-top: 1px solid #458A9E;
+  border-right: 1px solid #458A9E;
+  border-top-right-radius: 7px;>
+}
+
 .decklistRow {
   margin-top: 1px;
   float: left;
