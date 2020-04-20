@@ -12,4 +12,4 @@ shadow: #331745;
 common: #333333;
 uncommon: #236B08;
 rare: #4F86BE;
-legendary:#FF9521;
+legendary: #FF9521;
