@@ -244,6 +244,27 @@ hr.cbody {
   background-color: #458A9E;
   width: 95%;
 }
+
+.newAbout-heading {
+    position: absolute;
+    top: 34px;
+    left: 970px;
+
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#newNavigation-separator {
+    position: absolute;
+    top: 10px;
+    left: 1060px;
+
+    width: 2px;
+    height: 44px;
+    background-color: #FFFFFF;
+}
 /* -----------------------------------------------------
  * Base styles
  * ----------------------------------------------------- */
@@ -485,6 +506,27 @@ hr.cbody {
   color: #458A9E;
   background-color: #458A9E;
   width: 95%;
+}
+
+.newAbout-heading {
+    position: absolute;
+    top: 34px;
+    left: 970px;
+
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#newNavigation-separator {
+    position: absolute;
+    top: 10px;
+    left: 1060px;
+
+    width: 2px;
+    height: 44px;
+    background-color: #FFFFFF;
 }
 /*
 Styles for the headbanner
