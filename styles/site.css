@@ -444,6 +444,49 @@ hr.cbody {
   right: 50px;
   opacity: .7;
 }
+
+
+/*
+Goofy text formatting for ARTICLES - needs to be reworked
+*/
+
+textcol {
+  display: block;
+  color: #ffffff;
+  width: 600px;
+  margin: 50px auto;
+  font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  line-height: 1.6;
+}
+
+att {
+  display: block;
+  color: #ffffff;
+  margin: 50px auto;
+  margin-bottom: 7px;
+  margin-top: 0px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+}
+
+ats {
+  display: block;
+  color: #81C3F4;
+  margin: 0px auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font: 20px Montserrat,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+atsub {
+  display: block;
+  color: #ffffff;
+  margin: 50px auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font: 18px Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  line-height: 1.4;
+}
 /* -----------------------------------------------------
  * Base styles
  * ----------------------------------------------------- */
@@ -885,6 +928,49 @@ hr.cbody {
   bottom: -60px;
   right: 50px;
   opacity: .7;
+}
+
+
+/*
+Goofy text formatting for ARTICLES - needs to be reworked
+*/
+
+textcol {
+  display: block;
+  color: #ffffff;
+  width: 600px;
+  margin: 50px auto;
+  font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  line-height: 1.6;
+}
+
+att {
+  display: block;
+  color: #ffffff;
+  margin: 50px auto;
+  margin-bottom: 7px;
+  margin-top: 0px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+}
+
+ats {
+  display: block;
+  color: #81C3F4;
+  margin: 0px auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font: 20px Montserrat,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+atsub {
+  display: block;
+  color: #ffffff;
+  margin: 50px auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font: 18px Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  line-height: 1.4;
 }
 /*
 Styles for the headbanner
