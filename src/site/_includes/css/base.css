@@ -353,3 +353,69 @@ hr.cbody {
 .decklistRow.legendary {
   background-color: #FF9521;
 }
+
+
+/* WC schools tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: #2E2C3D;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  border: solid 1px #458A9E;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* .commentBug {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  padding: 12px;
+  color: white;
+  text-align: center;
+  background-color: white;
+  bottom: 15px;
+  right: 130px;
+  opacity: .7;
+  border-radius: 50%;
+  line-height: 1.6;
+} */
+
+.commentImg {
+  position: absolute;
+  /* border: solid 5px red; */
+  padding: 60px;
+  bottom: -60px;
+  right: 50px;
+  opacity: .7;
+}
