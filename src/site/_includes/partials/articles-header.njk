@@ -1,5 +1,28 @@
-{# &EDIT - can probably be consolidated #}
+{# Drafter section banner for logo and navigation menu #}
 
-<header class="page-header">
-  This articles-header.njk specified in article.njk: <a href="/SSG-Sandbox/">Home</a>
-</header>
+{# &EDIT: Consolidate into flexible header with variable text/img for section id #}
+{# Border styles are temporary tools for debugging and layout  #}
+
+<div class="newShiftstoned-heading" style="border: 0px solid blue;">
+
+  <div class="newHeading-top" style="border: 0px solid red;">
+
+    <a href="/SSG-Sandbox/"><img class="shiftstoned-img" src="https://www.shiftstoned.com/global/images/shiftstoned.png" /></a>
+
+    <a href="/SSG-Sandbox/drafter/"><img alt="{{ section }}" class="power-calculator-img" src="/SSG-Sandbox/images/Header{{ section }}.png" title="{{ section }}" /></a>
+
+    <div class="newAbout-heading">
+        ABOUT
+    </div>
+    <div id="newNavigation-separator">
+    </div>
+
+    {% include "partials/navMenu.njk" %}
+
+  </div>
+
+  <div class="newHeading-page-top">
+    &nbsp;
+  </div>
+
+</div>
