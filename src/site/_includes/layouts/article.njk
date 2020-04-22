@@ -1,18 +1,17 @@
 ---
 layout: layouts/html.njk
-page_style: article.css
+bg_img: https://www.shiftstoned.com/articles/CrypticEtchings.jpeg
+section: Articles
 ---
 
-<img class="background" src="https://www.shiftstoned.com/articles/CrypticEtchings.jpeg" />
+{# <img class="background" src="https://www.shiftstoned.com/articles/CrypticEtchings.jpeg" /> #}
 
-<main class="page-content {{ page_class }}">
+    <main class="page-content {{ page_class }}">
 
-<div class="bodyGrid">
+      <div class="bodyGrid">
 
-  {{ content | safe }}
+        {{ content | safe }}
 
-</div>
+      </div>
 
-</main>
-
-{% include "partials/footer.njk" %}
+    </main>
