@@ -3,17 +3,15 @@ layout: layouts/base.njk
 bg_img: /SSG-Sandbox/images/Mercy-of-Kodosh-Wallpaper2560x1600.jpg
 ---
 
-    <img class="background" src="{{ bg_img }}" />
-
     {% include "partials/drafter-header.njk" %}
 
     <main class="page-content {{ page_class }}">
 
-<div class="newBodyGrid">
+      <div class="newBodyGrid">
 
-      {{ content | safe }}
+        {{ content | safe }}
 
-    </div>
+      </div>
 
     </main>
 
