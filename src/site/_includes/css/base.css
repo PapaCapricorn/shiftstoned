@@ -3,7 +3,7 @@
  * ----------------------------------------------------- */
 :root {
   /* non-theme css-variables */
-  --example-height-variable: 5rem;
+  --TimeYellow: #B26F03;
 }
 
 * {
@@ -337,7 +337,7 @@ hr.cbody {
 }
 
 .decklistRow.time {
-  background-color: #B26F03;
+  background-color: var(--TimeYellow);
 }
 
 .decklistRow.justice {
