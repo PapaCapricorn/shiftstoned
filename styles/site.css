@@ -9,7 +9,7 @@
   /* non-theme css-variables */
   --TimeYellow: #B26F03;
   --MultiBlack: #111111;
-  --NeutralGray:  #2D2B2E;
+  --NeutralGray: #2D2B2E;
   --PromoPurple: #7A17C0;
 }
 
@@ -390,7 +390,7 @@ hr.cbody {
   background-color: #FF9521;
 }
 
-.decklistRow.legendary {
+.decklistRow.promo {
   background-color: var(--PromoPurple);
 }
 
@@ -509,7 +509,7 @@ atsub {
   /* non-theme css-variables */
   --TimeYellow: #B26F03;
   --MultiBlack: #111111;
-  --NeutralGray:  #2D2B2E;
+  --NeutralGray: #2D2B2E;
   --PromoPurple: #7A17C0;
 }
 
@@ -890,7 +890,7 @@ hr.cbody {
   background-color: #FF9521;
 }
 
-.decklistRow.legendary {
+.decklistRow.promo {
   background-color: var(--PromoPurple);
 }
 
