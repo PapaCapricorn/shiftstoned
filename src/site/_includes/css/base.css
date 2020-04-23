@@ -4,6 +4,9 @@
 :root {
   /* non-theme css-variables */
   --TimeYellow: #B26F03;
+  --MultiBlack: #111111;
+  --NeutralGray:  #2D2B2E;
+  --PromoPurple: #7A17C0;
 }
 
 * {
@@ -352,6 +355,14 @@ hr.cbody {
   background-color: #331745;
 }
 
+.decklistRow.multi {
+  background-color: var(--MultiBlack);
+}
+
+.decklistRow.neutral {
+  background-color: var(--NeutralGray);
+}
+
 .decklistRow.qty {
   text-align: center;
   margin-left: 2px;
@@ -373,6 +384,10 @@ hr.cbody {
 
 .decklistRow.legendary {
   background-color: #FF9521;
+}
+
+.decklistRow.legendary {
+  background-color: var(--PromoPurple);
 }
 
 
