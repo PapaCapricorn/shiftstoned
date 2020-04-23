@@ -203,7 +203,7 @@ body {
 }
 
 #calculator-body {
-    margin-left: 40px;
+    /* margin-left: 40px; */
     background-color: #17141D;
     border: 1px solid;
     border-bottom: none;
