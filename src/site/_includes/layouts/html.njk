@@ -34,7 +34,11 @@
 
     <img class="background" src="{{ bg_img }}" />
 
-    {{ content | safe }}
+    <div class="bodyGrid">
+
+      {{ content | safe }}
+
+    </div>
 
     {% include "partials/jsSrc.njk" %}
 
