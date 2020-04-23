@@ -386,10 +386,9 @@ hr.cbody {
   background-color: #FF9521;
 }
 
-.decklistRow.legendary {
+.decklistRow.promo {
   background-color: var(--PromoPurple);
 }
-
 
 /* WC schools tooltip */
 .tooltip {
