@@ -55,3 +55,30 @@
     width: 30px;
     min-height: 1px;
 }
+
+
+/* newNavigation-menu substyles */
+
+#newNavigation-menu .menu {
+    left: auto;
+    right: 0px;
+    background-color: #2E2C3D;
+    border: 1px solid #FFFFFF;
+}
+
+#newNavigation-menu .menu > .item {
+    padding: 0px !important;
+}
+
+#newNavigation-menu a:hover {
+    border-radius: 5px;
+    background-color: #443D66;
+}
+
+#newNavigation-menu a {
+    padding: 14px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+}
