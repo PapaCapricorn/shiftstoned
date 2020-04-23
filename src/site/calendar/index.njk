@@ -3,7 +3,7 @@ layout: layouts/html.njk
 bg_img: https://www.shiftstoned.com/calendar/SecretPages.jpeg
 section: Calendar
 ---
-<div class="newShiftstoned-heading">
+{# <div class="newShiftstoned-heading">
 
   <div class="newHeading-top">
 
@@ -26,11 +26,13 @@ section: Calendar
 
   <section>
 
-    <div class="bodyGrid">
+    <div class="bodyGrid"> #}
 
       <div id="transparent_body">
 
         <pg></pg>
+
+        Generating with index.njk, expect to lose header<br>
 
         <div data-tockify-component="calendar" data-tockify-calendar="eternal"></div>
         <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
@@ -38,9 +40,9 @@ section: Calendar
       </div>
 
 
-    </div>
+    {# </div>
 
   </section>
 
 
-</main>
+</main> #}
