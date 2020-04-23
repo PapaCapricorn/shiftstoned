@@ -6,17 +6,8 @@ section: Articles
 override:tags: []
 ---
 
-    Now displaying with html.njk, expect to lose headbanner<br>
-    Add <div class="bodyGrid"> to html.njk, expect messed up layouts
-    {# Now displaying with variable headbanner.njk #}
+<textcol style="border: 0px solid red;">
 
-    {# Automated index feature to be implemented #}
-    {# <h2>List of articles:</h2>
-    <ul>
-    {%- for page in collections.news %}
-        <li>
-            <a href="{{ page.url | url }}">{{ page.data.title }}</a> -
-            <time datetime="{{ page.date }}">{{ page.date}}</time>
-        </li>
-    {%- endfor %}
-    </ul> #}
+  This should look right now, including textcol
+
+</textcol>
