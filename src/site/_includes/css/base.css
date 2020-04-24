@@ -498,3 +498,68 @@ atsub {
   font: 18px Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   line-height: 1.4;
 }
+
+/* Homepage features */
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+
+.row {
+  margin-top: 18px;
+}
+
+.row:after {
+  margin-top: 89px;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create three equal columns that floats next to each other */
+.homepageFeature {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  border: solid 0px red;
+  font-size: 1.2em;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+}
+
+.homepageFeature.center {
+  text-align: center;
+}
+
+.homepageFeature.right {
+  text-align: right;
+}
+
+.homepageFeature img {
+  width: 339px;
+  height: 140px;
+  object-fit: cover;
+  border: solid 1px white;
+}
+
+.homepageFeatureLabel {
+  width: 330px;
+  text-align: center;
+  margin-bottom: 6px;
+  border: 0px orange solid;
+}
+
+.homepageFeatureLabel.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepageFeatureLabel.right {
+  float: right;
+}
