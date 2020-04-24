@@ -175,6 +175,10 @@ a {
     font-family: 'Open Sans ExtraBold', sans-serif;
 }
 
+a.white {
+    color: #FFFFFF;
+}
+
 a:hover {
     color: #4183c4;
 }
