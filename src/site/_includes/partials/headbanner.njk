@@ -5,16 +5,16 @@
     <a href="/SSG-Sandbox/"><img class="shiftstoned-img" src="https://www.shiftstoned.com/global/images/shiftstoned.png" /></a>
 
     {%- if section %}
-
-    <a href="/SSG-Sandbox/{{ section | lower }}"><img alt="{{ section }}" class="power-calculator-img" src="/SSG-Sandbox/images/Header{{ section }}.png" title="{{ section }}" /></a>
-
+      <a href="/SSG-Sandbox/{{ section | lower }}"><img alt="{{ section }}" class="power-calculator-img" src="/SSG-Sandbox/images/Header{{ section }}.png" title="{{ section }}" /></a>
     {%- endif %}
 
-    <div class="newAbout-heading">
-        ABOUT
-    </div>
-    <div id="newNavigation-separator">
-    </div>
+    {%- if about %}
+      <div class="newAbout-heading">
+          <a href="{{ section }}">ABOUT</a>
+      </div>
+      <div id="newNavigation-separator">
+      </div>
+    {%- endif %}
 
     {% include "partials/navMenu.njk" %}
 
