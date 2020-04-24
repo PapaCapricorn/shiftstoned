@@ -2,59 +2,26 @@
 * Theme variables (i.e var(--some-color), etc) are set in theme css files (ex. theme-light.css)
 * Non-theme root variables (i.e var(--some-height), etc) are set in the base.css partial
 */
-/* -----------------------------------------------------
- * Base styles
- * ----------------------------------------------------- */
-:root {
-  /* non-theme css-variables */
-  --TimeYellow: #B26F03;
-  --MultiBlack: #111111;
-  --NeutralGray: #2D2B2E;
-  --PromoPurple: #7A17C0;
-}
+/*
 
-* {
-  background-repeat: no-repeat;
-}
+    Eternal Power Calculator
+    Copyright (C) 2018  Matt Kimball
 
-/* hide from view, but leave enabled for screen reader accessability
- * (see https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link) */
- .visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-}
-/* allow the element to be focusable when navigated to via the keyboard */
-.hidden-focusable:active,
-.hidden-focusable:focus {
-	clip: auto;
-	height: auto;
-	margin: 0;
-	overflow: visible;
-	position: static;
-	white-space: normal;
-	width: auto;
-}
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
 
-/* Style HTML5 semantic elements for older, unsupported browsers */
-article, aside, footer, header, nav, section {
-display:block;
-}
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-/* Style "Javascript disabled" notification/warning */
-.js-notification {
-  padding: 1rem 2rem;
-  border: 2px solid red;
-  margin: 1rem;
-}
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-/* ================================== */
+*/
 
 /*
     Fonts
@@ -92,480 +59,795 @@ display:block;
             url(merriweather-regular.woff) format('woff');
 }
 
-/* Background image for pages */
-.background {
-    position: fixed;
+
+/*  Don't display the preloaded influence icons  */
+#influence-icons {
+    display: none;
+}
+
+
+/*
+    General styling of Semantic-UI components
+*/
+
+body {
+    overflow-y: scroll;
+}
+
+body.animating.in.dimmable, body.dimmed.dimmable {
+    overflow-y: scroll;
+}
+
+textarea {
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 15px;
+    resize: none;
+}
+
+.ui.modal {
+    background-color: #533D4F;
+    color: #E7E4E6;
+}
+
+.ui.modal > .header, .ui.modal > .actions {
+    background-color: #664B61;
+    color: #E7E4E6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ui.form .field>label {
+    color: #E7E4E6;
+}
+
+.ui.modal .modal-body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 16px;
+}
+
+.ui.buttons .button:first-child {
+    border-left: 1px solid;
+}
+
+.ui.buttons .button {
+    border-right: none;
+}
+
+.ui.buttons .button:last-child {
+    border-right: 1px solid;
+}
+
+.ui.button, .ui.button.positive {
+    background-color: #2E2C3D;
+    color: #FFFFFF;
+    border: 1px solid;
+    font-family: 'Open Sans ExtraBold', sans-serif;
+}
+
+.ui.button:hover,
+.ui.button:focus,
+.ui.button.positive:hover,
+.ui.button.positive:focus {
+    background-color: #322C4B;
+    color: #FFFFFF;
+}
+
+.ui.popup {
+    background-color: #322C4B;
+    color: #FFFFFF;
+    max-width: 400px;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.ui.popup.transparent {
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0 !important;
+    padding: 0;
+}
+.ui.popup.transparent:before {
+    display: none;
+}
+
+
+.ui.popup h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+}
+
+.ui.popup strong {
+    font-family: 'Merriweather', serif;
+}
+
+.ui.top.popup:before,
+.ui.bottom.popup:before,
+.ui.left.center.popup:before,
+.ui.right.center.popup:before {
+    background: #322C4B;
+}
+
+.ui.loader:after {
+    border-color: #FFFFFF transparent transparent;
+}
+
+a {
+    color: #81C3F4;
+    font-family: 'Open Sans ExtraBold', sans-serif;
+}
+
+a.white {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #4183c4;
+}
+
+/*
+    High level page layout
+*/
+
+body {
+    background-color: #17141D;
+    font-family: 'Open Sans Condensed Bold', sans-serif;
+    font-size: 16px;
+    color: #E7E4E6;
+}
+
+#calculator-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1290px;
+}
+
+#shiftstoned-heading {
+    margin-left: 40px;
+    height: 104px;
+    width: 1250px;
+}
+
+#calculator-body {
+    /* margin-left: 40px; */
+    background-color: #17141D;
+    border: 1px solid;
+    border-bottom: none;
+    width: 1250px;
+    min-height: 924px;
+}
+
+#influence-panel {
+    background-color: #533D4F;
+    border-bottom: 1px solid;
     width: 100%;
+    height: 100px;
+}
+
+#deck-edit-panel {
+    float: left;
+    background-color: #533D4F;
+    border-right: 1px solid;
+    width: 306px;
+    min-height: 1050px
+}
+
+#charts-panel {
+    float: left;
+    width: 942px;
+}
+
+#charts-menu {
+    height: 94px;
+    width: 100%;
+}
+
+#charts-heading {
+    width: 942px;
+    height: 74px;
+}
+
+#deck-title {
+  font-size: 45px;
+  line-height: 74px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Open Sans Condensed Bold', sans-serif;
+  max-height: 74px;
+}
+
+#calculator-body-footer {
+    clear: both;
+}
+
+.help {
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+/*
+    Heading elements
+*/
+
+#background {
+    position: fixed;
+    width: 140%;
     z-index: -1;
-    top: -100px;
+    /* top: -100px; */
     left: 0px;
     margin: 0px auto;
 }
 
-.cardset select {
-   background-color: #FFFFFF;
-   width: 268px;
-   height: 30px;
-   padding: 0px;
-   line-height: 1;
-   border: 0px solid #458A9E;
-   border-radius: 7px;
-   outline: none;
-   /* color: #458A9E; */
-   opacity: 1; /* Firefox */
-   /* font-style: italic; */
-   font-family: 'Open Sans', sans-serif;
-   }
+#heading-top {
+    position: relative;
+    width: 100%;
+    height: 65px;
+}
 
-/* Container for base page content */
-.bodyGrid {
-    margin-left: 40px;
+#heading-page-top {
+    width: 100%;
+    height: 39px;
     background-color: #17141D;
-    border: 0px solid;
-    border-bottom: none;
-    width: 1250px;
-    min-height: 1350px;
 }
 
-/* Background color and frame for base page layout grid */
-.newBodyGrid {
-    margin-left: 40px;
-    background-color: #17141D;
-    border: 0px solid;
-    border-bottom: none;
-    width: 1140px;
-    min-height: 1350px;
-}
-
-/* Container for individual card in Drafter */
-.cardBlock {
-  position: relative;
-  float: left;
-  margin: 15px;
-}
-
-.cardBlock img {
-    width: 160px;
-}
-
-/* Formatting for Drafter card block circular grade label */
-.gradeCircle {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  padding: 12px;
-  font-family: 'Merriweather', serif;
-  color: white;
-  text-align: center;
-  background-color: orange;
-  border: solid 3px #e6e6e6;
-  top: 10px;
-  left: 110px;
-  opacity: .9;
-  border-radius: 50%;
-}
-
-.gradeCircle.A {
-  background-color: #009666;
-}
-
-.gradeCircle.B {
-  background-color: #6E9619;
-}
-
-.gradeCircle.C {
-  background-color: #D8A020;
-}
-
-.gradeCircle.D {
-  background-color: #C87517;
-}
-
-.gradeCircle.F {
-  background-color: #971818;
-}
-
-.controlLabel {
-  float: left;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  margin-top: 10px;
-}
-
-global_header_home {
-  display: block;
-  color: #ffffff;
-  border: 0px solid;
-  margin-left: 325px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  margin-right: 250px;
-  font: 30px Open Sans Condensed Bold,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-  line-height: 1.2;
-}
-
-global_body {
-  display: block;
-  border: 10x solid;
-  margin-left: 325px;
-  width: 600px;
-  margin-bottom: 0px;
-  margin-top: 5px;
-  color: #ffffff;
-  font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-  line-height: 1.6;
-}
-
-.button {
-  color: #FFFFFF;
-  background-color: #333333;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  border-radius: 7px;
-  margin: 5px 5px 5px 0px;
-}
-
-.button4 {
-  padding: 5px;
-  border-top: 1px solid #458A9E;
-  border-right: 1px solid #458A9E;
-  border-left: 1px solid #458A9E;
-  border-bottom: 1px solid #11222A;
-  background-color: #322C4B;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  width: 100px;
-  height: 30px;
-  font-style: normal;
-}
-
-.button5 {
-  /* margin-left: 10px; */
-  padding: 5px;
-  border-top: 1px solid #458A9E;
-  border-right: 1px solid #458A9E;
-  border-left: 1px solid #458A9E;
-  border-bottom: 1px solid #458A9E;
-  background-color: #11222A;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  color: #458A9E;
-  width: 100px;
-  height: 30px;
-  font-style: normal;
-}
-
-hr.cbody {
-  margin-top: -6.5px;
-  margin-bottom: 0px;
-  height: 1.5px;
-  border: none;
-  color: #458A9E;
-  background-color: #458A9E;
-  width: 95%;
-}
-
-.newAbout-heading {
+#shiftstoned-img {
     position: absolute;
-    top: 12px;
-    left: 990px;
+    left: 23px;
+    top: 27px;
+}
+
+#power-calculator-img {
+    position: absolute;
+    left: 308px;
+    top: 16px;
+}
+
+#about-heading {
+    position: absolute;
+    top: 34px;
+    left: 1085px;
 
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    font-size: 14px;
+    font-family: 'Open Sans ExtraBold', sans-serif;
+    font-size: 20px;
 }
 
-#newNavigation-separator {
+#calc-heading {
+    position: absolute;
+    top: 34px;
+    left: 1000px;
+
+    <!-- cursor: pointer; -->
+    font-family: 'Open Sans ExtraBold', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/*
+    The nagivation menu in the upper right
+*/
+
+#navigation-separator {
     position: absolute;
     top: 10px;
-    left: 1060px;
+    left: 1176px;
+
     width: 2px;
     height: 44px;
     background-color: #FFFFFF;
 }
 
-/* Styling for decklist */
+#navigation-menu {
+    position: absolute;
+    left: 1200px;
+    top: 10px;
 
-.deckBox {
-  background-color: #2E2C3D;
-  padding: 5px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  width: 97%;
-  min-height: 800px;
-  margin-top: 34px;
-  border-left: 1px solid #458A9E;
-  border-top: 1px solid #458A9E;
-  border-right: 1px solid #458A9E;
-  border-top-right-radius: 7px;>
+    font-family: 'Open Sans ExtraBold', sans-serif;
 }
 
-.decklistRow {
-  margin-top: 1px;
-  float: left;
-  color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
-  width: 100%;
-  height: 40px;
-  line-height: 30px;
-  vertical-align: middle;
+#navigation-menu .menu {
+    left: auto;
+    right: 0px;
+
+    background-color: #2E2C3D;
+    border: 1px solid #FFFFFF;
 }
 
-.decklistRow.first {
-  margin-top: 8px;
-  float: left;
-  color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
-  width: 100%;
-  height: 40px;
-  line-height: 30px;
-  vertical-align: middle;
+#navigation-menu .menu > .item {
+    padding: 0px !important;
 }
 
-.decklistRow.cost {
-  width: 10%;
-  background-color: black;
-  padding: 5px;
-  text-align: center;
-  font-family: 'Merriweather', serif;r
+#navigation-menu a:hover {
+    border-radius: 5px;
+    background-color: #443D66;
 }
 
-.decklistRow.name {
-  width: 79%;
-  padding: 5px;
+#navigation-menu a {
+    padding: 14px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
 }
 
-.decklistRow.fire {
-  background-color: #A30C0E;
-}
-
-.decklistRow.time {
-  background-color: var(--TimeYellow);
-}
-
-.decklistRow.justice {
-  background-color: #3A6727;
-}
-
-.decklistRow.primal {
-  background-color: #033276;
-}
-
-.decklistRow.shadow {
-  background-color: #331745;
-}
-
-.decklistRow.multi {
-  background-color: var(--MultiBlack);
-}
-
-.decklistRow.neutral {
-  background-color: var(--NeutralGray);
-}
-
-.decklistRow.qty {
-  text-align: center;
-  margin-left: 2px;
-  width: 10%;
-  padding: 5px;
-}
-
-.decklistRow.common {
-  background-color: #333333;
-}
-
-.decklistRow.uncommon {
-  background-color: #236B08;
-}
-
-.decklistRow.rare {
-  background-color: #4F86BE;
-}
-
-.decklistRow.legendary {
-  background-color: #FF9521;
-}
-
-.decklistRow.promo {
-  background-color: var(--PromoPurple);
-}
-
-
-/* WC schools tooltip */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 240px;
-  background-color: #2E2C3D;
-  color: #fff;
-  border-radius: 6px;
-  padding: 10px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -60px;
-  border: solid 1px #458A9E;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-/* .commentBug {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  padding: 12px;
-  color: white;
-  text-align: center;
-  background-color: white;
-  bottom: 15px;
-  right: 130px;
-  opacity: .7;
-  border-radius: 50%;
-  line-height: 1.6;
-} */
-
-.commentImg {
-  position: absolute;
-  /* border: solid 5px red; */
-  padding: 60px;
-  bottom: -60px;
-  right: 50px;
-  opacity: .7;
+.navigation-menu-indent {
+    float: left;
+    width: 30px;
+    min-height: 1px;
 }
 
 
 /*
-Goofy text formatting for ARTICLES - needs to be reworked
+    Influence panel
 */
 
-textcol {
-  display: block;
-  color: #ffffff;
-  width: 600px;
-  margin: 50px auto;
-  font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-  line-height: 1.6;
+#influence-panel > div {
+    position: relative;
+    float: left;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-att {
-  display: block;
-  color: #ffffff;
-  margin: 50px auto;
-  margin-bottom: 7px;
-  margin-top: 0px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 40px;
+#influence-panel img {
+    position: absolute;
+    left: 72px;
+    top: -25px;
 }
 
-ats {
-  display: block;
-  color: #81C3F4;
-  margin: 0px auto;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  font: 20px Montserrat,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+#card-count-number, #power-sources-number {
+    margin-top: 28px;
 }
 
-atsub {
-  display: block;
-  color: #ffffff;
-  margin: 50px auto;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  font: 18px Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-  line-height: 1.4;
+#influence-panel #card-count-panel, #influence-panel #power-sources-panel {
+    width: 153px;
+    border-right: solid 1px;
+    font-family: 'Open Sans ExtraBold', sans-serif;
 }
 
-/* Homepage features */
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+#card-count-label, #power-sources-label {
+    margin-top: 19px;
+    font-size: 12px;
 }
 
-/* Clear floats after the columns */
-
-.row {
-  margin-top: 18px;
+.influence-number {
+    margin-top: 46px;
 }
 
-.row:after {
-  margin-top: 89px;
-  content: "";
-  display: table;
-  clear: both;
+/*  Use a partially transparent color for zeroed out influence counts  */
+.influence-number.zero {
+    color: rgba(255, 255, 255, 0.5);
 }
 
-/* Create three equal columns that floats next to each other */
-.homepageFeature {
-  float: left;
-  width: 33.33%;
-  padding: 0px;
-  border: solid 0px red;
-  font-size: 1.2em;
-  font-family: 'Open Sans',sans-serif;
-  font-weight: 600;
+#fire-sources-panel {
+    width: 188px;
+    background-color: #A30C0E;
 }
 
-.homepageFeature.center {
-  text-align: center;
+#time-sources-panel {
+    width: 189px;
+    background-color: #B26F03;
 }
 
-.homepageFeature.right {
-  text-align: right;
+#justice-sources-panel {
+    width: 188px;
+    background-color: #3A6727;
 }
 
-.homepageFeature img {
-  width: 339px;
-  height: 140px;
-  object-fit: cover;
-  border: solid 1px white;
+#primal-sources-panel {
+    width: 189px;
+    background-color: #033276;
 }
 
-.homepageFeatureLabel {
-  width: 330px;
-  text-align: center;
-  margin-bottom: 6px;
-  border: 0px orange solid;
+#shadow-sources-panel {
+    width: 188px;
+    background-color: #331745;
 }
 
-.homepageFeatureLabel.center {
-  margin-left: auto;
-  margin-right: auto;
+
+/*
+    Decklist editing panel
+*/
+
+.deck-edit-header,
+.deck-edit-footer {
+    margin: 30px 15px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.homepageFeatureLabel.right {
-  float: right;
+.deck-edit-header .button,
+.deck-edit-footer .button {
+    clear: both;
+    margin: 0px 0px 6px 0px;
+    padding: 0px;
+    height: 38px;
+}
+
+.deck-edit-header .button {
+    width: 96px;
+}
+
+.deck-edit-header #link-button {
+    width: 38px;
+}
+
+.deck-edit-header #ewc-button {
+    width: 44px;
+}
+
+.deck-edit-footer .button {
+    width: 118px;
+}
+
+#link-button img {
+    width: 18px;
+    height: 18px;
+}
+
+#ewc-button img {
+    width: 24px;
+    height: 18px;
+}
+
+#deck-edit-panel .deck-edit {
+    width: 305px;
+}
+
+.card-count-edit {
+    height: 32px;
+    margin-left: 30px;
+}
+
+.card-name {
+    clear: both;
+    float: left;
+    width: 158px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-name.fire {
+    font-style: italic;
+    color: #CC0000;
+}
+
+.card-name.time {
+    font-style: italic;
+    color: #F1C232;
+}
+
+.card-name.justice {
+    font-style: italic;
+    color: #6AA84F;
+}
+
+.card-name.primal {
+    font-style: italic;
+    color: #3C78D8;
+}
+
+.card-name.shadow {
+    font-style: italic;
+    color: #A64D79;
+}
+
+.card-name.multi {
+    font-style: italic;
+    color: #000000;
+}
+
+.card-count {
+    margin-left: 4px;
+    float: left;
+    width: 18px;
+}
+
+.deck-edit-section {
+    width: 245px;
+    margin: 25px;
+
+    font-family: 'Open Sans', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.deck-edit-section-description {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#deck-edit-panel .deck-edit button {
+    float: left;
+    width: 30px;
+    height: 22px;
+    padding: 2px;
+    margin: 0px 0px 0px 4px;
+    font-size: 16px;
+}
+
+#deck-edit-market-rows.add-disabled .add-button {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default;
+}
+
+/*
+    Charts panel menu
+*/
+
+.menu-item {
+    float: left;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #2E2E2E;
+}
+
+.menu-item.active {
+    background-color: #17141D;
+}
+
+#charts-menu img {
+    display: block;
+}
+
+#influence-graph-menu-title {
+    float: left;
+    margin: 40px 0px 0px 60px;
+}
+
+#power-odds-table-menu-title {
+    float: left;
+    margin: 40px 0px 0px 40px;
+}
+
+.output-tab-help-icon {
+    float: right;
+    margin: 40px 40px 0px 0px;
+}
+
+
+/*
+    Influence Graph style
+*/
+
+#power-graph-container {
+    position: relative;
+}
+
+#power-graph-div {
+    position: relative;
+    width: 942px;
+    height: 450px;
+}
+
+.power-graph-canvas {
+    display: block;
+    width: 942px;
+    height: 450px;
+}
+
+#power-table-sources {
+    clear: both;
+    font-size: 14px;
+    padding-top: 30px;
+    margin-left: 63px;
+    width: 814px;
+    text-align: center;
+}
+
+#graph-y-label {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    letter-spacing: 15px;
+
+    position: relative;
+    left: 906px;
+    padding-left: 114px;
+    width: 450px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+}
+
+#graph-x-label {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 6px;
+}
+
+.power-graph-popup-anchor {
+    height: 1px;
+    width: 1px;
+}
+
+.power-graph-popup.ui.popup {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.power-graph-popup-odds {
+    margin-bottom: 15px;
+}
+
+.power-graph-popup-cards {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*
+    Power type panel
+*/
+
+#power-type-panel {
+    margin-left: 72px;
+    margin-top: 94px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    width: 833px;
+    border-radius: 10px;
+    background-color: #27252D;
+    border: solid 1px #FFFFFF;
+}
+
+.power-type-item {
+    float: left;
+    margin-left: 42px;
+    margin-right: 42px;
+    width: 193px;
+    height: 66px;
+
+    text-align: center;
+    font-size: 18px;
+}
+
+.power-type-item img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.power-type-label {
+    margin: 22px 8px 22px 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.power-type-count {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+#power-type-panel-footer {
+    clear: both;
+}
+
+
+/*
+    Power Odds Table style
+*/
+
+#power-table-container {
+    position: relative;
+    font-family: 'Open Sans ExtraBold', sans-serif;
+    width: 812px;
+    margin-top: 8px;
+    margin-left: 64px;
+    float: left;
+}
+
+#power-table-cost-div {
+    width: 162px;
+    float: left;
+}
+
+#power-table-odds-div {
+    width: 650px;
+    float: left;
+    overflow-x: scroll;
+}
+
+#power-table-odds-div::-webkit-scrollbar-thumb {
+    background-color: #513D4E;
+}
+
+.power-table {
+    background-color: #000000;
+    border-collapse: collapse;
+}
+
+.power-table th,
+.power-table td {
+    border: 2px solid #000000;
+    height: 34px;
+}
+
+.power-table tr {
+    height: 2em;
+}
+
+.power-table-influence-icon {
+    vertical-align: bottom;
+}
+
+/*  Alternate row colors for readability  */
+.power-table tr:nth-child(even) {
+    background-color: #664B61;
+}
+
+.power-table tr:nth-child(odd) {
+    background-color: #533D4F;
+}
+
+.power-table-head-draws {
+    min-width: 160px;
+}
+
+.power-table-head-draw-count {
+    min-width: 50px;
+}
+
+.power-table-odds {
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    padding: 0px 8px 0px 8px;
+}
+
+.power-table-head-draw-count:first-child,
+.power-table-odds:first-child {
+    border-left: 0px;
+}
+
+/*  Darken cells with fewer draws than the number of power required  */
+tr:nth-child(even) .power-table-odds-shaded {
+    background-color: #3D2D3A;
+}
+
+tr:nth-child(odd) .power-table-odds-shaded {
+    background-color: #332530;
+}
+
+.odds-popup-content {
+    width: 150px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.table-cost-popup-content {
+    width: 150px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*
+    Import modal dialog
+*/
+
+#import-validation-result {
+    font-size: 14px;
+    height: 14px;
+    color: #400000;
+    text-align: center;
 }
 /* -----------------------------------------------------
  * Base styles
