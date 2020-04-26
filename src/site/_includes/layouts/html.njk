@@ -9,7 +9,7 @@
   {% include "partials/icons.njk" %}
 
   {% include "partials/themes.njk" %}
-  
+
   {% include "partials/fonts.njk" %}
 
   <!-- CSS -->
@@ -23,15 +23,15 @@
   <style>
     {% include "css/page/" + page_style %}
   </style>
-  {%- endif -%}
+  {% endif %}
 
   <!-- JAVASCRIPT -->
 
   <!-- load critical js -->
   <script src="/scripts/site.js" type="text/javascript"></script>
-  <!-- defer loading non-critical js -->
+  {#- <!-- defer loading non-critical js -->
   <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
-  <!-- inline page-specific js is located after <body> -->
+  <!-- inline page-specific js is located after <body> --> -#}
 
 </head>
 
