@@ -1,6 +1,6 @@
-<!-- Meta data for base.njk head goes here - temporarily hidden -->
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
 
-{# <meta charset="UTF-8">
+{#-- <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="author" content="{{ site.author.name }}">
@@ -9,25 +9,25 @@
   {%- if title or (renderData and renderData.title) -%}
     {{- title or (renderData and renderData.title)  | safe }} - {% endif -%}
   {{- site.metaTitle -}}
-</title> #}
+</title> --#}
 
-{# <!--
+{#-- <!--
 SOCIAL MEDIA TAGS
---> #}
+--> --#}
 
-{# <!-- Facebook / Open Graph protocol --> #}
-{# <meta property="og:site_name" content="{{ site.metaTitle }}">
+{#- <!-- Facebook / Open Graph protocol --> -#}
+{#- <meta property="og:site_name" content="{{ site.metaTitle }}">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/images/opengraph-logo.png">
-<meta property="og:url" content="{{ site.url }}"> #}
+<meta property="og:url" content="{{ site.url }}"> -#}
 
-{# <!-- Twitter --> #}
-{# <meta name="twitter:card" content="summary">
+{#- <!-- Twitter --> -#}
+{#- <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="{{ site.social.twitter }}">
-<meta name="twitter:creator" content="{{ site.author.twitter }}"> #}
+<meta name="twitter:creator" content="{{ site.author.twitter }}"> -#}
 
-{# <!-- Document-specific tags --> #}
-{# <meta property="og:title" content="
+{#- <!-- Document-specific tags --> -#}
+{#- <meta property="og:title" content="
   {%- if title or (renderData and renderData.title) -%}
     {{- title or (renderData and renderData.title)  | safe -}}
   {%- else -%}
@@ -56,4 +56,4 @@ SOCIAL MEDIA TAGS
     {{- description | safe -}}
   {%- else -%}
     {{- site.description -}}
-  {%- endif %}"> #}
+  {%- endif %}"> -#}
