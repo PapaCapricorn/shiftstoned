@@ -7,7 +7,11 @@
  * ----------------------------------------------------- */
 :root {
   /* non-theme css-variables */
+  --FireRed: #A30C0E;
   --TimeYellow: #B26F03;
+  --JusticeGreen: #3A6727;
+  --PrimalBlue: #033276;
+  --ShadowPurple: #331745;
   --MultiBlack: #111111;
   --NeutralGray: #2D2B2E;
   --PromoPurple: #7A17C0;
@@ -340,7 +344,7 @@ hr.cbody {
 }
 
 .decklistRow.fire {
-  background-color: #A30C0E;
+  background-color: var(--FireRed);
 }
 
 .decklistRow.time {
@@ -348,15 +352,15 @@ hr.cbody {
 }
 
 .decklistRow.justice {
-  background-color: #3A6727;
+  background-color: var(--JusticeGreen);
 }
 
 .decklistRow.primal {
-  background-color: #033276;
+  background-color: var(--PrimalBlue);
 }
 
 .decklistRow.shadow {
-  background-color: #331745;
+  background-color: var(--ShadowPurple);
 }
 
 .decklistRow.multi {
