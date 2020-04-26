@@ -50,7 +50,7 @@
 
     <!-- JAVASCRIPT (inline, page-specific) -->
     {#- if `page_script` data is passed, include that js partial here -#}
-    {%- if page_script %}
+    {%- if page_script -%}
     <!-- page-specific js -->
     <script type="text/javascript">
       {% include "js/page/" + page_script %}
