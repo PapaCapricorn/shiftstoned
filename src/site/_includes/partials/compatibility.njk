@@ -1,13 +1,13 @@
 <!-- Compatibility for older browsers goes here - temporarily hidden -->
 
-{# <!--
+{#- <!--
   Support for the HTML5 semantic elements in non-HTML5 browsers, even for
     Internet Explorer (8 and older, with fallback where it's is configured
     not to use scripting).
   Note: This code will cause the HTML validator to return errors.
 --> #}
 
-    {# <!--[if lt IE 9]>
+    {#- <!--[if lt IE 9]>
       <script>
         document.createElement("article");
         document.createElement("aside");
@@ -18,7 +18,7 @@
         document.createElement("time");
       </script>
     <![endif]--> #}
-    {# <noscript>
+    {#- <noscript>
       <div class="js-notification">
         <p><strong>This web page requires JavaScript to be enabled.</strong></p>
         <p>JavaScript is an object-oriented computer programming language
