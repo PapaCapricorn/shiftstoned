@@ -5,7 +5,7 @@
     Internet Explorer (8 and older, with fallback where it's is configured
     not to use scripting).
   Note: This code will cause the HTML validator to return errors.
---> #}
+--> -#}
 
     {#- <!--[if lt IE 9]>
       <script>
@@ -17,7 +17,7 @@
         document.createElement("section");
         document.createElement("time");
       </script>
-    <![endif]--> #}
+    <![endif]--> -#}
     {#- <noscript>
       <div class="js-notification">
         <p><strong>This web page requires JavaScript to be enabled.</strong></p>
@@ -25,4 +25,4 @@
           commonly used to create interactive effects within web browsers.</p>
         <p><a href="https://goo.gl/koeeaJ">How to enable JavaScript?</a></p>
       </div>
-    </noscript> #}
+    </noscript> -#}
