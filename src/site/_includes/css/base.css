@@ -289,7 +289,7 @@ hr.cbody {
     background-color: #FFFFFF;
 }
 
-/* Styling for decklist */
+/* Styling for decklist - move to separate file? */
 
 .deckBox {
   background-color: #2E2C3D;
@@ -395,7 +395,7 @@ hr.cbody {
 }
 
 
-/* WC schools tooltip */
+/* WC schools tooltip - can probably be removed */
 .tooltip {
   position: relative;
   display: inline-block;
@@ -436,21 +436,6 @@ hr.cbody {
   visibility: visible;
 }
 
-/* .commentBug {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  padding: 12px;
-  color: white;
-  text-align: center;
-  background-color: white;
-  bottom: 15px;
-  right: 130px;
-  opacity: .7;
-  border-radius: 50%;
-  line-height: 1.6;
-} */
-
 .commentImg {
   position: absolute;
   /* border: solid 5px red; */
@@ -462,7 +447,9 @@ hr.cbody {
 
 
 /*
-Goofy text formatting for ARTICLES - needs to be reworked
+
+  Goofy text formatting for ARTICLES - needs to be reworked
+
 */
 
 textcol {
@@ -503,7 +490,11 @@ atsub {
   line-height: 1.4;
 }
 
-/* Homepage features */
+/*
+
+  Homepage features
+
+*/
 
 /* Create three equal columns that floats next to each other */
 .column {
