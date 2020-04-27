@@ -19,6 +19,9 @@ module.exports = function(eleventyConfig) {
     // Use NJK files in `site/scripts/` to compile JS partials from `_includes/js/`
   eleventyConfig.addPassthroughCopy("./src/site/scripts/*.js");
   eleventyConfig.addPassthroughCopy("./src/site/scripts/*.css");
+
+  eleventyConfig.addPassthroughCopy("./src/site/epc/*.png");
+
   // 404 for local testing
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
