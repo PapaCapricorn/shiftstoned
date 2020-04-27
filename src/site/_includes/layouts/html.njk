@@ -11,8 +11,6 @@
   <!-- CSS -->
   <link href="{{ "/styles/site.css" | url }}" rel="stylesheet" type="text/css">
   <link href="/SSG-Sandbox/scripts/epc.css" rel="stylesheet" type="text/css">
-  <!-- JAVASCRIPT -->
-  {% include "partials/jsSrc.njk" %}
   {#- <!-- load critical js --> #}
   {# <script src="/scripts/site.js" type="text/javascript"></script> #}
   {#- <!-- defer loading non-critical js -->
@@ -42,6 +40,9 @@
       {{ content | safe }}
 
     </div>
+
+    <!-- JAVASCRIPT -->
+    {% include "partials/jsSrc.njk" %}
 
   </body>
 
