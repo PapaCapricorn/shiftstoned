@@ -16,11 +16,16 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/site/styles/*.woff");
   eleventyConfig.addPassthroughCopy("./src/site/styles/*.woff2");
     // Copy JS files from `site/scripts/` to `dist/scripts/`
-    // Use NJK files in `site/scripts/` to compile JS partials from `_includes/js/`
-  eleventyConfig.addPassthroughCopy("./src/site/scripts/*.js");
-  eleventyConfig.addPassthroughCopy("./src/site/scripts/*.css");
 
+    // Use NJK files in `site/scripts/` to compile JS partials from `_includes/js/`
+  // eleventyConfig.addPassthroughCopy("./src/site/scripts/*.js");
+  // eleventyConfig.addPassthroughCopy("./src/site/scripts/*.css");
+
+  // Copy faction sigil icons to 'epc/`
   eleventyConfig.addPassthroughCopy("./src/site/epc/*.png");
+
+  // Copy JavaScript directl into 'epc/` for local reference
+  eleventyConfig.addPassthroughCopy("./src/site/epc/*.js");
 
   // 404 for local testing
   eleventyConfig.setBrowserSyncConfig({
