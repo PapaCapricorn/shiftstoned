@@ -20,3 +20,16 @@
   border: 0px;
   font-family: 'Open Sans', sans-serif; padding: 2px;
 }
+
+.drafterPack select {
+   background-color: #FFFFFF;
+   width: 268px;
+   height: 30px;
+   padding: 0px;
+   line-height: 1;
+   border: 0px solid #458A9E;
+   border-radius: 7px;
+   outline: none;
+   opacity: 1; /* Firefox */
+   font-family: 'Open Sans', sans-serif;
+ }

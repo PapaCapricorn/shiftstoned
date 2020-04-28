@@ -102,21 +102,6 @@ display:block;
     margin: 0px auto;
 }
 
-.cardset select {
-   background-color: #FFFFFF;
-   width: 268px;
-   height: 30px;
-   padding: 0px;
-   line-height: 1;
-   border: 0px solid #458A9E;
-   border-radius: 7px;
-   outline: none;
-   /* color: #458A9E; */
-   opacity: 1; /* Firefox */
-   /* font-style: italic; */
-   font-family: 'Open Sans', sans-serif;
-   }
-
 /* Container for base page content */
 .bodyGrid {
     margin-left: 40px;
