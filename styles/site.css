@@ -712,6 +712,13 @@ Styles for the headbanner
   font-weight: 800;
   margin-top: 10px;
 }
+
+.drafterSearch {
+  height: 30px;
+  border-radius: 7px;
+  border: 0px;
+  font-family: 'Open Sans', sans-serif; padding: 2px;
+}
  /*
  * # Semantic UI - 2.3.1
  * https://github.com/Semantic-Org/Semantic-UI
