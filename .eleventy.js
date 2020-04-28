@@ -20,6 +20,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/site/scripts/*.js");
   eleventyConfig.addPassthroughCopy("./src/site/scripts/*.css");
 
+  // Copy EPC dependent scripts, styles and pngs to 'epc/'
+  eleventyConfig.addPassthroughCopy("./src/site/epc/*.css");
+  eleventyConfig.addPassthroughCopy("./src/site/epc/*.js");
   eleventyConfig.addPassthroughCopy("./src/site/epc/*.png");
 
   // 404 for local testing
