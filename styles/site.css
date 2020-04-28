@@ -190,13 +190,6 @@ display:block;
   background-color: #971818;
 }
 
-.controlLabel {
-  float: left;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  margin-top: 10px;
-}
-
 global_header_home {
   display: block;
   color: #ffffff;
@@ -711,6 +704,13 @@ Styles for the headbanner
 .drafterControlPanel {
   height: 70px;
   background-color: #2E2C3D;
+}
+
+.drafterControlLabel {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  margin-top: 10px;
 }
  /*
  * # Semantic UI - 2.3.1
