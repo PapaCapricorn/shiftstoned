@@ -704,6 +704,14 @@ Styles for the headbanner
     height: 100%;
     color: #FFFFFF;
 }
+/*
+  Unique styles for the Drafter tool
+*/
+
+.drafterControlPanel {
+  height: 70px;
+  background-color: #2E2C3D;
+}
  /*
  * # Semantic UI - 2.3.1
  * https://github.com/Semantic-Org/Semantic-UI
