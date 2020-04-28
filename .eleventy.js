@@ -24,9 +24,8 @@ module.exports = function(eleventyConfig) {
   // Copy faction sigil icons to 'epc/`
   eleventyConfig.addPassthroughCopy("./src/site/epc/*.png");
 
-  // Copy JavaScript anc CSS directly into 'epc/` for local reference
+  // Copy JavaScript directl into 'epc/` for local reference
   eleventyConfig.addPassthroughCopy("./src/site/epc/*.js");
-  eleventyConfig.addPassthroughCopy("./src/site/epc/*.css");
 
   // 404 for local testing
   eleventyConfig.setBrowserSyncConfig({
