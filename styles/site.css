@@ -717,6 +717,11 @@ Styles for the headbanner
    opacity: 1; /* Firefox */
    font-family: 'Open Sans', sans-serif;
  }
+
+.evaluatorImg {
+   width: 100px;
+   float: right; 
+}
  /*
  * # Semantic UI - 2.3.1
  * https://github.com/Semantic-Org/Semantic-UI
