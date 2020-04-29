@@ -36,5 +36,10 @@
 
 .evaluatorImg {
    width: 100px;
-   float: right; 
+   float: right;
+}
+
+.drafterCardCollection {
+  width: 68%;
+  float: left;
 }
