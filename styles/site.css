@@ -707,7 +707,7 @@ Styles for the headbanner
   margin: 5px 5px 5px 0px;
 }
 
-.tabSelected {
+.button.tabSelected {
   padding: 5px;
   border-top: 1px solid #458A9E;
   border-right: 1px solid #458A9E;
@@ -721,7 +721,7 @@ Styles for the headbanner
   font-style: normal;
 }
 
-.tabUnselected {
+.button.tabUnselected {
   /* margin-left: 10px; */
   padding: 5px;
   border-top: 1px solid #458A9E;
