@@ -720,12 +720,7 @@ Styles for the headbanner
 
 .evaluatorImg {
    width: 100px;
-   float: right;
-}
-
-.drafterCardCollection {
-  width: 68%;
-  float: left;
+   float: right; 
 }
  /*
  * # Semantic UI - 2.3.1
