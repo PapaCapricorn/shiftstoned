@@ -155,7 +155,7 @@
   margin: 5px 5px 5px 0px;
 }
 
-.button.tabSelected {
+.tabSelected {
   padding: 5px;
   border-top: 1px solid #458A9E;
   border-right: 1px solid #458A9E;
@@ -169,7 +169,7 @@
   font-style: normal;
 }
 
-.button.tabUnselected {
+.tabUnselected {
   /* margin-left: 10px; */
   padding: 5px;
   border-top: 1px solid #458A9E;
