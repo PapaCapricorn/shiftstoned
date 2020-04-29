@@ -150,48 +150,6 @@ global_body {
   line-height: 1.6;
 }
 
-.button {
-  color: #FFFFFF;
-  background-color: #333333;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  border-radius: 7px;
-  margin: 5px 5px 5px 0px;
-}
-
-.button4 {
-  padding: 5px;
-  border-top: 1px solid #458A9E;
-  border-right: 1px solid #458A9E;
-  border-left: 1px solid #458A9E;
-  border-bottom: 1px solid #11222A;
-  background-color: #322C4B;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  width: 100px;
-  height: 30px;
-  font-style: normal;
-}
-
-.button5 {
-  /* margin-left: 10px; */
-  padding: 5px;
-  border-top: 1px solid #458A9E;
-  border-right: 1px solid #458A9E;
-  border-left: 1px solid #458A9E;
-  border-bottom: 1px solid #458A9E;
-  background-color: #11222A;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  color: #458A9E;
-  width: 100px;
-  height: 30px;
-  font-style: normal;
-}
-
 hr.cbody {
   margin-top: -6.5px;
   margin-bottom: 0px;
@@ -734,6 +692,50 @@ Styles for the headbanner
   float: left;
   margin-top: 12px;
   margin-left: 10px;
+}
+
+/* Tab buttons for Deck and Pool */
+
+.button {
+  color: #FFFFFF;
+  background-color: #333333;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  border-radius: 7px;
+  margin: 5px 5px 5px 0px;
+}
+
+.button4 {
+  padding: 5px;
+  border-top: 1px solid #458A9E;
+  border-right: 1px solid #458A9E;
+  border-left: 1px solid #458A9E;
+  border-bottom: 1px solid #11222A;
+  background-color: #322C4B;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 100px;
+  height: 30px;
+  font-style: normal;
+}
+
+.button5 {
+  /* margin-left: 10px; */
+  padding: 5px;
+  border-top: 1px solid #458A9E;
+  border-right: 1px solid #458A9E;
+  border-left: 1px solid #458A9E;
+  border-bottom: 1px solid #458A9E;
+  background-color: #11222A;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: #458A9E;
+  width: 100px;
+  height: 30px;
+  font-style: normal;
 }
  /*
  * # Semantic UI - 2.3.1
