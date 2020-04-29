@@ -39,6 +39,8 @@
    float: right;
 }
 
+/* Formatting for Drafter card collection in the left panel */
+
 .drafterCardCollection {
   width: 68%;
   float: left;
