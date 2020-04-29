@@ -327,48 +327,6 @@ hr.cbody {
   background-color: var(--PromoPurple);
 }
 
-
-/* WC schools tooltip - can probably be removed */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 240px;
-  background-color: #2E2C3D;
-  color: #fff;
-  border-radius: 6px;
-  padding: 10px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -60px;
-  border: solid 1px #458A9E;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
 .commentImg {
   position: absolute;
   /* border: solid 5px red; */
@@ -726,6 +684,47 @@ Styles for the headbanner
 
 .gradeCircle.F {
   background-color: #971818;
+}
+
+/* WC schools tooltip - can probably be replaced */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: #2E2C3D;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  border: solid 1px #458A9E;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
  /*
  * # Semantic UI - 2.3.1
