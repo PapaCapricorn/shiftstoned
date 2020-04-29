@@ -33,3 +33,8 @@
    opacity: 1; /* Firefox */
    font-family: 'Open Sans', sans-serif;
  }
+
+.evaluatorImg {
+   width: 100px;
+   float: right; 
+}
