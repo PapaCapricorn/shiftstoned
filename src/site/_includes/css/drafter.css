@@ -43,3 +43,52 @@
   width: 68%;
   float: left;
 }
+
+/* Container for individual card in Drafter */
+.cardBlock {
+  position: relative;
+  float: left;
+  margin: 15px;
+}
+
+.cardBlock img {
+    width: 160px;
+}
+
+/* Formatting for Drafter card block circular grade label */
+.gradeCircle {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  padding: 12px;
+  font-family: 'Merriweather', serif;
+  color: white;
+  text-align: center;
+  background-color: orange;
+  border: solid 3px #e6e6e6;
+  top: 10px;
+  left: 110px;
+  opacity: .9;
+  border-radius: 50%;
+}
+
+.gradeCircle.A {
+  background-color: #009666;
+}
+
+.gradeCircle.B {
+  background-color: #6E9619;
+}
+
+.gradeCircle.C {
+  background-color: #D8A020;
+}
+
+.gradeCircle.D {
+  background-color: #C87517;
+}
+
+.gradeCircle.F {
+  background-color: #971818;
+}
