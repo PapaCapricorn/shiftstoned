@@ -17,11 +17,7 @@
   <!-- PAGE BODY -->
   <body>
 
-    <img class="background" src="{{ bg_img }}"
-    {%- if bgoffset %}
-      {{ bgoffset }}
-    {%- endif %}
-    />
+    <img class="background" src="{{ bg_img }}" {{ bgoffset }} />
 
     {% include "partials/headbanner.njk" %}
 
