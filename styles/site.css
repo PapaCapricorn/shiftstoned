@@ -23,6 +23,14 @@
   --RareBlue: #4F86BE;
   --LegendaryOrange: #FF9521;
   --PromoPurple: #7A17C0;
+
+  --BlackPearl: #17141D;
+  --DarkGray: #2E2E2E;
+  --WarmGray: #533D4F;
+  --DarkBlue: #2E2C3D;
+
+  --Links: #81C3F4;
+
 }
 
 * {
@@ -746,6 +754,29 @@ Styles for the headbanner
   width: 100px;
   height: 30px;
   font-style: normal;
+}
+
+.sequenceCircle {
+  display: inline-block;
+  font-family: 'Open Sans Condensed';
+  font-size: 12px;
+  line-height: 20px;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  padding: 0px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--WarmGray);
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.sequenceCircle.selected {
+  color: black;
+  background-color: var(--Links);
+  border: 1px solid white;
 }
  /*
  * # Semantic UI - 2.3.1
