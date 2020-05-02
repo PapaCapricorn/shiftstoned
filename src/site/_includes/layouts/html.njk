@@ -19,6 +19,12 @@
 
     <img class="background" src="{{ bg_img }}" />
 
+    {%- if offset %}
+
+    <!-- Recognizing a unique variable called offset, value: {{ offset }} -->
+
+    {%- endif %}
+
     {% include "partials/headbanner.njk" %}
 
     <!-- Main page content -->
