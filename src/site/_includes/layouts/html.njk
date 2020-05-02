@@ -17,13 +17,11 @@
   <!-- PAGE BODY -->
   <body>
 
-    <img class="background" src="{{ bg_img }}" />
+    <img class="background" src="{{ bg_img }}" {%- if offset %}
 
-    {%- if offset %}
+        {{ offset }}
 
-    <!-- Recognizing a unique variable called offset, value: {{ offset }} -->
-
-    {%- endif %}
+        {%- endif %} />
 
     {% include "partials/headbanner.njk" %}
 
