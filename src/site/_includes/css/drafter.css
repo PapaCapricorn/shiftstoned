@@ -211,3 +211,18 @@
   background-color: var(--Links);
   border: 1px solid white;
 }
+
+/* Column that holds the decklist - might appear in other layouts */
+
+.deckBox {
+  background-color: #2E2C3D;
+  padding: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  width: 97%;
+  min-height: 800px;
+  margin-top: 34px;
+  border-left: 1px solid #458A9E;
+  border-top: 1px solid #458A9E;
+  border-right: 1px solid #458A9E;
+  border-top-right-radius: 7px;>
+}
