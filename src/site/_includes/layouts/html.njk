@@ -17,13 +17,11 @@
   <!-- PAGE BODY -->
   <body>
 
-    <img class="background" src="{{ bg_img }}" {%- if offset %}
+    <img class="background" src="{{ bg_img }}" {%- if offset -%}
 
         style="{{ offset }}"
 
-        {%- endif %} />
-
-        <!-- stabilizer build -->
+        {%- endif -%} />
 
     {% include "partials/headbanner.njk" %}
 
