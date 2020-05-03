@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-
-  {% include "partials/meta.njk" %}
-  {% include "partials/compatibility.njk" %}
-  {% include "partials/icons.njk" %}
-  {% include "partials/themes.njk" %}
+{%- include "partials/meta.njk" %}
+{%- include "partials/compatibility.njk" %}
+{%- include "partials/icons.njk" %}
+{%- include "partials/themes.njk" %}
   <!-- FONTS -->
-  {% include "partials/fonts.njk" %}
-  <!-- CSS -->
-  <link href="{{ "/styles/site.css" | url }}" rel="stylesheet" type="text/css">
-  <link href="/SSG-Sandbox/epc/epc.css" rel="stylesheet" type="text/css">
+{%- include "partials/fonts.njk" %}
+{%- include "partials/html-head/styles.njk" %}
 
 </head>
 

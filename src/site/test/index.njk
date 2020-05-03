@@ -1,0 +1,15 @@
+---
+title: Test
+layout: layouts/html.njk
+page_style: test.css
+---
+<h2>Hover-tooltip test</h2>
+
+<p>
+{% hover_text %}
+Hover over me!
+{% hover_content %}
+Tooltip text...
+{% endhover_content %}
+{% endhover_text %}
+</p>

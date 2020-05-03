@@ -61,6 +61,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("svg", require("./src/utils/shortcodes/svg-icon.js")); */
   // insert faction icon
 eleventyConfig.addShortcode("icon", require("./src/utils/shortcodes/icon.js"));
+// hover text
+eleventyConfig.addPairedShortcode("hover_text", require("./src/utils/shortcodes/hover_text.js"));
+eleventyConfig.addPairedShortcode("hover_content", require("./src/utils/shortcodes/hover_content.js"));
 
 
   // check & format output
