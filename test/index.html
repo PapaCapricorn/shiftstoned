@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><!-- Meta data for index.njk head goes here - temporarily hidden --><!-- Compatibility for older browsers goes here - temporarily hidden --><!-- Resources for icons go here - temporarily hidden --><!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS --><link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+<!-- CSS -->
+    <link href="/SSG-Sandbox/styles/site.css" rel="stylesheet" type="text/css">
+    <link href="/SSG-Sandbox/epc/epc.css" rel="stylesheet" type="text/css">
+    <!-- page-specific styles -->
+    <style>
+    /* Variables for testing, should use site variables instead for production */
+:root {
+  --hover-bg: #2E2C3D;
+  --hover-border-color: #458A9E;
+  --sidebar-bg: #533d4f;
+
+  /* Transition easing variable */
+  --easing: cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+/* Testing only */
+body {
+  background-color: var(--sidebar-bg);
+  color: white;
+}
+.page-content {
+  text-align: center;
+}
+
+/* Hover styling, some styles are from the w3 tutorial and might need to be updated */
+.hoverable {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+.hoverable .hover-content {
+  width: 120px;
+  background-color: var(--hover-bg);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border: solid 1px var(--hover-border-color);
+
+  position: absolute;
+  z-index: 1;
+}
+
+/* Transition effects with reduced motion check */
+@media (prefers-reduced-motion: reduce) {
+  .hoverable .hover-content {
+    visibility: hidden;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hoverable .hover-content {
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 0.2s var(--easing), transform 0.2s var(--easing);
+  }
+}
+.hoverable:hover {
+  cursor: pointer;
+}
+.hoverable:hover .hover-content {
+  visibility: visible;
+  opacity: 100;
+  transform: scale(1);
+}
+
+/* Tooltip arrow */
+.hoverable .hover-content::after {
+  content: " ";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+}
+
+/* Position the tooltip text - default 'right', may be changed with javascript */
+.hoverable .hover-content[data-hover-position=right] {
+  top: -5px;
+  left: 105%;
+  transform-origin: left;
+}
+.hoverable .hover-content[data-hover-position=right]::after {
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-color: transparent var(--hover-border-color) transparent transparent;
+}
+.hoverable .hover-content[data-hover-position=left] {
+  top: -5px;
+  right: 105%;
+  transform-origin: right;
+}
+.hoverable .hover-content[data-hover-position=left]::after {
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-color: transparent transparent transparent var(--hover-border-color);
+}
+.hoverable .hover-content[data-hover-position=top] {
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  transform-origin: bottom;
+}
+.hoverable .hover-content[data-hover-position=top]::after {
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-color: var(--hover-border-color) transparent transparent transparent;
+}
+.hoverable .hover-content[data-hover-position=bottom] {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  transform-origin: top;
+}
+.hoverable .hover-content[data-hover-position=bottom]::after {
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-color: transparent transparent var(--hover-border-color) transparent;
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/SSG-Sandbox/"><img class="shiftstoned-img" src="/SSG-Sandbox/images/LogoShiftstoned.png" /></a>
+
+
+      <div class="ui dropdown" id="newNavigation-menu" tabindex="0">
+
+        <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+
+        <div class="menu left transition hidden" tabindex="-1">
+
+          <div class="item">
+            <a href="/SSG-Sandbox/">HOME </a>
+          </div>
+
+          <div class="item">
+            <a href="/SSG-Sandbox/epc/">POWER CALCULATOR </a>
+          </div>
+
+          <div class="item">
+            <div class="navigation-menu-indent">
+              <a href="/SSG-Sandbox/epc/about/">&bull;</a>
+            </div>
+            <a href="/SSG-Sandbox/epc/about/">Guide</a>
+          </div>
+
+          <div class="item">
+            <a href="/SSG-Sandbox/calendar/">COMMUNITY CALENDAR</a>
+          </div>
+
+          <div class="item">
+            <a href="/SSG-Sandbox/drafter/">DRAFTER</a>
+          </div>
+
+          <div class="item">
+            <a href="/SSG-Sandbox/players/">PLAYERS</a>
+          </div>
+
+          <div class="item">
+            <a href="/SSG-Sandbox/articles/">ARTICLES</a>
+          </div>
+
+          <div class="item">
+            <a href="/SSG-Sandbox/contact">CONTACT</a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <div class="newBodyGrid">
+
+      <h2>Hover-tooltip test</h2>
+
+<p>
+<span class="hoverable">
+Hover over me!
+<span class="hover-content" data-hover-position="right">
+Tooltip text...
+</span>
+</span>
+</p>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="/SSG-Sandbox/epc/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/SSG-Sandbox/epc/semantic.min.js"></script>
+    <script type="text/javascript" src="/SSG-Sandbox/epc/epc.min.js"></script>
+    <script type="text/javascript">$(".ui.dropdown").dropdown();</script>
+
+
+  </body>
+
+</html>
