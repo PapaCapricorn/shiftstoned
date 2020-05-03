@@ -104,7 +104,7 @@
   <link href="../_includes/css/drafter.css" rel="stylesheet" />
   <link href="../_includes/css/headbanner.css" rel="stylesheet" />
   <link href="../_includes/css/navmenu.css" rel="stylesheet" />
-  <link href="../_includes/css/semantic.min.css" rel="stylesheet" />
+  <link href="../_includes/css/decklist.css" rel="stylesheet" />  <link href="../_includes/css/semantic.min.css" rel="stylesheet" />
   <link href="../epc/epc.css" rel="stylesheet" />
 
 </head>
@@ -187,23 +187,20 @@
             <!-- Container for top controls -->
       <div class="drafterControlPanel">
 
+        <!-- <button
+            id="import-button" class="ui button">
+            IMPORT
+        </button>
+        <div
+            class="ui custom popup transition hidden">
+            <h1>Greetings Huckleberry!</h1>
+            Import or add a deck to get started
+        </div> -->
+
         <!-- Search control -->
         <div class="drafterControlLabel" style="margin-left: 25px;">
           S E A R C H<br>
           <input class="drafterSearch" type="text" placeholder="  Keyword" name="Search" >
-        </div>
-
-        <!-- Pack control -->
-        <div class="drafterControlLabel" style="margin-left: 50px; margin-right: 10px;">
-          P A C K
-          <div class="drafterPack">
-            <select>
-              <!-- <select class="ui fluid search selection dropdown"> -->
-              <option>&nbsp;Echoes of Eternity</option>
-              <option>&nbsp;Eternal Draft Pack</option>
-              <option>&nbsp;All</option>
-            </select>
-          </div>
         </div>
 
         <!-- Evaluator control -->
@@ -215,38 +212,32 @@
           <a href="EternalJourney/"><img class="evaluatorImg" style="margin-top: -75px; margin-right: -105px;" src="../images/EvaluatorJedi_EJ.png"></a>
         </div>
 
-        <div style="float: right; width: 40px;">
-          <img src="../images/graphing.jpg" style="width: 240px; margin-top: -39px; margin-left: -230px;">
-        </div>
+        <!-- Container for Graphs -->
+        <!-- <div class="drafterGraphs" style="width: 370px; height: 100%; float: right; border: 0px solid orange; background-color: var(--BlackPearl); margin-top: -20px;">
 
+          <div style="text-align: center;">
+            <hr>
+          </div>
+
+          <div class="typesColumn" style="text-align: center; width: 50%; float: left; font-family: 'Open Sans Condensed', Sans Serif;">
+            T Y P E S
+            <div style="height: 50px; width: 50px; line-height: 50px; padding: 12px; margin: auto; background-color: var(--TimeYellow); opacity: .9; border-radius: 50%;">
+            </div>
+          </div>
+
+          <div class="influenceColumn" style="text-align: center; width: 50%; float: left; font-family: 'Open Sans Condensed', Sans Serif;">
+            I N F L U E N C E
+            <div style="height: 50px; width: 50px; line-height: 50px; padding: 12px; margin: auto; background-color: var(--JusticeGreen); opacity: .9; border-radius: 50%;">
+              &nbsp;
+            </div>
+          </div>
+
+        </div> -->
 
       </div>
 
       <!-- Column for Drafter Cards -->
       <div class="drafterCardCollection">
-
-        <div style="text-align: center;">
-          <span style="font-family: Merriweather;">PACK:</a>
-          <div class="sequenceCircle selected">1</div>
-          <div class="sequenceCircle">2</div>
-          <div class="sequenceCircle">3</div>
-          <div class="sequenceCircle">4</div>
-
-          <span style="margin-left: 10px;">PICK:</span>
-          <div class="sequenceCircle selected">1</div>
-          <div class="sequenceCircle">2</div>
-          <div class="sequenceCircle">3</div>
-          <div class="sequenceCircle">4</div>
-          <div class="sequenceCircle">5</div>
-          <div class="sequenceCircle">6</div>
-          <div class="sequenceCircle">7</div>
-          <div class="sequenceCircle">8</div>
-          <div class="sequenceCircle">9</div>
-          <div class="sequenceCircle">10</div>
-          <div class="sequenceCircle">11</div>
-          <div class="sequenceCircle">12</div>
-          <hr style="width: 90%; border: 1px solid var(--WarmGray); opacity: .75;">
-        </div>
 
         <!-- Row 1 -->
         <div>
@@ -358,14 +349,14 @@
         </div>
 
         <!-- Column for Drafter Decklist -->
-        <div class="drafterDeckPanel">
+        <div class="drafterDeckPanel" style="margin-top: -100px;">
 
           <div>
             <button class="button button4" style="float: left;">POOL</button></a>
 
             <a class="tabs" href="">
             <button class="button button5" style="float: left;">DECK</a></button>
-
+            <br><br>
             <div style="font-size: 12px; float: left; font-family: 'Open Sans Condensed', sans-serif; margin: 5px;">IMPORT</div>
 
             <div style="font-size: 12px; float: left; font-family: 'Open Sans Condensed', sans-serif; margin: 5px;">EXPORT</div>
@@ -374,7 +365,7 @@
 
           </div>
 
-          <div class="deckBox" style="background-color: yellow;">
+          <div class="deckBox">
 
               <div class="decklistRow first">
                 <div class="decklistRow cost">
