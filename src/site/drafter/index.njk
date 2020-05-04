@@ -9,49 +9,33 @@ override:tags: []
 ---
       <!-- Container for top controls -->
       <div class="drafterControlPanel">
+        {%- include "partials/drafterControls.njk" %}
+      </div>
 
-        <!-- Search control -->
-        <div class="drafterControlLabel" style="margin-left: 25px;">
-          S E A R C H<br>
-          <input class="drafterSearch" type="text" placeholder="  Keyword" name="Search" >
+      <!-- Column for Drafter Decklist -->
+      <div class="drafterDeckPanel">
+
+        <div>
+          <button class="button button4" style="float: left;">POOL</button></a>
+
+          <a class="tabs" href="">
+          <button class="button button5" style="float: left;">DECK</a></button>
+
+          <div style="font-size: 12px; float: left; font-family: 'Open Sans Condensed', sans-serif; margin: 5px;">IMPORT</div>
+
+          <div style="font-size: 12px; float: left; font-family: 'Open Sans Condensed', sans-serif; margin: 5px;">EXPORT</div>
+
+          <div style="font-size: 12px; float: left; font-family: 'Open Sans Condensed', sans-serif; margin: 5px;">EPC</div>
+
         </div>
 
-        <!-- Evaluator control -->
-        <div class="drafterControlLabel" style="margin-left: 50px; margin-right: 10px;">
-          E V A L U A T O R
-          <div>
-            <a href="EternalJourney/">Eternal Journey</a>
-          </div>
-          <a href="EternalJourney/"><img class="evaluatorImg" style="margin-top: -75px; margin-right: -105px;" src="../images/EvaluatorJedi_EJ.png"></a>
+        <div class="deckBox">
+          {% include "partials/placeholder/decklist.njk" %}
         </div>
 
       </div>
 
       <!-- Column for Drafter Cards -->
-      <div class="drafterCardCollection">
-
+      <div class="drafterCardCollection"
         {%- include "partials/placeholder/drafterCardCollection.njk" %}
-
-
-        <!-- Column for Drafter Decklist -->
-        <div class="drafterDeckPanel">
-
-          <div>
-            <button class="button button4" style="float: left;">POOL</button></a>
-
-            <a class="tabs" href="">
-            <button class="button button5" style="float: left;">DECK</a></button>
-
-            <div style="font-size: 12px; float: left; font-family: 'Open Sans Condensed', sans-serif; margin: 5px;">IMPORT</div>
-
-            <div style="font-size: 12px; float: left; font-family: 'Open Sans Condensed', sans-serif; margin: 5px;">EXPORT</div>
-
-            <div style="font-size: 12px; float: left; font-family: 'Open Sans Condensed', sans-serif; margin: 5px;">EPC</div>
-
-          </div>
-
-          <div class="deckBox">
-            {% include "partials/placeholder/decklist.njk" %}
-          </div>
-
-        </div>
+      </div>
