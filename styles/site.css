@@ -457,7 +457,7 @@ Styles for the headbanner
 .drafterControlPanel {
   float: left;
   height: 70px;
-  width: 67%;
+  width: 68%;
   background-color: #2E2C3D;
 }
 
@@ -496,7 +496,7 @@ Styles for the headbanner
 /* Formatting for Drafter card collection in the left panel */
 
 .drafterCardCollection {
-  width: 67%;
+  width: 68%;
   float: left;
 }
 
@@ -593,7 +593,7 @@ Styles for the headbanner
 /* Decklist column for layout */
 
 .drafterDeckPanel {
-  width: 33%;
+  width: 30%;
   float: right;
   /* margin-top: 12px;
   margin-left: 10px; */
