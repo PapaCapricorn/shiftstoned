@@ -3,7 +3,9 @@
 */
 
 .drafterControlPanel {
+  float: left;
   height: 70px;
+  width: 67%;
   background-color: #2E2C3D;
 }
 
@@ -42,7 +44,7 @@
 /* Formatting for Drafter card collection in the left panel */
 
 .drafterCardCollection {
-  width: 68%;
+  width: 67%;
   float: left;
 }
 
@@ -139,10 +141,10 @@
 /* Decklist column for layout */
 
 .drafterDeckPanel {
-  width: 30%;
-  float: left;
-  margin-top: 12px;
-  margin-left: 10px;
+  width: 33%;
+  float: right;
+  /* margin-top: 12px;
+  margin-left: 10px; */
 }
 
 /* Tab buttons for Deck and Pool */
