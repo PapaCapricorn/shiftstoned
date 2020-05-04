@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+{%- include "partials/html-head/gtag.njk" %}
 {%- include "partials/html-head/meta.njk" %}
 {%- include "partials/html-head/compatibility.njk" %}
 {%- include "partials/html-head/icons.njk" %}
@@ -16,7 +17,7 @@
 
     <img class="background" src="{{ bg_img }}" {% if offset -%} style="{{ offset }}" {%- endif -%} />
 
-    {% include "partials/headbanner.njk" %}
+    {% include "partials/navigation/headbanner.njk" %}
 
     <!-- Main page content -->
     <div class="newBodyGrid">
@@ -26,7 +27,7 @@
     </div>
 
     <!-- JAVASCRIPT -->
-    {% include "partials/jsSrc.njk" %}
+    {% include "partials/scripts/jsSrc.njk" %}
 
   </body>
 
