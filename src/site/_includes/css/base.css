@@ -20,14 +20,14 @@
   --LegendaryOrange: #FF9521;
   --PromoPurple: #7A17C0;
 
-  --BlackPearl: #17141D;
-  --DarkGray: #2E2E2E;
-  --WarmGray: #533D4F;
-  --DarkBlue: #2E2C3D;
-  --Navy: #322C4B;
-
-  --Links: #81C3F4;
-
+  /* Shiftstoned colors */
+  --Cinder: #17141D;
+  --MineShaft: #2E2E2E;
+  --Eggplant: #533D4F;
+  --Charade: #2E2C3D;
+  --Martinique: #322C4B;
+  --Malachite: #458A9E;
+  --Malibu: #81C3F4;
 }
 
 * {
@@ -304,4 +304,19 @@ atsub {
 
 .homepageFeatureLabel.right {
   float: right;
+}
+
+
+.tutorialTip {
+  background-color: var(--Charade);
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  font-family: 'Merriweather',serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  border: solid 1px var(--Malachite);
+  text-align: center;
 }
