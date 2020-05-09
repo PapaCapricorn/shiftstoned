@@ -24,14 +24,14 @@
   --LegendaryOrange: #FF9521;
   --PromoPurple: #7A17C0;
 
-  --BlackPearl: #17141D;
-  --DarkGray: #2E2E2E;
-  --WarmGray: #533D4F;
-  --DarkBlue: #2E2C3D;
-  --Navy: #322C4B;
-
-  --Links: #81C3F4;
-
+  /* Shiftstoned colors */
+  --Cinder: #17141D;
+  --MineShaft: #2E2E2E;
+  --Eggplant: #533D4F;
+  --Charade: #2E2C3D;
+  --Martinique: #322C4B;
+  --Malachite: #458A9E;
+  --Malibu: #81C3F4;
 }
 
 * {
@@ -309,6 +309,21 @@ atsub {
 .homepageFeatureLabel.right {
   float: right;
 }
+
+
+.tutorialTip {
+  background-color: var(--Charade);
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  font-family: 'Merriweather',serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  border: solid 1px var(--Malachite);
+  text-align: center;
+}
 /*
 Styles for the headbanner
 */
@@ -579,12 +594,12 @@ Styles for the headbanner
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 50%;
   margin-left: -5px;
-  border-width: 5px;
+  border-width: 15px;
   border-style: solid;
-  border-color: black transparent transparent transparent;
+  border-color: white transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
@@ -594,7 +609,7 @@ Styles for the headbanner
 /* Decklist column for layout */
 
 .drafterDeckPanel {
-  width: 30%;
+  width: 32%;
   float: right;
   /* margin-top: 12px;
   margin-left: 10px; */
@@ -611,7 +626,7 @@ Styles for the headbanner
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   border-radius: 7px;
-  margin: 5px 5px 5px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .button4 {
@@ -619,7 +634,7 @@ Styles for the headbanner
   border-top: 1px solid #458A9E;
   border-right: 1px solid #458A9E;
   border-left: 1px solid #458A9E;
-  border-bottom: 1px solid #11222A;
+  border-bottom: 1px solid var(--Martinique);
   background-color: #322C4B;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -656,7 +671,7 @@ Styles for the headbanner
   color: white;
   text-align: center;
   text-decoration: none;
-  background-color: var(--WarmGray);
+  background-color: var(--Eggplant);
   border-radius: 50%;
   margin-top: 10px;
 }
@@ -670,16 +685,29 @@ Styles for the headbanner
 /* Column that holds the decklist - might appear in other layouts */
 
 .deckBox {
-  background-color: #2E2C3D;
-  padding: 5px;
+  background-color: var(--Charade);
+  padding: 0px; /* Add padding to decklist */
   font-family: 'Open Sans Condensed', sans-serif;
   width: 97%;
   min-height: 800px;
-  margin-top: 34px;
+  margin-top: 0px;
   border-left: 1px solid #458A9E;
   border-top: 1px solid #458A9E;
   border-right: 1px solid #458A9E;
   border-top-right-radius: 7px;>
+}
+
+.deckBoxButton {
+  font-size: 12px;
+  float: right;
+  font-family: 'Open Sans Condensed',
+  sans-serif;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 2px;
+  width: 50px;
+  text-align: center;
 }
 
 /* -----------------------------------------------------
