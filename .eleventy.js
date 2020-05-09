@@ -82,6 +82,6 @@ eleventyConfig.addPairedShortcode("hover_content", require("./src/utils/shortcod
     markdownTemplateEngine : "njk",
     passthroughFileCopy: true,
     // Set prefix url for GitHub pages hosting
-    pathPrefix: "/SSG-Sandbox/"
+    pathPrefix: ""
   };
 };
