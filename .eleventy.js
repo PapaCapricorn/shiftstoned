@@ -25,6 +25,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/site/epc/*.js");
   eleventyConfig.addPassthroughCopy("./src/site/epc/*.png");
 
+  // Passthrough CNAME file
+  eleventyConfig.addPassthroughCopy("./src/site/CNAME");
+
+
   // 404 for local testing
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
