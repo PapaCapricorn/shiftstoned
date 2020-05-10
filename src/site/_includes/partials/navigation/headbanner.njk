@@ -2,7 +2,7 @@
 
       <div class="newHeading-top">
 
-        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.png" /></a>
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.png" {% if homepage_logo -%} style="{{ homepage_logo }}" {%- endif -%}/></a>
 
         {%- if section %}
 
