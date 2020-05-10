@@ -1,8 +1,8 @@
 {
   "metaTitle": "ShiftStoned",
   "url": "http://localhost:8080/",
-  "url-real": "https://sometestsite.com/",
-  "twitter": "@Site",
+  "url-real": "https://shiftstoned.com/",
+  "twitter": "@shiftstoned",
   "author": {
     "name": "Site-Author",
     "email": "Site@Author-Email",
@@ -16,5 +16,5 @@
     "reddit": "",
     "discord": ""
   },
-  "description": "Proident voluptate cupidatat proident dolor commodo sit est Lorem Lorem tempor ad aliqua officia nulla."
+  "description": "Fan-built player resources for Eternal Card Game."
 }
