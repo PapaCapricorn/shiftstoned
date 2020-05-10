@@ -7,9 +7,9 @@
 <meta name="description" content="{{ site.description }}"> #}
 <title>
   {%- if title or (renderData and renderData.title) -%}
-    {{- title or (renderData and renderData.title)  | safe }} - {% endif -%}
+    {{- title or (renderData and renderData.title)  | safe }} | {% endif -%}
   {{- site.metaTitle -}}
-</title> 
+</title>
 
 {#-- <!--
 SOCIAL MEDIA TAGS
