@@ -15,49 +15,36 @@ override:tags: []
       <!-- Column for Drafter Decklist -->
       <div class="drafterDeckPanel">
 
-        <div>
-          <button class="button button4" style="float: left;">POOL</button></a>
-
-          <a class="tabs" href="">
-          <button class="button button5" style="float: left;">DECK</a></button>
-
-          <div style="font-size: 12px; float: left; font-family: 'Open Sans Condensed', sans-serif; margin: 5px;">IMPORT</div>
-
-          <div style="font-size: 12px; float: left; font-family: 'Open Sans Condensed', sans-serif; margin: 5px;">EXPORT</div>
-
-          <div style="font-size: 12px; float: left; font-family: 'Open Sans Condensed', sans-serif; margin: 5px;">EPC</div>
-
-        </div>
-
-        <!-- Container for Graphs -->
-        <div class="drafterGraphs" style="float: right;">
-
-          <div style="text-align: center;">
-            <hr>
-          </div>
-
-          <div class="typesColumn" style="text-align: center; width: 50%; float: left; font-family: 'Open Sans Condensed', Sans Serif;">
-            T Y P E S
-            <div style="height: 50px; width: 50px; line-height: 50px; padding: 12px; margin: auto; background-color: var(--TimeYellow); opacity: .9; border-radius: 50%;">
-            </div>
-          </div>
-
-          <div class="influenceColumn" style="text-align: center; width: 50%; float: left; font-family: 'Open Sans Condensed', Sans Serif;">
-            I N F L U E N C E
-            <div style="height: 50px; width: 50px; line-height: 50px; padding: 12px; margin: auto; background-color: var(--JusticeGreen); opacity: .9; border-radius: 50%;">
-              &nbsp;
-            </div>
-          </div>
-
-        </div>
-
-        <div class="deckBox">
-          {% include "partials/placeholder/decklist.njk" %}
-        </div>
-
       </div>
 
       <!-- Column for Drafter Cards -->
       <div class="drafterCardCollection"
-        {%- include "partials/placeholder/drafterCardCollection.njk" %}
+      <div class="tooltip">
+        <span class="tutorialTip" style="width: 300px;
+          height: 80px;  margin-left: 20px; top: -10px;"><span style="font-size: 22px;">Greetings Huckleberry!</span><br>
+        Search for a Draft pick to get started</span>
       </div>
+
+      <!-- Row 1 -->
+      <div>
+
+        <div class="cardBlock" style="margin-left: 340px; top: -0px;">
+
+          <img src="../images/PhantomCard.png">
+
+          <div class="gradeCircle">
+            <h4>B+</h4>
+            <div class="tooltip">
+              <span class="tutorialTip" style="font-family: 'Merriweather',serif; visibility: visible; width: 150px; height: 60px; margin-left: 30px; top: -80px;">Card grades appear here in circles</span>
+            </div>
+          </div>
+
+          <div class="tooltip">
+            <span class="tutorialTip" style="font-family: 'Merriweather',serif; visibility: visible; width: 290px; height: 60px; margin-left: -230px; top: -80px; text-align: center; opacity: .9">Hover over cards to view comments. <br>Click to add to your Pool or Deck.</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
