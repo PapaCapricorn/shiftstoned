@@ -208,6 +208,7 @@ hr.cbody {
   line-height: 1.6;
 }
 
+/* Formerly <att> */
 .title {
   display: block;
   color: #ffffff;
@@ -218,6 +219,7 @@ hr.cbody {
   font-size: 40px;
 }
 
+/* Formerly <ats> */
 .subtitle {
   display: block;
   color: #81C3F4;
@@ -227,7 +229,8 @@ hr.cbody {
   font: 20px Montserrat,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
 
-atsub {
+/* Formerly <atsub> */
+.subheading {
   display: block;
   color: #ffffff;
   margin: 50px auto;
