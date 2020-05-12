@@ -240,6 +240,7 @@ hr.cbody {
   line-height: 1.4;
 }
 
+/* Formerly <ath> */
 .subheading {
   display: block;
   color: #ffffff;
@@ -250,13 +251,17 @@ hr.cbody {
   font-weight: 700;
 }
 
+.subheading.first {
+  margin-top: 15px;
+}
+
 /*
 
   Homepage features
 
 */
 
-/* Create three equal columns that floats next to each other */
+/* Create three equal columns that float next to each other */
 .column {
   float: left;
   width: 33.33%;
