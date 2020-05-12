@@ -242,11 +242,8 @@ hr.cbody {
 
 /* Formerly <ath> */
 .subheading {
-  display: block;
-  color: #ffffff;
-  margin: 0px auto;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 15px;
+  margin-bottom: 8px;
   font: 30px 'Open Sans Condensed', sans-serif,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   font-weight: 700;
 }
