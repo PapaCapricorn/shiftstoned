@@ -1,5 +1,6 @@
 {
     "layout" : "layouts/base.njk",
     "tags" : "articles",
-    "templateEngineOverride": "njk,md"
+    "templateEngineOverride": "njk,md",
+    "bg_img": "CrypticEtchings.jpeg"
   }
