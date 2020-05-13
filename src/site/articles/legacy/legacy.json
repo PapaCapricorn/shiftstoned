@@ -1,0 +1,5 @@
+{
+    "layout" : "layouts/html.njk",
+    "tags" : "articles",
+    "templateEngineOverride": "njk,md"
+  }
