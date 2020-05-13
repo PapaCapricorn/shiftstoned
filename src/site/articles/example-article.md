@@ -1,6 +1,7 @@
 ---
 title: An example article
 date: Last Modified
+eleventyExcludeFromCollections: true
 ---
 
 This is in the MD: <a href="../">Link to articles index</a>
