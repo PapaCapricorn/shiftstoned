@@ -926,7 +926,7 @@ textcol {
   display: block;
   color: #ffffff;
   width: 600px;
-  margin: 50px auto;
+  margin: 50px auto 50px 320px;
   font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   line-height: 1.6;
 }
