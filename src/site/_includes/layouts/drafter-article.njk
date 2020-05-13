@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+---
+<h1>{{ title | safe }}</h1>
+
+<section class="intro">
+  {{ content | safe }}
+</section>
+
+<section class="ratings-list">
+  <h2>Card Ratings</h2>
+  <div class="filters">Filters here</div>
+
+  {%- set card_data = test_draft_data %}
+  {%- for card in card_data %}
+  {%- set evaluation = card.ratings[evaluator_id] %}
+
+  <section 
+    class="card-rating"
+    data-card-set-id="{{ card.set_id }}"
+    data-card-type="{{ card.card_type }}"
+    data-card-faction="{{ card.unique_influence }}"
+    data-card-rarity="{{ card.rarity }}"
+    data-rating="{{ evaluation.grade }}" >
+    <h3>{{ card.name | safe }}</h3>
+    <img class="card-image">
+    <div class="grade">{{ evaluation.grade }}</div>
+    <p>{{ evaluation.notes | safe }}</p>
+  </section>
+
+  {%- else %}
+  <p>The card data file was empty or didn't parse correctly!</p>
+  {%- endfor %}
+</section>

@@ -1,0 +1,7 @@
+{
+    "layout" : "layouts/drafter-article.njk",
+    "tags" : "articles",
+    "permalink": "/drafter/eternal-journey/{{ page.fileSlug }}/",
+    "templateEngineOverride": "njk,md",
+    "evaluator_id": "ej"
+  }
