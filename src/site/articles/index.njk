@@ -1,13 +1,18 @@
 ---
 title: Articles
-layout: layouts/base.njk
 bg_img: ../images/BackgroundArticles.jpg
 section: Articles
 override:tags: []
 page_style: articles-index-test.css
+pagination:
+  data: collections.articles
+  alias: articles
+  size: 12
+  reverse: true
+permalink: "/articles/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 <section class="articles-list">
-{%- for article in collections.articles %}
+{%- for article in articles %}
   <article class="article-brief">
     <header>
       <h2><a href="{{ article.url }}">{{ article.data['meta-title'] }}</a></h2>
@@ -26,3 +31,21 @@ page_style: articles-index-test.css
   </article>
 {%- endfor %}
 </section>
+
+<nav class="page-selector">
+  {% if pagination.previousPageHref %}
+    <a href="{{ pagination.previousPageHref }}" class="page-numbers">
+      Previous
+    </a>
+  {% else %}
+    <span class="page-numbers">Previous</span>
+  {% endif %}
+  <span class="page-numbers ">
+    Page: {{ pagination.pageNumber + 1 }} of {{ pagination.links | length  }}
+  </span>
+  {% if pagination.nextPageHref %}
+    <a href="{{ pagination.nextPageHref }}" class="page-numbers">Next</a>
+  {% else %}
+    <span class="page-numbers">Next</span>
+  {% endif %}
+</nav>

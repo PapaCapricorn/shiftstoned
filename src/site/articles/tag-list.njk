@@ -1,0 +1,35 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - articles
+    - drafter
+permalink: /articles/tags/{{ tag }}/
+page_style: articles-index-test.css
+---
+<section class="articles-list">
+<h1>Articles tagged “{{ tag }}”</h1>
+
+{%- set taglist = collections[ tag ] %}
+{%- for article in taglist | reverse %}
+  <article class="article-brief">
+    <header>
+      <h2><a href="{{ article.url }}">{{ article.data['meta-title'] }}</a></h2>
+    </header>
+    <div class="article-image">
+      <a href="{{ article.url }}"><img src="{{ article.data['meta-image'] }}" /></a>
+    </div>
+    <section class="article-description">
+      <p>
+        <time datetime="{{ article.date}}">{{ article.date}}</time> - {{ article.data.description }}
+      </p>
+    </section>
+    <footer>
+      <p><a href="{{ article.url }}">Read more &#9658;</a></p>
+    </footer>
+  </article>
+{%- endfor %}
+</section>
