@@ -1,0 +1,6 @@
+{
+    "layout" : "layouts/drafter-article.njk",
+    "tags" : "articles",
+    "templateEngineOverride": "njk,md",
+    "bg_img": "/images/BackgroundDrafter.jpg"
+  }

@@ -11,7 +11,7 @@ layout: layouts/base.njk
   <h2>Card Ratings</h2>
   <div class="filters">Filters here</div>
 
-  {%- set card_data = test_draft_data %}
+  {# {%- set card_data = test_draft_data %} #}
   {%- for card in card_data %}
   {%- set evaluation = card.ratings[evaluator_id] %}
 
