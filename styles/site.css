@@ -10,7 +10,7 @@
 
   /* Faction colors */
   --FireRed: #A30C0E;
-  --TimeYellow: #B26F03;
+  --TimeYellow: #B26F03;oo
   --JusticeGreen: #3A6727;
   --PrimalBlue: #033276;
   --ShadowPurple: #331745;
@@ -254,6 +254,16 @@ hr.cbody {
 
 .subheading.first {
   margin-top: 15px;
+}
+
+.atsub {
+  display: block;
+  color: #ffffff;
+  margin: 50px auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font: 18px Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  line-height: 1.4;
 }
 
 /*
