@@ -1,7 +1,7 @@
 /* -----------------------------------------------------
  * Base styles
  * ----------------------------------------------------- */
-:root {
+ :root {
   /* non-theme css-variables */
 
   /* Faction colors */
@@ -28,6 +28,9 @@
   --Martinique: #322C4B;
   --Malachite: #458A9E;
   --Malibu: #81C3F4;
+  
+  /* Misc */
+  --header-height: 104px;
 }
 
 * {
@@ -136,7 +139,7 @@ display:block;
     border: 0px solid;
     border-bottom: none;
     width: 1140px;
-    min-height: 1350px;
+    min-height: calc(100vh - var(--header-height));
 }
 
 global_header_home {
