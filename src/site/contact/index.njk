@@ -6,42 +6,30 @@ title: Contact
 legacy: legacy.css
 page_style: contact.css
 ---
-<div id="transparent_body">
+<div style="text-align: center;">
 
-<pg></pg>
+  <form action="https://mailthis.to/ShiftStoned" method="POST">
 
-          <center>
+    <!-- <label for="fname">Name</label> -->
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-            <div class="container" bg="#000000">
+    <p>
+    <!-- <label for="reply">email</label> -->
+    <input type="text" id="reply" name="_replyto" placeholder="Your email..">
 
-              <center>
-                <img src="../guide/images/download.png" margin-bottom="0" margin-left="50" height="0" width="800">
-              </center>
+    <p>
+    <!-- <label for="subject">Subject</label> -->
+    <input type="text" id="reply" name="subject" placeholder="Subject">
 
-              <form action="https://mailthis.to/ShiftStoned" method="POST">
+    <p>
+    <!-- <label for="message">Message</label> -->
+    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
 
-                <!-- <label for="fname">Name</label> -->
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="hidden" name="_after" value="https://ssg.shiftstoned.com/contact/thanks/index.html" />
 
-                <p>
-                <!-- <label for="reply">email</label> -->
-                <input type="text" id="reply" name="_replyto" placeholder="Your email..">
+    <br>
+    <input type="submit" value="Submit">
 
-                <p>
-                <!-- <label for="subject">Subject</label> -->
-                <input type="text" id="reply" name="subject" placeholder="Subject">
+  </form>
 
-                <p>
-                <!-- <label for="message">Message</label> -->
-                <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-
-                <input type="hidden" name="_after" value="https://ssg.shiftstoned.com/contact/thanks/index.html" />
-
-                <br>
-                <input type="submit" value="Submit">
-
-              </form>
-
-            </div>
-
-        </center>
+</div>
