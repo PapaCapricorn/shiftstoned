@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -10,7 +11,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+
   <title>Contact | ShiftStoned</title>
 
 <!-- Compatibility for older browsers goes here - temporarily hidden -->
@@ -24,9 +25,16 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 
   <!-- CSS -->
-  <link href="/styles/site.css" rel="stylesheet" type="text/css">
-  <link href="/epc/epc.css" rel="stylesheet" type="text/css">
-  <link href="/styles/legacy.css" rel="stylesheet" type="text/css">
+  <link href="../_includes/css/base.css" rel="stylesheet" />
+  <link href="../styles/legacy.css" rel="stylesheet" />
+  <link href="../_includes/css/body.css" rel="stylesheet" />
+  <link href="../_includes/css/drafter.css" rel="stylesheet" />
+  <link href="../_includes/css/headbanner.css" rel="stylesheet" />
+  <link href="../_includes/css/navmenu.css" rel="stylesheet" />
+  <link href="../_includes/css/decklist.css" rel="stylesheet" />  <link href="../_includes/css/semantic.min.css" rel="stylesheet" />
+  <link href="../epc/epc.css" rel="stylesheet" />
+
+
     <!-- page-specific styles -->
     <style>
     /* Styles for inputs on Contact form */
@@ -57,10 +65,9 @@
 
    .container {
        border-radius: 0px;
-       /* background-color: #f2f2f2; */
-       background-color: red;
+       background-color: #f2f2f2;
        padding: 20px;
-       /* width: 1000; */
+       width: 1000;
    }
 
     </style>
@@ -77,9 +84,9 @@
 
       <div class="newHeading-top">
 
-        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+        <a href="/"><img class="shiftstoned-img" src="../images/LogoShiftstoned.svg" /></a>
 
-        <a href="/contact"><img alt="Contact" class="power-calculator-img" src="/images/HeaderContact.png" title="Contact" /></a>
+        <a href="/contact"><img alt="Contact" class="power-calculator-img" src="../images/HeaderContact.png" title="Contact" /></a>
 
 
       <div class="ui dropdown" id="newNavigation-menu" tabindex="0">
@@ -140,23 +147,32 @@
     <!-- Main page content -->
     <div class="newBodyGrid">
 
+
+
+      <!-- Main page content -->
+        <div class="newBodyGrid">
+
+          <!-- <div id="transparent_body"> -->
+
       <div style="text-align: center;">
 
-    <h1 class="title">Thanks Huckleberry!</h1>
-    <p>
-      Let's keep in touch. Return to <a href="/">ShiftStoned home</a> &#9658;
-    </p>
-    <a href="http://www.papacapricorn.com" target="_blank"><img width="54" src="../images/capricorn.png"></a>
+          <h1 class="title">Thanks Huckleberry!</h1>
+          <p>
+            Let's keep in touch. Return to <a href="/">ShiftStoned home</a> &#9658;
+          </p>
+          <a href="http://www.papacapricorn.com" target="_blank"><img width="54" src="../images/capricorn.png"></a>
 
-</div>
-
+      </div>
 
     </div>
 
+
+        </div>
+
     <!-- JAVASCRIPT -->
-    <script type="text/javascript" src="/epc/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="/epc/semantic.min.js"></script>
-    <script type="text/javascript" src="/epc/epc.min.js"></script>
+    <script type="text/javascript" src="../epc/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../epc/semantic.min.js"></script>
+    <script type="text/javascript" src="../epc/epc.min.js"></script>
     <script type="text/javascript">$(".ui.dropdown").dropdown();</script>
 
 
