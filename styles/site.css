@@ -8,6 +8,15 @@
  :root {
   /* non-theme css-variables */
 
+  /* ShiftStoned colors */
+  --Cinder: #17141D;
+  --MineShaft: #2E2E2E;
+  --Eggplant: #533D4F;
+  --Charade: #2E2C3D;
+  --Martinique: #322C4B;
+  --Malachite: #458A9E;
+  --Malibu: #81C3F4;
+
   /* Faction colors */
   --FireRed: #A30C0E;
   --TimeYellow: #B26F03;oo
@@ -23,15 +32,6 @@
   --RareBlue: #4F86BE;
   --LegendaryOrange: #FF9521;
   --PromoPurple: #7A17C0;
-
-  /* Shiftstoned colors */
-  --Cinder: #17141D;
-  --MineShaft: #2E2E2E;
-  --Eggplant: #533D4F;
-  --Charade: #2E2C3D;
-  --Martinique: #322C4B;
-  --Malachite: #458A9E;
-  --Malibu: #81C3F4;
 
   /* Misc */
   --header-height: 104px;
@@ -127,9 +127,11 @@ hr {
 
 img.articleThumbnail {
   float: left;
-  width: 250px;
+  /* width: 250px; */
   /* margin-left: 155px; */
   margin-right: 15px;
+  object-fit: contain;
+  width: 100%;
 }
 
 /* Background image for pages */
@@ -137,9 +139,9 @@ img.articleThumbnail {
     position: fixed;
     width: 100%;
     z-index: -1;
-    top: 0px;
+    /* top: 0px;
     left: 0px;
-    margin: 0px auto;
+    margin: 0px auto; */
 }
 
 /* Container for base page content */
@@ -169,6 +171,7 @@ img.articleThumbnail {
 }
 
 h1.articleListingTitle {
+  margin-top: 0px
   font-size: 30px;
 }
 
@@ -178,6 +181,21 @@ p.articleListing {
   /* width: 800px; */
 }
 
+p.articleListing.featured {
+  font: 18px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  line-height: 1.6;
+  /* width: 800px; */
+}
+
+.fullColumn {
+  width: 100%;  
+}
+
+.halfColumn {
+  width: 50%;
+}
+
+/* Older style - can be deleted after the rest of the article listings are formatted */
 global_header_home {
   display: block;
   color: #ffffff;
