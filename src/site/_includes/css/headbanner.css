@@ -39,7 +39,7 @@ Styles for the headbanner
 
 /* Another something for headbanner - combine with above? */
 .newShiftstoned-heading {
-    margin-left: 40px;
+    margin: auto;
     height: var(--header-height);
     width: 1140px;
 }
