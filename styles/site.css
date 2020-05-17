@@ -188,7 +188,7 @@ p.articleListing.featured {
 }
 
 .fullColumn {
-  width: 100%;  
+  width: 100%;
 }
 
 .halfColumn {
@@ -261,7 +261,7 @@ hr.cbody {
   display: block;
   color: #ffffff;
   width: 600px;
-  margin: 50px auto 50px 320px;
+  margin: 50px auto 0px 320px;
   font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   line-height: 1.6;
 }
