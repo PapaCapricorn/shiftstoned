@@ -195,8 +195,12 @@ h3.placement.second {
   color: #C0C0C0;
 }
 
-h3.placement.second {
+h3.placement.third {
   color:#cd7f32;
+}
+
+h3.placement.fifth {
+  color:#FF4500;
 }
 
 p.articleListing {
