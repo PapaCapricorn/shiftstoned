@@ -1,0 +1,26 @@
+
+<!--  Dialog for importing a deck list  -->
+<aside id="import-modal" class="ui tiny modal">
+    <div class="header">
+        Paste a deck from Eternal
+    </div>
+
+    <div id="import-form" class="ui form modal-body">
+        <div class="field">
+            <label>Deck list</label>
+            <textarea id="import-modal-deck" rows="20"></textarea>
+        </div>
+
+        <!--  Syntax errors in the decklist are reported here  -->
+        <div class="ui label" id="import-validation-result">
+        </div>
+    </div>
+
+    <div class="actions">
+        <button
+            id="import-modal-import-button"
+            class="ui positive right button">
+            IMPORT
+        </button>
+    </div>
+</aside>

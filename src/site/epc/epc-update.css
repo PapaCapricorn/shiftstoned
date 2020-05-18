@@ -1,0 +1,23 @@
+/* site styles */
+body {
+    --content-width: 1140px;
+
+    --bg-image: url(images/BackgroundHome.jpg); /* default background */
+    background-image: var(--bg-image);
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+/* section styles */
+body.epc {
+    --bg-image: url(/images/BackgroundEpc.jpg); /* section background */
+  }
+
+/* drafter styles */
+#calculator-body {
+    width: var(--content-width);
+    display: grid;
+    grid-template-columns: 1fr auto;
+}

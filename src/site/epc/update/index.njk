@@ -1,0 +1,65 @@
+---
+section: Epc
+about: ../about/
+title: Eternal Power Calculator
+---
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+{% include "partials/html-head/gtag.njk" %}
+{% include "partials/html-head/meta.njk" %}
+
+{% include "partials/html-head/compatibility.njk" %}
+{% include "partials/html-head/icons.njk" %}
+{% include "partials/html-head/themes.njk" %}
+{% include "partials/html-head/fonts.njk" %}
+{# {% include "partials/html-head/styles.njk" %} #}{# update-change #}
+  <!-- CSS -->
+  <link href="{{ "/styles/site.css" | url }}" rel="stylesheet" type="text/css">
+  <link href="{{ "/epc/epc-update.css" | url }}" rel="stylesheet" type="text/css">{# update-change #}
+  {%- if legacy %}
+  <link href="/styles/{{ legacy }}" rel="stylesheet" type="text/css">
+  {%- endif %}
+
+    {#- if `page_style` data is passed, include that CSS partial here -#}
+  {%- if page_style %}
+    <!-- page-specific styles -->
+    <style>
+    {% include "css/page/" + page_style %}
+    </style>
+  {%- endif %}
+
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body class="epc">{# update-change #}
+
+    {# <img class="background" src="{{ bg_img }}" {% if offset -%} style="{{ offset }}" {%- endif -%} /> #}{# update-change - moved to css #}
+
+    {% include "partials/navigation/headbanner.njk" %}
+    {% include "partials/epc-update/epccore.njk" %}{# update-change #}
+
+<!-- popup modals -->
+<!-- converting these to <dialog> element would be better, when there is better browser support -->
+{# {% include "partials/epc-update/modals/about.njk" %} #}
+{# {% include "partials/epc-update/modals/import.njk" %} #}
+{# {% include "partials/epc-update/modals/add-card.njk" %} #}
+{# {% include "partials/epc-update/modals/error-report.njk" %} #}
+
+    <!-- JAVASCRIPT -->
+{% include "partials/epc/cardlist.njk" %}
+{% include "partials/epc-update/epcscripts.njk" %}{# update-change #}
+
+    {# {% include "partials/scripts/jsSrc.njk" %} #}{# update-change #}
+    {#- Consolidating the various scripts into a single include -#}
+    <script type="text/javascript" src="/epc/jquery-1.12.4.min.js"></script>
+    {# <script type="text/javascript" src="/epc/semantic.min.js"></script> #}{# update-change #}
+    <script type="text/javascript" src="/epc/epc.min.js"></script>
+    <script type="text/javascript">$(".ui.dropdown").dropdown();</script>
+
+
+  </body>
+
+</html>
+
