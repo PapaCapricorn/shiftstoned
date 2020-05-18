@@ -175,7 +175,7 @@ h1.articleListingTitle {
   font-size: 30px;
 }
 
-h2.topDeck {
+h2.topDeckTitle {
   font: 18px Open Sans;
 }
 
@@ -186,10 +186,6 @@ h3.placement {
 h3.placement.first {
   color: #FFDF00;
 }
-
-
-
-
 
 p.articleListing {
   font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
