@@ -134,6 +134,12 @@ img.articleThumbnail {
   width: 100%;
 }
 
+img.articleMargin {
+  width: 250px;
+  float: left;
+  margin: 30px;
+}
+
 /* Background image for pages */
 .background {
     position: fixed;
