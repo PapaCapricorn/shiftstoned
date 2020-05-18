@@ -183,6 +183,10 @@ h3.placement.first {
   color: #FFDF00;
 }
 
+h3.placement.second {
+  color: #C0C0C0;
+}
+
 p.articleListing {
   font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   line-height: 1.6;
