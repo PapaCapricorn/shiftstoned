@@ -257,6 +257,13 @@ hr.cbody {
 
 */
 
+.galleryDeck {
+  position: absolute;
+  left: 220px;
+  float: left;
+  width: 125px;
+}
+
 .textcol {
   display: block;
   color: #ffffff;
