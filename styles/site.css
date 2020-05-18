@@ -179,6 +179,10 @@ h2.topDeckTitle {
   font: 24px Open Sans;
 }
 
+.topDeckProfile {
+  margin-top: 15px;
+}
+
 h3.placement {
   font: 12px Open Sans;
 }
@@ -206,6 +210,8 @@ p.articleListing.featured {
   line-height: 1.6;
   /* width: 800px; */
 }
+
+
 
 .fullColumn {
   width: 100%;
