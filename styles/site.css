@@ -233,6 +233,13 @@ header {
   width: 50%;
 }
 
+.halfColumn.homeArticle {
+  float: left;
+  object-fit: contain;
+  padding: 10px; 
+  border-right: 1px solid var(--MineShaft)
+}
+
 /* Older style - can be deleted after the rest of the article listings are formatted */
 global_header_home {
   display: block;
