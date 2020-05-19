@@ -221,7 +221,9 @@ p.articleListing.featured {
   /* width: 800px; */
 }
 
-
+header {
+  margin-top: 30px;
+}
 
 .fullColumn {
   width: 100%;
