@@ -16,7 +16,7 @@ Tooltip text...
 
 <h2>Title from site.json </h2>
 
-Title: 
+Title:
 {%- if title or (renderData and renderData.title) -%}
   {{- title or (renderData and renderData.title)  | safe }} | {% endif -%}
 {{- site.metaTitle -}}
@@ -25,4 +25,8 @@ Title:
 Site.social.twitter: {{ site.social.twitter }}
 
 <br>
+Site.social.discord: {{ site.social.discord }}
+
+<br>
 url-real: {{ site.url-real }}
+<a href="{{ site.url-real }}">url-real</a>
