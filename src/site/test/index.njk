@@ -14,5 +14,8 @@ Tooltip text...
 {% endhover_text %}
 </p>
 
-<h2>Hover-tooltip test</h2>
+<h2>Title from </h2>
+{%- if title or (renderData and renderData.title) -%}
+  {{- title or (renderData and renderData.title)  | safe }} | {% endif -%}
+{{- site.metaTitle -}}
 <meta name="twitter:site" content="{{ site.social.twitter }}">
