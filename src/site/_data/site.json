@@ -3,11 +3,14 @@
   "url": "http://localhost:8080/",
   "url-real": "https://www.shiftstoned.com/",
   "twitter": "@shiftstoned",
-  "bangarang": "ThisIsTheValue",  
+  "bangarang": "ThisIsThe",
   "author": {
     "name": "Site-Author",
     "email": "Site@Author-Email",
     "twitter": "@Site-Author"
+  },
+  {
+  "bangarang": "ThisIsTheValue",  
   },
   "social": {
     "facebook": "",
