@@ -3,6 +3,7 @@
   "url": "http://localhost:8080/",
   "url-real": "https://www.shiftstoned.com/",
   "twitter": "@shiftstoned",
+  "bangarang": "ThisIsTheValue",  
   "author": {
     "name": "Site-Author",
     "email": "Site@Author-Email",
