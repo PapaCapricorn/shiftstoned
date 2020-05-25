@@ -2,8 +2,7 @@
   "metaTitle": "ShiftStoned",
   "url": "http://localhost:8080/",
   "url-real": "https://www.shiftstoned.com/",
-  "twitter": "@shiftstoned",
-  "bangarang": "ThisIsTheValue",  
+  "twitter": "@shiftstoned", 
   "author": {
     "name": "Site-Author",
     "email": "Site@Author-Email",
