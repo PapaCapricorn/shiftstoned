@@ -3,7 +3,8 @@
    "title":"My page title",
    "layout":"layouts/article.njk",
    "bg_img":"/images/BackgroundArticles.jpg",
-   "articleImage":"/images/articles/thumbnail.jpg"
+   "articleImage":"/images/articles/thumbnail.jpg",
+   "articleTitle":"Markdown: Title goes here"
 }
 ---
   main content with the class of textcol appears here
