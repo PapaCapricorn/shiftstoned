@@ -6,6 +6,12 @@
    "articleImage":"/images/articles/thumbnail.jpg"
 }
 ---
-MARKDOWN: Layout and bg_img are specified in the json front matter
+<main class="textcol">
 
-LAYOUT: article.njk
+  main content with the class of textcol appears here
+
+  MARKDOWN: Layout and bg_img are specified in the json front matter
+
+  LAYOUT: article.njk
+
+</main>
