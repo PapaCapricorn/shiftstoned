@@ -7,21 +7,26 @@ layout: layouts/html.njk
 
 <main class="textcol">
 
-<!-- This is just spacing - add to other elements -->
-<p style="" /><br></p>
+  <!-- This is just spacing - add to other elements -->
+  <p style="" /><br></p>
 
-<header>
-  <h1 class="title"> {{- articleTitle -}} </h1>
+  <header>
+    <h1 class="title"> {{- articleTitle -}} </h1>
 
-  <p class="subtitle">
-    Taking a look at the Top Eight decks from the <a href="">Shadow of the Spire</a>
-  </p>
-  <p class="tagline">
-    <strong>Power</strong> portraits and standout features for each the finalists
-  </p>
-</header>
+    <p class="subtitle">
+      {{- articleSubtitle -}}
+    </p>
 
+    <p class="tagline">
+      {{- articleTagline -}}
+    </p>
+  </header>
 
-      {{ content | safe }}
+  <!-- BRs for spacing should probably be included in div classes -->
+  <br><br>
+
+  <strong> {{- articleDate -}} </strong> -
+
+    {{ content | safe }}
 
 </main>
