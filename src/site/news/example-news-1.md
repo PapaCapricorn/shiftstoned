@@ -38,10 +38,10 @@
     <meta property="og:image" content="https://avatars0.githubusercontent.com/u/39966530?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="PapaCapricorn/SSG-Sandbox" /><meta property="og:url" content="https://github.com/PapaCapricorn/SSG-Sandbox" /><meta property="og:description" content="Contribute to PapaCapricorn/SSG-Sandbox development by creating an account on GitHub." />
 
   <link rel="assets" href="https://github.githubassets.com/">
-    <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDkxMTc0NTUyOjZiYTJhMzE2MDc4MWMyMWU4MzJjODJmZGViYTcwOTg0NDNjZjE4NjRkMzVjZmI3NTBlNjY2OGYyZmMxMDdjOWM=--68851d074394057e6e51dba03ded6edb7a074e5e">
+    <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDkxMTc0NTUyOjhkZTE5NWIxYTUwM2Y3NGZmZGRjOWZjYjBiMGZlNWI0ZDFjODczNjllODc2MDZhZGRiZWIxZDQ2MWY4NjY2Y2Q=--022c8c37879ad274347f5eb7963cf138b3e49532">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
 
-  <meta name="request-id" content="D7AC:704D:2D797B:43596F:5ECC4882" data-pjax-transient="true" /><meta name="html-safe-nonce" content="c16192aad72b6f4b075136bc52f63ac808253d1e" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9QYXBhQ2Fwcmljb3JuL1NTRy1TYW5kYm94L3RyZWUvZWU0ZmE3YWFmZTQ4ZDk3OTE4OTlmNjRhN2UyNDQzNWQ4YTQ5ZTlkYS9zcmMvc2l0ZS9uZXdzIiwicmVxdWVzdF9pZCI6IkQ3QUM6NzA0RDoyRDc5N0I6NDM1OTZGOjVFQ0M0ODgyIiwidmlzaXRvcl9pZCI6IjQ1OTM3OTQ5MjEzOTkzODE0MzIiLCJyZWdpb25fZWRnZSI6ImlhZCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true" /><meta name="visitor-hmac" content="643c856e2791c16d637f290dd3a04f78aeb04d16872328e75f46e6110c10a6ab" data-pjax-transient="true" />
+  <meta name="request-id" content="E1E5:6002:225332:39130C:5ECC5CCC" data-pjax-transient="true" /><meta name="html-safe-nonce" content="c16192aad72b6f4b075136bc52f63ac808253d1e" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9QYXBhQ2Fwcmljb3JuL1NTRy1TYW5kYm94L3RyZWUvZWU0ZmE3YWFmZTQ4ZDk3OTE4OTlmNjRhN2UyNDQzNWQ4YTQ5ZTlkYS9zcmMvc2l0ZS9uZXdzIiwicmVxdWVzdF9pZCI6IkUxRTU6NjAwMjoyMjUzMzI6MzkxMzBDOjVFQ0M1Q0NDIiwidmlzaXRvcl9pZCI6IjQ1OTM3OTQ5MjEzOTkzODE0MzIiLCJyZWdpb25fZWRnZSI6ImlhZCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true" /><meta name="visitor-hmac" content="0bdb6d76fd862e59d2472dc41213613cc39c57b1c92d44473605665fc8b1ea5a" data-pjax-transient="true" />
 
 
 
@@ -76,7 +76,7 @@
 
       <meta name="expected-hostname" content="github.com">
 
-      <meta name="js-proxy-site-detection-payload" content="Y2Y2MzkwMDRjY2U2OWVjNTAwMmYwMmRhNTllZjcwY2Q5ZmE0YWQ4NDMyM2Y4OWJlMDAyYWUwOWYyN2E2NjA0YXx7InJlbW90ZV9hZGRyZXNzIjoiMTQ2LjExNS4xMDEuMTM3IiwicmVxdWVzdF9pZCI6IkQ3QUM6NzA0RDoyRDc5N0I6NDM1OTZGOjVFQ0M0ODgyIiwidGltZXN0YW1wIjoxNTkwNDQ2MjIwLCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+      <meta name="js-proxy-site-detection-payload" content="MjExMDU4Yzk4OGNkZTJiNzM5ZjNiMWYzOTdhOTU4MjZlM2U5NjhmMzQ5Njc1MjMyMjExOWM0YmVkNGQ0MTBiNXx7InJlbW90ZV9hZGRyZXNzIjoiMTQ2LjExNS4xMDEuMTM3IiwicmVxdWVzdF9pZCI6IkUxRTU6NjAwMjoyMjUzMzI6MzkxMzBDOjVFQ0M1Q0NDIiwidGltZXN0YW1wIjoxNTkwNDUxNDA3LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
 
     <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,PAGE_STALE_CHECK,JS_CHUNKING">
 
@@ -164,7 +164,7 @@
           spellcheck="false"
           autocomplete="off"
           >
-          <input type="hidden" value="SkMg6C3XZarexZqwcnwMjA3yt++RWWyEmSuxGZsTnzuFL1UNkuT0JvYZWZcLJQ7NY8tV+h3KY9eJcMYI8Rht+Q==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
+          <input type="hidden" value="sS55KXxj91FL+syT6T7x+rlcqj6Deexme4C682y0sBB+QgzMw1Bm3WMmD7SQZ/O712VIKw/q4zVr283iBr9C0g==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -315,7 +315,7 @@
       <img class="avatar avatar-user" src="https://avatars2.githubusercontent.com/u/39966530?s=40&amp;v=4" width="20" height="20" alt="@PapaCapricorn" />
       PapaCapricorn
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="yfFXxRl4uM74Ktyxfq0vn5l1OXNTCANY6zKikRthfnNYSjCxGvvxxnJAKOcnYP6nOVo9rxwuPS9aEhHplesNrg==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="2rKW0HD1i/oY9SgiUPeLjBqcLXZs2j/1CdX0fsxg1GhLCfGkc3bC8pKf3HQJOlq0urMpqiP8AYK49UcGQuqntQ==" />
       <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-3 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
         <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 17" version="1.1" width="16" height="17" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"></path></svg>
         Sign out
@@ -439,7 +439,7 @@
       </div>
     </summary>
     <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="5l77NezOD0m6AAwuN3qrkv0FFMS5C+sTQiZhEO8Ecenc1fsLCEaTEAbn7xReZ0GXsJaOV7T/7WeTW57P8YlC9A==" />
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="j5syXh2CMLY/NRE0a705xPAXwjCXFLORva1D8tdJ7xm1EDJg+Qqs74PS8g4CoNPBvYRYo5rgteVs0LwtycTcBA==" />
         <div class="Box-header bg-gray border-bottom p-3">
           <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
             <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
@@ -557,17 +557,17 @@
       </li>
       <li class="dropdown-divider" role="none"></li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2020-05-25T19:07:00-04:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2020-05-25T20:33:27-04:00">
             in 30 minutes
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2020-05-25T19:37:00-04:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2020-05-25T21:03:27-04:00">
             in 1 hour
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2020-05-25T22:37:00-04:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2020-05-26T00:03:27-04:00">
             in 4 hours
           </button>
         </li>
@@ -636,12 +636,12 @@
 
     <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
     <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="6rWxRWEtGQOJIXeUv2tgawVXo44fz6wn3cpl+dQpjNJ7DtYxYq5QCwNLg8LmprFTpXinUlDpklBs6taBWqP/Dw==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="vOFFH2qfkaunzPDV7EtQfvR4KppPA/FKbhMK+JRENOotWiJraRzYoy2mBIO1hoFGVFcuRgAlzz3fM7mAGs5HNw==" />
       
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
         Sign out
       </button>
-      <input type="text" name="required_field_9160" hidden="hidden" class="form-control" /><input type="hidden" name="timestamp" value="1590446220422" class="form-control" /><input type="hidden" name="timestamp_secret" value="47040f9c32d15bac1bd3486afa3a1b10f0661e6d477b0aa0aaf9cfab6c03d57c" class="form-control" />
+      <input type="text" name="required_field_50fc" hidden="hidden" class="form-control" /><input type="hidden" name="timestamp" value="1590451407712" class="form-control" /><input type="hidden" name="timestamp_secret" value="29896ad140d0b813e45685a3a4d9dd0d2e0c2879a4804ad93b07c5296ef2770c" class="form-control" />
 </form>  </details-menu>
 </details>
 
@@ -729,7 +729,7 @@
 
   <li>
     
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="35LONIJB50oDyLWs0jPzek7NgRmFCa7dpRQuNYHfvymJ3TOj8fadeMJ0arNo/zqcB58nX97rKEOwxTpgpxmnPg==" />      <input type="hidden" name="repository_id" value="253799650">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="bgny27ZuztnfZn6siYjiMbVEL89y1ALHLc1Vmxr6zwc4Rg9Mxdm06x7aobMzRCvX/BaJiSk2hFk4HEHOPDzXEA==" />      <input type="hidden" name="repository_id" value="253799650">
 
       <details class="details-reset details-overlay select-menu float-left">
         <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:253799650,&quot;originating_url&quot;:&quot;https://github.com/PapaCapricorn/SSG-Sandbox/blob/ee4fa7aafe48d9791899f64a7e24435d8a49e9da/src/site/news/example-news-1.md&quot;,&quot;user_id&quot;:39966530}}" data-hydro-click-hmac="11e015b03e34f83d3e37c5f761dac6aa88389e99eda6dbe9ce54403849ebe566" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
@@ -803,7 +803,7 @@
 
   <li>
       <div class="js-toggler-container js-social-container starring-container on">
-    <form class="starred js-social-form" action="/PapaCapricorn/SSG-Sandbox/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="f2RNVR6pDMTkqzvFqtoOTygCmH/ZdVdQ5gGSh95QkKzJSsrNlYreb4MQOS2ER49lyxm3tdeg56H+lBbSp0bmbA==" />
+    <form class="starred js-social-form" action="/PapaCapricorn/SSG-Sandbox/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="LhYZi9oJxB62QlOuwmW1DKlcISh8sIdgxtTfw++t+ZyYOJ4TUSoWtdH5UUbs+DQmSkcO4nJlN5HeQVuWlruPXA==" />
       <input type="hidden" name="context" value="repository"></input>
       <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar PapaCapricorn/SSG-Sandbox" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:253799650,&quot;originating_url&quot;:&quot;https://github.com/PapaCapricorn/SSG-Sandbox/blob/ee4fa7aafe48d9791899f64a7e24435d8a49e9da/src/site/news/example-news-1.md&quot;,&quot;user_id&quot;:39966530}}" data-hydro-click-hmac="0c886afabfdef551e3095f05109bf80ce5cb89687f7ea5ae453d322732b64f36" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
 
@@ -813,7 +813,7 @@
            1
         </a>
 </form>
-    <form class="unstarred js-social-form" action="/PapaCapricorn/SSG-Sandbox/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="2RDOZUIF8F0iz4ezye1Iu17JX/HjRsfMbfKhYBRY241UB/uy9RFZfgkr5i3LbwP0ydI3CEfXRmPHr0YpWnUwzA==" />
+    <form class="unstarred js-social-form" action="/PapaCapricorn/SSG-Sandbox/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="DuuAg/X031/WrckCDCIs8L0D8cJKbBtJl82cTg1YxkWD/LVUQuB2fP1JqJwOoGe/KhiZO+79muY9kHsHQ3UtBA==" />
       <input type="hidden" name="context" value="repository"></input>
       <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star PapaCapricorn/SSG-Sandbox" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:253799650,&quot;originating_url&quot;:&quot;https://github.com/PapaCapricorn/SSG-Sandbox/blob/ee4fa7aafe48d9791899f64a7e24435d8a49e9da/src/site/news/example-news-1.md&quot;,&quot;user_id&quot;:39966530}}" data-hydro-click-hmac="821667aa03ce223ba4b7cc3919b6fc251c88d70dd7d5c5da06180bc6553e940c" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
 
