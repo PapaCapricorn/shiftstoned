@@ -2,8 +2,8 @@
 {
    "title":"My page title",
    "layout":"layouts/article.njk",
-   "bg_img": "/images/BackgroundArticles.jpg"
-   "articleImage": "src\site\images\articles\thumbnail.jpg"
+   "bg_img":"/images/BackgroundArticles.jpg",
+   "articleImage":"src/site/images/articles/thumbnail.jpg"
 }
 ---
 MARKDOWN: Layout and bg_img are specified in the json front matter
