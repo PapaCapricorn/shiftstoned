@@ -1,7 +1,7 @@
 ---json
 {
    "title":"My page title",
-   "layout":"layouts/html.njk",
+   "layout":"layouts/article.njk",
    "bg_img": "/images/BackgroundArticles.jpg"
 }
 ---
