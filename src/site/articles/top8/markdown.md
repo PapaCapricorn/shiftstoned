@@ -6,3 +6,5 @@
 }
 ---
 MARKDOWN: Layout and bg_img are specified in the json front matter
+
+LAYOUT: article.njk
