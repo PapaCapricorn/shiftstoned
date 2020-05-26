@@ -5,4 +5,4 @@
    "bg_img": "/images/BackgroundArticles.jpg"
 }
 ---
-NJK: Layout and bg_img are specified in the json front matter
+MARKDOWN: Layout and bg_img are specified in the json front matter
