@@ -2,5 +2,12 @@
    "layout":"",
    "tags":"news",
    "templateEngineOverride":"njk,md",
-   "localbangarang":"ThisIsTheLOCALBangarangValue"
+   "localbangarang":"ThisIsTheLOCALBangarangValue",
+   "profile":"Top8",
+   "group":{
+      "position":"1st",
+      "player":"Collecter",
+      "archetype":"Chonky Skycrag",
+      "epcUrl":"https://www.shiftstoned.com/epc/?d=EIBEBhGEB4MCBlGEIIE_hBBE_hBIEB6GBEhBEFaEC-DEItDEvfNLBBJB7FEA1BEHiFCAABH_CBAYBBuGBFSBBtG&t=%5BCollecter%5D%20Collecter's%20decklist%20(Top%2064)"
+   }
 }
