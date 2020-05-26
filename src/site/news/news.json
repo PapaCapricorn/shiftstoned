@@ -1,6 +1,6 @@
 {
-    "layout" : "",
-    "tags" : "news",
-    "templateEngineOverride": "njk,md"
-    "localbangarang":"ThisIsTheLOCALBangarangValue"
-  }
+   "layout":"",
+   "tags":"news",
+   "templateEngineOverride":"njk,md",
+   "localbangarang":"ThisIsTheLOCALBangarangValue"
+}
