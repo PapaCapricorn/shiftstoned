@@ -13,6 +13,13 @@
       "card":"https://cards.eternalwarcry.com/cards/full/Spitflame_Draconus.png",
       "epcUrl":"https://www.shiftstoned.com/epc/?d=EIBEBhGEB4MCBlGEIIE_hBBE_hBIEB6GBEhBEFaEC-DEItDEvfNLBBJB7FEA1BEHiFCAABH_CBAYBBuGBFSBBtG&t=%5BCollecter%5D%20Collecter's%20decklist%20(Top%2064)",
       "player":"Collecter",
+      "archetype":"Chonky Skycrag",
+      "body":"Body of the section will go here."
+   },
+   "second":{
+      "card":"https://cards.eternalwarcry.com/cards/full/Spitflame_Draconus.png",
+      "epcUrl":"https://www.shiftstoned.com/epc/?d=EIBEBhGEB4MCBlGEIIE_hBBE_hBIEB6GBEhBEFaEC-DEItDEvfNLBBJB7FEA1BEHiFCAABH_CBAYBBuGBFSBBtG&t=%5BCollecter%5D%20Collecter's%20decklist%20(Top%2064)",
+      "player":"Collecter",
       "archetype":"Chonky Skycrag"
    }
 }
