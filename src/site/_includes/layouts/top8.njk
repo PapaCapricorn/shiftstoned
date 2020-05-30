@@ -30,5 +30,27 @@ layout: layouts/article.njk
 
 </section>
 
+<!-- 2nd -->
+<section class="topDeckProfile">
+
+  <img alt="Card Image" src=" {{- second.card -}} " class="galleryDeck" />
+
+  <h2 class="topDeckTitle">
+    &#9658;
+    <a href=" {{- second.epcUrl -}} " target="_blank">
+      <u>{{ second.player -}}'s Decklist</u>
+    </a>
+    ({{ second.archetype -}})
+  </h2>
+
+  <p>
+    {{ second.body -}}
+  </p>
+
+  <p style="" />
+    <a href=" {{- second.epcUrl -}} " target="_blank">view deck &#9658; </a>
+  </p>
+
+</section>
 
 {{ content | safe }}
