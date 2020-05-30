@@ -17,10 +17,46 @@
       "body":"Body of the section will go here."
    },
    "second":{
-      "card":"https://cards.eternalwarcry.com/cards/full/Spitflame_Draconus.png",
-      "epcUrl":"https://www.shiftstoned.com/epc/?d=EIBEBhGEB4MCBlGEIIE_hBBE_hBIEB6GBEhBEFaEC-DEItDEvfNLBBJB7FEA1BEHiFCAABH_CBAYBBuGBFSBBtG&t=%5BCollecter%5D%20Collecter's%20decklist%20(Top%2064)",
-      "player":"Collecter",
-      "archetype":"Chonky Skycrag"
+      "card":"https://cards.eternalwarcry.com/cards/full/Destruction_Chant.png",
+      "epcUrl":"https://www.shiftstoned.com/epc/?d=EIBEI2FEIED9hBODBlIEIHEIKD9hBRE_hBMCCvGE_hBBBI7EEI0BDI8EDImFEBBDB5HEB_BCCrFEA8BEA2BEA9BCAABHiBBH3EBIqBBHsBBH6F&t=%5Bblackice%5D%20blackice%27s%20decklist%20(Top%2064)",
+      "player":"blackice",
+      "archetype":"Jekkinations Destruction"
+   },
+   "third":{
+      "card":"",
+      "epcUrl":"",
+      "player":"",
+      "archetype":""
+   },
+   "fourth":{
+      "card":"",
+      "epcUrl":"",
+      "player":"",
+      "archetype":""
+   },
+   "fifth":{
+      "card":"",
+      "epcUrl":"",
+      "player":"",
+      "archetype":""
+   },
+   "sixth":{
+      "card":"",
+      "epcUrl":"",
+      "player":"",
+      "archetype":""
+   },
+   "seventh":{
+      "card":"",
+      "epcUrl":"",
+      "player":"",
+      "archetype":""
+   },
+   "eighth":{
+      "card":"",
+      "epcUrl":"",
+      "player":"",
+      "archetype":""
    }
 }
 ---
