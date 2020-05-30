@@ -46,7 +46,7 @@
    },
    "sixth":{
       "card":"https://cards.eternalwarcry.com/cards/full/Kairos'_Choice.png",
-      "epcUrl":"https://www.shiftstoned.com/epc/?d=EIBEBLEIGDH3EEInBEIIEIKEH1GE_hBME_hBBE9hBBEIyEDIVLBBEHfCHBECrFEA2BCAABADBFSBCwFBIqBBHsB&t=%5BGolence%5D%20Golence's%20decklist%20(Top%2064)" target="_blank",
+      "epcUrl":"https://www.shiftstoned.com/epc/?d=EIBEBLEIGDH3EEInBEIIEIKEH1GE_hBME_hBBE9hBBEIyEDIVLBBEHfCHBECrFEA2BCAABADBFSBCwFBIqBBHsB&t=%5BGolence%5D%20Golence's%20decklist%20(Top%2064)",
       "player":"Golence",
       "archetype":"Praxis Aggro",
       "body":"21{% icon 'Fire' %}, 12{% icon 'Time' %}, 4 E-grod, 2 E-Shav, 11 Sigils for Jekk, all {% icon 'Fire' %}"
