@@ -38,31 +38,31 @@
       "body":"Body of the section will go here."
    },
    "fifth":{
-      "card":"",
-      "epcUrl":"",
-      "player":"",
-      "archetype":"",
+      "card":"https://cards.eternalwarcry.com/cards/full/Vorlunk_Corps.png",
+      "epcUrl":"https://www.shiftstoned.com/epc/?d=EI4CEBhGEB4MEHkCE_hBHCH_FDC7GD_hBIED6DEB6GBF_CEHhGEvfSD_hBTBI3CBH5CFB-DIB7FCH9BCH7CEC4GEAzB&t=%5Bzdch%5D%20zdch's%20decklist%20(Top%2064)",
+      "player":"zdch",
+      "archetype":"Hooru Midrange",
       "body":"Body of the section will go here."
    },
    "sixth":{
-      "card":"",
-      "epcUrl":"",
-      "player":"",
-      "archetype":"",
-      "body":"Body of the section will go here."
+      "card":"https://cards.eternalwarcry.com/cards/full/Kairos'_Choice.png",
+      "epcUrl":"https://www.shiftstoned.com/epc/?d=EIBEBLEIGDH3EEInBEIIEIKEH1GE_hBME_hBBE9hBBEIyEDIVLBBEHfCHBECrFEA2BCAABADBFSBCwFBIqBBHsB&t=%5BGolence%5D%20Golence's%20decklist%20(Top%2064)" target="_blank",
+      "player":"Golence",
+      "archetype":"Praxis Aggro",
+      "body":"21{% icon 'Fire' %}, 12{% icon 'Time' %}, 4 E-grod, 2 E-Shav, 11 Sigils for Jekk, all {% icon 'Fire' %}"
    },
    "seventh":{
-      "card":"",
-      "epcUrl":"",
-      "player":"",
-      "archetype":"",
-      "body":"Body of the section will go here."
+      "card":"https://cards.eternalwarcry.com/cards/full/Auralian_Supplier.png",
+      "epcUrl":"https://www.shiftstoned.com/epc/?d=DIBEHkBDBDEIDEBLEIGEInBEIKEH1GE_hBME_hBBE9hBBEIYIBBFB_BEHBECrFEA2BCAABHFBFSBCwFBBwCBHL&t=%5Bnothership%5D%20nothership's%20decklist%20(Top%2064)",
+      "player":"nothership",
+      "archetype":"Praxis Aggro",
+      "body":"20{% icon 'Fire' %}, 13{% icon 'Time' %}, 0 E-grod, 4 E-Shav, 13 Sigils for Jekk, all {% icon 'Fire' %}"
    },
    "eighth":{
-      "card":"",
-      "epcUrl":"",
-      "player":"",
-      "archetype":"",
+      "card":"https://cards.eternalwarcry.com/cards/full/Forbidden-Rider_Outcast.png",
+      "epcUrl":"https://www.shiftstoned.com/epc/?d=EI4CEBhGEB4MEHkCE_hBHCH_FDC7GD_hBIED6DEB6GBF_CEHhGEvfSD_hBTBI3CBH5CFB-DIB7FCH9BCH7CEC4GEAzB&t=%5BPortich%5D%20Portich's%20decklist%20(Top%2064)",
+      "player":"Portich",
+      "archetype":"Hooru Midrange",
       "body":"Body of the section will go here."
    }
 }
