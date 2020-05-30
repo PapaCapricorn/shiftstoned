@@ -24,17 +24,17 @@
       "body":"Body of the section will go here."
    },
    "third":{
-      "card":"",
-      "epcUrl":"",
-      "player":"",
-      "archetype":"",
+      "card":"https://cards.eternalwarcry.com/cards/full/Strange_Gladiator.png",
+      "epcUrl":"https://www.shiftstoned.com/epc/?d=EIBCGxBDIhBEBLDIGEInBEIIEIKDH1GE_hBME_hBBE9hBBEIyEDIYHBBEB_BCHfEHBECrFEA2BCAABADBFSBCwFBIqBBHsB&t=%5BGilead%5D%20Gilead%27s%20decklist%20(Top%2064)",
+      "player":"Gilead",
+      "archetype":"Praxis Aggro",
       "body":"Body of the section will go here."
    },
    "fourth":{
-      "card":"",
-      "epcUrl":"",
-      "player":"",
-      "archetype":"",
+      "card":"https://cards.eternalwarcry.com/cards/full/Reborn_Master.png",
+      "epcUrl":"https://www.shiftstoned.com/epc/?d=EI9BCBiEEH_BEEmGD9hBOEBrEDHkCEIgCEIqFCByEECqHEIqCED6DEImEKB-DFB5HEHjGCH5DEA3BCAABHmGBIrCBCsHBHrEBIpC&t=%5BKosmiker%5D%20Kosmiker's%20decklist%20(Top%204)",
+      "player":"Kosmiker",
+      "archetype":"Argenport Midrange",
       "body":"Body of the section will go here."
    },
    "fifth":{

@@ -53,4 +53,54 @@ layout: layouts/article.njk
 
 </section>
 
+<h3 class="placement third" />
+  3rd&nbsp; P L A C E:
+</h3>
+
+<!-- 3rd -->
+<section class="topDeckProfile">
+
+  <img alt="Card Image" src=" {{- third.card -}} " class="galleryDeck" />
+
+  <h2 class="topDeckTitle">
+    &#9658;
+    <a href=" {{- third.epcUrl -}} " target="_blank">
+      <u>{{ third.player -}}'s Decklist</u>
+    </a>
+    ({{ third.archetype -}})
+  </h2>
+
+  <p>
+    {{ third.body -}}
+  </p>
+
+  <p style="" />
+    <a href=" {{- third.epcUrl -}} " target="_blank">view deck &#9658; </a>
+  </p>
+
+</section>
+
+<!-- 4th -->
+<section class="topDeckProfile">
+
+  <img alt="Card Image" src=" {{- fourth.card -}} " class="galleryDeck" />
+
+  <h2 class="topDeckTitle">
+    &#9658;
+    <a href=" {{- fourth.epcUrl -}} " target="_blank">
+      <u>{{ fourth.player -}}'s Decklist</u>
+    </a>
+    ({{ fourth.archetype -}})
+  </h2>
+
+  <p>
+    {{ fourth.body -}}
+  </p>
+
+  <p style="" />
+    <a href=" {{- fourth.epcUrl -}} " target="_blank">view deck &#9658; </a>
+  </p>
+
+</section>
+
 {{ content | safe }}
