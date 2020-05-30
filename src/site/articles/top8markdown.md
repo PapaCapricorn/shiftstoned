@@ -20,43 +20,50 @@
       "card":"https://cards.eternalwarcry.com/cards/full/Destruction_Chant.png",
       "epcUrl":"https://www.shiftstoned.com/epc/?d=EIBEI2FEIED9hBODBlIEIHEIKD9hBRE_hBMCCvGE_hBBBI7EEI0BDI8EDImFEBBDB5HEB_BCCrFEA8BEA2BEA9BCAABHiBBH3EBIqBBHsBBH6F&t=%5Bblackice%5D%20blackice%27s%20decklist%20(Top%2064)",
       "player":"blackice",
-      "archetype":"Jekkinations Destruction"
+      "archetype":"Jekkinations Destruction",
+      "body":"Body of the section will go here."
    },
    "third":{
       "card":"",
       "epcUrl":"",
       "player":"",
-      "archetype":""
+      "archetype":"",
+      "body":"Body of the section will go here."
    },
    "fourth":{
       "card":"",
       "epcUrl":"",
       "player":"",
-      "archetype":""
+      "archetype":"",
+      "body":"Body of the section will go here."
    },
    "fifth":{
       "card":"",
       "epcUrl":"",
       "player":"",
-      "archetype":""
+      "archetype":"",
+      "body":"Body of the section will go here."
    },
    "sixth":{
       "card":"",
       "epcUrl":"",
       "player":"",
-      "archetype":""
+      "archetype":"",
+      "body":"Body of the section will go here."
    },
    "seventh":{
       "card":"",
       "epcUrl":"",
       "player":"",
-      "archetype":""
+      "archetype":"",
+      "body":"Body of the section will go here."
    },
    "eighth":{
       "card":"",
       "epcUrl":"",
       "player":"",
-      "archetype":""
+      "archetype":"",
+      "body":"Body of the section will go here."
    }
 }
 ---
