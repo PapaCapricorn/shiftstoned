@@ -3,65 +3,73 @@
     The graph drawing pulls the influence symbols from these elements.
 -->
 {# <div id="influence-icons">
-    <img id="icon-fire" src="../epc/icon-fire.png">
+    <img id="icon-fire" src="/epc/icon-fire.png">
     <img id="icon-time" src="../epc/icon-time.png">
     <img id="icon-justice" src="../epc/icon-justice.png">
     <img id="icon-primal" src="../epc/icon-primal.png">
     <img id="icon-shadow" src="../epc/icon-shadow.png">
 </div> #}
-
 <main class="newBodyGrid" id="calculator-body">
-    <div id="influence-panel">
-        <div id="card-count-panel">
+    <ul id="counts-panel" class="epc-sidebar epc-counts">
+        <li id="card-count-panel">
             <div id="card-count-number">
+                0{# placeholder #}
             </div>
-            <div id="card-count-label">
+            <div id="card-count-label" class="label">
                 CARDS
             </div>
-        </div>
+        </li>
 
-        <div id="power-sources-panel">
+        <li id="power-sources-panel">
             <div id="power-sources-number">
+                0{# placeholder #}
             </div>
-            <div id="power-sources-label">
+            <div id="power-sources-label" class="label">
                 POWER SOURCES
             </div>
-        </div>
+        </li>
+    </ul>
 
-        <div id="fire-sources-panel">
-            <img src="../epc/icon-fire.png">
+    <ul id="influence-panel" class="epc-counts">
+        <li id="fire-sources-panel">
+            <img src="/epc/icon-fire.png" alt="Fire sources">
             <div id="fire-sources-number" class="influence-number">
+                0{# placeholder #}
             </div>
-        </div>
+        </li>
 
-        <div id="time-sources-panel">
-            <img src="../epc/icon-time.png">
+        <li id="time-sources-panel">
+            <img src="/epc/icon-time.png" alt="Time sources">
             <div id="time-sources-number" class="influence-number">
+                0{# placeholder #}
             </div>
-        </div>
+        </li>
 
-        <div id="justice-sources-panel">
-            <img src="../epc/icon-justice.png">
+        <li id="justice-sources-panel">
+            <img src="/epc/icon-justice.png" alt="Justice sources">
             <div id="justice-sources-number" class="influence-number">
+                0{# placeholder #}
             </div>
-        </div>
+        </li>
 
-        <div id="primal-sources-panel">
-            <img src="../epc/icon-primal.png">
+        <li id="primal-sources-panel">
+            <img src="/epc/icon-primal.png" alt="Primal sources">
             <div id="primal-sources-number" class="influence-number">
+                0{# placeholder #}
             </div>
-        </div>
+        </li>
 
-        <div id="shadow-sources-panel">
-            <img src="../epc/icon-shadow.png">
+        <li id="shadow-sources-panel">
+            <img src="/epc/icon-shadow.png" alt="Shadow sources">
             <div id="shadow-sources-number" class="influence-number">
+                0{# placeholder #}
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 
-    <div id="deck-edit-panel">
+    <section id="deck-edit-panel" class="epc-sidebar">
         <div id="deck-edit-header" class="deck-edit-header ui buttons actions">
-            <button
+            <button type="button"
                 id="import-button" class="ui button">
                 IMPORT
             </button>
@@ -71,124 +79,234 @@
                 Import or add a deck to get started
             </div>
 
-            <button
+            <button type="button"
                 id="export-button" class="ui button"
                 data-position="top center"
                 data-content="Deck copied to clipboard">
                 EXPORT
             </button>
 
-            <button
+            <button type="button"
                 id="link-button" class="ui button"
                 data-position="top center"
                 data-content="Link copied to clipboard">
-                <img src="../images/IconLink.svg">
+                <img src="/images/IconLink.svg">
             </button>
 
-            <button
+            <button type="button"
                 id="ewc-button" class="ui button"
                 data-position="top center"
                 data-content="Save this deck on Eternal Warcry">
-                <img src="../images/IconEwc.png">
+                <img src="/images/IconEwc.png">
             </button>
         </div>
 
         <div style="text-align: center">
                 <span class="help">
-                    HELP <img src="../images/IconHelpSmall.png" height="12">
+                    HELP <img src="/images/IconHelpSmall.png" height="12">
                 </span>
-            <div class="ui popup help">
-                IMPORT or EXPORT your deck here. Use  <img src="../images/IconLink.svg" width="19" border="1"style="border-radius: 4px; background-color: #27252D; border: solid .75px #FFFFFF; padding: 4px;"> to SHARE your deck with a unique URL.
+            <div class="ui popup help hidden">
+                IMPORT or EXPORT your deck here. Use  <img src="/images/IconLink.svg" width="19" border="1"style="border-radius: 4px; background-color: #27252D; border: solid .75px #FFFFFF; padding: 4px;"> to SHARE your deck with a unique URL.
             </div>
         </div>
 
-        <div id="deck-edit" class="deck-edit">
-            <div id="deck-edit-power-title"
-                    class="deck-edit-section">
-                POWER BASE
-            </div>
-            <div id="deck-edit-power-rows">
-            </div>
+        <section>
+            <div id="deck-edit" class="deck-edit">
+                <div id="deck-edit-power-title"
+                        class="deck-edit-section">
+                    POWER BASE
+                </div>
+                <div id="deck-edit-power-rows">
+                </div>
 
-            <div id="deck-edit-nonpower-title"
-                    class="deck-edit-section">
-                MAIN DECK
-                <div class="deck-edit-section-description">
-                    Additional power sources highlighted
+                <div id="deck-edit-nonpower-title"
+                        class="deck-edit-section">
+                    MAIN DECK
+                    <div class="deck-edit-section-description">
+                        Additional power sources highlighted
+                    </div>
+                </div>
+                <div id="deck-edit-nonpower-rows">
                 </div>
             </div>
-            <div id="deck-edit-nonpower-rows">
-            </div>
-        </div>
 
-        <div id="deck-edit-footer" class="deck-edit-footer">
-            <button id="add-card-button" class="ui button pad-right">
-                ADD CARD
-            </button>
+            <div id="deck-edit-footer" class="deck-edit-footer">
+                <button type="button"
+                    id="add-card-button" class="ui button pad-right">
+                    ADD CARD
+                </button>
 
-            <button id="clear-button" class="ui button"
+                <button type="button"
+                    id="clear-button" class="ui button"
                     data-position="top center"
                     data-content="Deck cleared">
-                CLEAR
-            </button>
-        </div>
-
-        <div id="market-edit" class="deck-edit">
-            <div id="deck-edit-market-title"
-                    class="deck-edit-section">
-                MARKET
+                    CLEAR
+                </button>
             </div>
-            <div id="deck-edit-market-rows">
+        </section>
+
+        <section>
+            <div id="market-edit" class="deck-edit">
+                <div id="deck-edit-market-title"
+                        class="deck-edit-section">
+                    MARKET
+                </div>
+                <div id="deck-edit-market-rows">
+                </div>
             </div>
-        </div>
 
-        <div id="market-edit-footer" class="deck-edit-footer">
-            <button id="add-market-card-button" class="ui button pad-right">
-                ADD CARD
-            </button>
+            <div id="market-edit-footer" class="deck-edit-footer">
+                <button type="button"
+                    id="add-market-card-button" class="ui button pad-right">
+                    ADD CARD
+                </button>
 
-            <button id="clear-market-button" class="ui button"
+                <button type="button"
+                    id="clear-market-button" class="ui button"
                     data-position="top center"
                     data-content="Market cleared">
-                CLEAR
-            </button>
-        </div>
-    </div>
-
-    <div id="charts-panel">
-        <!--  Buttons to switch between the table and the graph  -->
-        <div id="charts-menu">
-            <div id="graph-menu-item" class="menu-item active">
-                <img id="influence-graph-menu-title"
-                        class="menu-title"
-                        src="../images/TabInfluenceGraph.png">
-                <img class="output-tab-help-icon help-icon"
-                        src="../images/IconHelp.png">
-                <div class="ui popup menu-help">
-                    Charts the odds (0-100%) of meeting
-                    desired Influence costs based on number
-                    of draws.
-                </div>
+                    CLEAR
+                </button>
             </div>
-            <div id="table-menu-item" class="menu-item">
-                <img id="power-odds-table-menu-title"
-                        class="menu-title"
-                        src="../images/TabPowerOddsTable.png">
-                <img class="output-tab-help-icon help-icon"
-                        src="../images/IconHelp.png">
-                <div class="ui popup menu-help">
-                    Tabulates the odds (0-100%) of meeting
-                    desired Influence <em>and</em>
-                    Power costs based on number of draws (0-20).
-                </div>
+        </section>
+    </section>
+
+    <section id="charts-panel">
+        <!--  Tabs to switch between the table and the graph  -->
+        <header>
+            <nav id="charts-menu" role="tablist" aria-label="Chart Tabs">
+                <button id="graph-menu-item" class="menu-item active" role="tab" aria-selected="true"
+                    aria-controls="power-graph-container" tabindex="0">
+                    <img id="influence-graph-menu-title"
+                            class="menu-title"
+                            src="/images/TabInfluenceGraph.png">
+                    <img class="output-tab-help-icon help-icon"
+                            src="/images/IconHelp.png">
+                    <div class="ui popup menu-help hidden">
+                        Charts the odds (0-100%) of meeting
+                        desired Influence costs based on number
+                        of draws.
+                    </div>
+                </button>
+                <button id="table-menu-item" class="menu-item" role="tab" aria-selected="false"
+                    aria-controls="power-table-container" tabindex="-1">
+                    <img id="power-odds-table-menu-title"
+                            class="menu-title"
+                            src="/images/TabPowerOddsTable.png">
+                    <img class="output-tab-help-icon help-icon"
+                            src="/images/IconHelp.png">
+                    <div class="ui popup menu-help hidden">
+                        Tabulates the odds (0-100%) of meeting
+                        desired Influence <em>and</em>
+                        Power costs based on number of draws (0-20).
+                    </div>
+                </button>
+            </nav>
+
+            <div id="charts-heading">
+                <h1 id="deck-title" contenteditable=true>
+                    Untitled{# placeholder #}
+                </h1>
             </div>
-        </div>
+        </header>
+        
+        <section id="power-graph-container" role="tabpanel" 
+            aria-labelledby="graph-menu-item" tabindex="0">
+            <!-- The graph of power and influence is generated here  -->
+            <section>
+                <div id="power-graph-div">
+                </div>
 
-        <div id="charts-heading">
-            <h1 id="deck-title" contenteditable=true></h1>
-        </div>
+                <div id="graph-y-label">
+                    PROBABILITY
+                </div>
+                <div id="graph-x-label">
+                    TURNS (<a href="guide/index.html#draws" target="_blank">ONE DRAW PER TURN*</a>)
+                </div>
+            </section>
 
-        <div id="power-table-container">
+            <section id="power-type-panel">
+                <div class="power-type-item">
+                    <img src="/images/IconUndepleted.svg">
+                    <span class="power-type-label">
+                            UNDEPLETED:
+                        </span>
+                    <span class="power-type-count" tag="undepleted">
+                            0{# placeholder #}
+                        </span>
+                </div>
+
+                <div class="power-type-item">
+                    <img src="/images/IconConditional.svg">
+                    <span class="power-type-label">
+                            CONDITIONAL:
+                        </span>
+                    <span class="power-type-count" tag="conditional">
+                            0{# placeholder #}
+                        </span>
+                </div>
+
+                <div class="power-type-item">
+                    <img src="/images/IconDepleted.svg">
+                    <span class="power-type-label">
+                            DEPLETED:
+                        </span>
+                    <span class="power-type-count" tag="depleted">
+                            0{# placeholder #}
+                        </span>
+                </div>
+
+                <div class="power-type-item">
+                    <img src="/images/IconMonument.svg">
+                    <span class="power-type-label">
+                            MONUMENTS:
+                        </span>
+                    <span class="power-type-count" tag="monument">
+                            0{# placeholder #}
+                        </span>
+                </div>
+
+                <div class="power-type-item">
+                    <img src="/images/IconCrest.svg">
+                    <span class="power-type-label">
+                            CRESTS:
+                        </span>
+                    <span class="power-type-count" tag="crest">
+                            0{# placeholder #}
+                        </span>
+                </div>
+
+                <div class="power-type-item">
+                    <img src="/images/IconWaystone.svg">
+                    <span class="power-type-label">
+                            WAYSTONES:
+                        </span>
+                    <span class="power-type-count" tag="waystone">
+                            0{# placeholder #}
+                        </span>
+                </div>
+
+                {# <div class="power-type-item">
+                </div> #}
+
+                <div class="power-type-item">
+                    <img src="/images/IconStandard.svg">
+                    <span class="power-type-label">
+                            STANDARDS:
+                        </span>
+                    <span class="power-type-count" tag="standard">
+                            0{# placeholder #}
+                        </span>
+                </div>
+
+                {# <footer id="power-type-panel-footer">
+                </footer> #}
+            </section>
+        </section>
+
+        <section id="power-table-container" role="tabpanel" 
+            aria-labelledby="table-menu-item" tabindex="0"
+            hidden>
             <div id="power-table-loader" class="ui loader">
             </div>
 
@@ -202,93 +320,9 @@
             <!--  The table of draw odds is generated here  -->
             <div id="power-table-odds-div">
             </div>
-        </div>
+        </section>
+    </section>
 
-        <div id="power-graph-container">
-            <!-- The graph of power and influence is generated here  -->
-            <div id="power-graph-div">
-            </div>
-
-            <div id="graph-y-label">
-                PROBABILITY
-            </div>
-            <div id="graph-x-label">
-                TURNS (<a href="guide/index.html#draws" target="_blank">ONE DRAW PER TURN*</a>)
-            </div>
-
-            <div id="power-type-panel">
-                <div class="power-type-item">
-                    <img src="../images/IconUndepleted.svg">
-                    <span class="power-type-label">
-                            UNDEPLETED:
-                        </span>
-                    <span class="power-type-count" tag="undepleted">
-                        </span>
-                </div>
-
-                <div class="power-type-item">
-                    <img src="../images/IconConditional.svg">
-                    <span class="power-type-label">
-                            CONDITIONAL:
-                        </span>
-                    <span class="power-type-count" tag="conditional">
-                        </span>
-                </div>
-
-                <div class="power-type-item">
-                    <img src="../images/IconDepleted.svg">
-                    <span class="power-type-label">
-                            DEPLETED:
-                        </span>
-                    <span class="power-type-count" tag="depleted">
-                        </span>
-                </div>
-
-                <div class="power-type-item">
-                    <img src="../images/IconMonument.svg">
-                    <span class="power-type-label">
-                            MONUMENTS:
-                        </span>
-                    <span class="power-type-count" tag="monument">
-                        </span>
-                </div>
-
-                <div class="power-type-item">
-                    <img src="../images/IconCrest.svg">
-                    <span class="power-type-label">
-                            CRESTS:
-                        </span>
-                    <span class="power-type-count" tag="crest">
-                        </span>
-                </div>
-
-                <div class="power-type-item">
-                    <img src="../images/IconWaystone.svg">
-                    <span class="power-type-label">
-                            WAYSTONES:
-                        </span>
-                    <span class="power-type-count" tag="waystone">
-                        </span>
-                </div>
-
-                <div class="power-type-item">
-                </div>
-
-                <div class="power-type-item">
-                    <img src="../images/IconStandard.svg">
-                    <span class="power-type-label">
-                            STANDARDS:
-                        </span>
-                    <span class="power-type-count" tag="standard">
-                        </span>
-                </div>
-
-                <div id="power-type-panel-footer">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="calculator-body-footer">
-    </div>
+    {# <footer id="calculator-body-footer">
+    </footer> #}
 </main>
