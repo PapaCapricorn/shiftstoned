@@ -60,6 +60,9 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, limit);
   });
 
+  // nth filter
+  eleventyConfig.addFilter("nth", require("./src/utils/filters/nth.js"));
+
   // Universal Shortcodes (adds to Liquid, Nunjucks, Handlebars & JavaScript)
 /*     // format date & time
   eleventyConfig.addShortcode("date", require("./src/utils/shortcodes/date.js"));
