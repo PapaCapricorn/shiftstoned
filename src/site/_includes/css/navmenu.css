@@ -11,7 +11,8 @@
     background-color: #FFFFFF;
 }
 
-#navigation-menu {
+#navigation-menu,
+#newNavigation-menu {
     position: absolute;
     left: 1200px;
     top: 10px;
@@ -19,11 +20,8 @@
 }
 
 #newNavigation-menu {
-    position: absolute;
     /* left: 1200px; */
     left: 1080px;
-    top: 10px;
-    font-family: 'Open Sans ExtraBold', sans-serif;
 }
 
 #navigation-menu .menu {
@@ -59,26 +57,67 @@
 
 /* newNavigation-menu substyles */
 
-#newNavigation-menu .menu {
-    left: auto;
-    right: 0px;
+#menu-toggle {
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+/* effect to let user know this is interact-able */
+#menu-toggle:hover {
+    /* temporary.. if using this, need a scalable (larger initial) image,
+    or svg, so it isn't blurry */
+    transform: scale(1.1); 
+}
+
+.site-nav {
+    position: absolute;
+        right: 0px;
     background-color: #2E2C3D;
     border: 1px solid #FFFFFF;
+    border-radius: .28571429rem;
+    box-shadow: 0 2px 3px 0 rgba(34,36,38,.15);
+    transform-origin: top;
+    -webkit-transition: opacity .2s ease, transform .3s ease;
+    transition: opacity .2s ease, transform .3s ease;
 }
 
-#newNavigation-menu .menu > .item {
-    padding: 0px !important;
+#newNavigation-menu[data-state="closed"] .site-nav {
+    transform: scaleY(0);
+    opacity: 0;
 }
 
-#newNavigation-menu a:hover {
-    border-radius: 5px;
-    background-color: #443D66;
+#newNavigation-menu[data-state="open"] .site-nav {
+    transform: scaleY(1);
+    opacity: 100;
 }
 
-#newNavigation-menu a {
+.nav-list {
+    margin: 0;
+    padding: 0;
+    min-width: max-content;
+    list-style: none;
+}
+
+.nav-item {
+    line-height: 1em;
+    font-size: 1rem;
+}
+
+.site-nav a {
     padding: 14px;
     display: block;
     width: 100%;
     height: 100%;
     color: #FFFFFF;
+}
+
+.site-nav a:hover {
+    border-radius: 5px;
+    background-color: #443D66;
+}
+
+.nav-item.child a::before {
+    content: '\2022';
+    margin-right: .8em;
 }
