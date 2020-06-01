@@ -73,6 +73,7 @@
 .site-nav {
     position: absolute;
         right: 0px;
+        z-index: 11;
     background-color: #2E2C3D;
     border: 1px solid #FFFFFF;
     border-radius: .28571429rem;
