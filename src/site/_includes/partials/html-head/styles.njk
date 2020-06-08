@@ -1,8 +1,14 @@
   <!-- CSS -->
   <link href="{{ "/styles/site.css" | url }}" rel="stylesheet" type="text/css">
-  <link href="{{ "/epc/epc.css" | url }}" rel="stylesheet" type="text/css">
+  {# <link href="{{ "/epc/epc.css" | url }}" rel="stylesheet" type="text/css"> #}
   {%- if legacy %}
   <link href="/styles/{{ legacy }}" rel="stylesheet" type="text/css">
+  {%- endif %}
+    {#- if `page_styles` data is passed, include those CSS files here -#}
+  {%- if page_styles %}
+    {%- for style in page_styles %}
+  <link href="{{ style | url }}" rel="stylesheet" type="text/css">
+    {%- endfor %}
   {%- endif %}
 
     {#- if `page_style` data is passed, include that CSS partial here -#}
