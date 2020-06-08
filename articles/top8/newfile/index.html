@@ -25,7 +25,7 @@
 
   <!-- CSS -->
   <link href="/styles/site.css" rel="stylesheet" type="text/css">
-  <link href="/epc/epc.css" rel="stylesheet" type="text/css">
+  
   <link href="/styles/legacy.css" rel="stylesheet" type="text/css">
 
 
@@ -45,51 +45,29 @@
         <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
 
 
-      <div class="ui dropdown" id="newNavigation-menu" tabindex="0">
+      <div id="newNavigation-menu" data-state="closed">
 
-        <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
 
-        <div class="menu left transition hidden" tabindex="-1">
-
-          <div class="item">
-            <a href="/">HOME </a>
-          </div>
-
-          <div class="item">
-            <a href="/epc/">POWER CALCULATOR </a>
-          </div>
-
-          <div class="item">
-            <div class="navigation-menu-indent">
-              <a href="/epc/about/">&bull;</a>
-            </div>
-            <a href="/epc/about/">Guide</a>
-          </div>
-
-          <div class="item">
-            <a href="/calendar/">COMMUNITY CALENDAR</a>
-          </div>
-
-          <div class="item">
-            <a href="/drafter/">DRAFTER</a>
-          </div>
-
-          <div class="item">
-            <a href="/players/">PLAYERS</a>
-          </div>
-
-          <div class="item">
-            <a href="/articles/">ARTICLES</a>
-          </div>
-
-          <div class="item">
-            <a href="/contact">CONTACT</a>
-          </div>
-
-        </div>
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/players/">PLAYERS</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
 
       </div>
-
 
       </div>
 
@@ -117,10 +95,9 @@ epcUrl:
     </div>
 
     <!-- JAVASCRIPT -->
-    <script type="text/javascript" src="/epc/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="/epc/semantic.min.js"></script>
-    <script type="text/javascript" src="/epc/epc.min.js"></script>
-    <script type="text/javascript">$(".ui.dropdown").dropdown();</script>
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
 
 
   </body>
