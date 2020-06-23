@@ -1,0 +1,6423 @@
+{
+  "updates":{
+    "Fire":{
+      "factions":["Fire"],
+      "cards":{
+        "Kept":{
+          "Ankle Cutter":{
+            "expedition":{
+              "state":"Kept",
+              "set":"The Flame of Xulta"
+            },
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Bladerang":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Blazing Renegade":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Burn Out":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Centaur Outrider":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Centaur Raidleader":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Char":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Claw of the First Dragon":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Criva, the Crimson Scythe":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Dramatic Exit":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Dusthoof Brawler":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Firemane Cub":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Flamekeeper":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Flash Fire":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Forge Wolf":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Furnace Mage":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Granite Acolyte":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Harmony of Flame":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Helpful Doorbot":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Kaleb's Favor":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Kennelmaster":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Light the Fuse":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Magma Javelin":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Morningstar":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Outlands Sniper":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Piercing Shot":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Pit Fighter":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Pyre Adept":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Rally":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Rampage":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Razorwire Totemite":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Rebel Illuminator":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Rebel Sharpshooter":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Recogulator":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Refracted Sentinel":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Ruin":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Shavka Evangel":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Shiftstone Processor":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Skyfire Hellkite":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Steelbound Dragon":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Steelfang Chakram":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Stonescar Maul":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Stonesmelt Dragon":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Ticking Grenadin":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Tota Colony":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Tumblebang":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Worldpyre Phoenix":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Akko, Inspired Artist":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Ancient Defenses":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Ashen Snakepit":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Barbarian Camp":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Barkeep's Friend":{
+            "draft":{
+              "before":"3",
+              "after":"-"
+            }
+          },
+          "Birthright":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Breath of Voprex":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Burning Claw":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Charchain Flail":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cinder Clutch":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cinder Yeti":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cindermaw Tota":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cloud of Ash":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Coverfire Marksman":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Cozin Darkheart":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Crimson Firemaw":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Crowd Favorite":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Desperate Gambit":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Draconic Ire":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Dragon Forge":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Eclipse Dragon":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Edict of Shavka":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Emblem of Shavka":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Endra, Champion of Shavka":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Factory Quota":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "First Flame":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Flamestoker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Flametail Whip":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Frontline Cyclops":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Funeral Pyre":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Galai, Shavka's Listener":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Gaudy Showman":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Gold Mine":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Grandfather's Axe":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Granite Ring":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Grenade":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Hellfire Rifle":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Honor the Ancestors":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Hordeleader":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Hotblood Barbarian":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Improvised Rubbler":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Infernus":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Jawbone Greatsword":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Jawbone Hatchet":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Kaleb's Intervention":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Kaleb's Sanctum":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Kaleb, Uncrowned Prince":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Kindle":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Living Mountain":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Magebreaker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Magmatic Sentinel":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Molten Fist":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Oni Cavediver":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Oni Quartermaster":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Overheat":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Parapet Sentry":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Phoenix Hammer":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Phoenix Stone":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Plunder":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Raging Firemaw":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rakano Flagbearer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Reforge":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Relentless Combatant":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rock Carapace":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rusty Grenamotive":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Ruthless Stranger":{
+            "draft":{
+              "before":"3",
+              "after":"-"
+            }
+          },
+          "Shingane Captain":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Siege Breaker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sindok, Rage Incarnate":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sizzleback Salamander":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Sky Terror":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Slayer's Edge":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Softfoot Burglar":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Sol's Fury":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Soulfire Drake":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Spear of the Dying Sun":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Spitfire":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Stonescar Excavator":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Swift Stranger":{
+            "draft":{
+              "before":"3",
+              "after":"-"
+            }
+          },
+          "Teething Whelp":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Temper":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Urn of Choking Embers":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Wandering Forge":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Warbrush Oni":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Warhorn":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Warpainter":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Yeti Sage":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Dramatist's Mask":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Forgeborn":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Granite Waystone":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Grenarender":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Gun Down":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Iceberg Scattershot":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Incendiary Slagmite":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Lavablood Goliath":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Nika, the Freescaler":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Slag":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Song of War":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Thunderhoof Warrior":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Trail Stories":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Wildfire Censari":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          }
+        }
+      }
+    },
+    "Time":{
+      "factions":["Time"],
+      "cards":{
+        "Kept":{
+          "Accelerated Impact":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Ageless Mentor":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Amber Acolyte":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Ancient Lore":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Ancient Terrazon":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Ardent Convert":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Azurite Prixis":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Belching Behemoth":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Bold Adventurer":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Cult Recruiter":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Dawnwalker":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Dune Phantom":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Entrancer":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Grodov Evangel":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Healer's Cloak":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Horned Vorlunk":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Humbug":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Humbug Swarm":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Learned Herbalist":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Merizo, Gladiator Hero":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Mettle":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Oasis Sanctuary":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Praxis Displacer":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Predator's Instinct":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Predatory Carnosaur":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Scorpion Wasp":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Seasoned Spelunker":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Secret Pages":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Silence":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Snapping Hydrangea":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Sol's Rest":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Striking Snake Formation":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Swirl the Sands":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Talir's Favored":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Teleport":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Timekeeper":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Towering Terrazon":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Towertop Patrol":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Unlock Potential":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Unraveling Fanatic":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Wurmcalling":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Xenan Guardian":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Amaran Armadillo":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Amaran Shoveler":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Amber Ring":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Ancient Excavator":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Anthem of Grodov":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Antique Polisher":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Araktodon Egg":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Archive Curator":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Ark of Sol":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Aspirant's Robes":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Bastion of the Dawn":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Battle-Tested Stranger":{
+            "draft":{
+              "before":"3",
+              "after":"-"
+            }
+          },
+          "Borderlands Lookout":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Chant to Grodov":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Clockroach":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Crown of Possibilities":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Decay":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Determined Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Devoted Theurge":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Dilphex Stalker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Disjunction":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Divining Rod":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Eager Offering":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Edict of Grodov":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Emblem of Grodov":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Emerging Colossus":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Ephemeral Wisp":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Etched Monolith":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Ghar, Master Sandmage":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Gnash, Pridemaster":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Gnash, Unrelenting":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Grodov's Favored":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "High Prophet of Sol":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Horn of Plenty":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Idol of Destran":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Illumination Wisp":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Infinite Hourglass":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Initiation Bell":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Insistent Automaton":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Ixtol's Pendant":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Ixtol, Champion of Grodov":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Jibbering Jackal":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Journey Guide":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Last Rites":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Living Example":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Locust":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Lucky Prospector":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Lumen Reclaimer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Lumen Shepherd":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Majestic Mandrake":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Marisen, the Eldest":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Mask of Torment":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Mesmerized Moth":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Moondial":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Mountain Goliath":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Ornamental Daggers":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Perilous Research":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Pit of Lenekta":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Pompous Historian":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Porcelain Mask":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Power Stone":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Powerbreach Sentinel":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Proselytize":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Randori":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Reap":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Resolute Monk":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Royal Guardian":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Runic Protector":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Sandbinder Sentinel":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Sandstorm Scarf":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Shepherd's Horn":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Sirocco Glider":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Spiketail Qirin":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Submerged Titan":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Swaying Sea Qirin":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Talir, Unbound":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Talir, Who Sees Beyond":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Temple Artisan":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Temple Captain":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Temporal Distortion":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Thrashing Dune Wurm":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Time Flies":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Tomb Protector":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Twinbrood Sauropod":{
+            "draft":{
+              "before":"3",
+              "after":"-"
+            }
+          },
+          "Unmake":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Vapor Hut":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Vault of the Praxis":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Vinepetal Creeper":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Voice of the Speaker":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Water of Life":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Waystone Fragment":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Wilderness Refuge":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Woda, Grodov's Listener":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Wurmstone":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Xultan Brushfang":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Amber Waystone":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Baying Serasaur":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Confiscate":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Copper Conduit":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Envelop":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Fantastic Revelation":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "First Watch":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Friendly Wisp":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Hall of Lost Kings":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Invoke the Waystones":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Lumen Defender":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Packbeast":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Panoptic Guardian":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Premonition Wisp":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Sand Viper":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Sand Warrior":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Sandstorm Titan":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Sauropod Wrangler":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Temple Scribe":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "The Praxis Arcanum":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Vital Arcana":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Wandering Wisp":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          }
+        }
+      }
+    },
+    "Justice":{
+      "factions":["Justice"],
+      "cards":{
+        "Kept":{
+          "Adjudicator's Gavel":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Auric Sentry":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Brightmace Paladin":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Challenge by Law":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Citywide Ban":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Cleansing Rain":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Copperhall Chancellor":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Copperhall Recruit":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Crownwatch Longsword":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Crownwatch Paladin":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Elder's Feather":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Finest Hour":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Fourth-Tree Elder":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Ghostblade Outcast":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Hammer of Authority":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Heirloom Blade":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Hero of the People":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Hooru Fledgling":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Isolate":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Kira, the Prodigy":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Kodosh Evangel":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Last Stand at the Gate":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Lay Siege":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Longtail Cavalry":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Loyal Watchwing":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Mantle of Justice":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Minotaur Grunt":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Mithril Mace":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Oni Samurai":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Rebuke":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Rolant's Favor":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Rolant's Honor Guard":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Silver Shortsword":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Silverwing Commander":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Stand Strong":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Steadfast Deputy":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Storm of Feathers":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Tax Collector":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Tinker Apprentice":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Treasury Gate":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Valkyrie Wings":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Victor's Cry":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          }
+        },
+        "Removed":{
+          "Aali, Champion of Kodosh":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Aerial Spotter":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Ageworn Vestige":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Armorsmith":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Avigraft":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Bisma, Revered Elder":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Chancellor's Horn":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Civic Peacekeeper":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Combrei Magister":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Copperhall Paladin":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Crowd Queller":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Crownwatch Captain":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Curse of Taxation":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Draw Strength":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Edict of Kodosh":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Emblem of Kodosh":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Emerald Acolyte":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Emerald Ring":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Encouragement":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Ezuzi, Kodosh's Listener":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Fall Short":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Forgemark Scrivener":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Geomar, the Steel Tempest":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Gilded Glaive":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Golem Press":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Graceful Calligrapher":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Hanaka, Loremaster":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Headhunter":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Hexcaster":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "High Alert":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Humble Instructor":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Inflict Conscience":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Inner Might":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Kemmo's Blueprints":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Kemmo, Ijin's Apprentice":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Kodosh Sees All":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Kosul Curator":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Martyr's Chains":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Mercy of Kodosh":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Minotaur Oathkeeper":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Minsod, the Peerless":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Mistrust":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Nivia's Inquisitor":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Oni Stalwart":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Order of the Spire":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Paladin Oathbook":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Peacekeeper's Helm":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Plated Demolisher":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Prancing Gryffyn":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Press the Advantage":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rallying Banner":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Reinforce":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Reinvigorate":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Rent Seeker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Reyna, the Unwavering":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Righteous Intent":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rilgon's Disciple":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Rolant, the Iron Fist":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Seasoned Drillmaster":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Shamebearer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Shen-Ra, Unbreakable":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Silverwing Familiar":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Siraf's Beacon":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Solburst Scimitar":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Soothing Shortbeak":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Soulflame Rider":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sparring Partner":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Spellstrike Sorceress":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Spire Spellsword":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Spirit Guide":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Spiritblade Stalker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Stalwart Shield":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Steel-Eyed Pistoleer":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Svetya's Sanctum":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Sword of the Sky King":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Talon of Nostrix":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Tinker Overseer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Tireless Stranger":{
+            "draft":{
+              "before":"3",
+              "after":"-"
+            }
+          },
+          "Tranquil Scholar":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Treasury Guard":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Twinstrike Master":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Unbreakable Alliance":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Unseen Commando":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Unseen Ghostblade":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Valkyrie Aspirant":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Valkyrie Justiciar":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Valorous Stranger":{
+            "draft":{
+              "before":"3",
+              "after":"-"
+            }
+          },
+          "Vanquish":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Watchwing Conscript":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Whetstone":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Xulta Foil":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Xultan Paladin":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Argenport Soldier":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Auric Weaponsmith":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Barricade":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Copperhall Marshal":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Copperhall Porter":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Defiance":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Detain":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Emerald Waystone":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Fencing Master":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Fur Hat":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Hooru Envoy":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Miner's Canary":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Minotaur Duelist":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Peacekeeper's Prod":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Pistolwhip":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Rabblerouser":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Reinforced Baton":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Reinforcements":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Sigvard, the Last Bastion":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Stalwart Silverwing":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Town Watchman":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          }
+        }
+      }
+    },
+    "Primal":{
+      "factions":["Primal"],
+      "cards":{
+        "Kept":{
+          "Aerial Battle":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Araktodon":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Backlash":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Boltcrafter Shaman":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Channel the Tempest":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Cloudsnake Harrier":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Cloudsnake Hatchling":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Cobalt Acolyte":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Crystallize":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Death from Above":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Eilyn's Favor":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Flight of Makkar":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Ice Sprite":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Icy Gaze":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Jarrall's Frostkin":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Jump Kick":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Levitate":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Lightning Storm":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Lightning Strike":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Linrei Evangel":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Magus of the Mist":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Permafrost":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Polymorph":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Primal Incarnation":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Psionic Savant":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Rain of Frogs":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Realitybreaker":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Rimescale Draconus":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Savage Denial":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Scaly Gruan":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Skycrag Wyvarch":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Snowfort":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Staff of Stories":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Swift Refusal":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Thunderbird":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Torgov, Icecap Trader":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Vargo's Pelt":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Windshaper":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Wisdom of the Elders":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Yorja, The Tale Keeper":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Acantha's Outrider":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Acquisitive Crow":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Aeva, Eilyn's Elite":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Blitrok, Linrei's Listener":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Borderlands Waykeeper":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Breeze Dancer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Brutish Interloper":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Burr-Spore Fern":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cloudsnake Saddle":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Clutch of Talons":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cobalt Ring":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Court Mage":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cruelty":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Daring Gryffyn":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "East-Wind Herald":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Edict of Linrei":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Eilyn's Intervention":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Eilyn's Sanctum":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Eilyn, Queen of the Wilds":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Eilyn, the Rising Storm":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Elvish Swindler":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Emblem of Linrei":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Enraged Araktodon":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Eye of Winter":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Fearstoker Raven":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Fragility":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Frost Talisman":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Gift of Battle":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Glacier Shaper":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Greed's Reward":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Greenstretch Empath":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Gustrider":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Hearty Stranger":{
+            "draft":{
+              "before":"3",
+              "after":"-"
+            }
+          },
+          "Herald's Song":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Hooru Teachings":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Icebreaker":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Innate Conviction":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Inspired Prank":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Kenna, Shaman of the Scale":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Larai, the Appraiser":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Lens of Clarity":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Lida's Apprentice":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Lida, Most Skilled":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Linrei's Protection":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Lys, Champion of Linrei":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Maelstrom Bell":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Master Cartographer":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Meditation Trainer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Mistveil Drake":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "North-Wind Herald":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Numbing Cold":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Pearlescent Drake":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Pitfall Trap":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Pokpok's Slingshot":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Prodigious Sorcery":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Quicksilver Mirror":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rainfall Accord":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rejection":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Reverberating Strike":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rosebloom Mandrake":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sapphire Dragon":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Second Sight":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Shaluuk Captain":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Sinister Opportunist":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Skyhorror Draconus":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Skyrider Vanguard":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Skysnapper":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Skywalk Instructor":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Skyward Seer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Skywatch Zealot":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Snowdrift Delver":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Snowrager":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Snowstorm Druid":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Soaring Stranger":{
+            "draft":{
+              "before":"3",
+              "after":"-"
+            }
+          },
+          "Socrato, Furyheart":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "South-Wind Herald":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Storm Spiral":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Storm Talisman":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sunken Tower":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Talon Dive":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Temple Shihan":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Thudrock, Arctic Artisan":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Thunderclaw Raven":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Thunderstrike Dragon":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Tidal Forces":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Tidecaller":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Unseal":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Unstable Form":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Violent Gust":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "West-Wind Herald":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Wild Cloudsnake":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Yeti Gryffyn Rider":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Yeti Snowslinger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Yeti Traditionalist":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Yeti Troublemaker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Yetipult":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Big Brother":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Cirso's Meddling":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Cobalt Waystone":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Cutbrush Cartographer":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Eilyn's Frostrider":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Galeprowler":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Ice Bolt":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Icebow":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Icequake":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Icicle Marksman":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Jarrall Iceheart":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Lumbering Gruan":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Mind Link":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Powderglider":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Read the Stars":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Regression":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Savagery":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Shapeshifter's Mask":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Shiver":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Substitute":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Tend the Flock":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Tundra Explorer":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Whispering Wind":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Yeti Furflinger":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          }
+        }
+      }
+    },
+    "Shadow":{
+      "factions":["Shadow"],
+      "cards":{
+        "Kept":{
+          "Amethyst Acolyte":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Ashara, the Deadshot":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Back-Alley Bouncer":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Banewulf":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Blackguard Sidearm":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Blood of Makkar":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Burglarize":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Cabal Cutthroat":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Cut Ties":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Dark Wisp":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Deathstrike":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Devious Drone":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Devour":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Devouring Shadow":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Direfang Spider":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Direwood Prowler":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Direwood Rampager":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Faceless One":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Fallen Oni":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Fervent Siphoner":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Ghostform":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Grenamender":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Horsesnatcher Bat":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Illicit Armament":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Impending Doom":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Improvised Club":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Lethrai Falchion":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Lifedrinker":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Makkar Evangel":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Marionette Cross":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Minotaur Lighthoof":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Nametaker":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Oblivion Spike":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          },
+          "Obrak, the Feaster":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Piercing Grief":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Ravenous Thornbeast":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Reconnaissance":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Repulsive Gorger":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Scavenging Vulture":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Shadowlands Guide":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Slumbering Stone":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Soul Collector":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Spectral Scythe":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Spirit Drain":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Sunset Priest":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "The Last Word":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Umbren Occluder":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Vampire Bat":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Vara's Favor":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Vicious Rejuvenation":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Abduct":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Amethyst Ring":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Auric Captain":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Auric Interrogator":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Auric Reclaimer":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Azindel's Gift":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Bandit's Flail":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Banished Umbren":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Beastcaller's Amulet":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Befoul":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Blood Beetle":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Bloodseeker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Boot Knife":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Borrowed Violence":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cabal Recruiter":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cabal Scavenger":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Calamity Oracle":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cat Burglar":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Consuming Greed":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Corrupted Umbren":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Cull the Deck":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Curator's Spear":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Deadly Confrontation":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Direwood Beastcaller":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Direwood Slasher":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Dread Hellkite":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Dreamsnatcher":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Dueling Pistols":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Dumping Ground":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Edict of Makkar":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Emblem of Makkar":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Eremot's Designs":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Eremot, Death Incarnate":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Eviscerate":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Fearbinder":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Fell Ritual":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Heartstopper":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Immortalize":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Incarnus, Makkar's Listener":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Karvet, Solar Dragon":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Kuro, Champion of Makkar":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Lethrai Dead Drop":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Lethrai Lobotomy":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Lethrai Provocateur":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Lethrai Ranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Magenta Wisp":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Makkar's Bloodwolf":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Malaise":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Marsh Dragon":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Mazag, the Waking Terror":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Memory Dredger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Merciless Stranger":{
+            "draft":{
+              "before":"3",
+              "after":"-"
+            }
+          },
+          "Mournful Deathcap":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Noxious Wyvarch":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Pillar of Dreams":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Relentless Gorehorn":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Sabotage":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sadistic Glee":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sadistic Valkyrie":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Savage Stranger":{
+            "draft":{
+              "before":"3",
+              "after":"-"
+            }
+          },
+          "Secret Passage":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sinister Design":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Smokedancer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Spitefeeder":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Spiteful Strike":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Surgeon's Saw":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Tavia, Lethrai Raidleader":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Tock Tick":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Torture":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Touch of the Umbren":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Umbral Edge":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Unkindness":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Unspeakable Torment":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Vara's Intervention":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Vara, Fate-Touched":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Venomfang Dagger":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Verro, Banished Inquisitor":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Vile Collaborator":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Vizier's Tablet":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Void Drummer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Waylay":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Weary Spiteling":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Whispers in the Void":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Xenan Cultist":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Xenan Lifespeaker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Zelia, the Vain":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Amethyst Waystone":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Annihilate":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Cabal Countess":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Corrupt":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Dizo, Cabal Chairman":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Elder Astrologer":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Gorgon Cutthroat":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Harbinger's Bite":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Infused Strike":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Lunging Wisp":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Malediction":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Nullblade":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Pilfer":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Scheme":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Sleepless Night":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Slimespitter Slug":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Spur On":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Stonescar Sneak":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Suffocate":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Swear Vengeance":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Territorial Elf":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "The End is Near":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Venomspine Hydra":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          }
+        }
+      }
+    },
+    "Praxis":{
+      "factions":["Fire","Time"],
+      "cards":{
+        "Kept":{
+          "Cheering Section":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Moment of Creation":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Impulse":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Champion Grappler":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Darya, Warrior Poet":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Kairos' Choice":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Kairos, Grand Champion":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Magus of Celerity":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Monolith Guardian":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Noble Firemane":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Praxis Banner":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Purify":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Ramba, Arena Showman":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Solwatcher Tota":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Stoneshell Walker":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Waker of Ancients":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Brenn, Chronicler of Ages":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Champion of Impulse":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Diogo Málaga":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Sandglass Sentinel":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Talir's Choice":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          }
+        }
+      }
+    },
+    "Combrei":{
+      "factions":["Time","Justice"],
+      "cards":{
+        "Kept":{
+          "Combrei Healer":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Karmic Guardian":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Penitent Bull":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Reality Warden":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Safe Return":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Progress":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Shen-Ra Speaks":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Shush":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Aamri's Choice":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Aamri, Dragonbane":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Combrei Banner":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Harga, Armory Warden":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Intrepid Longhorn":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Qirin Ascendant":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Serene Meditant":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Stronghold's Visage":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Vodakhan's Staff":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Champion of Progress":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Copperhall Elite":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Desert Marshal":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Siraf's Choice":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          }
+        }
+      }
+    },
+    "Hooru":{
+      "factions":["Justice","Primal"],
+      "cards":{
+        "Kept":{
+          "Eilyn's Choice":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Electrostatic Distortion":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Order":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Aerialist Trainer":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Archgryffyn Patriarch":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Bring Down":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Deepwood Ranger":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Duelist's Blade":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Forbidden-Rider Outcast":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Hooru Banner":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Master's Lesson":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Misery Walker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Parul's Choice":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Parul, Sealkeeper":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Spellshield Architect":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Vision of Austerity":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Aid of the Hooru":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Champion of Order":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Shield Bash":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          }
+        }
+      }
+    },
+    "Feln":{
+      "factions":["Primal","Shadow"],
+      "cards":{
+        "Kept":{
+          "Ancient of the Ice Caves":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Feeding Time":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Seat of Cunning":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Trickster's Cloak":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Conservatory Alchemist":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Feln Banner":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Felrauk the Outcast":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Felrauk's Choice":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Gorgon Fanatic":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Gorgon Swiftblade":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Kindo Shadowstep":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Lethrai Hideaway":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Skywalk Enforcer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Tome of Horrors":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Wretched Raven":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Zende, the Heart-Binder":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Black-Sky Harbinger":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Champion of Cunning":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Feln Bloodcaster":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Feln Cauldron":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Rindra's Choice":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          }
+        }
+      }
+    },
+    "Stonescar":{
+      "factions":["Fire","Shadow"],
+      "cards":{
+        "Kept":{
+          "Combust":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Cremate":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Seat of Chaos":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Voprex, Hope's End":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Bloodrite Kalis":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Brimstone Altar":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cinder Dragon":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cruel Wyvarch":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Dakus, Ancient Flame":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Dracowitch Razca":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Jekk, Lone Gun":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Recycler":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Scraptank":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Smuggler's Stash":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Stonescar Banner":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Voprex's Choice":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Voprex, the Great Ruin":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Champion of Chaos":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Infernal Tyrant":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Statuary Maiden":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Warband Chieftain":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Wyatt, Junk Collector":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          }
+        }
+      }
+    },
+    "Rakano":{
+      "factions":["Fire","Justice"],
+      "cards":{
+        "Kept":{
+          "Gatekeeper's Halberd":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Ijin, Imperial Armorer":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Longhorn Sergeant":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Rakano Artisan":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Renegade Valkyrie":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Seat of Glory":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Tinker Dronedropper":{
+            "draft":{
+              "before":"6",
+              "after":"10"
+            }
+          }
+        },
+        "Removed":{
+          "Acclaimed Artisan":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Conspicuous Traveler":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rakano Insignia":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rujin's Choice":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rujin, Conflict Within":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Starsteel Daisho":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sword of Icaria":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Zealous Artisan":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Champion of Glory":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          }
+        }
+      }
+    },
+    "Elysian":{
+      "factions":["Time","Primal"],
+      "cards":{
+        "Kept":{
+          "Amaran Camel":{
+            "draft":{
+              "before":"1",
+              "after":"10"
+            }
+          },
+          "Hunting Pteriax":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Seat of Wisdom":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Storm Lynx":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Twinning Ritual":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Crystalline Chalice":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Elysian Insignia":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Honeypot":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Ila & Mizo":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Pteriax Hatchling":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sodi the Metamorph":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sodi's Choice":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sodi's Spellshaper":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Stormtamer's Mount":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Tunneling Gargantua":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Wanderlust Qirin":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Champion of Wisdom":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Cirso's Choice":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Cirso, the Great Glutton":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Derry Cathain, Ripclaw Rider":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "False Prince":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Torgov's Trading Post":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          }
+        }
+      }
+    },
+    "Argenport":{
+      "factions":["Justice","Primal"],
+      "cards":{
+        "Kept":{
+          "Eloz's Choice":{
+            "draft":{
+              "before":"1",
+              "after":"5"
+            }
+          },
+          "Eloz, Martial Scholar":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Vengeance":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Argenport Insignia":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Bartholo, the Seducer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Bloodletter":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Cast into Shadow":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Crownwatch Traitor":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Eloz's Elite":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Nivia, Most Devoted":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rooftop Vigilante":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Shattered Hopes":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Slay":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Streetwise Informant":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Tavrod, Auric Broker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Valkyrie Denouncer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Back for More":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Champion of Vengeance":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Grinva, Judge of Battles":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Sanguine Sword":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Unfinished Business":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          }
+        }
+      }
+    },
+    "Skycrag":{
+      "factions":["Fire","Primal"],
+      "cards":{
+        "Kept":{
+          "Calderan Cradle":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Geminon, the Double Helix":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Knucklebones":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Fury":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Blood-Sun Staff":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Bloodthirsty Brawler":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Chunk Chunk":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Crill, Merciless Pillager":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Geminon's Berserker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Geminon's Choice":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Iceberg Warchief":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Molot & Nakova":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rockslide":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Skycrag Insignia":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Spitflame Draconus":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Topaz Drake":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Unexpected Results":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Wizened Crone":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Champion of Fury":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Kaleb's Choice":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          }
+        }
+      }
+    },
+    "Xenan":{
+      "factions":["Time","Shadow"],
+      "cards":{
+        "Kept":{
+          "Blistersting Claws":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Nahid, the Immortal":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Mystery":{
+            "draft":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "The Merriest Mandrake":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Banish":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Bloodcall Invoker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Cruciation":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Dread":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Nahid's Choice":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Nahid's Faithful":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sadistic Ritualist":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sunset Stone":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Unraveler of Destinies":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Worthy Cause":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Xenan Cupbearer":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Xenan Insignia":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Zhen-Zu, Hand of Nahid":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Ayan, the Abductor":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Azindel, the Wayfinder":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Blistersting Wasp":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Champion of Mystery":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Xenan Augury":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          }
+        }
+      }
+    },
+    "Mixed":{
+      "factions":["Fire","Time","Justice","Primal","Shadow"],
+      "cards":{
+        "Kept":{
+          "Bastion of the Dawn":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Blaze":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Bleak Basin Guide":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Carnivorous Sauropod":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Den of Ordeals":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Display of Ambition":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Display of Honor":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Display of Instinct":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Display of Knowledge":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Display of Vision":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Kosul Beastmaster":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Outcast Fortress":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Profane Nexus":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Triumphant Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Tumbling Sloth":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Xulta Arcanum":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+        }
+      }
+    },
+    "Neutral":{
+      "factions":["Neutral"],
+      "cards":{
+        "Kept":{
+          "Ancient Manual":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Disrupt":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Forsworn Stranger":{
+            "draft":{
+              "before":"3",
+              "after":"5"
+            }
+          },
+          "Makeshift Barrier":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seek Power":{
+            "draft":{
+              "before":"6",
+              "after":"5"
+            }
+          },
+          "Spirit of Resistance":{
+            "draft":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+          "Alchemist's Concoction":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Argenport Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Astromancer's Compass":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Chairman's Contract":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Combrei Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Common Cause":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Elysian Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Feln Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Hooru Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Horus Traver":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Iron Hook":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Mask Maker":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Nightmare Prism":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Praxis Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rakano Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Reunite":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Rotorcycle":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sacred Seal":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Seek Answers":{
+            "draft":{
+              "before":"6",
+              "after":"-"
+            }
+          },
+          "Skycrag Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Stonescar Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Stranger's Mark":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Sword of Judgement":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Varret, Hero-in-Training":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          },
+          "Xenan Stranger":{
+            "draft":{
+              "before":"1",
+              "after":"-"
+            }
+          }
+        },
+        "Added":{
+          "Momentum Builder":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Petition":{
+            "draft":{
+              "before":"-",
+              "after":"10"
+            }
+          },
+          "Veteran Mercenary":{
+            "draft":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Veteran Strategist":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          },
+          "Worn Shield":{
+            "draft":{
+              "before":"-",
+              "after":"5"
+            }
+          }
+        }
+      }
+    }
+  }
+}

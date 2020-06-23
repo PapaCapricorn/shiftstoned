@@ -1,0 +1,135 @@
+/* place contents in grid */
+.formatUpdates.textcol {
+  width: 100%;
+  margin: 0;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: 310px auto;
+}
+
+.formatUpdates > header,
+.formatUpdates > .description {
+  width: 600px;
+}
+
+.formatUpdates > * {
+  grid-column: 2;
+}
+.formatUpdates > .sideImage {
+  grid-column: 1;
+  grid-row: 1;
+}
+.formatUpdates > #toc {
+  grid-column: 1;
+  grid-row: span 2;
+}
+
+/* sticky sidebar */
+#toc {
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: scroll;
+  margin: 0 30px;
+}
+#toc > h3 {
+  position: sticky;
+  top: 0;
+  padding-top: 1em;
+  background-color: #17141D;
+  box-shadow: 0 0 0.5em 0.25em #17141D;
+}
+
+/* filters */
+#factionFilters {
+  margin: 1em 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/* style card sections */
+.cardList {
+  --cardsize: 150px;
+  margin: 0; padding: 0;
+  list-style: none;
+  display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--cardsize), 1fr));
+    gap: 1rem;
+}
+
+.faction {
+  padding-top: 1em;
+}
+
+.faction h2 {
+  --bannerColor2: transparent;
+}
+h2#Fire { --bannerColor1: var(--FireRed); }
+h2#Time { --bannerColor1: var(--TimeYellow); }
+h2#Justice { --bannerColor1: var(--JusticeGreen); }
+h2#Primal { --bannerColor1: var(--PrimalBlue); }
+h2#Shadow { --bannerColor1: var(--ShadowPurple); }
+h2#Mixed { --bannerColor1: var(--MultiBlack); }
+h2#Neutral { --bannerColor1: var(--NeutralGray); }
+
+h2#Praxis { --bannerColor1: var(--FireRed); --bannerColor2: var(--TimeYellow); }
+h2#Combrei { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--JusticeGreen); }
+h2#Hooru { --bannerColor1: var(--JusticeGreen); --bannerColor2: var(--PrimalBlue); }
+h2#Feln { --bannerColor1: var(--PrimalBlue); --bannerColor2: var(--ShadowPurple); }
+h2#Stonescar { --bannerColor1: var(--FireRed); --bannerColor2: var(--ShadowPurple); }
+h2#Rakano { --bannerColor1: var(--FireRed); --bannerColor2: var(--JusticeGreen); }
+h2#Elysian { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--PrimalBlue); }
+h2#Argenport { --bannerColor1: var(--JusticeGreen); --bannerColor2: var(--ShadowPurple); }
+h2#Skycrag { --bannerColor1: var(--FireRed); --bannerColor2: var(--PrimalBlue); }
+h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple); }
+
+.faction h2::after {
+  content: "";
+  display: block;
+  position: relative;
+    top: 0px;
+  width: 100%; height: .75em;
+  background-image: linear-gradient(90deg,var(--bannerColor1),var(--bannerColor2));
+  border-bottom: 2px solid #3c3a3a;
+}
+
+/* style cards */
+.card > p {
+  display: none;
+}
+
+.card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* draft pack weightings */
+.card {
+  position: relative;
+}
+.card::before, .card::after {
+  display: flex;
+  width: 3em;
+  height: 3em;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+.card::before {
+  content: attr(data-weight-before);
+  left: 1em;
+  background-color: grey;
+}
+.card::after {
+  content: attr(data-weight-after);
+  right: 1em;
+  background-color: green;
+}
+.card[data-weight-after="-"]::after {
+  background-color: black;
+}
