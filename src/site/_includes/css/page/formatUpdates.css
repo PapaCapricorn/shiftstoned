@@ -24,7 +24,15 @@
   grid-row: span 2;
 }
 
-/* sticky sidebar */
+/* toc sidebar */
+#toc > ol {
+  list-style-type: lower-roman;
+}
+#toc > ol ol {
+  list-style-type: circle;
+}
+
+/* sticky toc */
 #toc {
   position: sticky;
   top: 0;
@@ -38,20 +46,120 @@
   padding-top: 1em;
   background-color: #17141D;
   box-shadow: 0 0 0.5em 0.25em #17141D;
+  z-index: 10;
 }
 
-/* filters */
-#factionFilters {
-  margin: 1em 0;
-  padding: 0;
+/* filters styles */
+#filters fieldset {
+  margin: 0; padding: .25em .5em;
+  border: 1px solid #f8c368;
+  width: min-content;
+}
+#filters legend {
+  padding: 0 0.5em;
+  margin-left: 1em;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-size: 1em;
+}
+
+.filterSet {
+  margin: 0; padding: 0;
   display: flex;
-  justify-content: space-between;
+    gap: 2em;
   list-style: none;
+}
+
+.filter label > span {
+  padding: .1em;
+}
+.filter {
+  --iconSize: 1.5em;
+}
+.pillbox {
+  --pillSize: 1em; /* added to '--iconSize' */
+}
+.filter label,
+.filter label > span {
+  display: flex;
+    gap: .5ch;
+  align-items: center;
+}
+
+.filter label > span::before,
+.pillbox label > span::after {
+  content: "";
+  display: inline-block;
+  width: var(--iconSize); height: var(--iconSize);
+}
+.filter input[type="checkbox"] {
+  position: absolute;
+  width: var(--iconSize); height: var(--iconSize);
+  opacity: 0;
+}
+
+/* pillbox toggles */
+.pillbox label > span {
+  position: relative; /* lets inner circle be positioned relative to parent */
+}
+.pillbox label > span::before {
+  width: calc(var(--iconSize) + var(--pillSize));
+  border-radius: calc(var(--iconSize)/2);
+  background-color: grey;
+}
+.pillbox input[type="checkbox"] {
+  width: calc(var(--iconSize) + var(--pillSize));
+}
+.pillbox label > span::after {
+  position: absolute;
+    left: calc(var(--iconSize) * .125);
+  width: calc(var(--iconSize) * .75); height: calc(var(--iconSize) * .75);
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 2px 0px rgba(0, 0, 0, .5);
+  transition: transform .1s ease-in-out;
+}
+.pillbox label > input[type="checkbox"]:checked + span::after {
+  transform: translateX(calc(var(--pillSize) + ( var(--iconSize) * .125 )));
+}
+
+/* faction filters */
+#factionFilters label > span::before {
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.fire::before { background-image: url(/images/icon-fire.png); }
+.time::before { background-image: url(/images/icon-time.png); }
+.justice::before { background-image: url(/images/icon-justice.png); }
+.primal::before { background-image: url(/images/icon-primal.png); }
+.shadow::before { background-image: url(/images/icon-shadow.png); }
+.neutral::before { background-image: url(/images/icon-neutral.png); }
+.mixed::before { background-image: url(/images/icon-mixed.png); }
+
+/* visual cues */
+.filter input[type="checkbox"]:hover + span::before,
+.filter input[type="checkbox"]:focus + span::before {
+  box-shadow: 0 0 4px 0px rgba(250, 250, 250, .8); 
+}
+.filter input[type="checkbox"]:not(:checked) + span::before,
+.pillbox input[type="checkbox"]:not(:checked) + span::after {
+  opacity: 50%;
+}
+/* .filter input[type="checkbox"]:not(:checked) + span {
+  text-decoration: line-through;
+} */
+
+/* filter actions */
+/* hide sections whose state is not included in the wrapper element's "show-states" list */
+[data-show-states]:not([data-show-states~="Kept"]) [data-state="Kept"],
+[data-show-states]:not([data-show-states~="Added"]) [data-state="Added"],
+[data-show-states]:not([data-show-states~="Removed"]) [data-state="Removed"] {
+  display: none;
 }
 
 /* style card sections */
 .cardList {
-  --cardsize: 150px;
+  --cardsize: 140px;
   margin: 0; padding: 0;
   list-style: none;
   display: grid;
@@ -95,6 +203,10 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
   border-bottom: 2px solid #3c3a3a;
 }
 
+.state {
+  margin-bottom: 2em;
+}
+
 /* style cards */
 .card > p {
   display: none;
@@ -130,6 +242,7 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
   right: 1em;
   background-color: green;
 }
+.card[data-weight-before="-"]::before,
 .card[data-weight-after="-"]::after {
   background-color: black;
 }
