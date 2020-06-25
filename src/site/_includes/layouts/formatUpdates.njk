@@ -1,0 +1,129 @@
+---
+layout: layouts/html.njk
+page_style: formatUpdates.css
+page_script: formatUpdates.js
+---
+{%- set factionList = ["Fire","Time","Justice","Primal","Shadow","Praxis","Combrei","Hooru","Feln","Stonescar","Rakano","Elysian","Argenport","Skycrag","Xenan","Mixed","Neutral"] -%}
+{%- set factionFilters = ["Fire","Time","Justice","Primal","Shadow","Mixed","Neutral"] -%}
+{%- set stateList = ["Kept","Removed","Added"] -%}
+
+<main class="formatUpdates textcol">
+
+  <header>
+    <h1 class="title"> {{- articleTitle -}} </h1>
+
+    <p class="subtitle">
+      {{- articleSubtitle -}}
+    </p>
+
+    <p class="tagline">
+      {{- articleTagline -}}
+    </p>
+  </header>
+
+  <a href=" {{- articleImage -}} " target="_blank" class="sideImage">
+    <img class="articleMargin" alt="Graphic" src=" {{- articleImage -}} "/>
+  </a>
+
+  <section class="description">
+    <strong> {{- articleDate -}} </strong> - 
+    {{ content | safe }}
+  </section>
+
+  <nav id="toc"
+    data-show-states="{{ stateList | join(' ') }}">
+    <h3>Contents</h3>
+    <ol>
+    {%- for faction in factionList %}
+      <li>
+        <a href="#{{ faction }}">{{ faction }}</a>
+        <ol>
+        {%- for state in stateList %}
+          <li data-state="{{ state }}">
+            <a href="#{{ faction }}-{{ state }}">{{ state }}</a>
+          </li>
+        {%- endfor %}
+        </ol>
+      </li>
+    {%- endfor %}
+    </ol>
+  </nav>
+
+  <section id="updateList"
+    data-show-factions="{{ factionFilters | join(' ') }}"
+    data-show-states="{{ stateList | join(' ') }}">
+  
+    <form action="" id="filters">
+      <fieldset>
+        <legend>Toggle factions</legend>
+        <ol id="factionFilters" class="filterSet">
+        {%- for faction in factionFilters %}
+          <li class="filter">
+            <label>
+              <input type="checkbox" id="filter-{{ faction }}" name="Factions" checked />
+              <span class="{{ faction | lower }}">{{ faction }}</span>
+            </label>
+          </li>
+        {%- endfor %}
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>Toggle card states</legend>
+        <ol id="stateFilters" class="filterSet">
+        {%- set stateFilters = ["Kept","Removed","Added"] %}
+        {%- for state in stateFilters %}
+          <li class="filter pillbox">
+            <label>
+              <input type="checkbox" id="filter-{{ state }}" name="States" checked />
+              <span>{{ state }}</span>  
+            </label>
+          </li>
+        {%- endfor %}
+        </ol>
+      </fieldset>
+    </form>
+
+    {%- for faction, factionInfo in updates %}
+    <section class="faction" {% for f in factionInfo.factions -%}
+      data-faction-{{ f | lower }}="true" {% endfor -%}
+      >
+      <h2 id="{{ faction }}" class="{{ faction | lower }}" >{{ faction }}</h2>
+
+      {%- for state, cards in factionInfo.cards %}
+      <section class="state" data-state="{{ state }}">
+        <h3 id="{{ faction }}-{{ state }}">{{ state }}</h3>
+        <ul class="cardList">
+        {%- for card, cardInfo in cards %}
+          <li class="card" data-weight-before="{{ cardInfo.draft.before }}" data-weight-after="{{ cardInfo.draft.after }}">
+            <p>{{ card }}</p>
+            <img src="https://www.shiftstoned.com/images/cards/{{ card | replace(' ', '_') }}.png"
+                alt="{{ card }}"
+                loading="lazy" width="220" height="350">
+          </li>
+        {%- endfor %}
+        </ul>
+      </section>
+      {%- endfor %}
+    </section>
+    {%- endfor %}
+  </section>
+</main>
+{#- 
+  <img alt="Card Image" src=" {{- info.card -}} " class="galleryDeck" />
+
+  <h2 class="topDeckTitle">
+    &#9658;
+    <a href=" {{- info.epcUrl -}} " target="_blank">
+      <u>{{ info.player -}}'s Decklist</u>
+    </a>
+    ({{ info.archetype -}})
+  </h2>
+
+  <p>
+    {{ info.body -}}
+  </p>
+
+  <p style="" >
+    <a href=" {{- info.epcUrl -}} " target="_blank">view deck &#9658; </a>
+  </p>
+   -#}
