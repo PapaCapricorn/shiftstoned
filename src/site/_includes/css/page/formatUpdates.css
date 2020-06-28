@@ -1,3 +1,15 @@
+/* Visually hide element accessibly) */
+/* ! add to main css */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
 /* place contents in grid */
 .formatUpdates.textcol {
   width: 100%;
@@ -40,19 +52,48 @@
   overflow-y: scroll;
   margin: 0 30px;
 }
-#toc > h3 {
+/* heading & 'back to the top' link */
+#toc .toc-header {
   position: sticky;
   top: 0;
   padding-top: 1em;
   background-color: #17141D;
   box-shadow: 0 0 0.5em 0.25em #17141D;
   z-index: 10;
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#toc .toc-header h3 {
+  margin: 0;
+}
+#toc #top-link span { /* ↑ button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  width: 1.5em; height: 1.5em; /* based on font-size */
+  border-radius: .25em;
+  background-color: grey;
+  color: white;
+}
+#toc #top-link:hover span,
+#toc #top-link:focus span {
+  background-color: lightgrey;
+  color: revert;
+  box-shadow: 0 0 4px 0px rgba(250, 250, 250, .8); 
 }
 
 /* filters styles */
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em 3em;
+}
 #filters fieldset {
   margin: 0; padding: .25em .5em;
-  border: 1px solid #f8c368;
+  border: 0;
+  border-top: 1px solid #f8c368;
   width: min-content;
 }
 #filters legend {
@@ -83,24 +124,24 @@
   display: flex;
     gap: .5ch;
   align-items: center;
+  position: relative; /* lets inner elements be positioned relative to parent */
 }
 
-.filter label > span::before,
+.checkbox label > span::before,
+.pillbox label > span::before,
 .pillbox label > span::after {
   content: "";
   display: inline-block;
   width: var(--iconSize); height: var(--iconSize);
 }
-.filter input[type="checkbox"] {
+.filter input[type="checkbox"],
+.radio-select input[type="radio"] {
   position: absolute;
   width: var(--iconSize); height: var(--iconSize);
   opacity: 0;
 }
 
 /* pillbox toggles */
-.pillbox label > span {
-  position: relative; /* lets inner circle be positioned relative to parent */
-}
 .pillbox label > span::before {
   width: calc(var(--iconSize) + var(--pillSize));
   border-radius: calc(var(--iconSize)/2);
@@ -122,7 +163,7 @@
   transform: translateX(calc(var(--pillSize) + ( var(--iconSize) * .125 )));
 }
 
-/* faction filters */
+/* faction checkbox filters */
 #factionFilters label > span::before {
   background-size: cover;
   border-radius: 50%;
@@ -136,24 +177,64 @@
 .neutral::before { background-image: url(/images/icon-neutral.png); }
 .mixed::before { background-image: url(/images/icon-mixed.png); }
 
+/* format toggle */
+.radioSet {
+  gap: 0;
+  --border-radius: 1em;
+}
+.radio-select input[type="radio"] {
+  width: 100%;
+}
+.radio-select {
+  padding: .25em .5em;
+  border: 1px solid grey;
+}
+.radio-select:not(:first-child) {
+  border-left: 0;
+}
+.filter.radio-select:first-child {
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  padding-left: 1em;
+}
+.filter.radio-select:last-child {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  padding-right: 1em;
+}
+
 /* visual cues */
+.radio-select:hover, .radio-select:focus-within,
 .filter input[type="checkbox"]:hover + span::before,
 .filter input[type="checkbox"]:focus + span::before {
   box-shadow: 0 0 4px 0px rgba(250, 250, 250, .8); 
 }
-.filter input[type="checkbox"]:not(:checked) + span::before,
-.pillbox input[type="checkbox"]:not(:checked) + span::after {
+.filter input[type="checkbox"]:not(:checked) + span,
+.radio-select input[type="radio"]:not(:checked) + span {
   opacity: 50%;
 }
-/* .filter input[type="checkbox"]:not(:checked) + span {
-  text-decoration: line-through;
-} */
 
-/* filter actions */
-/* hide sections whose state is not included in the wrapper element's "show-states" list */
+/* filter actions - hide sections according to the wrapper element's "show" lists */
+/* hide states not included in the "show-states" lists */
 [data-show-states]:not([data-show-states~="Kept"]) [data-state="Kept"],
 [data-show-states]:not([data-show-states~="Added"]) [data-state="Added"],
 [data-show-states]:not([data-show-states~="Removed"]) [data-state="Removed"] {
+  display: none;
+}
+/* hide factions not included in the "show-factions" lists */
+[data-show-factions]:not([data-show-factions~="Fire"]) [data-factions~="Fire"],
+[data-show-factions]:not([data-show-factions~="Time"]) [data-factions~="Time"],
+[data-show-factions]:not([data-show-factions~="Justice"]) [data-factions~="Justice"],
+[data-show-factions]:not([data-show-factions~="Primal"]) [data-factions~="Primal"],
+[data-show-factions]:not([data-show-factions~="Shadow"]) [data-factions~="Shadow"],
+[data-show-factions]:not([data-show-factions~="Neutral"]) [data-factions~="Neutral"],
+[data-show-factions]:not([data-show-factions~="Mixed"]) [data-factions~="Mixed"] {
+  display: none;
+}
+
+/* hide format not specified in the "show-format" value */
+[data-show-format="expedition"] .card:not([data-expedition-state]) {
+  display: none;
+}
+[data-show-format="draft"] .card:not([data-draft-state]) {
   display: none;
 }
 
@@ -208,10 +289,20 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
 }
 
 /* style cards */
-.card > p {
-  display: none;
+.card {
+  position: relative;
 }
-
+.card h4 {
+  position: absolute;
+  color: transparent;
+}
+.card:focus h4, .card:active h4 {
+  color: revert;
+  background-color: red;
+}
+.card dd {
+  margin: 0;
+}
 .card img {
   width: 100%;
   max-width: 100%;
@@ -219,10 +310,7 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
 }
 
 /* draft pack weightings */
-.card {
-  position: relative;
-}
-.card::before, .card::after {
+/* .card[data-draft-state]::before, .card::after {
   display: flex;
   width: 3em;
   height: 3em;
@@ -232,17 +320,64 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
   position: absolute;
   bottom: 0;
 }
-.card::before {
+[data-show-format="draft"]  .card[data-draft-state]::before {
   content: attr(data-weight-before);
   left: 1em;
   background-color: grey;
 }
-.card::after {
+[data-show-format="draft"]  .card[data-draft-state]::after {
   content: attr(data-weight-after);
   right: 1em;
   background-color: green;
 }
-.card[data-weight-before="-"]::before,
-.card[data-weight-after="-"]::after {
+.card[data-draft-state][data-weight-before="-"]::before,
+.card[data-draft-state][data-weight-after="-"]::after {
   background-color: black;
+} */
+[data-show-format="expedition"]  .draft-weights {
+  display: none;
+}
+.weighting-info {
+  position: absolute;
+  bottom: .5em;
+  display: grid;
+    align-items: end;
+  --weighting-info-size: 3.2em;
+  width: var(--weighting-info-size); height: var(--weighting-info-size);
+  border-radius: 0.5em;
+  overflow: hidden;
+  background: green;
+  box-shadow: 0 0 4px 1px rgba(0,0,0,0.5);
+}
+.weighting {
+  display: flex;
+    gap: .2ch;
+    justify-content: center;
+    align-items: baseline;
+}
+.weighting dt::after {
+  content: ":";
+}
+.weighting dd::after {
+  content: "×";
+}
+.weighting.after {
+  font-size: 1.2em;
+  background-color: inherit;
+}
+.weighting.before {
+  font-size: .8em;
+  background-color: #424242;
+}
+.weighting.before dt {
+  font-size: .9em;
+}
+
+.card[data-weight-after="-"] .weighting-info,
+.card[data-weight-before="-"] .weighting.before {
+  background-color: black;
+}
+.card[data-weight-after="-"] .weighting.after dd::after,
+.card[data-weight-before="-"] .weighting.before dd::after {
+  content:none;
 }

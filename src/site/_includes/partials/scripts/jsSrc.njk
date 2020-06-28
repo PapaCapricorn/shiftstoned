@@ -9,7 +9,7 @@
     {#- if page-specific `page_script` data is passed, include that js file here -#}
   {%- if page_script %}
     <!-- page-specific js -->
-    <script src="{{ page_script | url }}" type="text/javascript"></script>
+    <script type="text/javascript">{% include "js/page/" + page_script %}</script>
   {%- endif %}
     
     {#- if multiple page-specific `page_scripts` data is passed, include those js files here -#}
