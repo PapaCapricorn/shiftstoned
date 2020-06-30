@@ -24,20 +24,23 @@ page_script: formatUpdates.js
 
   <header>
     <h1 class="title"> {{- articleTitle -}} </h1>
-
+    
+    {% if articleSubtitle -%}
     <p class="subtitle">
       {{- articleSubtitle -}}
     </p>
+    {%- endif %}
 
+    {% if articleTagline -%}
     <p class="tagline">
       {{- articleTagline -}}
     </p>
+    {%- endif %}
   </header>
 
   <img class="sideImage articleMargin" alt="" src=" {{- articleImage -}} "/>
 
   <section class="description">
-    <strong> {{- articleDate -}} </strong> - 
     {{ content | safe }}
   </section>
 
@@ -105,7 +108,7 @@ page_script: formatUpdates.js
           </ol>
         </fieldset>
         <fieldset>
-          <legend>Toggle card states</legend>
+          <legend>Toggle card changes</legend>
           <ol id="stateFilters" class="filterSet">
           {%- set stateFilters = ["Kept","Removed","Added"] %}
           {%- for state in stateFilters %}
@@ -122,7 +125,7 @@ page_script: formatUpdates.js
       </form>
     </header>
 
-    {%- for faction, factionInfo in updates %}
+    {% for faction, factionInfo in updates -%}
     <section class="faction" data-factions="{{ factionInfo.factions | join(' ') }}">
       <h2 id="{{ faction }}" class="{{ faction | lower }}" >{{ faction }}</h2>
 
@@ -169,22 +172,3 @@ page_script: formatUpdates.js
     {%- endfor %}
   </section>
 </main>
-{#- 
-  <img alt="Card Image" src=" {{- info.card -}} " class="galleryDeck" />
-
-  <h2 class="topDeckTitle">
-    &#9658;
-    <a href=" {{- info.epcUrl -}} " target="_blank">
-      <u>{{ info.player -}}'s Decklist</u>
-    </a>
-    ({{ info.archetype -}})
-  </h2>
-
-  <p>
-    {{ info.body -}}
-  </p>
-
-  <p style="" >
-    <a href=" {{- info.epcUrl -}} " target="_blank">view deck &#9658; </a>
-  </p>
-   -#}

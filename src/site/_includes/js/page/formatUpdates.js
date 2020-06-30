@@ -46,13 +46,7 @@ stateFilters.forEach((toggle) => {
 
 function updateFilters(toggle, array, toggleValue, sectionValue) {
   let update = toggle.dataset[toggleValue];
-
-  if (toggle.checked) {
-    show( array, update);
-  } else {
-    hide( array, update);
-  };
-
+  toggle.checked ? show( array, update) : hide( array, update);
   toggleSections.forEach((section) => {
     section.dataset[sectionValue] = array.join(' ');
   });

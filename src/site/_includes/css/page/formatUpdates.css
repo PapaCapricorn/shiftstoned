@@ -10,11 +10,22 @@
   width: 1px;
 }
 
+/* misc styles */
+.newBodyGrid main > header {
+  margin-block-end: 1.5em;
+}
+.description ul > li {
+  margin-block-end: .5em;
+}
+.description li > ul {
+  margin-block-start: .5em;
+}
+
 /* place contents in grid */
 .formatUpdates.textcol {
   width: 100%;
   margin: 0;
-  padding-right: 30px;
+  padding-inline-end: 30px;
   display: grid;
   grid-template-columns: 310px auto;
 }
@@ -29,7 +40,7 @@
 }
 .formatUpdates > .sideImage {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 1 / 3;
 }
 .formatUpdates > #toc {
   grid-column: 1;
@@ -56,7 +67,7 @@
 #toc .toc-header {
   position: sticky;
   top: 0;
-  padding-top: 1em;
+  padding-block-start: 1em;
   background-color: #17141D;
   box-shadow: 0 0 0.5em 0.25em #17141D;
   z-index: 10;
@@ -98,7 +109,7 @@
 }
 #filters legend {
   padding: 0 0.5em;
-  margin-left: 1em;
+  margin-inline-start: 1em;
   font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
   font-size: 1em;
 }
@@ -198,7 +209,7 @@
 }
 .filter.radio-select:last-child {
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  padding-right: 1em;
+  padding-inline-end: 1em;
 }
 
 /* visual cues */
@@ -249,7 +260,7 @@
 }
 
 .faction {
-  padding-top: 1em;
+  padding-block-start: 1em;
 }
 
 .faction h2 {
@@ -285,7 +296,7 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
 }
 
 .state {
-  margin-bottom: 2em;
+  margin-block-end: 2em;
 }
 
 /* style cards */
@@ -310,30 +321,6 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
 }
 
 /* draft pack weightings */
-/* .card[data-draft-state]::before, .card::after {
-  display: flex;
-  width: 3em;
-  height: 3em;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-}
-[data-show-format="draft"]  .card[data-draft-state]::before {
-  content: attr(data-weight-before);
-  left: 1em;
-  background-color: grey;
-}
-[data-show-format="draft"]  .card[data-draft-state]::after {
-  content: attr(data-weight-after);
-  right: 1em;
-  background-color: green;
-}
-.card[data-draft-state][data-weight-before="-"]::before,
-.card[data-draft-state][data-weight-after="-"]::after {
-  background-color: black;
-} */
 [data-show-format="expedition"]  .draft-weights {
   display: none;
 }
