@@ -5,7 +5,7 @@ bg_img: "/images/BackgroundArticles.jpg"
 articleImage: "/images/articles/formatUpdatesArgentDepths.jpg"
 articleTitle: "Argent Depths Format Updates"
 articleSubtitle: "Changes to Expedition and Draft Packs with the release of Eternal's newest set"
-articleDate: "June 30, 2020"
+articleDate: "July 1, 2020"
 ---
 **{{- articleDate -}}** - With each large expansion, Dire Wolf Digital redesigns the *Eternal* Draft Packs and Expedition to complement the new set. They were updated on June 24 with [*Argent Depths'* release](https://www.direwolfdigital.com/news/argent-depths-format-updates/), so let's explore the changes to the Draft and Expedition formats.
 
