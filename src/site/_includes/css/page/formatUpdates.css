@@ -97,9 +97,13 @@
 
 /* filters styles */
 #filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em 3em;
+  display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em 3em;
+    justify-items: start;
+}
+#factionFilters {
+  grid-column: span 2;
 }
 #filters fieldset {
   margin: 0; padding: .25em .5em;
@@ -117,8 +121,12 @@
 .filterSet {
   margin: 0; padding: 0;
   display: flex;
-    gap: 2em;
+    /* gap: 2em; /* gap on flexbox isn't supported in Chrome yet, using margin-left on children instead */
   list-style: none;
+}
+.filter.checkbox:not(:first-child),
+.filter.pillbox:not(:first-child) {
+  margin-left: 2em;
 }
 
 .filter label > span {
@@ -133,9 +141,13 @@
 .filter label,
 .filter label > span {
   display: flex;
-    gap: .5ch;
+    /* gap: .5ch; /* gap on flexbox isn't supported in Chrome yet, using margin-right on children instead */
   align-items: center;
   position: relative; /* lets inner elements be positioned relative to parent */
+}
+.checkbox label > span::before,
+.pillbox label > span::before {
+  margin-right: .5ch;
 }
 
 .checkbox label > span::before,
@@ -302,12 +314,23 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
 /* style cards */
 .card {
   position: relative;
+  display: grid; /* previously used 'position: absolute' on child h4, but didn't overlap as wanted on Chrome */
+    grid-template-columns: 1fr;
+    align-items: start;
+    justify-items: start;
+}
+.card > h4,
+.card .card-info {
+  margin: 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
 .card h4 {
-  position: absolute;
   color: transparent;
+  z-index: 1;
 }
 .card:focus h4, .card:active h4 {
+  color: white; /* color: revert doesn't work on Chrome */
   color: revert;
   background-color: red;
 }
