@@ -5,7 +5,7 @@ page_script: formatUpdates.js
 ---
 {%- set factionList = ["Fire","Time","Justice","Primal","Shadow","Praxis","Combrei","Hooru","Feln","Stonescar","Rakano","Elysian","Argenport","Skycrag","Xenan","Mixed","Neutral"] -%}
 {%- set factionFilters = ["Fire","Time","Justice","Primal","Shadow","Mixed","Neutral"] -%}
-{%- set stateList = ["Kept","Removed","Added"] -%}
+{%- set stateList = ["Added","Removed","Kept"] -%}
 {%- set factionCombos = {
   'Praxis': ["Fire","Time","Mixed"],
   'Combrei': ["Time","Justice","Mixed"],
@@ -68,15 +68,15 @@ page_script: formatUpdates.js
   </nav>
 
   <section id="updateList"
-    data-show-format="expedition"
+    data-show-format="draft"
     data-show-factions="{{ factionFilters | join(' ') }}"
     data-show-states="{{ stateList | join(' ') }}">
 
-    <header>  
+    <header>
       <form action="" id="filters"  autocomplete="off">
-        <fieldset>
+        <fieldset id="factionFilters">
           <legend>Toggle factions</legend>
-          <ol id="factionFilters" class="filterSet">
+          <ol class="filterSet">
           {%- for faction in factionFilters %}
             <li class="filter checkbox">
               <label>
@@ -88,30 +88,29 @@ page_script: formatUpdates.js
           {%- endfor %}
           </ol>
         </fieldset>
-        <fieldset>
+        <fieldset id="formatFilter">
           <legend>Toggle format</legend>
-          <ol id="formatFilter" class="filterSet radioSet">
+          <ol class="filterSet radioSet">
             <li class="filter radio-select">
               <label>
-                <input type="radio" id="filter-expedition" name="Formats"
-                  data-filter-format="expedition" checked />
-                <span class="expedition">Expedition</span>
+                <input type="radio" id="filter-draft" name="Formats"
+                  data-filter-format="draft" checked />
+                <span class="draft">Draft</span>
               </label>
             </li>
             <li class="filter radio-select">
               <label>
-                <input type="radio" id="filter-draft" name="Formats"
-                  data-filter-format="draft" />
-                <span class="draft">Draft</span>
+                <input type="radio" id="filter-expedition" name="Formats"
+                  data-filter-format="expedition" />
+                <span class="expedition">Expedition</span>
               </label>
             </li>
           </ol>
         </fieldset>
-        <fieldset>
+        <fieldset id="stateFilters">
           <legend>Toggle card changes</legend>
-          <ol id="stateFilters" class="filterSet">
-          {%- set stateFilters = ["Kept","Removed","Added"] %}
-          {%- for state in stateFilters %}
+          <ol class="filterSet">
+          {%- for state in stateList %}
             <li class="filter pillbox">
               <label>
                 <input type="checkbox" id="filter-{{ state }}" name="States"
@@ -129,11 +128,11 @@ page_script: formatUpdates.js
     <section class="faction" data-factions="{{ factionInfo.factions | join(' ') }}">
       <h2 id="{{ faction }}" class="{{ faction | lower }}" >{{ faction }}</h2>
 
-      {%- for state, cards in factionInfo.cards %}
+      {%- for state in stateList %}
       <section class="state" data-state="{{ state }}">
         <h3 id="{{ faction }}-{{ state }}">{{ state }}</h3>
         <ul class="cardList">
-        {%- for card, cardInfo in cards %}
+        {%- for card, cardInfo in factionInfo.cards[state] %}
           <li class="card"
             {%- if cardInfo.expedition %} data-expedition-state="{{ cardInfo.expedition }}"{% endif %}
             {%- if cardInfo.draft %} data-draft-state="{{ cardInfo.draft }}" data-weight-before="{{ cardInfo['draft-weights'].before }}" data-weight-after="{{ cardInfo['draft-weights'].after }}"{% endif %}>
