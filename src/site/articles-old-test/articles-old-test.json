@@ -3,5 +3,5 @@
     "tags" : "articles",
     "templateEngineOverride": "njk,md",
     "bg_img": "https://www.shiftstoned.com/articles/CrypticEtchings.jpeg",
-    "permalink" : "/articles/{{ page.fileSlug }}.html"
+    "permalink" : "/articles-test/{{ page.fileSlug }}.html"
   }

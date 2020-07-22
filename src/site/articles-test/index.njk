@@ -9,7 +9,7 @@ pagination:
   alias: articles
   size: 12
   reverse: true
-permalink: "/articles/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+permalink: "/articles-test/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 <section class="articles-list">
 {%- for article in articles %}
