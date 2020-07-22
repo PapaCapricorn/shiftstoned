@@ -1,0 +1,24 @@
+---
+title: Example news pages
+layout: layouts/base.njk
+override:tags: []
+---
+    <h2>List of news posts:</h2>
+    <ul>
+    {%- for page in collections.news %}
+        <li>
+            <a href="{{ page.url }}">{{ page.data.title }}</a> -
+            <time datetime="{{ page.date }}">{{ page.date}}</time>
+        </li>
+    {%- endfor %}
+    </ul>
+
+    <br>
+    localbangarang: {{- localbangarang -}}
+
+    <br>
+    Position: {{ group.position -}}
+    <br>
+    Player: {{ group.archetype -}}
+    <br>
+    epcUrl: {{ group.epcUrl -}}
