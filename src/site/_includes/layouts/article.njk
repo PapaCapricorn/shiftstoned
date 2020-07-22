@@ -1,0 +1,32 @@
+---
+layout: layouts/html.njk
+---
+<a href=" {{- articleImage -}} " target="_blank">
+  <img class="articleMargin" alt="Graphic" src=" {{- articleImage -}} "/>
+</a>
+
+<main class="textcol">
+
+  <!-- This is just spacing - add to other elements -->
+  <p style="" /><br></p>
+
+  <header>
+    <h1 class="title"> {{- articleTitle -}} </h1>
+
+    <p class="subtitle">
+      {{- articleSubtitle -}}
+    </p>
+
+    <p class="tagline">
+      {{- articleTagline -}}
+    </p>
+  </header>
+
+  <!-- BRs for spacing should probably be included in div classes -->
+  <br><br>
+
+  <strong> {{- articleDate -}} </strong> -
+
+    {{ content | safe }}
+
+</main>

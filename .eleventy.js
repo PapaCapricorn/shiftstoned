@@ -28,6 +28,10 @@ module.exports = function(eleventyConfig) {
   // Passthrough CNAME file
   eleventyConfig.addPassthroughCopy("./src/site/CNAME");
 
+  // Passthrough Contacts confirmation page - thanks.html
+  eleventyConfig.addPassthroughCopy("./src/site/contact/thanks.html");
+
+
 
   // 404 for local testing
   eleventyConfig.setBrowserSyncConfig({

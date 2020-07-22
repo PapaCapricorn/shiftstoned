@@ -3,6 +3,33 @@ layout: layouts/html.njk
 bg_img: https://www.shiftstoned.com/contact/contact_bg.jpeg
 section: Contact
 title: Contact
+legacy: legacy.css
+page_style: contact.css
 ---
+<div style="text-align: center;">
 
-partials/navigation
+  <form action="https://mailthis.to/ShiftStoned" method="POST">
+
+    <!-- <label for="fname">Name</label> -->
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <p>
+    <!-- <label for="reply">email</label> -->
+    <input type="text" id="reply" name="_replyto" placeholder="Your email..">
+
+    <p>
+    <!-- <label for="subject">Subject</label> -->
+    <input type="text" id="reply" name="subject" placeholder="Subject">
+
+    <p>
+    <!-- <label for="message">Message</label> -->
+    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+
+    <input type="hidden" name="_after" value="https://ssg.shiftstoned.com/contact/thanks/index.html" />
+
+    <br>
+    <input type="submit" value="Submit">
+
+  </form>
+
+</div>

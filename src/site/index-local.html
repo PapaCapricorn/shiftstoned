@@ -7,21 +7,34 @@
 
 
 <!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Home | ShiftStoned</title>
+
 <!-- Compatibility for older browsers goes here - temporarily hidden -->
 <!-- Resources for icons go here - temporarily hidden -->
 <!-- Resources for themes go here - temporarily hidden -->
 
 
-<!-- FONTS -->
+  <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 
-<!-- CSS -->
-    <link href="_includes/css/base.css" rel="stylesheet" type="text/css">
-    <link href="_includes/css/headbanner.css" rel="stylesheet" type="text/css">
-    <link href="_includes/css/navmenu.css" rel="stylesheet" type="text/css">
-    <link href="epc/epc.css" rel="stylesheet" type="text/css">
+  <!-- CSS -->
+  <link href="_includes/css/base.css" rel="stylesheet" />
+  <link href="styles/legacy.css" rel="stylesheet" />
+  <link href="_includes/css/body.css" rel="stylesheet" />
+  <link href="_includes/css/drafter.css" rel="stylesheet" />
+  <link href="_includes/css/headbanner.css" rel="stylesheet" />
+  <link href="_includes/css/navmenu.css" rel="stylesheet" />
+  <link href="_includes/css/decklist.css" rel="stylesheet" />
+  <link href="_includes/css/semantic.min.css" rel="stylesheet" />
+  <link href="epc/epc.css" rel="stylesheet" />
+
 
 </head>
 
@@ -34,10 +47,10 @@
 
       <div class="newHeading-top">
 
-        <a href=""><img class="shiftstoned-img" style="width: 40%;" src="images/LogoShiftstoned.svg" /></a>
+        <a href="/"><img class="shiftstoned-img" src="images/LogoShiftstoned.svg" style="width: 40%; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);"/></a>
 
         <div class="newAbout-heading">
-            <a class="white" href="../about/">ABOUT</a>
+            <a class="white" href="about/">ABOUT</a>
         </div>
 
         <div id="newNavigation-separator">
@@ -51,38 +64,38 @@
         <div class="menu left transition hidden" tabindex="-1">
 
           <div class="item">
-            <a href="../">HOME </a>
+            <a href="/">HOME </a>
           </div>
 
           <div class="item">
-            <a href="../epc/">POWER CALCULATOR </a>
+            <a href="/epc/">POWER CALCULATOR </a>
           </div>
 
           <div class="item">
             <div class="navigation-menu-indent">
-              <a href="../epc/about/">&bull;</a>
+              <a href="/epc/about/">&bull;</a>
             </div>
-            <a href="../epc/about/">Guide</a>
+            <a href="/epc/about/">Guide</a>
           </div>
 
           <div class="item">
-            <a href="../calendar/">COMMUNITY CALENDAR</a>
+            <a href="/calendar/">COMMUNITY CALENDAR</a>
           </div>
 
           <div class="item">
-            <a href="../drafter/">DRAFTER</a>
+            <a href="/drafter/">DRAFTER</a>
           </div>
 
           <div class="item">
-            <a href="../players/">PLAYERS</a>
+            <a href="/players/">PLAYERS</a>
           </div>
 
           <div class="item">
-            <a href="../articles/">ARTICLES</a>
+            <a href="/articles/">ARTICLES</a>
           </div>
 
           <div class="item">
-            <a href="../contact">CONTACT</a>
+            <a href="/contact">CONTACT</a>
           </div>
 
         </div>
@@ -105,11 +118,11 @@
                 <!-- Main content here -->
           <div class="centralGrid" style="width: 93%; border: solid 0px white; background-color:; margin: auto;">
 
-              <div style="text-align: center;">
+              <div style="text-align: right; margin-top: -10px;">
                 A fan-built site hosting player resources for <a href="https://www.direwolfdigital.com/eternal/" target="_blank">Eternal, A Strategy Card Game</a>
              </div>
 
-             <br>
+             <header>
              R E S O U R C E S
 
              <!-- Twitter link -->
@@ -120,17 +133,17 @@
              <div class="row">
 
                <div class="homepageFeature">
-                 <a href="../epc/"><div class="homepageFeatureLabel">Eternal Power Calculator</div>
+                 <a href="epc/"><div class="homepageFeatureLabel">Eternal Power Calculator</div>
                  <img src="images/Home_EPC.jpg"></a>
                </div>
 
                <div class="homepageFeature center">
-                 <a href="../calendar/"><div class="homepageFeatureLabel center">Community Calendar</div>
+                 <a href="calendar/"><div class="homepageFeatureLabel center">Community Calendar</div>
                  <img src="images/HomeCalendar.jpg"></a>
                </div>
 
                <div class="homepageFeature right">
-                 <a href="../drafter/"><div class="homepageFeatureLabel right">Eternal Drafter</div>
+                 <a href="drafter/"><div class="homepageFeatureLabel right">Eternal Drafter</div>
                  <img src="images/HomeDrafter.jpg"></a>
                </div>
 
@@ -139,208 +152,96 @@
              <br>
              R E C E N T
 
-             <hr style="margin-top: 0px; margin-left: 0px; width: 100%; border: 1px solid #333333">
+             <!-- Column -->
+            <div class="fullColumn">
 
-               <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/ElhamPreview.jpg" target="blank"><img src="https://www.shiftstoned.com/articles/images/ElhamPreview.jpg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/TootTheHorn.html">Toot the Horn: March 2020 Updates</a></global_header_home> <global_body> <strong>April 4, 2020</strong> - Navigating your brew to <a href="https://eternalwarcry.com/" target="_blank">Eternal Warcry</a> from the fan-built <strong>Eternal Power Calculator</strong> has never been easier. Plus the addition of card art makes the <strong>Power Base</strong> visualization tool more visual than ever.
-               <div>&nbsp;</div>
-               <a href="https://www.shiftstoned.com/articles/TootTheHorn.html">Read more ► </a> </global_body></span><br />
-               <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-               <br />
+               <hr>
+
+               <!-- BEGIN FEATURED ARTICLE LISTING -->
+               <div class="articleListing">
+
+                 <div class="halfColumn">
+                   <a href="images/articles/thumbnail.jpg" target="blank">
+                     <img src="images/articles/thumbnail.jpg" class="articleThumbnail" />
+                   </a>
+                 </div>
+
+                 <h1 class="articleListingTitle">
+                   <a href="/articles DrafterLaunch/">
+                      Introducing the Eternal Drafter
+                   </a>
+                 </h1>
+
+                 <p class="articleListing featured">
+                  <strong>May 31, 2020</strong><br>
+                  A new drafting tool joins the suite of fan-built player resources for <strong>Eternal Card Game</strong> at <strong>ShiftStoned</strong>. Featuring evaluations by <strong>Jedi_EJ and Eternal Journey</strong>.
+                 </p>
+
+                 <a href="/articles DrafterLaunch/">Read more ► </a>
+
+               </div>
                <!-- END  ARTICLE LISTING -->
 
-               <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/Strange-Navigator.png" target="blank"><img src="https://www.shiftstoned.com/articles/images/Strange-Navigator.png" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/StrangeNavigator.html">Strange Navigator: <br />First Impressions</a></global_header_home> <global_body> <strong>February 9, 2020</strong> - Feeling the Void and finding a way. Xenan gets a Stranger with some powerful abilities.
-               <div>&nbsp;</div>
-               <a href="https://www.shiftstoned.com/articles/StrangeNavigator.html">Read more ► </a> </global_body></span><br />
-               <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-               <br />
-               <!-- END  ARTICLE LISTING -->
+                              <!-- Shoud this have a class? is there a better way to do this? -->
+                              <div style="clear: both;">&nbsp;</div>
+
+                              <hr style="margin: 0px 10px 0px 10px;">
+
+                              <div class="halfColumn homeArticle">
+                                <h1 class="articleListingTitle" style="font-size: 24px;">
+                                   <a href=""><img src="images/articles/2020SpringChampionshipThrone/2020SpringChampionshipThrone.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
+                                  2020 Spring Throne Championship: Tournament Rundown</a>
+                                </h1>
+                                  <p class="articleListing">May 26, 2020 - Taking a look at the Top Eight decks from the <a href="">2020 Spring Throne Championship</p>
+                              </div>
+
+                              <div class="halfColumn homeArticle">
+                                <img src="https://www.shiftstoned.com/articles/images/ElhamPreview.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
+                                <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 150px;"><a href="">Toot the Horn: March 2020 Updates</a></h1>
+                                  <p class="articleListing">April 4, 2020 - Navigating your brew to <strong>Eternal Warcry</strong> from the fan-built <strong>Eternal Power Calculator</strong> has never been easier. Plus the addition of card art makes the Power Base visualization tool more visual than ever.</p>
+                              </div>
+
+                              <!-- Shoud this have a class? is there a better way to do this? -->
+                              <div style="clear: both;">&nbsp;</div>
+
+                              <hr style="margin: 0px 10px 0px 10px;">
+
+                              <div class="halfColumn homeArticle">
+                                <img src="images/articles/legacy/StrangeNavigator/Strange-Navigator.png" style="width: 100%; float: right; margin-bottom: 15px;">
+                                <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 0px;"><a href="">Strange Navigator: First Impressions</a></h1>
+                                  <p class="articleListing">February 9, 2020 - Feeling the Void and finding a way. <strong>Xenan</strong> gets a <strong>Stranger</strong> with some powerful abilities.</p>
+                              </div>
+
+                              <div class="halfColumn homeArticle">
+                                <img src="https://www.shiftstoned.com/articles/images/EoE-Spoiler.png" style="width: 100%; float: right; margin-bottom: 15px;">
+                                <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 150px;"><a href="">Echoes of Eternity Spoiler</a></h1>
+                                  <p class="articleListing">April 4, 2020 - Tune in Sunday February 9 at 12 noon ET as <strong>Shiftstoned's PapaCapricorn</strong> joins <strong>EJ_Jedi</strong> on <strong>Twitch</strong> to reveal a spoiler from <strong>Echoes of Eternity</strong> for <strong>Eternal Card Game</strong>. Featuring an evolving decklist leading up to the stream.</p>
+                              </div>
+
+                              <div style="clear: both;">&nbsp;</div>
+
+                              <hr style="margin: 0px 10px 0px 10px;">
+
+                              <div class="halfColumn homeArticle">
+                                <img src="https://www.shiftstoned.com/articles/images/TheTimeOfAncestors.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
+                                <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 0px;"><a href="">The Time Of Ancestors: ECQ Rundown</a></h1>
+                                  <p class="articleListing">November 18, 2019 - <strong>Taking a look at the Top Eight decks from <strong>The Time of Ancestors</strong>, the first official <strong>2020 Championship Qualifier</strong> for <strong>Eternal Card Game</strong></p>
+                              </div>
+
+                              <div class="halfColumn homeArticle">
+                                <img src="https://www.shiftstoned.com/articles/images/FoX-Pre-order.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
+                                <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 0px;"><a href="">Flame of Xulta Pre-Order Bundle Cards </a></h1>
+                                  <p class="articleListing">September 27, 2019  - <strong> Flame of Xulta Pre-Order Bundle cards are now live in the fan-built Eternal Power Calculator at Shiftstoned.</p>
+                              </div>
+
+                              <div style="clear: both;">&nbsp;</div>
+
+                              <hr style="margin: 0px 10px 0px 10px;">
+
+                              <br><br><center><a href="http://www.papacapricorn.com" target="_blank"><img width="54" src="images/capricorn.png"></a></center>
 
 
-               <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/EoE-Spoiler.png" target="blank"><img src="https://www.shiftstoned.com/articles/images/EoE-Spoiler.png" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/EoE-Spoiler.html">Echoes of Eternity Spoiler</a></global_header_home> <global_body> <strong>February 7, 2020</strong> - Tune in Sunday February 9 at 12 noon ET as <strong>Shiftstoned's PapaCapricorn</strong> joins <a href="https://www.twitch.tv/jedi_ej" target="_blank">EJ_Jedi on Twitch</a> to reveal a spoiler from <strong>Echoes of Eternity</strong> for Eternal Card Game. Featuring an evolving decklist leading up to the stream.
-               <div>&nbsp;</div>
-               <a href="https://www.shiftstoned.com/articles/EoE-Spoiler.html">Read more ► </a> </global_body></span><br />
-               <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-               <br />
-               <!-- END  ARTICLE LISTING -->
-
-               <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/TheTimeOfAncestors.jpg" target="blank"><img src="https://www.shiftstoned.com/articles/images/TheTimeOfAncestors.jpg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/TheTimeOfAncestors.html">The Time Of Ancestors:<br>ECQ Rundown<br></a></global_header_home> <global_body> <strong>November 18, 2019</strong> - ECQ: The Time of Ancestors also marks the first competitive event using the new Expedition format… What new decks will emerge to take down the competition? We’ll find out with $3,000 on the line in the first ECQ of the new season!
-               <div>&nbsp;</div>
-               <a href="https://www.shiftstoned.com/articles/TheTimeOfAncestors.html">Read more ► </a> </global_body></span><br />
-               <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-               <br />
-               <!-- END  ARTICLE LISTING -->
-
-               <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/FoX-Pre-order.jpg" target="blank"><img src="https://www.shiftstoned.com/articles/images/FoX-Pre-order.jpg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/FoX_Pre_order.html">Flame of Xulta Pre-Order Bundle Cards</a>&nbsp;</global_header_home> <global_body> <strong>September 27, 2019</strong> - <strong>Flame of Xulta Pre-Order Bundle</strong> cards are now live in the fan-built <strong>Eternal Power Calculator</strong> at <strong>Shiftstoned</strong>.
-               <div>&nbsp;</div>
-               <br />
-               <a href="https://www.shiftstoned.com/articles/FoX_Pre_order.html">Read more ► </a> </global_body></span><br />
-               <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-               <br />
-               <!-- END  ARTICLE LISTING -->
-
-
-               <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/OpalWaystone2019.jpeg" target="blank"><img src="https://www.shiftstoned.com/articles/images/OpalWaystone2019.jpeg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/OpalWaystone2019.html">The Opal Waystone Classic</a>&nbsp;</global_header_home> <global_body> <span style="color:#f8de7e;" /><strong>June 18, 2019</strong> - You are invited to an upcoming <strong>Eternal Community League</strong> event featuring a $300+ prize pool co-sponsored by <strong>Shiftstoned</strong> and <strong>Eternal Warcry</strong>. The <strong>Opal Waystone Classic</strong> takes place on <strong>Sunday June 23</strong> and includes a unique deck-building challenge. Players may register at <strong>eternaltournaments.com</strong> and the event will be streamed live on <strong>twitch</strong>. Details and addditional information can be found here.</span>
-
-               <br />
-               <a href="https://www.shiftstoned.com/articles/OpalWaystone2019.html">Read more ► </a> </global_body></span><br />
-               <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-               <br />
-               <!-- END  ARTICLE LISTING -->
-
-
-               <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/HorizonBianca.jpeg" target="blank"><img src="https://www.shiftstoned.com/articles/images/HorizonBianca.jpeg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/OpalWaystoneHorizon.html">On The Horizon: <br />The Opal Waystone Classic</a>&nbsp;</global_header_home> <global_body> <strong>February 18, 2019</strong> -  Now it is easier than ever before for deck-builders and brewers to share lists between <strong>Eternal Warcry</strong> and <strong>Shiftstoned’s Eternal Power Calculator</strong>. To celebrate this new collaboration, <strong>Eternal Warcry</strong> and <strong>Shiftstoned</strong> are teaming up with the <strong>Eternal Community League</strong> and <strong>Kaelari's eternaltournaments.com</strong> to bring you a special showcase event.
-
-               <br />
-               <a href="https://www.shiftstoned.com/articles/OpalWaystoneHorizon.html">Read more ► </a> </global_body></span><br />
-               <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-               <br />
-               <!-- END  ARTICLE LISTING -->
-
-               <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/PriceOfFreedom.jpeg" target="blank"><img src="https://www.shiftstoned.com/articles/images/PriceOfFreedom.jpeg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/PriceOfFreedom.html">Price of Freedom: ECQ Rundown</a>&nbsp;</global_header_home> <global_body> <strong>February 14, 2019</strong> - 🔥🌒 Underdogs, ⌛️🌒 fresh takes, and 🦅🐾🌒 rulebreakers featured in the Top 8 of <strong>Eternal Card Game’s</strong> <strong>Price of Freedom</strong> event, while🔥🦅🌒 <strong>Winchest</strong> remained a force to be reckoned with. Find out more in this <strong>Eternal Championship Qualifier</strong> rundown, featuring <strong>Power</strong> portraits and standout features for each of the finishers.
-
-               <br />
-               <a href="https://www.shiftstoned.com/articles/PriceOfFreedom.html">Read more ► </a> </global_body></span><br />
-               <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-               <br />
-               <!-- END  ARTICLE LISTING -->
-
-
-               <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/BurningHope.jpeg" target="blank"><img src="https://www.shiftstoned.com/articles/images/BurningHope.jpeg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/BurningHope.html">Burning Hope: ECQ Rundown</a>&nbsp;</global_header_home> <global_body> <strong>January 19, 2019</strong> - Taking a closer look at the <strong>Top Eight</strong> decks from <strong>Burning Hope</strong>. <strong>Fire</strong> was featured in every one, with <strong>Winchest</strong> composing more than half of lists in both the finals and the tournament overall. Yet each of the winners built their deck differently. All of the summaries here include a standout feature describing what sets each deck apart from the others.
-
-               <br />
-               <a href="https://www.shiftstoned.com/articles/BurningHope.html">Read more ► </a> </global_body></span><br />
-               <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-               <br />
-               <!-- END  ARTICLE LISTING -->
-
-
-               <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/Pictures.jpeg" target="blank"><img src="https://www.shiftstoned.com/articles/images/Pictures.jpeg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/WorldsExpo.html">Pictures at an Exhibition</a>&nbsp;</global_header_home> <global_body> <strong>December 15, 2018</strong> - Hanging this year's <strong>Championship Power</strong> bases on the wall, and introducing the <strong>Eternal Power Calculator's</strong> new title feature. We take a look at <strong>Power</strong> base visualizations for all 16 decks from the <strong>Eternal Tournament Series 2018 World Championship</strong>.
-
-               <br />
-               <a href="https://www.shiftstoned.com/articles/WorldsExpo.html">Read more ► </a> </global_body></span><br />
-               <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-               <br />
-               <!-- END  ARTICLE LISTING -->
-
-
-               <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/ShareOG.jpeg" target="blank"><img src="https://www.shiftstoned.com/articles/images/ShareOG.jpeg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/ShareThePower.html">Share the Power: updates to the Eternal Power Calculator</a>&nbsp;</global_header_home> <global_body> <strong>November 14, 2018</strong> - As <strong>Eternal</strong> enters full release, brewers can now share or store <strong>Power</strong> base visualizations generated by the fan-built <strong>Eternal Power Calculator</strong> at <strong>Shiftstoned</strong> by creating a unique link for their decklist. Full support for modifying <strong>Markets</strong> on the fly has also been added
-               <br />
-               <a href="https://www.shiftstoned.com/articles/ShareThePower.html">Read more ► </a> </global_body></span><br />
-               <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-               <br />
-               <!-- END  ARTICLE LISTING -->
-
-         <!-- BEGIN ARTICLE LISTING -->
-       <video width="250" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px; " controls>
-       <source src="video/LOA_Calendar.mp4" type="video/mp4" >
-      Your browser does not support the video tag.</video>
-      <span style="margin-left: 125px; display:block">
-      <global_header_home> <a href="video/LOA_Calendar.mp4" target="_blank">Don't make the same mistake <br /> as LightsOutAce! </global_header_home> <global_body> <strong>October 9, 2018</strong> - Even your favorite streamers sometimes forget when it is tournament time. Hey, we're all human. So subscribe to the <strong>Eternal Community Calendar</strong> and never miss a registration deadline again.<br />
-      <div style="  margin-left: 325px;"> <a href="video/LOA_Calendar.mp4" target="_blank">Watch video ► </a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="calendar/" target="_blank">View calendar ► </a> </div></global_body></span><br />
-       <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-         <br />
-         <!-- END  ARTICLE LISTING -->
-
-         <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/StreamsComeTrue.jpeg"><img src="https://www.shiftstoned.com/articles/images/StreamsComeTrue.jpeg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/StreamsComeTrue.html">Streams Come True: <br />featuring Grimfan</a>&nbsp;</global_header_home> <global_body> <strong>September 29, 2018</strong> - Just hours before the first-ever community qualifying event for the  <strong>Eternal World Championship 2019</strong>, <strong>Grimfan</strong> tweeted out to his followers: “I've decided I'd like to stream more than I want to win.”  In the end he did both, taking first place with <em>ET Combrei Aggro</em> and doing it all on camera.<br />
-         <a href="https://www.shiftstoned.com/articles/StreamsComeTrue.html">Read more ► </a> </global_body></span><br />
-         <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-         <br />
-         <!-- END  ARTICLE LISTIN<br /><br />G -->
-
-         <!-- BEGIN ARTICLE LISTING --><a href="https://teamrankstar.com/wp-content/uploads/2018/09/eternal_trail_stories21-1.png" target="_blank"><img src="https://www.shiftstoned.com/articles/images/TrailStories_PapaCapricorn.jpeg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" target="_blank" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://teamrankstar.com/trail-stories-papacapricorn/" target="_blank">Trail Stories: PapaCapricorn</a>&nbsp;</global_header_home> <global_body> <strong>September 6, 2018</strong> - <strong>Shiftstoned's PapaCapricorn</strong> toasts marshmallows with <strong>MantidMan</strong> as part of <a href="https://teamrankstar.com/trail-stories-papacapricorn/" target="_blank">TeamRankstar's</a> <strong>Trail Stories</strong> series. They cover community, story-telling and the origins of the <strong>Eternal Power Calculator.</strong><br />
-         <a href="https://teamrankstar.com/trail-stories-papacapricorn/" target="_blank">Read more ► </a> </global_body><br /><br /></span><br />
-         <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-         <br />
-         <!-- END  ARTICLE LISTING -->
-
-         <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/Seekers1.jpeg" target="_blank"><img src="https://www.shiftstoned.com/articles/images/Seekers1.jpeg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" /></a> <span style="margin-left: 125px; display:block"> <global_header_home> <a href="https://www.shiftstoned.com/articles/Seekers1.html">The Seekers I - Valley of Kings:
-         featuring BruisedByGod, SecondBlue and SooNo</a>&nbsp;</global_header_home> <global_body> <strong>August 26, 2018</strong> - Team <strong>Seek Power Gaming</strong> is poised to capture several top spots in both the <strong>Eternal Tournament Series</strong> and the <strong>Eternal Community League</strong>. In this first part of a series, we talk to <strong>SPG </strong>members <strong>SooNo</strong>, <strong>BruisedByGod</strong> and <strong>SecondBlue</strong> about what it means to be a team player in <strong>Eternal</strong>.<br />
-         <a href="https://www.shiftstoned.com/articles/Seekers1.html">Read more ► </a> </global_body></span><br />
-         <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-         <br />
-         <!-- END  ARTICLE LISTING -->
-
-      <!-- BEGIN ARTICLE LISTING --><a href="https://www.shiftstoned.com/articles/images/UnusualSuspects.jpeg" target="_blank"><img src="https://www.shiftstoned.com/articles/images/UnusualSuspects.jpeg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" /></a> <span style="margin-left: 125px; display:block"> <global_header> <a href="https://www.shiftstoned.com/articles/UnusualSuspects.html">Unusual Suspects: <br />featuring Kaelos</a>&nbsp;</global_header> <global_body>  <strong>August 20, 2018</strong> - Kaelos speaks with <strong>Shiftstoned</strong> about her unconventional approach to deck-building on the heels of a first-place finish in an <strong>ECL</strong> weekly event. Science, community and the healing power of games are just a few of the topics that emerge from our conversation about Power bases in <strong>Eternal</strong>.<br />
-         <a href="https://www.shiftstoned.com/articles/UnusualSuspects.html">Read more ► </a> </global_body></span><br />
-         <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333" />
-         <br />
-         <!-- END  ARTICLE LISTING -->
-
-         <!-- BEGIN ARTICLE LISTING -->
-
-              <a href="https://www.shiftstoned.com/articles/images/Qaudragraphic.jpeg" target="_blank"><img src="https://www.shiftstoned.com/articles/images/Qaudragraphic.jpeg" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" /></a>
-
-           <span style="margin-left: 125px; display:block">
-           <global_header>
-                 <a href="https://www.shiftstoned.com/articles/quad.html">Quadragraphic: <br>featuring camat0</a>&nbsp;</global_header> <global_body> <strong>August 10, 2018</strong> - camat0 sits down with <strong>Shiftstoned</strong> to discuss the <strong>Power</strong> bases behind all four of his winning lists from the <strong>Eternal Community League&#39;s</strong>
-           <div>
-             inaugural <strong>Sunday Challenge</strong> event. We talk <strong>Power</strong>, <strong>Crests</strong>, fixing and</div>
-           <div>
-             the merits of <strong>Privilege of Rank.</strong><br><a href="https://www.shiftstoned.com/articles/quad.html">Read more &#9658; </a>
-       </div>
-       </span>
-
-           <span style="margin-left: 125px"><br>   <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333">
-               </span><br>
-
-       <!-- END  ARTICLE LISTING -->
-
-              <a href="https://www.shiftstoned.com/articles/images/HighVoltageMasked.png" target="_blank"><img src="https://www.shiftstoned.com/articles/images/HighVoltageMasked.png" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" /></a>
-
-           <span style="margin-left: 125px; display:block">
-           <global_header>
-                 <a href="https://www.shiftstoned.com/articles/HighVoltage.html">Danger: High Voltage</a>
-             </global_header>
-
-            <global_body>
-               <strong>August 3, 2018</strong> - Over half the cards in a recent tournament-winning <strong>Combrei</strong> deck piloted by Mouche are <strong>Power</strong> sources. With help from the the <strong>Eternal Power Calculator</strong>, let's attempt to answer the question: "When is too much Power just enough?"<br>
-                   <a href="https://www.shiftstoned.com/articles/HighVoltage.html">Read more &#9658; </a>
-             </global_body>
-   </span>
-
-              <span style="margin-left: 125px"><br>
-                  <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333">
-               </span><br>
-
-              <a href="https://www.shiftstoned.com/articles/images/TaleOfTwo2.png" target="_blank"><img src="https://www.shiftstoned.com/articles/images/TaleOfTwo2.png" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" /></a>
-
-           <span style="margin-left: 125px; display:block">
-           <global_header>
-                 <a href="https://www.shiftstoned.com/articles/TaleOfTwo.html">A Tale of Two Power Bases</a>
-             </global_header>
-
-             <global_body>
-               <strong>July 27, 2018</strong> - Two distinct and innovative archetypes prevailed at recent <strong>Eternal</strong> competitive events. Tobboo's <em>Rakano Valkyries</em> showcases a new breed of <strong>Midrange Rakano</strong>, while Isochron's <em>Adapted Green Feln</em> presents a fresh take on <strong>J/PS Control</strong>. Let's take a look at their power bases using the <strong>Eternal Power Calculator</strong>...<br>
-                  <a href="https://www.shiftstoned.com/articles/TaleOfTwo.html">Read more &#9658; </a>>
-               </global_body></span>
-
-              <span style="margin-left: 125px"><br>
-                  <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333">
-               </span><br>
-
-              <a href="https://www.shiftstoned.com/articles/images/Portrait.png" target="_blank"><img src="https://www.shiftstoned.com/articles/images/Portrait.png" style="float: left; width: 250px; margin-left: 155px; margin-right: 15px;" /></a>
-
-           <span style="margin-left: 125px; display:block">
-           <global_header>
-                 <a href="https://www.shiftstoned.com/articles/Portrait.html">Portrait of the Eternal power base as first-place Saturday Challenge finisher</a>
-             </global_header>
-
-             <global_body>
-               <strong>July 16, 2018</strong> - Nishava took first place at the inaugural Kaelari&#39;s Saturday Challenge event&nbsp; with an aggressive Combrei list entitled <em>Rakano&#39;s weapons are outmatched!</em>  Let&#39;s take a look at the <strong>Power</strong> base using the <strong>Eternal Power Calculator.</strong><br />
-                  <a href="https://www.shiftstoned.com/articles/Portrait.html">Read more &#9658; </a>
-               </global_body></span>
-
-              <span style="margin-left: 125px"><br>
-                  <hr style="margin-top: 0px; margin-left: 125px; width: 1000px; border: 1px solid #333333">
-               </span><br>
-
-
-               <br><br><center><a href="http://www.papacapricorn.com" target="_blank"><img width="54" src="https://www.shiftstoned.com/images/capricorn.png"></a></center>
-       <br><br>
-
-
-          </div> <!-- End centralGrid -->
-
+                           </div> <!-- End Column -->
 
 
 

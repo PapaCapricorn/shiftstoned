@@ -1,5 +1,21 @@
 {#- Consolidating the various scripts into a single include -#}
-    <script type="text/javascript" src="/epc/jquery-1.12.4.min.js"></script>
+    {# <script type="text/javascript" src="/epc/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="/epc/semantic.min.js"></script>
     <script type="text/javascript" src="/epc/epc.min.js"></script>
-    <script type="text/javascript">$(".ui.dropdown").dropdown();</script>
+    <script type="text/javascript">$(".ui.dropdown").dropdown();</script> #}
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+    
+    {#- if page-specific `page_script` data is passed, include that js file here -#}
+  {%- if page_script %}
+    <!-- page-specific js -->
+    <script type="text/javascript">{% include "js/page/" + page_script %}</script>
+  {%- endif %}
+    
+    {#- if multiple page-specific `page_scripts` data is passed, include those js files here -#}
+  {%- if page_scripts %}
+    <!-- page-specific js -->
+    {%- for script in page_scripts %}
+    <script src="{{ script | url }}" type="text/javascript"></script>
+    {%- endfor %}
+  {%- endif %}
