@@ -61,10 +61,10 @@ module.exports = function(eleventyConfig) {
   });
 
   // Universal Shortcodes (adds to Liquid, Nunjucks, Handlebars & JavaScript)
-/*     // format date & time
+     // format date & time
   eleventyConfig.addShortcode("date", require("./src/utils/shortcodes/date.js"));
   eleventyConfig.addShortcode("time", require("./src/utils/shortcodes/time.js"));
-    // format site buttons
+/*    // format site buttons
   eleventyConfig.addPairedShortcode("button", require("./src/utils/shortcodes/button.js"));
   eleventyConfig.addShortcode("svg", require("./src/utils/shortcodes/svg-icon.js")); */
   // insert faction icon

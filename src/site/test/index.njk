@@ -2,6 +2,7 @@
 title: Test
 layout: layouts/html.njk
 page_style: test.css
+date: 2020-05-30
 ---
 <h2>Hover-tooltip test</h2>
 
@@ -12,6 +13,14 @@ Hover over me!
 Tooltip text...
 {% endhover_content %}
 {% endhover_text %}
+</p>
+
+<h2>Date shortcode test</h2>
+<p>
+  Attempting to parse: <code>{{ page.date }}</code>.
+</p>
+<p>
+  Result: {% date page.date %} at {% time page.date %}
 </p>
 
 <h2>Title from site.json </h2>
