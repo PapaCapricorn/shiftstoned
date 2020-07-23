@@ -1,6 +1,6 @@
 ---
 title: Articles
-bg_img: ../images/BackgroundArticles.jpg
+bg_img: /images/BackgroundArticles.jpg
 section: Articles
 override:tags: []
 page_style: articles-index-test.css
@@ -18,7 +18,12 @@ permalink: "/articles-test/{% if pagination.pageNumber > 0 %}{{ pagination.pageN
       <h2><a href="{{ article.url }}">{{ article.data['meta-title'] }}</a></h2>
     </header>
     <div class="article-image">
-      <a href="{{ article.url }}"><img src="{{ article.data['meta-image'] }}" /></a>
+      <a href="{{ article.url }}">
+        <img src="{{ article.data['meta-image'] }}"
+             width="250" height="164.4"
+             loading="lazy"
+             alt="{{ meta-image-alt or 'Graphic' }}" />
+      </a>
     </div>
     <section class="article-description">
       <p>
@@ -33,19 +38,23 @@ permalink: "/articles-test/{% if pagination.pageNumber > 0 %}{{ pagination.pageN
 </section>
 
 <nav class="page-selector">
+  <span class="page-nav previous">
   {% if pagination.previousPageHref %}
-    <a href="{{ pagination.previousPageHref }}" class="page-numbers">
+    <a href="{{ pagination.previousPageHref }}">
       Previous
     </a>
   {% else %}
-    <span class="page-numbers">Previous</span>
+    Previous
   {% endif %}
+  </span>
   <span class="page-numbers ">
     Page: {{ pagination.pageNumber + 1 }} of {{ pagination.links | length  }}
   </span>
+  <span class="page-nav next">
   {% if pagination.nextPageHref %}
-    <a href="{{ pagination.nextPageHref }}" class="page-numbers">Next</a>
+    <a href="{{ pagination.nextPageHref }}">Next</a>
   {% else %}
-    <span class="page-numbers">Next</span>
+    Next
   {% endif %}
+  </span>
 </nav>
