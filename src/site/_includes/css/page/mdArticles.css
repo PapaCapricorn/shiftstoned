@@ -1,0 +1,27 @@
+.newBodyGrid {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 250px auto; /* sidebar + main column layout */
+}
+.newBodyGrid > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+.article-image {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+.article-image img {
+    width: 80%;
+    height: auto;
+}
+.star-list li {
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    margin-right: .5em;
+}
+.main-col-image img {
+    width: 550px;
+    height: auto;
+}

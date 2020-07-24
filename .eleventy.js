@@ -31,23 +31,6 @@ module.exports = function(eleventyConfig) {
   // Passthrough Contacts confirmation page - thanks.html
   eleventyConfig.addPassthroughCopy("./src/site/contact/thanks.html");
 
-
-
-  // 404 for local testing
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-      ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync('dist/404.html');
-
-        browserSync.addMiddleware("*", (req, res) => {
-          // Provides the 404 content without redirect.
-          res.write(content_404);
-          res.end();
-        });
-      }
-    }
-  });
-
   // Custom collections
 /*   eleventyConfig.addCollection("docs", function(collection) {
     return collection.getFilteredByTag("docs").sort(function(a, b) {
@@ -77,6 +60,32 @@ eleventyConfig.addPairedShortcode("hover_content", require("./src/utils/shortcod
   // check & format output
     // minify the html output
   // eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js"));
+  
+  // Add plugins to extend the included "markdown-it" Markdown parser
+  let markdownIt = require("markdown-it");
+  let options = {
+    html: true
+  };
+  let markdownLib = markdownIt(options)
+      .use( require("markdown-it-bracketed-spans") )
+      .use( require("markdown-it-attrs") )
+  
+  eleventyConfig.setLibrary("md", markdownLib);
+
+  // 404 for local testing
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, browserSync) {
+        const content_404 = fs.readFileSync('dist/404.html');
+
+        browserSync.addMiddleware("*", (req, res) => {
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      }
+    }
+  });
 
   return {
     dir: {
