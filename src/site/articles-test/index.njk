@@ -27,7 +27,7 @@ permalink: "/articles-test/{% if pagination.pageNumber > 0 %}{{ pagination.pageN
     </div>
     <section class="article-description">
       <p>
-        <time datetime="{{ article.date}}">{{ article.date}}</time> - {{ article.data.description }}
+        {% date article.date %} - {{ article.data.description }}
       </p>
     </section>
     <footer>

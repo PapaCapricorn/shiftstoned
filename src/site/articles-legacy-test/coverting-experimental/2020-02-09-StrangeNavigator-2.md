@@ -14,7 +14,7 @@ Feeling **the Void** and finding a way</span>paragraph {.subtitle}
 
 ![Strange Navigator graphic](/images/articles/legacy/StrangeNavigator/Strange-Navigator.png "Strange Navigator"){width=250} {.article-image}
 
-**{{ page.date }}** -  Thanks to [Jedi_EJ on Twitch](https://www.twitch.tv/videos/549374235?t=01h29m30s) for helping us to reveal this spoiler from **Echoes of Eternity** on his stream today. And to those in chat who played along by generating some insightful guesses based on the [theme deck](EoE-Spoiler.html) presented earlier.
+**{% date page.date %}** -  Thanks to [Jedi_EJ on Twitch](https://www.twitch.tv/videos/549374235?t=01h29m30s) for helping us to reveal this spoiler from **Echoes of Eternity** on his stream today. And to those in chat who played along by generating some insightful guesses based on the [theme deck](EoE-Spoiler.html) presented earlier.
 
 **Strange Navigator - 2{% icon 'Time' %}{% icon 'Shadow' %}**  
 3/2 Explorer Stranger - Rare  
