@@ -67,10 +67,14 @@ eleventyConfig.addPairedShortcode("hover_content", require("./src/utils/shortcod
     html: true
   };
   let markdownLib = markdownIt(options)
-      .use( require("markdown-it-bracketed-spans") )
+      // .use( require("markdown-it-bracketed-spans") )
       .use( require("markdown-it-attrs") )
+      .use( require("markdown-it-implicit-figures"))
   
   eleventyConfig.setLibrary("md", markdownLib);
+
+  // Pause time for re-build during watch (in ms)
+  eleventyConfig.setWatchThrottleWaitTime(time = 100);
 
   // 404 for local testing
   eleventyConfig.setBrowserSyncConfig({
