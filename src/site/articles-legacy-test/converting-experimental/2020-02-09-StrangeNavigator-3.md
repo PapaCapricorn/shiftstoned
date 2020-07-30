@@ -1,20 +1,18 @@
 ---
 title: Strange Navigator
-meta-title: Echoes of Eternity Spoiler
-meta-image: /articles/Strange-Navigator.png
 description: "Strange Navigator: An Echoes of Eternity spoiler"
+meta_title: Echoes of Eternity Spoiler
+meta_image: /images/articles/Strange-Navigator.png
+article:
+    title: "Strange Navigator:<br>An Echoes of Eternity spoiler"
+    subtitle: "Feeling **the Void** and finding a way"
+    tagline: "**Xenan** gets a **Stranger** with some powerful abilities"
 date: 2020-02-09 13:35:43.10 -5
-page_style: mdArticles.css
 ---
-# Strange Navigator: <br/>An Echoes of Eternity spoiler
+**{% date page.date %}** -  Thanks to [Jedi_EJ on Twitch][] for helping us to reveal this spoiler from **Echoes of Eternity** on his stream today. And to those in chat who played along by generating some insightful guesses based on the [theme deck][] presented earlier.
 
-Feeling **the Void** and finding a way</span>paragraph {.subtitle}
-
-**Xenan** gets a **Stranger** with some powerful abilities
-
-![Strange Navigator graphic](/images/articles/legacy/StrangeNavigator/Strange-Navigator.png "Strange Navigator"){width=250} {.article-image}
-
-**{% date page.date %}** -  Thanks to [Jedi_EJ on Twitch](https://www.twitch.tv/videos/549374235?t=01h29m30s) for helping us to reveal this spoiler from **Echoes of Eternity** on his stream today. And to those in chat who played along by generating some insightful guesses based on the [theme deck](EoE-Spoiler.html) presented earlier.
+  [Jedi_EJ on Twitch]: https://www.twitch.tv/videos/549374235?t=01h29m30s
+  [theme deck]: EoE-Spoiler.html "Echoes of Eternity Spoiler"
 
 **Strange Navigator - 2{% icon 'Time' %}{% icon 'Shadow' %}**  
 3/2 Explorer Stranger - Rare  
@@ -31,6 +29,9 @@ Pay 9 and exhaust Strange Navigator to draw five units from your void.
 * A higher frequency of **Strangers** in the Meta will make for  some interesting gameplay decisions, considering that their valuable abilities are almost always symmetrical if your opponent also controls a **Stranger**.
 {.star-list}
 
-![Strange Navigator graphic](/images/articles/legacy/StrangeNavigator/Strange-Navigator.png "Strange Navigator spoiler"){width=550} {.main-col-image}
+![Strange Navigator graphic]({{ meta_image }} "Strange Navigator spoiler"){width=550}
+{.main-col-image}
+
+----
 
 > Look to the stars, look to the sea, you'll find a way for us and for me

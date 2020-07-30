@@ -73,8 +73,14 @@ eleventyConfig.addPairedShortcode("hover_content", require("./src/utils/shortcod
   
   eleventyConfig.setLibrary("md", markdownLib);
 
+  // Add filter for processing MD strings from the front matter
+  eleventyConfig.addFilter('frontmatter_md', (markdownString) => {
+    var result = decodeURI(markdownString);
+    return markdownIt({html: true}).renderInline(result);
+  });
+
   // Pause time for re-build during watch (in ms)
-  eleventyConfig.setWatchThrottleWaitTime(time = 100);
+  eleventyConfig.setWatchThrottleWaitTime(time = 50);
 
   // 404 for local testing
   eleventyConfig.setBrowserSyncConfig({

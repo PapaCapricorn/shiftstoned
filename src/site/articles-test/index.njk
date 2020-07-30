@@ -1,6 +1,5 @@
 ---
 title: Articles
-bg_img: /images/BackgroundArticles.jpg
 section: Articles
 override:tags: []
 page_style: articles-index-test.css
@@ -15,14 +14,14 @@ permalink: "/articles-test/{% if pagination.pageNumber > 0 %}{{ pagination.pageN
 {%- for article in articles %}
   <article class="article-brief">
     <header>
-      <h2><a href="{{ article.url }}">{{ article.data['meta-title'] }}</a></h2>
+      <h2><a href="{{ article.url }}">{{ article.data.meta_title }}</a></h2>
     </header>
     <div class="article-image">
       <a href="{{ article.url }}">
-        <img src="{{ article.data['meta-image'] }}"
+        <img src="{{ article.data.meta_image }}"
              width="250" height="164.4"
              loading="lazy"
-             alt="{{ meta-image-alt or 'Graphic' }}" />
+             alt="{{ meta_image_alt or 'Graphic' }}" />
       </a>
     </div>
     <section class="article-description">

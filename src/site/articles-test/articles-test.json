@@ -1,6 +1,7 @@
 {
     "layout" : "layouts/base.njk",
+    "section":"Articles",
     "tags" : "articles",
     "templateEngineOverride": "njk,md",
-    "bg_img": "https://www.shiftstoned.com/articles/CrypticEtchings.jpeg"
+    "bg_img": "/images/BackgroundArticles.jpg"
   }

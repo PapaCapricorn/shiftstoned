@@ -17,10 +17,10 @@ page_style: articles-index-test.css
 {%- for article in taglist | reverse %}
   <article class="article-brief">
     <header>
-      <h2><a href="{{ article.url }}">{{ article.data['meta-title'] }}</a></h2>
+      <h2><a href="{{ article.url }}">{{ article.data.meta_title }}</a></h2>
     </header>
     <div class="article-image">
-      <a href="{{ article.url }}"><img src="{{ article.data['meta-image'] }}" /></a>
+      <a href="{{ article.url }}"><img src="{{ article.data.meta_image }}" /></a>
     </div>
     <section class="article-description">
       <p>

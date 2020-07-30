@@ -1,5 +1,6 @@
 {
    "layout":"layouts/html.njk",
+   "section":"Articles",
    "tags":"articles",
    "templateEngineOverride":"njk,md",
    "localbangarang":"ThisIsTheLOCALBangarangValue",

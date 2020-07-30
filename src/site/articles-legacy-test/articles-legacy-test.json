@@ -1,6 +1,8 @@
 {
     "layout" : "layouts/html.njk",
+    "section":"Articles",
     "tags" : "articles",
-    "bg_img": "https://www.shiftstoned.com/articles/CrypticEtchings.jpeg",
+    "page_class" : "article",
+    "bg_img": "/images/BackgroundArticles.jpg",
     "permalink" : "/articles-test/{{ page.fileSlug }}.html"
   }
