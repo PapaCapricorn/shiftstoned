@@ -3,6 +3,7 @@ title: Echoes of Eternity Spoiler
 meta_title: Echoes of Eternity Spoiler
 meta_image: /images/articles/EoE-Spoiler.png
 description: "Revealing a spoiler for Echoes of Eternity, featuring an evolving decklist."
+layout: layouts/article-test-2.njk
 article:
     title: "Echoes of Eternity Spoiler"
     subtitle: "Revealing a new spoiler from [Echoes of Eternity](https://www.direwolfdigital.com/news/new-set-echoes-of-eternity/), the upcoming expansion for [Eternal Card Game](https://www.direwolfdigital.com/eternal/)"
@@ -28,7 +29,8 @@ Meanwhile, you will find a few clues by visiting the evolving [Power Portrait][e
   [epc-spoiler]: https://www.shiftstoned.com/epc/?d=CsfRDHhBDI3DEH5FDBtICBlIBC7HDtfREF9GDvfKDB4IDE-GDBkQDC_ECChFCHkKCImFIB5HBB_BEEvICEqICA9BECpGEH4FEJBCAABHiBBCoBBHgEBCvGBFgH&t=Echoes%20of%20Eternity%20Spoiler "Power Portrait"
   [Eternal Card Game subreddit]: https://www.reddit.com/r/EternalCardGame/comments/f0sujj/echoes_of_eternity_spoiler_reveal_tomorrow_29_on/ "Reddit"
 
-[view evolving Power Portrait][epc-spoiler]{.arrow-link .highlight}
+[view evolving Power Portrait][epc-spoiler]{.arrow-link}
+{.highlight}
 
 * Update 08-FEB-2020 21:00 ET - [Units added][epc-spoiler]
 * Update 08-FEB-2020 18:00 ET -  [Spells and sites added](https://www.shiftstoned.com/epc/?d=IB5HBB_BEEvICEqICA9BECpGEH4FEJBgBJCCsfRCImFDBtICBlIDtfRCHkKCAABHiBBCoBBHgEBCvGBFgH&t=Echoes%20of%20Eternity%20Spoiler)
@@ -37,7 +39,8 @@ Meanwhile, you will find a few clues by visiting the evolving [Power Portrait][e
 * 07-FEB-2020 19:00 ET - [Point of departure](https://www.shiftstoned.com/epc/?d=EJBuBJCMB_BNB5H&t=Echoes%20of%20Eternity%20Spoiler)
 { .list-compact .star-list .highlight }
 
-[join the discussion on Reddit](https://www.reddit.com/r/EternalCardGame/comments/f0sujj/echoes_of_eternity_spoiler_reveal_tomorrow_29_on/){.arrow-link .highlight}
+[join the discussion on Reddit](https://www.reddit.com/r/EternalCardGame/comments/f0sujj/echoes_of_eternity_spoiler_reveal_tomorrow_29_on/){.arrow-link}
+{.highlight}
 
 [![Graphic](/images/articles/EoE-Spoiler.png "Echoes of Eternity Spoiler")][epc-spoiler]
 {.main-col-image}
@@ -46,5 +49,5 @@ Meanwhile, you will find a few clues by visiting the evolving [Power Portrait][e
 
 Look to the stars, look to the sea, you'll find a way for us and for me {.tagline .highlight}
 
-[![Graphic](/images/articles/SNDecklist.JPG "Echoes of Eternity Spoiler")](/images/articles/SNDecklist.JPG)
+![Graphic](/images/articles/SNDecklist.JPG "Echoes of Eternity Spoiler")
 {.main-col-image}

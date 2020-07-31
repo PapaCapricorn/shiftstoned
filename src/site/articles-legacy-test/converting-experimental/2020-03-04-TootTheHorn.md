@@ -6,13 +6,13 @@ meta_title: "Toot the Horn: March 2020 Eternal Power Calculator updates"
 meta_image: /images/articles/ElhamPreview.jpg
 date: 2020-03-04 13:35:43.10 -5
 ---
-# Toot the Horn: March 2020 updates{.title}
+# Toot the Horn: March 2020 updates {.title}
 
 Navigating your brew to [Eternal Warcry][] from the fan-built **Eternal Power Calculator** has never been easier. Plus the addition of card art makes the **Power Base** visualization tool more visual than ever. {.subtitle}
 
   [Eternal Warcry]: https://eternalwarcry.com/
 
-![alt text]({{ meta_image }} "Elham Preview") {.article-image .side-image}
+![Thumbnail Graphic]({{ meta_image }} "Elham Preview") {.article-image .side-image}
 
 **{% date page.date %}** -  Keen-eyed explorers are spotting some updated features in the fan-built [Eternal Power Calculator][]. With the touch of a button, [Eternal Card Game][] brewers can now automatically load and view their lists into the [Eternal Warcry][] deck builder directly from **Shiftstoned's Power Base** visualization tool.
 

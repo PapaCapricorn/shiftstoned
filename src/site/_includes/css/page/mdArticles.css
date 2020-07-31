@@ -1,4 +1,8 @@
 .article {
+    --block-margin: 1.5rem;
+}
+
+.article {
     padding: 0 30px 30px;
     display: grid;
     grid-template-columns: 250px 600px; /* sidebar + main column layout */
@@ -15,25 +19,55 @@
 }
 
 .articleHeader {
-    margin-block-end: 1.5em;
+    margin-block-end: var(--block-margin);
 }
 .article .title,
 .article .subtitle,
 .article .tagline,
-.article hr {
-    margin: 0;
-    margin-block-end: .5em;
+.article hr,
+.article > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article .pre-headline {
+    display: flex; /* force line break */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article a {
+    color: #81C3F4;
+}
+.article a:hover {
+    color: #4183c4;
 }
 
 .side-image {
-    grid-column: 1;
-    display: flex;
-    justify-content: right;
-    align-self: start;
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
     margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
 }
+.side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.side-image.card-image img {
+    width: 220px;
+}
+.side-image.card-image.ci-small img {
+    width: 125px;
+}
+
 .article-image {
-    grid-row: 1 / 3;
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
 }
 .article-image img {
     width: 250px;
@@ -41,9 +75,11 @@
     object-fit: contain;
 }
 
-.article ul,
+.article ul {
+    margin-block-end: var(--block-margin);
+}
 .article ul li:not(:last-child) {
-    margin-block-end: 1em;
+    margin-block-end: 1rem;
 }
 .article ul li {
     list-style: none;
@@ -60,8 +96,12 @@
     margin-block-end: 0;
 }
 
+.main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+}
 .main-col-image img {
-    width: 550px;
+    width: 100%; /* width of the main column */
     height: auto;
 }
 
@@ -87,5 +127,45 @@ h3 .epc-link{
     text-decoration: underline;
 }
 h3 .epc-link::before {
+    display: inline-block;
     content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article-table,
+.article-table tr,
+.article-table td,
+.article-table th {
+    border: 1px solid white;
+}
+.article-table td,
+.article-table th {
+    padding: 2px 3px;
+}
+.article-table thead th {
+    vertical-align: bottom;
+}
+.article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article-table thead th:nth-child(2),
+.article-table thead th:nth-child(3),
+.article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
 }

@@ -3,6 +3,7 @@ title: Strange Navigator
 description: "Strange Navigator: An Echoes of Eternity spoiler"
 meta_title: Echoes of Eternity Spoiler
 meta_image: /images/articles/Strange-Navigator.png
+layout: layouts/article-test-2.njk
 article:
     title: "Strange Navigator:<br>An Echoes of Eternity spoiler"
     subtitle: "Feeling **the Void** and finding a way"
