@@ -14,7 +14,7 @@ Taking a look at the Top Eight decks from [Burning Hope][], the second official 
 
 **Power** portraits for the finalists from the first offical tournament to feature **Set 5: Defiance** {.tagline}
 
-![Graphic]({{ meta_image }} "Burning Hope"){width=250} {.article-image .side-image}
+![thumbnail image]({{ meta_image }} "Burning Hope"){width=250} {.article-image .side-image}
 
 ----
 
@@ -22,9 +22,9 @@ Taking a look at the Top Eight decks from [Burning Hope][], the second official 
 
 ## The Top Eight
 
-<span style="font-size: 2.1em; font-weight: bold;">F</span>or 
-<span style="font-size: 2.1em; font-weight: bold;">J</span>ekk's 
-<span style="font-size: 2.1em; font-weight: bold;">S</span>ake! Winchest reigns {.tagline}
+<span style="font-size: 1.7em;">F</span>or 
+<span style="font-size: 1.7em;">J</span>ekk's 
+<span style="font-size: 1.7em;">S</span>ake! Winchest reigns {.tagline}
 
 **Fire** was featured in every one of the **Top Eight** decks from the competition, with **Winchest** {% icon 'FJS' %} composing more than half of lists in both the finals and the tournament overall. Yet each of the winners built their list somewhat differently.
 
@@ -34,8 +34,7 @@ All of the summaries here include a standout feature describing what sets each d
 
   [deck-DarkestHour]: https://www.shiftstoned.com/epc/?d=CA4BCA3BDA8BEB4MEBIDBvEEBjMDBBDB-DCB5HECsHEDsICDoIEEzHEE2HEFkBEFmGEFwGEFyGEFvHDpfPEsfTCAABBsFBB9JBF_CBFuDBF1G&t=DarkestHour's%20Deck%20%7BECQ%20Burning%20Hope%7D "Darkest Hour's Deck"
 
-![Martyr's Chains card image](/images/cards/Martyr's_Chains.png "Martyr's Chains"){width=125}
-{.side-image .card-image .ci-small}
+{% card_image "Martyr's Chains", "ci-small" %}
 
 The winning deck forgoes **Winchest Cargo** in favor of a full playset of **Seek Power**. While **DarkestHour** misses out on the opporunity for new cards created by **Winchest Contraband**, this means they can more reliably reach the **Power** and **Influence** requirements for both **Xo of the Endless Hoard** (7{% icon 'FFF' %}) and **Martyr's Chains**(9{% icon 'JJJJ' %}). More importantly perhaps, both **Seek Power** and **Lost Scroll** (2{% icon 'JS' %}) provide additional **Power** cards for the devastating **Empower** ability of **Martyr's Chains**. With **Chains** in play, **Seek Power** effectively becomes a 1-cost **Slay** as long as you have **Sigils** to draw.
 
@@ -50,8 +49,7 @@ The winning deck forgoes **Winchest Cargo** in favor of a full playset of **Seek
 
   [deck-trumpets]: https://www.shiftstoned.com/epc/?d=CA4BCA3BDA8BEB4MEBIBBtIDBjMDBBGB-DDB5HECsHDDsIDDoICEzHEE2HEFkBEFmGEFwGEFyGEFvHEsfMEsfTCAABBvEBFtCBFuDBF1GBrfB&t=trumpets'%20Deck%20%7BECQ%20Burning%20Hope%7D
 
-![Telut, Queen's Hand card image](/images/cards/Telut,_Queen's_Hand.png "Telut, Queen's Hand"){width=125}
-{.side-image .card-image .ci-small}
+{% card_image "Telut, Queen's Hand", "ci-small" %}
 
 The absence of both **Vicious Highwayman** (4{% icon 'FFSS' %}) and also **Deepforged Plate** (5{% icon 'FFJJ' %}) means that **trumpets** can go lighter on {% icon 'F' %} sources. This frees up space for six **Justice Sigils**, providing plenty of extra fuel for **Telut, Queen's Hand** (7{% icon 'JJ' %}). While powerful on its own, **Telut's** ability adds yet another **Power** playing effect to enable **Martyr's Chains** (9{% icon 'JJJJ' %}) &mdash; potentially allowing **trumpets** to take out two enemy units in a single turn for free.
 
@@ -66,8 +64,7 @@ The absence of both **Vicious Highwayman** (4{% icon 'FFSS' %}) and also **Deepf
 
   [deck-xSTEALTHx]: https://www.shiftstoned.com/epc/?d=CA4BDA3BDA8BCB4MEBICBmFDBsFCBtIDBBDB-DCB5HECsHCDzIDDsIDDoIDEzHEE2HDFkBBFtCBF_CEFmGCFwGDFyGCFtHEFvHDpfPEsfTCAABBvEBB9JBBjMBF1GBrfB&t=xSTEALTHx's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
-![Winchest Contraband card image](/images/cards/Winchest_Contraband.png "Winchest Contraband"){width=125}
-{.side-image .card-image .ci-small}
+{% card_image "Winchest Contraband", "ci-small" %}
 
 By omitting **Martyr's Chains**, the 3rd Place list has a slightly lower curve than the frontrunners, topping out with **Xo of the Endless Hoard** (7{% icon 'FFF' %}). Perhaps accordingly, **xSTEALTHx** cuts back on **Power** drawing spells &mdash; totalling six instead of the expected eight. An even split between **Seek Power** and **Lost Scroll** (2{% icon 'JS' %}) is included, along with two more conditional sources in the form of **Winchest Cargo**/**Winchest Contraband**.
 
@@ -82,39 +79,36 @@ By omitting **Martyr's Chains**, the 3rd Place list has a slightly lower curve t
 
   [deck-chriseay]: https://www.shiftstoned.com/epc/?d=EA4BEBNEBOCBXEBmEEBIEBiEEBrNEB6JEBpNEBBHB-DED-HEE5DCEBEF2CEF_CEFlGEFmGCAABBwBBBgEBBvEBB9JBEhD&t=chriseay's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
-![Hojan, Crownbreaker card image](/images/cards/Hojan,_Crownbreaker.png "Hojan, Crownbreaker"){width=125}
-{.side-image .card-image .ci-small}
+{% card_image "Hojan, Crownbreaker", "ci-small" %}
 
-Much lower to the ground than any of the other decks featured here, this list tops out at **3 Power** in the main deck, for **Whirling Duo** (3{% icon 'FJ' %}), **Red Canyon Smuggler** (3{% icon 'FJ' %}) and **Avigraft** (3{% icon 'JJ' %})*. Meanwhile, more expensive cards are relegated to the **Black Market**, including a single **Deepforged Plate** (5{% icon 'FFJJ' %}) and one of **Obliterate** (5{% icon 'FF' %}). No less than seven **Justice Sigils** help to ensure that **Hojan, Crownbreaker's** (2{% icon 'JJ' %}) **Renown** ability reliably finds **Power** to draw without whiffing at any stage of the game. Even so, as a two-faction list with a low curve this deck has no trouble reaching its **Power** and **Influence** requirements. So it has room to include a pair of **Shugo Standards**, helping to advance the aggresive strategy.
+Much lower to the ground than any of the other decks featured here, this list tops out at **3 Power** in the main deck, for **Whirling Duo** (3{% icon 'FJ' %}), **Red Canyon Smuggler** (3{% icon 'FJ' %}) and **Avigraft** (3{% icon 'JJ' %}). Meanwhile, more expensive cards are relegated to the **Black Market**, including a single **Deepforged Plate** (5{% icon 'FFJJ' %}) and one of **Obliterate** (5{% icon 'FF' %}). No less than seven **Justice Sigils** help to ensure that **Hojan, Crownbreaker's** (2{% icon 'JJ' %}) **Renown** ability reliably finds **Power** to draw without whiffing at any stage of the game. Even so, as a two-faction list with a low curve this deck has no trouble reaching its **Power** and **Influence** requirements. So it has room to include a pair of **Shugo Standards**, helping to advance the aggresive strategy.
 
 **Standout feature:**{.highlight} This deck really wants to play **Units** on **Turns 1** and **2**, so **chriseay** has built in total of 15 **Undepleted Power** sources, including the conditional **Influence** source **Diplomatic Seal**.
 
 [view deck][deck-chriseay]{.arrow-link}
 {.highlight}
 
-### [_Kubi_'s Deck][deck-_Kubi_]{.epc-link .5th} (Winchest Midrange)
+### [\_Kubi\_'s Deck][deck-Kubi]{.epc-link .5th} (Winchest Midrange)
 
-  [deck-_Kubi_]: https://www.shiftstoned.com/epc/?d=EA1BEF3GEDMEDlFEDBDF7GDDHEDqIBsfCEB6GGB7FDBBDBdEB4MEBFEE_FEE7FEBIEC6FCFkBCBjHCAABCnGBrfBBDnFBEjFBFtE&t=%C2%A0_Kubi_'s%20Deck%20%7BECQ%20Burning%20Hope%7D
+  [deck-Kubi]: https://www.shiftstoned.com/epc/?d=EA1BEF3GEDMEDlFEDBDF7GDDHEDqIBsfCEB6GGB7FDBBDBdEB4MEBFEE_FEE7FEBIEC6FCFkBCBjHCAABCnGBrfBBDnFBEjFBFtE&t=%C2%A0_Kubi_'s%20Deck%20%7BECQ%20Burning%20Hope%7D
 
-![Combustion Cell card image](/images/cards/Combustion_Cell.png "Combustion Cell"){width=125}
-{.side-image .card-image .ci-small}
+{% card_image "Combustion Cell", "ci-small" %}
 
 <!-- 23F/22P  -->
-**Fire** is slightly prioritized over **Primal** to help ensure that an early **Grenadin Drone** (1{% icon 'F' %}) can reliably be played on **Turn 1** going first, or a **Torch** (1{% icon 'F' %}) on the draw. As with the only other player piloting a **2 Faction** deck in the **Top Eight**, **_Kubi_** can expect to reach their **Influence** requirements quite comfortably on curve &mdash; in this case including even the steeper costs for **Xo of the Endless Hoard** (7{% icon 'FFF' %}) and **Molot & Nakova** (8{% icon 'FFFPPP' %}).  In a **2 Faction Fire** deck there is usually very little downside to including a full playset of **Granite Waystones** as **_Kubi_** does here. And in this case it makes even more sense, since combustible **Grenadin** are a central part of this deck's game plan.
+**Fire** is slightly prioritized over **Primal** to help ensure that an early **Grenadin Drone** (1{% icon 'F' %}) can reliably be played on **Turn 1** going first, or a **Torch** (1{% icon 'F' %}) on the draw. As with the only other player piloting a **2 Faction** deck in the **Top Eight**, **\_Kubi\_** can expect to reach their **Influence** requirements quite comfortably on curve &mdash; in this case including even the steeper costs for **Xo of the Endless Hoard** (7{% icon 'FFF' %}) and **Molot & Nakova** (8{% icon 'FFFPPP' %}).  In a **2 Faction Fire** deck there is usually very little downside to including a full playset of **Granite Waystones** as **\_Kubi\_** does here. And in this case it makes even more sense, since combustible **Grenadin** are a central part of this deck's game plan.
 
-**Standout feature:**{.highlight} In addition to the cards already mentioned, when you also account for **Kenna, Shaman of the Scale** (7{% icon 'PPP' %}), **_Kubi_'s** deck includes more triple-**Influence** cards than any other featured here, underscoring the upside to being in less than 3 factions.
+**Standout feature:**{.highlight} In addition to the cards already mentioned, when you also account for **Kenna, Shaman of the Scale** (7{% icon 'PPP' %}), **\_Kubi\_'s** deck includes more triple-**Influence** cards than any other featured here, underscoring the upside to being in less than 3 factions.
 
-[view deck][deck-_Kubi_]{.arrow-link}
+[view deck][deck-Kubi]{.arrow-link}
 {.highlight}
 
 ### [Paradox's Deck][deck-Paradox]{.epc-link} (FPS Scream/Haunted Highway)
 
   [deck-Paradox]: https://www.shiftstoned.com/epc/?d=EBFEBICB6HBB7HDBlIDBrIEBhNEBjNEBlMDBoMEBpNDB2LDC6FEC7FDDzIEDBBDsIDDrICDqIEEiIEE5EEE5GCElICF6ECAABBoMBB2LBDzIBFzFBsfT&t=Paradox's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
-![Granite Waystone card image](/images/cards/Granite_Waystone.png "Granite Waystone"){width=125}
-{.side-image .card-image .ci-small}
+{% card_image "Granite Waystone", "ci-small" %}
 
-Speaking of combustible **Grenadin**, disposable drones play a different but equally important role in this list**. **Paradox** needs cheap **Combust** (1{% icon 'FS' %}) targets and also  backup **Units** for **Bandit Queen's** (4{% icon 'FFS' %}) charging **Quickdraw** attacks, so 4x **Granite Waystone** is a natural choice even though this **3-faction** list has more demanding **Influence** requirements. Fortunately **Diplomatic Seal** is included to help meet the demands, providing **Undepleted Power** and early color fixing.
+Speaking of combustible **Grenadin**, disposable drones play a different but equally important role in this list. **Paradox** needs cheap **Combust** (1{% icon 'FS' %}) targets and also  backup **Units** for **Bandit Queen's** (4{% icon 'FFS' %}) charging **Quickdraw** attacks, so 4x **Granite Waystone** is a natural choice even though this **3-faction** list has more demanding **Influence** requirements. Fortunately **Diplomatic Seal** is included to help meet the demands, providing **Undepleted Power** and early color fixing.
 
 <!-- 18F/15P/16S - Fire given silght preference for Bandit Queen, Granite Waystone provides 1/1s for Combust and Queen attacks. Diplo seals. -->
 
@@ -127,8 +121,7 @@ Speaking of combustible **Grenadin**, disposable drones play a different but equ
 
   [deck-SunyVeil]: https://www.shiftstoned.com/epc/?d=EA8BEBIBBmFEB9EBBBHB-DBB5HDCsHEDsIEDoIEE0HEEzHEE2HEFkBEFmGEFwGEFyGEFtHEFvHEpfPCsfTCAABBvEBBjMBFuDBF1GBrfB&t=SunyVeil's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
-![Bulletshaper card image](/images/cards/Bulletshaper.png "Bulletshaper"){width=125}
-{.side-image .card-image .ci-small}
+{% card_image "Bulletshaper", "ci-small" %}
 
 **Justice** is heavily favored in this take on **Winchest** midrange, which by far includes more **Power** and **Influence** sources than any other to be found here. Seven **Justice Sigils** are waiting to be drawn by **Privilege of Rank** (2{% icon 'JJ' %}), going hand-in-hand with **Bulletshaper's**(2{% icon 'FJ' %}) discard ability. With help from this duo, **SunyVeil** can confidently run 4x **Winchest Cargo** in favor of **Seek Power**. While **Cargo's** **Transmute** effect may make it less consistent, the **Privilege/BulletShaper** package make up the difference, and the potential downside is offset by the opportunities created with **Winchest Contraband**.
 
@@ -143,8 +136,7 @@ Speaking of combustible **Grenadin**, disposable drones play a different but equ
 
   [deck-Sannd]: https://www.shiftstoned.com/epc/?d=EA3BEA8BEBIDB3ECBmFBBvECBtIDBBDB-DDB5HECsHDDzIDDsICDoIDEzHEE2HEFkBEFmGEFyGEFtHEFvHDpfPEsfTCAABBsFBBrNBB9JBF1GBrfB&t=Sannd's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
-![Regent's Tomb card image](/images/cards/Regent's_Tomb.png "Regent's Tomb"){width=125}
-{.side-image .card-image .ci-small}
+{% card_image "Regent's Tomb", "ci-small" %}
 
 Taking a more **Unit**-based approach than any of the other **Winchest** decks seen here, this list goes lighter on **Power** draw spells to include role players such as **Valkyrie Enforcer** (2{% icon 'JJ' %}) and three of **Vicious Highwayman** (4{% icon 'FFSS' %}) in the main deck. Although **Xo of the Endless Hoard** (7{% icon 'FFF' %}) can still be found at the top end, the extra 3-drops lower **Sannd's** curve, as does the absence of **Martyr's Chains**.
 
@@ -156,4 +148,4 @@ Taking a more **Unit**-based approach than any of the other **Winchest** decks s
 
 ----
 
-The landscape for **Eternal** looks a lot different now that it did for **Burning Hope** following the most recent *[balance changes](https://steamcommunity.com/games/531640/announcements/detail/1690440309949401220). It remains to be seen what new archetypes will emerge - or what older ones may resurface - in response to the update. However it seems likely that **Winchest** midrange will continue to be part of the mix even as it may become less dominant. {.subtitle}
+The landscape for **Eternal** looks a lot different now that it did for **Burning Hope** following the most recent \*[balance changes](https://steamcommunity.com/games/531640/announcements/detail/1690440309949401220). It remains to be seen what new archetypes will emerge - or what older ones may resurface - in response to the update. However it seems likely that **Winchest** midrange will continue to be part of the mix even as it may become less dominant. {.subtitle}
