@@ -20,7 +20,7 @@ module.exports = (str) => {
     icons = s.split('');
     icons.forEach( (influence, index) => {
       influence = lut[influence]; // lookup icon
-      icons[index] = `<img alt="${influence}" title="${influence}" src="/epc/icon-${influence.toLowerCase()}.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" />`;
+      icons[index] = `<img alt="${influence}" title="${influence}" src="/epc/icon-${influence.toLowerCase()}.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />`;
     });
 
     result = icons.join('');
