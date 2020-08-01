@@ -133,8 +133,7 @@ The main consideration is balancing **Power** cards that perform neat tricks or 
 
 ## Balance of power
 
-![Cabal Tactic card](/images/cards/Cabal_Tactic.png "Cabal Tactic"){width=125}
-{.side-image .card-image}
+{% card_image "Cabal Tactic" %}
 
 **Shiftstoned:**\
 It can take some work to find that balance.
@@ -169,8 +168,7 @@ Is there some strategy that allows this list to work despite the long odds for r
 **Kaelos:**\
 Can we be honest here? I was brain-dead and forgot to include **Common Cause**, which usually makes those odds a whole lot better in a tribal deck.
 
-![Common Cause card](/images/cards/Common_Cause.png "Common Cause"){width=125}
-{.side-image .card-image}
+{% card_image "Common Cause" %}
 
 **Shiftstoned:**\
 Hahaha, I'm sure the readers will appreciate your honesty. And **Common Cause** does make a lot of sense here, since all but one of the units are **Gunslingers**.
@@ -238,8 +236,7 @@ But on the other hand you take a different risk instead, and one that's much mor
 Did you need to think much about constructing a mono-**Fire** **Power** base, or did it just kind of build itself?
 {.highlight}
 
-![Kaleb's Favor card](/images/cards/Kaleb's_Favor.png "Kaleb's Favor"){width=125}
-{.side-image .card-image}
+{% card_image "Kaleb's Favor" %}
 
 **Kaelos:**\
 I would say that **Mono** decks are easier to build, but they're much more difficult to make viable.
@@ -361,8 +358,7 @@ That's the change I want to see, so I feel obliged to work at making it happen.
 
 ## Parting shot
 
-![The Last Word card](/images/cards/The_Last_Word.png "The Last Word"){width=125}
-{.side-image .card-image}
+{% card_image "The Last Word" %}
 
 One bullet should do
 {.tagline}

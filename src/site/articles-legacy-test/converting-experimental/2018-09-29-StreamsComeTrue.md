@@ -98,8 +98,7 @@ After [ManuS][] had played it a bit, he took the **Merchants** out and brought t
 
   [ManuS]: https://twitter.com/ManuS_CCG
 
-![Copperhall Elite card](/images/cards/Copperhall_Elite.png "Copperhall Elite"){width=125}
-{.side-image .card-image}
+{% card_image "Copperhall Elite" %}
 
 Because **ManuS** had [posted][Temporal Control] about **Temporal Control** not too long ago, and it had been played quite a bit recently in [ECL’s Sunday series][], I figured I would need to be able to beat that deck. I spoke to **ManuS** about it, and I really wanted to replace the **Sandstorm Titans** with another Aegis threat. It came down to **Sheriff Marley** versus **Copperhall Elite**. And I found that **Genetrix** and lots of pump spells go well with the overwhelm that **Elite** has.
 
@@ -117,8 +116,7 @@ There appears to be a nearly even split between **Time** and **Justice** **Power
 **Grimfan:**\
 Getting {% icon 'TT' %} on **Turn 2** was tough. And the **Power** base isn't perfect. But I felt that **Temple Tactic** was so much worse that I didn’t want to change them over. We considered **Sheriff Marley** in the four slot, but she didn’t do what I wanted her to do.
 
-![Genetrix Irel IV card](/images/cards/Genetrix_Irel_IV.png "Genetrix Irel IV"){width=125}
-{.side-image .card-image}
+{% card_image "Genetrix Irel IV" %}
 
 Shifting over to **Copperhall Elite** made the **Sigil** base a lot better. Having a four-drop you can cast without {% icon 'JJ' %} was really tempting for me. I kept getting to four \[Maximum Power] without {% icon 'JJ' %} somehow, and **Genetrix** would sit stranded in my hand. Having a card I could naturally cast at 4 **Power** that had **Aegis** felt a lot better. Plus you want to lead with the **Copperhall Elites** anyway \[in order to take advantage of **Genetrix Summon** effect].
 

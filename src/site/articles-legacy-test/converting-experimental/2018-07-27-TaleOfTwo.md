@@ -114,8 +114,7 @@ These examples illustrate why card draw is so important to decks that rely on 8-
 
 ## Scouting, Culling and Marketing
 
-![Cull the Deck card](/images/cards/Cull_the_Deck.png "Cull the Deck"){width=125}
-{.side-image .card-image}
+{% card_image "Cull the Deck" %}
 
 At the same time, Isochron has built in plenty of filtering and it helps to have a Plan-B. Each of the 12 **Crests** available to {% icon 'JPS' %} are included, along with 3x **Cull the Deck** and 2x **Strategize**.
 
