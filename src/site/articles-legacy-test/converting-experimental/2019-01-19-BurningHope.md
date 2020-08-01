@@ -30,7 +30,9 @@ Taking a look at the Top Eight decks from [Burning Hope][], the second official 
 
 All of the summaries here include a standout feature describing what sets each deck apart from the others. {.highlight}
 
-### [DarkestHour's Deck][deck-DarkestHour]{.epc-link .1st} (Winchest Midrange)
+<div class="pre-headline first">1st place:</div>
+
+### [DarkestHour's Deck][deck-DarkestHour]{.epc-link} (Winchest Midrange)
 
   [deck-DarkestHour]: https://www.shiftstoned.com/epc/?d=CA4BCA3BDA8BEB4MEBIDBvEEBjMDBBDB-DCB5HECsHEDsICDoIEEzHEE2HEFkBEFmGEFwGEFyGEFvHDpfPEsfTCAABBsFBB9JBF_CBFuDBF1G&t=DarkestHour's%20Deck%20%7BECQ%20Burning%20Hope%7D "Darkest Hour's Deck"
 
@@ -45,7 +47,9 @@ The winning deck forgoes **Winchest Cargo** in favor of a full playset of **Seek
 [view deck][deck-DarkestHour]{.arrow-link}
 {.highlight}
 
-### [trumpets' Deck][deck-trumpets]{.epc-link .2nd} (Winchest Midrange)
+<div class="pre-headline second">2nd place:</div>
+
+### [trumpets' Deck][deck-trumpets]{.epc-link} (Winchest Midrange)
 
   [deck-trumpets]: https://www.shiftstoned.com/epc/?d=CA4BCA3BDA8BEB4MEBIBBtIDBjMDBBGB-DDB5HECsHDDsIDDoICEzHEE2HEFkBEFmGEFwGEFyGEFvHEsfMEsfTCAABBvEBFtCBFuDBF1GBrfB&t=trumpets'%20Deck%20%7BECQ%20Burning%20Hope%7D
 
@@ -60,7 +64,9 @@ The absence of both **Vicious Highwayman** (4{% icon 'FFSS' %}) and also **Deepf
 [view deck][deck-trumpets]{.arrow-link}
 {.highlight}
 
-### [xSTEALTHx's Deck][deck-xSTEALTHx]{.epc-link .3rd} (Winchest Midrange)
+<div class="pre-headline third">3rd place:</div>
+
+### [xSTEALTHx's Deck][deck-xSTEALTHx]{.epc-link} (Winchest Midrange)
 
   [deck-xSTEALTHx]: https://www.shiftstoned.com/epc/?d=CA4BDA3BDA8BCB4MEBICBmFDBsFCBtIDBBDB-DCB5HECsHCDzIDDsIDDoIDEzHEE2HDFkBBFtCBF_CEFmGCFwGDFyGCFtHEFvHDpfPEsfTCAABBvEBB9JBBjMBF1GBrfB&t=xSTEALTHx's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
@@ -75,7 +81,7 @@ By omitting **Martyr's Chains**, the 3rd Place list has a slightly lower curve t
 [view deck][deck-xSTEALTHx]{.arrow-link}
 {.highlight}
 
-### [chriseay's Deck][deck-chriseay]{.epc-link .4th} (Rakano Aggro)
+### [chriseay's Deck][deck-chriseay]{.epc-link} (Rakano Aggro)
 
   [deck-chriseay]: https://www.shiftstoned.com/epc/?d=EA4BEBNEBOCBXEBmEEBIEBiEEBrNEB6JEBpNEBBHB-DED-HEE5DCEBEF2CEF_CEFlGEFmGCAABBwBBBgEBBvEBB9JBEhD&t=chriseay's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
@@ -88,7 +94,9 @@ Much lower to the ground than any of the other decks featured here, this list to
 [view deck][deck-chriseay]{.arrow-link}
 {.highlight}
 
-### [\_Kubi\_'s Deck][deck-Kubi]{.epc-link .5th} (Winchest Midrange)
+<div class="pre-headline fifth">5th place:</div>
+
+### [\_Kubi\_'s Deck][deck-Kubi]{.epc-link} (Winchest Midrange)
 
   [deck-Kubi]: https://www.shiftstoned.com/epc/?d=EA1BEF3GEDMEDlFEDBDF7GDDHEDqIBsfCEB6GGB7FDBBDBdEB4MEBFEE_FEE7FEBIEC6FCFkBCBjHCAABCnGBrfBBDnFBEjFBFtE&t=%C2%A0_Kubi_'s%20Deck%20%7BECQ%20Burning%20Hope%7D
 

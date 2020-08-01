@@ -99,7 +99,9 @@ To help provide inspiration to players leading up the event, we are featuring he
 
 &ldquo;Ever wonder what would happen if you could play **FJS** with **Alessi**? No? Me neither. But that's okay because when encouraged to play **4F**, the rules change. Although an exceptionally greedy list, we get the best of both worlds between **Alessi** and **FJS** and create a monstrosity of powerful cards. Consistency may be a problem, but I can't see any decks out-valuing **FJS Alessi** making it a strong choice for this event.&rdquo; - **NotoriousGHP**
 
-### <span class="pre-headline" style="color:#FF4500;">Pre-Defiance:</span> [4F Mask][]{.epc-link} by IlyaK
+<div class="pre-headline" style="color:#FF4500;">Pre-Defiance:</div>
+
+### [4F Mask][]{.epc-link} by IlyaK
 
   [4F Mask]: https://www.shiftstoned.com/epc/?d=DB4MDDlFEB2PDBvEDBtKErfLDBxCEB6GEqfGEC0GBByKEBsFEBhMECmHCB-DCB7FBB5HDB_BEDrIDDoIEDlIBAzBBA6BEA_BBB8KBBzK&t=%5BIlyaK%5D%204F%20Control
 
