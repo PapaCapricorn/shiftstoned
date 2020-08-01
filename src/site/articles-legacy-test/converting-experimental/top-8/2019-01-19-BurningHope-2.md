@@ -4,10 +4,8 @@ description: "Power portraits and standout features from the Eternal Championshi
 meta_title: Burning Hope - Tournament Report
 meta_image: /images/articles/BurningHope.jpeg
 date: 2019-01-19 13:35:43.10 -5
-articleEnd: "
-----
-
-The landscape for **Eternal** looks a lot different now that it did for **Burning Hope** following the most recent \*[balance changes](https://steamcommunity.com/games/531640/announcements/detail/1690440309949401220). It remains to be seen what new archetypes will emerge - or what older ones may resurface - in response to the update. However it seems likely that **Winchest** midrange will continue to be part of the mix even as it may become less dominant. {.subtitle}"
+articleEnd: |
+  The landscape for **Eternal** looks a lot different now that it did for **Burning Hope** following the most recent \*[balance changes](https://steamcommunity.com/games/531640/announcements/detail/1690440309949401220). It remains to be seen what new archetypes will emerge - or what older ones may resurface - in response to the update. However it seems likely that **Winchest** midrange will continue to be part of the mix even as it may become less dominant. {.subtitle}
 ---
 # Burning Hope: ECQ Rundown {.title}
 
