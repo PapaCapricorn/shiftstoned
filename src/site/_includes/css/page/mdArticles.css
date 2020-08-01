@@ -123,9 +123,11 @@
 }
 
 /* top 8 articles */
-h3 .epc-link{
+h2 .epc-link,
+h3 .epc-link {
     text-decoration: underline;
 }
+h2 .epc-link::before,
 h3 .epc-link::before {
     display: inline-block;
     content: "► ";
