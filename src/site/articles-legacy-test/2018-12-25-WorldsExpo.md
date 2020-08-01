@@ -8,35 +8,34 @@ date: 2018-12-25 00:00:00.00 -5
 ---
 # {{ title }} {.title}
 
-Hanging this year's Championship **Power** bases on the wall, and introducing the <a href="" target="_blank">Eternal Power Calculator's</a> new title feature
+Hanging this year's Championship **Power** bases on the wall, and introducing the [Eternal Power Calculator's][EPC] new title feature
 {.subtitle}
+
+  [EPC]: /epc/
 
 We take a look at **Power** base visualizations for all 16 decks from the **Eternal Tournament Series 2018 World Championship**
 {.tagline}
 
-<a href="images/Pictures.jpeg" style="background-color: rgb(23, 20, 29);" target="_blank"><img alt="Graphic" src="images/Pictures.jpeg" style="position: absolute; left: 80px; top: 210px; width: 250px; height: 164px;" /></a>
-
-<div display style="display: inline-block; margin-left: 0px; position: absolute; left: 180px; top: 75px;"><a href="https://twitter.com/shiftstoned?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @shiftstoned</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-
-<!--
-
-## Body Header
-
--->
+![Thumbnail Graphic]({{ meta_image }})
+{.article-image .side-image}
 
 ----
 
-<span style="margin-left: 0px">
+**{% date page.date %}** - Congratulations to all of the [Eternal Card Game][] players who qualified for [RNGEternal's][] **Eternal Tournament Series** [2018 World Championship][]&mdash;especially to **Tobboo** of the [Eternal Titans][] for their first place finish, following a trail blazed by teammate [camat0] who was last year's **ETS World Champion**.
 
-**December 14, 2018** - Congratulations to all of the <a href="https://www.direwolfdigital.com/eternal/" target="_blank">Eternal Card Game</a> players who qualified for <a href="https://rngeternal.com/" target="_blank">RNGEternal's</a> **Eternal Tournament Series** <a href="https://www.twitch.tv/videos/346928626" target="blank">2018 World Championship</a> &mdash; especially to **Tobboo** of the <a href="https://eternaltitans.com/" target="_blank">Eternal Titans</a> for their first place finish, following a trail blazed by teammate <a href="https://twitter.com/camat0_" target="_blank">camat0</a> who was last year's **ETS World Champion**.
+  [Eternal Card Game]: https://www.direwolfdigital.com/eternal/
+  [RNGEternal's]: https://rngeternal.com/
+  [2018 World Championship]: https://www.twitch.tv/videos/346928626
+  [Eternal Titans]: https://eternaltitans.com/
+  [camat0]: https://twitter.com/camat0_
 
 To commemorate the conclusion of the 2018 **ETS** series, we have assembled here a gallery of **Power** base visualizations for each of the **Championship** decks, from **Skycrag** to **Chalice.**
 
-As you browse the collection, check out the <a href="" target="_blank">Eternal Power Calculator's</a> newest feature: *You can now name and title your deck* when you create a unique link to share your list with the world. (Or keep it to yourself).
-
-<!-- style="position: absolute; left: 70px; top: 1400px; width: 250px; height: 397px;" -->
+As you browse the collection, check out the [Eternal Power Calculator's][EPC] newest feature: *You can now name and title your deck* when you create a unique link to share your list with the world. (Or keep it to yourself).
 
 <img alt="Card Image" src="images\Untitled.jpeg" style="width: 500px;" />
+
+![EPC deck title](/images/articles/Untitled.jpeg "EPC deck title") {.main-col-image}
 
 May you find inspiration for your own brews while exploring the **Power** behind these top decks. And be sure to add a title when creating your next masterpiece.
 

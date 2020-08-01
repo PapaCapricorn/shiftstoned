@@ -7,11 +7,16 @@ date: 2019-11-28 00:00:00.00 -5
 ---
 # The Time of Ancestors: ECQ Rundown  {.title}
 
-Taking a look at the Top Eight decks from <a href="">The Time of Ancestors</a>, the first official 2020 Championship Qualifier for <a href="">Eternal Card Game</a>
+Taking a look at the Top Eight decks from [The Time of Ancestors][], the first official 2020 Championship Qualifier for [Eternal Card Game][]
 {.subtitle}
+
+  [The Time of Ancestors]: https://www.direwolfdigital.com/news/eternal-championship-qualifier-the-time-of-ancestors/
+  [Eternal Card Game]: https://www.direwolfdigital.com/eternal/
 
 **Power** portraits and standout features for each the finalists
 {.tagline}
+
+![Thumbnail Graphic]({{ meta_image }} "Elham Preview") {.article-image .side-image}
 
 <img alt="Card Image" src="/images/cards/Swirl_the_Sands.png" style="position: absolute; left: 220px; top: 765px; float: left; width: 125px;" />
 
