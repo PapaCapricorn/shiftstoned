@@ -78,10 +78,16 @@ eleventyConfig.addPairedShortcode("hover_content", require("./src/utils/shortcod
   
   eleventyConfig.setLibrary("md", markdownLib);
 
-  // Add filter for processing MD strings from the front matter
+  // Add filter for processing MD from the front matter
+  // single-line strings, won't wrap with <p>s
+  eleventyConfig.addFilter('frontmatter_md_string', (markdownString) => {
+    var result = decodeURI(markdownString);
+    return markdownLib.render(result);
+  });
+  // multi-line strings, parses as normal
   eleventyConfig.addFilter('frontmatter_md', (markdownString) => {
     var result = decodeURI(markdownString);
-    return markdownIt({html: true}).renderInline(result);
+    return markdownLib.renderInline(result);
   });
 
   // Pause time for re-build during watch (in ms)

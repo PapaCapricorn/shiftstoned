@@ -3,14 +3,14 @@ layout: layouts/html.njk
 ---
 <header class="articleHeader">
   {%- set articleTitle = article.title or title %}
-  <h1 class="title">{{ articleTitle | frontmatter_md | safe }}</h1>
+  <h1 class="title">{{ articleTitle | frontmatter_md_string | safe }}</h1>
 
   {%- if article.subtitle %}
-  <div class="subtitle">{{ article.subtitle | frontmatter_md | safe }}</div>
+  <div class="subtitle">{{ article.subtitle | frontmatter_md_string | safe }}</div>
   {%- endif %}
 
   {%- if article.tagline %}
-  <div class="tagline">{{ article.tagline | frontmatter_md | safe }}</div>
+  <div class="tagline">{{ article.tagline | frontmatter_md_string | safe }}</div>
   {%- endif %}
 </header>
 

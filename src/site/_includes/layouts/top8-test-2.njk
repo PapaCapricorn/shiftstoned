@@ -2,7 +2,7 @@
 layout: layouts/html.njk
 ---
 {{ content | safe }}
-
+{# 
 {%- for place, info in top8 %}
 {%- set ordinal = loop.index | nth %}
 <!-- {{ ordinal }} -->
@@ -12,13 +12,13 @@ layout: layouts/html.njk
   {{ ordinal }} place:
   </span>
   <a href="{{ info.epcUrl }}" target="_blank" class="epc-link">
-    <u>{{ info.player -}}'s Decklist</u>
-  </a> ({{ info.archetype -}})
+    <u>{{ info.player }}'s Decklist</u>
+  </a> ({{ info.archetype }})
 </h2>
 
 {% card_image "{{ info.card }}", "ci-small"%}
 
-{{ info.body -}}
+<p>{{ info.body | frontmatter_md | safe }}</p>
 
 <p class="highlight" >
   <a href="{{ info.epcUrl }}" target="_blank" class="arrow-link">
@@ -28,8 +28,10 @@ layout: layouts/html.njk
 
 {%- else %}
 <p>No top 8 data found!</p>
-{%- endfor %}
-
+{%- endfor %} 
+#}
 {%- if articleEnd %}
-{{ articleEnd }}
+
+{{ articleEnd | frontmatter_md | safe }}
+
 {% endif %}
