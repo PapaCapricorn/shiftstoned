@@ -5,138 +5,139 @@ meta_title: "meta_title"
 meta_image: /meta_image
 date: 
 ---
-# title_text  {.title}
+# TITLE_TEXT  {.title}
 
-subtitle_text
+SUBTITLE_TEXT
 {.subtitle}
 
-tagline_text
+TAGLINE_TEXT
 {.tagline}
 
-![]({{ meta_image }}) {.article-image .side-image}
+![]({{ meta_image }}){width="250"}
+{.article-thumbnail}
 
 ----
 
-**{% date page.date %}** - introduction_text
+**{% date page.date %}** - INTRO_TEXT
 
 ## The Top Eight
 
-summary_text
+SUMMARY_TEXT
 {.tagline}
 
 <div class="pre-headline first">1st place:</div>
 
-### [player_1's Deck][deck-1]{.epc-link} (deck_archetype)
+### [PLAYER_1's Deck][deck-1]{.epc-link target="_blank"} (DECK_ARCHETYPE)
 
-  [deck-1]: epc_url
+  [deck-1]: EPC_URL
 
-{% card_image "card_name", "ci-small" %}
+{% card_image "CARD_NAME", "ci-small" %}
 
-description_text
+DESCRIPTION_TEXT
 
-**Standout feature:**{.highlight} feature_text
+**Standout feature:**{.highlight} FEATURE_TEXT
 
-[view deck][deck-1]{.arrow-link}
+[view deck][deck-1]{.arrow-link target="_blank"}
 {.highlight}
 
 <div class="pre-headline second">2nd place:</div>
 
-### [player_2's Deck][deck-2]{.epc-link} (deck_archetype)
+### [PLAYER_2's Deck][deck-2]{.epc-link target="_blank"} (DECK_ARCHETYPE)
 
-  [deck-2]: epc_url
+  [deck-2]: EPC_URL
 
-{% card_image "card_name", "ci-small" %}
+{% card_image "CARD_NAME", "ci-small" %}
 
-description_text
+DESCRIPTION_TEXT
 
-**Standout feature:**{.highlight} feature_text
+**Standout feature:**{.highlight} FEATURE_TEXT
 
-[view deck][deck-2]{.arrow-link}
+[view deck][deck-2]{.arrow-link target="_blank"}
 {.highlight}
 
 <div class="pre-headline third">3rd place:</div>
 
-### [player_3's Deck][deck-3]{.epc-link} (deck_archetype)
+### [PLAYER_3's Deck][deck-3]{.epc-link target="_blank"} (DECK_ARCHETYPE)
 
-  [deck-3]: epc_url
+  [deck-3]: EPC_URL
 
-{% card_image "card_name", "ci-small" %}
+{% card_image "CARD_NAME", "ci-small" %}
 
-description_text
+DESCRIPTION_TEXT
 
-**Standout feature:**{.highlight} feature_text
+**Standout feature:**{.highlight} FEATURE_TEXT
 
-[view deck][deck-3]{.arrow-link}
+[view deck][deck-3]{.arrow-link target="_blank"}
 {.highlight}
 
-### [player_4's Deck][deck-4]{.epc-link} (deck_archetype)
+### [PLAYER_4's Deck][deck-4]{.epc-link target="_blank"} (DECK_ARCHETYPE)
 
-  [deck-4]: epc_url
+  [deck-4]: EPC_URL
 
-{% card_image "card_name", "ci-small" %}
+{% card_image "CARD_NAME", "ci-small" %}
 
-description_text
+DESCRIPTION_TEXT
 
-**Standout feature:**{.highlight} feature_text
+**Standout feature:**{.highlight} FEATURE_TEXT
 
-[view deck][deck-4]{.arrow-link}
+[view deck][deck-4]{.arrow-link target="_blank"}
 {.highlight}
 
 <div class="pre-headline fifth">5th place:</div>
 
-### [player_5's Deck][deck-5]{.epc-link} (deck_archetype)
+### [PLAYER_5's Deck][deck-5]{.epc-link target="_blank"} (DECK_ARCHETYPE)
 
-  [deck-5]: epc_url
+  [deck-5]: EPC_URL
 
-{% card_image "card_name", "ci-small" %}
+{% card_image "CARD_NAME", "ci-small" %}
 
-description_text
+DESCRIPTION_TEXT
 
-**Standout feature:**{.highlight} feature_text
+**Standout feature:**{.highlight} FEATURE_TEXT
 
-[view deck][deck-5]{.arrow-link}
+[view deck][deck-5]{.arrow-link target="_blank"}
 {.highlight}
 
-### [player_6's Deck][deck-6]{.epc-link} (deck_archetype)
+### [PLAYER_6's Deck][deck-6]{.epc-link target="_blank"} (DECK_ARCHETYPE)
 
-  [deck-6]: epc_url
+  [deck-6]: EPC_URL
 
-{% card_image "card_name", "ci-small" %}
+{% card_image "CARD_NAME", "ci-small" %}
 
-description_text
+DESCRIPTION_TEXT
 
-**Standout feature:**{.highlight} feature_text
+**Standout feature:**{.highlight} FEATURE_TEXT
 
-[view deck][deck-6]{.arrow-link}
+[view deck][deck-6]{.arrow-link target="_blank"}
 {.highlight}
 
-### [player_7's Deck][deck-7]{.epc-link} (deck_archetype)
+### [PLAYER_7's Deck][deck-7]{.epc-link target="_blank"} (DECK_ARCHETYPE)
 
-  [deck-7]: epc_url
+  [deck-7]: EPC_URL
 
-{% card_image "card_name", "ci-small" %}
+{% card_image "CARD_NAME", "ci-small" %}
 
-description_text
+DESCRIPTION_TEXT
 
-**Standout feature:**{.highlight} feature_text
+**Standout feature:**{.highlight} FEATURE_TEXT
 
-[view deck][deck-7]{.arrow-link}
+[view deck][deck-7]{.arrow-link target="_blank"}
 {.highlight}
 
-### [player_8's Deck][deck-8]{.epc-link} (deck_archetype)
+### [PLAYER_8's Deck][deck-8]{.epc-link target="_blank"} (DECK_ARCHETYPE)
 
-  [deck-8]: epc_url
+  [deck-8]: EPC_URL
 
-{% card_image "card_name", "ci-small" %}
+{% card_image "CARD_NAME", "ci-small" %}
 
-description_text
+DESCRIPTION_TEXT
 
-**Standout feature:**{.highlight} feature_text
+**Standout feature:**{.highlight} FEATURE_TEXT
 
-[view deck][deck-8]{.arrow-link}
+[view deck][deck-8]{.arrow-link target="_blank"}
 {.highlight}
 
 ----
 
-closing_text
+CLOSING_TEXT
 {.subtitle}

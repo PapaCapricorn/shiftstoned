@@ -20,7 +20,7 @@ Taking a look at the Top Eight decks from [Burning Hope][], the second official 
 
 **Power** portraits for the finalists from the first offical tournament to feature **Set 5: Defiance** {.tagline}
 
-![]({{ meta_image }})
+![]({{ meta_image }}){width="250"}
 {.article-thumbnail}
 
 ----

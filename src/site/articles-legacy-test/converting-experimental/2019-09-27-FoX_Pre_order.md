@@ -13,7 +13,7 @@ Now live in the [Eternal Power Calculator][]
 
   [Eternal Power Calculator]: /epc/
 
-![]({{ meta_image }})
+![]({{ meta_image }}){width="250"}
 {.article-thumbnail}
 
 **{% date page.date %}** - [Flame of Xulta Pre-Order Bundle][] cards are live in the fan-built [Eternal Power Calculator][].

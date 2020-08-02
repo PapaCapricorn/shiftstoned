@@ -14,7 +14,7 @@ Taking a look at the Top Eight decks from [Burning Hope][], the second official 
 
 **Power** portraits for the finalists from the first offical tournament to feature **Set 5: Defiance** {.tagline}
 
-![]({{ meta_image }})
+![]({{ meta_image }}){width="250"}
 {.article-thumbnail}
 
 ----
@@ -33,7 +33,7 @@ All of the summaries here include a standout feature describing what sets each d
 
 <div class="pre-headline first">1st place:</div>
 
-### [DarkestHour's Deck][deck-1]{.epc-link} (Winchest Midrange)
+### [DarkestHour's Deck][deck-1]{.epc-link target="_blank"} (Winchest Midrange)
 
   [deck-1]: https://www.shiftstoned.com/epc/?d=CA4BCA3BDA8BEB4MEBIDBvEEBjMDBBDB-DCB5HECsHEDsICDoIEEzHEE2HEFkBEFmGEFwGEFyGEFvHDpfPEsfTCAABBsFBB9JBF_CBFuDBF1G&t=DarkestHour's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
@@ -45,12 +45,12 @@ The winning deck forgoes **Winchest Cargo** in favor of a full playset of **Seek
 
 **Standout feature:**{.highlight} Does not include any cards that can not also be found in other **Winchest** lists from the **Top Eight**, but **DarkestHour's** is the only version to main deck a full set of **Statuary Maiden**.
 
-[view deck][deck-1]{.arrow-link}
+[view deck][deck-1]{.arrow-link target="_blank"}
 {.highlight}
 
 <div class="pre-headline second">2nd place:</div>
 
-### [trumpets' Deck][deck-2]{.epc-link} (Winchest Midrange)
+### [trumpets' Deck][deck-2]{.epc-link target="_blank"} (Winchest Midrange)
 
   [deck-2]: https://www.shiftstoned.com/epc/?d=CA4BCA3BDA8BEB4MEBIBBtIDBjMDBBGB-DDB5HECsHDDsIDDoICEzHEE2HEFkBEFmGEFwGEFyGEFvHEsfMEsfTCAABBvEBFtCBFuDBF1GBrfB&t=trumpets'%20Deck%20%7BECQ%20Burning%20Hope%7D
 
@@ -62,12 +62,12 @@ The absence of both **Vicious Highwayman** (4{% icon 'FFSS' %}) and also **Deepf
 
 <!-- 17F, 23J, 22S  -->
 
-[view deck][deck-2]{.arrow-link}
+[view deck][deck-2]{.arrow-link target="_blank"}
 {.highlight}
 
 <div class="pre-headline third">3rd place:</div>
 
-### [xSTEALTHx's Deck][deck-3]{.epc-link} (Winchest Midrange)
+### [xSTEALTHx's Deck][deck-3]{.epc-link target="_blank"} (Winchest Midrange)
 
   [deck-3]: https://www.shiftstoned.com/epc/?d=CA4BDA3BDA8BCB4MEBICBmFDBsFCBtIDBBDB-DCB5HECsHCDzIDDsIDDoIDEzHEE2HDFkBBFtCBF_CEFmGCFwGDFyGCFtHEFvHDpfPEsfTCAABBvEBB9JBBjMBF1GBrfB&t=xSTEALTHx's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
@@ -79,10 +79,10 @@ By omitting **Martyr's Chains**, the 3rd Place list has a slightly lower curve t
 
 **Standout feature:**{.highlight} The only finishing list to include **Harsh Rule** (5{% icon 'JJ' %}) in the main deck, **xSTEALTHx** appropriately goes lighter on **Units** (21 total) and bigger on **Auric Runehammer** (4{% icon 'JJ' %}).
 
-[view deck][deck-3]{.arrow-link}
+[view deck][deck-3]{.arrow-link target="_blank"}
 {.highlight}
 
-### [chriseay's Deck][deck-4]{.epc-link} (Rakano Aggro)
+### [chriseay's Deck][deck-4]{.epc-link target="_blank"} (Rakano Aggro)
 
   [deck-4]: https://www.shiftstoned.com/epc/?d=EA4BEBNEBOCBXEBmEEBIEBiEEBrNEB6JEBpNEBBHB-DED-HEE5DCEBEF2CEF_CEFlGEFmGCAABBwBBBgEBBvEBB9JBEhD&t=chriseay's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
@@ -92,12 +92,12 @@ Much lower to the ground than any of the other decks featured here, this list to
 
 **Standout feature:**{.highlight} This deck really wants to play **Units** on **Turns 1** and **2**, so **chriseay** has built in total of 15 **Undepleted Power** sources, including the conditional **Influence** source **Diplomatic Seal**.
 
-[view deck][deck-4]{.arrow-link}
+[view deck][deck-4]{.arrow-link target="_blank"}
 {.highlight}
 
 <div class="pre-headline fifth">5th place:</div>
 
-### [\_Kubi\_'s Deck][deck-5]{.epc-link} (Winchest Midrange)
+### [\_Kubi\_'s Deck][deck-5]{.epc-link target="_blank"} (Winchest Midrange)
 
   [deck-5]: https://www.shiftstoned.com/epc/?d=EA1BEF3GEDMEDlFEDBDF7GDDHEDqIBsfCEB6GGB7FDBBDBdEB4MEBFEE_FEE7FEBIEC6FCFkBCBjHCAABCnGBrfBBDnFBEjFBFtE&t=%C2%A0_Kubi_'s%20Deck%20%7BECQ%20Burning%20Hope%7D
 
@@ -108,10 +108,10 @@ Much lower to the ground than any of the other decks featured here, this list to
 
 **Standout feature:**{.highlight} In addition to the cards already mentioned, when you also account for **Kenna, Shaman of the Scale** (7{% icon 'PPP' %}), **\_Kubi\_'s** deck includes more triple-**Influence** cards than any other featured here, underscoring the upside to being in less than 3 factions.
 
-[view deck][deck-5]{.arrow-link}
+[view deck][deck-5]{.arrow-link target="_blank"}
 {.highlight}
 
-### [Paradox's Deck][deck-6]{.epc-link} (FPS Scream/Haunted Highway)
+### [Paradox's Deck][deck-6]{.epc-link target="_blank"} (FPS Scream/Haunted Highway)
 
   [deck-6]: https://www.shiftstoned.com/epc/?d=EBFEBICB6HBB7HDBlIDBrIEBhNEBjNEBlMDBoMEBpNDB2LDC6FEC7FDDzIEDBBDsIDDrICDqIEEiIEE5EEE5GCElICF6ECAABBoMBB2LBDzIBFzFBsfT&t=Paradox's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
@@ -123,10 +123,10 @@ Speaking of combustible **Grenadin**, disposable drones play a different but equ
 
 **Standout feature:**{.highlight} **Defiance** introduced a powerful new tool for this archetype in the form of **Secret Pasage** (1{% icon 'S' %}), but otherwise the list has changed very little with **Eternal's** newest expansion. **Paradox's** deck includes fewer **Set 5** cards than any other in the **Top 8** &dash; just **Secret Passage** and one copy of **Bloodlust** (6{% icon 'SS' %}) in the **Market**.
 
-[view deck][deck-6]{.arrow-link}
+[view deck][deck-6]{.arrow-link target="_blank"}
 {.highlight}
 
-### [SunyVeil's Deck][deck-7]{.epc-link} (Winchest Midrange)
+### [SunyVeil's Deck][deck-7]{.epc-link target="_blank"} (Winchest Midrange)
 
   [deck-7]: https://www.shiftstoned.com/epc/?d=EA8BEBIBBmFEB9EBBBHB-DBB5HDCsHEDsIEDoIEE0HEEzHEE2HEFkBEFmGEFwGEFyGEFtHEFvHEpfPCsfTCAABBvEBBjMBFuDBF1GBrfB&t=SunyVeil's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
@@ -138,10 +138,10 @@ Speaking of combustible **Grenadin**, disposable drones play a different but equ
 
 **Standout feature:**{.highlight} In addition to the extra **Power** and **Influence** sources found here, every **Crest** available to the **Winchest** alliance is included &mdash; giving SunyVeil no less than 12 opportunites to **Scout** for the cards he needs.
 
-[view deck][deck-7]{.arrow-link}
+[view deck][deck-7]{.arrow-link target="_blank"}
 {.highlight}
 
-### [Sannd's Deck][deck-8]{.epc-link} (Winchest Midrange)
+### [Sannd's Deck][deck-8]{.epc-link target="_blank"} (Winchest Midrange)
 
   [deck-8]: https://www.shiftstoned.com/epc/?d=EA3BEA8BEBIDB3ECBmFBBvECBtIDBBDB-DDB5HECsHDDzIDDsICDoIDEzHEE2HEFkBEFmGEFyGEFtHEFvHDpfPEsfTCAABBsFBBrNBB9JBF1GBrfB&t=Sannd's%20Deck%20%7BECQ%20Burning%20Hope%7D
 
@@ -152,7 +152,7 @@ Taking a more **Unit**-based approach than any of the other **Winchest** decks s
 <!-- Four Winchest Cargos but no Lost Scrolls. Curve tops out at 7 for Xo and no Martyr's Cross.  -->
 **Standout feature:**{.highlight} The only **Winchest** deck in the **Top 8** to prioritize **Shadow** over the other two factions in the **Power** base, most likely to reliably play **Vicious Highwayman** when it counts.
 
-[view deck][deck-8]{.arrow-link}
+[view deck][deck-8]{.arrow-link target="_blank"}
 {.highlight}
 
 ----

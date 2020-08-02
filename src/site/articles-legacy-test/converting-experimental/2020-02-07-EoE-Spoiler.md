@@ -29,7 +29,7 @@ Meanwhile, you will find a few clues by visiting the evolving [Power Portrait][e
   [epc-spoiler]: https://www.shiftstoned.com/epc/?d=CsfRDHhBDI3DEH5FDBtICBlIBC7HDtfREF9GDvfKDB4IDE-GDBkQDC_ECChFCHkKCImFIB5HBB_BEEvICEqICA9BECpGEH4FEJBCAABHiBBCoBBHgEBCvGBFgH&t=Echoes%20of%20Eternity%20Spoiler "Power Portrait"
   [Eternal Card Game subreddit]: https://www.reddit.com/r/EternalCardGame/comments/f0sujj/echoes_of_eternity_spoiler_reveal_tomorrow_29_on/ "Reddit"
 
-[view evolving Power Portrait][epc-spoiler]{.arrow-link}
+[view evolving Power Portrait][epc-spoiler]{.arrow-link target="_blank"}
 {.highlight}
 
 * Update 08-FEB-2020 21:00 ET - [Units added][epc-spoiler]
@@ -39,7 +39,7 @@ Meanwhile, you will find a few clues by visiting the evolving [Power Portrait][e
 * 07-FEB-2020 19:00 ET - [Point of departure](https://www.shiftstoned.com/epc/?d=EJBuBJCMB_BNB5H&t=Echoes%20of%20Eternity%20Spoiler)
 { .list-compact .star-list .highlight }
 
-[join the discussion on Reddit](https://www.reddit.com/r/EternalCardGame/comments/f0sujj/echoes_of_eternity_spoiler_reveal_tomorrow_29_on/){.arrow-link}
+[join the discussion on Reddit](https://www.reddit.com/r/EternalCardGame/comments/f0sujj/echoes_of_eternity_spoiler_reveal_tomorrow_29_on/){.arrow-link target="_blank"}
 {.highlight}
 
 [![Graphic](/images/articles/EoE-Spoiler.png "Echoes of Eternity Spoiler")][epc-spoiler]
