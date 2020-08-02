@@ -12,7 +12,8 @@ Navigating your brew to [Eternal Warcry][] from the fan-built **Eternal Power Ca
 
   [Eternal Warcry]: https://eternalwarcry.com/
 
-![Thumbnail Graphic]({{ meta_image }} "Elham Preview") {.article-image .side-image}
+![]({{ meta_image }})
+{.article-thumbnail}
 
 **{% date page.date %}** -  Keen-eyed explorers are spotting some updated features in the fan-built [Eternal Power Calculator][]. With the touch of a button, [Eternal Card Game][] brewers can now automatically load and view their lists into the [Eternal Warcry][] deck builder directly from **Shiftstoned's Power Base** visualization tool.
 

@@ -20,8 +20,8 @@ Let's take a look at their power bases using the [Eternal Power Calculator][]:
 
   [Eternal Power Calculator]: /epc/
 
-![Thumbnail Graphic]({{ meta_image }})
-{.article-image .side-image}
+![]({{ meta_image }})
+{.article-thumbnail}
 
 ## Rakano Valkyries - ETS First-Place Finisher (S3W3)
 

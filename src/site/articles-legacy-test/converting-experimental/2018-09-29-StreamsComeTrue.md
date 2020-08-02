@@ -24,8 +24,8 @@ Grimfan is no stranger to the competitive **Eternal** scene and one of the game'
 
   [Eternal Titans]: http://eternaltitans.com
 
-![Thumbnail Graphic]({{ meta_image }})
-{.article-image .side-image}
+![]({{ meta_image }})
+{.article-thumbnail}
 
 ## Holy Moly!
 

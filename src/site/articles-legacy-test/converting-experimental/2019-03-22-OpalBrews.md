@@ -17,8 +17,8 @@ Warming up for the **Opal Waystone Classic**, an [Eternal Community League][] **
   [Shiftstoned]: /
   [Eternal Warcry]: https://eternalwarcry.com/
 
-![Thumbnail Graphic]({{ meta_image }})
-{.article-image .side-image}
+![]({{ meta_image }})
+{.article-thumbnail}
 
 **{% date page.date %}** - The upcoming [Opal Waystone Classic][] will feature a unique deck-building challenge for competitors: registered decks must include eight or more cards from at least four different **Factions**.
 

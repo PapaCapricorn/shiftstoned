@@ -74,7 +74,8 @@
     color: #4183c4;
 }
 
-.side-image {
+.side-image,
+.article-thumbnail {
     grid-column: 1; /* place in 1st column (sidebar) */
     grid-row: span 100; /* overflow as many rows as needed */
     /* need to check above for browser support
@@ -95,10 +96,10 @@
     width: 125px;
 }
 
-.article-image {
+.article-thumbnail {
     grid-row: 1 / span 100; /* overflow as many rows as needed */
 }
-.article-image img {
+.article-thumbnail img {
     width: 250px;
     height: auto;
     object-fit: contain;

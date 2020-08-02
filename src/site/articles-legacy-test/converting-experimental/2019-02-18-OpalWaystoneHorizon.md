@@ -13,8 +13,8 @@ A special showcase event to celebrate a new
 
   [Eternal Card Game]: https://www.direwolfdigital.com/eternal/
 
-![Thumbnail Graphic]({{ meta_image }})
-{.article-image .side-image}
+![]({{ meta_image }})
+{.article-thumbnail}
 
 **{% date page.date %}** - Now it is easier than ever before for deck-builders and brewers to share lists between [Eternal Warcry][] and **Shiftstoned’s** [Eternal Power Calculator][]. Just look for the blue button in the details section on **Eternal Warcry** to create a unique link to any deck’s **Power** portrait on **Shiftstoned**.
 

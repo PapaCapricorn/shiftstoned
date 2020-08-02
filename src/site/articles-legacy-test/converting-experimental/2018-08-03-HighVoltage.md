@@ -12,8 +12,8 @@ More than half the cards in this tournament winning deck piloted by Mouche are P
 
   [I heard Alessi is still free to grow]: https://eternalwarcry.com/decks/details/H4FvWiA1uE8/i-heard-alessi-is-still-free-to-grow
 
-![Thumbnail Graphic]({{ meta_image }})
-{.article-image .side-image}
+![]({{ meta_image }})
+{.article-thumbnail}
 
 ![Decklist](/images/articles/AhlessiDecklist.jpeg "Alessi decklist")
 {.side-image}

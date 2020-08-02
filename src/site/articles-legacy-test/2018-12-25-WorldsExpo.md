@@ -16,8 +16,8 @@ Hanging this year's Championship **Power** bases on the wall, and introducing th
 We take a look at **Power** base visualizations for all 16 decks from the **Eternal Tournament Series 2018 World Championship**
 {.tagline}
 
-![Thumbnail Graphic]({{ meta_image }})
-{.article-image .side-image}
+![]({{ meta_image }})
+{.article-thumbnail}
 
 ----
 

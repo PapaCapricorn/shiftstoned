@@ -16,7 +16,8 @@ Taking a look at the Top Eight decks from [The Time of Ancestors][], the first o
 **Power** portraits and standout features for each the finalists
 {.tagline}
 
-![Thumbnail Graphic]({{ meta_image }} "Elham Preview") {.article-image .side-image}
+![]({{ meta_image }})
+{.article-image .side-image}
 
 <img alt="Card Image" src="/images/cards/Swirl_the_Sands.png" style="position: absolute; left: 220px; top: 765px; float: left; width: 125px;" />
 

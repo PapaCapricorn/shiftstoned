@@ -20,6 +20,9 @@ Science, community and the healing power of games are just a few of the topics t
 
   [Eternal]: https://www.direwolfdigital.com/eternal/
 
+![]({{ meta_image }})
+{.article-thumbnail}
+
 You learn to expect the unexpected from Kaelos. On her [daily stream][Kaelos Twitch] and during [competitive **Eternal** events][ETS s3w1], she plays her own brand of decks that often defy convention.
 
   [Kaelos Twitch]: https://www.twitch.tv/kaelosthereckoning
