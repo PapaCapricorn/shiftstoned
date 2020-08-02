@@ -38,7 +38,7 @@ page_script: formatUpdates.js
     {%- endif %}
   </header>
 
-  <img class="sideImage articleMargin" alt="" src=" {{- articleImage -}} "/>
+  <img class="article-thumbnail" alt="" src="{{ articleImage or meta_image }}" width="250" height="164.4" />
 
   <section class="description">
     {{ content | safe }}
@@ -67,7 +67,7 @@ page_script: formatUpdates.js
     </ol>
   </nav>
 
-  <section id="updateList"
+  <section id="updateList" class="main-col-full"
     data-show-format="draft"
     data-show-factions="{{ factionFilters | join(' ') }}"
     data-show-states="{{ stateList | join(' ') }}">

@@ -24,15 +24,15 @@ permalink: /articles/tags/{{ tag }}/
     </header>
     <div class="article-thumbnail">
       <a href="{{ article.url }}">
-        <img src="{{ article.data.meta_image }}"
+        <img src="{{ article.data.meta_image or article.data.articleImage }}"
              width="250" height="164.4"
              loading="lazy"
-             alt="{{ meta_image_alt or 'thumbnail graphic' }}" />
+             alt="{{ article.data.meta_image_alt or 'thumbnail graphic' }}" />
       </a>
     </div>
     <section class="article-description">
       <p>
-        <strong>{% date article.date %}</strong> - {{ article.data.description | frontmatter_md_string | safe }}
+        <strong>{% date article.date %}</strong> - {{ (article.data.description or article.data.meta_description) | frontmatter_md_string | safe }}
       </p>
     </section>
     <footer>

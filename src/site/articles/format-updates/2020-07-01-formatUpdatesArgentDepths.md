@@ -1,6 +1,6 @@
 ---
 title: "Expedition and Draft Pack Changes - Argent Depths"
-layout: "layouts/formatUpdates.njk"
+description: "Explore the changes to **Expedition** and **Draft Packs** with the release of Eternal's newest set in this **interactive gallery**."
 articleImage: "/images/articles/formatUpdatesArgentDepths.jpg"
 articleTitle: "Argent Depths Format Updates"
 articleSubtitle: "Changes to Expedition and Draft Packs with the release of Eternal's newest set"
