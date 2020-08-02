@@ -108,15 +108,26 @@
 .article ul {
     margin-block-end: var(--block-margin);
 }
+.article > ul {
+    padding: 0;
+}
+.article > ul > li {
+    margin-inline-start: 1em;
+}
 .article ul li:not(:last-child) {
     margin-block-end: 1rem;
 }
-.article ul li {
+.article li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
     list-style: none;
 }
 .star-list li::before {
     content: "★";
-    margin-right: .5em;
+    position: absolute;
+    left: -1em;
 }
 .list-compact {
     font-size: 14px;
