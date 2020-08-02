@@ -82,12 +82,12 @@ eleventyConfig.addPairedShortcode("hover_content", require("./src/utils/shortcod
   // single-line strings, won't wrap with <p>s
   eleventyConfig.addFilter('frontmatter_md_string', (markdownString) => {
     var result = decodeURI(markdownString);
-    return markdownLib.render(result);
+    return markdownLib.renderInline(result);
   });
   // multi-line strings, parses as normal
   eleventyConfig.addFilter('frontmatter_md', (markdownString) => {
     var result = decodeURI(markdownString);
-    return markdownLib.renderInline(result);
+    return markdownLib.render(result);
   });
 
   // Pause time for re-build during watch (in ms)
