@@ -3,7 +3,6 @@ title: Echoes of Eternity Spoiler
 meta_title: Echoes of Eternity Spoiler
 meta_image: /images/articles/EoE-Spoiler.png
 description: "Revealing a spoiler for Echoes of Eternity, featuring an evolving decklist."
-layout: layouts/article-test-2.njk
 article:
     title: "Echoes of Eternity Spoiler"
     subtitle: "Revealing a new spoiler from [Echoes of Eternity](https://www.direwolfdigital.com/news/new-set-echoes-of-eternity/), the upcoming expansion for [Eternal Card Game](https://www.direwolfdigital.com/eternal/)"

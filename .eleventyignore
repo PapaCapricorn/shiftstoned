@@ -1,2 +1,2 @@
 # 11ty won't process these directories and files:
-src/site/articles-legacy-test/_template-articles/
+src/site/articles/_template-articles/

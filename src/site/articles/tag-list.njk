@@ -4,14 +4,20 @@ section: Articles
 override:tags: []
 page_style: articles-index.css
 pagination:
-  data: collections.articles
-  alias: articles
+  data: collections
   size: 12
-  reverse: true
-permalink: "/articles/{%- if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{%- endif %}index.html"
+  alias: tag
+  filter:
+    - all
+    - articles
+    - drafter
+permalink: /articles/tags/{{ tag }}/
 ---
 <section class="articles-list">
-{%- for article in articles %}
+<h1>Articles tagged “{{ tag }}”</h1>
+
+{%- set taglist = collections[ tag ] %}
+{%- for article in taglist | reverse %}
   <article class="article-brief">
     <header>
       <h2><a href="{{ article.url }}">{{ article.data.meta_title }}</a></h2>

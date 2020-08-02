@@ -1,8 +1,9 @@
 ---
 title: Burning Hope
-description: "Power portraits and standout features from the Eternal Championship Qualifier: Burning Hope"
+description: "Taking a closer look at the **Top Eight** decks from **Burning Hope**. **Fire** was featured in every one, with **Winchest** composing more than half of lists in both the finals and the tournament overall. Yet each of the winners built their deck differently. All of the summaries here include a standout feature describing what sets each deck apart from the others."
 meta_title: Burning Hope - Tournament Report
 meta_image: /images/articles/BurningHope.jpeg
+meta_description: "Power portraits and standout features from the Eternal Championship Qualifier: Burning Hope"
 date: 2019-01-19 13:35:43.10 -5
 ---
 # Burning Hope: ECQ Rundown {.title}
