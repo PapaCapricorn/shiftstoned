@@ -5,7 +5,6 @@ description: "Kaelos speaks with **Shiftstoned** about her unconventional approa
 meta_title: "Unusual Suspects: featuring Kaelos"
 meta_image: /images/articles/UnusualSuspects.jpeg
 meta_description: "Kaelos visits with Shiftstoned following her recent ECL Tuesday Weekly tournament victory"
-date: 2018-08-20 00:00:00.00 -5
 ---
 # Unusual Suspects: featuring Kaelos {.title}
 

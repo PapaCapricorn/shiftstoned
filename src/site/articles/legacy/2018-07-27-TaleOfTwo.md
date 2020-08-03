@@ -4,7 +4,6 @@ description: "Two distinct and innovative archetypes prevailed at recent **Etern
 meta_title: "A Tale of Two Power Bases"
 meta_image: /images/articles/TaleOfTwo2.png
 meta_description: "Two distinct archetypes prevailed at recent competitive Eternal events. How do their Power bases differ?"
-date: 2018-07-27 00:00:00.00 -5
 ---
 # A Tale of Two Power Bases {.title}
 
