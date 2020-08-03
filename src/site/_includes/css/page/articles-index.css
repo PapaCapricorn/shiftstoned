@@ -52,6 +52,7 @@
 
 .article-brief .article-thumbnail {
     grid-area: image;
+    margin-block-start: 0.5em; /* align top of image with top of title text */
 }
 .article-brief .article-thumbnail img {
     width: 250px;
