@@ -1,4 +1,5 @@
 {
+    "eleventyExcludeFromCollections": true,
     "layout":"layouts/html.njk",
     "section":"Articles",
     "tags":"articles",
