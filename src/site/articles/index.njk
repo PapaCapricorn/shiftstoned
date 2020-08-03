@@ -14,16 +14,35 @@ permalink: "/articles/{%- if pagination.pageNumber > 0 %}{{ pagination.pageNumbe
 {%- for article in articles %}
   <article class="article-brief">
     <header>
-      <h2><a href="{{ article.url }}">{{ (article.data.articleTitle or article.data.title or article.data.meta_title) | frontmatter_md_string | safe  }}</a></h2>
+      <h2>
+        <a href="{{ article.data.articleLink or article.url }}">
+          {{ (article.data.articleTitle or article.data.title or article.data.meta_title) | frontmatter_md_string | safe  }}
+        </a>
+      </h2>
     </header>
+    {%- if (article.data.articleVideo or article.data.meta_image or article.data.articleImage) %}
     <div class="article-thumbnail">
+      {%- if article.data.articleVideo %}
+      <video controls width="250"
+        {%- if (article.data.meta_image or article.data.articleImage) %}
+        poster="{{ article.data.meta_image or article.data.articleImage }}"
+        {%- endif %}>
+        <source src="{{ article.data.articleVideo }}" type="video/mp4"
+          {%- if article.data.articleVideoType %}
+          type="{{ article.data.articleVideoType }}"
+          {%- endif %}>
+          Your browser does not support the video tag.
+      </video>
+      {%- else %}
       <a href="{{ article.url }}">
-        <img src="{{ article.data.meta_image or article.data.articleImage or '' }}"
+        <img src="{{ article.data.meta_image or article.data.articleImage }}"
              width="250" height="164.4"
              loading="lazy"
              alt="{{ article.data.meta_image_alt or 'thumbnail graphic' }}" />
       </a>
+      {%- endif %}
     </div>
+    {%- endif %}
     <section class="article-description {{ article.data.description_class or '' }}">
       <p>
         <strong>{% date article.date %}</strong> - {{ (article.data.description or article.data.meta_description or '') | frontmatter_md_string | safe }}
@@ -31,8 +50,13 @@ permalink: "/articles/{%- if pagination.pageNumber > 0 %}{{ pagination.pageNumbe
     </section>
     <footer>
       <p class="highlight">
-        <a class="arrow-link" href="{{ article.url }}">Read more</a>
+        <a class="arrow-link" href="{{ article.data.articleLink or article.url }}">{{ article.data.articleLinkText or 'Read more' }}</a>
       </p>
+      {%- if article.data.articleLink2 %}
+      <p class="highlight">
+        <a class="arrow-link" href="{{ article.data.articleLink2 }}">{{ article.data.articleLinkText2 or 'See also' }}</a>
+      </p>
+      {%- endif %}
     </footer>
   </article>
 {%- endfor %}

@@ -48,6 +48,11 @@
 
 .article-brief footer {
     grid-area: link;
+    display: flex;
+    gap: 2em;
+}
+.article-brief footer > p {
+    margin: 0;
 }
 
 .article-brief .article-thumbnail {

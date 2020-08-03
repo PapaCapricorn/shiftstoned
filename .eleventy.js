@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
 
   // Passthrough copy | Input directory: `src/site`; Output directory: `dist/`
   eleventyConfig.addPassthroughCopy("./src/site/images");
+  eleventyConfig.addPassthroughCopy("./src/site/video");
   eleventyConfig.addPassthroughCopy("./src/site/fonts");
   eleventyConfig.addPassthroughCopy("./src/site/*.ico");
     // Copy CSS files from styles to `dist/styles/`
