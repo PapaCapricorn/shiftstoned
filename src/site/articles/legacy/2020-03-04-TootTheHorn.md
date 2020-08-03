@@ -1,5 +1,6 @@
 ---
 title: Toot the Horn
+articleTitle: "Toot the Horn: March 2020 Updates"
 description: "Navigating your brew to [Eternal Warcry](https://eternalwarcry.com/) from the fan-built **Eternal Power Calculator** has never been easier. Plus the addition of card art makes the **Power Base** visualization tool more visual than ever. "
 tags: news
 meta_title: "Toot the Horn: March 2020 Eternal Power Calculator updates"

@@ -14,7 +14,7 @@ permalink: "/articles/{%- if pagination.pageNumber > 0 %}{{ pagination.pageNumbe
 {%- for article in articles %}
   <article class="article-brief">
     <header>
-      <h2><a href="{{ article.url }}">{{ (article.data.articleTitle or article.data.title or article.data.meta_title) }}</a></h2>
+      <h2><a href="{{ article.url }}">{{ (article.data.articleTitle or article.data.title or article.data.meta_title) | frontmatter_md_string | safe  }}</a></h2>
     </header>
     <div class="article-thumbnail">
       <a href="{{ article.url }}">

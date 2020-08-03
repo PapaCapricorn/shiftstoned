@@ -1,5 +1,6 @@
 ---
 title: "ECQ Rundown: The Time of Ancestors"
+articleTitle: "The Time of Ancestors:<br>ECQ Rundown"
 description: "**ECQ: The Time of Ancestors** also marks the first competitive event using the new Expedition format… What new decks will emerge to take down the competition? We’ll find out with $3,000 on the line in the first ECQ of the new season! "
 meta_title: "The Time of Ancestors - ECQ Tournament Rundown"
 meta_image: /images/articles/TheTimeOfAncestors.jpg

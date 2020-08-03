@@ -1,5 +1,6 @@
 ---
 title: "Streams Come True: featuring Grimfan"
+articleTitle: "Streams Come True:<br>featuring Grimfan"
 description: "Just hours before the first-ever community qualifying event for the **Eternal World Championship 2019**, **Grimfan** tweeted out to his followers: “I've decided I'd like to stream more than I want to win.” In the end he did both, taking first place with *ET Combrei Aggro* and doing it all on camera."
 meta_title: "Streams Come True: featuring Grimfan"
 meta_image: /images/articles/StreamsComeTrue.jpeg

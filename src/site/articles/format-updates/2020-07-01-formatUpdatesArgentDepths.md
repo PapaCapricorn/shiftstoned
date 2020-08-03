@@ -1,5 +1,5 @@
 ---
-title: "Expedition and Draft Pack Changes - Argent Depths"
+title: "Format Updates - Argent Depths"
 description: "Explore the changes to **Expedition** and **Draft Packs** with the release of Eternal's newest set in this **interactive gallery**."
 articleImage: "/images/articles/formatUpdatesArgentDepths.jpg"
 articleTitle: "Argent Depths Format Updates"

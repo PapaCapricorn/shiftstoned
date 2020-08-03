@@ -1,5 +1,6 @@
 ---
 title: Strange Navigator
+articleTitle: "Strange Navigator:<br>First Impressions"
 description: "Feeling the Void and finding a way. Xenan gets a Stranger with some powerful abilities."
 meta_title: Echoes of Eternity Spoiler
 meta_image: /images/articles/Strange-Navigator.png
