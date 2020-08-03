@@ -1,9 +1,10 @@
 ---
-title: "On the Horizon: The Opal Waystone Classic"
-description: "A special showcase event to celebrate a new Eternal Card Game community collaboration"
+title: "On the Horizon"
+articleTitle: "On the Horizon: The Opal Waystone Classic"
+description: "Now it is easier than ever before for deck-builders and brewers to share lists between **Eternal Warcry** and **Shiftstoned’s Eternal Power Calculator**. To celebrate this new collaboration, **Eternal Warcry** and **Shiftstoned** are teaming up with the **Eternal Community League** and **Kaelari's eternaltournaments.com** to bring you a special showcase event."
 meta_title: "On the Horizon: The Opal Waystone Classic"
 meta_image: /images/articles/HorizonBianca.jpeg
-date: 2019-02-18 00:00:00.00 -5
+meta_description: "A special showcase event to celebrate a new Eternal Card Game community collaboration"
 ---
 # <span class="pre-headline">On The Horizon:</span> The Opal Waystone Classic {.title}
 

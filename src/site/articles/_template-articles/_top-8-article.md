@@ -1,8 +1,9 @@
 ---
 title: "title"
-description: "description"
+description: "article_listing_description"
 meta_title: "meta_title"
-meta_image: /meta_image
+meta_image: "/meta_image"
+description: "meta_description"
 date: 
 ---
 # TITLE_TEXT  {.title}

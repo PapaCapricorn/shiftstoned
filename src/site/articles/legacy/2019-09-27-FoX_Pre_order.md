@@ -1,10 +1,10 @@
 ---
 title: Flame of Xulta Pre-Order Bundle cards
+description: "**Flame of Xulta Pre-Order Bundle** cards are now live in the fan-built **Eternal Power Calculator** at **Shiftstoned**. "
 tags: news
-description: "Flame of Xulta Pre-Order Bundle cards are live in the fan-built Eternal Power Calculator at Shiftstoned."
 meta_title: "Flame of Xulta Pre-Order Bundle cards"
 meta_image: /images/articles/FoX-Pre-order.jpg
-date: 2019-09-27 00:00:00.00 -5
+meta_description: "Flame of Xulta Pre-Order Bundle cards are live in the fan-built Eternal Power Calculator at Shiftstoned."
 ---
 # Flame of Xulta Pre-Order Bundle {.title}
 

@@ -40,6 +40,7 @@
     grid-area: description;
     font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
     font-size: 15px;
+    color: white;
 }
 .article-brief .article-description p {
     line-height: 1.6;
@@ -93,6 +94,10 @@
 }
 .pagination .last a::after {
     content: " »";
+}
+
+.article-description.text-yellow {
+    color:#f8de7e;
 }
 
 /* !! from wip page css 'mdArticles.css' -- merge when incorporated into main site css */

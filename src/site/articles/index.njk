@@ -14,19 +14,19 @@ permalink: "/articles/{%- if pagination.pageNumber > 0 %}{{ pagination.pageNumbe
 {%- for article in articles %}
   <article class="article-brief">
     <header>
-      <h2><a href="{{ article.url }}">{{ article.data.meta_title }}</a></h2>
+      <h2><a href="{{ article.url }}">{{ (article.data.articleTitle or article.data.title or article.data.meta_title) }}</a></h2>
     </header>
     <div class="article-thumbnail">
       <a href="{{ article.url }}">
-        <img src="{{ article.data.meta_image or article.data.articleImage }}"
+        <img src="{{ article.data.meta_image or article.data.articleImage or '' }}"
              width="250" height="164.4"
              loading="lazy"
              alt="{{ article.data.meta_image_alt or 'thumbnail graphic' }}" />
       </a>
     </div>
-    <section class="article-description">
+    <section class="article-description {{ article.data.description_class or '' }}">
       <p>
-        <strong>{% date article.date %}</strong> - {{ (article.data.description or article.data.meta_description) | frontmatter_md_string | safe }}
+        <strong>{% date article.date %}</strong> - {{ (article.data.description or article.data.meta_description or '') | frontmatter_md_string | safe }}
       </p>
     </section>
     <footer>

@@ -1,8 +1,10 @@
 ---
-title: "Unusual Suspects: featuring Kaelos"
-description: "Kaelos visits with Shiftstoned following her recent ECL Tuesday Weekly tournament victory"
+title: "Unusual Suspects"
+articleTitle: "Unusual Suspects: featuring Kaelos"
+description: "Kaelos speaks with **Shiftstoned** about her unconventional approach to deck-building on the heels of a first-place finish in an **ECL** weekly event. Science, community and the healing power of games are just a few of the topics that emerge from our conversation about Power bases in **Eternal**."
 meta_title: "Unusual Suspects: featuring Kaelos"
 meta_image: /images/articles/UnusualSuspects.jpeg
+meta_description: "Kaelos visits with Shiftstoned following her recent ECL Tuesday Weekly tournament victory"
 date: 2018-08-20 00:00:00.00 -5
 ---
 # Unusual Suspects: featuring Kaelos {.title}

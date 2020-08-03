@@ -1,10 +1,10 @@
 ---
 title: "Pictures at an Exhibition"
 tags: news
-description: "Hanging this year's Championship Power bases on the wall, and introducing the Eternal Power Calculator's new titling feature"
+description: "Hanging this year's **Championship Power** bases on the wall, and introducing the **Eternal Power Calculator's** new title feature. We take a look at **Power** base visualizations for all 16 decks from the **Eternal Tournament Series 2018 World Championship**."
 meta_title: "Pictures at an Exhibition"
 meta_image: /images/articles/Pictures.jpeg
-date: 2018-12-25 00:00:00.00 -5
+meta_description: "Hanging this year's Championship Power bases on the wall, and introducing the Eternal Power Calculator's new titling feature"
 ---
 # {{ title }} {.title}
 

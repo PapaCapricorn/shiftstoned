@@ -1,13 +1,13 @@
 ---
 title: Strange Navigator
-description: "Strange Navigator: An Echoes of Eternity spoiler"
+description: "Feeling the Void and finding a way. Xenan gets a Stranger with some powerful abilities."
 meta_title: Echoes of Eternity Spoiler
 meta_image: /images/articles/Strange-Navigator.png
+meta_description: "Strange Navigator: An Echoes of Eternity spoiler"
 article:
     title: "Strange Navigator:<br>An Echoes of Eternity spoiler"
     subtitle: "Feeling **the Void** and finding a way"
     tagline: "**Xenan** gets a **Stranger** with some powerful abilities"
-date: 2020-02-09 13:35:43.10 -5
 ---
 **{% date page.date %}** -  Thanks to [Jedi_EJ on Twitch][] for helping us to reveal this spoiler from **Echoes of Eternity** on his stream today. And to those in chat who played along by generating some insightful guesses based on the [theme deck][] presented earlier.
 

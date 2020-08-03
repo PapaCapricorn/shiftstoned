@@ -1,9 +1,9 @@
 ---
-title: A Tale of Two Power Bases
-description: "Warming up for the event with featured lists from some of Eternal's most well-known deck builders."
+title: Brew Sampler
+articleTitle: "A Brew Sampler for The Opal Waystone Classic"
 meta_title: "The Opal Waystone Brew Sampler"
 meta_image: /images/articles/OpalBrews.jpeg
-date: 2019-03-22 00:00:00.00 -5
+meta_description: "Warming up for the event with featured lists from some of Eternal's most well-known deck builders."
 ---
 # A Brew Sampler for<br>The Opal Waystone Classic {.title}
 

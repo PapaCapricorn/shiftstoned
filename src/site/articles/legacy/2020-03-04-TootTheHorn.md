@@ -1,10 +1,10 @@
 ---
 title: Toot the Horn
-description: Eternal Warcry deck builder support and card art on hover added to the fan-built Eternal Power Calculator!
+description: "Navigating your brew to [Eternal Warcry](https://eternalwarcry.com/) from the fan-built **Eternal Power Calculator** has never been easier. Plus the addition of card art makes the **Power Base** visualization tool more visual than ever. "
 tags: news
 meta_title: "Toot the Horn: March 2020 Eternal Power Calculator updates"
 meta_image: /images/articles/ElhamPreview.jpg
-date: 2020-03-04 13:35:43.10 -5
+meta_description: Eternal Warcry deck builder support and card art on hover added to the fan-built Eternal Power Calculator!
 ---
 # Toot the Horn: March 2020 updates {.title}
 

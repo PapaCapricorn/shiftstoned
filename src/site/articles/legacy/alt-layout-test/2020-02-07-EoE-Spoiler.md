@@ -1,15 +1,15 @@
 ---
 title: Echoes of Eternity Spoiler
+description: "Tune in Sunday February 9 at 12 noon ET as **Shiftstoned's PapaCapricorn** joins [EJ_Jedi on Twitch](https://www.twitch.tv/jedi_ej) to reveal a spoiler from **Echoes of Eternity** for Eternal Card Game. Featuring an evolving decklist leading up to the stream."
 meta_title: Echoes of Eternity Spoiler
 meta_image: /images/articles/EoE-Spoiler.png
-description: "Revealing a spoiler for Echoes of Eternity, featuring an evolving decklist."
+meta_description: "Revealing a spoiler for Echoes of Eternity, featuring an evolving decklist."
 article:
     title: "Echoes of Eternity Spoiler"
     subtitle: "Revealing a new spoiler from [Echoes of Eternity](https://www.direwolfdigital.com/news/new-set-echoes-of-eternity/), the upcoming expansion for [Eternal Card Game](https://www.direwolfdigital.com/eternal/)"
     tagline: "Featuring an evolving **Power Portrait** leading up to the stream"
     image_link: https://www.shiftstoned.com/epc/?d=CsfRDHhBDI3DEH5FDBtICBlIBC7HDtfREF9GDvfKDB4IDE-GDBkQDC_ECChFCHkKCImFIB5HBB_BEEvICEqICA9BECpGEH4FEJBCAABHiBBCoBBHgEBCvGBFgH&t=Echoes%20of%20Eternity%20Spoiler
     image_title: Echoes of Eternity Spoiler
-date: 2020-02-07 13:35:43.10 -5
 ---
 UPDATE:\
 See the full reveal for some first impressions of [Strange Navigator](StrangeNavigator.html) {.tagline}

@@ -1,9 +1,10 @@
 ---
 title: "The Price of Freedom"
-description: "Power portraits and standout features from the Eternal Championship Qualifier: The Price of Freedom"
+articleTitle: "The Price of Freedom: ECQ Rundown"
+description: "🔥🌒 Underdogs, ⌛️🌒 fresh takes, and 🦅🐾🌒 rulebreakers featured in the Top 8 of **Eternal Card Game’s Price of Freedom** event, while🔥🦅🌒 **Winchest** remained a force to be reckoned with. Find out more in this **Eternal Championship Qualifier** rundown, featuring **Power** portraits and standout features for each of the finishers."
 meta_title: "The Price of Freedom - Tournament Rundown"
 meta_image: /images/articles/PriceOfFreedom.jpeg
-date: 2019-02-14 00:00:00.00 -5
+meta_description: "Power portraits and standout features from the Eternal Championship Qualifier: The Price of Freedom"
 ---
 ## Price of Freedom: ECQ Rundown  {.title}
 

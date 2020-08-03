@@ -1,8 +1,10 @@
 ---
 title: High Voltage
-description: "How much power is too much power? This first place midrange Combrei deck piloted by Mouche raises the question."
+articleTitle: "Danger: High Voltage"
+description: "Over half the cards in a recent tournament-winning **Combrei** deck piloted by Mouche are **Power** sources. With help from the the **Eternal Power Calculator**, let's attempt to answer the question: \"When is too much Power just enough?\""
 meta_title: "Danger: High Voltage"
 meta_image: /images/articles/HighVoltageBig.jpeg
+meta_description: "How much power is too much power? This first place midrange Combrei deck piloted by Mouche raises the question."
 date: 2018-08-03 00:00:00.00 -5
 ---
 # Danger: High Voltage {.title}
