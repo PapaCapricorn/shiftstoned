@@ -1127,6 +1127,14 @@
               "after":"1"
             }
           },
+          "General Izalio":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"5"
+            }
+          },
           "Granite Waystone":{
             "expedition": "Added",
             "draft": "Added",
@@ -1275,6 +1283,14 @@
             }
           },
           "Slag":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Smith's Hammer":{
             "expedition": "Added",
             "draft": "Added",
             "draft-weights":{
@@ -2598,6 +2614,13 @@
               "after":"1"
             }
           },
+          "Insatiable Serasaur":{
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"1"
+            }
+          },
           "Invoke the Waystones":{
             "expedition": "Added",
             "draft": "Added",
@@ -2681,6 +2704,13 @@
             }
           },
           "Rectifier":{
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"1"
+            }
+          },
+          "Reliquary Raider":{
             "draft": "Added",
             "draft-weights":{
               "before":"-",
@@ -3127,6 +3157,14 @@
             }
           },
           "Treasury Gate":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Treasury Guard":{
             "expedition": "Kept",
             "draft": "Kept",
             "draft-weights":{
@@ -4169,6 +4207,13 @@
             "draft-weights":{
               "before":"-",
               "after":"5"
+            }
+          },
+          "Spire Chaplain":{
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"1"
             }
           },
           "Stalwart Silverwing":{
@@ -6947,6 +6992,14 @@
             "draft-weights":{
               "before":"-",
               "after":"10"
+            }
+          },
+          "Lurking Sanguar":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"1"
             }
           },
           "Makkar's Quiver":{

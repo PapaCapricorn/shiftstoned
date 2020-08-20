@@ -19,3 +19,7 @@ A few notes:
     * *Whispers of the Throne*
     * *Echoes of Eternity*, including its promos (from Traver's Farm onward)
 * The Expedition changes **do** include pre-*Echoes* promos, *The Flame of Xulta*, Draft Pack updates, and removed cards from older campaign and bundle sets.
+
+----
+
+*<time datetime="2020-08-17T04:00:00.000Z">August 17, 2020</time> - Update: a few cards were mistakenly missing from the Draft Pack list. Of those, we are unsure of what General Izalio's weighting was at the time. We are marking its weighting as "5x", just note that it may have been 1x.*
