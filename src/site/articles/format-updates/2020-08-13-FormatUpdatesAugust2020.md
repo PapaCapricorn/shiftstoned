@@ -21,4 +21,48 @@ Here are this update's changes, sorted into **Added** for additions to the Draft
 
 *<time datetime="2020-08-19T04:00:00.000Z">August 19, 2020</time> - Update: We were informed of multiple issues with the originally published list. Errors parsing the official list resulted in incorrect results and  weightings list. We re-parsed and updated this article with what we believe are the correct cards and weightings.*
 
-*Note that, due to a some minor discrepancies between versions of the official list, we adjusted a few weightings where it felt appropriate.*
+*Note that, due to a some minor discrepancies between versions of the official list, we adjusted a few weightings where it felt appropriate:*
+
+<details>
+<summary><em>Details</em></summary>
+
+This information was derived from differences between the current [Card List][], the previous format's list (now overwritten), and a [spreadsheet of weighting changes][sheet] shared by LocoPojo.
+
+  [sheet]: https://www.reddit.com/r/EternalCardGame/comments/i5vj9w/breakdown_time_talking_all_the_new_changes/g0rs35y/
+
+### Missing from the current DWD Card List:
+
+* Seat of Fury
+
+The other Seats are on the list, and were all boosted from 1x to 10x. We matched that change.
+
+### Marked as changed on the Weighting Changes sheet, but appear as unchanged between the previous and current lists:
+
+* Amber Acolyte *(marked 'decreased' / was: 1x, now: 1x)*
+* Champion of Fury *(marked 'decreased' / was: 10x, now: 10x)*
+* Champion of Order *(marked 'decreased' / was: 10x, now: 10x)*
+* Direfang Spider *(marked 'decreased' / was: 1x, now: 1x)*
+
+The other Champions were decreased from 10x to 5x, so we matched that change. We are unsure if the Acolyte and Spider we actually changed, or if their previous info was incorrect, so we didn't adjust their weightings (and they aren't included in this gallery).
+
+### Not on the Weighting Changes sheet, but appears as changed between the previous and current lists:
+
+* Kaleb's Choice *(not marked / was: 1x, now: 10x)*
+
+The other Choices have varying weightings, so there's no pattern to match. We're not sure if this change is incorrect, or if it's missing from the sheet, and left its weightings as-is.
+
+### Missing from the previous Card List:
+
+* General Izalio
+* Smith's Hammer
+* Insatiable Serasaur
+* Reliquary Raider
+* Spire Chaplain
+* Treasury Guard
+* Lurking Sanguar
+
+General Izalio appears as 'boosted' in the Weighting Changes sheet, and is now 10x, so it must have previously been 5x or 1x. We assigned it 5x.
+
+The remaining 6 cards aren't in the sheet, so we assume their previous weightings match their current ones. Because their weightings are unchanged, they are not included in this gallery.
+
+</details>
