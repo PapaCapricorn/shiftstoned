@@ -19,7 +19,7 @@ Here are this update's changes, sorted into **Added** for additions to the Draft
 
 ----
 
-*<time datetime="2020-08-19T04:00:00.000Z">August 19, 2020</time> - Update: We were informed of multiple issues with the originally published list. Errors parsing the official list resulted in incorrect results and  weightings list. We re-parsed and updated this article with what we believe are the correct cards and weightings.*
+*<time datetime="2020-08-23T04:00:00.000Z">August 23, 2020</time> - Update: We were informed of multiple issues with the originally published list. Errors parsing the official list resulted in incorrect results and  weightings list. We re-parsed and updated this article with what we believe are the correct cards and weightings.*
 
 *Note that, due to a some minor discrepancies between versions of the official list, we adjusted a few weightings where it felt appropriate:*
 
