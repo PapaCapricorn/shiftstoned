@@ -26,6 +26,7 @@
   <!-- CSS -->
   <link href="/styles/site.css" rel="stylesheet" type="text/css">
   
+  <link href="css/app.css" rel="stylesheet" type="text/css">
 
 
 </head>
@@ -87,69 +88,8 @@
     <!-- Main page content -->
     <div class="newBodyGrid">
 
-            <!-- Container for top controls -->
-      <div class="drafterControlPanel"><!-- Search control -->
-<div class="drafterControlLabel" style="margin-left: 25px;">
-  S E A R C H<br>
-  <a href="http://eternal-draft.mlntn.com/"><input class="drafterSearch" type="text" placeholder="  Keyword" name="Search" ></a>
-</div>
-
-<!-- Evaluator control -->
-<div class="drafterControlLabel" style="margin-left: 50px; margin-right: 10px;">
-  E V A L U A T O R
-  <div>
-    <a href="EternalJourney/">Eternal Journey</a>
-  </div>
-  <a href="EternalJourney/"><img class="evaluatorImg" style="margin-top: -75px; margin-right: -105px;" src="../images/EvaluatorJedi_EJ.png"></a>
-</div>
-
-      </div>
-
-      <!-- Column for Drafter Decklist -->
-      <div class="drafterDeckPanel">
-
-      </div>
-
-      <!-- Column for Drafter Cards -->
-      <div class="drafterCardCollection">
-
-        <div class="tooltip">
-          <span class="tutorialTip" style="width: 300px;
-            height: 80px;  margin-left: 20px; top: 0px;"><span style="font-size: 22px;">Greetings Huckleberry!</span><br>
-          Search for a Draft pick to get started</span>
-        </div>
-
-        <!-- Row 1 -->
-        <div>
-
-          <div class="cardBlock" style="margin-left: 340px; top: 30px;">
-
-            <img src="../images/PhantomCard.png">
-
-            <div class="gradeCircle" style="-webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);">
-              <h4>B+</h4>
-
-               <div style="position: relative; top: -65px; left: 15px; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);"><img src="../images/SpeechBubble.png" style="width: 25px;"></div>
-
-              <div class="tooltip">
-                <span class="tutorialTip" style="font-family: 'Merriweather',serif; visibility: visible; width: 250px; height: 60px; margin-left: 30px; top: -120px;">Card grades appear here in circles. <br>Hover over <img src="/images/SpeechBubble.png" style="width: 14px;"> to view comments.</span>
-              </div>
-            </div>
-
-            <div class="tooltip">
-              <span class="tutorialTip" style="font-family: 'Merriweather',serif; visibility: visible; width: 200px; height: 60px; margin-left: -190px; top: -120px; text-align: center; opacity: .9">Click a card to add to your Pool or Deck.</span>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div style="margin: auto; text-align: center;">
-          <a href="/drafter/about">Expanded User's Guide &#9658;</a>
-       </div>
-
-      </div>
-
+      <!-- Main page content -->
+<div id="app"></div>
 
     </div>
 
@@ -157,6 +97,9 @@
     
     <!-- defer loading non-critical js -->
     <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+    <!-- page-specific js -->
+    <script src="js/cards.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
 
 
   </body>
