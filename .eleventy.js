@@ -37,6 +37,9 @@ module.exports = function(eleventyConfig) {
   // Passthrough Contacts confirmation page - thanks.html
   eleventyConfig.addPassthroughCopy("./src/site/contact/thanks.html");
 
+  // Passthrough legacy site for older articles
+  eleventyConfig.addPassthroughCopy("./src/site/legacy");
+
 
 
   // 404 for local testing
