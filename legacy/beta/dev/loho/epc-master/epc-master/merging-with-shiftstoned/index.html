@@ -1,0 +1,19 @@
+<h1>Merging with shiftstoned.com</h1>
+<p>The process I have been using to merge changes from the Eternal Power Calculator
+repo to the shiftstoned repo isn't a very good one, but I'm documenting it here
+so there is no mystery for anyone else who will be doing this in the future.</p>
+<p>First, I update my fork of the shiftstoned repo
+(<code>https://github.com/shiftstoned/shiftstoned.github.io.git</code>), then use
+<code>git log</code> and <code>git diff</code> in the <code>epc/</code> directory of that repo to find any changes
+to <code>index.html</code> or <code>epc.css</code> that aren't yet in the epc repo.  I merge
+those changes back into the epc repo.</p>
+<p>Then I generate the minified Javascript using <code>./generate.sh</code> and isolate
+all the files intended for distribution to shiftstoned with <code>./dist.sh</code>.
+Then I can copy all the distribution files from the <code>dist/</code> subdirectory
+to the shiftstoned repo fork.  (i.e. <code>cp dist/* ../shiftstoned.github.io/epc</code>)</p>
+<p>At this point I verify that I haven't clobbered anything on shiftstoned by
+doing a <code>git diff</code> in <code>shiftstoned.github.io/epc</code>.  If everything looks good,
+I commit and then use that commit to send a pull request to the live
+shiftstoned site.</p>
+<p>This process isn't ideal.  It is documented here as an explanation, not
+as a recommendation.</p>
