@@ -1,0 +1,199 @@
+---
+layout: layouts/html.njk
+page_style: formatUpdates_v3.css
+page_script: formatUpdates_v3.js
+---
+{%- set factionList = ["Fire","Time","Justice","Primal","Shadow","Praxis","Combrei","Hooru","Feln","Stonescar","Rakano","Elysian","Argenport","Skycrag","Xenan","Mixed","Neutral"] -%}
+{%- set factionFilters = ["Fire","Time","Justice","Primal","Shadow","Mixed","Neutral"] -%}
+{%- set stateList = ["Added","Removed","Kept"] -%}
+
+{# double-checked that cards were removed (mid-format updates usually won't remove cards) #}
+{%- set hasRemoved = false -%}
+{%- for faction, factionInfo in updates -%}
+  {%- if factionInfo.cards.Removed|length > 0 -%}
+    {%- set hasRemoved = true -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if hasRemoved == false -%}
+  {%- set stateList = ["Added","Kept"] -%}
+{%- endif -%}
+
+{%- set factionCombos = {
+  'Praxis': ["Fire","Time","Mixed"],
+  'Combrei': ["Time","Justice","Mixed"],
+  'Hooru': ["Justice","Primal","Mixed"],
+  'Feln': ["Primal","Shadow","Mixed"],
+  'Stonescar': ["Fire","Shadow","Mixed"],
+  'Rakano': ["Fire","Justice","Mixed"],
+  'Elysian': ["Time","Primal","Mixed"],
+  'Argenport': ["Justice","Primal","Mixed"],
+  'Skycrag': ["Fire","Primal","Mixed"],
+  'Xenan': ["Time","Shadow","Mixed"],
+  'Mixed': ["Fire","Time","Justice","Primal","Shadow","Mixed"]
+} -%}
+
+<main class="formatUpdates textcol">
+
+  <header>
+    <h1 class="title"> {{- articleTitle -}} </h1>
+    
+    {% if articleSubtitle -%}
+    <p class="subtitle">
+      {{- articleSubtitle -}}
+    </p>
+    {%- endif %}
+
+    {% if articleTagline -%}
+    <p class="tagline">
+      {{- articleTagline -}}
+    </p>
+    {%- endif %}
+  </header>
+
+  <img class="sideImage articleMargin" alt="" src=" {{- articleImage -}} "/>
+
+  <section class="description">
+    {{ content | safe }}
+  </section>
+
+  <nav id="toc" aria-labelledby="primary-navigation"
+    data-show-factions="{{ factionFilters | join(' ') }}"
+    data-show-states="{{ stateList | join(' ') }}">
+    <div class="toc-header">
+      <h3 id="primary-navigation">Contents</h3>
+      <a href="#updateList" id="top-link"><span class="sr-only">Back to top </span><span title="Back to top">↑</span></a>
+    </div>
+    <ol>
+    {%- for faction in factionList %}
+      <li data-factions="{{ ( factionCombos[faction] | join(' ') ) if factionCombos[faction] else faction }}">
+        <a href="#{{ faction }}">{{ faction }}</a>
+        <ol>
+        {%- for state in stateList %}
+          <li data-state="{{ state }}">
+            <a href="#{{ faction }}-{{ state }}">{{ state }}</a>
+          </li>
+        {%- endfor %}
+        </ol>
+      </li>
+    {%- endfor %}
+    </ol>
+  </nav>
+
+  <section id="updateList"
+    data-show-format="{{ showOnly|lower or 'draft' }}"
+    data-show-factions="{{ factionFilters | join(' ') }}"
+    data-show-states="{{ stateList | join(' ') }}"
+    data-show-kept-unchanged=true>
+
+    <header>
+      <form action="" id="filters"  autocomplete="off">
+        <fieldset id="factionFilters">
+          <legend>Toggle factions</legend>
+          <ol class="filterSet">
+          {%- for faction in factionFilters %}
+            <li class="filter checkbox">
+              <label>
+                <input type="checkbox" id="filter-{{ faction }}" name="Factions"
+                  data-filter-faction="{{ faction }}" checked />
+                <span class="{{ faction | lower }}">{{ faction }}</span>
+              </label>
+            </li>
+          {%- endfor %}
+          </ol>
+        </fieldset>
+        {%- if not showOnly %}
+        <fieldset id="formatFilter">
+          <legend>Toggle format</legend>
+          <ol class="filterSet radioSet">
+            <li class="filter radio-select">
+              <label>
+                <input type="radio" id="filter-draft" name="Formats"
+                  data-filter-format="draft" checked />
+                <span class="draft">Draft</span>
+              </label>
+            </li>
+            <li class="filter radio-select">
+              <label>
+                <input type="radio" id="filter-expedition" name="Formats"
+                  data-filter-format="expedition" />
+                <span class="expedition">Expedition</span>
+              </label>
+            </li>
+          </ol>
+        </fieldset>
+        {%- endif %}
+        <fieldset id="stateFilters">
+          <legend>Toggle card changes</legend>
+          <ol class="filterSet">
+          {%- for state in stateList %}
+            <li class="filter pillbox">
+              <label>
+                <input type="checkbox" id="filter-{{ state }}" name="States"
+                  data-filter-state="{{ state }}" checked />
+                <span>{{ state }}</span>  
+              </label>
+            </li>
+          {%- endfor %}
+            {#- <li class="filter pillbox">
+              <label>
+                <input type="checkbox" id="weightChangeFilter" name="States" checked />
+                <span>Show unchanged</span>  
+              </label>
+            </li> #}
+          </ol>
+        </fieldset>
+      </form>
+    </header>
+
+    {% for faction, factionInfo in updates -%}
+    <section class="faction" data-factions="{{ factionInfo.factions | join(' ') }}">
+      <h2 id="{{ faction }}" class="{{ faction | lower }}" >{{ faction }}</h2>
+
+      {%- for state in stateList %}
+      <section class="state" data-state="{{ state }}">
+        <h3 id="{{ faction }}-{{ state }}">{{ state }}</h3>
+        <ul class="cardList">
+        {%- for card, cardInfo in factionInfo.cards[state] %}
+        {#- for draft-changes-only articles, skip kept cards without wieght changes #}
+        {%- if showOnly and (showOnly|lower == 'draft') and (state == 'Kept') and (cardInfo['draft-weights'].before == cardInfo['draft-weights'].after) %}
+          {#- skip -#}
+        {%- else %}
+          <li class="card"
+            {%- if cardInfo.expedition %} data-expedition-state="{{ cardInfo.expedition }}"{% endif %}
+            {%- if cardInfo.draft %} data-draft-state="{{ cardInfo.draft }}" data-weight-before="{{ cardInfo['draft-weights'].before }}" data-weight-after="{{ cardInfo['draft-weights'].after }}"{%- endif %}>
+            <h4>{{ card }}</h4>
+            <dl class="card-info">
+              <div class="card-image">
+                <dt class="sr-only">Image</dt>
+                <dd>
+                    <img src="https://www.shiftstoned.com/images/cards/{{ card | replace(' ', '_') }}.png"
+                    alt="{{ card }}"
+                    loading="lazy" width="220" height="350">
+                </dd>
+              </div>
+              <div class="draft-weights">
+                <dt class="sr-only">Draft weightings</dt>
+                <dd>
+                  <dl class="weighting-info">
+                    <div class="weighting after">
+                      <dt class="sr-only">now</dt>
+                      <dd>{{ cardInfo['draft-weights'].after }}</dd>
+                    </div>
+                    <div class="weighting before">
+                      <dt>was</dt>
+                      <dd>{{ cardInfo['draft-weights'].before }}</dd>
+                    </div>
+                  </dl>
+                </dd>
+              </div>
+            </dl>
+          </li>
+        {%- endif %}
+        {%- endfor %}
+        </ul>
+      </section>
+      {%- endfor %}
+    </section>
+    {%- endfor %}
+  </section>
+</main>

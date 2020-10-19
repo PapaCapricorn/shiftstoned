@@ -64,7 +64,7 @@
 
 /* Style HTML5 semantic elements for older, unsupported browsers */
 article, aside, footer, header, nav, section {
-display:block;
+  display:block;
 }
 
 /* Style "Javascript disabled" notification/warning */
@@ -173,7 +173,7 @@ img.articleMargin {
 }
 
 h1.articleListingTitle {
-  margin-top: 0px
+  margin-top: 0px;
   font-size: 30px;
 }
 
@@ -218,9 +218,9 @@ p.articleListing.featured {
   /* width: 800px; */
 }
 
-header {
+/* header {
   margin-top: 30px;
-}
+} */
 
 .fullColumn {
   width: 100%;
@@ -238,7 +238,7 @@ header {
 }
 
 /* Older style - can be deleted after the rest of the article listings are formatted */
-global_header_home {
+.global_header_home {
   display: block;
   color: #ffffff;
   border: 0px solid;
@@ -251,7 +251,7 @@ global_header_home {
 }
 
 /* Older style - can be deleted after the rest of the article listings are formatted */
-global_body {
+.global_body {
   display: block;
   border: 10x solid;
   margin-left: 325px;

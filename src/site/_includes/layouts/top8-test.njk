@@ -1,0 +1,36 @@
+---
+layout: layouts/article.njk
+---
+{{ content | safe }}
+
+{%- for place, info in top8 %}
+{%- set ordinal = loop.index | nth %}
+<!-- {{ ordinal }} -->
+<section class="topDeckProfile">
+
+  <h3 class="infoment {{ place }}">
+    {{ ordinal }}&nbsp; P L A C E:
+  </h3>
+
+  <img alt="Card Image" src=" {{- info.card -}} " class="galleryDeck" />
+
+  <h2 class="topDeckTitle">
+    &#9658;
+    <a href=" {{- info.epcUrl -}} " target="_blank">
+      <u>{{ info.player -}}'s Decklist</u>
+    </a>
+    ({{ info.archetype -}})
+  </h2>
+
+  <p>
+    {{ info.body -}}
+  </p>
+
+  <p style="" >
+    <a href=" {{- info.epcUrl -}} " target="_blank">view deck &#9658; </a>
+  </p>
+
+</section>
+{%- else %}
+<p>No top 8 found!</p>
+{%- endfor %}

@@ -8,3 +8,9 @@ body {
   font-size: 16px;
   color: #E7E4E6;
 }
+
+a {
+  color: #81C3F4;
+  text-decoration: none;
+  font-family: 'Open Sans ExtraBold', sans-serif;
+}

@@ -1,0 +1,29 @@
+---
+layout: layouts/html.njk
+---
+<header class="articleHeader">
+  {%- set articleTitle = article.title or title %}
+  <h1 class="title">{{ articleTitle | frontmatter_md_string | safe }}</h1>
+
+  {%- if article.subtitle %}
+  <div class="subtitle">{{ article.subtitle | frontmatter_md_string | safe }}</div>
+  {%- endif %}
+
+  {%- if article.tagline %}
+  <div class="tagline">{{ article.tagline | frontmatter_md_string | safe }}</div>
+  {%- endif %}
+</header>
+
+{%- if article.image or meta_image %}
+<figure class="article-thumbnail">
+  {%- if article.image_link %}
+  <a href="{{ article.image_link }}">
+  {%- endif %}
+    <img alt="{{ article.image_alt or 'Graphic' }}" src="{{ article.image or meta_image }}"/>
+  {%- if article.image_link %}
+  </a>
+  {%- endif %}
+</figure>
+{%- endif %}
+
+{{ content | safe }}
