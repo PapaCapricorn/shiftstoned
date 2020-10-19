@@ -26,6 +26,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/site/epc/*.js");
   eleventyConfig.addPassthroughCopy("./src/site/epc/*.png");
 
+  // Copy Drafter dependent scripts, styles, fonts and images to 'drafter/'
+  eleventyConfig.addPassthroughCopy("./src/site/drafter/css");
+  eleventyConfig.addPassthroughCopy("./src/site/drafter/fonts");
+  eleventyConfig.addPassthroughCopy("./src/site/drafter/images");
+  eleventyConfig.addPassthroughCopy("./src/site/drafter/js");
+
   // Passthrough CNAME file
   eleventyConfig.addPassthroughCopy("./src/site/CNAME");
 
