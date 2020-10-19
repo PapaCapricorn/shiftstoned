@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Google Analytics gtag to go here - temporarily hidden -->
+
+
+
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Portrait of the Eternal Power base as first-place Saturday Challenge finisher | ShiftStoned</title>
+
+<!-- Compatibility for older browsers goes here - temporarily hidden -->
+<!-- Resources for icons go here - temporarily hidden -->
+<!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+  <!-- CSS -->
+  
+  <link href="/styles/site.css" rel="stylesheet" type="text/css">
+  
+    <!-- page-specific styles -->
+    <style>
+    .article {
+    --block-margin: 1.5rem;
+}
+
+.article {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.article > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+
+.articleHeader {
+    margin-block-end: var(--block-margin);
+}
+.article .title,
+.article .subtitle,
+.article .tagline,
+.article hr,
+.article > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+.article .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+
+.article :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+.article :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+
+.pre-headline.first {
+    color:#FFDF00;
+}
+.pre-headline.second {
+    color:#C0C0C0;
+}
+.pre-headline.third {
+    color:#cd7f32;
+}
+.pre-headline.fifth {
+    color:#FF4500;
+}
+
+.article a {
+    color: #81C3F4;
+}
+.article a:hover {
+    color: #4183c4;
+}
+
+.side-image,
+.article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
+}
+.side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.side-image.card-image img {
+    width: 220px;
+}
+.side-image.card-image.ci-small img {
+    width: 125px;
+}
+
+.article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.article ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > ul {
+    padding: 0;
+}
+.article > ul > li {
+    margin-inline-start: 1em;
+}
+.article ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
+}
+
+.main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
+}
+.main-col-image img {
+    width: 100%; /* width of the main column */
+    height: auto;
+}
+
+.highlight {
+    color:#81C3F4;
+}
+.article blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+
+/* top 8 articles */
+h2 .epc-link,
+h3 .epc-link {
+    text-decoration: underline;
+}
+h2 .epc-link::before,
+h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article-table,
+.article-table tr,
+.article-table td,
+.article-table th {
+    border: 1px solid white;
+}
+.article-table td,
+.article-table th {
+    padding: 2px 3px;
+}
+.article-table thead th {
+    vertical-align: bottom;
+}
+.article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article-table thead th:nth-child(2),
+.article-table thead th:nth-child(3),
+.article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="/images/BackgroundArticles.jpg" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
+
+
+      <div id="newNavigation-menu" data-state="closed">
+
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
+
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <main class="newBodyGrid article">
+
+      <h1 class="title">Portrait of the Eternal power base as first-place <em>Saturday Challenge</em> finisher</h1>
+<p class="subtitle">Nishava took first place at the inaugural <a href="https://eternaltournaments.com/viewtournament/46">Kaelari's Saturday Challenge</a> event with an aggressive Combrei list entitled <em><a href="https://eternalwarcry.com/decks/details/BExhaKnK9VE/rakanos-weapons-are-outmatched">Rakano's weapons are outmatched!</a></em></p>
+<p class="subtitle">Let's take a look at their power bases using the <a href="/epc/">Eternal Power Calculator</a>:</p>
+<figure class="article-thumbnail"><img src="/images/articles/Portrait.png" alt="" width="250"></figure>
+<figure class="side-image"><img src="/images/articles/OutmatchedDecklist.png" alt="Decklist" title="Outmatched decklist"></figure>
+<figure class="main-col-image powerBase"><img src="/images/articles/OutmatchedPowerbase.jpeg" alt="Power Base" title="Outmatched power base"></figure>
+<p>One of the first things you might notice is that Nishava has included
+a lot of extra sources to help ensure that they will draw enough <strong>Power</strong>
+and <strong>Influence</strong> to play their early units on <strong>Turns 1</strong>,
+<strong>2</strong> and <strong>3</strong>.</p>
+<p>For many decks, &quot;extra power&quot; means including an additional power card
+beyond the minimum of 25. But here Nishava has included no fewer than
+28.</p>
+<p>A full playset of <em>Initiate of the Sands</em> brings the total
+number of <strong>Power</strong> sources in the deck to 32.</p>
+<figure class="main-col-image"><img src="/images/articles/OutmatchedChartTrimmedInitiate.jpeg" alt="Influence Chart" title="Outmatched influence chart"></figure>
+<h2>Time Quickens</h2>
+<figure class="side-image card-image ">
+  <img src="/images/cards/Initiate_of_the_Sands.png" alt="Initiate of the Sands card" width="220" height="350" loading="lazy">
+</figure>
+<p>The <strong>Influence Chart</strong> tells us that the pilot of
+this deck has a 91% chance of holding <img alt="Time" title="Time" src="/epc/icon-time.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> in
+their opening hand when going first, enough <strong>Influence</strong> to play <em>Initiate of
+the Sands</em> on <strong>Turn 1</strong>.</p>
+<p>This conveniently sets the table for playing one of the deck's twelve powerful 3-drops: <em>Kosul Battlemage</em>, <em>Unseen Commando</em>, and <em>Valkyrie Enforcer</em> each have an influence cost of <img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />.</p>
+<p>We can see that even at this early stage, the odds of drawing <img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> are quite good: 77% after two draws. After three draws the chances are even better - up to 83%.</p>
+<p>If Nishava is fortunate enough to draw undepleted power in the form of <em>Seat of Progress</em> it means that these units can be played as early as <strong>Turn 2.</strong></p>
+<p>And by surviving for at least one turn, <em>Intiate</em> enables even more powerful follow-up plays in the form of <em>Vanquisher's Blade</em> and <em>Copperhall Elite</em>.</p>
+<figure class="main-col-image"><img src="/images/articles/OutmatchedChartTrimmedJJ.jpeg" alt="Influence Chart" title="Outmatched influence chart 2"></figure>
+<h2>Mind Over Body</h2>
+<p>A 3-drop on <strong>Turn 2</strong> makes for a strong start, but what if <em>Initiate of the Sands</em> or <em>Seat of Progress</em> don't show up within the first couple of draws?</p>
+<p>Nishava still has plenty of options even without them.</p>
+<p><em>Crownwatch Paladin</em> (<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) or <em>Awakened Student</em> (<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) on <strong>Turn 2</strong> are just as likely to frustrate your opponent, if not more so.</p>
+<p>The chart shows us that the odds of drawing enough <strong>Influence</strong> to play either of these units on curve are in Nishava's favor:</p>
+<figure class="main-col-image"><img src="/images/articles/OutmatchedChartTrimmed2Drops.jpeg" alt="Influence Chart" title="Outmatched influence chart 3"></figure>
+<p>Note that the chances of playing <em>Crownwatch Paladin</em> are slightly better than for <em>Awakened Student</em>, and the <strong>Power Odds Table</strong> tells us why.</p>
+<p>To play <em>Awakened Student</em> you need to draw at least two <strong>Power</strong> and also two different <strong>Influence</strong> sources: both <img alt="Justice" title="Justice" src="/epc/icon-justice.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> and <img alt="Justice" title="Justice" src="/epc/icon-justice.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" />. For Nishava's first-place build, the combined odds of meeting each of these requirements after two draws are a healthy 87%.</p>
+<figure class="main-col-image"><img src="/images/articles/OutmatchedPowerOdds.jpeg" alt="Power Odds" title="Outmatched power odds"></figure>
+<p>Although <em>Crownwatch Paladin</em> requires the same amount of <strong>Power</strong> as <em>Awakened Student</em> - her <strong>Influence</strong> cost is less demanding, at a single <img alt="Justice" title="Justice" src="/epc/icon-justice.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" />. By consulting the table again we learn that the combined odds drawing enough <strong>Power</strong> <em>and</em> <strong>Influence</strong> to play <em>Crownwatch Paladin</em> after two draws are an even more comfortable 91%.</p>
+<h2>Teacher of Humility</h2>
+<figure class="side-image card-image ">
+  <img src="/images/cards/Teacher_of_Humility.png" alt="Teacher of Humility card" width="220" height="350" loading="lazy">
+</figure>
+<p>An aggressive deck like this one needs to be dropping units right out of the gate, and for the most part Nishava has a very good chance of doing just that on <strong>Turns 1</strong>, <strong>2</strong> and <strong>3</strong>.</p>
+<p>The exception is <em>Teacher of Humility</em>, a powerful 2-cost <img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> unit that has made quite an impression in the early <strong>Fall of Argenport</strong> meta. Nishava has chosen to prioritize their <img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> units over <em>Teacher</em> by including <strong>Time</strong> and <strong>Justice</strong> sources at a ratio of 21 <img alt="Time" title="Time" src="/epc/icon-time.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> to 23 <img alt="Justice" title="Justice" src="/epc/icon-justice.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" />.</p>
+<p>The odds of drawing enough <strong>Influence</strong> to play <em>Teacher</em> on curve trail behind the other 1 and 2-cost units by as much as 22%.</p>
+<p>Although this is a sizable gap, it makes sense because there are three times as many units requiring at least a single <strong>Justice</strong> influence.</p>
+<p><em>Teacher of Humility</em> is an especially valuable tool in matchups where your opponent relies on a lot of extra card draw. But she doesn't necessarily need to be played on <strong>Turn 2</strong> in order to be effective for this deck's aggressive strategy. In this case, it is more important to make sure you have the resources needed to take an early lead in controlling the board.</p>
+<h2>Unmatched!</h2>
+<p>Nishava has constructed a very reliable, low-risk power base for <em>Rakano's weapons are outmatched!</em>, and this undoubtedly contributed to their success in <strong>Kaelari's Saturday Challenge</strong>.</p>
+
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>

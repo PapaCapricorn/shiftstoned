@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Google Analytics gtag to go here - temporarily hidden -->
+
+
+
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Quadrographic:&lt;br&gt;featuring camat0 | ShiftStoned</title>
+
+<!-- Compatibility for older browsers goes here - temporarily hidden -->
+<!-- Resources for icons go here - temporarily hidden -->
+<!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+  <!-- CSS -->
+  
+  <link href="/styles/site.css" rel="stylesheet" type="text/css">
+  
+    <!-- page-specific styles -->
+    <style>
+    .article {
+    --block-margin: 1.5rem;
+}
+
+.article {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.article > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+
+.articleHeader {
+    margin-block-end: var(--block-margin);
+}
+.article .title,
+.article .subtitle,
+.article .tagline,
+.article hr,
+.article > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+.article .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+
+.article :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+.article :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+
+.pre-headline.first {
+    color:#FFDF00;
+}
+.pre-headline.second {
+    color:#C0C0C0;
+}
+.pre-headline.third {
+    color:#cd7f32;
+}
+.pre-headline.fifth {
+    color:#FF4500;
+}
+
+.article a {
+    color: #81C3F4;
+}
+.article a:hover {
+    color: #4183c4;
+}
+
+.side-image,
+.article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
+}
+.side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.side-image.card-image img {
+    width: 220px;
+}
+.side-image.card-image.ci-small img {
+    width: 125px;
+}
+
+.article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.article ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > ul {
+    padding: 0;
+}
+.article > ul > li {
+    margin-inline-start: 1em;
+}
+.article ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
+}
+
+.main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
+}
+.main-col-image img {
+    width: 100%; /* width of the main column */
+    height: auto;
+}
+
+.highlight {
+    color:#81C3F4;
+}
+.article blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+
+/* top 8 articles */
+h2 .epc-link,
+h3 .epc-link {
+    text-decoration: underline;
+}
+h2 .epc-link::before,
+h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article-table,
+.article-table tr,
+.article-table td,
+.article-table th {
+    border: 1px solid white;
+}
+.article-table td,
+.article-table th {
+    padding: 2px 3px;
+}
+.article-table thead th {
+    vertical-align: bottom;
+}
+.article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article-table thead th:nth-child(2),
+.article-table thead th:nth-child(3),
+.article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="/images/BackgroundArticles.jpg" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
+
+
+      <div id="newNavigation-menu" data-state="closed">
+
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
+
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <main class="newBodyGrid article">
+
+      <h1 class="title">QUADRAGRAPHIC: Four decks, four Power bases, one winner </h1>
+<p class="subtitle"><strong>camat0</strong> sits down with <strong>Shiftstoned</strong> to discuss the <strong>Power bases</strong> behind all four of his winning lists from the <a href="https://www.tgpeternal.com/tournaments/">Eternal Community League's</a> inaugural <a href="https://www.twitch.tv/videos/293451380">Sunday Challenge</a> event. We talk <strong>Power</strong>, <strong>Crests</strong>, fixing and the merits of <strong>Privilege of Rank</strong>.</p>
+<figure class="article-thumbnail"><img src="/images/articles/Qaudragraphic.jpeg" alt="" width="250"></figure>
+<p class="tagline"><strong>camat0</strong> is a name familiar to anyone who follows competitive <strong>Eternal</strong>. The current reigning <a href="https://rngeternal.com/ets/">Eternal Tournament Series</a> <strong>World Champion</strong> and <strong>2018 All-Star</strong> is showing no signs of slowing down this year.</p>
+<p class="tagline"><strong>Shiftstoned</strong> caught up with him recently to discuss the results of his recent first-place finish at <a href="https://eternalwarcry.com/tournaments/details/kjeRWj2dzBs/ecl-sunday-challenge-swiss">ECL's Sunday Challenge</a>, an event that uses a <a href="https://www.tgpeternal.com/tournament-rules">Conquest format</a> where each participant brings four decks to the battle.</p>
+<h2>Part I - The New Icaria Black</h2>
+<figure class="side-image"><img src="/images/articles/IblackDecklist.jpeg" alt="Decklist" title="Icaria Black decklist"></figure>
+<p class="tagline"><strong>camat0's</strong> <em>Removal Pile</em>, updated for the <strong>Fall of Argenport</strong>. How has the <strong>Power</strong> base changed and what makes it even better now?</p>
+<figure class="main-col-image"><img src="/images/articles/FJSControlChart.jpeg" alt="Influence chart" title="Icaria Black influence chart"></figure>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+You chose this list for one of your four decks this past Sunday as part of the event's Conquest format. But the origins of this deck stretch back a while…</p>
+<p><strong>camat0:</strong><br>
+This is the first deck I built with the <strong>Fall of Argenport</strong>. In fact I built this deck the day after <strong>Fall of Argenport</strong> was legal, and it has changed very little from there.</p>
+<p>But this version of** FJS** is basically an updated version of <em>Removal Pile</em>, the deck I made to break the <strong>Tavrod</strong> meta back in early 2018.</p>
+<p>At that time, manuS and I finished first and second in the <strong>Eternal Tournament Series</strong> <a href="https://eternalwarcry.com/tournaments/details/YYwl2hhlUDs/ets-weekly-top-8">weekly swiss event</a> with that version of the deck, the first tournament we ever played it.</p>
+<figure class="side-image card-image ">
+  <img src="/images/cards/Crest_of_Glory.png" alt="Crest of Glory card" width="220" height="350" loading="lazy">
+</figure>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Since then, some things have changed in the way <strong>Power</strong> bases are built in <strong>Eternal</strong>. One of the major differences between this list and the previous versions appears to be the inclusion of all 12 available <strong>Crests</strong>.</p>
+<p class="highlight">How do you think this has improved the deck?</p>
+<p><strong>camat0:</strong><br>
+<strong>Crests</strong> changed the game at a fundamental level. They not only made every <strong>Control</strong> and <strong>Midrange</strong> deck more consistent, but they also allow <strong>Control</strong> decks to play more <strong>Power</strong> without flooding out.</p>
+<p>Now that we have all ten of the <strong>Crests</strong>, I think every <strong>Control</strong> deck that plays three colors should play at least one or two more <strong>Power</strong> cards than they used too. In the end, I find more <strong>Power</strong> makes your deck work better in every way now.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Right, the previous version included just the minimum of 25 <strong>Power</strong> cards, but now you have a total of 26 <strong>Sigils</strong>, <strong>Crests</strong> and <strong>Waystones</strong> here.</p>
+<p><strong>camat0:</strong><br>
+Yes. Also the existence of <strong>Crests</strong> makes it really hard to justify two color <strong>Control</strong> decks any more. You want the <strong>Crest</strong> even if they are off-color, and at that point splashing another color is just too easy.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+It looks like you also added an extra copy of <strong>Privilege of Rank</strong>, another <strong>Power</strong> source…</p>
+<p><strong>camat0:</strong><br>
+Many people play <strong>Privilege of Rank</strong> only because it has synergy with <strong>Bulletshaper</strong> or other discard effects, when the truth is that the card is just good.</p>
+<p class="tagline">I'm happy to hard cast the card in a lot of decks, but most people don't and I think that is why it was so underplayed.</p>
+<h2>Part II - The Boogeyman</h2>
+<figure class="side-image"><img src="/images/articles/CallMeDecklist.jpeg" alt="Decklist" title="Call Me Maybe decklist"></figure>
+<p class="tagline"><strong>camat0's</strong> <em>Call Me Maybe</em> is a complicated list with a <strong>Power</strong> base that has seen much refinement since its early origins as a <em>Charge Rod</em> deck.</p>
+<figure class="main-col-image"><img src="/images/articles/CallMeChart.jpeg" alt="Influence chart" title="Call Me Maybe influence chart"></figure>
+<p>[<strong>Edit:</strong> As this article was being finalized, <strong>Dire Wolf Digital</strong> <a href="https://steamcommunity.com/games/531640/announcements/detail/1692677521819338427">announced</a> that <strong>Answer the Call</strong> has been nerfed to <strong>7<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /></strong>. While it remains to be seen what impact this will have on <strong>Eternal</strong>, the image above and conversations with camat0 have been preserved to reflect the state of the meta at the time of his first-place tournament finish with this deck.]</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+For a while now, <strong>Divining Rod</strong> has allowed players to cheat out units that their <strong>Power</strong> base wouldn't normally support by playing them automatically from the deck rather than from hand. But it has remained something of a fringe strategy. What changed?</p>
+<figure class="side-image card-image ">
+  <img src="/images/cards/Answer_the_Call.png" alt="Answer the Call card" width="220" height="350" loading="lazy">
+</figure>
+<p><strong>camat0:</strong><br>
+The key for <em>Charge Rod</em> was to stop playing the cards (like <strong>Heart of the Vault</strong> or <strong>Alluring Ember</strong>) that made the <strong>Power</strong> base so hard. This last version of the deck has a very good <strong>Power</strong> base, so hard casting your cards [ie: playing them at full cost] is not a problem at all if you can survive.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Still, the <strong>Influence Chart</strong> demonstrates that there is a lot of competition for hitting fairly demanding <strong>Influence</strong> requirements in the mid to late game. With only a moderate amount of additional card draw. What makes this possible?</p>
+<p><strong>camat0:</strong><br>
+I do believe one of the most important cards in the deck is again <strong>Privilege of Rank</strong> because the deck is so <strong>Power</strong> hungry, and basically can't win if you don't hit six <strong>Power</strong> on <strong>Turn 6</strong> [for <strong>Answer the Call</strong>].</p>
+<p>And to play that card, it was necessary to make the deck almost exclusively <strong>Rakano</strong> (<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), and only splash the most necessary card from <strong>Time</strong> - <strong>Divining Rod</strong>.</p>
+<p>I also play <strong>Diogo Málaga</strong> because it is not that hard to make it playable once we already play <strong>Divining Rod</strong> and he is very important for the early game of the deck.</p>
+<p><strong>Granite Waystone</strong> is also a particularly great <strong>Power</strong> card in this deck. It gives you you a free card to exchange in the <strong>Market</strong>, and also this little 1/1 transforms into a real threat when you play <strong>Kaleb, Uncrowned Prince</strong>.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+The addition of <strong>Answer the Call</strong> has added weapons to the <em>Charge Rod</em> strategy of cheating out units, and pushed this deck into more mainstream success. Is it the 6<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> spell [now 7<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />] that holds it all together?</p>
+<p><strong>camat0:</strong><br>
+Yes, <strong>Answer the Call</strong> is the best card in the deck by a lot. You can win a game from an empty board with <strong>Answer the Call</strong>. Because you have like a 30% chance to hit <strong>Divining Rod</strong> and more than 75% to hit a <strong>Charge</strong> unit, so you make crazy stuff a lot of the time.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+You wrote at length about your thoughts on <em>Charge Rod</em> as part of your <a href="https://eternaltitans.com/camat0s-h0t-takes-7-31/">weekly metagame analysis</a> on the <strong>Eternal Titans</strong> website. In addition to thanking your team mate Grimfan for his role in the deck's evolution, you spoke frankly about your feelings towards<a href="https://www.mtgsalvation.com/forums/magic-fundamentals/magic-general/515411-fair-unfair-decks">so-called &quot;unfair&quot;</a> decks (ie: decks that win with explosive or high-rolling combos) in <strong>Eternal</strong>.</p>
+<p class="highlight">Do the cards exist now for more unfair decks that have yet to be discovered or refined? <strong>Dramatist's Mask</strong> for example…</p>
+<p><strong>camat0:</strong><br>
+I don't think <strong>Dramatist's Mask</strong> will see competitive play, because it is just to easy to interact with for the opponent.</p>
+<p>But I do think the game is very friendly to unfair decks in general right now. <strong>Markets</strong> in particular made a lot of unfair decks possible with the consistency they add to the deck</p>
+<h2>Part III - Even higher voltage</h2>
+<figure class="side-image"><img src="/images/articles/CombreiDecklist.jpeg" alt="Decklist" title="Combrei decklist"></figure>
+<p class="tagline">Shiftstoned recently featured an article on a <a href="/articles/HighVoltage.html">first-place tournament deck</a> that included 39 Power Sources, which seemed pretty extreme at the time. Yet camat0's list contains no less than 41 <strong>Power</strong> Sources - well over half of the 75 cards in the deck. Are we seeing an escalating <strong>Power</strong> meta?</p>
+<figure class="main-col-image"><img src="/images/articles/CombreiChart.jpeg" alt="Influence chart" title="Combrei influence chart"></figure>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+What makes <strong>Power</strong> so important in a deck that tops out at 4? (Or 6 if you include <strong>Sword of Unity's Spellcraft</strong>…)</p>
+<p><strong>camat0:</strong><br>
+Turns out that playing <strong>Initiate of the Sands</strong> into <strong>Trail Maker</strong> into 3 more units, and playing <strong>Stand Together</strong> or <strong>Sword of Unity</strong> before <strong>Turn 5</strong> beats most slow decks. It is just too much pressure and they can't even answer it with <strong>Harsh Rule</strong> [because of all the units with <strong>Aegis</strong>].</p>
+<figure class="side-image card-image ">
+  <img src="/images/cards/Sword_of_Unity.png" alt="Sword of Unity card" width="220" height="350" loading="lazy">
+</figure>
+<p>This deck is all about curving out into <strong>Stand Together</strong> or <strong>Sword of Unity</strong>. Once you do that, they lose because they are too far behind in the board and can't play a board clear. So the <strong>Power</strong> is really important to make sure you can accomplish that.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+This deck seems to play pretty fast. How would you characterize it? Is it? Midrange? Aggressive midrange? Something different?</p>
+<p><strong>camat0:</strong><br>
+I will say this is a <strong>Midrange</strong> deck, but most of the time it plays like a hyper aggressive deck. In this case I don't think the deck is great - really it is mediocre - but I made it to target slow decks, just to punish slow decks in the tournament.</p>
+<p>And also you have the Plan B of using <strong>Ironfist Chancellor</strong> each turn if you stall. It is not that hard to protect him. And in particular if you ever play <strong>Sword of Unity</strong> on him, he becomes a nightmare for any deck.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Did you consider including any <strong>Standards</strong> for the synergy with <strong>Alessi</strong>?</p>
+<p><strong>camat0:</strong><br>
+I don't want <strong>Standards</strong> in this deck because it is all about curving out. The extra cards are way less important than having the board early and casting <strong>Stand Together</strong> on it.</p>
+<h2>Part IV - Haters gonna hate</h2>
+<figure class="side-image"><img src="/images/articles/TJPDecklist.jpeg" alt="Decklist" title="TJP Hatebears decklist"></figure>
+<p class="tagline">camat0's <em>TJP Hatebears</em> is a three-color build that prioritizes <strong>Time</strong> and <strong>Undepleted Power</strong> for <strong>Turn 2</strong> <strong>Teachers of Humility</strong> (<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Turn 6 Predatory Carnosaurs</strong> (<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), with a little <strong>Svetya, Orene of Kosul</strong> (<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) in between.</p>
+<figure class="main-col-image"><img src="/images/articles/TJPHatebearsChart.jpeg" alt="Influence chart" title="TJP Hatebears influence chart"></figure>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+What were your thoughts when constructing the <strong>Power</strong> base for <em>TJP Hatebears</em>?</p>
+<p><strong>camato:</strong><br>
+To make a power base that can support <strong>Initiate of the Sands</strong> on <strong>Turn 1</strong> and <strong>Teacher of Humility</strong> on Turn 2, I needed to make a sacrifice and and only splash the other colors.</p>
+<p>As you can see I don't play [higher Influence] cards like <strong>Valkyrie Enforcer</strong> (<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) or <strong>Hooru Pacifier</strong> (<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). I would love to have them in the deck, but I just can't support them.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+That brings up a great point that newer deck builders may be able to learn from. When building a three color <strong>Power</strong> base, you often want to prioritize cards in a certain color. So you are probably better off playing weaker cards (with lower <strong>Influence</strong> costs) in the secondary colors.</p>
+<p><strong>camat0:</strong><br>
+For sure. In general I say that people play less <strong>Power</strong> or fixing [ie: <strong>Influence</strong> sources for secondary colors] than they should.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Although you have one <strong>Crystallize</strong> in the Market, every other card in this deck is either <strong>Time</strong> or only has a single influence in any one color (including <img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> and <img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p class="highlight">This allows you to hit your priority <strong>Influence</strong> requirements quite reliably. And all this is accomplished without any additional card draw beyond <strong>Seek Power</strong>.</p>
+<figure class="side-image card-image ">
+  <img src="/images/cards/Diplomatic_Seal.png" alt="Diplomatic Seal card" width="220" height="350" loading="lazy">
+</figure>
+<p><strong>camat0:</strong><br>
+The key in this <strong>Power</strong> base is <strong>Diplomatic Seal</strong>. It is this card that allows you to build three color <strong>Power</strong> bases for aggressive decks.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Right, because the <strong>Undepleted Power</strong> lets you play your one and two-cost units early. It is also worth mentioning that you have a lot more potential for <strong>Undepleted Power</strong>, in the form of <strong>Seats</strong> instead of <strong>Crests</strong>.</p>
+<p class="highlight">So you are maximizing your chances of playing important units on curve at every stage of the game. It is a very different approach from the <strong>FJS Control</strong> deck we were looking at earlier.</p>
+<p><strong>camat0:</strong><br>
+Yes, as you say I only have 2 <strong>Crests</strong>, and the reason for that is to have most of my power <strong>Undepleted</strong>. With 2 <strong>Crests</strong> and 4 <strong>Seek Power</strong>, I will draw less than two of them in most of my hands - making the deck curve out most of the time.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+What does the future hold for <strong>TJP Hatebears</strong>?</p>
+<p><strong>camat0:</strong><br>
+This is a very powerful deck and I think it is good, but it is not great. I'm not sure what is missing yet to make this deck great, but for sure I think it has a lot of potential.</p>
+<p><strong>Shiftstoned:</strong><br>
+We are all looking forward to seeing what you come up with next.</p>
+<h2>Epilogue: By Law and Conquest</h2>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Before we finish, can you describe for the readers what you might have done differently this time to prepare for a competitive event using the Conquest format? Was there anything extra involved in preparing four decks?</p>
+<p><strong>camat0:</strong><br>
+I'm not sure what is the best strategy for Conquest yet. I do think you can try to target the metagame like I did last week, with all decks that are strong vs <strong>Control</strong> and clunky decks in general. But I don't think that is the only way to do it or the best one.</p>
+<p>On the other hand, I think you need to play strong decks. That doesn't mean they can't have weakness. But you can't play a lineup with four decks that lose to the same thing. Let's say your lineup is weak to <strong>Stand Together</strong> and your opponent has two decks with that card - then even with the ban you will end losing. Try to play decks that can beat anything a reasonable amount of the time.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Thanks for taking the time to chat camatO. You've given the readers a lot to think about.</p>
+<p class="highlight">Congratulations on your first place finish in the debut of <strong>Eternal Community League's Sunday Challenge</strong>. Hope you will <strong>Answer the Call</strong> and return to <strong>Shiftstoned</strong> again next time we ask for an interview.</p>
+<p><strong>camat0:</strong><br>
+Jajajaja</p>
+<p class="tagline">Video of the ECL Sunday Challenge can be viewed on <a href="https://www.twitch.tv/videos/293451380">The Great Parliament's Twitch channel</a>.</p>
+
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>

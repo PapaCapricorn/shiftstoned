@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Google Analytics gtag to go here - temporarily hidden -->
+
+
+
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Burning Hope | ShiftStoned</title>
+
+<!-- Compatibility for older browsers goes here - temporarily hidden -->
+<!-- Resources for icons go here - temporarily hidden -->
+<!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+  <!-- CSS -->
+  
+  <link href="/styles/site.css" rel="stylesheet" type="text/css">
+  
+    <!-- page-specific styles -->
+    <style>
+    .article {
+    --block-margin: 1.5rem;
+}
+
+.article {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.article > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+
+.articleHeader {
+    margin-block-end: var(--block-margin);
+}
+.article .title,
+.article .subtitle,
+.article .tagline,
+.article hr,
+.article > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+.article .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+
+.article :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+.article :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+
+.pre-headline.first {
+    color:#FFDF00;
+}
+.pre-headline.second {
+    color:#C0C0C0;
+}
+.pre-headline.third {
+    color:#cd7f32;
+}
+.pre-headline.fifth {
+    color:#FF4500;
+}
+
+.article a {
+    color: #81C3F4;
+}
+.article a:hover {
+    color: #4183c4;
+}
+
+.side-image,
+.article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
+}
+.side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.side-image.card-image img {
+    width: 220px;
+}
+.side-image.card-image.ci-small img {
+    width: 125px;
+}
+
+.article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.article ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > ul {
+    padding: 0;
+}
+.article > ul > li {
+    margin-inline-start: 1em;
+}
+.article ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
+}
+
+.main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
+}
+.main-col-image img {
+    width: 100%; /* width of the main column */
+    height: auto;
+}
+
+.highlight {
+    color:#81C3F4;
+}
+.article blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+
+/* top 8 articles */
+h2 .epc-link,
+h3 .epc-link {
+    text-decoration: underline;
+}
+h2 .epc-link::before,
+h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article-table,
+.article-table tr,
+.article-table td,
+.article-table th {
+    border: 1px solid white;
+}
+.article-table td,
+.article-table th {
+    padding: 2px 3px;
+}
+.article-table thead th {
+    vertical-align: bottom;
+}
+.article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article-table thead th:nth-child(2),
+.article-table thead th:nth-child(3),
+.article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="/images/BackgroundArticles.jpg" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
+
+
+      <div id="newNavigation-menu" data-state="closed">
+
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
+
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <main class="newBodyGrid article">
+
+      <h1 class="title">Burning Hope: ECQ Rundown</h1>
+<p class="subtitle">Taking a look at the Top Eight decks from <a href="https://www.direwolfdigital.com/news/eternal-championship-qualifier-burning-hope/" title="Eternal Championship Qualifier: Burning Hope">Burning Hope</a>, the second official <strong>2019 Championship Qualifier</strong> for <a href="https://www.direwolfdigital.com/eternal/">Eternal Card Game</a></p>
+<p class="tagline"><strong>Power</strong> portraits for the finalists from the first offical tournament to feature <strong>Set 5: Defiance</strong></p>
+<figure class="article-thumbnail"><img src="/images/articles/BurningHope.jpeg" alt="" width="250"></figure>
+<hr>
+<p><strong><time datetime="2019-01-19T00:00:00.000Z">January 19, 2019</time></strong> - With the conclusion of <strong>Burning Hope</strong> we are one step closer to the <strong>2019 Eternal World Championship</strong>, and two more players have earned an invitation to the main event. Congratulations to <strong>DarkestHour</strong> and <strong>trumpets</strong> for advancing to the next round, and to all those who qualified for the <strong>ECQ</strong>.</p>
+<h2>The Top Eight</h2>
+<p class="tagline"><span style="font-size: 1.7em;">F</span>or
+<span style="font-size: 1.7em;">J</span>ekk's
+<span style="font-size: 1.7em;">S</span>ake! Winchest reigns</p>
+<p><strong>Fire</strong> was featured in every one of the <strong>Top Eight</strong> decks from the competition, with <strong>Winchest</strong> <img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> composing more than half of lists in both the finals and the tournament overall. Yet each of the winners built their list somewhat differently.</p>
+<p class="highlight">All of the summaries here include a standout feature describing what sets each deck apart from the others.</p>
+<div class="pre-headline first">1st place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=CA4BCA3BDA8BEB4MEBIDBvEEBjMDBBDB-DCB5HECsHEDsICDoIEEzHEE2HEFkBEFmGEFwGEFyGEFvHDpfPEsfTCAABBsFBB9JBF_CBFuDBF1G&amp;t=DarkestHour's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="epc-link" target="_blank">DarkestHour's Deck</a> (Winchest Midrange)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Martyr's_Chains.png" alt="Martyr's Chains card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>The winning deck forgoes <strong>Winchest Cargo</strong> in favor of a full playset of <strong>Seek Power</strong>. While <strong>DarkestHour</strong> misses out on the opporunity for new cards created by <strong>Winchest Contraband</strong>, this means they can more reliably reach the <strong>Power</strong> and <strong>Influence</strong> requirements for both <strong>Xo of the Endless Hoard</strong> (7<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Martyr's Chains</strong>(9<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). More importantly perhaps, both <strong>Seek Power</strong> and <strong>Lost Scroll</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) provide additional <strong>Power</strong> cards for the devastating <strong>Empower</strong> ability of <strong>Martyr's Chains</strong>. With <strong>Chains</strong> in play, <strong>Seek Power</strong> effectively becomes a 1-cost <strong>Slay</strong> as long as you have <strong>Sigils</strong> to draw.</p>
+<!-- 20F, 21J, 21S  A nearly even distribution of F, J and S sources with a total of ten **Crests**. 3x **Quarry** helps to build in some potential cost reducion in addition to card draw. -->
+<p><strong class="highlight">Standout feature:</strong> Does not include any cards that can not also be found in other <strong>Winchest</strong> lists from the <strong>Top Eight</strong>, but <strong>DarkestHour's</strong> is the only version to main deck a full set of <strong>Statuary Maiden</strong>.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=CA4BCA3BDA8BEB4MEBIDBvEEBjMDBBDB-DCB5HECsHEDsICDoIEEzHEE2HEFkBEFmGEFwGEFyGEFvHDpfPEsfTCAABBsFBB9JBF_CBFuDBF1G&amp;t=DarkestHour's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="arrow-link" target="_blank">view deck</a></p>
+<div class="pre-headline second">2nd place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=CA4BCA3BDA8BEB4MEBIBBtIDBjMDBBGB-DDB5HECsHDDsIDDoICEzHEE2HEFkBEFmGEFwGEFyGEFvHEsfMEsfTCAABBvEBFtCBFuDBF1GBrfB&amp;t=trumpets'%20Deck%20%7BECQ%20Burning%20Hope%7D" class="epc-link" target="_blank">trumpets' Deck</a> (Winchest Midrange)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Telut,_Queen's_Hand.png" alt="Telut, Queen's Hand card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>The absence of both <strong>Vicious Highwayman</strong> (4<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and also <strong>Deepforged Plate</strong> (5<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) means that <strong>trumpets</strong> can go lighter on <img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> sources. This frees up space for six <strong>Justice Sigils</strong>, providing plenty of extra fuel for <strong>Telut, Queen's Hand</strong> (7<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). While powerful on its own, <strong>Telut's</strong> ability adds yet another <strong>Power</strong> playing effect to enable <strong>Martyr's Chains</strong> (9<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) — potentially allowing <strong>trumpets</strong> to take out two enemy units in a single turn for free.</p>
+<p><strong class="highlight">Standout features:</strong> With a total of 27 primary <strong>Power</strong> sources (<strong>Sigils, Seats</strong> and <strong>Crests</strong>) <strong>trumpets'</strong> is the only list in the <strong>Top Eight</strong> to include more than the minimum requirement of 25, and also the only deck that includes <strong>Telut, Queen's Hand</strong>.</p>
+<!-- 17F, 23J, 22S  -->
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=CA4BCA3BDA8BEB4MEBIBBtIDBjMDBBGB-DDB5HECsHDDsIDDoICEzHEE2HEFkBEFmGEFwGEFyGEFvHEsfMEsfTCAABBvEBFtCBFuDBF1GBrfB&amp;t=trumpets'%20Deck%20%7BECQ%20Burning%20Hope%7D" class="arrow-link" target="_blank">view deck</a></p>
+<div class="pre-headline third">3rd place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=CA4BDA3BDA8BCB4MEBICBmFDBsFCBtIDBBDB-DCB5HECsHCDzIDDsIDDoIDEzHEE2HDFkBBFtCBF_CEFmGCFwGDFyGCFtHEFvHDpfPEsfTCAABBvEBB9JBBjMBF1GBrfB&amp;t=xSTEALTHx's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="epc-link" target="_blank">xSTEALTHx's Deck</a> (Winchest Midrange)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Winchest_Contraband.png" alt="Winchest Contraband card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>By omitting <strong>Martyr's Chains</strong>, the 3rd Place list has a slightly lower curve than the frontrunners, topping out with <strong>Xo of the Endless Hoard</strong> (7<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). Perhaps accordingly, <strong>xSTEALTHx</strong> cuts back on <strong>Power</strong> drawing spells — totalling six instead of the expected eight. An even split between <strong>Seek Power</strong> and <strong>Lost Scroll</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) is included, along with two more conditional sources in the form of <strong>Winchest Cargo</strong>/<strong>Winchest Contraband</strong>.</p>
+<!-- 18F. 20J, 20S - 2 Seek Power, 2 Winchest Cargo, 2 Lost scroll. No chains. -->
+<p><strong class="highlight">Standout feature:</strong> The only finishing list to include <strong>Harsh Rule</strong> (5<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) in the main deck, <strong>xSTEALTHx</strong> appropriately goes lighter on <strong>Units</strong> (21 total) and bigger on <strong>Auric Runehammer</strong> (4<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=CA4BDA3BDA8BCB4MEBICBmFDBsFCBtIDBBDB-DCB5HECsHCDzIDDsIDDoIDEzHEE2HDFkBBFtCBF_CEFmGCFwGDFyGCFtHEFvHDpfPEsfTCAABBvEBB9JBBjMBF1GBrfB&amp;t=xSTEALTHx's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EA4BEBNEBOCBXEBmEEBIEBiEEBrNEB6JEBpNEBBHB-DED-HEE5DCEBEF2CEF_CEFlGEFmGCAABBwBBBgEBBvEBB9JBEhD&amp;t=chriseay's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="epc-link" target="_blank">chriseay's Deck</a> (Rakano Aggro)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Hojan,_Crownbreaker.png" alt="Hojan, Crownbreaker card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>Much lower to the ground than any of the other decks featured here, this list tops out at <strong>3 Power</strong> in the main deck, for <strong>Whirling Duo</strong> (3<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), <strong>Red Canyon Smuggler</strong> (3<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Avigraft</strong> (3<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). Meanwhile, more expensive cards are relegated to the <strong>Black Market</strong>, including a single <strong>Deepforged Plate</strong> (5<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and one of <strong>Obliterate</strong> (5<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). No less than seven <strong>Justice Sigils</strong> help to ensure that <strong>Hojan, Crownbreaker's</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) <strong>Renown</strong> ability reliably finds <strong>Power</strong> to draw without whiffing at any stage of the game. Even so, as a two-faction list with a low curve this deck has no trouble reaching its <strong>Power</strong> and <strong>Influence</strong> requirements. So it has room to include a pair of <strong>Shugo Standards</strong>, helping to advance the aggresive strategy.</p>
+<p><strong class="highlight">Standout feature:</strong> This deck really wants to play <strong>Units</strong> on <strong>Turns 1</strong> and <strong>2</strong>, so <strong>chriseay</strong> has built in total of 15 <strong>Undepleted Power</strong> sources, including the conditional <strong>Influence</strong> source <strong>Diplomatic Seal</strong>.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EA4BEBNEBOCBXEBmEEBIEBiEEBrNEB6JEBpNEBBHB-DED-HEE5DCEBEF2CEF_CEFlGEFmGCAABBwBBBgEBBvEBB9JBEhD&amp;t=chriseay's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="arrow-link" target="_blank">view deck</a></p>
+<div class="pre-headline fifth">5th place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EA1BEF3GEDMEDlFEDBDF7GDDHEDqIBsfCEB6GGB7FDBBDBdEB4MEBFEE_FEE7FEBIEC6FCFkBCBjHCAABCnGBrfBBDnFBEjFBFtE&amp;t=%C2%A0_Kubi_'s%20Deck%20%7BECQ%20Burning%20Hope%7D" class="epc-link" target="_blank">_Kubi_'s Deck</a> (Winchest Midrange)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Combustion_Cell.png" alt="Combustion Cell card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 23F/22P  -->
+<p><strong>Fire</strong> is slightly prioritized over <strong>Primal</strong> to help ensure that an early <strong>Grenadin Drone</strong> (1<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) can reliably be played on <strong>Turn 1</strong> going first, or a <strong>Torch</strong> (1<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) on the draw. As with the only other player piloting a <strong>2 Faction</strong> deck in the <strong>Top Eight</strong>, <strong>_Kubi_</strong> can expect to reach their <strong>Influence</strong> requirements quite comfortably on curve — in this case including even the steeper costs for <strong>Xo of the Endless Hoard</strong> (7<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Molot &amp; Nakova</strong> (8<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).  In a <strong>2 Faction Fire</strong> deck there is usually very little downside to including a full playset of <strong>Granite Waystones</strong> as <strong>_Kubi_</strong> does here. And in this case it makes even more sense, since combustible <strong>Grenadin</strong> are a central part of this deck's game plan.</p>
+<p><strong class="highlight">Standout feature:</strong> In addition to the cards already mentioned, when you also account for <strong>Kenna, Shaman of the Scale</strong> (7<img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), <strong>_Kubi_'s</strong> deck includes more triple-<strong>Influence</strong> cards than any other featured here, underscoring the upside to being in less than 3 factions.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EA1BEF3GEDMEDlFEDBDF7GDDHEDqIBsfCEB6GGB7FDBBDBdEB4MEBFEE_FEE7FEBIEC6FCFkBCBjHCAABCnGBrfBBDnFBEjFBFtE&amp;t=%C2%A0_Kubi_'s%20Deck%20%7BECQ%20Burning%20Hope%7D" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EBFEBICB6HBB7HDBlIDBrIEBhNEBjNEBlMDBoMEBpNDB2LDC6FEC7FDDzIEDBBDsIDDrICDqIEEiIEE5EEE5GCElICF6ECAABBoMBB2LBDzIBFzFBsfT&amp;t=Paradox's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="epc-link" target="_blank">Paradox's Deck</a> (FPS Scream/Haunted Highway)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Granite_Waystone.png" alt="Granite Waystone card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>Speaking of combustible <strong>Grenadin</strong>, disposable drones play a different but equally important role in this list. <strong>Paradox</strong> needs cheap <strong>Combust</strong> (1<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) targets and also  backup <strong>Units</strong> for <strong>Bandit Queen's</strong> (4<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) charging <strong>Quickdraw</strong> attacks, so 4x <strong>Granite Waystone</strong> is a natural choice even though this <strong>3-faction</strong> list has more demanding <strong>Influence</strong> requirements. Fortunately <strong>Diplomatic Seal</strong> is included to help meet the demands, providing <strong>Undepleted Power</strong> and early color fixing.</p>
+<!-- 18F/15P/16S - Fire given silght preference for Bandit Queen, Granite Waystone provides 1/1s for Combust and Queen attacks. Diplo seals. -->
+<p><strong class="highlight">Standout feature:</strong> <strong>Defiance</strong> introduced a powerful new tool for this archetype in the form of <strong>Secret Pasage</strong> (1<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), but otherwise the list has changed very little with <strong>Eternal's</strong> newest expansion. <strong>Paradox's</strong> deck includes fewer <strong>Set 5</strong> cards than any other in the <strong>Top 8</strong> ‐ just <strong>Secret Passage</strong> and one copy of <strong>Bloodlust</strong> (6<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) in the <strong>Market</strong>.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EBFEBICB6HBB7HDBlIDBrIEBhNEBjNEBlMDBoMEBpNDB2LDC6FEC7FDDzIEDBBDsIDDrICDqIEEiIEE5EEE5GCElICF6ECAABBoMBB2LBDzIBFzFBsfT&amp;t=Paradox's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EA8BEBIBBmFEB9EBBBHB-DBB5HDCsHEDsIEDoIEE0HEEzHEE2HEFkBEFmGEFwGEFyGEFtHEFvHEpfPCsfTCAABBvEBBjMBFuDBF1GBrfB&amp;t=SunyVeil's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="epc-link" target="_blank">SunyVeil's Deck</a> (Winchest Midrange)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Bulletshaper.png" alt="Bulletshaper card" width="125" height="198.867" loading="lazy">
+</figure>
+<p><strong>Justice</strong> is heavily favored in this take on <strong>Winchest</strong> midrange, which by far includes more <strong>Power</strong> and <strong>Influence</strong> sources than any other to be found here. Seven <strong>Justice Sigils</strong> are waiting to be drawn by <strong>Privilege of Rank</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), going hand-in-hand with <strong>Bulletshaper's</strong>(2<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) discard ability. With help from this duo, <strong>SunyVeil</strong> can confidently run 4x <strong>Winchest Cargo</strong> in favor of <strong>Seek Power</strong>. While <strong>Cargo's</strong> <strong>Transmute</strong> effect may make it less consistent, the <strong>Privilege/BulletShaper</strong> package make up the difference, and the potential downside is offset by the opportunities created with <strong>Winchest Contraband</strong>.</p>
+<!-- 21F, 35J, 21S - Justice heavily favored, Martyr's Cross, Bulletshaper, Lost Scroll, Winchest Cargo, no seek Power, 8 Crests, Privilege of Rank. -->
+<p><strong class="highlight">Standout feature:</strong> In addition to the extra <strong>Power</strong> and <strong>Influence</strong> sources found here, every <strong>Crest</strong> available to the <strong>Winchest</strong> alliance is included — giving SunyVeil no less than 12 opportunites to <strong>Scout</strong> for the cards he needs.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EA8BEBIBBmFEB9EBBBHB-DBB5HDCsHEDsIEDoIEE0HEEzHEE2HEFkBEFmGEFwGEFyGEFtHEFvHEpfPCsfTCAABBvEBBjMBFuDBF1GBrfB&amp;t=SunyVeil's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EA3BEA8BEBIDB3ECBmFBBvECBtIDBBDB-DDB5HECsHDDzIDDsICDoIDEzHEE2HEFkBEFmGEFyGEFtHEFvHDpfPEsfTCAABBsFBBrNBB9JBF1GBrfB&amp;t=Sannd's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="epc-link" target="_blank">Sannd's Deck</a> (Winchest Midrange)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Regent's_Tomb.png" alt="Regent's Tomb card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>Taking a more <strong>Unit</strong>-based approach than any of the other <strong>Winchest</strong> decks seen here, this list goes lighter on <strong>Power</strong> draw spells to include role players such as <strong>Valkyrie Enforcer</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and three of <strong>Vicious Highwayman</strong> (4<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) in the main deck. Although <strong>Xo of the Endless Hoard</strong> (7<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) can still be found at the top end, the extra 3-drops lower <strong>Sannd's</strong> curve, as does the absence of <strong>Martyr's Chains</strong>.</p>
+<!-- Four Winchest Cargos but no Lost Scrolls. Curve tops out at 7 for Xo and no Martyr's Cross.  -->
+<p><strong class="highlight">Standout feature:</strong> The only <strong>Winchest</strong> deck in the <strong>Top 8</strong> to prioritize <strong>Shadow</strong> over the other two factions in the <strong>Power</strong> base, most likely to reliably play <strong>Vicious Highwayman</strong> when it counts.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EA3BEA8BEBIDB3ECBmFBBvECBtIDBBDB-DDB5HECsHDDzIDDsICDoIDEzHEE2HEFkBEFmGEFyGEFtHEFvHDpfPEsfTCAABBsFBBrNBB9JBF1GBrfB&amp;t=Sannd's%20Deck%20%7BECQ%20Burning%20Hope%7D" class="arrow-link" target="_blank">view deck</a></p>
+<hr>
+<p class="subtitle">The landscape for <strong>Eternal</strong> looks a lot different now that it did for <strong>Burning Hope</strong> following the most recent *<a href="https://steamcommunity.com/games/531640/announcements/detail/1690440309949401220">balance changes</a>. It remains to be seen what new archetypes will emerge - or what older ones may resurface - in response to the update. However it seems likely that <strong>Winchest</strong> midrange will continue to be part of the mix even as it may become less dominant.</p>
+
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>

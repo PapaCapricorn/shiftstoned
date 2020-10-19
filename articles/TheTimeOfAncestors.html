@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Google Analytics gtag to go here - temporarily hidden -->
+
+
+
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>ECQ Rundown: The Time of Ancestors | ShiftStoned</title>
+
+<!-- Compatibility for older browsers goes here - temporarily hidden -->
+<!-- Resources for icons go here - temporarily hidden -->
+<!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+  <!-- CSS -->
+  
+  <link href="/styles/site.css" rel="stylesheet" type="text/css">
+  
+    <!-- page-specific styles -->
+    <style>
+    .article {
+    --block-margin: 1.5rem;
+}
+
+.article {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.article > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+
+.articleHeader {
+    margin-block-end: var(--block-margin);
+}
+.article .title,
+.article .subtitle,
+.article .tagline,
+.article hr,
+.article > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+.article .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+
+.article :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+.article :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+
+.pre-headline.first {
+    color:#FFDF00;
+}
+.pre-headline.second {
+    color:#C0C0C0;
+}
+.pre-headline.third {
+    color:#cd7f32;
+}
+.pre-headline.fifth {
+    color:#FF4500;
+}
+
+.article a {
+    color: #81C3F4;
+}
+.article a:hover {
+    color: #4183c4;
+}
+
+.side-image,
+.article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
+}
+.side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.side-image.card-image img {
+    width: 220px;
+}
+.side-image.card-image.ci-small img {
+    width: 125px;
+}
+
+.article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.article ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > ul {
+    padding: 0;
+}
+.article > ul > li {
+    margin-inline-start: 1em;
+}
+.article ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
+}
+
+.main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
+}
+.main-col-image img {
+    width: 100%; /* width of the main column */
+    height: auto;
+}
+
+.highlight {
+    color:#81C3F4;
+}
+.article blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+
+/* top 8 articles */
+h2 .epc-link,
+h3 .epc-link {
+    text-decoration: underline;
+}
+h2 .epc-link::before,
+h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article-table,
+.article-table tr,
+.article-table td,
+.article-table th {
+    border: 1px solid white;
+}
+.article-table td,
+.article-table th {
+    padding: 2px 3px;
+}
+.article-table thead th {
+    vertical-align: bottom;
+}
+.article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article-table thead th:nth-child(2),
+.article-table thead th:nth-child(3),
+.article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="/images/BackgroundArticles.jpg" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
+
+
+      <div id="newNavigation-menu" data-state="closed">
+
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
+
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <main class="newBodyGrid article">
+
+      <h1 class="title">The Time of Ancestors: ECQ Rundown </h1>
+<p class="subtitle">Taking a look at the Top Eight decks from <a href="https://www.direwolfdigital.com/news/eternal-championship-qualifier-the-time-of-ancestors/">The Time of Ancestors</a>, the first official 2020 Championship Qualifier for <a href="https://www.direwolfdigital.com/eternal/">Eternal Card Game</a></p>
+<p class="tagline"><strong>Power</strong> portraits and standout features for each the finalists</p>
+<figure class="article-thumbnail"><img src="/images/articles/TheTimeOfAncestors.jpg" alt="" width="250"></figure>
+<p><strong><time datetime="2019-11-28T00:00:00.000Z">November 28, 2019</time></strong> - The first <a href="https://www.direwolfdigital.com/news/the-2020-eternal-world-championship/">Eternal Chapionship Qualifier</a> event of the 2020 season has concluded, with <strong>Xenan Cultists</strong> emerging victorious despite having a target painted on their backs. <strong>Nahid's Faithful</strong> and friends composed an overwhelming sixty percent of the field, with a proportionate share of the <strong>Top 8</strong>.</p>
+<p>The remaining non-<strong>Cultist</strong> lists in the event appeared custom-built to counter this boogeyman of the format. However—while a single archetype was predominant—no two builds among the finishers were the same. Here we take a look at the construction of the winning decks, highlighting the shared traits and standout features of each.</p>
+<div class="pre-headline first">1st place:</div>
+<!-- START PROFILE -->
+<h3><a href="https://www.shiftstoned.com/epc/?d=EH5FEB_HEH6FEBlIEHpBDH7FEAjBEF9GDHuBEB4IEHwEEFgHEHyEFB5HIB_BEH5DEA9BEH4FCAABHiBBH7DBGpCBGwGBBzJ&amp;t=%5BBruisedByGod%5D%20BruisedByGod's%20Deck" class="epc-link" target="_blank">BruisedByGod's Deck</a> (Xenan Cultists)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Swirl_the_Sands.png" alt="Swirl the Sands card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 16T, 21S, E-Makkar x4, Prohpet x4, V-favor x4, Ark of Sol [M]
+-->
+<p><strong>Seek Power Gaming's BruisedByGod</strong> returns in style to the competitive spotlight of <strong>Eternal</strong> following a hiatus. Like all of the Xenan Cultist decks seen here, <strong>BBG's</strong> first-place build features a full playset of <strong>High Prophet of Sol</strong> (2<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) along with an <strong>Ark of Sol</strong> (1<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) in the Market.</p>
+<p>What distinguishes the <strong>Power</strong> sourcing in this list from the others is a full set of <strong>Vara's Favor</strong> (2<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). <strong>BBG</strong> also chooses to go with four of <strong>Emblem of Makkar</strong>, but forgoes <strong>Emblem of Grodov</strong> in favor of eight <strong>Time Sigils</strong>—more than any other deck seen here.</p>
+<p><strong class="highlight">Standout feature:</strong> <strong>BBG's</strong> version of <strong>Xenan Cultists</strong> was the only one of the finishers to include a <strong>Swirl the Sands</strong> (3<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) in the <strong>Market</strong>, which proved to be relevant in at least on matchup during the semi-finals.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EH5FEB_HEH6FEBlIEHpBDH7FEAjBEF9GDHuBEB4IEHwEEFgHEHyEFB5HIB_BEH5DEA9BEH4FCAABHiBBH7DBGpCBGwGBBzJ&amp;t=%5BBruisedByGod%5D%20BruisedByGod's%20Deck" class="arrow-link" target="_blank">view deck</a></p>
+<!-- END PROFILE -->
+<div class="pre-headline second">2nd place:</div>
+<!-- START PROFILE -->
+<h3><a href="https://www.shiftstoned.com/epc/?d=CBiEEH_BBBhGDF1DEFxCEH_FEH1GEGpHEB6ECEtFBF_CBHrDEFlEEHsDEFiDBB8GDF-FFB-DKB7FCG7CEGoHEAzBCAABFvCBHkCBHnCBE-HBH7C&amp;t=%5BAntMan%5D%20AntMan's%20Deck" class="epc-link" target="_blank">AntMan's Deck</a> (Hooru Vanguard)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Emerald_Coin.png" alt="Emerald Coin card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 15J, 18P: 2x Emerald Coin, Emblem-L [M]
+**Shen-Ra, Unbreakable** (1J), -->
+<p>Perhaps the most innovative list among the finishers, <strong>AntMan's Hooru</strong> deck appears to be built specifically with the intention of putting <strong>Xenan Cultists</strong> in the crosshairs. Among other things, <strong>Curse</strong> based removal deftly dodges <strong>Nahid's Choice</strong>. The <strong>Exalted / Renown / Weapon</strong> synergies along with the inclusion of rarely seen <strong>Units</strong> such as <strong>Jarral's Frostkin</strong> (4<img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Imperial Loyalist</strong> (4<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) make this deck particularly spicy.</p>
+<p><strong class="highlight">Standout feature:</strong> The only deck here to feature <strong>Coins</strong> of any kind, in this case <strong>Emerald Coins</strong>. Although these <strong>Power</strong> sources come in <strong>Delpleted</strong>, having a couple of extra +1/+1 <strong>Spiked Helms</strong> around certainly makes up for it in a deck that wants to speed up the <strong>Mastery</strong> thresholds for <strong>Varret, Hero-in-Training</strong> (2) and <strong>Blitrok, Linrei's Listener</strong> (4<img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />)—not to mention the <strong>Weapon</strong> synergies from <strong>Units</strong> such as <strong>Axe Sharpener</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Imperial Loyalist</strong> (4<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=CBiEEH_BBBhGDF1DEFxCEH_FEH1GEGpHEB6ECEtFBF_CBHrDEFlEEHsDEFiDBB8GDF-FFB-DKB7FCG7CEGoHEAzBCAABFvCBHkCBHnCBE-HBH7C&amp;t=%5BAntMan%5D%20AntMan's%20Deck" class="arrow-link" target="_blank">view deck</a></p>
+<!-- END PROFILE -->
+<div class="pre-headline third">3rd place:</div>
+<!-- START PROFILE -->
+<h3><a href="https://www.shiftstoned.com/epc/?d=EBgEEBiEEBhGEHjCEBrEDE-HEH_FEH1GEGpHEEtFBF_CEHsDEGmEHB-DFB7FDH9BEH7CEGoHEAzBCAABC5GBHkCBHyCBHhGBH6C&amp;t=%5BThalian%5D%20Thalian's%20Deck" class="epc-link" target="_blank">Thalian's Deck</a> (Hooru Tempo)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Ice_Elemental.png" alt="Ice Elemental card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 18J, 17P: -->
+<p>Fast <strong>Hooru</strong> builds have often been touted as an antidote to <strong>Cultists</strong> and that proved mostly true for <strong>Thalian</strong> with this list. Although the curve appears to jump from 4 to 7 <strong>Power</strong>, <strong>Xulta Loyalist</strong> (7<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) wants to be played for <strong>3 Power</strong> and <strong>Shifted</strong> - so realistically this deck plays low to the ground and tops out with <strong>Daring Gryffyn</strong> (4<img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p><strong class="highlight">Standout feature:</strong> A <strong>Soulflame Rider</strong>(9<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) in the <strong>Market</strong> may seem risky with exactly zero <strong>Spells</strong> or <strong>Units</strong> boasting the <strong>Decimate</strong> tag, but a total of seven <strong>Emblems</strong> ensure that the 9-cost <strong>Paladin Gryffyn</strong> can reliably be played for less than full price or even for free under the right circumstances.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EBgEEBiEEBhGEHjCEBrEDE-HEH_FEH1GEGpHEEtFBF_CEHsDEGmEHB-DFB7FDH9BEH7CEGoHEAzBCAABC5GBHkCBHyCBHhGBH6C&amp;t=%5BThalian%5D%20Thalian's%20Deck" class="arrow-link" target="_blank">view deck</a></p>
+<!-- END PROFILE -->
+<!-- START PROFILE -->
+<h3><a href="https://www.shiftstoned.com/epc/?d=EH5FEB_HEH6FEBlICEsGEHpBEH7FEF9GEHuBEB4IEHwEEFgHEHyEHB5HCB_BEHfEH5DEA9BEH4FCAABHiBBBgDBGwGBBgPBBzJ&amp;t=%5Bcamat0%5D%20camat0%27s%20Deck" class="epc-link" target="_blank">camat0's Deck</a> (Xenan Cultists)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Fenris_Nightshade.png" alt="Fenris Nightshade card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 14T, 19S, E-Grodov x4, E-Makkar x4, Prophet x4, Ark of Sol [M]
+-->
+<p>One of only two lists to include every available <strong>Emblem</strong>, <strong>camat0's</strong> deck is also the only <strong>Xenan Cultist</strong> build to feature <strong>Fenris Nightshade</strong> (2<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) for additional card draw. Three of the finsishers chose to include <strong>Edict of Grodov</strong> (3<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />)—a useful tool in the mirror match—but <strong>Camat0's</strong> list is the only one to include a full set.</p>
+<p><strong class="highlight">Standout feature:</strong> When <strong>Fenris</strong> is not enough, this list looks for even more draws from a <strong>Vault of the Praxis</strong> (4<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) in the <strong>Market</strong>, taking advantage of low cost units and tokens which may be played on in multiples on a single turn.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EH5FEB_HEH6FEBlICEsGEHpBEH7FEF9GEHuBEB4IEHwEEFgHEHyEHB5HCB_BEHfEH5DEA9BEH4FCAABHiBBBgDBGwGBBgPBBzJ&amp;t=%5Bcamat0%5D%20camat0%27s%20Deck" class="arrow-link" target="_blank">view deck</a></p>
+<!-- END PROFILE -->
+<div class="pre-headline fifth">5th place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EB4MEEsGCFwGEGnDBAjBDB9CDHmGDF9GDFyGDBgDEHvEEHwEEHwFCBxDEHyECF2FDB-DFB5HDB_BEA9BEA6BEA3BCF2HCAABGwGBF1GBG1GBBzJBH5D&amp;t=%5BxSTEALTHx%5D%20xSTEALTHx's%20Deck" class="epc-link" target="_blank">xSTEALTHx's Deck</a> (Kerendon Control)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Shen-Ra_Speaks.png" alt="Shen-Ra Speaks card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 20T, 22J, 25S: 4x Seek Power, 2x Lost Scroll, 1x Vara's Favor, 3x Amber Acolyte, Regent's Tomb, Emblem of Makkar -->
+<p>Attacking <strong>Cultists</strong> from a different direction, <strong>xSTEALTHx's</strong> deck plays many of the same <strong>Shadow</strong> threats that <strong>Xenan</strong> does—including <strong>Incarnus</strong>, <strong>Karvet</strong> and <strong>Vara</strong>—but hopes to outgrind two-color decks with access to powerful removal tools available only to <strong>Justice</strong>. <strong>Shen-Ra Speaks</strong> (5<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) is the <strong>Expedition</strong> format's most powerful sweeper, while <strong>Cast Into Shadow</strong> (<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) can also take out multiple targets at once.</p>
+<p><strong class="highlight">Standout feature:</strong> The only three faction deck in the <strong>Top 8</strong>, <strong>xSTEALTHx's</strong> list appropriately includes more <strong>Power</strong> sources than any other—including four of <strong>Seek Power</strong> (1) and two <strong>Lost Scrolls</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />)—to reliably play <strong>Shen-Ra Speaks</strong> on curve. The <strong>Lingering Influence</strong> (1<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) of <strong>Rolant</strong> surrounding the <strong>Regent's Tomb</strong> (4<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) also helps <strong>xSTEALTHx</strong> to hit their <strong>Power</strong> and <strong>Influence</strong> targets.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EB4MEEsGCFwGEGnDBAjBDB9CDHmGDF9GDFyGDBgDEHvEEHwEEHwFCBxDEHyECF2FDB-DFB5HDB_BEA9BEA6BEA3BCF2HCAABGwGBF1GBG1GBBzJBH5D&amp;t=%5BxSTEALTHx%5D%20xSTEALTHx's%20Deck" class="arrow-link" target="_blank">view deck</a></p>
+<!-- END PROFILE -->
+<!-- START PROFILE -->
+<h3><a href="https://www.shiftstoned.com/epc/?d=EH5FEB_HEH6FEBlIEHpBEH7FDAjBEF9GDHuBEBgDEHwEEFgHEHyEFB5HEB_BEHfEH5DEA9BEH4FCAABHiBBH7DBHvEBGwGBBzJ&amp;t=%5BBardeane%5D%20Bardeane's%20Deck" class="epc-link" target="_blank">Bardeane's Deck</a> (Xenan Cultists)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Edict_of_Makkar.png" alt="Edict of Makkar card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 16T, 20S, E-Grodov x4, E-Makkar x4, Prophet x4, V-favor x3, Ark of Sol [M] -->
+<p>One of two finsishers to include a full regiment of <strong>Emblems</strong> in both colors, <strong>Bardeane</strong>'s list is the only one to feature a full set of <strong>Scorpion Wasps</strong> (3<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) in the main deck.</p>
+<p><strong class="highlight">Standout feature:</strong> More <strong>Shadow</strong> removal can be found in the Market—including both <strong>Edict of Makkar</strong> (1<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Fell Ritual</strong> (4<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EH5FEB_HEH6FEBlIEHpBEH7FDAjBEF9GDHuBEBgDEHwEEFgHEHyEFB5HEB_BEHfEH5DEA9BEH4FCAABHiBBH7DBHvEBGwGBBzJ&amp;t=%5BBardeane%5D%20Bardeane's%20Deck" class="arrow-link" target="_blank">view deck</a></p>
+<!-- END PROFILE -->
+<!-- START PROFILE -->
+<h3><a href="https://www.shiftstoned.com/epc/?d=EH5FEB_HEH6FEBlIEHpBEH7FDALBAjBBAkBCHtBEF9GBBgDEB4ICHvEEHwEEFgHHB5HGB_BEH5DEA9BEH4FCAABHiBBH7DBHyEBBzJBHf&amp;t=%5BSunyveil%5D%20Sunyveil's%20Deck" class="epc-link" target="_blank">Sunyveil's Deck</a> (Xenan Cultists)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Talir's_Favored.png" alt="Talir's_Favored card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 17T, 20S, E-Makkar x4, Prophet x4, T-favor x3, V-favor x1, Ark of Sol [M] -->
+<p><strong>Sunyveil's</strong> take on <strong>Cultists</strong> lowers the curve slightly by unexpectedly relegating <strong>Shadow</strong> powerhouse <strong>Karvet, Solar Dragon</strong> (6<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) to the <strong>Market</strong> insted of the main deck.</p>
+<p><strong class="highlight">Standout feature:</strong> The only list to feature <strong>Talir's Favored</strong> (2<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) for additional <strong>Time</strong> sources.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EH5FEB_HEH6FEBlIEHpBEH7FDALBAjBBAkBCHtBEF9GBBgDEB4ICHvEEHwEEFgHHB5HGB_BEH5DEA9BEH4FCAABHiBBH7DBHyEBBzJBHf&amp;t=%5BSunyveil%5D%20Sunyveil's%20Deck" class="arrow-link" target="_blank">view deck</a></p>
+<!-- END PROFILE -->
+<!-- START PROFILE -->
+<h3><a href="https://www.shiftstoned.com/epc/?d=CH5FEB_HEH6FCBlIEHpBEH7FDAjBDHtBEF9GEBgDDE_GEHwEDFgHEHyECBzJKB5HHB_BEA9BEH4FCAABHiBBH7DBHvEBGwGBCnF&amp;t=%5BLimFactor%5D%20LimFactor's%20Deck" class="epc-link" target="_blank">LimFactor's Deck</a> (Xenan Cultists)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Slimespitter_Slug.png" alt="Slimespitter Slug card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 15T, 21S, Prophet x4, V-favor x1, Ark of Sol [M] -->
+<p>In contrast, this <strong>Cultist</strong> build raises the curve—being the only one of the finishing lists to include <strong>Vara, Fate-touched</strong> (8<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) in the main deck. Accordingly <strong>LimFactor</strong> prioritizes <strong>Shadow</strong> over <strong>Time</strong> sources, with 10 <strong>Shadow Sigils</strong> in the <strong>Power</strong> base and three of <strong>Vara's Favor</strong> (2<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p><strong class="highlight">Standout feature:</strong> <strong>Big Vara</strong> in the main deck frees up room for <strong>Slimespitter Slug</strong> (6<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), a powerful threat to enemy fliers as well as a source of life gain.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=CH5FEB_HEH6FCBlIEHpBEH7FDAjBDHtBEF9GEBgDDE_GEHwEDFgHEHyECBzJKB5HHB_BEA9BEH4FCAABHiBBH7DBHvEBGwGBCnF&amp;t=%5BLimFactor%5D%20LimFactor's%20Deck" class="arrow-link" target="_blank">view deck</a></p>
+<!-- END PROFILE -->
+<figure class="main-col-image"><img src="/images/articles/TheTimeOfAncestors.jpg" alt=""></figure>
+<hr>
+<p class="subtitle">The Expedition format has changed with the recent introduction of cards from Dead Reckoning and Trials of Grodov. Will Cultists continue to dominate in the days ahed, or will a new challenger emerge?</p>
+
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>

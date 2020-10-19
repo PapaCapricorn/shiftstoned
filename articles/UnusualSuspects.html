@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Google Analytics gtag to go here - temporarily hidden -->
+
+
+
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Unusual Suspects | ShiftStoned</title>
+
+<!-- Compatibility for older browsers goes here - temporarily hidden -->
+<!-- Resources for icons go here - temporarily hidden -->
+<!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+  <!-- CSS -->
+  
+  <link href="/styles/site.css" rel="stylesheet" type="text/css">
+  
+    <!-- page-specific styles -->
+    <style>
+    .article {
+    --block-margin: 1.5rem;
+}
+
+.article {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.article > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+
+.articleHeader {
+    margin-block-end: var(--block-margin);
+}
+.article .title,
+.article .subtitle,
+.article .tagline,
+.article hr,
+.article > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+.article .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+
+.article :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+.article :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+
+.pre-headline.first {
+    color:#FFDF00;
+}
+.pre-headline.second {
+    color:#C0C0C0;
+}
+.pre-headline.third {
+    color:#cd7f32;
+}
+.pre-headline.fifth {
+    color:#FF4500;
+}
+
+.article a {
+    color: #81C3F4;
+}
+.article a:hover {
+    color: #4183c4;
+}
+
+.side-image,
+.article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
+}
+.side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.side-image.card-image img {
+    width: 220px;
+}
+.side-image.card-image.ci-small img {
+    width: 125px;
+}
+
+.article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.article ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > ul {
+    padding: 0;
+}
+.article > ul > li {
+    margin-inline-start: 1em;
+}
+.article ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
+}
+
+.main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
+}
+.main-col-image img {
+    width: 100%; /* width of the main column */
+    height: auto;
+}
+
+.highlight {
+    color:#81C3F4;
+}
+.article blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+
+/* top 8 articles */
+h2 .epc-link,
+h3 .epc-link {
+    text-decoration: underline;
+}
+h2 .epc-link::before,
+h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article-table,
+.article-table tr,
+.article-table td,
+.article-table th {
+    border: 1px solid white;
+}
+.article-table td,
+.article-table th {
+    padding: 2px 3px;
+}
+.article-table thead th {
+    vertical-align: bottom;
+}
+.article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article-table thead th:nth-child(2),
+.article-table thead th:nth-child(3),
+.article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="/images/BackgroundArticles.jpg" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
+
+
+      <div id="newNavigation-menu" data-state="closed">
+
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
+
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <main class="newBodyGrid article">
+
+      <h1 class="title">Unusual Suspects: featuring Kaelos</h1>
+<p class="subtitle">Her signature decks might not be found on many tier lists, but <strong>Kaelos</strong> is winning on her own terms.</p>
+<p class="subtitle">The popular streamer, competitor and maverick deck builder spoke to <strong>Shiftstoned</strong> on the heels of her recent first-place finish at the <a href="https://eternalwarcry.com/tournaments/details/vj25s6HSknI/ecl-tuesday-weekly-top-8">ECL Tuesday Weekly</a> event.</p>
+<p class="subtitle">Science, community and the healing power of games are just a few of the topics that emerge from our conversation about <strong>Power</strong> bases in <a href="https://www.direwolfdigital.com/eternal/">Eternal, A Strategy Card Game</a>.</p>
+<figure class="article-thumbnail"><img src="/images/articles/UnusualSuspects.jpeg" alt="" width="250"></figure>
+<p>You learn to expect the unexpected from Kaelos. On her <a href="https://www.twitch.tv/kaelosthereckoning">daily stream</a> and during <a href="https://eternalwarcry.com/tournaments/details/UaEELBHck3Q/ets-2018-s3w1-top-8">competitive <strong>Eternal</strong> events</a>, she plays her own brand of decks that often defy convention.</p>
+<p>Although she is known for experimentation, her tournament victories have demonstrated that she can also be a real competitive threat.</p>
+<p>Most recently, she has been spotted spearheading the launch of <a href="https://theeternalpost.com/">The Eternal Post</a>, a new content source for <strong>Eternal</strong> players.</p>
+<h2>On your feet, wanderer</h2>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Kaelos, the decks you construct are often surprising, unique and unexpected. What motivates and inspires you when deckbuilding?</p>
+<p><strong>Kaelos:</strong><br>
+In my former life I was a scientist. When I got sick and lost a lot of my cognitive abilities (like reading), I discovered it wasn't being smart that made me a scientist—it was being curious and undeterred by failure.</p>
+<p>I was a workaholic stuck in a bed. And when I started playing <strong>Eternal</strong>…it was a complex and interesting enough system that I could science it. It was a way to do something I missed and needed.</p>
+<p>Looking for novel card interactions and synergies is a huge facet of that, and one that points me toward other questions of mechanics, game design, and player behavior.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+When you are <a href="https://www.twitch.tv/kaelosthereckoning">streaming</a>, do your viewers have any particular expectations about what types of decks they will see be seeing?</p>
+<figure class="side-image"><img src="/images/articles/kaelos_schedule.png" alt="Schedule" title="Kaelos' steam schedule"></figure>
+<p><strong>Kaelos:</strong><br>
+They get pretty upset when I play anything approaching mainstream.</p>
+<p>Granted, that's probably why I have like ten viewers. After a year of modeling things, making videos, creating new decks, and participating in tournaments.</p>
+<p>The &quot;undeterred by failure&quot; part is important because to find the really good stuff you have to either fail a lot or take ideas from other people.</p>
+<p>And the latter isn't really a challenge for me. My viewers get that, but it isn't what a lot of people want to see. They want to see someone crushing with a meta deck every night. Which I'm capable of, but would bore me to tears.</p>
+<h2>Bring that brain back</h2>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+How important is it to you that you win with your own brew?</p>
+<p><strong>Kaelos:</strong><br>
+Incredibly important. I don't play to win, I play for my wins to have worth.</p>
+<p>I love my viewers, but I don't play for other people. I'm always there to self-validate, not measure myself against others.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+What sort of reactions have you received from the <strong>Eternal</strong> community at large?</p>
+<p><strong>Kaelos:</strong><br>
+This is kind of a difficult subject because the response is mainly disinterest or telling me what I can't do, and that I'm not good enough.</p>
+<p>I've had a few really constant and vocal supporters, and they mean more than I can say.</p>
+<p>Because without the support network this community gave me, I would never have recovered as much as I have—much less succeeded so well at a new game in the process of getting my brain back.</p>
+<h2>Reprobates</h2>
+<figure class="side-image"><img src="/images/articles/ReprobatesDecklist.jpeg" alt="Decklist" title="Reprobates decklist"></figure>
+<p class="tagline">Not for the weak-hearted</p>
+<figure class="main-col-image"><img src="/images/articles/ReprobatesComposed.jpeg" alt="Influence Chart" title="Reprobates influence chart"></figure>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+<a href="https://eternalwarcry.com/decks/details/NaiJ-tx69X0/reprobates">Reprobates</a> is a <a href="https://eternalwarcry.com/tournaments/details/vj25s6HSknI/ecl-tuesday-weekly-top-8">tournament-winning</a> update to an earlier deck that you played in the <a href="https://eternalwarcry.com/tournaments/details/7JaLGz6WWMI/the-stranglecat-open-1-tribes-top-8">Stranglecat Open</a> during the <strong><a href="https://www.direwolfdigital.com/news/eternal-the-dusk-road/">Dusk Road</a></strong> period.</p>
+<p class="highlight">It seems to have gained a lot from the <strong><a href="https://www.direwolfdigital.com/news/chapter-19-the-fall-of-argenport/">Fall of Argenport</a></strong>: <strong>Ixtun Merchant</strong>, <strong>Jekk Lone Gun</strong> and even <strong>Wyatt, Junk Collector</strong> are all new additions.</p>
+<p class="highlight">Notably you decided to include a nearly full contingent of <a href="https://www.direwolfdigital.com/news/winning-tactics/">Standards</a>, a new <strong>Power</strong> card type introduced with the latest expansion.</p>
+<p class="highlight">We've seen <a href="/articles/HighVoltage.html">other examples</a> of decks that take advantage of these <strong>Transmute</strong> effects. What do the <strong>Standards</strong> add to this list in particular?</p>
+<p><strong>Kaelos:</strong><br>
+Without the <strong>Shugo Standards</strong>, I don't think this deck stands a chance competitively anymore.</p>
+<p>There are just too many <strong>Time</strong> fatties coming down left and right for my units to be capable of pushing through damage without <strong>Overwhelm</strong> or big combat tricks [ie: offensive <strong>Fast Spells</strong>]. And <strong>Shugo Tactic</strong> provides both.</p>
+<figure class="main-col-image"><img src="/images/articles/StonescarStandards.jpeg" alt="Influence Chart" title="Reprobates influence chart 2"></figure>
+<p>The <strong>Cabal Standard</strong> is also great when I'm trying to cram in bodies and feel like I can't afford the space for <strong>Rapid Shot</strong>. It's not quite as good but it increases body density in the deck, which tops out at five power.</p>
+<p>So running lots of <strong>Standards</strong> is only an issue if I have too much <strong>Depleted</strong> power out of the gate.</p>
+<p>The main consideration is balancing <strong>Power</strong> cards that perform neat tricks or support your deck in other ways versus getting enough <strong>non-depleted</strong> power to play things on curve…which is pretty essential for an <strong>Aggro</strong> deck.</p>
+<h2>Balance of power</h2>
+<figure class="side-image card-image ">
+  <img src="/images/cards/Cabal_Tactic.png" alt="Cabal Tactic card" width="220" height="350" loading="lazy">
+</figure>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+It can take some work to find that balance.</p>
+<p><strong>Kaelos:</strong><br>
+Right. You can see when I run the variant of this list that has <strong>Rapid Shot</strong> rather than <strong>Wyatt</strong>, I'll take out the <strong>Cabal Standards</strong> completely just to increase my odds of activated <strong>Power</strong>.</p>
+<p>Even in the version that won the tournament, I went down to three <strong>Standards</strong> to increase my chances of activated <strong>Power</strong> while preserving the odds of hitting one <strong>Cabal Tactic</strong> in the game. Without more additional draw, it takes about three of any given card for decent odds of hitting at least one in a match of typical length.</p>
+<p>Lastly, you'll notice I didn't include any <strong>Seats</strong> to make up for all the other depleted &quot;added utility&quot; power I was running in the form of <strong>Standards</strong> and <strong>Crests</strong>.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Yes, <strong>Seat of Chaos</strong> is noticeably absent…</p>
+<p><strong>Kaelos:</strong><br>
+I don't run <strong>Seats</strong> in <strong>Midrange Aggro</strong> decks unless I'm really desperate for <strong>Influence</strong> out of the gate. Because they're typically useless after about <strong>Turn 3 or 4</strong> in terms of helping you play on curve. Whereas all the other power types retain utility or come in non-depleted.</p>
+<h2>Remember the cause</h2>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Looking at the <strong>Influence Chart</strong>, there appear to be very low chances of drawing enough <strong>Influence</strong> to hit <img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> and <img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> on curve.</p>
+<figure class="main-col-image"><img src="/images/articles/4656.jpeg" alt="Influence Chart" title="Reprobates influence chart 3"></figure>
+<p class="highlight">Is there some strategy that allows this list to work despite the long odds for reaching those targets?</p>
+<p><strong>Kaelos:</strong><br>
+Can we be honest here? I was brain-dead and forgot to include <strong>Common Cause</strong>, which usually makes those odds a whole lot better in a tribal deck.</p>
+<figure class="side-image card-image ">
+  <img src="/images/cards/Common_Cause.png" alt="Common Cause card" width="220" height="350" loading="lazy">
+</figure>
+<p><strong>Shiftstoned:</strong><br>
+Hahaha, I'm sure the readers will appreciate your honesty. And <strong>Common Cause</strong> does make a lot of sense here, since all but one of the units are <strong>Gunslingers</strong>.</p>
+<p class="highlight">You happily remembered to include <strong>Common Cause</strong> in your previous version of this deck. How did this more recent list handle differently without that key <strong>Power</strong> card?</p>
+<p><strong>Kaelos:</strong><br>
+I thought I was going to die nearly every game.</p>
+<h2>Tribal knowledge</h2>
+<p><strong>Shiftstoned:</strong><br>
+The first time you brought <em>Reprobates</em> to <a href="https://battlefy.com/team-ewc-tournaments/the-stranglecat-open-1-tribes/5a77fd9a9a3a6d03876fdf7a/info?infoTab=details">a tournament</a>, it was a limited <strong>Tribal</strong> format that required a minimum number of units to share a type.</p>
+<p class="highlight">What made you decide to stick with <strong>Gunslinger</strong> tribal for the the <a href="https://www.tgpeternal.com/tournaments/">Eternal Community League</a> event?</p>
+<p><strong>Kaelos:</strong><br>
+<strong>Slingers</strong> is just my go-to when I need to test myself or the meta rather than the deck. Because it's the deck that makes the most sense to my brain. I could pilot it in my sleep.</p>
+<p>This was the first tournament I'd played to win since about a month or two prior when I made <strong><a href="https://eternalwarcry.com/decks/details/5NC9AcsCZPY/oni-swarm">Top 8</a></strong> in the <a href="https://rngeternal.com/ets/">Eternal Tournament Series</a> with the <em>Oni Swarm</em> deck. So I needed to get a good gauge of where my own play was.</p>
+<p>I spend so much time testing unconventional decks and interactions, but <strong>Slingers</strong> is the deck that lets me test myself instead.</p>
+<p>Compare that to a week later… we launched the <strong>Eternal Post</strong> that day and I *may *have gone for a celebratory drunkstream.</p>
+<h2>Oni Swarm</h2>
+<figure class="side-image"><img src="/images/articles/OniSwarmDecklist.jpeg" alt="Decklist" title="Oni Swarm decklist"></figure>
+<p class="tagline">Who says you can't play with Fire?</p>
+<figure class="main-col-image"><img src="/images/articles/OniSwarmComposed.jpeg" alt="Influence Chart" title="Oni Swarm influence chart"></figure>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+More on the <strong>Eternal Post</strong> in a bit, but speaking of <a href="https://eternalwarcry.com/decks/details/5NC9AcsCZPY/oni-swarm">Oni Swarm</a>what inspired you to bring a single-faction <strong>Oni Tribal</strong> deck to an <strong>Eternal Touranment Series</strong> competition?</p>
+<p><strong>Kaelos:</strong><br>
+I built this deck originally as a challenge to make mono-<strong>Fire</strong> viable. And it was a pretty significant challenge, because going into another color for even one or two key cards really strengthens most decks.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+The <strong>Influence Chart</strong> looks much different when all your cards are one color: Ninety percent or better to draw <img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />by <strong>Turn 6!</strong> That is usually uneard of…</p>
+<p><strong>Kaelos:</strong><br>
+When you're playing <strong>Mono</strong> decks, having that kind of power base is amazing because it means you can choose the &quot;substantial reward&quot; cards without accepting the concurrent risk.</p>
+<p>You can almost tell where the game developers think &quot;faction identity&quot; in any given faction lies by looking at which cards have the highest single-color <strong>Influence</strong> requirements. Without those restrictions, mono decks wouldn't stand a chance.</p>
+<p>But on the other hand you take a different risk instead, and one that's much more difficult to calculate: for every faction, at every power cost, there is likely to be another faction that has a better (or situationally-better) card. You mitigate that when you play multi-faction decks because you're gaining access to one or more of those &quot;better&quot; cards.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Did you need to think much about constructing a mono-<strong>Fire</strong> <strong>Power</strong> base, or did it just kind of build itself?</p>
+<figure class="side-image card-image ">
+  <img src="/images/cards/Kaleb's_Favor.png" alt="Kaleb's Favor card" width="220" height="350" loading="lazy">
+</figure>
+<p><strong>Kaelos:</strong><br>
+I would say that <strong>Mono</strong> decks are easier to build, but they're much more difficult to make viable.</p>
+<p>So I thought about the <strong>Power</strong> base in that I knew I'd only be able to play one color, and I had to make it count.</p>
+<p>The <strong>Kaleb's Favors</strong> were added just because I needed slightly more consistency. Making absolutely sure I could play my hand on-curve, without sacrificing more slots for units or weapons than I absolutely had to. And we wanted to get the extra two face damage rather than just subbing in more sigils.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Four copies of <strong>Granite Waystone</strong> also seems like a solid choice in a mono-<strong>Faction</strong> deck.</p>
+<p><strong>Kaelos:</strong><br>
+There's no reason not to include a <strong>Power</strong> that comes in <strong>non-Depleted</strong> with a perk. Free chumps with no downside, if you're not looking for <strong>Seat</strong> activation.</p>
+<h2>Strike now</h2>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Did you do much testing with this deck before you brought it to the tournament?</p>
+<p><strong>Kaelos:</strong><br>
+Probably a month or two of playing it on stream sporadically. Hilariously, I submitted it on reddit about three days before the <strong><a href="https://eternalwarcry.com/tournaments/details/UaEELBHck3Q/ets-2018-s3w1-top-8">Top 8</a></strong> finish, and was told the list didn't work and couldn't be played in a <strong>Hailstorm</strong> meta.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+What about the response when you finished in the <strong>Top 8</strong> with this deck?</p>
+<p><strong>Kaelos:</strong><br>
+Mainly quite positive. A lot of people who'd followed my jank for a while were pleased to see that when I succeeded, it was on my own terms.</p>
+<p>For weeks, the meta at the time had been decks going over the top of each other for the slowest, biggest win cons. People were so pleased to see a mono <strong>Fire</strong> deck— and an <strong>Aggro</strong> deck—that still <em>worked</em>.</p>
+<h2>For my people</h2>
+<p class="tagline">Kaelos' has more than a few extra-curricular activities</p>
+<p><strong>Shiftstoned:</strong><br>
+You seem to have many <strong>Eternal</strong>-related interests that go beyond just ranking up.</p>
+<p class="highlight">Can you describe what motivates you to stream every day?</p>
+<p><strong>Kaelos:</strong><br>
+The people. Dear god, I love the people.</p>
+<p>My viewers are amazing human beings who keep me dragging myself out of bed on days it takes 2 hours to get dressed. Because they make me laugh and smile and cheer me on, even when I lose. So I know it'll always be worth the effort.</p>
+<p>I would care about my numbers a lot more if the people who stopped by weren't so consistently awesome.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+What about competing in tournaments?</p>
+<p><strong>Kaelos:</strong><br>
+You'd never know it by my record, but I'm a fairly competitive person—just not in the usual sense.</p>
+<figure class="side-image"><img src="/images/articles/cup.PNG" alt="Trophy" title="1st place"></figure>
+<p>Tournaments are probably my favorite format of play, simply because forcing your perception to wrap around another person's brain and behavior so that you can predict them always teaches me something new.</p>
+<p>That's something you get a lot less of in ranked. Because you don't see the list ahead of time. And you don't know the pilot. So you have to play reactively to some degree, rather than with foresight.</p>
+<h2>Together, we'll find the path</h2>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+You also appear to have invested a lot of energy in to a detailed data analysis of <strong>Eternal's</strong> card set.</p>
+<p><strong>Kaelos:</strong><br>
+I can't help sciencing. I go nuts without it because I want to know how everything works. And if I'm going to the trouble, I may as well write it down in case other people are curious too.</p>
+<p>Numbers are just one more way to validate patterns that I see in decks, cards, or game mechanics.</p>
+<p><strong>Shiftstoned:</strong><br>
+For those who haven't joined yet, what happens on the <a href="https://discordapp.com/invite/xGHfW2t"><strong>Kaelos the Reckoning</strong> discord server</a>?</p>
+<p><strong>Kaelos:</strong><br>
+I'm mainly there for the #kidsfallingover channel. Please don't tell anyone.</p>
+<p>In all honesty, I just wanted a place where people could ask questions, exchange ideas, and support one another's competitive play or content where I could freely evict people whose behavior suppressed that. Negativity toward other players has no place there.</p>
+<p>We have a rule that there are no &quot;bad cards&quot;. It's fine to say that a card does poorly in certain match-ups, metas, decks, or for specific purposes. But it's not cool to tell someone a card, deck, or idea they're playing around with is worthless.</p>
+<p>Because that is equivalent to telling someone their effort and curiosity is worthless. It suppresses the innovation that keeps ladder from getting stale and keeps the game interesting and worth playing. Not to mention: making assumptions or assertions without testing is just bad science.</p>
+<h2>Glad to have you on our side</h2>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+As if all of that wasn't enough, you've just recently launched the <strong><a href="https://theeternalpost.com/">The Eternal Post</a></strong>. What inspired you to create this new space for content?</p>
+<p><strong>Kaelos:</strong></p>
+<p>In <strong>Eternal</strong> right now, most of the content is produced by teams—and it's hard to get any kind of name recognition or have your content seen if you're not attached to or picked up by one of those groups.</p>
+<p>That was the case for me because nobody wants someone who doesn't play to win. But I was fortunate enough to have many of the top-level players as stream viewers (for deck ideas) who became friends and advocates anyway.</p>
+<p>Once I had any kind of pull to help other people get seen, it seemed right to help them avoid the obstacles I had to circumvent. I already had a website, so I figured I could just expand it to include sections where other people could be seen.</p>
+<p>And there was a lot more interest than I anticipated. So I said &quot;Screw it! Let's make it a content site where I post rather than my site where content is posted.&quot;</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Can you describe for the readers how <strong>Eternal Post</strong> will work?</p>
+<p><strong>Kaelos:</strong><br>
+We've got a lot of big names on board (who should really be commended for their participation). Articles will be posted right beside people who are totally unknown to help get those people visibility and name recognition without the necessity of being part of some other group.</p>
+<p>Provided the content is good and the person can behave civilly to other human beings, I will put literally anyone's stuff on the site. Hopefully, this will lead to a place where content truly succeeds on its own merit, rather than requiring name recognition or popularity for visibility.</p>
+<p>I think if we can pull it off, it will be an incredibly healthy thing for the <strong>Eternal</strong> community and help drive the player base to be more inclusive, accessible, and approachable for new players.</p>
+<p>That's the change I want to see, so I feel obliged to work at making it happen.</p>
+<h2>Parting shot</h2>
+<figure class="side-image card-image ">
+  <img src="/images/cards/The_Last_Word.png" alt="The Last Word card" width="220" height="350" loading="lazy">
+</figure>
+<p class="tagline">One bullet should do</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Thank you for your time <strong>Kaelos</strong>. You have really shared a lot of insightful information here. But we've saved the most important question for the end.</p>
+<p class="highlight">I know that the readers are dying to hear it from you: will there ever be a <strong>Tier 1</strong> deck that contains <strong>The Last Word</strong>?</p>
+<p><strong>Kaelos:</strong><br>
+I will make it so. You can quote me on this.</p>
+
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>

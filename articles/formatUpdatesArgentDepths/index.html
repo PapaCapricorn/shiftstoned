@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-  <title>Expedition and Draft Pack Changes - Argent Depths | ShiftStoned</title>
+  <title>Format Updates - Argent Depths | ShiftStoned</title>
 
 <!-- Compatibility for older browsers goes here - temporarily hidden -->
 <!-- Resources for icons go here - temporarily hidden -->
@@ -24,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 
   <!-- CSS -->
+  
   <link href="/styles/site.css" rel="stylesheet" type="text/css">
   
     <!-- page-specific styles -->
@@ -55,24 +56,28 @@
 .formatUpdates.textcol {
   width: 100%;
   margin: 0;
-  padding-inline-end: 30px;
+  padding: 0 30px 30px;
   display: grid;
-  grid-template-columns: 310px auto;
+  grid-template-columns: 250px 600px auto;
+  column-gap: 30px;
 }
 
-.formatUpdates > header,
-.formatUpdates > .description {
-  width: 600px;
-}
-
-.formatUpdates > * {
+.formatUpdates > * { /* everything goes into the 2nd, 'main' column unless otherwise specified */
   grid-column: 2;
 }
-.formatUpdates > .sideImage {
-  grid-column: 1;
-  grid-row: 1 / 3;
+.formatUpdates .main-col-full { /* expand to fill main + right (empty) column */
+  grid-column: 2 / -1;
 }
-.formatUpdates > #toc {
+.formatUpdates > .article-thumbnail { /* place in 1st column */
+  grid-column: 1;
+  grid-row: 1 / span 5;
+}
+.formatUpdates > .article-thumbnail img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+.formatUpdates > #toc { /* place in 1st column */
   grid-column: 1;
   grid-row: span 2;
 }
@@ -91,7 +96,6 @@
   top: 0;
   max-height: 100vh;
   overflow-y: scroll;
-  margin: 0 30px;
 }
 /* heading & 'back to the top' link */
 #toc .toc-header {
@@ -423,7 +427,6 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
 }
     </style>
 
-
 </head>
 
   <!-- PAGE BODY -->
@@ -436,6 +439,8 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
       <div class="newHeading-top">
 
         <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
 
 
       <div id="newNavigation-menu" data-state="closed">
@@ -472,7 +477,7 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
 
 
     <!-- Main page content -->
-    <div class="newBodyGrid">
+    <main class="newBodyGrid article">
 
       <main class="formatUpdates textcol">
 
@@ -484,10 +489,10 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
     
   </header>
 
-  <img class="sideImage articleMargin" alt="" src="/images/articles/formatUpdatesArgentDepths.jpg"/>
+  <img class="article-thumbnail" alt="" src="/images/articles/formatUpdatesArgentDepths.jpg" width="250" height="164.4" />
 
   <section class="description">
-    <p><strong>July 1, 2020</strong> - With each large expansion, Dire Wolf Digital redesigns the <em>Eternal</em> Draft Packs and Expedition to complement the new set. They were updated on June 24 with <a href="https://www.direwolfdigital.com/news/argent-depths-format-updates/"><em>Argent Depths'</em> release</a>, so let's explore the changes to the Draft and Expedition formats.</p>
+    <p><strong><time datetime="2020-07-01T00:00:00.000Z">July 1, 2020</time></strong> - With each large expansion, Dire Wolf Digital redesigns the <em>Eternal</em> Draft Packs and Expedition to complement the new set. They were updated on June 24 with <a href="https://www.direwolfdigital.com/news/argent-depths-format-updates/"><em>Argent Depths'</em> release</a>, so let's explore the changes to the Draft and Expedition formats.</p>
 <p>The official list of current Draft Pack contents and Expedition-legal cards can always be found <a href="https://direwolfdigital.com/news/draft-packs-card-list/">on DWD's site</a>. We sorted each card into <strong>Kept</strong>, <strong>Added</strong>, or <strong>Removed</strong> for each format. Use the toggles below to swap between formats, and to filter cards based on their faction or change.</p>
 <p>A few notes:</p>
 <ul>
@@ -503,6 +508,8 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
 </li>
 <li>The Expedition changes <strong>do</strong> include pre-<em>Echoes</em> promos, <em>The Flame of Xulta</em>, Draft Pack updates, and removed cards from older campaign and bundle sets.</li>
 </ul>
+<hr>
+<p><em><time datetime="2020-08-17T04:00:00.000Z">August 17, 2020</time> - Update: a few cards were mistakenly missing from the Draft Pack list. Of those, we are unsure of what General Izalio's weighting was at the time. We are marking its weighting as &quot;5x&quot;, just note that it may have been 1x.</em></p>
 
   </section>
 
@@ -755,7 +762,7 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
     </ol>
   </nav>
 
-  <section id="updateList"
+  <section id="updateList" class="main-col-full"
     data-show-format="draft"
     data-show-factions="Fire Time Justice Primal Shadow Mixed Neutral"
     data-show-states="Added Removed Kept">
@@ -1139,6 +1146,34 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
                     <div class="weighting after">
                       <dt class="sr-only">now</dt>
                       <dd>1</dd>
+                    </div>
+                    <div class="weighting before">
+                      <dt>was</dt>
+                      <dd>-</dd>
+                    </div>
+                  </dl>
+                </dd>
+              </div>
+            </dl>
+          </li>
+          <li class="card" data-expedition-state="Added" data-draft-state="Added" data-weight-before="-" data-weight-after="5">
+            <h4>General Izalio</h4>
+            <dl class="card-info">
+              <div class="card-image">
+                <dt class="sr-only">Image</dt>
+                <dd>
+                    <img src="https://www.shiftstoned.com/images/cards/General_Izalio.png"
+                    alt="General Izalio"
+                    loading="lazy" width="220" height="350">
+                </dd>
+              </div>
+              <div class="draft-weights">
+                <dt class="sr-only">Draft weightings</dt>
+                <dd>
+                  <dl class="weighting-info">
+                    <div class="weighting after">
+                      <dt class="sr-only">now</dt>
+                      <dd>5</dd>
                     </div>
                     <div class="weighting before">
                       <dt>was</dt>
@@ -1717,6 +1752,34 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
                 <dd>
                     <img src="https://www.shiftstoned.com/images/cards/Slag.png"
                     alt="Slag"
+                    loading="lazy" width="220" height="350">
+                </dd>
+              </div>
+              <div class="draft-weights">
+                <dt class="sr-only">Draft weightings</dt>
+                <dd>
+                  <dl class="weighting-info">
+                    <div class="weighting after">
+                      <dt class="sr-only">now</dt>
+                      <dd>1</dd>
+                    </div>
+                    <div class="weighting before">
+                      <dt>was</dt>
+                      <dd>-</dd>
+                    </div>
+                  </dl>
+                </dd>
+              </div>
+            </dl>
+          </li>
+          <li class="card" data-expedition-state="Added" data-draft-state="Added" data-weight-before="-" data-weight-after="1">
+            <h4>Smith&#39;s Hammer</h4>
+            <dl class="card-info">
+              <div class="card-image">
+                <dt class="sr-only">Image</dt>
+                <dd>
+                    <img src="https://www.shiftstoned.com/images/cards/Smith&#39;s_Hammer.png"
+                    alt="Smith&#39;s Hammer"
                     loading="lazy" width="220" height="350">
                 </dd>
               </div>
@@ -6486,6 +6549,34 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
               </div>
             </dl>
           </li>
+          <li class="card" data-draft-state="Added" data-weight-before="-" data-weight-after="1">
+            <h4>Insatiable Serasaur</h4>
+            <dl class="card-info">
+              <div class="card-image">
+                <dt class="sr-only">Image</dt>
+                <dd>
+                    <img src="https://www.shiftstoned.com/images/cards/Insatiable_Serasaur.png"
+                    alt="Insatiable Serasaur"
+                    loading="lazy" width="220" height="350">
+                </dd>
+              </div>
+              <div class="draft-weights">
+                <dt class="sr-only">Draft weightings</dt>
+                <dd>
+                  <dl class="weighting-info">
+                    <div class="weighting after">
+                      <dt class="sr-only">now</dt>
+                      <dd>1</dd>
+                    </div>
+                    <div class="weighting before">
+                      <dt>was</dt>
+                      <dd>-</dd>
+                    </div>
+                  </dl>
+                </dd>
+              </div>
+            </dl>
+          </li>
           <li class="card" data-expedition-state="Added" data-draft-state="Added" data-weight-before="-" data-weight-after="1">
             <h4>Invoke the Waystones</h4>
             <dl class="card-info">
@@ -6802,6 +6893,34 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
                 <dd>
                     <img src="https://www.shiftstoned.com/images/cards/Rectifier.png"
                     alt="Rectifier"
+                    loading="lazy" width="220" height="350">
+                </dd>
+              </div>
+              <div class="draft-weights">
+                <dt class="sr-only">Draft weightings</dt>
+                <dd>
+                  <dl class="weighting-info">
+                    <div class="weighting after">
+                      <dt class="sr-only">now</dt>
+                      <dd>1</dd>
+                    </div>
+                    <div class="weighting before">
+                      <dt>was</dt>
+                      <dd>-</dd>
+                    </div>
+                  </dl>
+                </dd>
+              </div>
+            </dl>
+          </li>
+          <li class="card" data-draft-state="Added" data-weight-before="-" data-weight-after="1">
+            <h4>Reliquary Raider</h4>
+            <dl class="card-info">
+              <div class="card-image">
+                <dt class="sr-only">Image</dt>
+                <dd>
+                    <img src="https://www.shiftstoned.com/images/cards/Reliquary_Raider.png"
+                    alt="Reliquary Raider"
                     loading="lazy" width="220" height="350">
                 </dd>
               </div>
@@ -12187,6 +12306,34 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
               </div>
             </dl>
           </li>
+          <li class="card" data-draft-state="Added" data-weight-before="-" data-weight-after="1">
+            <h4>Spire Chaplain</h4>
+            <dl class="card-info">
+              <div class="card-image">
+                <dt class="sr-only">Image</dt>
+                <dd>
+                    <img src="https://www.shiftstoned.com/images/cards/Spire_Chaplain.png"
+                    alt="Spire Chaplain"
+                    loading="lazy" width="220" height="350">
+                </dd>
+              </div>
+              <div class="draft-weights">
+                <dt class="sr-only">Draft weightings</dt>
+                <dd>
+                  <dl class="weighting-info">
+                    <div class="weighting after">
+                      <dt class="sr-only">now</dt>
+                      <dd>1</dd>
+                    </div>
+                    <div class="weighting before">
+                      <dt>was</dt>
+                      <dd>-</dd>
+                    </div>
+                  </dl>
+                </dd>
+              </div>
+            </dl>
+          </li>
           <li class="card" data-expedition-state="Added" data-draft-state="Added" data-weight-before="-" data-weight-after="10">
             <h4>Stalwart Silverwing</h4>
             <dl class="card-info">
@@ -16125,6 +16272,34 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
                 <dd>
                     <img src="https://www.shiftstoned.com/images/cards/Treasury_Gate.png"
                     alt="Treasury Gate"
+                    loading="lazy" width="220" height="350">
+                </dd>
+              </div>
+              <div class="draft-weights">
+                <dt class="sr-only">Draft weightings</dt>
+                <dd>
+                  <dl class="weighting-info">
+                    <div class="weighting after">
+                      <dt class="sr-only">now</dt>
+                      <dd>1</dd>
+                    </div>
+                    <div class="weighting before">
+                      <dt>was</dt>
+                      <dd>1</dd>
+                    </div>
+                  </dl>
+                </dd>
+              </div>
+            </dl>
+          </li>
+          <li class="card" data-expedition-state="Kept" data-draft-state="Kept" data-weight-before="1" data-weight-after="1">
+            <h4>Treasury Guard</h4>
+            <dl class="card-info">
+              <div class="card-image">
+                <dt class="sr-only">Image</dt>
+                <dd>
+                    <img src="https://www.shiftstoned.com/images/cards/Treasury_Guard.png"
+                    alt="Treasury Guard"
                     loading="lazy" width="220" height="350">
                 </dd>
               </div>
@@ -22207,6 +22382,34 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
                     <div class="weighting after">
                       <dt class="sr-only">now</dt>
                       <dd>10</dd>
+                    </div>
+                    <div class="weighting before">
+                      <dt>was</dt>
+                      <dd>-</dd>
+                    </div>
+                  </dl>
+                </dd>
+              </div>
+            </dl>
+          </li>
+          <li class="card" data-expedition-state="Added" data-draft-state="Added" data-weight-before="-" data-weight-after="1">
+            <h4>Lurking Sanguar</h4>
+            <dl class="card-info">
+              <div class="card-image">
+                <dt class="sr-only">Image</dt>
+                <dd>
+                    <img src="https://www.shiftstoned.com/images/cards/Lurking_Sanguar.png"
+                    alt="Lurking Sanguar"
+                    loading="lazy" width="220" height="350">
+                </dd>
+              </div>
+              <div class="draft-weights">
+                <dt class="sr-only">Draft weightings</dt>
+                <dd>
+                  <dl class="weighting-info">
+                    <div class="weighting after">
+                      <dt class="sr-only">now</dt>
+                      <dd>1</dd>
                     </div>
                     <div class="weighting before">
                       <dt>was</dt>
@@ -35877,7 +36080,7 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
   </section>
 </main>
 
-    </div>
+    </main>
 
     <!-- JAVASCRIPT -->
     

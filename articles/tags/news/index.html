@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Google Analytics gtag to go here - temporarily hidden -->
+
+
+
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Articles | ShiftStoned</title>
+
+<!-- Compatibility for older browsers goes here - temporarily hidden -->
+<!-- Resources for icons go here - temporarily hidden -->
+<!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+  <!-- CSS -->
+  
+  <link href="/styles/site.css" rel="stylesheet" type="text/css">
+  
+    <!-- page-specific styles -->
+    <style>
+    .article {
+    padding: 0 30px 30px;
+}
+
+.articles-list {
+    --list-gap: .75em;
+    display: flex;
+    flex-direction: column;
+    gap: var(--list-gap);
+}
+
+.article-brief {
+    display: grid;
+    grid-template-columns: 250px 600px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "image title"
+                         "image description"
+                         "image link";
+    column-gap: 30px; row-gap: .5em;
+}
+.article-brief:not(:first-child) {
+    border-top: 2px gray groove;
+    padding-top: var(--list-gap);
+}
+.article-brief:last-child {
+    border-bottom: 2px gray groove;
+    padding-bottom: var(--list-gap);
+}
+
+.article-brief header {
+    grid-area: title;
+    margin: 0;
+}
+.article-brief header h2 {
+    font-size: 1.8em;
+    line-height: 1.2; 
+}
+
+.article-brief .article-description {
+    grid-area: description;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    font-size: 15px;
+    color: white;
+}
+.article-brief .article-description p {
+    line-height: 1.6;
+}
+
+.article-brief footer {
+    grid-area: link;
+    display: flex;
+    gap: 2em;
+}
+.article-brief footer > p {
+    margin: 0;
+}
+
+.article-brief .article-thumbnail {
+    grid-area: image;
+    margin-block-start: 0.5em; /* align top of image with top of title text */
+}
+.article-brief .article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.page-selector {
+    padding: 1.5em 0 0;
+}
+.page-selector .pagination {
+    list-style: none;
+    margin: 0; padding: 0;
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+}
+.pagination .page-nav {
+    flex: 0 0 7em; /* make each nav item the same size */
+}
+.pagination .first,
+.pagination .previous {
+    text-align: start;
+}
+.pagination .page-numbers {
+    text-align: center;
+}
+.pagination .first,
+.pagination .previous {
+    text-align: end;
+}
+.page-selector .first a::before {
+    content: "« ";
+}
+.pagination .previous a::before {
+    content: "‹ ";
+}
+.pagination .next a::after {
+    content: " ›";
+}
+.pagination .last a::after {
+    content: " »";
+}
+
+.article-description.text-yellow {
+    color:#f8de7e;
+}
+
+/* !! from wip page css 'mdArticles.css' -- merge when incorporated into main site css */
+.highlight {
+    color:#81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="/images/BackgroundArticles.jpg" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
+
+
+      <div id="newNavigation-menu" data-state="closed">
+
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
+
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <main class="newBodyGrid article">
+
+      <section class="articles-list">
+<h1>Articles tagged “news”</h1>
+  <article class="article-brief">
+    <header>
+      <h2>
+        <a href="/articles/TootTheHorn.html">
+          Toot the Horn: March 2020 Updates
+        </a>
+      </h2>
+    </header>
+    <div class="article-thumbnail">
+      <a href="/articles/TootTheHorn.html">
+        <img src="/images/articles/ElhamPreview.jpg"
+             width="250" height="164.4"
+             loading="lazy"
+             alt="thumbnail graphic" />
+      </a>
+    </div>
+    <section class="article-description ">
+      <p>
+        <strong><time datetime="2020-03-04T00:00:00.000Z">March 4, 2020</time></strong> - Navigating your brew to <a href="https://eternalwarcry.com/">Eternal Warcry</a> from the fan-built <strong>Eternal Power Calculator</strong> has never been easier. Plus the addition of card art makes the <strong>Power Base</strong> visualization tool more visual than ever. 
+      </p>
+    </section>
+    <footer>
+      <p class="highlight">
+        <a class="arrow-link" href="/articles/TootTheHorn.html">Read more</a>
+      </p>
+    </footer>
+  </article>
+  <article class="article-brief">
+    <header>
+      <h2>
+        <a href="/articles/FoX_Pre_order.html">
+          Flame of Xulta Pre-Order Bundle Cards
+        </a>
+      </h2>
+    </header>
+    <div class="article-thumbnail">
+      <a href="/articles/FoX_Pre_order.html">
+        <img src="/images/articles/FoX-Pre-order.jpg"
+             width="250" height="164.4"
+             loading="lazy"
+             alt="thumbnail graphic" />
+      </a>
+    </div>
+    <section class="article-description ">
+      <p>
+        <strong><time datetime="2019-09-27T00:00:00.000Z">September 27, 2019</time></strong> - <strong>Flame of Xulta Pre-Order Bundle</strong> cards are now live in the fan-built <strong>Eternal Power Calculator</strong> at <strong>Shiftstoned</strong>. 
+      </p>
+    </section>
+    <footer>
+      <p class="highlight">
+        <a class="arrow-link" href="/articles/FoX_Pre_order.html">Read more</a>
+      </p>
+    </footer>
+  </article>
+  <article class="article-brief">
+    <header>
+      <h2>
+        <a href="/articles/WorldsExpo.html">
+          Pictures at an Exhibition
+        </a>
+      </h2>
+    </header>
+    <div class="article-thumbnail">
+      <a href="/articles/WorldsExpo.html">
+        <img src="/images/articles/Pictures.jpeg"
+             width="250" height="164.4"
+             loading="lazy"
+             alt="thumbnail graphic" />
+      </a>
+    </div>
+    <section class="article-description ">
+      <p>
+        <strong><time datetime="2018-12-25T00:00:00.000Z">December 25, 2018</time></strong> - Hanging this year's <strong>Championship Power</strong> bases on the wall, and introducing the <strong>Eternal Power Calculator's</strong> new title feature. We take a look at <strong>Power</strong> base visualizations for all 16 decks from the <strong>Eternal Tournament Series 2018 World Championship</strong>.
+      </p>
+    </section>
+    <footer>
+      <p class="highlight">
+        <a class="arrow-link" href="/articles/WorldsExpo.html">Read more</a>
+      </p>
+    </footer>
+  </article>
+  <article class="article-brief">
+    <header>
+      <h2>
+        <a href="/articles/ShareThePower.html">
+          Share the Power: updates to the Eternal Power Calculator
+        </a>
+      </h2>
+    </header>
+    <div class="article-thumbnail">
+      <a href="/articles/ShareThePower.html">
+        <img src="/images/articles/ShareThePower.jpeg"
+             width="250" height="164.4"
+             loading="lazy"
+             alt="thumbnail graphic" />
+      </a>
+    </div>
+    <section class="article-description ">
+      <p>
+        <strong><time datetime="2018-11-14T00:00:00.000Z">November 14, 2018</time></strong> - As <strong>Eternal</strong> enters full release, brewers can now share or store <strong>Power</strong> base visualizations generated by the fan-built <strong>Eternal Power Calculator</strong> at <strong>Shiftstoned</strong> by creating a unique link for their decklist. Full support for modifying <strong>Markets</strong> on the fly has also been added.
+      </p>
+    </section>
+    <footer>
+      <p class="highlight">
+        <a class="arrow-link" href="/articles/ShareThePower.html">Read more</a>
+      </p>
+    </footer>
+  </article>
+</section>
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Google Analytics gtag to go here - temporarily hidden -->
+
+
+
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>The Seekers, Part 1 | ShiftStoned</title>
+
+<!-- Compatibility for older browsers goes here - temporarily hidden -->
+<!-- Resources for icons go here - temporarily hidden -->
+<!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+  <!-- CSS -->
+  
+  <link href="/styles/site.css" rel="stylesheet" type="text/css">
+  
+    <!-- page-specific styles -->
+    <style>
+    .article {
+    --block-margin: 1.5rem;
+}
+
+.article {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.article > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+
+.articleHeader {
+    margin-block-end: var(--block-margin);
+}
+.article .title,
+.article .subtitle,
+.article .tagline,
+.article hr,
+.article > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+.article .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+
+.article :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+.article :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+
+.pre-headline.first {
+    color:#FFDF00;
+}
+.pre-headline.second {
+    color:#C0C0C0;
+}
+.pre-headline.third {
+    color:#cd7f32;
+}
+.pre-headline.fifth {
+    color:#FF4500;
+}
+
+.article a {
+    color: #81C3F4;
+}
+.article a:hover {
+    color: #4183c4;
+}
+
+.side-image,
+.article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
+}
+.side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.side-image.card-image img {
+    width: 220px;
+}
+.side-image.card-image.ci-small img {
+    width: 125px;
+}
+
+.article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.article ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > ul {
+    padding: 0;
+}
+.article > ul > li {
+    margin-inline-start: 1em;
+}
+.article ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
+}
+
+.main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
+}
+.main-col-image img {
+    width: 100%; /* width of the main column */
+    height: auto;
+}
+
+.highlight {
+    color:#81C3F4;
+}
+.article blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+
+/* top 8 articles */
+h2 .epc-link,
+h3 .epc-link {
+    text-decoration: underline;
+}
+h2 .epc-link::before,
+h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article-table,
+.article-table tr,
+.article-table td,
+.article-table th {
+    border: 1px solid white;
+}
+.article-table td,
+.article-table th {
+    padding: 2px 3px;
+}
+.article-table thead th {
+    vertical-align: bottom;
+}
+.article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article-table thead th:nth-child(2),
+.article-table thead th:nth-child(3),
+.article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="/images/BackgroundArticles.jpg" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
+
+
+      <div id="newNavigation-menu" data-state="closed">
+
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
+
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <main class="newBodyGrid article">
+
+      <h1 class="title">The Seekers I: Valley of Kings - featuring Team SPG</h1>
+<p class="subtitle">Team <a href="http://seekpowergaming.com/">Seek Power Gaming</a> is poised to capture several top spots in both the <a href="https://rngeternal.com/ets/">Eternal Tournament Series</a> and the <a href="https://www.tgpeternal.com/eternal-community-league">Eternal Community League</a>.</p>
+<p class="subtitle">In this first part of a series, we talk to <strong>SPG</strong> members <strong>SooNo</strong>, **BruisedByGod **and **SecondBlue **about what it means to be a team player in <a href="https://direwolfdigital.com/eternal/">Eternal, A Strategy Card Game</a>.</p>
+<figure class="article-thumbnail"><img src="/images/articles/Seekers1.jpeg" alt="" width="250"></figure>
+<p class="tagline"><em>As of this writing:</em><br>
+<strong>BruisedByGod</strong> is in second place for <strong><a href="https://rngeternal.com/ets/2018-standings-series-points/">2018 Series Points</a></strong> in the <strong><a href="https://rngeternal.com/ets/">Eternal Tournament Series</a></strong>, with <strong>SecondBlue</strong> not far behind. (<strong>SPG</strong> teammate <strong>ChildRoland</strong> is holding the top spot).</p>
+<p class="tagline"><strong>SooNo</strong> is current frontrunner for the <strong>Eternal Community League's</strong> <a href="https://eternaltournaments.com/points">inaugural season</a>. All three of the players interviewed here can be found in the Top 15 of <strong>both</strong> leagues.</p>
+<table class="article-table">
+<thead>
+<tr>
+<th style="text-align:center">PLAYER</th>
+<th style="text-align:center">ETS RANK<br>(2018)</th>
+<th style="text-align:center">ETS RANK<br>(SEASON)</th>
+<th style="text-align:center">ECL RANK<br>(TO DATE)</th>
+<th style="text-align:center">NOTES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">BruisedByGod</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center" class="yellow">**1**</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center"></td>
+</tr>
+<tr class="yellow">
+<td style="text-align:center">SecondBlue</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">ECL Season One Invitational Winner</td>
+</tr>
+<tr>
+<td style="text-align:center">SooNo</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center" class="yellow">**1**</td>
+<td style="text-align:center"></td>
+</tr>
+<tr class="yellow">
+<td style="text-align:center">TonyGeeeee</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">ETS Season One Invitational Winner</td>
+</tr>
+<tr>
+<td style="text-align:center">childroland</td>
+<td style="text-align:center" class="yellow">**1**</td>
+<td style="text-align:center">**3**</td>
+<td style="text-align:center" class="grey">N/A</td>
+<td style="text-align:center"></td>
+</tr>
+<tr class="yellow">
+<td style="text-align:center">Paradox</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">38</td>
+<td style="text-align:center" class="grey">N/A</td>
+<td style="text-align:center">ETS Season Two Invitational Winner</td>
+</tr>
+<tr>
+<td style="text-align:center">Drolicheck</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center" class="grey">N/A</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h2>Dream Team</h2>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+<strong>Seek Power Gaming</strong> appears to be currently dominating the ranks in both the <strong>ETS</strong> and the <strong>ECL</strong>. How much of this would you say is due to the strength of the individual players compared to working together as a team?</p>
+<p><strong>SooNo:</strong><br>
+We're all strong players as stand alones, which is a big part of us being asked to join <strong>SPG</strong> in the first place. But as far as success after joining <strong>SPG</strong>, it is all due to the team.</p>
+<p><strong>BruisedByGod:</strong><br>
+I would say that the strength of any player is incredibly dependent on who they are playing with and who they are talking to. It is more or less impossible to separate the two.</p>
+<p>Even if I am coming up with a deck and playing it by myself, the player I am is still in part a result of my teammates.</p>
+<p><strong>SecondBlue:</strong><br>
+I was actually a better player before I joined your team. [Laughter]</p>
+<p>Joking aside, being on a team increases the strength of the individual players. We compete against other teams and players - but most importantly against each other.</p>
+<p>This certainly motivates me to bring decks that I feel will be able to compete with my teammates for bragging rights among ourselves.</p>
+<p><strong>SooNo:</strong><br>
+<strong>BruisedByGod</strong> and I have been a duo on: deck building, theory crafting, tuning, testing and really everything that pertains to <strong>Eternal</strong>. Although he likes to throw me on ladder and perch while I lose with some nonsense he's constructed.</p>
+<!--
+
+**Shiftstoned:**\
+So SooNo is the lab rat?
+{.highlight}
+
+**SooNo:**\
+If SPG has a lab rat, I'm definitely it hahaha. But the old saying two heads are better than one is very real. And when you have most of the best minds in the game as SPG does in your corner, it is fairly hard to do poorly.
+
+Internal rivalries
+We get paired against each other so much that , we have to be thinking about that all the tieme
+
+SecondBlue: team demands attention
+
+Q: Anything else you care to say about the SPG team structure or what it is like to be part of a team?
+
+-->
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Hahaha. Let's take a closer look at some of that nonsense, and then talk some more about what it means to be a team player in <strong>Eternal</strong>.</p>
+<h2>Pharaoh Play: Taharqa Mid</h2>
+<p class="tagline">One tournament, one deck, two players, two top eight finishes</p>
+<figure class="side-image"><img src="/images/articles/TaharqaMidDecklist.jpeg" alt="Decklist" title="Taharqa Mid decklist"></figure>
+<figure class="main-col-image"><img src="/images/articles/TaharqaMid.jpeg" alt="Influence Chart" title="Taharqa Mid influence chart"></figure>
+<!-- 
+
+SooNo: (Taraq mid what you have typed out is not what i want associated with, yea you want tt turn 2 but needing 1 t turn 3 is null and void if were casting a scribe turn 2… so that just feels like an attempt to bash but its a mute point really as how the deck is… if you want to say tt scribe turn 2 and ss for ayan turn 3 that makes more s ense pertaining to a power base and my answer to that would be im a greed ball that enjoys rolling the dice sometimes but its honest fine with 12 duals and seeks)
+What problems was SooNo trying to solve by adding one additional Shadow source?
+
+SooNo: I cut a TT card for a Shadow card kinda self explanatory as to why I added a shadow source. I did zero testing with this deck cause it was a joke, but I love Hall of Lost Kings. So BBG just used a weakness of mine against me and got me to play it. [Talk more about this]
+
+Was this based on testing, intuition, personal preference, something else?
+
+SooNo: I made the changes based on preference. I’m a more “sit back play it safe” kinda guy and BBG is more “gungho kill you dead now”.
+II) SooNo identified this Xenan list as “bbg’s deck”:
+
+SooNo: (Your part 2 I'll let bbg answer because we just jammed the deck we didnt think about it to too in depth honest. I wouldn’t bring this to an event I care about winning).
+Brings up the question: is “Casual Friday” still casual now that it counts for ECL points?
+
+What was the original inspiration for the deck?
+
+BruisedByGod: I made it because I like messing around with Hall of Lost Kings and Mask of Torment. It can do some nasty things if it can hold off early pressure and you keep your life total up.
+
+SooNo: BruisedByGod has soft spot for Mask of Torment. I have a soft spot for Hall of Lost Kings. And we like to tilt SecondBlue by not playing Auric Interrogator or Xenan Obelisk.
+BruisedByGod: It was made mostly as a meme deck. But this [event] was sort of a test to see if it could go beyond that. Because I have played Hall of Lost Kings at a high level before. And with some new cards in this expansion, I thought I could maybe take it the next level. I knew from SooNo's performance that Hall of Lost Kings could have success at the highest levels of competitive play.
+
+Was it built specifically as a tournament deck or for other purposes?
+
+What was the process for sharing/testing/modifying among SPG team members?
+
+-->
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+<strong>SooNo</strong> took third place at a recent <a href="https://eternaltournaments.com/viewtournament/88"><strong>ECL</strong> tournament</a> with this <strong>Xenan</strong> list that he dubbed <a href="https://eternalwarcry.com/decks/details/QekxgsnUF6I/taharqa-mid">Taharqa Mid</a>. <strong>BruisedByGod</strong> also finished in the <strong>Top 8</strong> in the same event with a nearly identical deck. What was the original inspiration for this brew?</p>
+<p><strong>BruisedByGod:</strong><br>
+I made it because I like messing around with <strong>Mask of Torment</strong> and <strong>Hall of Lost Kings</strong>. This deck can do some nasty things, if it can hold off early pressure and you keep your life total up.</p>
+<p><strong>SooNo:</strong><br>
+<strong>BruisedByGod</strong> has a soft spot for <strong>Mask of Torment</strong>. I have a soft spot for <strong>Hall of Lost Kings</strong>. And we like to tilt <strong>SecondBlue</strong> by NOT playing <strong>Auric Interrogator</strong> or <strong>Xenan Obelisk</strong> hahaha.</p>
+<p><strong>SecondBlue:</strong><br>
+Killer recursion is a hell of a drug.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Was this list constructed specifically as a tournament deck or for other purposes?</p>
+<figure class="side-image card-image ">
+  <img src="/images/cards/Hall_of_Lost_Kings.png" alt="Hall of Lost Kings card" width="220" height="350" loading="lazy">
+</figure>
+<p><strong>BruisedByGod:</strong><br>
+It was made mostly as a meme deck. But this event was sort of a test to see if it could go beyond that. Because I have played <strong>Hall of Lost Kings</strong> at a high level before. <strong>Turn 6 Hall of Lost Kings</strong> is no joke.</p>
+<p>And with some new cards in this expansion, I thought I could maybe take it the next level. I knew from <strong>SooNo's</strong> performance that <strong>Hall of Lost Kings</strong> could have success at the highest levels of competitive play.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+<strong>SooNo's</strong> version is nearly identical to <strong>BruisedByGod's</strong> apart from two small changes:</p>
+<ul class="highlight">
+<li>-1 Vital Arcana, +1 Annihilate</li>
+<li>+1 Shadow Sigil, -1 Time Sigil</li>
+</ul>
+<p class="highlight"><strong>SooNo</strong>, what contributed to your decision to make these modifications?</p>
+<p><strong>SooNo:</strong><br>
+Well I added an <strong>Annihilate</strong> for the reason there's this card that enjoys teaching people. And i just didn't want to be learning from her.</p>
+<figure class="side-image card-image ">
+  <img src="/images/cards/Amber_Waystone.png" alt="Amber Waystone card" width="220" height="350" loading="lazy">
+</figure>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+There is a nice balance between <strong>Power</strong> sources (22 each of <img alt="Time" title="Time" src="/epc/icon-time.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> and <img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p class="highlight">The <strong>Vara's Favors</strong> even out the <strong>Amber Waystones</strong>. And both make a lot of sense in a deck that includes <strong>Beckoning Lumen</strong> and <strong>Hall of the Lost Kings</strong>.</p>
+<p class="highlight">Would you say this type of symmetrical distribution is intentional or does it just happen naturally?</p>
+<p><strong>SooNo:</strong><br>
+It's funny, I did the same thing to another one of <strong>BruisedByGod's Xenan</strong> decks which I won with. And he had to point it out to me as you did.</p>
+<p>Because when I looked at the deck, it just felt correct in my gut pertaining to changes I made. And the fact they're evenly split is just a coincidence.</p>
+<h2>Let the ritual commence</h2>
+<p class="tagline">…when the game state is ready</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+It is also Interesting to note that in a &quot;health matters&quot; deck there is only one copy of <strong>Katra, the Devoted</strong> (in the <strong>Market</strong>). Not including more copies of <strong>Katra</strong> in the main deck is an unexpected choice (though it seems to have paid off).</p>
+<p class="highlight">What was the thinking there?</p>
+<p><strong>SooNo:</strong><br>
+Katra is just a &quot;better&quot; <strong>Xenan Obelisk</strong> in this deck, or at least we hoped haha.</p>
+<p><strong>BruisedByGod:</strong><br>
+<strong>Katra</strong> is a better version of <strong>Obelisk</strong> if you can get her down and protect her. But she is very dead when you are under a lot of pressure and don't have any ways to pump her on the board.</p>
+<p>The reason to only have one is so that she will not be dead when you draw multiples of her without activators.</p>
+<p>But you keep the explosive potential of <strong>Katra</strong> by having one in the market, when you have the game state that allows room for her to be played. And in those situations she is unmatched.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+It is refreshing to see a successful <strong>Xenan</strong> list that is different from most of the others we've seen recently. Do you intend to continue playing and refining this deck going forward?</p>
+<figure class="side-image card-image ">
+  <img src="/images/cards/The_Tormentor.png" alt="The Tormentor card" width="220" height="350" loading="lazy">
+</figure>
+<p><strong>SooNo:</strong><br>
+As far as improving this deck, I feel only new cards, buffs or nerfs can do that. But <strong>BruisedByGod</strong> and I have done well with <strong>Xenan</strong> lists that are not <strong>Killers</strong> before. We'll do it again, you'll just have to wait and see haha.</p>
+<p><strong>BruisedByGod:</strong><br>
+Yes. I have hope that one day two color <strong>Mask of Torment</strong> will be a <strong>Tier 1</strong> deck. But I do not see it working as a top deck with the current card pool.</p>
+<h2>Now the real training begins</h2>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Several of <strong>SPG's</strong> players are participating in both of <strong>Eternal's</strong> weekly competitive leagues. That can be a demanding schedule - potentially up to four days a week.</p>
+<p class="highlight">What motivates or inspires you to participate?</p>
+<p><strong>SooNo:</strong><br>
+I participate in whatever I can. I come from a <strong>Magic, the Gathering</strong> background. I'm used to playing in events six nights a week, and the seventh it was team drafting. So <strong>ETS</strong> and <strong>ECL</strong> have filled a little bit of my competitive itch. But I got a whole lot more that needs scratched haha.</p>
+<p><strong>BruisedByGod:</strong><br>
+I enjoy the game and in particular playing tournaments alongside my teammates. The <strong>discord</strong> calls make putting in the time worth it.</p>
+<p>Other than that, I like winning especially when I can do it my own way.</p>
+<p><strong>SecondBlue:</strong><br>
+Personally I can't attend as many tournaments as I would like to due to a need to study. However the tournaments I do attend are heavily prepared for.</p>
+<p>And I am motivated by a fear of failure. As a team we generally demand attendance, so it's quite expected to attend tournaments of importance for most of <strong>SPG</strong>.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+How much preparation or practicing do you do as a team, as opposed to just showing up to participate in an event?</p>
+<p><strong>SooNo:</strong><br>
+We do a lot of in team practice, brainstorm meetings, daily chit chat among us. And any help someone needs or wants, we make sure to be there for them.</p>
+<p>As I said before, we're strong stand alone players. But when we work together, we go from strong players to one of the top teams in the game. Team work makes the dream work.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+It sounds like a daily effort for you guys. That must require a lot of communication.</p>
+<p class="highlight">How do team members consult with each other about what decks they are working on, or what they will be bringing to a tournament?</p>
+<p><strong>BruisedByGod:</strong><br>
+We have a <strong>discord</strong> tab where we share lists among team members. What might be unique about this channel is how frequently lists are posted and updated.</p>
+<p><strong>SooNo:</strong><br>
+We are always consulting each other on what to bring, how an event may look, and what this means for what we need to do. Or what new deck if any people want to try. There's a lot. We do a lot as a team.</p>
+<p><strong>SecondBlue:</strong><br>
+Getting as many people on the team to play a deck you want help with is definitely a great way to get multiple viewpoints and suggestions on how to improve the deck.</p>
+<p><strong>SooNo:</strong><br>
+That's the whole point of being on a team in the first place. You can join a team, say nothing, present nothing, test with noone, and do your own thing. But at that point you're not on a team. And I'd be willing to bet you wouldn't survive the long run alone.</p>
+<p><strong>SecondBlue:</strong><br>
+If there is a specific archetype that I know a teammate is familiar with then I will @ them in the deck post to get their attention and feedback.</p>
+<p><strong>BruisedByGod:</strong><br>
+People will post concepts and then others will play them. And help to fine tune lists. The activity in that channel is really the heart of SPG.</p>
+<p><strong>SooNo:</strong><br>
+I think its more like the arms or legs. [Laughter] The players are the heart of SPG, and the bond that we share.</p>
+<p class="highlight"><strong>Shiftstoned:</strong><br>
+Thanks for your time guys. It is really interesting to hear about what happens behind-the-scenes on a competitive <strong>Eternal</strong> team. And I look forward to talking again soon.</p>
+<p class="highlight">Before we wrap up, I'd like to also acknowledge your teammates <strong>TonyGeee</strong> and <strong>Paradox.</strong> They were both valuable consultants and supporters during the development of the <strong><a href="https://www.shiftstoned.com/epc/">Eternal Power Calculator</a></strong>.</p>
+<p class="highlight">Good luck to everyone as we enter the final rounds of the <strong>Eternal Tournament Sseries 2018 Season Three</strong> and the first-ever season for the <strong>Eternal Community Leauge</strong>.</p>
+<p class="tagline"><strong>To be continued…</strong></p>
+<p class="tagline">Check this space for the second part in our series with <strong>Seek Power Gaming</strong>, coming soon.</p>
+<p class="tagline">Follow <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fwww.shiftstoned.com%2F&amp;ref_src=twsrc%5Etfw&amp;screen_name=shiftstoned&amp;tw_p=followbutton">Shiftstoned on twitter</a> for the latest announcements.</p>
+
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>

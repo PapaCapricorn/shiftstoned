@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Google Analytics gtag to go here - temporarily hidden -->
+
+
+
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>The Price of Freedom | ShiftStoned</title>
+
+<!-- Compatibility for older browsers goes here - temporarily hidden -->
+<!-- Resources for icons go here - temporarily hidden -->
+<!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+  <!-- CSS -->
+  
+  <link href="/styles/site.css" rel="stylesheet" type="text/css">
+  
+    <!-- page-specific styles -->
+    <style>
+    .article {
+    --block-margin: 1.5rem;
+}
+
+.article {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.article > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+
+.articleHeader {
+    margin-block-end: var(--block-margin);
+}
+.article .title,
+.article .subtitle,
+.article .tagline,
+.article hr,
+.article > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+.article .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+
+.article :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+.article :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+
+.pre-headline.first {
+    color:#FFDF00;
+}
+.pre-headline.second {
+    color:#C0C0C0;
+}
+.pre-headline.third {
+    color:#cd7f32;
+}
+.pre-headline.fifth {
+    color:#FF4500;
+}
+
+.article a {
+    color: #81C3F4;
+}
+.article a:hover {
+    color: #4183c4;
+}
+
+.side-image,
+.article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
+}
+.side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.side-image.card-image img {
+    width: 220px;
+}
+.side-image.card-image.ci-small img {
+    width: 125px;
+}
+
+.article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.article ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > ul {
+    padding: 0;
+}
+.article > ul > li {
+    margin-inline-start: 1em;
+}
+.article ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
+}
+
+.main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
+}
+.main-col-image img {
+    width: 100%; /* width of the main column */
+    height: auto;
+}
+
+.highlight {
+    color:#81C3F4;
+}
+.article blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+
+/* top 8 articles */
+h2 .epc-link,
+h3 .epc-link {
+    text-decoration: underline;
+}
+h2 .epc-link::before,
+h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article-table,
+.article-table tr,
+.article-table td,
+.article-table th {
+    border: 1px solid white;
+}
+.article-table td,
+.article-table th {
+    padding: 2px 3px;
+}
+.article-table thead th {
+    vertical-align: bottom;
+}
+.article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article-table thead th:nth-child(2),
+.article-table thead th:nth-child(3),
+.article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="/images/BackgroundArticles.jpg" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
+
+
+      <div id="newNavigation-menu" data-state="closed">
+
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
+
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <main class="newBodyGrid article">
+
+      <h2 class="title">Price of Freedom: ECQ Rundown </h2>
+<p class="subtitle">Taking a look at the Top Eight decks from <a href="https://www.direwolfdigital.com/news/eternal-championship-qualifier-price-of-freedom/">The Price of Freedom</a>, the third official <strong>2019 Championship Qualifier</strong> for <a href="https://www.direwolfdigital.com/eternal/">Eternal Card Game</a></p>
+<p class="tagline"><strong>Power</strong> portraits and standout features for each the finalists</p>
+<figure class="article-thumbnail"><img src="/images/articles/PriceOfFreedom.jpeg" alt="" width="250"></figure>
+<hr>
+<p><strong><time datetime="2019-02-14T00:00:00.000Z">February 14, 2019</time></strong> - With the conclusion of <strong>The Price of Freedom</strong> we are one step closer to the <strong>2019 Eternal World Championship</strong>, and two more players have earned an invitation to the main event. Congratulations to <strong>GT100</strong> and <strong>Avyoine</strong> for advancing to the next round, and to all those who qualified for the <strong>ECQ</strong>.</p>
+<h2>The Top Eight</h2>
+<p class="tagline">Underdog <strong>Stonescar Scrappy Hour</strong> prevailed in the end, while <strong>Winchest Midrange</strong> continued to be strongly represented in the <strong>Top Eight</strong> decks from the competition. Overall however, a much more diverse range of strategies were seen in the follow-up to <a href="/articles/BurningHope.html">Burning Hope</a>.</p>
+<!-- <span style="color: #81C3F4">All of the summaries here include a standout feature describing what sets each deck apart from the others.</span> -->
+<div class="pre-headline first">1st place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EBoMEBFEBICFtHEBlIEpfPEAjBEBdEE5GCBrIEBnMDDsHEDuBDB2JBBBIB5HEDsIEDBEA8BEBjNCAABBrIBEgHBrfPBDsHBF2F&amp;t=GT100's%20Deck's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="epc-link" target="_blank">GT100's Deck</a> (Stonescar Scrappy Hour)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Vara's_Favor.png" alt="Vara's Favor card" width="125" height="198.867" loading="lazy">
+</figure>
+<p><strong>Shadow</strong> sources are heavily favored for <strong>Witching Hour</strong> (25<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) as well as <strong>Turn 4</strong> <strong>Market</strong> cards <strong>In Cold Blood</strong> (4<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Burglarize</strong> (4<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). A full playset of <strong>Granite Waystone</strong> is an obvious choice for a <strong>Grenadin</strong>-focused strategy.</p>
+<p><strong class="highlight">Standout feature:</strong> Without any <strong>Justice Influence</strong> sources, <strong>Winchest Cargo</strong> will never <strong>Transmute</strong> into <strong>Wichest Contraband</strong>. But unlike <strong>Seek Power</strong>, the 1-cost <strong>Mult-faction Spell</strong> may be swapped in and out of the <strong>Market</strong>. It can also allow <strong>GT100</strong> to potentially deceive unsuspecting opponents by masquerading as a <strong>Winchest</strong> deck early on.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EBoMEBFEBICFtHEBlIEpfPEAjBEBdEE5GCBrIEBnMDDsHEDuBDB2JBBBIB5HEDsIEDBEA8BEBjNCAABBrIBEgHBrfPBDsHBF2F&amp;t=GT100's%20Deck's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="arrow-link" target="_blank">view deck</a></p>
+<div class="pre-headline second">2nd place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EFtCEB4MEBIDFwGEpfPEFvHCFyGEFmGECsHEsfTEBsFDE2HCF2FEFkBDBBDB-DCB5HEDsIEEzHCDoIDA8BCA4BCA3BCAABrfBBsfCBF1GBEqEBFuD&amp;t=Avyoine's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="epc-link" target="_blank">Avyoine's Deck</a> (Winchest Midrange)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Regent's_Tomb.png" alt="Regent's Tomb card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>An even distribution of <strong>Fire</strong>, <strong>Justice</strong> and <strong>Shadow</strong> sources waiting to be drawn by 4x <strong>Seek Power</strong>. Additional ramp comes in the shape of 3x <strong>Lost Scroll</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). Meanwhile, the <strong>Lingering Influence</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) of the late <strong>Rolant</strong> surrounds <strong>Regent's Tomb</strong> (4 <img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). That extra <strong>Power</strong> draw helps <strong>Avyoine</strong> get to the late game quicker, as does the cost reduction to cards mined from <strong>Quarry</strong> (2 <img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p><strong class="highlight">Standout features:</strong> One of two nearly identical <strong>Winchest</strong> decks in the <strong>Top 8</strong>, the second-place finisher opts for <strong>End of the Story</strong> (6 <img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), an additional sweeper in the <strong>Market</strong>.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EFtCEB4MEBIDFwGEpfPEFvHCFyGEFmGECsHEsfTEBsFDE2HCF2FEFkBDBBDB-DCB5HEDsIEEzHCDoIDA8BCA4BCA3BCAABrfBBsfCBF1GBEqEBFuD&amp;t=Avyoine's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="arrow-link" target="_blank">view deck</a></p>
+<div class="pre-headline third">3rd place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=CB7HCBtIEEjCEB2PEAjBDEkCECvGEF9GEBjDDF4BEsfTEFkCCD3CEFgHCF2FFB5HGB_BEDzBEEqIEA9BCCpGCAABB6HBD_BBCsBBrfPBpfJ&amp;t=Stormblessed's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="epc-link" target="_blank">Stormblessed's Deck</a> (Xenan Midrange)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Crest_of_Mystery.png" alt="Crest of Mystery card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>A fresh take on <strong>Xenan Midrange</strong>. <strong>Time</strong> sources are marginally prioritized over <strong>Shadow</strong> for an early <strong>Teacher of Humility</strong> (2 <img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), and also for <strong>Worldbearer Behemoth</strong> (5 <img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) - the only triple <strong>Influence</strong> card in the list. Full sets of both <strong>Vara's Favor</strong> (2 <img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Amber Waystone</strong> provide a bit of extra lifegain in addition to <strong>Power</strong> and <strong>Influence</strong>.</p>
+<!-- 20T/19S. 4x Amber Waystone. 4x Vara's Favor. -->
+<p><strong class="highlight">Standout features:</strong> A unique <strong>Site</strong>-heavy build that <strong>Stormblessed</strong> has been quietly winning with on ladder. Expect to see more of this novel variant in <strong>Ranked</strong> following their strong finish in the Qualifier.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=CB7HCBtIEEjCEB2PEAjBDEkCECvGEF9GEBjDDF4BEsfTEFkCCD3CEFgHCF2FFB5HGB_BEDzBEEqIEA9BCCpGCAABB6HBD_BBCsBBrfPBpfJ&amp;t=Stormblessed's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EBhGEB4MEBIErfVEDlFEF0HEFsGEF3GEBjDEBjHCFkCEC3FEFkBEBBCB7FDB_BEDqIED7HEDlIBA1BCA2BBA_BCAABC8FBEjFBF7GBF1HBCrF&amp;t=JuliusNovachrono's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="epc-link" target="_blank">JuliusNovachrono's Deck</a> (Jennev Peaks)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Display_of_Instinct.png" alt="Display of Instinct card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 19F/18T/16P. -->
+<p><strong>Jennev Peaks</strong> seemed poised to be the favorite leading up to the event, but in the end the archetype earned only one spot in the Top 8. <strong>JuliusNovachrono's</strong> build includes every <strong>Crest</strong> available to the <img alt="Fire" title="Fire" src="/epc/icon-fire.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> <strong>Alliance</strong>, as well as a full set of <strong>Seek Power</strong> to help meet the demanding <strong>Influence</strong> requirements.</p>
+<p><strong class="highlight">Standout features:</strong> <strong>Praxis Banner</strong> in the <strong>Black Market</strong> sets up a timely <strong>Torch</strong> (1<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) or <strong>Permafrost</strong>(1<img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) combo when paired with any of the deck's eight <strong>Smugglers</strong>.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EBhGEB4MEBIErfVEDlFEF0HEFsGEF3GEBjDEBjHCFkCEC3FEFkBEBBCB7FDB_BEDqIED7HEDlIBA1BCA2BBA_BCAABC8FBEjFBF7GBF1HBCrF&amp;t=JuliusNovachrono's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="arrow-link" target="_blank">view deck</a></p>
+<div class="pre-headline fifth">5th place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=CFtCEB4MEBIDFtHCBtIEpfPEBvEDFvHEFyGEFmGDBjMEsfTEE2HEFkBCBBFB-DDB5HEDsIEEzHEDoICA8BCA3BCAABF1GBFaBB9JBBsFBFuD&amp;t=camat0's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="epc-link" target="_blank">camat0's Deck</a> (Winchest Midrange)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Winchest_Contraband.png" alt="Winchest Contraband card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 19F/22J/22S. -->
+<p>The <a href="https://rngeternal.com/">Eternal Tournament Series</a> 2017 World Champion makes his <strong>ECQ</strong> debut with this list, falling just short of the finals for the event. Several characteristics help to distinguish <a href="https://twitter.com/camat0_">camat0's</a> build from the other two <strong>Winchest</strong> decks found in the <strong>Top Eight</strong>. Every available <strong>Crest</strong> is included, and 3x <strong>Winchest Cargo</strong> are favored over <strong>Lost Scroll</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). The absence of <strong>Cauldron Cookbook</strong> (2<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) allows <strong>camat0</strong> to go a little lighter on <strong>Fire</strong> sources.</p>
+<p><strong class="highlight">Standout features:</strong> <strong>Slay</strong> (3<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) is notably replaced by less costly removal spells <strong>Annihilate</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Vanquish</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). This likely helps to enable more efficient cudgel-making while one of the deck's three <strong>Statuary Maiden</strong> (4<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) is in play.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=CFtCEB4MEBIDFtHCBtIEpfPEBvEDFvHEFyGEFmGDBjMEsfTEE2HEFkBCBBFB-DDB5HEDsIEEzHEDoICA8BCA3BCAABF1GBFaBB9JBBsFBFuD&amp;t=camat0's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EB7HEEoGEBkGEF4DEBmIEDlFEE5GCDtFEB9EDBkJEBhMEsfVEBzJFB-DCB5HEEvIEDrIEBpNDBhNEA-BCAABBtIBElIBEgHBBkJBBhN&amp;t=isomorphic's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="epc-link" target="_blank">isomorphic's Deck</a> (JPS Reanimator)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Chairman's_Contract.png" alt="Chairman's Contract card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 17J/15P/17S. -->
+<p>A deck that breaks a lot of rules when it comes to constructing a <strong>Power</strong> base: <strong>Azindel, Revealed</strong> (8<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) in a list that lacks any natural <strong>Time</strong> sources? <strong>Privilege of Rank</strong> (3<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) without any other <strong>Justice Spells</strong> or <strong>Units</strong>? Upon closer inspection, it all makes sense. Although <strong>isomorphic</strong> could technically gain <img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> from a back-to-back pair of early <strong>Diplomatic Seals</strong>, the real strategy here is to reanimate <strong>Azindel, Revealed</strong> with <strong>Grasping at Shadows</strong> (5<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) or <strong>Vara, Fate-touched</strong> (8<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). <strong>Privilege of Rank</strong> is included solely as a <strong>Power</strong> source, without regard to <strong>Influence</strong>. When combined with the plethora of discard effects, the <strong>Justice</strong> spell ensures that <strong>Power</strong> will nearly always be in hand - even if it is off-color.</p>
+<p><strong class="highlight">Standout features:</strong> Rarely seen until recently, the self-milling <strong>Fall of Argenport Power</strong> card <strong>Chairman's Contract</strong> has risen in popularity with the demand for discard effects created by the <a href="https://steamcommunity.com/games/531640/announcements/detail/1690440309949401220">recent buff</a> to <strong>Vara, Fate-Touched</strong>.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EB7HEEoGEBkGEF4DEBmIEDlFEE5GCDtFEB9EDBkJEBhMEsfVEBzJFB-DCB5HEEvIEDrIEBpNDBhNEA-BCAABBtIBElIBEgHBBkJBBhN&amp;t=isomorphic's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EBNEBhGECpDEBIEC7FEE5EEDhFCqfBEEiIEF3GErfSEB_PEF5GDBBHB7FED3IBDBEA1BCEBEC6FCAABBoGBEjFBEhBBCiGBBwB&amp;t=Thalian's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="epc-link" target="_blank">Thalian's Deck</a> (Skycrag Yeti Aggro)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Common_Cause.png" alt="Common Cause card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>No less than 30 <strong>Yetis</strong> are jammed into this <strong>Tribal</strong> variation on <strong>Skycrag Aggro</strong>. <strong>Primal</strong> is given slight priority over <strong>Fire</strong>, most likely to reliably play <strong>Wump, Party Starter</strong> (3<img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) on time. Two of <strong>Shugo Standard</strong> and a single <strong>Granite Waystone</strong> provide <strong>Thalian</strong> with some extra aggression in a main deck that tops out at <strong>4 Power</strong>.</p>
+<p><strong class="highlight">Standout features:</strong> With more <strong>Yeti</strong> per square inch than a <strong>Snowfort</strong>, the tribal <strong>Power</strong> source <strong>Common Cause</strong> does a better job here than <strong>Diplomatic Seal</strong>. <strong>Thalian</strong> is almost always likely to have more than one <strong>Yeti</strong> in hand, enabling <strong>Common Cause</strong> to deliver both <strong>un-Depleted Power</strong> and the required <strong>Influence</strong> at any stage of the game.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EBNEBhGECpDEBIEC7FEE5EEDhFCqfBEEiIEF3GErfSEB_PEF5GDBBHB7FED3IBDBEA1BCEBEC6FCAABBoGBEjFBEhBBCiGBBwB&amp;t=Thalian's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EFtCEB4MEBIDFwGEpfPEFvHCFyGEFmGECsHEsfTEBsFDE2HCF2FEFkBDBBDB-DCB5HEDsIEEzHCDoIDA8BCA4BCA3BCAABFsCBrfBBsfCBF1GBFuD&amp;t=Stooglefish's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="epc-link" target="_blank">Stooglefish's Deck</a> (Winchest Midrange)</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Lost_Scroll.png" alt="Lost Scroll card" width="125" height="198.867" loading="lazy">
+</figure>
+<!-- 20F/20J/20S. -->
+<p>Identical to <strong>Avyoine's</strong> deck apart from one difference in the <strong>Black Market</strong>.</p>
+<!-- Four Winchest Cargos but no Lost Scrolls. Curve tops out at 7 for Xo and no Martyr's Cross. -->
+<p><strong class="highlight">Standout features:</strong> <strong>Stooglefish</strong> has opted to stock their eight <strong>Smugglers</strong> with an <strong>Adjuicator's Gavel</strong>, helping to defend against <strong>Reanimator</strong> strageties which have soared in popularity since the recent buff to <strong>Vara, Fate-Touched</strong>.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EFtCEB4MEBIDFwGEpfPEFvHCFyGEFmGECsHEsfTEBsFDE2HCF2FEFkBDBBDB-DCB5HEDsIEEzHCDoIDA8BCA4BCA3BCAABFsCBrfBBsfCBF1GBFuD&amp;t=Stooglefish's%20Deck%20%7BECQ%20Price%20of%20Freedom%7D" class="arrow-link" target="_blank">view deck</a></p>
+<hr>
+<p class="subtitle">As announced during the tournament stream, the next <a href="https://www.direwolfdigital.com/news/eternal-world-championship-2019/">Eternal Championship Qualifier</a> will take place in March.</p>
+
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Google Analytics gtag to go here - temporarily hidden -->
+
+
+
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Pictures at an Exhibition | ShiftStoned</title>
+
+<!-- Compatibility for older browsers goes here - temporarily hidden -->
+<!-- Resources for icons go here - temporarily hidden -->
+<!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+  <!-- CSS -->
+  
+  <link href="/styles/site.css" rel="stylesheet" type="text/css">
+  
+    <!-- page-specific styles -->
+    <style>
+    .article {
+    --block-margin: 1.5rem;
+}
+
+.article {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.article > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+
+.articleHeader {
+    margin-block-end: var(--block-margin);
+}
+.article .title,
+.article .subtitle,
+.article .tagline,
+.article hr,
+.article > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+.article .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+
+.article :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+.article :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+
+.pre-headline.first {
+    color:#FFDF00;
+}
+.pre-headline.second {
+    color:#C0C0C0;
+}
+.pre-headline.third {
+    color:#cd7f32;
+}
+.pre-headline.fifth {
+    color:#FF4500;
+}
+
+.article a {
+    color: #81C3F4;
+}
+.article a:hover {
+    color: #4183c4;
+}
+
+.side-image,
+.article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
+}
+.side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.side-image.card-image img {
+    width: 220px;
+}
+.side-image.card-image.ci-small img {
+    width: 125px;
+}
+
+.article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.article ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > ul {
+    padding: 0;
+}
+.article > ul > li {
+    margin-inline-start: 1em;
+}
+.article ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
+}
+
+.main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
+}
+.main-col-image img {
+    width: 100%; /* width of the main column */
+    height: auto;
+}
+
+.highlight {
+    color:#81C3F4;
+}
+.article blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+
+/* top 8 articles */
+h2 .epc-link,
+h3 .epc-link {
+    text-decoration: underline;
+}
+h2 .epc-link::before,
+h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article-table,
+.article-table tr,
+.article-table td,
+.article-table th {
+    border: 1px solid white;
+}
+.article-table td,
+.article-table th {
+    padding: 2px 3px;
+}
+.article-table thead th {
+    vertical-align: bottom;
+}
+.article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article-table thead th:nth-child(2),
+.article-table thead th:nth-child(3),
+.article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="/images/BackgroundArticles.jpg" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
+
+
+      <div id="newNavigation-menu" data-state="closed">
+
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
+
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <main class="newBodyGrid article">
+
+      <h1 class="title">Pictures at an Exhibition</h1>
+<p class="subtitle">Hanging this year's Championship <strong>Power</strong> bases on the wall, and introducing the <a href="/epc/">Eternal Power Calculator's</a> new title feature</p>
+<p class="tagline">We take a look at <strong>Power</strong> base visualizations for all 16 decks from the <strong>Eternal Tournament Series 2018 World Championship</strong></p>
+<figure class="article-thumbnail"><img src="/images/articles/Pictures.jpeg" alt="" width="250"></figure>
+<hr>
+<p><strong><time datetime="2018-12-25T00:00:00.000Z">December 25, 2018</time></strong> - Congratulations to all of the <a href="https://www.direwolfdigital.com/eternal/">Eternal Card Game</a> players who qualified for <a href="https://rngeternal.com/">RNGEternal's</a> <strong>Eternal Tournament Series</strong> <a href="https://www.twitch.tv/videos/346928626">2018 World Championship</a>—especially to <strong>Tobboo</strong> of the <a href="https://eternaltitans.com/">Eternal Titans</a> for their first place finish, following a trail blazed by teammate <a href="https://twitter.com/camat0_">camat0</a> who was last year's <strong>ETS World Champion</strong>.</p>
+<p>To commemorate the conclusion of the 2018 <strong>ETS</strong> series, we have assembled here a gallery of <strong>Power</strong> base visualizations for each of the <strong>Championship</strong> decks, from <strong>Skycrag</strong> to <strong>Chalice.</strong></p>
+<p>As you browse the collection, check out the <a href="/epc/">Eternal Power Calculator's</a> newest feature: <em>You can now name and title your deck</em> when you create a unique link to share your list with the world. (Or keep it to yourself).</p>
+<p class="main-col-image"><img src="/images/articles/Untitled.jpeg" alt="EPC deck title" title="EPC deck title"></p>
+<p>May you find inspiration for your own brews while exploring the <strong>Power</strong> behind these top decks. And be sure to add a title when creating your next masterpiece.</p>
+<h2>ETS 2018 World Championship Finishers</h2>
+<div class="pre-headline first">1st place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EB4MEBIEE0HErfHEBvECEwDEEVDB9EEB3ECBmFEE2JEDoEDE2HEsfMCBBIB-DEEzHDDBEBrNEA4BCAABrfBBsfBBsfCBBCBE2H&amp;t=%5BTobboo%5D%20Rakano%20Ramp" class="epc-link" target="_blank">Rakano Ramp</a> by Tobboo</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Bulletshaper.png" alt="Bulletshaper card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>The inclusion of <strong>Granite Waystones</strong> ended up paying off for <strong>Tobboo</strong>, as 1/1 <strong>Grenadins</strong> played a significant role against <strong>Relic Weapon</strong> based strategies in the finals. <strong>Flame Blast</strong> (2<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) probability seems deceptively low after two draws, but realistically this spell will not be played until much later.</p>
+<p>A total of 38 <strong>Justice</strong> sources ensures that <strong>Amili, Cloudmarshal</strong> (5<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) will reliably fly on time. And of course several cards help to put the “Ramp” into Rakano, including: **Icaria, Valkyrie Captain (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) **, <strong>Yushkov the Usurper</strong> (4<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Bulletshaper</strong> (2<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EB4MEBIEE0HErfHEBvECEwDEEVDB9EEB3ECBmFEE2JEDoEDE2HEsfMCBBIB-DEEzHDDBEBrNEA4BCAABrfBBsfBBsfCBBCBE2H&amp;t=%5BTobboo%5D%20Rakano%20Ramp" class="arrow-link" target="_blank">view deck</a></p>
+<div class="pre-headline second">2nd place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EB4MDBIDsfCEBsKEBvEEBtKEEVDB9EEBmFDCXCBgKEBsFEBiQCEqEBDpBBBpKCBBGB-DBB_BDEzHED7HDE3HCA4BEA2BCAABrfBBBIBsfCBCXBBgK&amp;t=%5BErik9099%5D%20Worlds%20Deck%20FTJ%20Armory" class="epc-link" target="_blank">Worlds Deck FTJ Armory</a> by Erik9099</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Privilege_of_Rank.png" alt="Privilege of Rank card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>Ten <strong>Crests</strong> allow <strong>Erik9099</strong> to <strong>Scout</strong> frequently for the cards they need, grabbing <strong>Relic Weapons</strong>, ramping up to <strong>Icaria, the Liberator</strong> (8<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and (hopefully) bottoming the many <strong>Firebombs</strong> generated by one or more <strong>Cauldron Cookbooks</strong> (2<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p><strong>Justice</strong> is quite strongly prioritized over the other two <strong>Factions</strong>, enabling <strong>Throne Warden</strong> (5<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and the deck's six sweepers, including a full set of <strong>Harsh Rule (5<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</strong> and a pair of <strong>End of the Story (6<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</strong></p>
+<p><strong>Time</strong> is splashed for just two cards - <strong>Desert Marhsal</strong> (2<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Combrei Healer</strong> (3<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). Meanwhile <strong>Privilege of Rank</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) is so valuable, it is included even in the absence of any discard effects.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EB4MDBIDsfCEBsKEBvEEBtKEEVDB9EEBmFDCXCBgKEBsFEBiQCEqEBDpBBBpKCBBGB-DBB_BDEzHED7HDE3HCA4BEA2BCAABrfBBBIBsfCBCXBBgK&amp;t=%5BErik9099%5D%20Worlds%20Deck%20FTJ%20Armory" class="arrow-link" target="_blank">view deck</a></p>
+<div class="pre-headline third">3rd place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EB8HBB7HEEsGErfNDBvECEwDEAjBCCrHEE5GDCsHED6DEB3ECBmFEsfTEqfSGB-DGB5HECnHEDoICEhDEA3BCAABEnGBDiHBCsHBEgHBCyH&amp;t=%5BKangbreath%5D%20Cheesegrater%20250" class="epc-link" target="_blank">Cheesegrater 250</a> by Kangbreath</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Crownwatch_Tactic.png" alt="Crownwatch Tactic card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>It never hurts to have a <strong>Crownwatch Tactic</strong> or two in hand, and <strong>Kangbreath</strong> can afford to include <strong>Transmute</strong> sources in a deck that tops out at five <strong>Power</strong> for <strong>Tavrod, Auric Broker</strong> (5<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p><strong>Shadow</strong> is slightly prioritized, making it easier to play an early <strong>Devastating Setback</strong> (3<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and ensuring that <strong>Vara's Favor</strong> (2<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) will reliably find a <strong>Shadow Sigil</strong> to draw.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EB8HBB7HEEsGErfNDBvECEwDEAjBCCrHEE5GDCsHED6DEB3ECBmFEsfTEqfSGB-DGB5HECnHEDoICEhDEA3BCAABEnGBDiHBCsHBEgHBCyH&amp;t=%5BKangbreath%5D%20Cheesegrater%20250" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=CB6HCB8HDB4MCB7HECuGEAjBEEmCECsGCCvGDBiJEBjDEsfTCC_BDD3CEB0DDB2DFB5HEB_BEDzBEEqIEA9BECpGCAABBjCBCsBBCvGBD3CBB2D&amp;t=%5BSecondBlue%5D%20Mystical%20Xenan" class="epc-link" target="_blank">Mystical Xenan</a> by SecondBlue</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Waystone_Infuser.png" alt="Waystone Infuser card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>The abilities of <strong>Worldbearer Behemoth</strong> (5<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Waystone Infuser</strong> (5<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) help to ensure that <strong>Power</strong> keeps flowing through <strong>Mystic Ascendant</strong> (6<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), the potent 6-drop that gives this deck its name.</p>
+<p>In a two-faction <strong>Time</strong> deck there is very little downside to including a full set of <strong>Amber Waystones</strong>, as <strong>SecondBlue</strong> does here. <strong>Shadow</strong> sources are given a slight preference, most likely to increase the chances of holding <img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> after three draws for <strong>Ayan, the Abductor</strong> (3<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=CB6HCB8HDB4MCB7HECuGEAjBEEmCECsGCCvGDBiJEBjDEsfTCC_BDD3CEB0DDB2DFB5HEB_BEDzBEEqIEA9BECpGCAABBjCBCsBBCvGBD3CBB2D&amp;t=%5BSecondBlue%5D%20Mystical%20Xenan" class="arrow-link" target="_blank">view deck</a></p>
+<figure class="main-col-image"><img src="/images/articles/Pictures.jpeg" alt=""></figure>
+<div class="pre-headline fifth">5th place:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EBiEEBiIDEyECEvGEB4MEsfSCDvGEE5EDDwDEEuDEEpFEE3DEE-DEEgEDB-DEB7FCB5HCCnHDE9HBEhDEBpNEAzBCA3BCAABEyEBBhGBB2LBDwDBBnQ&amp;t=%5BAlmost%5D%208%20Merchant%20Blitz" class="epc-link" target="_blank">8 Merchant Blitz</a> by Almost</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Diplomatic_Seal.png" alt="Diplomatic Seal card" width="125" height="198.867" loading="lazy">
+</figure>
+<p><strong>Diplomatic Seals</strong> can make it easier to play early units with demanding <strong>Influence</strong> requirements, especially in a three-faction list such as this one that ideally ideally wants to hit <img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> by <strong>Turn 4</strong>.</p>
+<p><strong>Justice</strong> is prioritized as the only <strong>Faction</strong> that requires double <strong>Influence</strong> from more than one card. A single <strong>Crownwatch Standard</strong> creates the potential for an additional <strong>Combat Trick</strong> to fuel <strong>Almost's</strong> twelve-plus <strong>Units</strong> that have pump spell synergy.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EBiEEBiIDEyECEvGEB4MEsfSCDvGEE5EDDwDEEuDEEpFEE3DEE-DEEgEDB-DEB7FCB5HCCnHDE9HBEhDEBpNEAzBCA3BCAABEyEBBhGBB2LBDwDBBnQ&amp;t=%5BAlmost%5D%208%20Merchant%20Blitz" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EBqCCEkDCB4MEBsKErfHEBvECEwDEEmCEB3EDBjDEEjEDE5HEBuFCB0DEsfMIB-DDB_BCDzBEBoNEE3HEA6BCAABBuKBE5HBByKBB0DBpfD&amp;t=%5Bchildroland%5D%20BBG%20SecondBlue's%20Combrei%20Mid" class="epc-link" target="_blank">BBG SecondBlue's Combrei Mid</a> by childroland</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Lingering_Influence.png" alt="Lingering Influence card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>When you count <strong>Power</strong> draw spells and <strong>Power</strong> granting <strong>Units</strong>, this deck includes more sources than any other in the event. Eight <strong>Justice Sigils</strong> are waiting to be pulled by <strong>Lingering Influence</strong> (1<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) or the abilities of <strong>Icaria, Vaklyrie Captain</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Telut, Queen's Hand</strong> (7<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). Meanwhile, <strong>Marshal Ironthorn</strong> (5<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Mystic Ascendant</strong> (6<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) allow <strong>childroland</strong> to get maximum value from all that <strong>Power</strong> being drawn.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EBqCCEkDCB4MEBsKErfHEBvECEwDEEmCEB3EDBjDEEjEDE5HEBuFCB0DEsfMIB-DDB_BCDzBEBoNEE3HEA6BCAABBuKBE5HBByKBB0DBpfD&amp;t=%5Bchildroland%5D%20BBG%20SecondBlue's%20Combrei%20Mid" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EB6HEB4MEsfSEBICBtIEpfPCBvEEEVECsHED-HEsfTDDzIDElBDE2HCBBDB-DDB5HDCnHDDsIEEzHCDoICDBEA8BCAABrfBBEhBBBjMBDzIBE2H&amp;t=%5BMouche%5D%20ET%20Manu's%20FJS%20Zuberi" class="epc-link" target="_blank" name="fjs">ET Manu's FJS Zuberi</a> by Mouche</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Crest_of_Chaos.png" alt="Crest of Chaos card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>An <strong>FJS</strong> deck that omits <strong>Icaria, the Liberator</strong> (8<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) can go a little lighter on the <strong>Justice</strong> sources. This list prioritizes <strong>Fire</strong> and <strong>Shadow</strong> instead for midrange threats such as <strong>Vicious Highwayman</strong> (4<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), <strong>Zuberi Outlands Warrior</strong> (4<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Vara Venegance-Seeker</strong> (4<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). Still, there is enough <strong>Justice</strong> <strong>Influence</strong> for <strong>Mouche</strong> to reliably play <strong>Rizahn, Greatbow Master</strong> (6<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) on curve.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EB6HEB4MEsfSEBICBtIEpfPCBvEEEVECsHED-HEsfTDDzIDElBDE2HCBBDB-DDB5HDCnHDDsIEEzHCDoICDBEA8BCAABrfBBEhBBBjMBDzIBE2H&amp;t=%5BMouche%5D%20ET%20Manu's%20FJS%20Zuberi" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EBFEBqCEBIEEjCEB2PEDhCBB9CEBdEEVCBhBDBoDEBnDDE2JBBwBDC3FCBBIB_BED7HEDBECrFEA2BCAABBhBBEhBBE2JBBwBBC1F&amp;t=%5BTinMan%5D%20I%20Couldn't%20Make%20Unitless%20Work%E2%80%A6" class="epc-link" target="_blank">I Couldn't Make Unitless Work So I'm Playing As Many Units As Possible</a> by TinMan</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Trail_Maker.png" alt="Trail Maker card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>As the title implies, the strategy for this deck revolves around units. But that does not have to mean giving up on <strong>Power</strong> sources. A full play set of <strong>Initiate of the Sands</strong> (1<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) makes it easier to ramp up to <strong>Assembly Line</strong> (3<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), or reach the <strong>8 Power</strong> necessary to gain maximum value from <strong>Xenan Obelisk</strong> (4<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p><strong>Trail Maker</strong> (2<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) pulls triple duty as a <strong>Unit</strong>, a <strong>Power</strong> source <em>and</em> an <strong>Influence</strong> source. Meanwhile, a single <strong>Amber Acolyte</strong> does a convicing impersonation of <strong>Seek Power</strong> with a body. And <strong>Yushkov the Usurper</strong> (3<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) provides at least +1 Power for the turn after he comes down.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EBFEBqCEBIEEjCEB2PEDhCBB9CEBdEEVCBhBDBoDEBnDDE2JBBwBDC3FCBBIB_BED7HEDBECrFEA2BCAABBhBBEhBBE2JBBwBBC1F&amp;t=%5BTinMan%5D%20I%20Couldn't%20Make%20Unitless%20Work%E2%80%A6" class="arrow-link" target="_blank">view deck</a></p>
+<div class="pre-headline" style="color:#32CD32;">Runners-up:</div>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EEFEBNDBhGEBQDsfBECpDEBIEC7FEE5EDBXCBUEEpFDBaEC_FHBBEB7FEBpNEA1BCEBEC6FCAABEyEBBhGBB9FBE4EBB5G&amp;t=%5BParadox%5D%20Blue%20Merchant%20Skycrag" class="epc-link" target="_blank">Blue Merchant Skycrag</a> by Paradox</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Shugo_Standard.png" alt="Shugo_Standard card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>A deck with twelve 1-drops demands undepleted <strong>Power</strong> and versatile <strong>Influence</strong> from the opening hand, so a full set of <strong>Diplomatic Seals</strong> is a natural choice. <strong>Shugo Standard</strong> provides extra utility for <strong>Paradox's</strong> aggressive strategy, and is a safe bet in a deck that tops out at 3 <strong>Power</strong> (<strong>Ultimates</strong> and <strong>Spellcraft</strong> abilities notwithstanding). <strong>Fire</strong> is favored over <strong>Primal</strong>, and is the only faction in this deck to require more than a single <strong>Influence</strong> - for <strong>Longbarrel</strong> (1<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />), <strong>Shogun's Scepter</strong> (3<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and of course <strong>Vadius, Clan Father</strong> (3<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />).</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EEFEBNDBhGEBQDsfBECpDEBIEC7FEE5EDBXCBUEEpFDBaEC_FHBBEB7FEBpNEA1BCEBEC6FCAABEyEBBhGBB9FBE4EBB5G&amp;t=%5BParadox%5D%20Blue%20Merchant%20Skycrag" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EB4MEBsKEC6GEDlFEBvEEEmCEBtKCB9EDBgDEB6GDBmFCBnLEC_GEBsFFB-DCB7FBB_BEE9HCE3HEDlIDAzBEA_BCAABD_BBBnLBDwCBE5HBByK&amp;t=%5Bcamat0%5D%20Chalice" class="epc-link" target="_blank">Chalice</a> by camat0</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Auralian_Merchant.png" alt="Auralian Merchant card" width="125" height="198.867" loading="lazy">
+</figure>
+<p><strong>Seek Power</strong> and <strong>Privilege of Rank</strong> help to increase <strong>camat0's</strong> chances of reaching the <strong>Influence</strong> required for <strong>Shelterwing Rider</strong> (4<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) after four draws. While it would seem this list also wants <img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> on <strong>Turn 4</strong>, the only cards that actually have that <strong>Influence</strong> cost are specific answers in the <strong>Market:</strong> <strong>Sword of Unity</strong> (4<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Lumen Reclaimer</strong> (4<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). Realistically these will be played much later in the game.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EB4MEBsKEC6GEDlFEBvEEEmCEBtKCB9EDBgDEB6GDBmFCBnLEC_GEBsFFB-DCB7FBB_BEE9HCE3HEDlIDAzBEA_BCAABD_BBBnLBDwCBE5HBByK&amp;t=%5Bcamat0%5D%20Chalice" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EBiEEBIEB6JEBrEBBUDBvECEwDEEVDD6DEB3EED-HDBmFEEjECB9JFBBHB-DEEzHDEhDEBrNEA4BCEBCAABBOBsfCBEhBBB9JBEB&amp;t=%5BThePlatypusKing%5D%20ETS%20World%20Championship%20Rakano" class="epc-link" target="_blank">ETS World Championship Rakano</a> by ThePlatypusKing</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Rakano_Banner.png" alt="Rakano Banner card" width="125" height="198.867" loading="lazy">
+</figure>
+<p><strong>Justice</strong> gets priority over <strong>Fire</strong> for early <strong>Units</strong> such as <strong>Valkyrie Enforcer</strong> (2<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Unseen Commando</strong> (3<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). A single <strong>Cauldron Cookbook</strong> (2<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) provides another example of how <strong>Markets</strong> allow players to include cards which their <strong>Power</strong> base might not otherwise support - <strong>ThePlaytupusKing</strong> has control over when he draws the powerful double-<strong>Fire</strong> <strong>Relic</strong>. And of course there is enough <strong>Influence</strong> to reliably play the mighty <strong>Rakano Plate</strong> (5<img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) on time. A pair of <strong>Shugo Standards</strong> helps to punch through some additional <strong>Overwhelm</strong> damage.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EBiEEBIEB6JEBrEBBUDBvECEwDEEVDD6DEB3EED-HDBmFEEjECB9JFBBHB-DEEzHDEhDEBrNEA4BCEBCAABBOBsfCBEhBBB9JBEB&amp;t=%5BThePlatypusKing%5D%20ETS%20World%20Championship%20Rakano" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=DB6HDBhGEBtIDElIDrfNEDlFEAjBEEpFEB6GDB9LEBzLED7FEBhMGB7FEB5HCEhGED3EEDrIEBhNEA-BCAABBhGBElIBDnFBB5GBB_L&amp;t=%5BTonyGeeeee%5D%C2%A0Feln%20Mid" class="epc-link" target="_blank">Feln Mid</a> by TonyGeeeee</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Vara's_Favor.png" alt="Vara's Favor card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>In a deck that wants to play a fully enabled <strong>Champion of Cunning</strong> (5<img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) early and often, an even split between <strong>Primal</strong> and <strong>Shadow</strong> sources makes sense (including <strong>Vara's Favor</strong> for 2<img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). Four <strong>Cobalt Waystones</strong> protect against hand disruption and other face-targeting effects. <strong>Wisdom of the Elders</strong> and/or <strong>Strategise</strong> provide a couple of addional draws before <strong>Turn 5</strong>, helping <strong>TonyGeeeee</strong> reach the <strong>Influence</strong> requirements he needs for <strong>Jotun Feast-Caller</strong> (5<img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Primal" title="Primal" src="/epc/icon-primal.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and enabling even more additional draws.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=DB6HDBhGEBtIDElIDrfNEDlFEAjBEEpFEB6GDB9LEBzLED7FEBhMGB7FEB5HCEhGED3EEDrIEBhNEA-BCAABBhGBElIBDnFBB5GBB_L&amp;t=%5BTonyGeeeee%5D%C2%A0Feln%20Mid" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EBqCEB4MEBrKBBsKEEjCEBvECEwDEEmCBBuKEB3EEBjDDE5HED3CDB0DDsfMHB-DDB_BEDzBEBoNEE3HEA6BCAABBuKBE5HBByKBB0DBpfD&amp;t=%5BSooNo%5D%20Get%20the%20Bridge" class="epc-link" target="_blank">Get the Bridge</a> by SooNo</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Telut,_Queen's_Hand.png" alt="Telut, Queen's Hand card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>Twenty-six <strong>Power</strong> cards symmetrically divided between <strong>Time</strong> and <strong>Justice</strong> are bolstered by an additional 12 secondary sources in this high voltage <strong>Combrei</strong> deck. <strong>Awakened Student</strong> (2<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) derives extra value from <strong>Power</strong> cards played early in the game while <strong>Mystic Ascendant</strong> (6<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) does the same on later on. <strong>Worldbearer Behemoth</strong> (5<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Telut, Queen's Hand</strong> (7<img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) provide assistance with their <strong>Power</strong> drawing abilities.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EBqCEB4MEBrKBBsKEEjCEBvECEwDEEmCBBuKEB3EEBjDDE5HED3CDB0DDsfMHB-DDB_BEDzBEBoNEE3HEA6BCAABBuKBE5HBByKBB0DBpfD&amp;t=%5BSooNo%5D%20Get%20the%20Bridge" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EB6HDB8HEBIEBtIEEsGErfNEAjBEqfNEEVEBiJDBjMEsfTEDrHDBBHB5HBEhGEDsIEA8BCEBEBjNCAABrfBBsfCBBjMBBwBBEB&amp;t=%5BBruisedByGod%5D%20Maiden's%20Rest" class="epc-link" target="_blank">Maiden's Rest</a> by BruisedByGod</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Cabal_Standard.png" alt="Cabal Standard card" width="125" height="198.867" loading="lazy">
+</figure>
+<p><strong>Shadow</strong> is highly prioritized over <strong>Fire</strong> in this <strong>Stonescar</strong> midrange list which aims to hit <img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Shadow" title="Shadow" src="/epc/icon-shadow.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> on <strong>Turn 5</strong> for <strong>Shadowlands Tyrant</strong>. <strong>Fire</strong> cards with more than a single <img alt="Fire" title="Fire" src="/epc/icon-fire.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> are relegated to the market - where <strong>BruisedByGod</strong> can draw them once the required <strong>Influence</strong> has been met. A smattering of <strong>Standards</strong> create potential for surprising <strong>Overwhelm</strong> or <strong>Quickdraw</strong> attacks, pairing nicely with the deck's <strong>Deadly</strong> units.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EB6HDB8HEBIEBtIEEsGErfNEAjBEqfNEEVEBiJDBjMEsfTEDrHDBBHB5HBEhGEDsIEA8BCEBEBjNCAABrfBBsfCBBjMBBwBBEB&amp;t=%5BBruisedByGod%5D%20Maiden's%20Rest" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EB6HEB4MEsfSEBICBtIEpfPCBvEEEVECsHED-HEsfTCDzIEElBDE2HCBBDB-DDB5HDCnHDDsIEEzHCDoICDBEA8BCAABrfBBEhBBBjMBDzIBE2H&amp;t=%5Blv13david%5D%20Manus%20Ambitious%20Kerendon%20Midrange" class="epc-link" target="_blank">ManuS Ambitious Kerendon Midrange</a> by lv13david</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Seat_of_Chaos.png" alt="Seat of Chaos card" width="125" height="198.867" loading="lazy">
+</figure>
+<p>An <a href="#fjs">identical list</a> to the one brought by <strong>lv13david's</strong> teammate <strong>Mouche</strong>, with a slightly different title. Both versions break the <strong>Winchest (FJS)</strong> mold by skipping <strong>Icaria, the Liberator</strong> for a mid-range package of <strong>Units</strong> that almost looks more like <strong>Stonescar</strong> than <strong>Rakano</strong>.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EB6HEB4MEsfSEBICBtIEpfPCBvEEEVECsHED-HEsfTCDzIEElBDE2HCBBDB-DDB5HDCnHDDsIEEzHCDoICDBEA8BCAABrfBBEhBBBjMBDzIBE2H&amp;t=%5Blv13david%5D%20Manus%20Ambitious%20Kerendon%20Midrange" class="arrow-link" target="_blank">view deck</a></p>
+<h3><a href="https://www.shiftstoned.com/epc/?d=EBFEBqCEBIEEjCEB2PEDhCEBdEEVDBhBCEhBEBoDEBnDCBwBDC3FCBBHB_BED7HEDBECrFEA2BCAABCwFBBhBBEhBBBwBBEB&amp;t=%5BMagikarp%5D%20Teamrankstar.com%20Tokens" class="epc-link" target="_blank">Teamrankstar.com Tokens</a> by Magikarp</h3>
+<figure class="side-image card-image ci-small">
+  <img src="/images/cards/Granite_Waystone.png" alt="Granite Waystone card" width="125" height="198.867" loading="lazy">
+</figure>
+<p><strong>Time</strong> is slightly favored over <strong>Fire</strong> to prioritize early units such as <strong>Initiate of the Sands</strong> (1<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />) and <strong>Teacher of Humility</strong> (2<img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />). The potential for a 1-cost 5/5 <strong>Grenadin</strong> (with two activated <strong>Xenan Obelisks</strong> in play) mitigates any risk of a possibly depleted <strong>Seat of Impulse</strong> early on, so a full set of <strong>Granite Waystones</strong> are included.</p>
+<p class="highlight"><a href="https://www.shiftstoned.com/epc/?d=EBFEBqCEBIEEjCEB2PEDhCEBdEEVDBhBCEhBEBoDEBnDCBwBDC3FCBBHB_BED7HEDBECrFEA2BCAABCwFBBhBBEhBBBwBBEB&amp;t=%5BMagikarp%5D%20Teamrankstar.com%20Tokens" class="arrow-link" target="_blank">view deck</a></p>
+<p class="subtitle">As of this writing, <strong>Eternal Card Games's</strong> newest expansion <a href="https://www.direwolfdigital.com/news/new-set-steam-release/">Defiance</a> has only been out for a few days, but it already feels almost like an entirely different game. It will be interesting to take a look at next year's ETS winners and see how things compare with these portraits from the end of the Fall of Argenport meta.</p>
+
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>

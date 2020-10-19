@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Google Analytics gtag to go here - temporarily hidden -->
+
+
+
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>High Voltage | ShiftStoned</title>
+
+<!-- Compatibility for older browsers goes here - temporarily hidden -->
+<!-- Resources for icons go here - temporarily hidden -->
+<!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+  <!-- CSS -->
+  
+  <link href="/styles/site.css" rel="stylesheet" type="text/css">
+  
+    <!-- page-specific styles -->
+    <style>
+    .article {
+    --block-margin: 1.5rem;
+}
+
+.article {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.article > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+
+.articleHeader {
+    margin-block-end: var(--block-margin);
+}
+.article .title,
+.article .subtitle,
+.article .tagline,
+.article hr,
+.article > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+.article .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+
+.article :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+.article :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+
+.pre-headline.first {
+    color:#FFDF00;
+}
+.pre-headline.second {
+    color:#C0C0C0;
+}
+.pre-headline.third {
+    color:#cd7f32;
+}
+.pre-headline.fifth {
+    color:#FF4500;
+}
+
+.article a {
+    color: #81C3F4;
+}
+.article a:hover {
+    color: #4183c4;
+}
+
+.side-image,
+.article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
+}
+.side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.side-image.card-image img {
+    width: 220px;
+}
+.side-image.card-image.ci-small img {
+    width: 125px;
+}
+
+.article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.article ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > ul {
+    padding: 0;
+}
+.article > ul > li {
+    margin-inline-start: 1em;
+}
+.article ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
+}
+
+.main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
+}
+.main-col-image img {
+    width: 100%; /* width of the main column */
+    height: auto;
+}
+
+.highlight {
+    color:#81C3F4;
+}
+.article blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+
+/* top 8 articles */
+h2 .epc-link,
+h3 .epc-link {
+    text-decoration: underline;
+}
+h2 .epc-link::before,
+h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article-table,
+.article-table tr,
+.article-table td,
+.article-table th {
+    border: 1px solid white;
+}
+.article-table td,
+.article-table th {
+    padding: 2px 3px;
+}
+.article-table thead th {
+    vertical-align: bottom;
+}
+.article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article-table thead th:nth-child(2),
+.article-table thead th:nth-child(3),
+.article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="/images/BackgroundArticles.jpg" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
+
+
+      <div id="newNavigation-menu" data-state="closed">
+
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="https://www.shiftstoned.com/global/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
+
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <main class="newBodyGrid article">
+
+      <h1 class="title">Danger: High Voltage</h1>
+<p class="subtitle">More than half the cards in this tournament winning deck piloted by Mouche are Power sources. &quot;<em><a href="https://eternalwarcry.com/decks/details/H4FvWiA1uE8/i-heard-alessi-is-still-free-to-grow">I heard Alessi is still free to grow</a></em>&quot; raises the question: When is too much Power just enough?</p>
+<figure class="article-thumbnail"><img src="/images/articles/HighVoltageBig.jpeg" alt="" width="250"></figure>
+<figure class="side-image"><img src="/images/articles/AhlessiDecklist.jpeg" alt="Decklist" title="Alessi decklist"></figure>
+<figure class="main-col-image powerBase"><img src="/images/articles/AlessiPowerbase.jpeg" alt="Power Base" title="Alessi power base"></figure>
+<figure class="main-col-image"><img src="/images/articles/AhlessiChart1.jpeg" alt="Influence Chart" title="Alessi influence chart"></figure>
+<h2>Power to those who seek it</h2>
+<p><strong>Eternal</strong> card game requires a minimum of 25 <strong>Power Cards</strong> in order for your deck to be valid. Decks that may be especially <strong>Power</strong>-hungry will commonly include a few extras, sometimes <a href="/articles/Portrait.html">up to a total of 28</a>. Maybe <a href="https://eternalwarcry.com/decks/details/lQ1s5v8gMJc/camat0s-hot-rod" title="Camat0's Hot Rod">30</a> if you really want to push it.</p>
+<p>But at the <a href="https://rngeternal.com/ets/">Eternal Tournament Series</a> recent <a href="https://eternalwarcry.com/tournaments/details/96KcT1JBCVI/ets-2018-s3w4-top-8">S3W3</a> event, Mouche took first-place piloting a deck that includes <em>no less than 32</em> <strong>Power Cards</strong>.</p>
+<p>Overall there is a grand total of 39 <strong>Power</strong> sources when you include <strong>Find the Way</strong> and <strong>Auralian Merchant</strong>.</p>
+<p>That means <em>over half</em> of the cards in this Van de Graaf generator of a deck are <strong>Power</strong> sources. For most lists, that would be a recipe for a disastrous flood.</p>
+<p class="tagline">But as the first-place finish demonstrates, it somehow works in this case.</p>
+<h2>The first step: Innovation</h2>
+<p>With all that <strong>Power</strong> you might expect to see some high-cost finishers such <strong>Sword of the Sky King</strong> or maybe even a <strong>Novaquake Titan</strong>.</p>
+<p>But nope, the curve for Mouche's deck tops out at four. Hmm...okay. Maybe the deck has a lot of high <strong>Influence</strong> requirements then?</p>
+<p>That's not it either. None of the cards require triple <strong>Influence</strong>. And the steepest <strong>Influence</strong> cost to play any card in the entire deck is <img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> for <strong>Sword of Unity</strong>.</p>
+<figure class="main-col-image"><img src="/images/articles/SwordOfUnity.jpeg" alt="Influence Chart" title="Alessi influence chart 2"></figure>
+<p>If not greedy <strong>Power</strong> costs or <strong>Influence</strong> requirements then, what is all that <strong>Power</strong> for exactly?</p>
+<p>After a closer look, it becomes clear that there are a specific combination of reasons why an overload of <strong>Power</strong> works for this deck in particular.</p>
+<h2>Take this</h2>
+<p>On the most obvious level, <strong>Power</strong> does here what you might expect it to by ensuring that impacful 1- and 2-drops can be played on time. Although <strong>Teacher of Humility</strong>, <strong>Awakened Student</strong> and <strong>Alessi, Combrei Archmage</strong> are all low-cost units in terms of <strong>Power</strong>, they each have <strong>Influence</strong> requirements that are a little trickier.</p>
+<p>Unlike an <strong>Aggro</strong> deck that plays low-cost single <strong>Influence</strong> units such as <strong>Oni Ronin</strong> or <strong>Crownwatch Paladin</strong>, Mouche's deck needs to work a bit harder to meet <img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Justice" title="Justice" src="/epc/icon-justice.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> or <img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /> in the early stages.</p>
+<p>The pay-off is that each of these units might quickly run away with a game. Any one of them can lead to a strong start. And a quick glance at the <strong>Power Odds</strong> table shows that Mouche has a very favorable chance of being able to play all of them on curve.</p>
+<figure class="main-col-image"><img src="/images/articles/AhlessiOddsTable.jpeg" alt="Power Odds" title="Alessi power odds"></figure>
+<h2>Mind over body</h2>
+<p>Speaking of <strong>Awakened Student</strong>, the 2-cost <strong>Combrei</strong> mystic can be very useful when it comes to converting your <strong>Power</strong> into a bigger board presence. The mechanic is called <strong>Empower</strong> for a reason.</p>
+<p>With one or more of these guys in play, your <strong>Power</strong> cards essentially become <em>zero</em>-cost spells that might as well read &quot;Give your <strong>Awakened Students</strong> +1/+1.&quot;</p>
+<p>It is also worth mentioning that (in addition to being a fifth pull for <strong>Crownwatch Press-gang</strong>), <strong>Wandering Wisp</strong> can become a very powerful threat that quickly snowballs after <img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" /><img alt="Time" title="Time" src="/epc/icon-time.png" width="19" height="19" style="width: 19px; height: 19px; vertical-align: text-bottom;" />. This helps to explain why the deck includes a shocking ten <strong>Time Sigils</strong>.</p>
+<h2>Standard tactics</h2>
+<p>Perhaps most importantly of all however, the <strong>Power</strong> base for this list takes full advantage of a new type <strong>Power</strong> card that was introduced with the <strong>Fall of Argenport</strong>.</p>
+<p>In the early game, <strong>Temple Standard</strong> and <strong>Crownwatch Standard</strong> both provide you with <strong>Depleted</strong> power when you need it.</p>
+<p>However - once you reach a <strong>Maximum Power</strong> of five - these sources conveniently <strong>Transmute</strong> into efficient, low-cost spells: the <strong>Tactics</strong>.</p>
+<figure class="main-col-image"><img src="/images/articles/AlessiStandardTactics.jpeg" alt="Influence Chart" title="Alessi influence chart 3"></figure>
+<p>Mouche calitalizes on the potential of these new cards by including a full contingent: all eight of the <strong>Standards</strong> that are available to <strong>Combrei</strong> can be found in this list.</p>
+<h2>Finding a way</h2>
+<p><strong>Crownwatch Tactic</strong> and <strong>Temple Tactic</strong> are useful on their own. But they are even more valuable when they become fuel for <strong>Alessi</strong>, who grows with each spell played.</p>
+<p>So much so that the pilot of this deck will often want to hold on to the <strong>Standards</strong> and play <strong>Undepleted</strong> power sources instead, even if it means leaving one <strong>Power</strong> on the table at the end of their turn. It is one of the most important reasons why this deck manages to avoid flooding.</p>
+<p>In a similiar fashion, <strong>Find the Way</strong> serves as both a power source and a buff to <strong>Alessi</strong> and <strong>Awakened Student</strong>. It's always nice to draw an extra <strong>Power</strong> and get an extra card thanks to <strong>Echo</strong>. But when those cards are also spells that grow your units, you are getting twice the value.</p>
+<h2>Free to grow</h2>
+<p>When you take into consideration that 11 of the 39 <strong>Power</strong> sources in this deck also double as low-cost fuel for growing your board, all that extra <strong>Power</strong> starts to seem much more reasonable.</p>
+<p>The most successful deck-builders are those who find ways to make the abilities of their cards work in more ways than one. <strong>&quot;<em>I heard Alessi is still free to grow</em>&quot;</strong> demonstrates that this can be just as true for your **Power **base as it is for your units, spells, weapons, relics and curses.</p>
+<p>You can learn more about the background and evolution of this deck in <a href="https://eternaltitans.com/eternal-top-decks-combrei-killers/">this video presented by Mouche's teammate ManuS</a> at the Eternal Titan's website.</p>
+
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>
