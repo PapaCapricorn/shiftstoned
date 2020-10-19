@@ -5,7 +5,7 @@
 .article {
     padding: 0 30px 30px;
     display: grid;
-    grid-template-columns: 250px 600px; /* sidebar + main column layout */
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
     column-gap: 30px;
     align-content: start;
     /* .textcol text styles */
@@ -143,6 +143,7 @@
 .main-col-image {
     margin: 0; /* clear assigned <figure> margins */
     margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
 }
 .main-col-image img {
     width: 100%; /* width of the main column */
