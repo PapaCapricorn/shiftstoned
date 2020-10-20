@@ -1,6 +1,7 @@
 ---
 layout: layouts/html.njk
 bg_img: images/BackgroundHome.jpg
+page_style: mainpage.css
 about:
 homepage_logo: 'width: 40%; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);'
 title: Home
@@ -39,13 +40,67 @@ title: Home
 
              </div>
 
-             <br>
-             R E C E N T
-
+            <br>
+            R E C E N T
+            <hr>
+            <section class="frontpage-articles">
+            {%- for article in collections.articles | reverse %}
+            {%- if loop.index <= 7 %}
+              <article class="article-brief">
+                <header>
+                  <h2 class="articleListingTitle">
+                    <a href="{{ article.data.articleLink or article.url }}">
+                      {{ (article.data.articleTitle or article.data.title or article.data.meta_title) | frontmatter_md_string | safe  }}
+                    </a>
+                  </h2>
+                </header>
+                {%- if (article.data.articleVideo or article.data.meta_image or article.data.articleImage) %}
+                <div class="article-thumbnail">
+                  {%- if article.data.articleVideo %}
+                  <video controls width="250"
+                    {%- if (article.data.meta_image or article.data.articleImage) %}
+                    poster="{{ article.data.meta_image or article.data.articleImage }}"
+                    {%- endif %}>
+                    <source src="{{ article.data.articleVideo }}" type="video/mp4"
+                      {%- if article.data.articleVideoType %}
+                      type="{{ article.data.articleVideoType }}"
+                      {%- endif %}>
+                      Your browser does not support the video tag.
+                  </video>
+                  {%- else %}
+                  <a href="{{ article.url }}">
+                    <img src="{{ article.data.meta_image or article.data.articleImage }}"
+                        width="250" height="164.4"
+                        loading="lazy"
+                        alt="{{ article.data.meta_image_alt or 'thumbnail graphic' }}" />
+                  </a>
+                  {%- endif %}
+                </div>
+                {%- endif %}
+                <section class="article-description {{ article.data.description_class or '' }}">
+                  <p>
+                    <strong>{% date article.date %}</strong>{%- if loop.index==1 %}<br>{% else %} - {% endif %}{{ (article.data.description or article.data.meta_description or '') | frontmatter_md_string | safe }}
+                  </p>
+                </section>
+                  {%- if loop.index==1 %}
+                <footer>
+                  <p class="highlight">
+                    <a class="arrow-link" href="{{ article.data.articleLink or article.url }}">{{ article.data.articleLinkText or 'Read more' }}</a>
+                  </p>
+                  {%- if article.data.articleLink2 %}
+                  <p class="highlight">
+                    <a class="arrow-link" href="{{ article.data.articleLink2 }}">{{ article.data.articleLinkText2 or 'See also' }}</a>
+                  </p>
+                    {%- endif %}
+                  {%- endif %}
+                </footer>
+              </article>
+            {%- endif %}
+            {%- endfor %}
+            </section>
+{# 
              <!-- Column -->
             <div class="fullColumn">
-
-               <hr>
 
                <!-- BEGIN FEATURED ARTICLE LISTING -->
                <div class="articleListing">
@@ -119,7 +174,7 @@ title: Home
                  <a href="/articles/TheTimeOfAncestors.html"><img src="/images/articles/TheTimeOfAncestors.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
                  <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 0px;">The Time Of Ancestors: ECQ Rundown</a></h1>
                    <p class="articleListing">November 18, 2019 - <strong>Taking a look at the Top Eight decks from <strong>The Time of Ancestors</strong>, the first official <strong>2020 Championship Qualifier</strong> for <strong>Eternal Card Game</strong></p>
-               </div>
+               </div> #}
 
                {# <div class="halfColumn homeArticle">
                  <img src="/images/articles/FoX-Pre-order.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
