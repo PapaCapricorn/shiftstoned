@@ -38,6 +38,10 @@ module.exports = function(eleventyConfig) {
   // Passthrough Contacts confirmation page - thanks.html
   eleventyConfig.addPassthroughCopy("./src/site/contact/thanks.html");
 
+  // Passthrough images for EPC guide - epc > about > images
+  eleventyConfig.addPassthroughCopy("./src/site/epc/about/images");
+
+
   // Custom collections
 /*   eleventyConfig.addCollection("docs", function(collection) {
     return collection.getFilteredByTag("docs").sort(function(a, b) {
@@ -72,7 +76,7 @@ eleventyConfig.addPairedShortcode("hover_content", require("./src/utils/shortcod
   // check & format output
     // minify the html output
   // eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js"));
-  
+
   // Add plugins to extend the included "markdown-it" Markdown parser
   let markdownIt = require("markdown-it");
   let options = {
@@ -82,7 +86,7 @@ eleventyConfig.addPairedShortcode("hover_content", require("./src/utils/shortcod
       // .use( require("markdown-it-bracketed-spans") )
       .use( require("markdown-it-attrs") )
       .use( require("markdown-it-implicit-figures"))
-  
+
   eleventyConfig.setLibrary("md", markdownLib);
 
   // Add filter for processing MD from the front matter
