@@ -32,6 +32,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/site/drafter/images");
   eleventyConfig.addPassthroughCopy("./src/site/drafter/js");
 
+  // Other passthrough
+  eleventyConfig.addPassthroughCopy( {"./src/site/articles/format-updates/formatUpdatesEmptyThroneThrowback/images"
+                                    : "articles/formatUpdatesEmptyThroneThrowback/images"} );
+
   // Passthrough CNAME file
   eleventyConfig.addPassthroughCopy("./src/site/CNAME");
 
