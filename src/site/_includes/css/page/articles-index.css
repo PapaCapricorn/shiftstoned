@@ -1,0 +1,119 @@
+.article {
+    padding: 0 30px 30px;
+}
+
+.articles-list {
+    --list-gap: .75em;
+    display: flex;
+    flex-direction: column;
+    gap: var(--list-gap);
+}
+
+.article-brief {
+    display: grid;
+    grid-template-columns: 250px 600px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "image title"
+                         "image description"
+                         "image link";
+    column-gap: 30px; row-gap: .5em;
+}
+.article-brief:not(:first-child) {
+    border-top: 2px gray groove;
+    padding-top: var(--list-gap);
+}
+.article-brief:last-child {
+    border-bottom: 2px gray groove;
+    padding-bottom: var(--list-gap);
+}
+
+.article-brief header {
+    grid-area: title;
+    margin: 0;
+}
+.article-brief header h2 {
+    font-size: 1.8em;
+    line-height: 1.2; 
+}
+
+.article-brief .article-description {
+    grid-area: description;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    font-size: 15px;
+    color: white;
+}
+.article-brief .article-description p {
+    line-height: 1.6;
+}
+
+.article-brief footer {
+    grid-area: link;
+    display: flex;
+    gap: 2em;
+}
+.article-brief footer > p {
+    margin: 0;
+}
+
+.article-brief .article-thumbnail {
+    grid-area: image;
+    margin-block-start: 0.5em; /* align top of image with top of title text */
+}
+.article-brief .article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.page-selector {
+    padding: 1.5em 0 0;
+}
+.page-selector .pagination {
+    list-style: none;
+    margin: 0; padding: 0;
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+}
+.pagination .page-nav {
+    flex: 0 0 7em; /* make each nav item the same size */
+}
+.pagination .first,
+.pagination .previous {
+    text-align: start;
+}
+.pagination .page-numbers {
+    text-align: center;
+}
+.pagination .first,
+.pagination .previous {
+    text-align: end;
+}
+.page-selector .first a::before {
+    content: "« ";
+}
+.pagination .previous a::before {
+    content: "‹ ";
+}
+.pagination .next a::after {
+    content: " ›";
+}
+.pagination .last a::after {
+    content: " »";
+}
+
+.article-description.text-yellow {
+    color:#f8de7e;
+}
+
+/* !! from wip page css 'mdArticles.css' -- merge when incorporated into main site css */
+.highlight {
+    color:#81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}

@@ -20,11 +20,11 @@
     {% include "partials/navigation/headbanner.njk" %}
 
     <!-- Main page content -->
-    <div class="newBodyGrid">
+    <main class="newBodyGrid {{ page_class }}">
 
       {{ content | safe }}
 
-    </div>
+    </main>
 
     <!-- JAVASCRIPT -->
     {% include "partials/scripts/jsSrc.njk" %}

@@ -1,0 +1,68 @@
+module.exports = {  
+   top8:{
+      first:{
+         player:"player_name",
+         archetype:"deck_archetype",
+         card:"sidebar_card_image",
+         epcUrl:"epc_url",
+         body:`
+section_text`
+      },
+      second:{
+         player:"player_name",
+         archetype:"deck_archetype",
+         card:"sidebar_card_image",
+         epcUrl:"epc_url",
+         body:`
+section_text`
+      },
+      third:{
+         player:"player_name",
+         archetype:"deck_archetype",
+         card:"sidebar_card_image",
+         epcUrl:"epc_url",
+         body:`
+section_text`
+      },
+      fourth:{
+         player:"player_name",
+         archetype:"deck_archetype",
+         card:"sidebar_card_image",
+         epcUrl:"epc_url",
+         body:`
+section_text`
+      },
+      fifth:{
+         player:"player_name",
+         archetype:"deck_archetype",
+         card:"sidebar_card_image",
+         epcUrl:"epc_url",
+         body:`
+section_text`
+      },
+      sixth:{
+         player:"player_name",
+         archetype:"deck_archetype",
+         card:"sidebar_card_image",
+         epcUrl:"epc_url",
+         body:`
+section_text`
+      },
+      seventh:{
+         player:"player_name",
+         archetype:"deck_archetype",
+         card:"sidebar_card_image",
+         epcUrl:"epc_url",
+         body:`
+section_text`
+      },
+      eighth:{
+         player:"player_name",
+         archetype:"deck_archetype",
+         card:"sidebar_card_image",
+         epcUrl:"epc_url",
+         body:`
+section_text`
+      }
+   }
+}
