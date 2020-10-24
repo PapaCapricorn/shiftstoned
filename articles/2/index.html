@@ -40,7 +40,7 @@
     gap: var(--list-gap);
 }
 
-.article-brief {
+.articles-list .article-brief {
     display: grid;
     grid-template-columns: 250px 600px;
     grid-template-rows: auto 1fr auto;
@@ -49,48 +49,48 @@
                          "image link";
     column-gap: 30px; row-gap: .5em;
 }
-.article-brief:not(:first-child) {
+.articles-list .article-brief:not(:first-child) {
     border-top: 2px gray groove;
     padding-top: var(--list-gap);
 }
-.article-brief:last-child {
+.articles-list .article-brief:last-child {
     border-bottom: 2px gray groove;
     padding-bottom: var(--list-gap);
 }
 
-.article-brief header {
+.articles-list .article-brief header {
     grid-area: title;
     margin: 0;
 }
-.article-brief header h2 {
+.articles-list .article-brief header h2 {
     font-size: 1.8em;
     line-height: 1.2; 
 }
 
-.article-brief .article-description {
+.articles-list .article-brief .article-description {
     grid-area: description;
     font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
     font-size: 15px;
     color: white;
 }
-.article-brief .article-description p {
+.articles-list .article-brief .article-description p {
     line-height: 1.6;
 }
 
-.article-brief footer {
+.articles-list .article-brief footer {
     grid-area: link;
     display: flex;
     gap: 2em;
 }
-.article-brief footer > p {
+.articles-list .article-brief footer > p {
     margin: 0;
 }
 
-.article-brief .article-thumbnail {
+.articles-list .article-brief .article-thumbnail {
     grid-area: image;
     margin-block-start: 0.5em; /* align top of image with top of title text */
 }
-.article-brief .article-thumbnail img {
+.articles-list .article-brief .article-thumbnail img {
     width: 250px;
     height: auto;
     object-fit: contain;
@@ -148,6 +148,44 @@
 .arrow-link::after {
     content: " ►";
 }
+
+
+/* !! from 'mainpage.css' -- merge when incorporated into main site css */
+.frontpage-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.frontpage-articles .article-brief {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1em;
+    padding: 1rem;
+    font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+}
+.frontpage-articles .article-brief .articleListingTitle {
+    font-size: 24px;
+}
+.frontpage-articles .article-brief .article-thumbnail {
+    grid-row: 1;
+}
+.frontpage-articles .article-brief .article-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+/* 2n & 2n+1 reversed from homepage because no double-sized article */
+.frontpage-articles .article-brief:nth-child(2n) {
+    padding-right: 0;
+}
+.frontpage-articles .article-brief:nth-child(2n+1) {
+    padding-left: 0;
+    border-right: 1px solid var(--MineShaft);
+}
+.frontpage-articles .article-brief {
+    border-top: 1px solid var(--MineShaft);
+}
+
     </style>
 
 </head>
@@ -202,356 +240,249 @@
     <!-- Main page content -->
     <main class="newBodyGrid article">
 
-      <section class="articles-list">
-  <article class="article-brief">
-    <header>
-      <h2>
+      
+  <section class="articles-list">
+    <article class="article-brief">
+      <header>
+        <h2>
+          <a href="/articles/OpalWaystone2019.html">
+            The Opal Waystone Classic
+          </a>
+        </h2>
+      </header>
+      <div class="article-thumbnail">
+        <a href="/articles/OpalWaystone2019.html">
+          <img src="/images/articles/OpalWaystone2019.jpeg"
+              width="250" height="164.4"
+              loading="lazy"
+              alt="thumbnail graphic" />
+        </a>
+      </div>
+      <section class="article-description text-yellow">
+        <p>
+          <strong><time datetime="2019-06-14T00:00:00.000Z">June 14, 2019</time></strong> - You are invited to an upcoming <strong class="test">Eternal Community League</strong> event featuring a $300+ prize pool co-sponsored by <strong>Shiftstoned</strong> and <strong>Eternal Warcry</strong>. The <strong>Opal Waystone Classic</strong> takes place on <strong>Sunday June 23</strong> and includes a unique deck-building challenge. Players may register at <strong>eternaltournaments.com</strong> and the event will be streamed live on <strong>twitch</strong>. Details and addditional information can be found here.
+        </p>
+      </section>
+      <footer>
+        <p class="highlight">
+          <a class="arrow-link" href="/articles/OpalWaystone2019.html">Read more</a>
+        </p>
+      </footer>
+    </article>
+    <article class="article-brief">
+      <header>
+        <h2>
+          <a href="/articles/OpalWaystoneHorizon.html">
+            On the Horizon:<br>The Opal Waystone Classic
+          </a>
+        </h2>
+      </header>
+      <div class="article-thumbnail">
         <a href="/articles/OpalWaystoneHorizon.html">
-          On the Horizon:<br>The Opal Waystone Classic
+          <img src="/images/articles/HorizonBianca.jpeg"
+              width="250" height="164.4"
+              loading="lazy"
+              alt="thumbnail graphic" />
         </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <a href="/articles/OpalWaystoneHorizon.html">
-        <img src="/images/articles/HorizonBianca.jpeg"
-             width="250" height="164.4"
-             loading="lazy"
-             alt="thumbnail graphic" />
-      </a>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2019-02-18T00:00:00.000Z">February 18, 2019</time></strong> - Now it is easier than ever before for deck-builders and brewers to share lists between <strong>Eternal Warcry</strong> and <strong>Shiftstoned’s Eternal Power Calculator</strong>. To celebrate this new collaboration, <strong>Eternal Warcry</strong> and <strong>Shiftstoned</strong> are teaming up with the <strong>Eternal Community League</strong> and <strong>Kaelari's eternaltournaments.com</strong> to bring you a special showcase event.
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="/articles/OpalWaystoneHorizon.html">Read more</a>
-      </p>
-    </footer>
-  </article>
-  <article class="article-brief">
-    <header>
-      <h2>
+      </div>
+      <section class="article-description ">
+        <p>
+          <strong><time datetime="2019-02-18T00:00:00.000Z">February 18, 2019</time></strong> - Now it is easier than ever before for deck-builders and brewers to share lists between <strong>Eternal Warcry</strong> and <strong>Shiftstoned’s Eternal Power Calculator</strong>. To celebrate this new collaboration, <strong>Eternal Warcry</strong> and <strong>Shiftstoned</strong> are teaming up with the <strong>Eternal Community League</strong> and <strong>Kaelari's eternaltournaments.com</strong> to bring you a special showcase event.
+        </p>
+      </section>
+      <footer>
+        <p class="highlight">
+          <a class="arrow-link" href="/articles/OpalWaystoneHorizon.html">Read more</a>
+        </p>
+      </footer>
+    </article>
+    <article class="article-brief">
+      <header>
+        <h2>
+          <a href="/articles/PriceOfFreedom.html">
+            The Price of Freedom: ECQ Rundown
+          </a>
+        </h2>
+      </header>
+      <div class="article-thumbnail">
         <a href="/articles/PriceOfFreedom.html">
-          The Price of Freedom: ECQ Rundown
+          <img src="/images/articles/PriceOfFreedom.jpeg"
+              width="250" height="164.4"
+              loading="lazy"
+              alt="thumbnail graphic" />
         </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <a href="/articles/PriceOfFreedom.html">
-        <img src="/images/articles/PriceOfFreedom.jpeg"
-             width="250" height="164.4"
-             loading="lazy"
-             alt="thumbnail graphic" />
-      </a>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2019-02-14T00:00:00.000Z">February 14, 2019</time></strong> - 🔥🌒 Underdogs, ⌛️🌒 fresh takes, and 🦅🐾🌒 rulebreakers featured in the Top 8 of <strong>Eternal Card Game’s Price of Freedom</strong> event, while🔥🦅🌒 <strong>Winchest</strong> remained a force to be reckoned with. Find out more in this <strong>Eternal Championship Qualifier</strong> rundown, featuring <strong>Power</strong> portraits and standout features for each of the finishers.
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="/articles/PriceOfFreedom.html">Read more</a>
-      </p>
-    </footer>
-  </article>
-  <article class="article-brief">
-    <header>
-      <h2>
+      </div>
+      <section class="article-description ">
+        <p>
+          <strong><time datetime="2019-02-14T00:00:00.000Z">February 14, 2019</time></strong> - 🔥🌒 Underdogs, ⌛️🌒 fresh takes, and 🦅🐾🌒 rulebreakers featured in the Top 8 of <strong>Eternal Card Game’s Price of Freedom</strong> event, while🔥🦅🌒 <strong>Winchest</strong> remained a force to be reckoned with. Find out more in this <strong>Eternal Championship Qualifier</strong> rundown, featuring <strong>Power</strong> portraits and standout features for each of the finishers.
+        </p>
+      </section>
+      <footer>
+        <p class="highlight">
+          <a class="arrow-link" href="/articles/PriceOfFreedom.html">Read more</a>
+        </p>
+      </footer>
+    </article>
+    <article class="article-brief">
+      <header>
+        <h2>
+          <a href="/articles/BurningHope.html">
+            Burning Hope: ECQ Rundown
+          </a>
+        </h2>
+      </header>
+      <div class="article-thumbnail">
         <a href="/articles/BurningHope.html">
-          Burning Hope: ECQ Rundown
+          <img src="/images/articles/BurningHope.jpeg"
+              width="250" height="164.4"
+              loading="lazy"
+              alt="thumbnail graphic" />
         </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <a href="/articles/BurningHope.html">
-        <img src="/images/articles/BurningHope.jpeg"
-             width="250" height="164.4"
-             loading="lazy"
-             alt="thumbnail graphic" />
-      </a>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2019-01-19T00:00:00.000Z">January 19, 2019</time></strong> - Taking a closer look at the <strong>Top Eight</strong> decks from <strong>Burning Hope</strong>. <strong>Fire</strong> was featured in every one, with <strong>Winchest</strong> composing more than half of lists in both the finals and the tournament overall. Yet each of the winners built their deck differently. All of the summaries here include a standout feature describing what sets each deck apart from the others.
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="/articles/BurningHope.html">Read more</a>
-      </p>
-    </footer>
-  </article>
-  <article class="article-brief">
-    <header>
-      <h2>
+      </div>
+      <section class="article-description ">
+        <p>
+          <strong><time datetime="2019-01-19T00:00:00.000Z">January 19, 2019</time></strong> - Taking a closer look at the <strong>Top Eight</strong> decks from <strong>Burning Hope</strong>. <strong>Fire</strong> was featured in every one, with <strong>Winchest</strong> composing more than half of lists in both the finals and the tournament overall. Yet each of the winners built their deck differently. All of the summaries here include a standout feature describing what sets each deck apart from the others.
+        </p>
+      </section>
+      <footer>
+        <p class="highlight">
+          <a class="arrow-link" href="/articles/BurningHope.html">Read more</a>
+        </p>
+      </footer>
+    </article>
+    <article class="article-brief">
+      <header>
+        <h2>
+          <a href="/articles/WorldsExpo.html">
+            Pictures at an Exhibition
+          </a>
+        </h2>
+      </header>
+      <div class="article-thumbnail">
         <a href="/articles/WorldsExpo.html">
-          Pictures at an Exhibition
+          <img src="/images/articles/Pictures.jpeg"
+              width="250" height="164.4"
+              loading="lazy"
+              alt="thumbnail graphic" />
         </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <a href="/articles/WorldsExpo.html">
-        <img src="/images/articles/Pictures.jpeg"
-             width="250" height="164.4"
-             loading="lazy"
-             alt="thumbnail graphic" />
-      </a>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2018-12-25T00:00:00.000Z">December 25, 2018</time></strong> - Hanging this year's <strong>Championship Power</strong> bases on the wall, and introducing the <strong>Eternal Power Calculator's</strong> new title feature. We take a look at <strong>Power</strong> base visualizations for all 16 decks from the <strong>Eternal Tournament Series 2018 World Championship</strong>.
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="/articles/WorldsExpo.html">Read more</a>
-      </p>
-    </footer>
-  </article>
-  <article class="article-brief">
-    <header>
-      <h2>
+      </div>
+      <section class="article-description ">
+        <p>
+          <strong><time datetime="2018-12-25T00:00:00.000Z">December 25, 2018</time></strong> - Hanging this year's <strong>Championship Power</strong> bases on the wall, and introducing the <strong>Eternal Power Calculator's</strong> new title feature. We take a look at <strong>Power</strong> base visualizations for all 16 decks from the <strong>Eternal Tournament Series 2018 World Championship</strong>.
+        </p>
+      </section>
+      <footer>
+        <p class="highlight">
+          <a class="arrow-link" href="/articles/WorldsExpo.html">Read more</a>
+        </p>
+      </footer>
+    </article>
+    <article class="article-brief">
+      <header>
+        <h2>
+          <a href="/articles/ShareThePower.html">
+            Share the Power: updates to the Eternal Power Calculator
+          </a>
+        </h2>
+      </header>
+      <div class="article-thumbnail">
         <a href="/articles/ShareThePower.html">
-          Share the Power: updates to the Eternal Power Calculator
+          <img src="/images/articles/ShareThePower.jpeg"
+              width="250" height="164.4"
+              loading="lazy"
+              alt="thumbnail graphic" />
         </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <a href="/articles/ShareThePower.html">
-        <img src="/images/articles/ShareThePower.jpeg"
-             width="250" height="164.4"
-             loading="lazy"
-             alt="thumbnail graphic" />
-      </a>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2018-11-14T00:00:00.000Z">November 14, 2018</time></strong> - As <strong>Eternal</strong> enters full release, brewers can now share or store <strong>Power</strong> base visualizations generated by the fan-built <strong>Eternal Power Calculator</strong> at <strong>Shiftstoned</strong> by creating a unique link for their decklist. Full support for modifying <strong>Markets</strong> on the fly has also been added.
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="/articles/ShareThePower.html">Read more</a>
-      </p>
-    </footer>
-  </article>
-  <article class="article-brief">
-    <header>
-      <h2>
-        <a href="/video/LOA_Calendar.mp4">
-          Don't make the same mistake<br>as LightsOutAce!
-        </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <video controls width="250">
-        <source src="/video/LOA_Calendar.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2018-10-09T00:00:00.000Z">October 9, 2018</time></strong> - Even your favorite streamers sometimes forget when it is tournament time. Hey, we're all human. So subscribe to the <strong>Eternal Community Calendar</strong> and never miss a registration deadline again.
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="/video/LOA_Calendar.mp4">Watch video</a>
-      </p>
-      <p class="highlight">
-        <a class="arrow-link" href="/calendar/">View calendar</a>
-      </p>
-    </footer>
-  </article>
-  <article class="article-brief">
-    <header>
-      <h2>
+      </div>
+      <section class="article-description ">
+        <p>
+          <strong><time datetime="2018-11-14T00:00:00.000Z">November 14, 2018</time></strong> - As <strong>Eternal</strong> enters full release, brewers can now share or store <strong>Power</strong> base visualizations generated by the fan-built <strong>Eternal Power Calculator</strong> at <strong>Shiftstoned</strong> by creating a unique link for their decklist. Full support for modifying <strong>Markets</strong> on the fly has also been added.
+        </p>
+      </section>
+      <footer>
+        <p class="highlight">
+          <a class="arrow-link" href="/articles/ShareThePower.html">Read more</a>
+        </p>
+      </footer>
+    </article>
+    <article class="article-brief">
+      <header>
+        <h2>
+          <a href="/video/LOA_Calendar.mp4">
+            Don't make the same mistake<br>as LightsOutAce!
+          </a>
+        </h2>
+      </header>
+      <div class="article-thumbnail">
+        <video controls width="250">
+          <source src="/video/LOA_Calendar.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+      <section class="article-description ">
+        <p>
+          <strong><time datetime="2018-10-09T00:00:00.000Z">October 9, 2018</time></strong> - Even your favorite streamers sometimes forget when it is tournament time. Hey, we're all human. So subscribe to the <strong>Eternal Community Calendar</strong> and never miss a registration deadline again.
+        </p>
+      </section>
+      <footer>
+        <p class="highlight">
+          <a class="arrow-link" href="/video/LOA_Calendar.mp4">Watch video</a>
+        </p>
+        <p class="highlight">
+          <a class="arrow-link" href="/calendar/">View calendar</a>
+        </p>
+      </footer>
+    </article>
+    <article class="article-brief">
+      <header>
+        <h2>
+          <a href="/articles/StreamsComeTrue.html">
+            Streams Come True:<br>featuring Grimfan
+          </a>
+        </h2>
+      </header>
+      <div class="article-thumbnail">
         <a href="/articles/StreamsComeTrue.html">
-          Streams Come True:<br>featuring Grimfan
+          <img src="/images/articles/StreamsComeTrue.jpeg"
+              width="250" height="164.4"
+              loading="lazy"
+              alt="thumbnail graphic" />
         </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <a href="/articles/StreamsComeTrue.html">
-        <img src="/images/articles/StreamsComeTrue.jpeg"
-             width="250" height="164.4"
-             loading="lazy"
-             alt="thumbnail graphic" />
-      </a>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2018-09-29T00:00:00.000Z">September 29, 2018</time></strong> - Just hours before the first-ever community qualifying event for the <strong>Eternal World Championship 2019</strong>, <strong>Grimfan</strong> tweeted out to his followers: “I've decided I'd like to stream more than I want to win.” In the end he did both, taking first place with <em>ET Combrei Aggro</em> and doing it all on camera.
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="/articles/StreamsComeTrue.html">Read more</a>
-      </p>
-    </footer>
-  </article>
-  <article class="article-brief">
-    <header>
-      <h2>
-        <a href="https://teamrankstar.com/trail-stories-papacapricorn/">
-          Trail Stories: PapaCapricorn
+      </div>
+      <section class="article-description ">
+        <p>
+          <strong><time datetime="2018-09-29T00:00:00.000Z">September 29, 2018</time></strong> - Just hours before the first-ever community qualifying event for the <strong>Eternal World Championship 2019</strong>, <strong>Grimfan</strong> tweeted out to his followers: “I've decided I'd like to stream more than I want to win.” In the end he did both, taking first place with <em>ET Combrei Aggro</em> and doing it all on camera.
+        </p>
+      </section>
+      <footer>
+        <p class="highlight">
+          <a class="arrow-link" href="/articles/StreamsComeTrue.html">Read more</a>
+        </p>
+      </footer>
+    </article>
+  </section>
+  <nav class="page-selector" aria-label="Page listings">
+    <ul class="pagination">
+      <li class="page-nav first">
+        <a href="/articles/">
+          First
         </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <a href="false">
-        <img src="/images/articles/TrailStories_PapaCapricorn.jpeg"
-             width="250" height="164.4"
-             loading="lazy"
-             alt="thumbnail graphic" />
-      </a>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2018-09-06T00:00:00.000Z">September 6, 2018</time></strong> - <strong>Shiftstoned's PapaCapricorn</strong> toasts marshmallows with <strong>MantidMan</strong> as part of the <strong>Trail Stories</strong> series profiling members of the <strong>Eternal</strong> community. They cover community, story-telling and the origins of the <strong>Eternal Power Calculator</strong> in this special feature presented by <strong>Team Rankstar</strong>.
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="https://teamrankstar.com/trail-stories-papacapricorn/">Read more at teamrankstar.com</a>
-      </p>
-    </footer>
-  </article>
-  <article class="article-brief">
-    <header>
-      <h2>
-        <a href="/articles/Seekers1.html">
-          The Seekers I - Valley of Kings: featuring BruisedByGod, SecondBlue and SooNo
+      </li>
+      <li class="page-nav previous">
+        <a href="/articles/">
+          Previous
         </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <a href="/articles/Seekers1.html">
-        <img src="/images/articles/Seekers1.jpeg"
-             width="250" height="164.4"
-             loading="lazy"
-             alt="thumbnail graphic" />
-      </a>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2018-08-26T00:00:00.000Z">August 26, 2018</time></strong> - Team <strong>Seek Power Gaming</strong> is poised to capture several top spots in both the <strong>Eternal Tournament Series</strong> and the <strong>Eternal Community League</strong>. In this first part of a series, we talk to <strong>SPG</strong> members <strong>SooNo</strong>, <strong>BruisedByGod</strong> and <strong>SecondBlue</strong> about what it means to be a team player in <strong>Eternal</strong>.
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="/articles/Seekers1.html">Read more</a>
-      </p>
-    </footer>
-  </article>
-  <article class="article-brief">
-    <header>
-      <h2>
-        <a href="/articles/UnusualSuspects.html">
-          Unusual Suspects:<br>featuring Kaelos
-        </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <a href="/articles/UnusualSuspects.html">
-        <img src="/images/articles/UnusualSuspects.jpeg"
-             width="250" height="164.4"
-             loading="lazy"
-             alt="thumbnail graphic" />
-      </a>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2018-08-20T00:00:00.000Z">August 20, 2018</time></strong> - Kaelos speaks with <strong>Shiftstoned</strong> about her unconventional approach to deck-building on the heels of a first-place finish in an <strong>ECL</strong> weekly event. Science, community and the healing power of games are just a few of the topics that emerge from our conversation about Power bases in <strong>Eternal</strong>.
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="/articles/UnusualSuspects.html">Read more</a>
-      </p>
-    </footer>
-  </article>
-  <article class="article-brief">
-    <header>
-      <h2>
-        <a href="/articles/HighVoltage.html">
-          Danger: High Voltage
-        </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <a href="/articles/HighVoltage.html">
-        <img src="/images/articles/HighVoltageBig.jpeg"
-             width="250" height="164.4"
-             loading="lazy"
-             alt="thumbnail graphic" />
-      </a>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2018-08-03T00:00:00.000Z">August 3, 2018</time></strong> - Over half the cards in a recent tournament-winning <strong>Combrei</strong> deck piloted by Mouche are <strong>Power</strong> sources. With help from the the <strong>Eternal Power Calculator</strong>, let's attempt to answer the question: &quot;When is too much Power just enough?&quot;
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="/articles/HighVoltage.html">Read more</a>
-      </p>
-    </footer>
-  </article>
-  <article class="article-brief">
-    <header>
-      <h2>
-        <a href="/articles/TaleOfTwo.html">
-          A Tale of Two Power Bases
-        </a>
-      </h2>
-    </header>
-    <div class="article-thumbnail">
-      <a href="/articles/TaleOfTwo.html">
-        <img src="/images/articles/TaleOfTwo2.png"
-             width="250" height="164.4"
-             loading="lazy"
-             alt="thumbnail graphic" />
-      </a>
-    </div>
-    <section class="article-description ">
-      <p>
-        <strong><time datetime="2018-07-27T00:00:00.000Z">July 27, 2018</time></strong> - Two distinct and innovative archetypes prevailed at recent <strong>Eternal</strong> competitive events. Tobboo's <em>Rakano Valkyries</em> showcases a new breed of <strong>Midrange Rakano</strong>, while Isochron's <em>Adapted Green Feln</em> presents a fresh take on <strong>J/PS Control</strong>. Let's take a look at their power bases using the <strong>Eternal Power Calculator</strong>…
-      </p>
-    </section>
-    <footer>
-      <p class="highlight">
-        <a class="arrow-link" href="/articles/TaleOfTwo.html">Read more</a>
-      </p>
-    </footer>
-  </article>
-</section>
-<nav class="page-selector" aria-label="Page listings">
-  <ul class="pagination">
-    <li class="page-nav first">
-      <a href="/articles/">
-        First
-      </a>
-    </li>
-    <li class="page-nav previous">
-      <a href="/articles/">
-        Previous
-      </a>
-    </li>
-    <li class="page-nav page-numbers">
-      Page: 2 of 3
-    </li>
-    <li class="page-nav next">
-      <a href="/articles/3/">Next</a>
-    </li>
-    <li class="page-nav last">
-      <a href="/articles/3/">Last</a>
-    </li>
-  </ul>
-</nav>
+      </li>
+      <li class="page-nav page-numbers">
+        Page: 2 of 3
+      </li>
+      <li class="page-nav next">
+        <a href="/articles/3/">Next</a>
+      </li>
+      <li class="page-nav last">
+        <a href="/articles/3/">Last</a>
+      </li>
+    </ul>
+  </nav>
 
     </main>
 

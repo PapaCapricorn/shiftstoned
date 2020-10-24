@@ -27,6 +27,65 @@
   
   <link href="/styles/site.css" rel="stylesheet" type="text/css">
   
+    <!-- page-specific styles -->
+    <style>
+    .frontpage-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.article-brief {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1em;
+    padding: 1rem;
+    font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+}
+.article-brief .articleListingTitle {
+    font-size: 24px;
+}
+.article-brief .article-thumbnail {
+    grid-row: 1;
+}
+.article-brief .article-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.article-brief:nth-child(2n+1) {
+    padding-right: 0;
+}
+.article-brief:nth-child(2n) {
+    padding-left: 0;
+    border-right: 1px solid var(--MineShaft);
+}
+.article-brief:not(:first-child) {
+    border-top: 1px solid var(--MineShaft);
+}
+
+.article-brief:first-child {
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    padding: 0 0 1rem;
+    font: 18px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+}
+.article-brief:first-child .articleListingTitle {
+    font-size: 30px;
+}
+.article-brief:first-child .article-thumbnail {
+    grid-row: 1/-1;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+    </style>
 
 </head>
 
@@ -112,87 +171,171 @@
 
              </div>
 
-             <br>
-             R E C E N T
+            <br>
+            R E C E N T
+            <hr>
+            <section class="frontpage-articles">
+              <article class="article-brief">
+                <header>
+                  <h2 class="articleListingTitle">
+                    <a href="/articles/DrafterLaunch/">
+                      Introducing the Drafter
+                    </a>
+                  </h2>
+                </header>
+                <div class="article-thumbnail">
+                  <a href="/articles/DrafterLaunch/">
+                    <img src="/images/articles/thumbnail.jpg"
+                        width="250" height="164.4"
+                        loading="lazy"
+                        alt="thumbnail graphic" />
+                  </a>
+                </div>
+                <section class="article-description ">
+                  <p>
+                    <strong><time datetime="2020-10-24T00:00:00.000Z">October 24, 2020</time></strong><br>A new drafting tool joins the suite of fan-built player resources for <strong>Eternal Card Game</strong> at <strong>ShiftStoned</strong>. Featuring evaluations by <strong>Jedi_EJ</strong> and <strong>Eternal Journey</strong>.
+                  </p>
+                </section>
+                <footer>
+                  <p class="highlight">
+                    <a class="arrow-link" href="/articles/DrafterLaunch/">Read more</a>
+                  </p>
+                </footer>
+              </article>
+              <article class="article-brief">
+                <header>
+                  <h2 class="articleListingTitle">
+                    <a href="/articles/FormatUpdatesAugust2020/">
+                      August 2020 Format Updates
+                    </a>
+                  </h2>
+                </header>
+                <div class="article-thumbnail">
+                  <a href="/articles/FormatUpdatesAugust2020/">
+                    <img src="/images/articles/FormatUpdatesAugust2020.jpg"
+                        width="250" height="164.4"
+                        loading="lazy"
+                        alt="thumbnail graphic" />
+                  </a>
+                </div>
+                <section class="article-description ">
+                  <p>
+                    <strong><time datetime="2020-08-13T00:00:00.000Z">August 13, 2020</time></strong> - Explore the August 2020 changes to <strong>Expedition</strong> and <strong>Draft Packs</strong> in this <strong>interactive gallery</strong>.
+                  </p>
+                </section>
+              </article>
+              <article class="article-brief">
+                <header>
+                  <h2 class="articleListingTitle">
+                    <a href="/articles/formatUpdatesArgentDepths/">
+                      Argent Depths Format Updates
+                    </a>
+                  </h2>
+                </header>
+                <div class="article-thumbnail">
+                  <a href="/articles/formatUpdatesArgentDepths/">
+                    <img src="/images/articles/formatUpdatesArgentDepths.jpg"
+                        width="250" height="164.4"
+                        loading="lazy"
+                        alt="thumbnail graphic" />
+                  </a>
+                </div>
+                <section class="article-description ">
+                  <p>
+                    <strong><time datetime="2020-07-01T00:00:00.000Z">July 1, 2020</time></strong> - Explore the changes to <strong>Expedition</strong> and <strong>Draft Packs</strong> with the release of Eternal's newest set in this <strong>interactive gallery</strong>.
+                  </p>
+                </section>
+              </article>
+              <article class="article-brief">
+                <header>
+                  <h2 class="articleListingTitle">
+                    <a href="/articles/TootTheHorn.html">
+                      Toot the Horn: March 2020 Updates
+                    </a>
+                  </h2>
+                </header>
+                <div class="article-thumbnail">
+                  <a href="/articles/TootTheHorn.html">
+                    <img src="/images/articles/ElhamPreview.jpg"
+                        width="250" height="164.4"
+                        loading="lazy"
+                        alt="thumbnail graphic" />
+                  </a>
+                </div>
+                <section class="article-description ">
+                  <p>
+                    <strong><time datetime="2020-03-04T00:00:00.000Z">March 4, 2020</time></strong> - Navigating your brew to <a href="https://eternalwarcry.com/">Eternal Warcry</a> from the fan-built <strong>Eternal Power Calculator</strong> has never been easier. Plus the addition of card art makes the <strong>Power Base</strong> visualization tool more visual than ever. 
+                  </p>
+                </section>
+              </article>
+              <article class="article-brief">
+                <header>
+                  <h2 class="articleListingTitle">
+                    <a href="/articles/StrangeNavigator.html">
+                      Strange Navigator:<br>First Impressions
+                    </a>
+                  </h2>
+                </header>
+                <div class="article-thumbnail">
+                  <a href="/articles/StrangeNavigator.html">
+                    <img src="/images/articles/Strange-Navigator.png"
+                        width="250" height="164.4"
+                        loading="lazy"
+                        alt="thumbnail graphic" />
+                  </a>
+                </div>
+                <section class="article-description ">
+                  <p>
+                    <strong><time datetime="2020-02-09T00:00:00.000Z">February 9, 2020</time></strong> - Feeling the Void and finding a way. Xenan gets a Stranger with some powerful abilities.
+                  </p>
+                </section>
+              </article>
+              <article class="article-brief">
+                <header>
+                  <h2 class="articleListingTitle">
+                    <a href="/articles/EoE-Spoiler.html">
+                      Echoes of Eternity Spoiler
+                    </a>
+                  </h2>
+                </header>
+                <div class="article-thumbnail">
+                  <a href="/articles/EoE-Spoiler.html">
+                    <img src="/images/articles/EoE-Spoiler.png"
+                        width="250" height="164.4"
+                        loading="lazy"
+                        alt="thumbnail graphic" />
+                  </a>
+                </div>
+                <section class="article-description ">
+                  <p>
+                    <strong><time datetime="2020-02-07T00:00:00.000Z">February 7, 2020</time></strong> - Tune in Sunday February 9 at 12 noon ET as <strong>Shiftstoned's PapaCapricorn</strong> joins <a href="https://www.twitch.tv/jedi_ej">EJ_Jedi on Twitch</a> to reveal a spoiler from <strong>Echoes of Eternity</strong> for Eternal Card Game. Featuring an evolving decklist leading up to the stream.
+                  </p>
+                </section>
+              </article>
+              <article class="article-brief">
+                <header>
+                  <h2 class="articleListingTitle">
+                    <a href="/articles/TheTimeOfAncestors.html">
+                      The Time of Ancestors:<br>ECQ Rundown
+                    </a>
+                  </h2>
+                </header>
+                <div class="article-thumbnail">
+                  <a href="/articles/TheTimeOfAncestors.html">
+                    <img src="/images/articles/TheTimeOfAncestors.jpg"
+                        width="250" height="164.4"
+                        loading="lazy"
+                        alt="thumbnail graphic" />
+                  </a>
+                </div>
+                <section class="article-description ">
+                  <p>
+                    <strong><time datetime="2019-11-28T00:00:00.000Z">November 28, 2019</time></strong> - <strong>ECQ: The Time of Ancestors</strong> also marks the first competitive event using the new Expedition format… What new decks will emerge to take down the competition? We’ll find out with $3,000 on the line in the first ECQ of the new season! 
+                  </p>
+                </section>
+              </article>
+            </section>
 
-             <!-- Column -->
-            <div class="fullColumn">
-
-               <hr>
-
-               <!-- BEGIN FEATURED ARTICLE LISTING -->
-               <div class="articleListing">
-
-                 <div class="halfColumn">
-                   <a href="/images/articles/thumbnail.jpg" target="blank">
-                     <img src="/images/articles/thumbnail.jpg" class="articleThumbnail" />
-                   </a>
-                 </div>
-
-                 <h1 class="articleListingTitle">
-                   <a href="/articles/DrafterLaunch/">
-                      Introducing the Eternal Drafter
-                   </a>
-                 </h1>
-
-                 <p class="articleListing featured">
-                  <strong>May 31, 2020</strong><br>
-                  A new drafting tool joins the suite of fan-built player resources for <strong>Eternal Card Game</strong> at <strong>ShiftStoned</strong>. Featuring evaluations by <strong>Jedi_EJ and Eternal Journey</strong>.
-                 </p>
-
-                 <a href="/articles/DrafterLaunch/">Read more ► </a>
-
-               </div>
-
-               <!-- Shoud this have a class? is there a better way to do this? -->
-               <div style="clear: both;">&nbsp;</div>
-
-               <hr style="margin: 0px 10px 0px 10px;">
-               <div class="halfColumn homeArticle">
-                 <a href="/articles/FormatUpdatesAugust2020/"><img src="/images/articles/FormatUpdatesAugust2020.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
-                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 150px;">August 2020 Format Updates</a></h1>
-                   <p class="articleListing">August 13, 2020 - Explore the August 2020 changes to Expedition and Draft Packs in this interactive gallery.</p>
-               </div>
-
-               <div class="halfColumn homeArticle">
-                 <a href="/articles/formatUpdatesArgentDepths/"><img src="/images/articles/formatUpdatesArgentDepths.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
-                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 150px;">Argent Depths Format Updates</a></h1>
-                   <p class="articleListing">June 30, 2020 - Changes to Expedition and Draft Packs with the release of Eternal's newest set.</p>
-               </div>
-
-               <!-- Shoud this have a class? is there a better way to do this? -->
-               <div style="clear: both;">&nbsp;</div>
-
-               <hr style="margin: 0px 10px 0px 10px;">
-
-               <div class="halfColumn homeArticle">
-                 <a href="/articles/TootTheHorn.html"><img src="/images/articles/ElhamPreview.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
-                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 150px;">Toot the Horn: March 2020 Updates</a></h1>
-                   <p class="articleListing">April 4, 2020 - Navigating your brew to <strong>Eternal Warcry</strong> from the fan-built <strong>Eternal Power Calculator</strong> has never been easier. Plus the addition of card art makes the Power Base visualization tool more visual than ever.</p>
-               </div>
-
-               <div class="halfColumn homeArticle">
-                 <a href="/articles/StrangeNavigator.html"><img src="/images/articles/Strange-Navigator.png" style="width: 100%; float: right; margin-bottom: 15px;">
-                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 0px;">Strange Navigator: First Impressions</a></h1>
-                   <p class="articleListing">February 9, 2020 - Feeling the Void and finding a way. <strong>Xenan</strong> gets a <strong>Stranger</strong> with some powerful abilities.</p>
-               </div>
-
-               <!-- Shoud this have a class? is there a better way to do this? -->
-               <div style="clear: both;">&nbsp;</div>
-
-               <hr style="margin: 0px 10px 0px 10px;">
-
-               <div class="halfColumn homeArticle">
-                 <a href="/articles/EoE-Spoiler.html"><img src="/images/articles/EoE-Spoiler.png" style="width: 100%; float: right; margin-bottom: 15px;">
-                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 150px;">Echoes of Eternity Spoiler</a></h1>
-                   <p class="articleListing">April 4, 2020 - Tune in Sunday February 9 at 12 noon ET as <strong>Shiftstoned's PapaCapricorn</strong> joins <strong>EJ_Jedi</strong> on <strong>Twitch</strong> to reveal a spoiler from <strong>Echoes of Eternity</strong> for <strong>Eternal Card Game</strong>. Featuring an evolving decklist leading up to the stream.</p>
-               </div>
-
-               <div class="halfColumn homeArticle">
-                 <a href="/articles/TheTimeOfAncestors.html"><img src="/images/articles/TheTimeOfAncestors.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
-                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 0px;">The Time Of Ancestors: ECQ Rundown</a></h1>
-                   <p class="articleListing">November 18, 2019 - <strong>Taking a look at the Top Eight decks from <strong>The Time of Ancestors</strong>, the first official <strong>2020 Championship Qualifier</strong> for <strong>Eternal Card Game</strong></p>
-               </div>
 
                
 
