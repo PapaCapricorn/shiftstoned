@@ -2,22 +2,6 @@
 layout: layouts/html.njk
 page_style: formatUpdates_Throwback.css
 ---
-{%- set factionList = ["Fire","Time","Justice","Primal","Shadow","Praxis","Combrei","Hooru","Feln","Stonescar","Rakano","Elysian","Argenport","Skycrag","Xenan","Mixed","Neutral"] -%}
-{%- set factionFilters = ["Fire","Time","Justice","Primal","Shadow","Mixed","Neutral"] -%}
-{%- set factionCombos = {
-  'Praxis': ["Fire","Time","Mixed"],
-  'Combrei': ["Time","Justice","Mixed"],
-  'Hooru': ["Justice","Primal","Mixed"],
-  'Feln': ["Primal","Shadow","Mixed"],
-  'Stonescar': ["Fire","Shadow","Mixed"],
-  'Rakano': ["Fire","Justice","Mixed"],
-  'Elysian': ["Time","Primal","Mixed"],
-  'Argenport': ["Justice","Primal","Mixed"],
-  'Skycrag': ["Fire","Primal","Mixed"],
-  'Xenan': ["Time","Shadow","Mixed"],
-  'Mixed': ["Fire","Time","Justice","Primal","Shadow","Mixed"]
-} -%}
-
 <main class="formatUpdates textcol">
 
   <header>
@@ -42,55 +26,36 @@ page_style: formatUpdates_Throwback.css
     {{ content | safe }}
   </section>
 
-  <section class="cards">
-    <h2>Changed Cards</h2>
-    {%- for cardInfo in cardChanges -%}
 
-    <h3>{{cardInfo.Name}}</h3>
+{% set sections = [ ["Relevant Changes", displayList.matters], ["Other Changes", displayList.doesnt] ] %}
+{% for heading, data in sections %}
+  <section class="cards full-width">
+    <hr class="full-width">
+    <h2 class="full-width">{{heading}}</h2>
+    {# {%- for cardInfo in cardChanges -%} #}
+    {%- for card in data -%}
+    {% set cardInfo = cardChanges[card] %}
+
+    <h3 class="full-width">{{cardInfo.Name}}</h3>
     <figure>
       <img src="images/cards-then/{{ cardInfo.Name | replace(" ", "_") }}.png" alt="old {{cardInfo.Name}}" loading="lazy" width="220" height="350">
     </figure>
-    <ul class="changes">
+    <dl class="changes">
     {% for att, changes in cardInfo.Changes %}
-      <li>{{att}}:
-        <br> then: {{changes.then}}
-        <br> now: {{changes.now}}
-      </li>
+      <dt>{{att}}:</dt>
+      <dd><dl>
+        <dt>then:</dt>
+        <dd>{{changes.then}}</dd>
+        <dt>now:</dt>
+        <dd>{{changes.now}}</dd>
+      </dl></dd>
     {% endfor %}
-    </ul>
+    </dl>
     <figure>
-      <img src="/images/cards/{{ cardInfo.Name | replace(" ", "_") }}.png" alt="current {{cardInfo.Name}}" loading="lazy" width="220" height="350">
+      <img src="images/cards-now/{{ cardInfo.Name | replace(" ", "_") }}.png" alt="current {{cardInfo.Name}}" loading="lazy" width="220" height="350">
     </figure>
 
     {%- endfor %}
-{# 
-    {%- for cardThenInfo in cardsThen -%}
-    
-      {%- set cardNowInfo = cardsNow[loop.index0] %}
-      {%- set cardChanged = false %}
-
-      {%- for att, value in cardThenInfo %}
-
-        {%- if value != cardNowInfo[att] %}
-          {%- set cardChanged = true %}
-        {%- endif %}
-      {%- endfor %}
-
-      {%- if cardChanged == true %}
-      <li>
-        <h3>{{cardNowInfo.Name}}</h3>
-        <figure>
-          <img src="images/cards-then/{{ cardNowInfo.Name | replace(" ", "_") }}.png" alt="old {{cardNowInfo.Name}}" loading="lazy" width="220" height="350">
-        </figure>
-        <figure>
-          <img src="/images/cards/{{ cardNowInfo.Name | replace(" ", "_") }}.png" alt="current {{cardNowInfo.Name}}" loading="lazy" width="220" height="350">
-        </figure>
-      </li>
-      {% endif %}
-
-    {%- endfor %}
-#}
-
-    </ul>
   </section>
+{%- endfor %}
 </main>
