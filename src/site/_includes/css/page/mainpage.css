@@ -1,0 +1,56 @@
+.frontpage-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.article-brief {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1em;
+    padding: 1rem;
+    font: 15px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+}
+.article-brief .articleListingTitle {
+    font-size: 24px;
+}
+.article-brief .article-thumbnail {
+    grid-row: 1;
+}
+.article-brief .article-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.article-brief:nth-child(2n+1) {
+    padding-right: 0;
+}
+.article-brief:nth-child(2n) {
+    padding-left: 0;
+    border-right: 1px solid var(--MineShaft);
+}
+.article-brief:not(:first-child) {
+    border-top: 1px solid var(--MineShaft);
+}
+
+.article-brief:first-child {
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    padding: 0 0 1rem;
+    font: 18px Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+}
+.article-brief:first-child .articleListingTitle {
+    font-size: 30px;
+}
+.article-brief:first-child .article-thumbnail {
+    grid-row: 1/-1;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}

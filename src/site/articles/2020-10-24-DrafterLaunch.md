@@ -2,6 +2,7 @@
 title: Introducing the Drafter
 description: "A new drafting tool joins the suite of fan-built player resources for **Eternal Card Game** at **ShiftStoned**. Featuring evaluations by **Jedi_EJ** and **Eternal Journey**."
 meta_image: /images/articles/thumbnail.jpg
+tags: news
 ---
 ## Introducing the Eternal Drafter {.title}
 
