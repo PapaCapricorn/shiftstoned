@@ -1,0 +1,99 @@
+
+/* Visually hide element accessibly) */
+/* ! add to main css */
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+  
+  /* misc styles */
+  .newBodyGrid main > header {
+    margin-block-end: 1.5em;
+  }
+  .description ul > li {
+    margin-block-end: .5em;
+  }
+  .description li > ul {
+    margin-block-start: .5em;
+  }
+  
+  /* place contents in grid */
+  .formatUpdates.textcol {
+    width: 100%;
+    margin: 0;
+    padding-inline-end: 30px;
+    display: grid;
+    grid-template-columns: 310px auto;
+  }
+  
+  .formatUpdates > header,
+  .formatUpdates > .description {
+    width: 600px;
+  }
+  .description {
+    margin-block-end: 1em;
+  }
+  
+  .formatUpdates > * {
+    grid-column: 2;
+  }
+  .formatUpdates > .sideImage {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  /* Above from formatUpdates_v3.css, below is new  */
+.cards,
+.cards * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* full-width, match right side padding then add extra padding */
+    --section-side-padding: 5rem;
+    padding: 0 var(--section-side-padding) 0 calc(var(--section-side-padding) + 30px);
+}
+.full-width {
+  grid-column: 1/-1;
+}
+.cards > hr {
+  margin: 1rem 0;
+}
+.cards > h3 {
+  margin-top: 1rem;
+}
+.cards figure {
+    margin-bottom: auto;
+}
+.cards img {
+    width: 150px;
+    height: auto;
+}
+
+.changes {
+    padding: 0 1em;
+}
+.changes dl {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  gap: 1rem;
+}
+.changes > dt {
+  border-bottom: 1px darkgrey solid;
+}
+.changes > dd {
+  margin-bottom: 1rem;
+}
+.changes dl > dt {
+  font-style: italic;
+  color: lightgrey;
+}
