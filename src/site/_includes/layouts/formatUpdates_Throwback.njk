@@ -1,0 +1,61 @@
+---
+layout: layouts/html.njk
+page_style: formatUpdates_Throwback.css
+---
+<main class="formatUpdates textcol">
+
+  <header>
+    <h1 class="title"> {{- articleTitle -}} </h1>
+    
+    {% if articleSubtitle -%}
+    <p class="subtitle">
+      {{- articleSubtitle -}}
+    </p>
+    {%- endif %}
+
+    {% if articleTagline -%}
+    <p class="tagline">
+      {{- articleTagline -}}
+    </p>
+    {%- endif %}
+  </header>
+
+  <img class="sideImage articleMargin" alt="" src=" {{- articleImage -}} "/>
+
+  <section class="description">
+    {{ content | safe }}
+  </section>
+
+
+{% set sections = [ ["Relevant Changes", displayList.matters], ["Other Changes", displayList.doesnt] ] %}
+{% for heading, data in sections %}
+  <section class="cards full-width">
+    <hr class="full-width">
+    <h2 class="full-width">{{heading}}</h2>
+    {# {%- for cardInfo in cardChanges -%} #}
+    {%- for card in data -%}
+    {% set cardInfo = cardChanges[card] %}
+
+    <h3 class="full-width">{{cardInfo.Name}}</h3>
+    <figure>
+      <img src="images/cards-then/{{ cardInfo.Name | replace(" ", "_") }}.png" alt="old {{cardInfo.Name}}" loading="lazy" width="220" height="350">
+    </figure>
+    <dl class="changes">
+    {% for att, changes in cardInfo.Changes %}
+      <dt>{{att}}:</dt>
+      <dd><dl>
+        <dt>then:</dt>
+        <dd>{{changes.then}}</dd>
+        <dt>now:</dt>
+        <dd>{{changes.now}}</dd>
+      </dl></dd>
+    {% endfor %}
+    </dl>
+    <figure>
+      <img src="images/cards-now/{{ cardInfo.Name | replace(" ", "_") }}.png" alt="current {{cardInfo.Name}}" loading="lazy" width="220" height="350">
+    </figure>
+
+    {%- endfor %}
+  </section>
+{%- endfor %}
+</main>
