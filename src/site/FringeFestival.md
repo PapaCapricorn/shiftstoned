@@ -19,16 +19,16 @@ Featuring evaluations by [Jedi_EJ and Eternal Journey][EJ]
   CONTENT
   Huckleberries, brewers and cardsanguars:
 
-  First and foremost, I am pleased to announce a new tool joining the fan-built player resources at ShiftStoned at the end of this week’s celebration!
+  ShiftStoned is pleased to announce a new tool joining the fan-built player resources at ShiftStoned at the end of this week’s celebration!
 
   Featuring evaluations by Jedi_EJ & his Eternal Journey Podcast co-hosts Johnholio and darth_herman2, The Drafter will be your card selection companion when picking and brewing for Eternal Card Game draft runs. It is easily the next best thing to drafting directly with these talented players themselves!
 
-
-
-  r/EternalCardGame - Announcing the Drafter, a fan-built draft companion for Eternal Card Game coming soon to ShiftStoned
   Coding wizardry for the Drafter was generously contributed by mlntn of Team Misplay, with indispensable organizational support provided by freaky wiki champion PusillanimousGamer.
 
   This is new territory for all of us, and bound to be a bit experimental. We are looking forward to the community’s response when the Drafter goes live at the end of the celebration and the regular Draft format returns.
+
+  Fringe Festival
+  {.subtitle}
 
   The Eternal Celebration is in full swing (...welcome new players!). The 2020 World Championship is just weeks away. And there are ever more new cards on the horizon to brew with.
 
