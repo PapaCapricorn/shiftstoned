@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+{# {% include "partials/html-head/gtag.njk" %} #}
+{% include "partials/html-head/meta.njk" %}
+
+{% include "partials/html-head/compatibility.njk" %}
+{% include "partials/html-head/icons.njk" %}
+{% include "partials/html-head/themes.njk" %}
+{% include "partials/html-head/fonts.njk" %}
+{% include "partials/html-head/styles.njk" %}
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="{{ bg_img }}" {% if offset -%} style="{{ offset }}" {%- endif -%} />
+
+    {% include "partials/navigation/headbanner.njk" %}
+
+    <!-- Main page content -->
+    <main class="newBodyGrid {{ page_class }}">
+
+      {{ content | safe }}
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    {% include "partials/scripts/jsSrc.njk" %}
+
+  </body>
+
+</html>
