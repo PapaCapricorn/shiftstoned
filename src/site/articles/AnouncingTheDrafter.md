@@ -5,7 +5,7 @@ articleImage: "/images/articles/DrafterScreenshot.jpg"
 meta_image: /images/articles/DrafterScreenshot.jpg
 tags: news
 ---
-## Announcing the Eternal Drafter {.title}
+## Announcing the Drafter {.title}
 
 A new, fan-built drafting companion for <strong>Eternal Card Game</strong> featuring evaluations by [Jedi_EJ and Eternal Journey][EJ]{target="_blank}
 {.subtitle}
