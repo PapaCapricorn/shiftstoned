@@ -1,24 +1,22 @@
 ---
-title: Introducing the Drafter
-description: "A new drafting tool joins the suite of fan-built player resources for **Eternal Card Game** at **ShiftStoned**. Featuring evaluations by **Jedi_EJ** and **Eternal Journey**."
+title: Announucing the Drafter
+description: "A new drafting tool joins the fan-built player resources for **Eternal Card Game** at **ShiftStoned**. Featuring evaluations by **Jedi_EJ** and **Eternal Journey**."
 articleImage: "/images/articles/DrafterScreenshot.jpg"
 meta_image: /images/articles/DrafterScreenshot.jpg
 tags: news
 ---
-## Introducing the Eternal Drafter {.title}
+## Announcing the Eternal Drafter {.title}
 
-A fan-built drafting tool for Eternal Card Game
+A new, fan-built drafting companion for <strong>Eternal Card Game</strong> featuring evaluations by [Jedi_EJ and Eternal Journey][EJ]
 {.subtitle}
 
-Featuring evaluations by [Jedi_EJ and Eternal Journey][EJ]
+Coming soon to ShiftStoned
 {.tagline}
 
   [EJ]: /drafter/EternalJourney/
 
 ![]({{ meta_image }}){width="250"}
 {.article-thumbnail}
-
-Announcing the Drafter, a fan-built draft companion for Eternal Card Game coming soon to ShiftStoned
 
 <strong>October 28, 2020 - Huckleberries, brewers and cardsanguars:</strong>
   We are pleased to announce a new tool joining the fan-built player resources at ShiftStoned at the end of this week’s celebration!
