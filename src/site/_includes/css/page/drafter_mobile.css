@@ -134,6 +134,7 @@
 @media screen and (max-width: 576px) {
   .container {
     max-width: 100%;
+    min-height: initial !important;
   }
   .filter {
     height: initial !important;
@@ -155,5 +156,27 @@
   }
   .drafterControlLabel {
     margin-bottom: -20px !important;
+  }
+
+  .open {
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .5em;
+    background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .5em;
+  }
+  .dropdown-menu.show {
+    width: 100% !important;
+    margin: 0 !important;
+    position: initial;
+    max-height: initial;
   }
 }
