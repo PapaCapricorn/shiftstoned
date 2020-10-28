@@ -35,11 +35,11 @@
   
     <!-- page-specific styles -->
     <style>
-    .article {
+    .article > main {
     --block-margin: 1.5rem;
 }
 
-.article {
+.article > main {
     padding: 0 30px 30px;
     display: grid;
     grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
@@ -51,22 +51,22 @@
     line-height: 1.6;
     color: #ffffff;
 }
-.article > * {
+.article > main > * {
     grid-column: 2; /* unless otherwise specified, place all content inside the main column */
 }
 
-.articleHeader {
+.article > main .articleHeader {
     margin-block-end: var(--block-margin);
 }
-.article .title,
-.article .subtitle,
-.article .tagline,
-.article hr,
-.article > p {
+.article > main .title,
+.article > main .subtitle,
+.article > main .tagline,
+.article > main hr,
+.article > main > p {
     margin: 0 0 var(--block-margin);
 }
 
-.article .pre-headline {
+.article > main .pre-headline {
     margin-block-start: 1.8rem; /* approximate heading top-margin */
     margin-block-end: 0.5em;
     font: 12px Open Sans;
@@ -75,44 +75,44 @@
     letter-spacing: 0.25em;
 }
 
-.article .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+.article > main .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
     margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
 }
-.article .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+.article > main .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
     margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
 }
 
-.article :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+.article > main :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
     display: flex; /* force line break */
     margin-block-start: 0; /* doesn't need top-margin, uses heading's */
 }
-.article :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+.article > main :is(h1,h2,h3,h4,h5,h6) .pre-headline {
     display: flex; /* force line break */
     margin-block-start: 0; /* doesn't need top-margin, uses heading's */
 }
 
-.pre-headline.first {
+.article > main .pre-headline.first {
     color:#FFDF00;
 }
-.pre-headline.second {
+.article > main .pre-headline.second {
     color:#C0C0C0;
 }
-.pre-headline.third {
+.article > main .pre-headline.third {
     color:#cd7f32;
 }
-.pre-headline.fifth {
+.article > main .pre-headline.fifth {
     color:#FF4500;
 }
 
-.article a {
+.article > main a {
     color: #81C3F4;
 }
-.article a:hover {
+.article > main a:hover {
     color: #4183c4;
 }
 
-.side-image,
-.article-thumbnail {
+.article > main .side-image,
+.article > main .article-thumbnail {
     grid-column: 1; /* place in 1st column (sidebar) */
     grid-row: span 100; /* overflow as many rows as needed */
     /* need to check above for browser support
@@ -122,39 +122,39 @@
     margin: 0; /* clear assigned <figure> margins */
     margin-inline-start: auto; /* right-align images */
 }
-.side-image img {
+.article > main .side-image img {
     max-width: 100%;
     height: auto;
 }
-.side-image.card-image img {
+.article > main .side-image.card-image img {
     width: 220px;
 }
-.side-image.card-image.ci-small img {
+.article > main .side-image.card-image.ci-small img {
     width: 125px;
 }
 
-.article-thumbnail {
+.article > main .article-thumbnail {
     grid-row: 1 / span 100; /* overflow as many rows as needed */
 }
-.article-thumbnail img {
+.article > main .article-thumbnail img {
     width: 250px;
     height: auto;
     object-fit: contain;
 }
 
-.article ul {
+.article > main ul {
     margin: 0 0 var(--block-margin);
 }
-.article > ul {
+.article > main > ul {
     padding: 0;
 }
-.article > ul > li {
+.article > main > ul > li {
     margin-inline-start: 1em;
 }
-.article ul li:not(:last-child) {
+.article > main ul li:not(:last-child) {
     margin-block-end: 1rem;
 }
-.article li > ul {
+.article > main li > ul {
     margin-block-start: 1rem;
 }
 .star-list li {
@@ -170,19 +170,19 @@
     font-size: 14px;
     font-family: Open Sans;
 }
-.article .list-compact li:not(:last-child) {
+.article > main .list-compact li:not(:last-child) {
     margin-block-end: 0;
 }
 .list-compact li > ul {
     margin: 0;
 }
 
-.main-col-image {
+.article > main .main-col-image {
     margin: 0; /* clear assigned <figure> margins */
     margin-block-end: var(--block-margin);
     grid-column: 2/-1;
 }
-.main-col-image img {
+.article > main .main-col-image img {
     width: 100%; /* width of the main column */
     height: auto;
 }
@@ -190,7 +190,7 @@
 .highlight {
     color:#81C3F4;
 }
-.article blockquote {
+.article > main blockquote {
     font-size: 18px;
     font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
     line-height: 1.4;
@@ -205,19 +205,19 @@
 }
 
 /* top 8 articles */
-h2 .epc-link,
-h3 .epc-link {
+.article > main h2 .epc-link,
+.article > main h3 .epc-link {
     text-decoration: underline;
 }
-h2 .epc-link::before,
-h3 .epc-link::before {
+.article > main h2 .epc-link::before,
+.article > main h3 .epc-link::before {
     display: inline-block;
     content: "► ";
     color: white;
     margin-inline-end: .5ch;
 }
 
-.article-table {
+.article > main .article-table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
@@ -225,25 +225,25 @@ h3 .epc-link::before {
     font-family: arial, sans, sans-serif;
 }
 
-.article-table,
-.article-table tr,
-.article-table td,
-.article-table th {
+.article > main .article-table,
+.article > main .article-table tr,
+.article > main .article-table td,
+.article > main .article-table th {
     border: 1px solid white;
 }
-.article-table td,
-.article-table th {
+.article > main .article-table td,
+.article > main .article-table th {
     padding: 2px 3px;
 }
-.article-table thead th {
+.article > main .article-table thead th {
     vertical-align: bottom;
 }
-.article-table thead th:nth-child(1) {
+.article > main .article-table thead th:nth-child(1) {
     width: 17%;
 }
-.article-table thead th:nth-child(2),
-.article-table thead th:nth-child(3),
-.article-table thead th:nth-child(4) {
+.article > main .article-table thead th:nth-child(2),
+.article > main .article-table thead th:nth-child(3),
+.article > main .article-table thead th:nth-child(4) {
     width: 15%;
 }
 
@@ -258,7 +258,7 @@ h3 .epc-link::before {
 </head>
 
   <!-- PAGE BODY -->
-  <body>
+  <body class="article">
 
     <img class="background" src="/images/BackgroundArticles.jpg" />
 
@@ -305,7 +305,7 @@ h3 .epc-link::before {
 
 
     <!-- Main page content -->
-    <main class="newBodyGrid article">
+    <main class="newBodyGrid">
 
       <header class="articleHeader">
   <h1 class="title">Echoes of Eternity Spoiler</h1>
