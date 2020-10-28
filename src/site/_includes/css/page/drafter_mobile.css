@@ -1,0 +1,159 @@
+/* header & main width changes to allow responsive layouts */
+/* should eventually be used in whole-site styles instead, along with adjusting content styles to match */
+
+.newShiftstoned-heading,
+.newBodyGrid,
+.newHeading-top,
+.newHeading-page-top {
+  max-width: 1140px;
+  width: 100%;
+}
+
+.newAbout-heading {
+  position: initial;
+  /* top: 12px; -- commented-out styles like these do nothing with the default position, and will need to be removed when updating the site.css */
+  /* left: 990px; */
+}
+
+#newNavigation-separator {
+  position: initial;
+  /* top: 10px; */
+  /* left: 1060px; */
+}
+
+#navigation-menu,
+#newNavigation-menu {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+#newNavigation-menu {
+  /* left: 1080px; */
+}
+
+.newAbout-heading, #newNavigation-separator, #newNavigation-menu {
+  align-self: start;
+  margin-top: 10px;
+}
+
+.power-calculator-img {
+  position: relative;
+  left: 0;
+}
+
+.shiftstoned-img {
+  position: initial;
+  /* left: 23px; */
+  /* top: 27px; */
+  width: 17vw;
+  min-width: 230px;
+}
+
+@media screen and (max-width: 450px) {
+  .shiftstoned-img {
+    width: 100%;
+    min-width: initial;
+    max-width: 230px;
+  }
+}
+
+.newHeading-top {
+  display: grid;
+  align-items: end;
+  grid-template-columns: auto minmax(220px, 1fr) repeat(3, auto);
+  grid-template-areas: "logo section . . .";
+  gap: 0 1.5rem;
+  padding: 0 23px;
+}
+
+.newHeading-top > a:first-child {
+  grid-area: logo;
+}
+
+.newHeading-top > a:nth-child(2) {
+  grid-area: section;
+}
+
+@media screen and (max-width: 680px) {
+  .newShiftstoned-heading,
+  .newHeading-top {
+    height: initial;
+  }
+  .newHeading-top {
+    grid-template-columns: 1fr repeat(3, auto);
+    grid-template-areas: "logo . . ."
+                         "section section section section";
+  }
+  .newHeading-top > a:nth-child(2) {
+    margin-top: -30px;
+  }
+  .newHeading-page-top {
+    margin-top: -40px;
+  }
+}
+
+/* drafter changes */
+.drafter #welcome-popup {
+  position: absolute !important;
+  bottom: initial !important;
+  margin-top: .2em;
+}
+
+.cards > * {
+  max-width: 100%;
+}
+
+.cards > div {
+  margin: 0 auto 1rem;
+  max-width: 250px;
+}
+
+.card-rating {
+  left: initial !important;
+  right: 0;
+}
+
+.form-check {
+  width: max-content;
+}
+
+#welcome-popup {
+  max-width: 80vw !important;
+}
+
+
+.cards {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.row::after {
+  content: initial;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  .filter {
+    height: initial !important;
+    flex-direction: column;
+  }
+  .filter > div:first-child {
+    order: 2;
+  }
+  .filter > div:nth-child(2) {
+    order: 1;
+    width: min-content;
+  }
+  .filter > div:last-child {
+    order: 3;
+    margin: 0 15px;
+  }
+  .form-check {
+    padding: 0 !important;
+  }
+  .drafterControlLabel {
+    margin-bottom: -20px !important;
+  }
+}

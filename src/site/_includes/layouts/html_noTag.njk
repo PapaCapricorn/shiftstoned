@@ -13,14 +13,14 @@
 </head>
 
   <!-- PAGE BODY -->
-  <body>
+  <body class="{{ page_class }}">
 
     <img class="background" src="{{ bg_img }}" {% if offset -%} style="{{ offset }}" {%- endif -%} />
 
     {% include "partials/navigation/headbanner.njk" %}
 
     <!-- Main page content -->
-    <main class="newBodyGrid {{ page_class }}">
+    <main class="newBodyGrid">
 
       {{ content | safe }}
 
