@@ -4,7 +4,6 @@ description: "A new drafting tool joins the suite of fan-built player resources 
 articleImage: "/images/articles/DrafterScreenshot.jpg"
 meta_image: /images/articles/DrafterScreenshot.jpg
 tags: news
-override:tags: []
 ---
 ## Introducing the Eternal Drafter {.title}
 
