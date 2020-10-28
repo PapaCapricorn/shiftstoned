@@ -32,4 +32,6 @@ Fringe Festival
 
   We are thrilled to be making these updates during such an exciting time for <strong>Eternal Card Game</strong>. The <a href="https://www.direwolfdigital.com/news/eternal-celebration/" target="_blank">Eternal Celebration</a> is in full swing (...welcome new players!). The <a href="https://www.direwolfdigital.com/news/play-for-50000-in-the-eternal-world-championship/" target="_blank">2020 World Championship</a> is just weeks away. And there are ever more <a href="https://www.direwolfdigital.com/news/bastion-rising/" target="_blank">new cards</a> on the horizon to brew with.
 
-  <strong>ShiftStoned</strong> is celebrating with a re-designed layout and some significant back-end improvements that will make updating easier for us. Watch this space for more details on <strong>the Drafter</strong> in the coming days. Meanwhile, may you always find the <strong>Power</strong> and <strong>Influence</strong> you need, when you need it!
+  <strong>ShiftStoned</strong> is celebrating with a re-designed layout and some significant back-end improvements that will make updating easier for us.
+
+  Watch this space for more details when <strong>the Drafter</strong> goes live in the coming days. Meanwhile, may you always find the <strong>Power</strong> and <strong>Influence</strong> you need, when you need it!
