@@ -4,6 +4,7 @@ description: "A new drafting tool joins the suite of fan-built player resources 
 articleImage: "/images/articles/DrafterScreenshot.jpg"
 meta_image: /images/articles/DrafterScreenshot.jpg
 tags: news
+override:tags: []
 ---
 ## Introducing the Eternal Drafter {.title}
 
@@ -15,10 +16,12 @@ Featuring evaluations by [Jedi_EJ and Eternal Journey][EJ]
 
   [EJ]: /drafter/EternalJourney/
 
+![]({{ meta_image }}){width="250"}
+{.article-thumbnail}
 
-  Announcing the Drafter, a fan-built draft companion for Eternal Card Game coming soon to ShiftStoned
-  CONTENT
-  Huckleberries, brewers and cardsanguars:
+Announcing the Drafter, a fan-built draft companion for Eternal Card Game coming soon to ShiftStoned
+CONTENT
+Huckleberries, brewers and cardsanguars:
 
   We are pleased to announce a new tool joining the fan-built player resources at ShiftStoned at the end of this week’s celebration!
 
@@ -28,8 +31,8 @@ Featuring evaluations by [Jedi_EJ and Eternal Journey][EJ]
 
   This is new territory for all of us, and bound to be a bit experimental. We are looking forward to the community’s response when <strong>the Drafter<strong> goes live at the end of the celebration and the regular Draft format returns.
 
-  Fringe Festival
-  {.subtitle}
+Fringe Festival
+{.subtitle}
 
   The <a href="https://www.direwolfdigital.com/news/eternal-celebration/" target="_blank">Eternal Celebration</a> is in full swing (...welcome new players!). The <a href="https://www.direwolfdigital.com/news/play-for-50000-in-the-eternal-world-championship/" target="_blank">2020 World Championship</a> is just weeks away. And there are ever more <a href="https://www.direwolfdigital.com/news/bastion-rising/" target="_blank">new cards</a> on the horizon to brew with.
 
