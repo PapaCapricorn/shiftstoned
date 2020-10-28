@@ -7,7 +7,7 @@ tags: news
 ---
 ## Announcing the Eternal Drafter {.title}
 
-A new, fan-built drafting companion for <strong>Eternal Card Game</strong> featuring evaluations by [Jedi_EJ and Eternal Journey][EJ]
+A new, fan-built drafting companion for <strong>Eternal Card Game</strong> featuring evaluations by [Jedi_EJ and Eternal Journey][EJ]{target="_blank}
 {.subtitle}
 
 Coming soon to ShiftStoned
