@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120926504-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120926504-1');
+      </script>
+
+<!-- Meta data for index.njk head goes here - temporarily hidden -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Introducing the Drafter | ShiftStoned</title>
+
+<!-- Compatibility for older browsers goes here - temporarily hidden -->
+<!-- Resources for icons go here - temporarily hidden -->
+<!-- Resources for themes go here - temporarily hidden -->
+
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+  <!-- CSS -->
+  
+  <link href="/styles/site.css" rel="stylesheet" type="text/css">
+  
+    <!-- page-specific styles -->
+    <style>
+    .article {
+    --block-margin: 1.5rem;
+}
+
+.article {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.article > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+
+.articleHeader {
+    margin-block-end: var(--block-margin);
+}
+.article .title,
+.article .subtitle,
+.article .tagline,
+.article hr,
+.article > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+.article .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+
+.article :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+.article :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+
+.pre-headline.first {
+    color:#FFDF00;
+}
+.pre-headline.second {
+    color:#C0C0C0;
+}
+.pre-headline.third {
+    color:#cd7f32;
+}
+.pre-headline.fifth {
+    color:#FF4500;
+}
+
+.article a {
+    color: #81C3F4;
+}
+.article a:hover {
+    color: #4183c4;
+}
+
+.side-image,
+.article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
+}
+.side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.side-image.card-image img {
+    width: 220px;
+}
+.side-image.card-image.ci-small img {
+    width: 125px;
+}
+
+.article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.article ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > ul {
+    padding: 0;
+}
+.article > ul > li {
+    margin-inline-start: 1em;
+}
+.article ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
+}
+
+.main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
+}
+.main-col-image img {
+    width: 100%; /* width of the main column */
+    height: auto;
+}
+
+.highlight {
+    color:#81C3F4;
+}
+.article blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
+}
+
+.arrow-link {
+    font-weight: bold;
+}
+.arrow-link::after {
+    content: " ►";
+}
+
+/* top 8 articles */
+h2 .epc-link,
+h3 .epc-link {
+    text-decoration: underline;
+}
+h2 .epc-link::before,
+h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article-table,
+.article-table tr,
+.article-table td,
+.article-table th {
+    border: 1px solid white;
+}
+.article-table td,
+.article-table th {
+    padding: 2px 3px;
+}
+.article-table thead th {
+    vertical-align: bottom;
+}
+.article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article-table thead th:nth-child(2),
+.article-table thead th:nth-child(3),
+.article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
+}
+    </style>
+
+</head>
+
+  <!-- PAGE BODY -->
+  <body>
+
+    <img class="background" src="/images/BackgroundArticles.jpg" />
+
+    <div class="newShiftstoned-heading">
+
+      <div class="newHeading-top">
+
+        <a href="/"><img class="shiftstoned-img" src="/images/LogoShiftstoned.svg" /></a>
+
+        <a href="/articles"><img alt="Articles" class="power-calculator-img" src="/images/HeaderArticles.png" title="Articles" /></a>
+
+
+      <div id="newNavigation-menu" data-state="closed">
+
+        <button type="button"
+                id="menu-toggle"
+                onclick="toggleMenu()">
+          <img src="/images/navigation-menu.png" />
+          <span class="visually-hidden hidden-focusable">toggle header menu</span>
+        </button>
+
+        <nav class="site-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">HOME</a></li>
+            <li class="nav-item"><a href="/epc/">POWER CALCULATOR </a></li>
+            <li class="nav-item child"><a href="/epc/about/">Guide</a></li>
+            <li class="nav-item"><a href="/drafter/">DRAFTER</a></li>
+            <li class="nav-item"><a href="/articles/">ARTICLES</a></li>
+            <li class="nav-item"><a href="/calendar/">COMMUNITY CALENDAR</a></li>
+            <li class="nav-item"><a href="/contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+      </div>
+
+      <div class="newHeading-page-top">
+        &nbsp;
+      </div>
+
+  </div>
+
+
+    <!-- Main page content -->
+    <main class="newBodyGrid article">
+
+      <h2 class="title">Introducing the Eternal Drafter</h2>
+<p class="subtitle">A fan-built drafting tool for Eternal Card Game</p>
+<p class="tagline">Featuring evaluations by <a href="/drafter/EternalJourney/">Jedi_EJ and Eternal Journey</a></p>
+<p>Announcing the Drafter, a fan-built draft companion for Eternal Card Game coming soon to ShiftStoned
+CONTENT
+Huckleberries, brewers and cardsanguars:</p>
+<p>ShiftStoned is pleased to announce a new tool joining the fan-built player resources at ShiftStoned at the end of this week’s celebration!</p>
+<p>Featuring evaluations by Jedi_EJ &amp; his Eternal Journey Podcast co-hosts Johnholio and darth_herman2, The Drafter will be your card selection companion when picking and brewing for Eternal Card Game draft runs. It is easily the next best thing to drafting directly with these talented players themselves!</p>
+<p>Coding wizardry for the Drafter was generously contributed by mlntn of Team Misplay, with indispensable organizational support provided by freaky wiki champion PusillanimousGamer.</p>
+<p>This is new territory for all of us, and bound to be a bit experimental. We are looking forward to the community’s response when the Drafter goes live at the end of the celebration and the regular Draft format returns.</p>
+<p class="subtitle">Fringe Festival</p>
+<p>The Eternal Celebration is in full swing (...welcome new players!). The 2020 World Championship is just weeks away. And there are ever more new cards on the horizon to brew with.</p>
+<p>ShiftStoned is celebrating with a re-designed layout and some significant back-end improvements that will make updating easier for us. While the future for ShiftStoned and for me as an Eternal player remain mysterious at the moment, it gives me a thrill to share these new developments with you now.</p>
+<p>May you always find the Power and Influence you need, when you need it!</p>
+
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    
+    <!-- defer loading non-critical js -->
+    <script defer src="/scripts/site-defer.js" type="text/javascript"></script>
+
+
+  </body>
+
+</html>
