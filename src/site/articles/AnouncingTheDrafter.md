@@ -1,5 +1,5 @@
 ---
-title: Announucing the Drafter
+title: Announcing the Drafter
 description: "A new drafting tool joins the fan-built player resources for **Eternal Card Game** at **ShiftStoned**. Featuring evaluations by **Jedi_EJ** and **Eternal Journey**."
 articleImage: "/images/articles/DrafterScreenshot.jpg"
 meta_image: /images/articles/DrafterScreenshot.jpg
@@ -18,7 +18,9 @@ Coming soon to ShiftStoned
 ![]({{ meta_image }}){width="250"}
 {.article-thumbnail}
 
-<strong>October 28, 2020 - Huckleberries, brewers and cardsanguars:</strong>
+<strong>October 28, 2020 - </strong>
+
+<strong>Huckleberries, brewers and cardsanguars:</strong>
   We are pleased to announce a new tool joining the fan-built player resources at ShiftStoned at the end of this week’s celebration!
 
   Featuring evaluations by <strong>Jedi_EJ</strong> & his <strong>Eternal Journey Podcast</strong> co-hosts <strong>Johnholio</strong> and <strong>darth_herman2</strong>, <a href="https://www.shiftstoned.com/drafter/" target="_blank">the Drafter</a> will be your card selection companion when picking and brewing for <a href="https://www.direwolfdigital.com/eternal/" target="_blank">Eternal Card Game</a> draft runs. It is easily the next best thing to drafting directly with these talented players themselves!
