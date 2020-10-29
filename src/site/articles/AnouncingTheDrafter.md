@@ -29,6 +29,8 @@ Coming soon to ShiftStoned
 
   This is new territory for all of us, and bound to be a bit experimental. We are looking forward to the community’s response when <strong>the Drafter</strong> goes live at the end of the celebration and the regular Draft format returns.
 
+    <img src="/images/drafter/DrafterTeaser.JPG" style=" width: 85%; margin: auto;">
+
 Fringe Festival
 {.subtitle}
 
@@ -37,3 +39,5 @@ Fringe Festival
   <strong>ShiftStoned</strong> is celebrating with a re-designed layout and some significant back-end improvements that will make updating easier for us.
 
   Watch this space for more details when <strong>the Drafter</strong> goes live in the coming days. Meanwhile, may you always find the <strong>Power</strong> and <strong>Influence</strong> you need, when you need it!
+
+  
