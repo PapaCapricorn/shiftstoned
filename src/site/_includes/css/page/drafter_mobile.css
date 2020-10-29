@@ -1,6 +1,14 @@
 /* header & main width changes to allow responsive layouts */
 /* should eventually be used in whole-site styles instead, along with adjusting content styles to match */
 
+.background {
+  display: none;
+}
+
+.drafter {
+  background: top -100px right/100% no-repeat url(/images/BackgroundDrafter.jpg)
+}
+
 .newShiftstoned-heading,
 .newBodyGrid,
 .newHeading-top,
@@ -125,13 +133,40 @@
   max-width: 80vw !important;
 }
 
-
 .cards {
   display: grid !important;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .row::after {
   content: initial;
+}
+
+/* -- already have :hover, used copied styles. need to add :active and :focus to the tool css */
+.card-rating:hover .notes,
+.card-rating:active .notes,
+.card-rating:focus .notes {
+  display: block !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 240px;
+  background-color: #2E2C3D;
+  border: solid 1px #458A9E;
+  border-radius: 6px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  left: 50%;
+  line-height: 1.6;
+  margin-left: -60px;
+  padding: 10px;
+  position: absolute;
+  text-align: left;
+  top: 40px;
+  z-index: 3;
 }
 
 @media screen and (max-width: 576px) {
@@ -186,5 +221,13 @@
     margin: 0 !important;
     position: initial;
     max-height: initial;
+  }
+
+  .card-rating:hover .notes,
+  .card-rating:active .notes,
+  .card-rating:focus .notes {
+    right: -10px;
+    top: 170px !important;
+    left: initial !important;
   }
 }
