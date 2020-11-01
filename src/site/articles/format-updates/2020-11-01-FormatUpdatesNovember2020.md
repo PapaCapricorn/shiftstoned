@@ -1,7 +1,7 @@
 ---
 title: "Format Updates - November 2020"
 description: "Explore the November 2020 changes to **Expedition** and **Draft Packs** in this **interactive gallery**."
-articleImage: "/images/articles/FormatUpdatesAugust2020.jpg"
+articleImage: "/images/articles/FormatUpdatesNovember2020.jpg"
 articleTitle: "November 2020 Format Updates"
 articleSubtitle: "Changes to Expedition and Draft Packs with the latest patch"
 layout: "layouts/formatUpdates_v3.njk"
