@@ -34,11 +34,254 @@
   <link href="/styles/site.css" rel="stylesheet" type="text/css">
   
   <link href="css/app.css" rel="stylesheet" type="text/css">
+    <!-- page-specific styles -->
+    <style>
+    /* header & main width changes to allow responsive layouts */
+/* should eventually be used in whole-site styles instead, along with adjusting content styles to match */
+
+html {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.background {
+  display: none;
+}
+
+.drafter {
+  background: top -100px right/100% no-repeat url(/images/BackgroundDrafter.jpg)
+}
+
+.newShiftstoned-heading,
+.newBodyGrid,
+.newHeading-top,
+.newHeading-page-top {
+  max-width: 1140px;
+  width: 100%;
+}
+
+.newAbout-heading {
+  position: initial;
+  /* top: 12px; -- commented-out styles like these do nothing with the default position, and will need to be removed when updating the site.css */
+  /* left: 990px; */
+}
+
+#newNavigation-separator {
+  position: initial;
+  /* top: 10px; */
+  /* left: 1060px; */
+}
+
+#navigation-menu,
+#newNavigation-menu {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+#newNavigation-menu {
+  /* left: 1080px; */
+}
+
+.newAbout-heading, #newNavigation-separator, #newNavigation-menu {
+  align-self: start;
+  margin-top: 10px;
+}
+
+.power-calculator-img {
+  position: relative;
+  left: 0;
+}
+
+.shiftstoned-img {
+  position: initial;
+  /* left: 23px; */
+  /* top: 27px; */
+  width: 17vw;
+  min-width: 230px;
+}
+
+@media screen and (max-width: 450px) {
+  .shiftstoned-img {
+    width: 100%;
+    min-width: initial;
+    max-width: 230px;
+  }
+}
+
+.newHeading-top {
+  display: grid;
+  align-items: end;
+  grid-template-columns: auto minmax(220px, 1fr) repeat(3, auto);
+  grid-template-areas: "logo section . . .";
+  gap: 0 1.5rem;
+  padding: 0 23px;
+}
+
+.newHeading-top > a:first-child {
+  grid-area: logo;
+}
+
+.newHeading-top > a:nth-child(2) {
+  grid-area: section;
+}
+
+@media screen and (max-width: 680px) {
+  .newBodyGrid {
+    /* min-height: initial; */
+  }
+  .newShiftstoned-heading,
+  .newHeading-top {
+    /* height: initial; */
+  }
+  .newHeading-top {
+    grid-template-columns: 1fr repeat(3, auto);
+    grid-template-areas: "logo . . ."
+                         "section section section section";
+  }
+  .newHeading-top > a:nth-child(2) {
+    margin-top: -30px;
+  }
+  .newHeading-page-top {
+    /* margin-top: -40px; */
+  }
+}
+
+/* drafter changes */
+.drafter #welcome-popup {
+  position: absolute !important;
+  bottom: initial !important;
+  margin-top: .2em;
+}
+
+.cards > * {
+  max-width: 100%;
+}
+
+.cards > div {
+  margin: 0 auto 1rem;
+  max-width: 250px;
+}
+
+.card-rating {
+  left: initial !important;
+  right: 0;
+}
+
+.form-check {
+  width: max-content;
+}
+
+#welcome-popup {
+  max-width: 80vw !important;
+}
+
+.cards {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+}
+.row::after {
+  content: initial;
+}
+
+/* -- already have :hover, used copied styles. need to add :active and :focus to the tool css */
+.card-rating:hover .notes,
+.card-rating:active .notes,
+.card-rating:focus .notes {
+  display: block !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 240px;
+  background-color: #2E2C3D;
+  border: solid 1px #458A9E;
+  border-radius: 6px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  left: 50%;
+  line-height: 1.6;
+  margin-left: -60px;
+  padding: 10px;
+  position: absolute;
+  text-align: left;
+  top: 40px;
+  z-index: 3;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    min-height: initial !important;
+  }
+  .filter {
+    height: initial !important;
+    flex-direction: column;
+    position: relative;
+  }
+  .filter > div:first-child {
+    /* order: 2; */
+    margin-top: 50px;
+  }
+  .filter > div:nth-child(2) {
+    /* order: 1; */
+    width: min-content;
+    position: absolute;
+    top: 0;
+    right: 100px;
+  }
+  .filter > div:last-child {
+    /* order: 3; */
+    margin: 0 15px;
+  }
+  .form-check {
+    padding: 0 !important;
+  }
+  .drafterControlLabel {
+    margin-bottom: -20px !important;
+  }
+
+  .open {
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .5em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+  }
+  .dropdown-menu.show {
+    width: 100% !important;
+    margin: 0 !important;
+    position: initial;
+    max-height: initial;
+  }
+
+  .card-rating:hover .notes,
+  .card-rating:active .notes,
+  .card-rating:focus .notes {
+    right: -10px;
+    top: 170px !important;
+    left: initial !important;
+  }
+}
+    </style>
 
 </head>
 
   <!-- PAGE BODY -->
-  <body class="">
+  <body class="drafter">
 
     <img class="background" src="/images/BackgroundDrafter.jpg" style="top: -100px;"/>
 
@@ -95,24 +338,7 @@
     <main class="newBodyGrid">
 
       <!-- Main page content -->
-
-
-<div style="width: 1000px; margin: auto;">
-
-  <div style="color: orange; margin: auto; font-family: 'Open Sans Condensed', sans-serif; font-size: 30px;">
-    <span style="text-transform: uppercase;">Launching soon: a new fan-built Draft tool for Eternal Card Game..</span>
-  </div>
-
-  <div style="font-size: 18px; margin-top: 15px; color: grey;">
-    featuring evaluations by <a href="https://www.twitch.tv/jedi_ej/" target="_blank">EJ_Jedi</a> - & his <a href="https://www.youtube.com/channel/UCV9CdlqMcHZvkzyDZWXaA7A" target="_blank">Eternal Journey Podcast</a> co-hosts: <a href="www.twitch.tv/Johnholio" target="_blank">Johnholio</a> and <a href="">darth_herman2</a>
-  </div>
-
-  <img src="/images/drafter/DrafterTeaser.JPG" style=" width: 85%; margin: auto;">
-
-</div>
-
-</main>
-
+<div id="app"></div>
 
     </main>
 
