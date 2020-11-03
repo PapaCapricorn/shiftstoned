@@ -33,7 +33,7 @@ NOW LIVE at ShiftStoned
 
   This is new territory for all of us, and bound to be a bit experimental. We are looking forward to the community’s response when <strong>the Drafter</strong> goes live at the end of the celebration and the regular Draft format returns.
 
-    <img src="/images/drafter/DrafterTeaser.JPG" style=" width: 85%; margin: auto;">
+    <img src="/images/drafter/DrafterTeaser.JPG" style="width: 85%; margin: auto;">
 
 Fringe Festival
 {.subtitle}
