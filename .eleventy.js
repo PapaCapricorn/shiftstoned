@@ -27,11 +27,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/site/epc/*.png");
 
   // Copy Drafter dependent scripts, styles, fonts and images to 'drafter/'
-  // !! remove the '/index_launch' part when launching the tool
-  eleventyConfig.addPassthroughCopy("./src/site/drafter/index_launch/css");
-  eleventyConfig.addPassthroughCopy("./src/site/drafter/index_launch/fonts");
-  eleventyConfig.addPassthroughCopy("./src/site/drafter/index_launch/images");
-  eleventyConfig.addPassthroughCopy("./src/site/drafter/index_launch/js");
+  eleventyConfig.addPassthroughCopy("./src/site/drafter/css");
+  eleventyConfig.addPassthroughCopy("./src/site/drafter/fonts");
+  eleventyConfig.addPassthroughCopy("./src/site/drafter/images");
+  eleventyConfig.addPassthroughCopy("./src/site/drafter/js");
 
   // Other passthrough
   eleventyConfig.addPassthroughCopy( {"./src/site/articles/format-updates/formatUpdatesEmptyThroneThrowback/images"

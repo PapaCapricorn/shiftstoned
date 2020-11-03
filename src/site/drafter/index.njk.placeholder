@@ -1,0 +1,28 @@
+---
+title: Drafter
+offset: 'top: -100px;'
+about: about/
+page_styles:
+    - css/app.css
+page_scripts:
+    - js/cards.js
+    - js/index.js
+---
+<!-- Main page content -->
+{# <div id="app"></div> #}
+
+<div style="width: 1000px; margin: auto;">
+
+  <div style="color: orange; margin: auto; font-family: 'Open Sans Condensed', sans-serif; font-size: 30px;">
+    <span style="text-transform: uppercase;">Launching soon: a new fan-built Draft tool for Eternal Card Game..</span>
+  </div>
+
+  <div style="font-size: 18px; margin-top: 15px; color: grey;">
+    featuring evaluations by <a href="https://www.twitch.tv/jedi_ej/" target="_blank">EJ_Jedi</a> - & his <a href="https://www.youtube.com/channel/UCV9CdlqMcHZvkzyDZWXaA7A" target="_blank">Eternal Journey Podcast</a> co-hosts: <a href="www.twitch.tv/Johnholio" target="_blank">Johnholio</a> and <a href="">darth_herman2</a>
+  </div>
+
+  <img src="/images/drafter/DrafterTeaser.JPG" style=" width: 85%; margin: auto;">
+
+</div>
+
+</main>

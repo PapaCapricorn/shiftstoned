@@ -4,6 +4,7 @@ description: "A new drafting tool joins the fan-built player resources for **Ete
 articleImage: "/images/articles/DrafterScreenshot.jpg"
 meta_image: /images/articles/DrafterScreenshot.jpg
 tags: news
+date: 2020-10-28
 ---
 ## Announcing the Drafter {.title}
 

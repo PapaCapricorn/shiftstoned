@@ -1,6 +1,13 @@
 /* header & main width changes to allow responsive layouts */
 /* should eventually be used in whole-site styles instead, along with adjusting content styles to match */
 
+html {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .background {
   display: none;
 }
@@ -135,7 +142,7 @@
 
 .cards {
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
 }
 .row::after {
   content: initial;
