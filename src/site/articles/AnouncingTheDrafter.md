@@ -10,7 +10,7 @@ tags: news
 A new, fan-built drafting companion for <strong>Eternal Card Game</strong> featuring evaluations by [Jedi_EJ and Eternal Journey][EJ]{target="_blank}
 {.subtitle}
 
-Coming soon to ShiftStoned
+NOW LIVE at ShiftStoned
 {.tagline}
 
   [EJ]: /drafter/EternalJourney/
@@ -21,6 +21,9 @@ Coming soon to ShiftStoned
 <strong>October 28, 2020 - </strong>
 
 <strong>Huckleberries, brewers and cardsanguars:</strong>
+
+  <strong>November 3, 2020 UPDATE</strong> - <strong>The Drafter</strong> is now live for your picking pleasure <a href="/drafter">here</a> ! If you need help getting started, check out our handy <a href="">user's guide.</a> And please help us to improve <strong>the Drafter</strong> by providing <a href="https://twitter.com/shiftstoned">your feedback</a>.
+
   We are pleased to announce a new tool joining the fan-built player resources at ShiftStoned at the end of this week’s celebration!
 
   Featuring evaluations by <strong>Jedi_EJ</strong> & his <strong>Eternal Journey Podcast</strong> co-hosts <strong>Johnholio</strong> and <strong>darth_herman2</strong>, <a href="https://www.shiftstoned.com/drafter/" target="_blank">the Drafter</a> will be your card selection companion when picking and brewing for <a href="https://www.direwolfdigital.com/eternal/" target="_blank">Eternal Card Game</a> draft runs. It is easily the next best thing to drafting directly with these talented players themselves!
@@ -39,5 +42,3 @@ Fringe Festival
   <strong>ShiftStoned</strong> is celebrating with a re-designed layout and some significant back-end improvements that will make updating easier for us.
 
   Watch this space for more details when <strong>the Drafter</strong> goes live in the coming days. Meanwhile, may you always find the <strong>Power</strong> and <strong>Influence</strong> you need, when you need it!
-
-  
