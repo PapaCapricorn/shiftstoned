@@ -4,7 +4,7 @@ description: "A new drafting tool joins the fan-built player resources for **Ete
 articleImage: "/images/articles/DrafterScreenshot.jpg"
 meta_image: /images/articles/DrafterScreenshot.jpg
 tags: news
-date: 2020-10-28
+date: 2020-11-03
 ---
 ## Announcing the Drafter {.title}
 
@@ -23,7 +23,7 @@ NOW LIVE at ShiftStoned
 
 <strong>Huckleberries, brewers and cardsanguars:</strong>
 
-  <strong>November 3, 2020 UPDATE</strong> - <strong>The Drafter</strong> is now live for your picking pleasure <a href="/drafter">here</a> ! If you need help getting started, check out our handy <a href="">user's guide.</a> And please help us to improve <strong>the Drafter</strong> by providing <a href="https://twitter.com/shiftstoned">your feedback</a>.
+  <strong>November 3, 2020 UPDATE</strong> - <strong>The Drafter</strong> is now live for your picking pleasure <a href="/drafter">here</a> ! If you need help getting started, check out our handy <a href="/drafter/about/">user's guide.</a> And please help us to improve <strong>the Drafter</strong> by providing <a href="https://twitter.com/shiftstoned">your feedback</a>.
 
   We are pleased to announce a new tool joining the fan-built player resources at ShiftStoned at the end of this week’s celebration!
 
