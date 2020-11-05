@@ -1,0 +1,8 @@
+{
+    "layout" : "layouts/html.njk",
+    "section":"Contact",
+    "page_style" : "contact.css",
+    "bg_img": "/images/contact_bg.jpeg",
+    "title" : "Contact",
+    "legacy": "legacy.css"
+}
