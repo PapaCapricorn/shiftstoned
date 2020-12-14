@@ -8,7 +8,7 @@ page_script: formatUpdates_new.js
 {%- set stateList = ["Added","Removed","Kept"] -%}
 {%- set rarityList = ["Common","Uncommon","Rare","Legendary","Promo"] -%}
 {#- !! weightingList must be set in the article json data !! #}
-{%- set weightingChangesList = ["Unchanged","Raised","Lowered"] -%}
+{%- set weightingChangesList = ["Raised","Lowered","None"] -%}
 
 {#- double-checked that cards were removed (mid-format updates usually won't remove cards) #}
 {%- set hasRemoved = false -%}
@@ -85,7 +85,7 @@ page_script: formatUpdates_new.js
   </nav>
 
   <section id="updateList"
-    data-show-format="{{ showOnly|lower or 'draft' }}"
+    data-show-format="{{ showOnly|lower or 'expedition' }}"
     data-show-factions="{{ factionFilters | join(' ') }}"
     {# data-show-states="{{ stateList | join(' ') }}" #}
     data-show-states="{{ ["Added","Kept"] | join(' ') }}"
@@ -102,16 +102,16 @@ page_script: formatUpdates_new.js
           <ol class="filterSet radioSet">
             <li class="filter radio-select">
               <label>
-                <input type="radio" id="filter-draft" name="Formats"
-                  data-filter-format="draft" checked />
-                <span class="draft">Draft Packs</span>
+                <input type="radio" id="filter-expedition" name="Formats"
+                  data-filter-format="expedition" checked />
+                <span class="expedition">Expedition</span>
               </label>
             </li>
             <li class="filter radio-select">
               <label>
-                <input type="radio" id="filter-expedition" name="Formats"
-                  data-filter-format="expedition" />
-                <span class="expedition">Expedition</span>
+                <input type="radio" id="filter-draft" name="Formats"
+                  data-filter-format="draft" />
+                <span class="draft">Draft Packs</span>
               </label>
             </li>
           </ol>
@@ -183,7 +183,7 @@ page_script: formatUpdates_new.js
         </fieldset>
         {%- endif %}
         <fieldset id="weightingChangeFilters" class="draft-weights">
-          <legend>Draft weighting changes (kept cards)</legend>
+          <legend>Weighting changes (kept cards)</legend>
           <ol class="filterSet">
           {%- for weightingChange in weightingChangesList %}
             <li class="filter pillbox">

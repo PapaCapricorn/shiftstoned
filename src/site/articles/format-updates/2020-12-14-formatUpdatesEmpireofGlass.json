@@ -8513,6 +8513,9 @@
         "before":"10",
         "after":"10"
       }
+      },
+      "The Merriest Mandrake":{
+      "expedition": "Kept"
       }
     },
     "Removed":{
@@ -8969,6 +8972,9 @@
         "before":"1",
         "after":"1"
       }
+      },
+      "Veteran Mercenary":{
+      "expedition": "Kept"
       },
       "Veteran Strategist":{
       "expedition": "Kept",

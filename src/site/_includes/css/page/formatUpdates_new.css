@@ -293,7 +293,7 @@
   display: none;
 }
 /* hide weighting changess not included in the "show-weighting-changes" lists, while in the 'draft' format */
-[data-show-format="draft"][data-show-draft-kept-changes]:not([data-show-draft-kept-changes~="Unchanged"]) [data-draft-kept-change~="Unchanged"],
+[data-show-format="draft"][data-show-draft-kept-changes]:not([data-show-draft-kept-changes~="None"]) [data-draft-kept-change~="None"],
 [data-show-format="draft"][data-show-draft-kept-changes]:not([data-show-draft-kept-changes~="Raised"]) [data-draft-kept-change~="Raised"],
 [data-show-format="draft"][data-show-draft-kept-changes]:not([data-show-draft-kept-changes~="Lowered"]) [data-draft-kept-change~="Lowered"] {
   display: none;

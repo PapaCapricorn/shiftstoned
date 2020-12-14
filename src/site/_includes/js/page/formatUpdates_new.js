@@ -28,7 +28,7 @@ let weightingsShown = [];
 let weightingChangesShown = [];
 
 function show(arr, value) {
-  if (!arr.includes(value)) { arr = arr.push(value)}
+  if (!arr.includes(value)) { arr = arr.push(value)};
 };
 
 function hide(arr, value) {
@@ -40,7 +40,7 @@ function hide(arr, value) {
 
 factionFilters.forEach((toggle) => {
   let faction = toggle.dataset.filterFaction;
-  show( factionsShown, faction);
+  if (toggle.checked == true) { show( factionsShown, faction); };
   toggle.addEventListener('change', () => {
     updateFilters(toggle, factionsShown, 'filterFaction', 'showFactions');
   });
@@ -48,7 +48,7 @@ factionFilters.forEach((toggle) => {
 
 stateFilters.forEach((toggle) => {
   let state = toggle.dataset.filterState;
-  show( statesShown, state);
+  if (toggle.checked == true) { show( statesShown, state); };
   toggle.addEventListener('change', () => {
     updateFilters(toggle, statesShown, 'filterState', 'showStates');
   });
@@ -56,7 +56,7 @@ stateFilters.forEach((toggle) => {
 
 rarityFilters.forEach((toggle) => {
   let state = toggle.dataset.filterRarity;
-  show( raritiesShown, state);
+  if (toggle.checked == true) { show( raritiesShown, state); };
   toggle.addEventListener('change', () => {
     updateFilters(toggle, raritiesShown, 'filterRarity', 'showRarities');
   });
@@ -64,7 +64,7 @@ rarityFilters.forEach((toggle) => {
 
 weightingFilters.forEach((toggle) => {
   let state = toggle.dataset.filterWeighting;
-  show( weightingsShown, state);
+  if (toggle.checked == true) { show( weightingsShown, state); };
   toggle.addEventListener('change', () => {
     updateFilters(toggle, weightingsShown, 'filterWeighting', 'showWeightings');
   });
@@ -72,7 +72,7 @@ weightingFilters.forEach((toggle) => {
 
 weightingChangeFilters.forEach((toggle) => {
   let state = toggle.dataset.filterDraftKeptChange;
-  show( weightingChangesShown, state);
+  if (toggle.checked == true) { show( weightingChangesShown, state); };
   toggle.addEventListener('change', () => {
     updateFilters(toggle, weightingChangesShown, 'filterDraftKeptChange', 'showDraftKeptChanges');
   });
