@@ -1,7 +1,7 @@
 ---
 title: "Format Updates - Empire of Glass"
 description: "Explore the changes to **Expedition** and **Draft Packs** with the release of Eternal's newest set in this **interactive gallery**."
-articleImage: "/images/articles/formatUpdatesArgentDepths.jpg"
+articleImage: "/images/articles/formatUpdatesEmpireofGlass.jpg"
 articleTitle: "Empire of Glass Format Updates"
 articleSubtitle: "Changes to Expedition and Draft Packs with the release of Eternal's newest set"
 layout: "layouts/formatUpdates_new.njk"
