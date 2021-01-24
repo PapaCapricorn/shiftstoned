@@ -91,7 +91,12 @@ page_script: formatUpdates_new.js
     data-show-states="{{ ["Added","Kept"] | join(' ') }}"
     data-show-rarities="{{ rarityList | join(' ') }}"
     {%- if weightingList %}data-show-weightings="{{ weightingList | join(' ') }}"{%- endif %}
-    data-show-draft-kept-changes="{{ weightingChangesList | join(' ') }}"
+    data-show-draft-kept-changes=
+    {%- if showOnly and (showOnly|lower == 'draft') -%}
+      "{{ ["Raised","Lowered"] | join(' ') }}"
+    {%- else -%}
+      "{{ weightingChangesList | join(' ') }}"
+    {%- endif -%}
     data-show-kept-unchanged=true>
 
     <header>
@@ -189,7 +194,9 @@ page_script: formatUpdates_new.js
             <li class="filter pillbox">
               <label>
                 <input type="checkbox" id="filter-weighting-change-{{ weightingChange }}" name="Weightings"
-                  data-filter-draft-kept-change="{{ weightingChange }}" checked />
+                  data-filter-draft-kept-change="{{ weightingChange }}" 
+                    {%- if showOnly and (showOnly|lower == 'draft') and weightingChange=="None" -%}
+                    {%- else -%}checked    {%- endif -%} />
                 <span>{{ weightingChange }}</span>
               </label>
             </li>
@@ -210,9 +217,13 @@ page_script: formatUpdates_new.js
         <ul class="cardList">
         {%- for card, cardInfo in factionInfo.cards[state] %}
         {#- for draft-changes-only articles, skip kept cards without wieght changes #}
+{#- 
         {%- if showOnly and (showOnly|lower == 'draft') and (state == 'Kept') and (cardInfo['draft-weights'].before == cardInfo['draft-weights'].after) %}
+ #}
           {#- skip -#}
+{#- 
         {%- else %}
+ #}
         {%- set cardData = data[card] %}
           <li class="card"
             {%- if cardInfo.expedition %} data-expedition-state="{{ cardInfo.expedition }}"{% endif %}
@@ -220,7 +231,7 @@ page_script: formatUpdates_new.js
               {%- if (cardInfo.draft == "Kept") -%}
                 data-draft-kept-change="
                   {%- if ( (cardInfo['draft-weights'].before|int) == (cardInfo['draft-weights'].after|int) ) -%}
-                    Unchanged
+                    None
                   {%- elif ( (cardInfo['draft-weights'].before|int) < (cardInfo['draft-weights'].after|int) ) -%}
                     Raised
                   {%- elif ( (cardInfo['draft-weights'].before|int) > (cardInfo['draft-weights'].after|int) ) -%}
@@ -259,7 +270,9 @@ page_script: formatUpdates_new.js
               </div>
             </dl>
           </li>
+{#- 
         {%- endif %}
+ #}
         {%- endfor %}
         </ul>
       {%- endif -%}
