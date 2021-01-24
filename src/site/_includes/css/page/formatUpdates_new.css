@@ -289,7 +289,8 @@
 /* hide weightings not included in the "show-weightings" lists, while in the 'draft' format */
 [data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="1"]) [data-weight-after~="1"],
 [data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="5"]) [data-weight-after~="5"],
-[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="10"]) [data-weight-after~="10"] {
+[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="10"]) [data-weight-after~="10"],
+[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="20"]) [data-weight-after~="20"] {
   display: none;
 }
 /* hide weighting changess not included in the "show-weighting-changes" lists, while in the 'draft' format */
