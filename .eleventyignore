@@ -1,3 +1,4 @@
 # 11ty won't process these directories and files:
 src/site/articles/_article-templates/
 src/site/articles/_draft-articles/
+src/site/drafter/js/_archive/
