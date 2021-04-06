@@ -1,0 +1,193 @@
+---
+layout: layouts/html.njk
+bg_img: images/BackgroundHome.jpg
+page_style: mainpage.css
+about:
+homepage_logo: 'width: 40%; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);'
+title: Home
+---
+          <!-- Main content here -->
+          <div class="centralGrid" style="width: 93%; border: solid 0px white; background-color:; margin: auto;">
+
+              <div style="text-align: right; margin-top: -10px;">
+                Fan-built player resources for <a href="https://www.direwolfdigital.com/eternal/" target="_blank">Eternal, A Strategy Card Game</a>
+             </div>
+
+             <br>
+             R E S O U R C E S
+
+             <!-- Twitter link -->
+             <div display style="display: inline-block; float: right;"><a href="https://twitter.com/shiftstoned?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @shiftstoned</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+             <hr>
+
+             <div class="row">
+
+               <div class="homepageFeature">
+                 <a href="epc/"><div class="homepageFeatureLabel">Eternal Power Calculator</div>
+                 <img src="/images/Home_EPC.jpg"></a>
+               </div>
+
+               {# <div class="homepageFeature center">
+                 <a href="calendar/"><div class="homepageFeatureLabel center">Community Calendar</div>
+                 <img src="/images/HomeCalendar.jpg"></a>
+               </div> #}
+
+               <div class="homepageFeature right">
+                 <a href="drafter/"><div class="homepageFeatureLabel right">Eternal Drafter</div>
+                 <img src="/images/HomeDrafter.jpg"></a>
+               </div>
+
+             </div>
+
+            <br>
+            R E C E N T
+            <hr>
+            <section class="frontpage-articles">
+            {%- for article in collections.articles | reverse %}
+            {%- if loop.index <= 7 %}
+              <article class="article-brief">
+                <header>
+                  <h2 class="articleListingTitle">
+                    <a href="{{ article.data.articleLink or article.url }}">
+                      {{ (article.data.articleTitle or article.data.title or article.data.meta_title) | frontmatter_md_string | safe  }}
+                    </a>
+                  </h2>
+                </header>
+                {%- if (article.data.articleVideo or article.data.meta_image or article.data.articleImage) %}
+                <div class="article-thumbnail">
+                  {%- if article.data.articleVideo %}
+                  <video controls width="250"
+                    {%- if (article.data.meta_image or article.data.articleImage) %}
+                    poster="{{ article.data.meta_image or article.data.articleImage }}"
+                    {%- endif %}>
+                    <source src="{{ article.data.articleVideo }}" type="video/mp4"
+                      {%- if article.data.articleVideoType %}
+                      type="{{ article.data.articleVideoType }}"
+                      {%- endif %}>
+                      Your browser does not support the video tag.
+                  </video>
+                  {%- else %}
+                  <a href="{{ article.url }}">
+                    <img src="{{ article.data.meta_image or article.data.articleImage }}"
+                        width="250" height="164.4"
+                        loading="lazy"
+                        alt="{{ article.data.meta_image_alt or 'thumbnail graphic' }}" />
+                  </a>
+                  {%- endif %}
+                </div>
+                {%- endif %}
+                <section class="article-description {{ article.data.description_class or '' }}">
+                  <p>
+                    <strong>{% date article.date %}</strong>{%- if loop.index==1 %}<br>{% else %} - {% endif %}{{ (article.data.description or article.data.meta_description or '') | frontmatter_md_string | safe }}
+                  </p>
+                </section>
+                  {%- if loop.index==1 %}
+                <footer>
+                  <p class="highlight">
+                    <a class="arrow-link" href="{{ article.data.articleLink or article.url }}">{{ article.data.articleLinkText or 'Read more' }}</a>
+                  </p>
+                  {%- if article.data.articleLink2 %}
+                  <p class="highlight">
+                    <a class="arrow-link" href="{{ article.data.articleLink2 }}">{{ article.data.articleLinkText2 or 'See also' }}</a>
+                  </p>
+                    {%- endif %}
+                </footer>
+                  {%- endif %}
+              </article>
+            {%- endif %}
+            {%- endfor %}
+            </section>
+{#
+             <!-- Column -->
+            <div class="fullColumn">
+
+               <!-- BEGIN FEATURED ARTICLE LISTING -->
+               <div class="articleListing">
+
+                 <div class="halfColumn">
+                   <a href="/images/articles/thumbnail.jpg" target="blank">
+                     <img src="/images/articles/thumbnail.jpg" class="articleThumbnail" />
+                   </a>
+                 </div>
+
+                 <h1 class="articleListingTitle">
+                   <a href="/articles/DrafterLaunch/">
+                      Introducing the Eternal Drafter
+                   </a>
+                 </h1>
+
+                 <p class="articleListing featured">
+                  <strong>May 31, 2020</strong><br>
+                  A new drafting tool joins the suite of fan-built player resources for <strong>Eternal Card Game</strong> at <strong>ShiftStoned</strong>. Featuring evaluations by <strong>Jedi_EJ and Eternal Journey</strong>.
+                 </p>
+
+                 <a href="/articles/DrafterLaunch/">Read more ► </a>
+
+               </div>
+
+               <!-- Shoud this have a class? is there a better way to do this? -->
+               <div style="clear: both;">&nbsp;</div>
+
+               <hr style="margin: 0px 10px 0px 10px;">
+               <div class="halfColumn homeArticle">
+                 <a href="/articles/FormatUpdatesAugust2020/"><img src="/images/articles/FormatUpdatesAugust2020.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
+                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 150px;">August 2020 Format Updates</a></h1>
+                   <p class="articleListing">August 13, 2020 - Explore the August 2020 changes to Expedition and Draft Packs in this interactive gallery.</p>
+               </div>
+
+               <div class="halfColumn homeArticle">
+                 <a href="/articles/formatUpdatesArgentDepths/"><img src="/images/articles/formatUpdatesArgentDepths.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
+                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 150px;">Argent Depths Format Updates</a></h1>
+                   <p class="articleListing">June 30, 2020 - Changes to Expedition and Draft Packs with the release of Eternal's newest set.</p>
+               </div>
+
+               <!-- Shoud this have a class? is there a better way to do this? -->
+               <div style="clear: both;">&nbsp;</div>
+
+               <hr style="margin: 0px 10px 0px 10px;">
+
+               <div class="halfColumn homeArticle">
+                 <a href="/articles/TootTheHorn.html"><img src="/images/articles/ElhamPreview.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
+                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 150px;">Toot the Horn: March 2020 Updates</a></h1>
+                   <p class="articleListing">April 4, 2020 - Navigating your brew to <strong>Eternal Warcry</strong> from the fan-built <strong>Eternal Power Calculator</strong> has never been easier. Plus the addition of card art makes the Power Base visualization tool more visual than ever.</p>
+               </div>
+
+               <div class="halfColumn homeArticle">
+                 <a href="/articles/StrangeNavigator.html"><img src="/images/articles/Strange-Navigator.png" style="width: 100%; float: right; margin-bottom: 15px;">
+                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 0px;">Strange Navigator: First Impressions</a></h1>
+                   <p class="articleListing">February 9, 2020 - Feeling the Void and finding a way. <strong>Xenan</strong> gets a <strong>Stranger</strong> with some powerful abilities.</p>
+               </div>
+
+               <!-- Shoud this have a class? is there a better way to do this? -->
+               <div style="clear: both;">&nbsp;</div>
+
+               <hr style="margin: 0px 10px 0px 10px;">
+
+               <div class="halfColumn homeArticle">
+                 <a href="/articles/EoE-Spoiler.html"><img src="/images/articles/EoE-Spoiler.png" style="width: 100%; float: right; margin-bottom: 15px;">
+                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 150px;">Echoes of Eternity Spoiler</a></h1>
+                   <p class="articleListing">April 4, 2020 - Tune in Sunday February 9 at 12 noon ET as <strong>Shiftstoned's PapaCapricorn</strong> joins <strong>EJ_Jedi</strong> on <strong>Twitch</strong> to reveal a spoiler from <strong>Echoes of Eternity</strong> for <strong>Eternal Card Game</strong>. Featuring an evolving decklist leading up to the stream.</p>
+               </div>
+
+               <div class="halfColumn homeArticle">
+                 <a href="/articles/TheTimeOfAncestors.html"><img src="/images/articles/TheTimeOfAncestors.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
+                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 0px;">The Time Of Ancestors: ECQ Rundown</a></h1>
+                   <p class="articleListing">November 18, 2019 - <strong>Taking a look at the Top Eight decks from <strong>The Time of Ancestors</strong>, the first official <strong>2020 Championship Qualifier</strong> for <strong>Eternal Card Game</strong></p>
+               </div> #}
+
+               {# <div class="halfColumn homeArticle">
+                 <img src="/images/articles/FoX-Pre-order.jpg" style="width: 100%; float: right; margin-bottom: 15px;">
+                 <h1 class="articleListingTitle" style="font-size: 24px; margin-top: 0px;"><a href="">Flame of Xulta Pre-Order Bundle Cards </a></h1>
+                   <p class="articleListing">September 27, 2019  - <strong> Flame of Xulta Pre-Order Bundle cards are now live in the fan-built Eternal Power Calculator at Shiftstoned.</p>
+               </div> #}
+
+               <div style="clear: both;">&nbsp;</div>
+               <hr style="margin: 0px 10px 0px 10px;">
+
+               <br><br>
+
+               {# <center>
+                 <a href="http://www.papacapricorn.com" target="_blank"><img width="54" src="/images/capricorn.png"></a></center> #}
+
+            </div> <!-- End Column -->
