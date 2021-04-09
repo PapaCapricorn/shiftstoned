@@ -411,6 +411,16 @@ hr.cbody {
   font-weight: 600;
 }
 
+.homepageFeatureTwoColumn {
+  float: left;
+  width: 50%;
+  padding: 0px;
+  border: solid 0px red;
+  font-size: 1.2em;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+}
+
 .homepageFeature.center {
   text-align: center;
 }
