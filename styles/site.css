@@ -445,10 +445,9 @@ hr.cbody {
 }
 
 .homepageFeatureLabel {
-  width: 330px;
-  text-align: center;
+  width: 445px;
   margin-bottom: 6px;
-  border: 0px orange solid;
+  border: 1px orange solid;
 }
 
 .homepageFeatureLabel.center {
