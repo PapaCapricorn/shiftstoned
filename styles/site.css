@@ -436,6 +436,13 @@ hr.cbody {
   border: solid 1px white;
 }
 
+.homepageFeatureTwoColumn img {
+  width: 678px;
+  height: 280px;
+  object-fit: cover;
+  border: solid 1px white;
+}
+
 .homepageFeatureLabel {
   width: 330px;
   text-align: center;
