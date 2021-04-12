@@ -443,7 +443,7 @@ hr.cbody {
 .homepageFeatureLabel {
   width: 445px;
   margin-bottom: 6px;
-  border: 1px orange solid;
+  border: 0px orange solid;
 }
 
 .homepageFeatureLabel.center {
