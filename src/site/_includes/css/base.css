@@ -407,6 +407,17 @@ hr.cbody {
   font-weight: 600;
 }
 
+.homepageFeatureTwoColumn {
+  float: left;
+  width: 50%;
+  padding: 0px;
+  border: solid 0px red;
+  font-size: 1.2em;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
 .homepageFeature.center {
   text-align: center;
 }
@@ -422,9 +433,15 @@ hr.cbody {
   border: solid 1px white;
 }
 
+.homepageFeatureTwoColumn img {
+  width: 508px;
+  height: 210px;
+  object-fit: cover;
+  border: solid 1px white;
+}
+
 .homepageFeatureLabel {
-  width: 330px;
-  text-align: center;
+  width: 445px;
   margin-bottom: 6px;
   border: 0px orange solid;
 }
