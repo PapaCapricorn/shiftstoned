@@ -4,7 +4,6 @@ description: "Explore the November 2020 changes to **Expedition** and **Draft Pa
 articleImage: "/images/articles/FormatUpdatesNovember2020.jpg"
 articleTitle: "November 2020 Format Updates"
 articleSubtitle: "Changes to Expedition and Draft Packs with the latest patch"
-layout: "layouts/formatUpdates_v3.njk"
 showOnly: Draft
 ---
 **{% date page.date %}** - Tomorrow the *Eternal* Celebration will be ending, and the *Empty Thone* throwback draft format is leaving with it. The *Argent Depths* draft format will return, but [some things will be different][Card List]{target="_blank}.
