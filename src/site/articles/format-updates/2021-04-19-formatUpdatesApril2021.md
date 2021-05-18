@@ -4,7 +4,7 @@ description: "Explore the April 2021 changes to **Expedition** and **Draft Packs
 articleImage: "/images/articles/formatUpdatesApril2021.jpg"
 articleTitle: "April 2021 Format Updates"
 articleSubtitle: "Changes to Expedition and Draft Packs from the 4/20 patch"
-layout: "layouts/formatUpdates_new.njk"
+layout: "layouts/formatUpdates_new2.njk"
 showOnly: "draft"
 ---
 **{% date page.date %}** - Tomorrow, in anticipation of the [$5k Draft Open][Draft Open]{target="_blank"} tournament, the *Eternal* Draft Packs [are being updated][4/20 Update]{target="_blank"} with new cards and weighting changes *(weighting affects the rate a card appears in draft&mdash;for example, cards with a weight of 5x are five times more likely to appear in Draft Packs than cards with a weight of 1x at the same rarity)*.
