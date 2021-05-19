@@ -1,8 +1,10 @@
 // Card toggle filters
+const mainSection = document.querySelector(`#updateList`);
 const toggleSections = document.querySelectorAll(`[data-show-states]`);
 const factionFilters = document.querySelector(`#factionFilters`).querySelectorAll(`[id^='filter-']`);
 const stateFilters = document.querySelector(`#stateFilters`).querySelectorAll(`[id^='filter-']`);
 const rarityFilters = document.querySelector(`#rarityFilters`).querySelectorAll(`[id^='filter-']`);
+const typeFilters = document.querySelector(`#typeFilters`).querySelectorAll(`[id^='filter-']`);
 const weightingFilters = document.querySelector(`#weightingFilters`).querySelectorAll(`[id^='filter-']`);
 const weightingChangeFilters = document.querySelector(`#weightingChangeFilters`).querySelectorAll(`[id^='filter-']`);
 var formatFilters = document.querySelector(`#formatFilter`);
@@ -24,6 +26,7 @@ if (formatFilters !== null) {
 let factionsShown = [];
 let statesShown = [];
 let raritiesShown = [];
+let typesShown = [];
 let weightingsShown = [];
 let weightingChangesShown = [];
 
@@ -62,6 +65,14 @@ rarityFilters.forEach((toggle) => {
   });
 });
 
+typeFilters.forEach((toggle) => {
+  let state = toggle.dataset.filterType;
+  if (toggle.checked == true) { show( typesShown, state); };
+  toggle.addEventListener('change', () => {
+    updateFilters(toggle, typesShown, 'filterType', 'showTypes');
+  });
+});
+
 weightingFilters.forEach((toggle) => {
   let state = toggle.dataset.filterWeighting;
   if (toggle.checked == true) { show( weightingsShown, state); };
@@ -86,12 +97,9 @@ function updateFilters(toggle, array, toggleValue, sectionValue) {
   });
 };
 
-// const mainSection = document.querySelector(`#updateList`);
-// var weightChangesToggle = document.querySelector(`#weightChangeFilter`);
-// if (weightChangesToggle !== null) {
-//   weightChangesToggle.addEventListener('change', () => {
-//     weightChangesToggle.checked
-//       ? mainSection.dataset.showKeptUnchanged = true
-//       : mainSection.dataset.showKeptUnchanged = false;
-//   });
-// };
+const fastFilter = document.querySelector(`[id='filter-fast']`);
+fastFilter.addEventListener('change', () => {
+  fastFilter.checked
+    ? mainSection.dataset.showFastOnly = true
+    : mainSection.dataset.showFastOnly = false;
+});

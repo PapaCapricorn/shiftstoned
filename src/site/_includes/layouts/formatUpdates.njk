@@ -5,6 +5,7 @@ page_script: formatUpdates.js
 ---
 {%- set factionList = ["Fire","Time","Justice","Primal","Shadow","Praxis","Combrei","Hooru","Feln","Stonescar","Rakano","Elysian","Argenport","Skycrag","Xenan","Mixed","Neutral"] -%}
 {%- set factionFilters = ["Fire","Time","Justice","Primal","Shadow","Mixed","Neutral"] -%}
+{%- set typeFilters = ["Power","Unit","Spell","Attachment","Site"] -%}
 {%- set stateList = ["Added","Removed","Kept"] -%}
 {%- set rarityList = ["Common","Uncommon","Rare","Legendary","Promo"] -%}
 {#- !! weightingList must be set in the article json data !! #}
@@ -87,6 +88,8 @@ page_script: formatUpdates.js
   <section id="updateList"
     data-show-format="{{ showOnly|lower or 'expedition' }}"
     data-show-factions="{{ factionFilters | join(' ') }}"
+    data-show-types="{{ typeFilters | join(' ') }}"
+    data-show-fast-only=false
     {# data-show-states="{{ stateList | join(' ') }}" #}
     data-show-states="{{ ["Added","Kept"] | join(' ') }}"
     data-show-rarities="{{ rarityList | join(' ') }}"
@@ -100,110 +103,138 @@ page_script: formatUpdates.js
     data-show-kept-unchanged=true>
 
     <header>
-      <form action="" id="filters"  autocomplete="off">
-        {%- if not showOnly %}
-        <fieldset id="formatFilter">
-          <legend>Formats</legend>
-          <ol class="filterSet radioSet">
-            <li class="filter radio-select">
-              <label>
-                <input type="radio" id="filter-expedition" name="Formats"
-                  data-filter-format="expedition" checked />
-                <span class="expedition">Expedition</span>
-              </label>
-            </li>
-            <li class="filter radio-select">
-              <label>
-                <input type="radio" id="filter-draft" name="Formats"
-                  data-filter-format="draft" />
-                <span class="draft">Draft Packs</span>
-              </label>
-            </li>
-          </ol>
-        </fieldset>
-        {%- endif %}
-        <fieldset id="stateFilters">
-          <legend>Card changes</legend>
-          <ol class="filterSet">
-          {%- for state in stateList %}
-            <li class="filter pillbox">
-              <label>
-                <input type="checkbox" id="filter-{{ state }}" name="States"
-                  data-filter-state="{{ state }}"
-                  {%- if not (state == "Removed") %} checked{% endif %} />
-                <span>{{ state }}</span>
-              </label>
-            </li>
-          {%- endfor %}
-            {#- <li class="filter pillbox">
-              <label>
-                <input type="checkbox" id="weightChangeFilter" name="States" checked />
-                <span>Show unchanged</span>  
-              </label>
-            </li> #}
-          </ol>
-        </fieldset>
-        <fieldset id="factionFilters">
-          <legend>Factions</legend>
-          <ol class="filterSet">
-          {%- for faction in factionFilters %}
-            <li class="filter checkbox">
-              <label>
-                <input type="checkbox" id="filter-{{ faction }}" name="Factions"
-                  data-filter-faction="{{ faction }}" checked />
-                <span class="{{ faction | lower }}" title="toggle {{ faction }} cards"></span>
-              </label>
-            </li>
-          {%- endfor %}
-          </ol>
-        </fieldset>
-        <fieldset id="rarityFilters">
-          <legend>Rarities</legend>
-          <ol class="filterSet">
-          {%- for rarity in rarityList %}
-            <li class="filter checkbox">
-              <label>
-                <input type="checkbox" id="filter-{{ rarity }}" name="Rarities"
-                  data-filter-rarity="{{ rarity }}" checked />
-                <span class="{{ rarity | lower }}" title="toggle {{ rarity }} cards"></span>
-              </label>
-            </li>
-          {%- endfor %}
-          </ol>
-        </fieldset>
-        {%- if weightingList %}
-        <fieldset id="weightingFilters" class="draft-weights">
-          <legend>Draft weightings</legend>
-          <ol class="filterSet">
-          {%- for weighting in weightingList %}
-            <li class="filter pillbox">
-              <label>
-                <input type="checkbox" id="filter-weighting-{{ weighting }}" name="Weightings"
-                  data-filter-weighting="{{ weighting }}" checked />
-                <span>{{ weighting }}×</span>
-              </label>
-            </li>
-          {%- endfor %}
-          </ol>
-        </fieldset>
-        {%- endif %}
-        <fieldset id="weightingChangeFilters" class="draft-weights">
-          <legend>Weighting changes (kept cards)</legend>
-          <ol class="filterSet">
-          {%- for weightingChange in weightingChangesList %}
-            <li class="filter pillbox">
-              <label>
-                <input type="checkbox" id="filter-weighting-change-{{ weightingChange }}" name="Weightings"
-                  data-filter-draft-kept-change="{{ weightingChange }}" 
-                    {%- if showOnly and (showOnly|lower == 'draft') and weightingChange=="None" -%}
-                    {%- else -%}checked    {%- endif -%} />
-                <span>{{ weightingChange }}</span>
-              </label>
-            </li>
-          {%- endfor %}
-          </ol>
-        </fieldset>
-      </form>
+      <details>
+        <summary>Filters</summary>
+        <form action="" id="filters"  autocomplete="off">
+          {%- if not showOnly %}
+          <fieldset id="formatFilter">
+            <legend>Formats</legend>
+            <ol class="filterSet radioSet">
+              <li class="filter radio-select">
+                <label>
+                  <input type="radio" id="filter-expedition" name="Formats"
+                    data-filter-format="expedition" checked />
+                  <span class="expedition">Expedition</span>
+                </label>
+              </li>
+              <li class="filter radio-select">
+                <label>
+                  <input type="radio" id="filter-draft" name="Formats"
+                    data-filter-format="draft" />
+                  <span class="draft">Draft Packs</span>
+                </label>
+              </li>
+            </ol>
+          </fieldset>
+          {%- endif %}
+          <fieldset id="stateFilters">
+            <legend>Card changes</legend>
+            <ol class="filterSet">
+            {%- for state in stateList %}
+              <li class="filter pillbox">
+                <label>
+                  <input type="checkbox" id="filter-{{ state }}" name="States"
+                    data-filter-state="{{ state }}"
+                    {%- if not (state == "Removed") %} checked{% endif %} />
+                  <span>{{ state }}</span>
+                </label>
+              </li>
+            {%- endfor %}
+              {#- <li class="filter pillbox">
+                <label>
+                  <input type="checkbox" id="weightChangeFilter" name="States" checked />
+                  <span>Show unchanged</span>  
+                </label>
+              </li> #}
+            </ol>
+          </fieldset>
+          <fieldset id="factionFilters">
+            <legend>Factions</legend>
+            <ol class="filterSet">
+            {%- for faction in factionFilters %}
+              <li class="filter checkbox">
+                <label>
+                  <input type="checkbox" id="filter-{{ faction }}" name="Factions"
+                    data-filter-faction="{{ faction }}" checked />
+                  <span class="{{ faction | lower }}" title="toggle {{ faction }} cards"></span>
+                </label>
+              </li>
+            {%- endfor %}
+            </ol>
+          </fieldset>
+          <fieldset id="rarityFilters">
+            <legend>Rarities</legend>
+            <ol class="filterSet">
+            {%- for rarity in rarityList %}
+              <li class="filter checkbox">
+                <label>
+                  <input type="checkbox" id="filter-{{ rarity }}" name="Rarities"
+                    data-filter-rarity="{{ rarity }}" checked />
+                  <span class="{{ rarity | lower }}" title="toggle {{ rarity }} cards"></span>
+                </label>
+              </li>
+            {%- endfor %}
+            </ol>
+          </fieldset>
+          <fieldset id="typeFilters">
+            <legend>Card Types</legend>
+            <ol class="filterSet">
+            {%- for type in typeFilters %}
+              <li class="filter checkbox">
+                <label>
+                  <input type="checkbox" id="filter-{{ type }}" name="Types"
+                    data-filter-type="{{ type }}" checked />
+                  <span class="{{ type | lower }}" title="toggle {{ type }} cards"></span>
+                </label>
+              </li>
+            {%- endfor %}
+            </ol>
+          </fieldset>
+          <fieldset id="fastFilter">
+            <legend>Fast & Ambush</legend>
+            <ol class="filterSet">
+              <li class="filter pillbox">
+                <label>
+                  <input type="checkbox" id="filter-fast" name="Fast" />
+                  <span>Show only fast and ambush cards.</span>
+                </label>
+              </li>
+            </ol>
+          </fieldset>
+          {%- if weightingList %}
+          <fieldset id="weightingFilters" class="draft-weights">
+            <legend>Draft weightings</legend>
+            <ol class="filterSet">
+            {%- for weighting in weightingList %}
+              <li class="filter pillbox">
+                <label>
+                  <input type="checkbox" id="filter-weighting-{{ weighting }}" name="Weightings"
+                    data-filter-weighting="{{ weighting }}" checked />
+                  <span>{{ weighting }}×</span>
+                </label>
+              </li>
+            {%- endfor %}
+            </ol>
+          </fieldset>
+          {%- endif %}
+          <fieldset id="weightingChangeFilters" class="draft-weights">
+            <legend>Weighting changes (kept cards)</legend>
+            <ol class="filterSet">
+            {%- for weightingChange in weightingChangesList %}
+              <li class="filter pillbox">
+                <label>
+                  <input type="checkbox" id="filter-weighting-change-{{ weightingChange }}" name="Weightings"
+                    data-filter-draft-kept-change="{{ weightingChange }}" 
+                      {%- if showOnly and (showOnly|lower == 'draft') and weightingChange=="None" -%}
+                      {%- else -%}checked    {%- endif -%} />
+                  <span>{{ weightingChange }}</span>
+                </label>
+              </li>
+            {%- endfor %}
+            </ol>
+          </fieldset>
+        </form>
+      </details>
     </header>
 
     {% for faction, factionInfo in updates -%}
@@ -245,6 +276,9 @@ page_script: formatUpdates.js
             data-cost="{{ cardData.Cost }}"
             data-type="{{ cardData.Type }}"
             data-rarity="{{ cardData.Rarity }}"
+            {%- if cardData.Fast -%}
+            data-fast=true
+            {%- endif %}
             >
             <h4>{{ card }}</h4>
             <dl class="card-info">

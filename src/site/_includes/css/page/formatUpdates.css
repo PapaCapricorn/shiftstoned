@@ -99,6 +99,14 @@
 }
 
 /* filters styles */
+#updateList header {
+  border: 1px solid #f8c368;
+  padding: .5em;
+}
+#updateList header summary {
+  font-size: 1.2em;
+}
+
 #filters {
   display: flex;
     flex-wrap: wrap;
@@ -106,6 +114,7 @@
     /* grid-template-columns: auto 1fr; */
     gap: 1em 3em;
     justify-items: start;
+  margin-block-start: .5em;
 }
 #factionFilters,
 #rarityFilters {
@@ -208,8 +217,15 @@
 .neutral::before { background-image: url(/images/icon-neutral.png); }
 .mixed::before { background-image: url(/images/icon-mixed.png); }
 
+.power::before { background-image: url(/images/icon-power.png); }
+.unit::before { background-image: url(/images/icon-unit.png); }
+.spell::before { background-image: url(/images/icon-spell.png); }
+.attachment::before { background-image: url(/images/icon-attachment.png); }
+.site::before { background-image: url(/images/icon-site.png); }
+
 /* rarity checkbox filters */
-#rarityFilters label > span::before {
+#rarityFilters label > span::before,
+#typeFilters label > span::before {
   background-size: cover;
   border-radius: 50%;
 }
@@ -286,6 +302,16 @@
 [data-show-rarities]:not([data-show-rarities~="Promo"]) [data-rarity~="Promo"] {
   display: none;
 }
+/* hide types not included in the "show-types" lists */
+[data-show-types]:not([data-show-types~="Power"]) [data-type~="Power"],
+[data-show-types]:not([data-show-types~="Unit"]) [data-type~="Unit"],
+[data-show-types]:not([data-show-types~="Site"]) [data-type~="Site"],
+[data-show-types]:not([data-show-types~="Spell"]) [data-type~="Spell"],
+[data-show-types]:not([data-show-types~="Attachment"]) [data-type~="Weapon"],
+[data-show-types]:not([data-show-types~="Attachment"]) [data-type~="Curse"],
+[data-show-types]:not([data-show-types~="Attachment"]) [data-type~="Relic"] {
+  display: none;
+}
 /* hide weightings not included in the "show-weightings" lists, while in the 'draft' format */
 [data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="1"]) [data-weight-after~="1"],
 [data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="5"]) [data-weight-after~="5"],
@@ -309,6 +335,11 @@
   display: none;
 }
 [data-show-format="draft"] .card:not([data-draft-state]) {
+  display: none;
+}
+
+/* hide everything else when the 'show fast' toggle is enabled */
+[data-show-fast-only=true] .card:not([data-fast]) {
   display: none;
 }
 
@@ -400,7 +431,8 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
 }
 .weighting-info {
   position: absolute;
-  bottom: .5em;
+  top: 1.5em;
+  right: 0;
   display: grid;
     align-items: end;
   --weighting-info-size: 3.2em;
@@ -409,6 +441,7 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
   overflow: hidden;
   background: green;
   box-shadow: 0 0 4px 1px rgba(0,0,0,0.5);
+  outline: 1px gray solid;
 }
 .weighting {
   display: flex;
