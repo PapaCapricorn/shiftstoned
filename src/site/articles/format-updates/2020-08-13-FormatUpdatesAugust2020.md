@@ -4,7 +4,6 @@ description: "Explore the August 2020 changes to **Expedition** and **Draft Pack
 articleImage: "/images/articles/FormatUpdatesAugust2020.jpg"
 articleTitle: "August 2020 Format Updates"
 articleSubtitle: "Changes to Expedition and Draft Packs with the latest patch"
-layout: "layouts/formatUpdates_v3.njk"
 showOnly: Draft
 ---
 **{% date page.date %}** - *Eternal's* [recent patch][] added 42 cards to the *Eternal* Draft Packs (making them legal in Expedition), and adjusted the weightings of many more. Changes like this can happen a few times between large expansion set releases, and this is the first for the *Argent Depths* format.

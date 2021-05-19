@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve --watch",
-    "build": "eleventy"
+    "build": "eleventy",
+    "carddata": "node carddata.js"
   },
   "repository": {
     "type": "git",
