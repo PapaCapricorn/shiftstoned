@@ -15,6 +15,13 @@ fs.readFile('./EternalWarcry-data/eternal-cards.json', (err, data) => {
     let json = {}; // process card info
     cards.forEach(card => {
         json[card.Name] = card;
+        let cardtype = card.Type;
+        let cardtext = ""
+        if (card.CardText) {cardtext = card.CardText};
+        if ( cardtype.includes("Fast") || cardtext.includes("Ambush") ) {
+            // console.log("Fast card found.");
+            json[card.Name]["Fast"] = true;
+        };
     });
 
     json = JSON.stringify(json); // output file
