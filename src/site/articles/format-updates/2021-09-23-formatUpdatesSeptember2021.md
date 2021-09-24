@@ -6,7 +6,7 @@ articleTitle: "September 2021 Format Updates"
 articleSubtitle: "Changes to Expedition and Draft Packs from the 9/23 patch"
 showOnly: "draft"
 ---
-**{% date page.date %}** - *Eternal's* Draft Packs [were updated today][Update]{target="_blank"} with new cards. Aong with some buffs and nerfs, these changes should shake up Expedition before the format's upcoming $5k Open tournament. Draft is also being refreshed with weighting changes and a swapped pack order.
+**{% date page.date %}** - *Eternal's* Draft Packs [were updated today][Update]{target="_blank"} with new cards. Alongside a handful of buffs and nerfs, these changes should shake up Expedition before the format's upcoming $5k Open tournament. Draft is also being refreshed with weighting changes and a swapped pack order.
 
  [Update]: https://www.direwolfdigital.com/news/9-23-live-balance-updates/
 
