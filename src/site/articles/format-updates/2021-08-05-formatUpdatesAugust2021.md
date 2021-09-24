@@ -6,7 +6,7 @@ articleTitle: "August 2021 Format Updates"
 articleSubtitle: "Changes to Expedition and Draft Packs from the 8/4 patch"
 showOnly: "draft"
 ---
-**{% date page.date %}** - *Eternal's* Draft Packs [have been updated][8/4 Update]{target="_blank"} updated once again, to refresh the Expedition format with new cards and to change up the Draft Packs' weightings in anticipation of the upcoming $5k Draft Open tournament.
+**{% date page.date %}** - *Eternal's* Draft Packs [have been updated][8/4 Update]{target="_blank"} once again, to refresh the Expedition format with new cards and to change up the Draft Packs' weightings in anticipation of the upcoming $5k Draft Open tournament.
 
  [8/4 Update]: https://www.direwolfdigital.com/news/8-4-2021-live-balance-update/
 
