@@ -20,4 +20,4 @@ It also displays card weightings *(the rate a card appears in draft&mdash;for ex
 
  [September 2021 update]: /articles/formatUpdatesSeptember2021/
 
-*The official list of current Draft Pack contents and Expedition-legal cards can always be found [on DWD's site][Card List]{target="_blank}.*
+*The official list of current Draft Pack contents and Expedition-legal cards can always be found [on DWD's site][Card List]{target="_blank}.* 
