@@ -1,8 +1,8 @@
 {
   "name": "shiftstoned",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Player resources for Eternal card game",
+  "main": ".eleventy.js",
   "scripts": {
     "start": "eleventy --serve --watch",
     "build": "eleventy",
@@ -12,19 +12,16 @@
     "type": "git",
     "url": "git+https://github.com/PapaCapricorn/shiftstoned.git"
   },
-  "keywords": [],
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "markdown-it-attrs": "^4.1.3",
+    "markdown-it-bracketed-spans": "^1.0.1",
+    "markdown-it-implicit-figures": "^0.10.0"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PapaCapricorn/shiftstoned/issues"
   },
-  "homepage": "https://github.com/PapaCapricorn/shiftstoned#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
-  },
-  "dependencies": {
-    "markdown-it-attrs": "^3.0.3",
-    "markdown-it-bracketed-spans": "^1.0.1",
-    "markdown-it-implicit-figures": "^0.10.0"
-  }
+  "homepage": "https://github.com/PapaCapricorn/shiftstoned#readme"
 }
