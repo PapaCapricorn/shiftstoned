@@ -871,5 +871,12 @@ var displayListMatters = ["Torch","Pyroknight","Soulfire Drake","Dawnwalker","Pr
 var displayListDoesnt = ["Flame Blast","Charchain Flail","Rakano Outlaw","Obliterate","General Izalio","Lavablood Goliath","Copper Conduit","Humbug","Friendly Wisp","Ephemeral Wisp","Scorpion Wasp","Yeti Troublemaker","Direfang Spider","Blood Beetle","Dark Wisp","Ravenous Thornbeast","Lurking Sanguar","Direwood Rampager","Horsesnatcher Bat","Venomspine Hydra","Storm Lynx","Amaran Camel","Cirso, the Great Glutton","Shimmerpack","Nightmaw, Sight Unseen","Infernal Tyrant","Stonescar Leviathan","Fevered Scout"];
 
 module.exports = function() {
-	return { cardChanges:cardsCompared, displayList:{matters:displayListMatters, doesnt:displayListDoesnt} }; 
+	return {
+		cardChanges:cardsCompared,
+		displayList:{
+			matters:displayListMatters,
+			doesnt:displayListDoesnt
+		},
+		page_style: "formatUpdates_Throwback.css"
+	}; 
 }; 
