@@ -35,487 +35,223 @@
   
     <!-- page-specific styles -->
     <style>
-    /* Visually hide element accessibly) */
-/* ! add to main css */
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap; 
-  width: 1px;
+    .article > main {
+    --block-margin: 1.5rem;
 }
 
-/* misc styles */
-.newBodyGrid main > header {
-  margin-block-end: 1.5em;
+.article > main {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
 }
-.description ul > li {
-  margin-block-end: .5em;
-}
-.description li > ul {
-  margin-block-start: .5em;
-}
-
-/* place contents in grid */
-.formatUpdates.textcol {
-  width: 100%;
-  margin: 0;
-  padding-inline-end: 30px;
-  display: grid;
-  grid-template-columns: 310px auto;
+.article > main > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
 }
 
-.formatUpdates > header,
-.formatUpdates > .description {
-  width: 600px;
+.article > main .articleHeader {
+    margin-block-end: var(--block-margin);
 }
-.description {
-  margin-block-end: 1em;
-}
-
-.formatUpdates > * {
-  grid-column: 2;
-}
-.formatUpdates > .sideImage {
-  grid-column: 1;
-  grid-row: 1 / 3;
-}
-.formatUpdates > #toc {
-  grid-column: 1;
-  grid-row: span 2;
+.article > main .title,
+.article > main .subtitle,
+.article > main .tagline,
+.article > main hr,
+.article > main > p {
+    margin: 0 0 var(--block-margin);
 }
 
-/* toc sidebar */
-#toc > ol {
-  list-style-type: lower-roman;
-}
-#toc > ol ol {
-  list-style-type: circle;
-}
-
-/* sticky toc */
-#toc {
-  position: sticky;
-  top: 0;
-  max-height: 100vh;
-  overflow-y: scroll;
-  margin: 0 30px;
-}
-/* heading & 'back to the top' link */
-#toc .toc-header {
-  position: sticky;
-  top: 0;
-  padding-block-start: 1em;
-  background-color: #17141D;
-  box-shadow: 0 0 0.5em 0.25em #17141D;
-  z-index: 10;
-  display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-#toc .toc-header h3 {
-  margin: 0;
-}
-#toc #top-link span { /* ↑ button */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.25em;
-  width: 1.5em; height: 1.5em; /* based on font-size */
-  border-radius: .25em;
-  background-color: grey;
-  color: white;
-}
-#toc #top-link:hover span,
-#toc #top-link:focus span {
-  background-color: lightgrey;
-  color: revert;
-  box-shadow: 0 0 4px 0px rgba(250, 250, 250, .8); 
+.article > main .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
 }
 
-/* filters styles */
-#updateList header {
-  border: 1px solid #f8c368;
-  padding: .5em;
+.article > main .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
 }
-#updateList header summary {
-  font-size: 1.2em;
+.article > main .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
 }
 
-#filters {
-  display: flex;
-    flex-wrap: wrap;
-  /* display: grid; */
-    /* grid-template-columns: auto 1fr; */
-    gap: 1em 3em;
-    justify-items: start;
-  margin-block-start: .5em;
+.article > main :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
 }
-#factionFilters,
-#rarityFilters {
-  grid-column: span 2;
-}
-#filters fieldset {
-  margin: 0; padding: .25em .5em;
-  border: 0;
-  border-top: 1px solid #f8c368;
-  width: min-content;
-}
-#filters legend {
-  padding: 0 0.5em;
-  margin-inline-start: 1em;
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-  font-size: 1em;
-  width: max-content;
+.article > main :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
 }
 
-.filterSet {
-  margin: 0; padding: 0;
-  display: flex;
-    /* gap: 2em; /* gap on flexbox isn't supported in Chrome yet, using margin-left on children instead */
-  list-style: none;
+.article > main .pre-headline.first {
+    color:#FFDF00;
 }
-.filter.checkbox:not(:first-child),
-.filter.pillbox:not(:first-child) {
-  margin-left: 2em;
+.article > main .pre-headline.second {
+    color:#C0C0C0;
 }
-
-.filter label > span {
-  padding: .1em;
+.article > main .pre-headline.third {
+    color:#cd7f32;
 }
-.filter {
-  --iconSize: 1.5em;
-}
-.pillbox {
-  --pillSize: 1em; /* added to '--iconSize' */
-}
-.filter label,
-.filter label > span {
-  display: flex;
-    /* gap: .5ch; /* gap on flexbox isn't supported in Chrome yet, using margin-right on children instead */
-  align-items: center;
-  position: relative; /* lets inner elements be positioned relative to parent */
-  width: max-content;
-}
-.checkbox label > span::before,
-.pillbox label > span::before {
-  margin-right: .5ch;
+.article > main .pre-headline.fifth {
+    color:#FF4500;
 }
 
-.checkbox label > span::before,
-.pillbox label > span::before,
-.pillbox label > span::after {
-  content: "";
-  display: inline-block;
-  width: var(--iconSize); height: var(--iconSize);
+.article > main a {
+    color: #81C3F4;
 }
-.filter input[type="checkbox"],
-.radio-select input[type="radio"] {
-  position: absolute;
-  width: var(--iconSize); height: var(--iconSize);
-  opacity: 0;
+.article > main a:hover {
+    color: #4183c4;
 }
 
-/* pillbox toggles */
-.pillbox label > span::before {
-  width: calc(var(--iconSize) + var(--pillSize));
-  border-radius: calc(var(--iconSize)/2);
-  background-color: grey;
+.article > main .side-image,
+.article > main .article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
 }
-.pillbox input[type="checkbox"] {
-  width: calc(var(--iconSize) + var(--pillSize));
+.article > main .side-image img {
+    max-width: 100%;
+    height: auto;
 }
-.pillbox label > span::after {
-  position: absolute;
-    left: calc(var(--iconSize) * .125);
-  width: calc(var(--iconSize) * .75); height: calc(var(--iconSize) * .75);
-  border-radius: 50%;
-  background-color: white;
-  box-shadow: 0 0 2px 0px rgba(0, 0, 0, .5);
-  transition: transform .1s ease-in-out;
+.article > main .side-image.card-image img {
+    width: 220px;
 }
-.pillbox label > input[type="checkbox"]:checked + span::after {
-  transform: translateX(calc(var(--pillSize) + ( var(--iconSize) * .125 )));
-}
-
-/* faction checkbox filters */
-#factionFilters label > span::before {
-  background-size: cover;
-  border-radius: 50%;
+.article > main .side-image.card-image.ci-small img {
+    width: 125px;
 }
 
-.fire::before { background-image: url(/images/icon-fire.png); }
-.time::before { background-image: url(/images/icon-time.png); }
-.justice::before { background-image: url(/images/icon-justice.png); }
-.primal::before { background-image: url(/images/icon-primal.png); }
-.shadow::before { background-image: url(/images/icon-shadow.png); }
-.neutral::before { background-image: url(/images/icon-neutral.png); }
-.mixed::before { background-image: url(/images/icon-mixed.png); }
-
-.power::before { background-image: url(/images/icon-power.png); }
-.unit::before { background-image: url(/images/icon-unit.png); }
-.spell::before { background-image: url(/images/icon-spell.png); }
-.attachment::before { background-image: url(/images/icon-attachment.png); }
-.site::before { background-image: url(/images/icon-site.png); }
-
-/* rarity checkbox filters */
-#rarityFilters label > span::before,
-#typeFilters label > span::before {
-  background-size: cover;
-  border-radius: 50%;
+.article > main .article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article > main .article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
 }
 
-.common::before { background-image: url(/images/icon-common.png); }
-.uncommon::before { background-image: url(/images/icon-uncommon.png); }
-.rare::before { background-image: url(/images/icon-rare.png); }
-.legendary::before { background-image: url(/images/icon-legendary.png); }
-.promo::before { background-image: url(/images/icon-promo.png); }
-
-/* hide the promo rarity while in 'draft' mode (promos shouldn't appear in draft anyway) */
-[data-show-format="draft"] .promo {
-  opacity: 50%;
+.article > main ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > main > ul {
+    padding: 0;
+}
+.article > main > ul > li {
+    margin-inline-start: 1em;
+}
+.article > main ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article > main li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article > main .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
 }
 
-/* format toggle */
-.radioSet {
-  gap: 0;
-  --border-radius: 1em;
+.article > main .main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
 }
-.radio-select input[type="radio"] {
-  width: 100%;
-}
-.radio-select {
-  padding: .25em .5em;
-  border: 1px solid grey;
-}
-.radio-select:not(:first-child) {
-  border-left: 0;
-}
-.filter.radio-select:first-child {
-  border-radius: var(--border-radius) 0 0 var(--border-radius);
-  padding-left: 1em;
-}
-.filter.radio-select:last-child {
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  padding-inline-end: 1em;
+.article > main .main-col-image img {
+    width: 100%; /* width of the main column */
+    height: auto;
 }
 
-/* visual cues */
-.radio-select:hover, .radio-select:focus-within,
-.filter input[type="checkbox"]:hover + span::before,
-.filter input[type="checkbox"]:focus + span::before {
-  /* box-shadow: 0 0 4px 0px rgba(250, 250, 250, .8); */
-  filter: drop-shadow(0px 0px 3px rgba(250, 250, 250, .8));
+.highlight {
+    color:#81C3F4;
 }
-.filter input[type="checkbox"]:not(:checked) + span,
-.radio-select input[type="radio"]:not(:checked) + span {
-  opacity: 50%;
+.article > main blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
 }
 
-/* filter actions - hide sections according to the wrapper element's "show" lists */
-/* hide states not included in the "show-states" lists */
-[data-show-states]:not([data-show-states~="Kept"]) [data-state="Kept"],
-[data-show-states]:not([data-show-states~="Added"]) [data-state="Added"],
-[data-show-states]:not([data-show-states~="Removed"]) [data-state="Removed"] {
-  display: none;
+.arrow-link {
+    font-weight: bold;
 }
-/* hide factions not included in the "show-factions" lists */
-[data-show-factions]:not([data-show-factions~="Fire"]) [data-factions~="Fire"],
-[data-show-factions]:not([data-show-factions~="Time"]) [data-factions~="Time"],
-[data-show-factions]:not([data-show-factions~="Justice"]) [data-factions~="Justice"],
-[data-show-factions]:not([data-show-factions~="Primal"]) [data-factions~="Primal"],
-[data-show-factions]:not([data-show-factions~="Shadow"]) [data-factions~="Shadow"],
-[data-show-factions]:not([data-show-factions~="Neutral"]) [data-factions~="Neutral"],
-[data-show-factions]:not([data-show-factions~="Mixed"]) [data-factions~="Mixed"] {
-  display: none;
-}
-/* hide rarities not included in the "show-rarities" lists */
-[data-show-rarities]:not([data-show-rarities~="Common"]) [data-rarity~="Common"],
-[data-show-rarities]:not([data-show-rarities~="Uncommon"]) [data-rarity~="Uncommon"],
-[data-show-rarities]:not([data-show-rarities~="Rare"]) [data-rarity~="Rare"],
-[data-show-rarities]:not([data-show-rarities~="Legendary"]) [data-rarity~="Legendary"],
-[data-show-rarities]:not([data-show-rarities~="Promo"]) [data-rarity~="Promo"] {
-  display: none;
-}
-/* hide types not included in the "show-types" lists */
-[data-show-types]:not([data-show-types~="Power"]) [data-type~="Power"],
-[data-show-types]:not([data-show-types~="Unit"]) [data-type~="Unit"],
-[data-show-types]:not([data-show-types~="Site"]) [data-type~="Site"],
-[data-show-types]:not([data-show-types~="Spell"]) [data-type~="Spell"],
-[data-show-types]:not([data-show-types~="Attachment"]) [data-type~="Weapon"],
-[data-show-types]:not([data-show-types~="Attachment"]) [data-type~="Curse"],
-[data-show-types]:not([data-show-types~="Attachment"]) [data-type~="Relic"] {
-  display: none;
-}
-/* hide weightings not included in the "show-weightings" lists, while in the 'draft' format */
-[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="1"]) [data-weight-after~="1"],
-[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="3"]) [data-weight-after~="3"],
-[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="5"]) [data-weight-after~="5"],
-[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="6"]) [data-weight-after~="6"],
-[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="9"]) [data-weight-after~="9"],
-[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="10"]) [data-weight-after~="10"],
-[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="12"]) [data-weight-after~="12"],
-[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="18"]) [data-weight-after~="18"],
-[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="20"]) [data-weight-after~="20"] {
-  display: none;
-}
-/* hide weighting changes not included in the "show-weighting-changes" lists, while in the 'draft' format */
-[data-show-format="draft"][data-show-draft-kept-changes]:not([data-show-draft-kept-changes~="None"]) [data-draft-kept-change~="None"],
-[data-show-format="draft"][data-show-draft-kept-changes]:not([data-show-draft-kept-changes~="Raised"]) [data-draft-kept-change~="Raised"],
-[data-show-format="draft"][data-show-draft-kept-changes]:not([data-show-draft-kept-changes~="Lowered"]) [data-draft-kept-change~="Lowered"] {
-  display: none;
+.arrow-link::after {
+    content: " ►";
 }
 
-[data-show-format="draft"]:not([data-show-states~="Kept"]) #weightingChangeFilters {
-  display: none;
+/* top 8 articles */
+.article > main h2 .epc-link,
+.article > main h3 .epc-link {
+    text-decoration: underline;
+}
+.article > main h2 .epc-link::before,
+.article > main h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
 }
 
-/* hide format not specified in the "show-format" value */
-[data-show-format="expedition"] .card:not([data-expedition-state]) {
-  display: none;
-}
-[data-show-format="draft"] .card:not([data-draft-state]) {
-  display: none;
-}
-
-/* hide everything else when the 'show fast' toggle is enabled */
-[data-show-fast-only=true] .card:not([data-fast]) {
-  display: none;
+.article > main .article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
 }
 
-/* style card sections */
-.cardList {
-  --cardsize: 140px;
-  margin: 0; padding: 0;
-  list-style: none;
-  display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--cardsize), 1fr));
-    gap: 1rem;
+.article > main .article-table,
+.article > main .article-table tr,
+.article > main .article-table td,
+.article > main .article-table th {
+    border: 1px solid white;
+}
+.article > main .article-table td,
+.article > main .article-table th {
+    padding: 2px 3px;
+}
+.article > main .article-table thead th {
+    vertical-align: bottom;
+}
+.article > main .article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article > main .article-table thead th:nth-child(2),
+.article > main .article-table thead th:nth-child(3),
+.article > main .article-table thead th:nth-child(4) {
+    width: 15%;
 }
 
-.faction {
-  padding-block-start: 1em;
+.yellow {
+    color: #ffd700;
 }
-
-.faction h2 {
-  --bannerColor2: transparent;
-}
-h2#Fire { --bannerColor1: var(--FireRed); }
-h2#Time { --bannerColor1: var(--TimeYellow); }
-h2#Justice { --bannerColor1: var(--JusticeGreen); }
-h2#Primal { --bannerColor1: var(--PrimalBlue); }
-h2#Shadow { --bannerColor1: var(--ShadowPurple); }
-h2#Mixed { --bannerColor1: var(--MultiBlack); }
-h2#Neutral { --bannerColor1: var(--NeutralGray); }
-
-h2#Praxis { --bannerColor1: var(--FireRed); --bannerColor2: var(--TimeYellow); }
-h2#Combrei { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--JusticeGreen); }
-h2#Hooru { --bannerColor1: var(--JusticeGreen); --bannerColor2: var(--PrimalBlue); }
-h2#Feln { --bannerColor1: var(--PrimalBlue); --bannerColor2: var(--ShadowPurple); }
-h2#Stonescar { --bannerColor1: var(--FireRed); --bannerColor2: var(--ShadowPurple); }
-h2#Rakano { --bannerColor1: var(--FireRed); --bannerColor2: var(--JusticeGreen); }
-h2#Elysian { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--PrimalBlue); }
-h2#Argenport { --bannerColor1: var(--JusticeGreen); --bannerColor2: var(--ShadowPurple); }
-h2#Skycrag { --bannerColor1: var(--FireRed); --bannerColor2: var(--PrimalBlue); }
-h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple); }
-
-.faction h2::after {
-  content: "";
-  display: block;
-  position: relative;
-    top: 0px;
-  width: 100%; height: .75em;
-  background-image: linear-gradient(90deg,var(--bannerColor1),var(--bannerColor2));
-  border-bottom: 2px solid #3c3a3a;
-}
-
-.state {
-  margin-block-end: 2em;
-}
-
-/* style cards */
-.card {
-  position: relative;
-  display: grid; /* previously used 'position: absolute' on child h4, but didn't overlap as wanted on Chrome */
-    grid-template-columns: 1fr;
-    align-items: start;
-    justify-items: start;
-}
-.card > h4,
-.card .card-info {
-  margin: 0;
-  grid-row-start: 1;
-  grid-column-start: 1;
-}
-.card h4 {
-  color: transparent;
-  z-index: 1;
-}
-.card:focus h4, .card:active h4 {
-  color: white; /* color: revert doesn't work on Chrome */
-  color: revert;
-  background-color: red;
-}
-.card dd {
-  margin: 0;
-}
-.card img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-/* draft pack weightings */
-[data-show-format="expedition"]  .draft-weights {
-  display: none;
-}
-.weighting-info {
-  position: absolute;
-  top: 1.5em;
-  right: 0;
-  display: grid;
-    align-items: end;
-  --weighting-info-size: 3.2em;
-  width: var(--weighting-info-size); height: var(--weighting-info-size);
-  border-radius: 0.5em;
-  overflow: hidden;
-  background: green;
-  box-shadow: 0 0 4px 1px rgba(0,0,0,0.5);
-  outline: 1px gray solid;
-}
-.weighting {
-  display: flex;
-    gap: .2ch;
-    justify-content: center;
-    align-items: baseline;
-}
-.weighting dt::after {
-  content: ":";
-}
-.weighting dd::after {
-  content: "×";
-}
-.weighting.after {
-  font-size: 1.2em;
-  background-color: inherit;
-}
-.weighting.before {
-  font-size: .8em;
-  background-color: #424242;
-}
-.weighting.before dt {
-  font-size: .9em;
-}
-
-.card[data-weight-after="-"] .weighting-info,
-.card[data-weight-before="-"] .weighting.before {
-  background-color: black;
-}
-.card[data-weight-after="-"] .weighting.after dd::after,
-.card[data-weight-before="-"] .weighting.before dd::after {
-  content:none;
+.grey {
+    color: #999999;
 }
     </style>
 
@@ -10382,7 +10118,7 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
           <li class="card" data-expedition-state="Kept" data-draft-state="Kept"data-draft-kept-change="Raised"
             data-weight-before="5" 
             data-weight-after="10"
-            data-cost="3"
+            data-cost="4"
             data-type="Spell"
             data-rarity="Common"
             >

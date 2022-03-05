@@ -35,104 +35,223 @@
   
     <!-- page-specific styles -->
     <style>
-    
-/* Visually hide element accessibly) */
-/* ! add to main css */
-.sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0); 
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap; 
-    width: 1px;
-  }
-  
-  /* misc styles */
-  .newBodyGrid main > header {
-    margin-block-end: 1.5em;
-  }
-  .description ul > li {
-    margin-block-end: .5em;
-  }
-  .description li > ul {
-    margin-block-start: .5em;
-  }
-  
-  /* place contents in grid */
-  .formatUpdates.textcol {
-    width: 100%;
-    margin: 0;
-    padding-inline-end: 30px;
-    display: grid;
-    grid-template-columns: 310px auto;
-  }
-  
-  .formatUpdates > header,
-  .formatUpdates > .description {
-    width: 600px;
-  }
-  .description {
-    margin-block-end: 1em;
-  }
-  
-  .formatUpdates > * {
-    grid-column: 2;
-  }
-  .formatUpdates > .sideImage {
-    grid-column: 1;
-    grid-row: 1 / 3;
-  }
+    .article > main {
+    --block-margin: 1.5rem;
+}
 
-  /* Above from formatUpdates_v3.css, below is new  */
-.cards,
-.cards * {
-    margin: 0;
+.article > main {
+    padding: 0 30px 30px;
+    display: grid;
+    grid-template-columns: 250px 600px auto; /* sidebar + main column layout + right-spacing (main column images may expand there) */
+    column-gap: 30px;
+    align-content: start;
+    /* .textcol text styles */
+    font-size: 15px;
+    font-family: Merriweather,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.article > main > * {
+    grid-column: 2; /* unless otherwise specified, place all content inside the main column */
+}
+
+.article > main .articleHeader {
+    margin-block-end: var(--block-margin);
+}
+.article > main .title,
+.article > main .subtitle,
+.article > main .tagline,
+.article > main hr,
+.article > main > p {
+    margin: 0 0 var(--block-margin);
+}
+
+.article > main .pre-headline {
+    margin-block-start: 1.8rem; /* approximate heading top-margin */
+    margin-block-end: 0.5em;
+    font: 12px Open Sans;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.article > main .pre-headline + :-webkit-any(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+.article > main .pre-headline + :is(h1,h2,h3,h4,h5,h6) {
+    margin-block-start: 0; /* doesn't need top-margin, uses pre-headline's */
+}
+
+.article > main :-webkit-any(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+.article > main :is(h1,h2,h3,h4,h5,h6) .pre-headline {
+    display: flex; /* force line break */
+    margin-block-start: 0; /* doesn't need top-margin, uses heading's */
+}
+
+.article > main .pre-headline.first {
+    color:#FFDF00;
+}
+.article > main .pre-headline.second {
+    color:#C0C0C0;
+}
+.article > main .pre-headline.third {
+    color:#cd7f32;
+}
+.article > main .pre-headline.fifth {
+    color:#FF4500;
+}
+
+.article > main a {
+    color: #81C3F4;
+}
+.article > main a:hover {
+    color: #4183c4;
+}
+
+.article > main .side-image,
+.article > main .article-thumbnail {
+    grid-column: 1; /* place in 1st column (sidebar) */
+    grid-row: span 100; /* overflow as many rows as needed */
+    /* need to check above for browser support
+       if it doesn't work everywhere, could instead keep this wrapper in the main column,
+       then give it position:relative & the position:absolute the child <img> to display it 
+       in the sidebar */
+    margin: 0; /* clear assigned <figure> margins */
+    margin-inline-start: auto; /* right-align images */
+}
+.article > main .side-image img {
+    max-width: 100%;
+    height: auto;
+}
+.article > main .side-image.card-image img {
+    width: 220px;
+}
+.article > main .side-image.card-image.ci-small img {
+    width: 125px;
+}
+
+.article > main .article-thumbnail {
+    grid-row: 1 / span 100; /* overflow as many rows as needed */
+}
+.article > main .article-thumbnail img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.article > main ul {
+    margin: 0 0 var(--block-margin);
+}
+.article > main > ul {
     padding: 0;
-    box-sizing: border-box;
+}
+.article > main > ul > li {
+    margin-inline-start: 1em;
+}
+.article > main ul li:not(:last-child) {
+    margin-block-end: 1rem;
+}
+.article > main li > ul {
+    margin-block-start: 1rem;
+}
+.star-list li {
+    position: relative;
+    list-style: none;
+}
+.star-list li::before {
+    content: "★";
+    position: absolute;
+    left: -1em;
+}
+.list-compact {
+    font-size: 14px;
+    font-family: Open Sans;
+}
+.article > main .list-compact li:not(:last-child) {
+    margin-block-end: 0;
+}
+.list-compact li > ul {
+    margin: 0;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    /* full-width, match right side padding then add extra padding */
-    --section-side-padding: 5rem;
-    padding: 0 var(--section-side-padding) 0 calc(var(--section-side-padding) + 30px);
+.article > main .main-col-image {
+    margin: 0; /* clear assigned <figure> margins */
+    margin-block-end: var(--block-margin);
+    grid-column: 2/-1;
 }
-.full-width {
-  grid-column: 1/-1;
-}
-.cards > hr {
-  margin: 1rem 0;
-}
-.cards > h3 {
-  margin-top: 1rem;
-}
-.cards figure {
-    margin-bottom: auto;
-}
-.cards img {
-    width: 150px;
+.article > main .main-col-image img {
+    width: 100%; /* width of the main column */
     height: auto;
 }
 
-.changes {
-    padding: 0 1em;
+.highlight {
+    color:#81C3F4;
 }
-.changes dl {
-  display: grid;
-  grid-template-columns: auto 1fr auto 1fr;
-  gap: 1rem;
+.article > main blockquote {
+    font-size: 18px;
+    font-family: Open Sans,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    line-height: 1.4;
+    color: #81C3F4;
 }
-.changes > dt {
-  border-bottom: 1px darkgrey solid;
+
+.arrow-link {
+    font-weight: bold;
 }
-.changes > dd {
-  margin-bottom: 1rem;
+.arrow-link::after {
+    content: " ►";
 }
-.changes dl > dt {
-  font-style: italic;
-  color: lightgrey;
+
+/* top 8 articles */
+.article > main h2 .epc-link,
+.article > main h3 .epc-link {
+    text-decoration: underline;
+}
+.article > main h2 .epc-link::before,
+.article > main h3 .epc-link::before {
+    display: inline-block;
+    content: "► ";
+    color: white;
+    margin-inline-end: .5ch;
+}
+
+.article > main .article-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    font-family: arial, sans, sans-serif;
+}
+
+.article > main .article-table,
+.article > main .article-table tr,
+.article > main .article-table td,
+.article > main .article-table th {
+    border: 1px solid white;
+}
+.article > main .article-table td,
+.article > main .article-table th {
+    padding: 2px 3px;
+}
+.article > main .article-table thead th {
+    vertical-align: bottom;
+}
+.article > main .article-table thead th:nth-child(1) {
+    width: 17%;
+}
+.article > main .article-table thead th:nth-child(2),
+.article > main .article-table thead th:nth-child(3),
+.article > main .article-table thead th:nth-child(4) {
+    width: 15%;
+}
+
+.yellow {
+    color: #ffd700;
+}
+.grey {
+    color: #999999;
 }
     </style>
 
