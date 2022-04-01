@@ -6102,6 +6102,22 @@
               "after":"3"
             }
           },
+          "Elysian Banner":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"9"
+            }
+          },
+          "Elysian Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
           "Entratius, Beckoning":{
             "expedition": "Kept",
             "draft": "Kept",
@@ -6150,6 +6166,14 @@
               "after":"1"
             }
           },
+          "Seat of Wisdom":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
           "Storm Lynx":{
             "expedition": "Kept",
             "draft": "Kept",
@@ -6176,30 +6200,6 @@
           }
         },
         "Removed":{
-          "Elysian Banner":{
-            "expedition": "Removed",
-            "draft": "Removed",
-            "draft-weights":{
-              "before":"6",
-              "after":"-"
-            }
-          },
-          "Elysian Blueprints":{
-            "expedition": "Removed",
-            "draft": "Removed",
-            "draft-weights":{
-              "before":"1",
-              "after":"-"
-            }
-          },
-          "Seat of Wisdom":{
-            "expedition": "Removed",
-            "draft": "Removed",
-            "draft-weights":{
-              "before":"1",
-              "after":"-"
-            }
-          }
         },
         "Added":{
           "Majestic Skies":{
@@ -6527,6 +6527,14 @@
               "after":"1"
             }
           },
+          "Seat of Mystery":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
           "Shadowlands Bonepicker":{
             "expedition": "Kept",
             "draft": "Kept",
@@ -6567,6 +6575,22 @@
               "after":"1"
             }
           },
+          "Xenan Banner":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"9"
+            }
+          },
+          "Xenan Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
           "Xenan Cupbearer":{
             "expedition": "Kept",
             "draft": "Kept",
@@ -6577,30 +6601,6 @@
           }
         },
         "Removed":{
-          "Seat of Mystery":{
-            "expedition": "Removed",
-            "draft": "Removed",
-            "draft-weights":{
-              "before":"1",
-              "after":"-"
-            }
-          },
-          "Xenan Banner":{
-            "expedition": "Removed",
-            "draft": "Removed",
-            "draft-weights":{
-              "before":"6",
-              "after":"-"
-            }
-          },
-          "Xenan Blueprints":{
-            "expedition": "Removed",
-            "draft": "Removed",
-            "draft-weights":{
-              "before":"1",
-              "after":"-"
-            }
-          }
         },
         "Added":{
           "Agile Deathjaw":{
