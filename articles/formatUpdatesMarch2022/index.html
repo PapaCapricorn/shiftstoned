@@ -754,7 +754,7 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
     data-show-fast-only=false
     
     data-show-states="Added Kept"
-    data-show-rarities="Common Uncommon Rare Legendary Promo"data-show-weightings="1 3 6 12"
+    data-show-rarities="Common Uncommon Rare Legendary Promo"data-show-weightings="1 3 6 9 12 18"
     data-show-draft-kept-changes="Raised Lowered"data-show-kept-unchanged=true>
 
     <header>
@@ -958,9 +958,23 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
               </li>
               <li class="filter pillbox">
                 <label>
+                  <input type="checkbox" id="filter-weighting-9" name="Weightings"
+                    data-filter-weighting="9" checked />
+                  <span>9×</span>
+                </label>
+              </li>
+              <li class="filter pillbox">
+                <label>
                   <input type="checkbox" id="filter-weighting-12" name="Weightings"
                     data-filter-weighting="12" checked />
                   <span>12×</span>
+                </label>
+              </li>
+              <li class="filter pillbox">
+                <label>
+                  <input type="checkbox" id="filter-weighting-18" name="Weightings"
+                    data-filter-weighting="18" checked />
+                  <span>18×</span>
                 </label>
               </li>
             </ol>
