@@ -4,7 +4,6 @@ description: "Explore the changes to **Expedition** and **Draft Packs** with the
 articleImage: "/images/articles/formatUpdatesEmpireofGlass.jpg"
 articleTitle: "Empire of Glass Format Updates"
 articleSubtitle: "Changes to Expedition and Draft Packs with the release of Eternal's newest set"
-layout: "layouts/formatUpdates_new.njk"
 ---
 **{% date page.date %}** - [*Empire of Glass*][EoG]{target="_blank} was released today, and Dire Wolf Digital has [redesigned][Card List]{target="_blank} the *Eternal* Draft Packs and Expedition to complement the new set. Our trusty Grenadin have processed the changes into this handy interactive gallery for you! Use the toggles below to switch format views, and to filter cards further.
 

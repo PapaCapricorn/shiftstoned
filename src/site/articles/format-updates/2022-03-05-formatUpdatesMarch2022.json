@@ -1,0 +1,6800 @@
+{
+  "weightingList":[1, 3, 6, 9, 12, 18],
+  "updates":{
+    "Fire":{
+      "factions":["Fire"],
+      "cards":{
+        "Kept":{
+          "Agile Strike":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Awakened Instigator":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Azrog, Streetbreaker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Blazing Renegade":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Blitz Stone":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Bloodspear Footsoldier":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Breath of Voprex":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Callous Triggerman":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Censari Brigand":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Centaur Outrider":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Centaur Raidleader":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Challenger's Axe":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Char":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Coalscrounger":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Core Scavenger":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "D'Angolo Houndmaster":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Daring Maneuver":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Detonation Cannon":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Disassembler":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Djang-li, the Misfit":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Doomsday Assembly":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Dusthoof Brawler":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Evoker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Factory Quota":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Fire Sale":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Fire Sketch":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Firemane Cub":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Flash Fire":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Forge Wolf":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Gearcruncher":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "General Izalio":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Gilded Flames":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Grandfather's Axe":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Granite Acolyte":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Granite Ring":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Great-Kiln Titan":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Heavy Axe":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Hellfire Rifle":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"18"
+            }
+          },
+          "Hellfire Valkyrie":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Helpful Doorbot":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Iceberg Frontrunner":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Iceberg Scattershot":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"1"
+            }
+          },
+          "Improvised Rubbler":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"6"
+            }
+          },
+          "Inoa's Fury":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Kaleb's Favor":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Kaleb's Intervention":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Kaleb's Sanctum":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Kaleb, Claimless":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Kazuo, Melee Virtuoso":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Last Line Defender":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Lava Burst":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Magma Javelin":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"18"
+            }
+          },
+          "Magmatic Sentinel":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Mercenary Vanguard":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"18"
+            }
+          },
+          "Miner's Musket":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Molten Fist":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Morningstar":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Oni Battledriver":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Oni Quartermaster":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Outlands Sniper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Parapet Sentry":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Piercing Shot":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Pivotal Moment":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Pyre Adept":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Pyre Elemental":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Raging Jackal":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"1"
+            }
+          },
+          "Rally":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Rampage":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Rampaging Commando":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"18"
+            }
+          },
+          "Rebel Illuminator":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Rebel Sharpshooter":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"18"
+            }
+          },
+          "Recogulator":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Recycle":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Reforge":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Refracted Sentinel":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Retrofitted Sentinel":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Roar of Defiance":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Rocketblaster":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Ruin":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Rune of Flame":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Sanity Scorcher":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Sentinel Mold":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Sentinel Sifter":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Shiftstone Processor":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Shingane Captain":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Shingane Forge":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Sindok, Rage Incarnate":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Smith's Hammer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Soaring Crasher":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Sol's Fury":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Spearfrenzy Warrior":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Spiny Grenadin":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Spitfire":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Steelbound Dragon":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Steelfang Chakram":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Stonepowder Heretic":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Stonescar Maul":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Stonesmelt Dragon":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Sureshot":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Thunderhoof Warrior":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Ticking Grenadin":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Torch":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Touch of Force":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"1"
+            }
+          },
+          "Tumblebang":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Unpredictable Outlaw":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"18"
+            }
+          },
+          "Warhorn":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"18"
+            }
+          },
+          "Wildfire Censari":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"1"
+            }
+          },
+          "Worldpyre Phoenix":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Young Gun":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Ankle Cutter":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Assault Shield":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"9"
+            }
+          },
+          "Barbarian Camp":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"9"
+            }
+          },
+          "Bladekin Apprentice":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Bottoms Up":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Charchain Flail":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Cinder Sprite":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Crowd Favorite":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          },
+          "Edict of Shavka":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "From Within":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Gloves of the Pyromancer":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Hellfire Oni":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Heretic's Cannon":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          },
+          "Hoof Slash":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"9"
+            }
+          },
+          "Obliterate":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Ornate Katana":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Purge the Darkness":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Shugo's Hooked Sword":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          },
+          "Soldrain Smithing":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"9"
+            }
+          },
+          "Spark Hatcher":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"9"
+            }
+          },
+          "Twinbarrel":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Warbrush Oni":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"9"
+            }
+          },
+          "Yeti Cookmaster":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          }
+        }
+      }
+    },
+    "Time":{
+      "factions":["Time"],
+      "cards":{
+        "Kept":{
+          "Accelerate":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Accelerated Impact":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Ageless Mentor":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Ageless Sentinel":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Amaran Archaeologist":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Amber Acolyte":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Amber Lock":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Amber Ring":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Ancient Lore":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Apprentice Mage":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Araktodon Egg":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Azurite Prixis":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Battlewise Elite":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Behold the Truth":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Belching Behemoth":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Blurred Stygimoloch":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Bold Adventurer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Bolster":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Bonemask":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Borderlands Lookout":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Bound by Oath":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Cloaked Guide":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Concealed Veteran":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Confiscate":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"1"
+            }
+          },
+          "Conspire":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Copper Conduit":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Dashing Scoundrel":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Disjunction":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Dispel":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Dissociate":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Divining Rod":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Dormant Sentinel":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Dune Phantom":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"6"
+            }
+          },
+          "Emerging Colossus":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Entrancer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Envelop":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Ephemeral Wisp":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Etched Monolith":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Etio, Chief Examiner":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Fresh Recruit":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Friendly Wisp":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Frontline Healer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Glimpse Another Age":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Growing Sludge":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Healer's Cloak":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Hesitate":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Horn of Plenty":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Horned Vorlunk":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Humbug":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Humbug Nest":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"18"
+            }
+          },
+          "Illuminator":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Infuse with Venom":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Insatiable Serasaur":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Kanya, Ironthorn Envoy":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Locust":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Lumen Defender":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Marisen's Disciple":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Maveloft Botanist":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Meditative Trance":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Mystic Ascendant":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Nectar Snare Lotus":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Nurturing Sentinel":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Oasis Sanctuary":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Oasis Seeker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Open Way Supplier":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Pillar of Amar":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"6"
+            }
+          },
+          "Pit of Lenekta":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Populace Controller":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Praxis Displacer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Predator's Instinct":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"18"
+            }
+          },
+          "Predatory Carnosaur":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Ravid, Insect Master":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Reliquary Raider":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Reset the Day":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Resolute Monk":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Rowhammer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Rune of Relocation":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Sanctuary Priest":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Sandcrawler":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Sandstorm Scarf":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Scorpion":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Scorpion Wasp":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Secret Pages":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Silence":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Steward of Prophecy":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Sticky Flytrap":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Supply Lines":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Tactical Expertise":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Talir's Favored":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Talir, Timeless":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Telekinetic Shackles":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Teleport":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "The Last Carnosaur":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Thunderfist Striker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Time Sketch":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Timekeeper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Tomb Protector":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Towering Terrazon":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Towertop Patrol":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Unlock Potential":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Valiant Guardian":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Vault of the Praxis":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Wurmcalling":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Xenan Guardian":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Baying Serasaur":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Edict of Grodov":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Excavate":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Fantastic Revelation":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "From Below":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Gloaming Wisp":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Lastlight Infusion":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Lunar Magus":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Moondial":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Mountain Goliath":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          },
+          "Nocturnal Creeper":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Omnivorous Vorlunk":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Powerbreach Sentinel":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"9"
+            }
+          },
+          "Sand Tornado":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Sandstorm":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Slow":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Snapping Brushstalker":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          },
+          "Trail Maker":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Vital Arcana":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          }
+        }
+      }
+    },
+    "Justice":{
+      "factions":["Justice"],
+      "cards":{
+        "Kept":{
+          "Argenport Soldier":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Armorsmith":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Auren Brute":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Auren Jailer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Auric Sentry":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Auric Weaponsmith":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Avigraft":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Awakening":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Brightmace Paladin":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Challenge by Law":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Citywide Ban":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Civic Peacekeeper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"18"
+            }
+          },
+          "Copperhall Marshal":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"18"
+            }
+          },
+          "Copperhall Porter":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Copperhall Recruit":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Crackshot Fugitive":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Crownwatch Captain":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Crownwatch Cavalry":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Crownwatch Legionnaire":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Crownwatch Longsword":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Crownwatch Paladin":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Crownwatch Press-Gang":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Custom Munitions":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Deafening Word":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Defiance":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Detain":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Diplomatic Immunity":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "District Infantry":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"18"
+            }
+          },
+          "Elder's Feather":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Emerald Acolyte":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Emerald Maw":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Emerald Ring":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Endless Steps":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Ensnare":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Experimental Forcefield":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Fall Short":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"18"
+            }
+          },
+          "Fencing Master":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Finest Hour":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Fourth-Tree Elder":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Gates of Hope":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Genius Combatant":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"18"
+            }
+          },
+          "Greatblade":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Guardian Angel":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Harsh Rule":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Heirloom Blade":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"1"
+            }
+          },
+          "Hero of the People":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Hooru Fledgling":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Horngrinder":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Inquisitive Alchemist":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"18"
+            }
+          },
+          "Inspire":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"18"
+            }
+          },
+          "Invisible Wall":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"6"
+            }
+          },
+          "Iron Priestess":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Ironclad Oath":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Justice Sketch":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Kako, the Bodyguard":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Kosul Battlemage":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Kosul Bladebarrier":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Ky, Awakened Master":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Loyal Watchwing":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Manacles":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Mantle of Justice":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Master-at-Arms":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Miner's Canary":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Minotaur Duelist":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Minotaur Grunt":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Mithril Mace":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Modready Drone":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Offbook Officer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Oni Samurai":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Overthrow":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Partnership Agreement":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Pumpwerks Engineer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Rakano Sheriff":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Rebuke":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Recruitment Effort":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Reinforce":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Reinforced Baton":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Reliable Troops":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Resounding Shockwave":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Righteous Intent":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Rolant's Favor":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Rolant's Honor Guard":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Rolant, Merciless":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Rotorsmith":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"18"
+            }
+          },
+          "Rune of Law":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Shieldsmith":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Sigvard, the Last Bastion":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Silver Shortsword":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Silverwing Commander":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Sky Crew":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Skysweeper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Spire Chaplain":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Stalwart Silverwing":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Staunch Protector":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"18"
+            }
+          },
+          "Steadfast Deputy":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Svetya's Bravery":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Talon of Nostrix":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"18"
+            }
+          },
+          "Tinker Apprentice":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Topple":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Touch of Purity":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"1"
+            }
+          },
+          "Tower Inspector":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Town Watchman":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Treasury Guard":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Ursa Squadron":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Valkyrie Aspirant":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Valkyrie Bodyguard":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Valkyrie Cadet":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Valkyrie Justiciar":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Valkyrie Militant":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"18"
+            }
+          },
+          "Valkyrie Spireguard":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Valkyrie Station":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Valkyrie Wings":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Well-Laid Trap":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Augmented Form":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Axe Sharpener":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Ceremonial Mask":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Chancellor's Horn":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Combrei Magister":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Copperhall Cudgel":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Curse of Taxation":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Eager Owlet":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Edict of Kodosh":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Entrapment":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Flight Lieutenant":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "From Anguish":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Gilded Glaive":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Minotaur Oathkeeper":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"9"
+            }
+          },
+          "Pioneering Aviator":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Rampart Arbalest":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Shielded Shortbarrel":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Silverwing Familiar":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Silverwing Smith":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Steadfast Paladin":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Vanquish":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Vicious Raildriver":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Whetstone":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Workshop Tinker":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Xulta Foil":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          }
+        }
+      }
+    },
+    "Primal":{
+      "factions":["Primal"],
+      "cards":{
+        "Kept":{
+          "Ancient Serpent":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Araktodon":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"18"
+            }
+          },
+          "Backlash":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"18"
+            }
+          },
+          "Balm":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Boiling Geyser":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Bottled Insight":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Brutal Frostlord":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Campfire Watchman":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Channel the Tempest":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Cloudsnake Hatchling":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Cobalt Acolyte":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Cobalt Ring":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Cover From the Storm":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Crackling Bauble":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Crystallize":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Cyber Hyena":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Cyber Skimmer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Davia, Azurebreaker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Distilled Rage":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "East-Wind Herald":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Eilyn's Favor":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Eilyn's Frostrider":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Eilyn, Fearless":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "First-Frost Shaman":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Flight of Makkar":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Foothills Alpha":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Formbend":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Fragility":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Freight Asri":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Galeprowler":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Gnashing Displacer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"18"
+            }
+          },
+          "Grizzled Guard":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Hatchery Hunter":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Hidden Crusader":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Ice Bolt":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Ice Sprite":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Icebow":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Icebreaker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Icicle Marksman":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Jarrall's Frostkin":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Jotun Warrior":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Jufi, Sprite Seer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Jump Kick":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"18"
+            }
+          },
+          "Lethrai Secretweaver":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Lightning Strike":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Magus of the Mist":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Master Cartographer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Merciless Officer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Misthelm":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "North-Wind Herald":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Numbing Cold":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Obstructive Flicker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Permafrost":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Pinnacle of the Reach":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Plunged into the Sea":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Polymorph":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Powderglider":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Primal Incarnation":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Primal Sketch":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Psionic Savant":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Quicksilver Mirror":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Rabid Yeti":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Rain of Frogs":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Reflector":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Ridgeline Watcher":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Rolling Fog":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Rooted Observer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Rule the Skies":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"18"
+            }
+          },
+          "Rune of Trickery":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Runic Transformation":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Sapphire Dragon":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Savage Denial":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Savagery":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Scaly Gruan":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Serpent Trainer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Shaluuk Captain":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Shockwave Elemental":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Skimmer Wrangler":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Skycrag Wyvarch":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Soaring Pennant":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Staff of Stories":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Stormcaller":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"1"
+            }
+          },
+          "Stormtamer Operative":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Substitute":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Tandem Shieldbearer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Tend the Flock":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Thudrock, Arctic Artisan":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Thunderbird":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Torgov, Icecap Trader":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Tormented Crown":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Touch of Wild":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Tundra Explorer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Unseal":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Velise, Bear Rider":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Violent Gust":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Voracious Fosora":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"18"
+            }
+          },
+          "Weather the Storm":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "West-Wind Herald":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Whispering Wind":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Wild Asri":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Wild Cloudsnake":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Wild Rider":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Wind Cloak":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Windshaper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Wisdom of the Elders":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Yeti Bully":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Yeti Snowchucker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Yeti Snowslinger":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Yeti Spy":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"18"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Adaptive Predator":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Boltcrafter Shaman":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          },
+          "Cloudsnake Harrier":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Cloudsnake Saddle":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Cutbrush Cartographer":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Darkbolt":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Edict of Linrei":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Ferocity of Bear":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          },
+          "From Elements":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Gatecrash Trooper":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"9"
+            }
+          },
+          "Horizon Seeker":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Jotun Hurler":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Lastlight Druid":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Lethrai Darkstalker":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Moonlight Huntress":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Nocturnal Kyrex":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Nocturnal Observer":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Pitfall Trap":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Plated Hookclaw":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"9"
+            }
+          },
+          "Read the Stars":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Savage Skybrood":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Shiver":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Storm Spiral":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Twilight Hermit":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Winter's Grasp":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Yeti Furflinger":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          }
+        }
+      }
+    },
+    "Shadow":{
+      "factions":["Shadow"],
+      "cards":{
+        "Kept":{
+          "Abduct":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Afflictor":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Ambitious Mandevilla":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Amethyst Acolyte":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Amethyst Ring":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Ashara, Ruthless Assassin":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Ashara, the Deadshot":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Auric Captain":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Back-Alley Bouncer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Bandit's Flail":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Banished Umbren":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Blackguard Sidearm":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Blood Beetle":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Blood of Makkar":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Cabal Cutthroat":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Cabal Recruiter":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Cabal Rogue":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Cat Burglar":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Corrupt":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Cripple":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Cull the Deck":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Cut Ties":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "D'Angolo Might":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Dark Wisp":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Deepcover Operative":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Desperado":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Devastating Setback":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Devious Drone":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Devour":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Devouring Shadow":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Direfang Spider":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Direwood Prowler":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Direwood Rampager":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Dreamsnatcher":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Elding of the Final Hour":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Execute":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Fall to Ruin":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Ghostform":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Glen Pathcutter":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"18"
+            }
+          },
+          "Glensapper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Grave Robbery":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"1"
+            }
+          },
+          "Grenadin Bellower":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Grenamender":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Grimy Alp-luachra":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Gunrustler":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"6"
+            }
+          },
+          "Heartstopper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Horsesnatcher Bat":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Hypnotic Valkyrie":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Impending Doom":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Improvised Club":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Inciter of Madness":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Leatherhide":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Lethrai Bladewhirl":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Lethrai Falchion":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Lethrai Ranger":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Lifedrinker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Lurking Brute":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Lurking Sanguar":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Malaise":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Marsh Dragon":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Mazag, the Waking Terror":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Miasma":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Minister of Obeyance":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Minotaur Lighthoof":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Muck Devourer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Mug":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Nametaker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Obrak, the Feaster":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Outmatch":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Piercing Grief":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Pilfer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Ransack":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Ravenous Thornbeast":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Relentless Gorehorn":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Relicfeaster":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Rune of Illusion":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Sabotage":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"18"
+            }
+          },
+          "Sadistic Glee":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Scavenging Vulture":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Send a Message":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Shadow Sketch":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Shadowcreeper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Shadowfang Valkyrie":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Shadowpath Intimidator":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Silverblade Reaper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"9"
+            }
+          },
+          "Skeeter":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Slimespitter Slug":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Soil Renewal":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"12"
+            }
+          },
+          "Solitude":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Soul Collector":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"6"
+            }
+          },
+          "Spirit Drain":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Spitefeeder":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Stalking Assassin":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"12"
+            }
+          },
+          "Steward of the Past":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Stonescar Sneak":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Subversion Slug":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Switchblade Deadeye":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"1"
+            }
+          },
+          "Thorncrawler":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Threaten":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Tock Tick":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"9",
+              "after":"1"
+            }
+          },
+          "Touch of Resilience":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Toxic Cloud":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"6"
+            }
+          },
+          "Turn For The Worse":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Twisted Farmer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Umbren Coaxer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"18",
+              "after":"9"
+            }
+          },
+          "Unchecked Upgrader":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Vampire Bat":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Vara's Favor":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Vara, Limitless":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Vizier's Tablet":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Waxing Moon":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Wingbrewer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Xenan Cultist":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"12",
+              "after":"1"
+            }
+          },
+          "Xumuc Poison":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Arachnophobia":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Back-Alley Delinquent":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Burglarize":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Cover of Darkness":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Dangerous Bargain":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Darkclaw Ravager":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Duskcaller":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Edict of Makkar":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Encroaching Darkness":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Extinguish":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Finback Komonat":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "From Beyond":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Harbinger's Bite":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Illicit Armament":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Kerendon Steward":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Moonlit Gargoyle":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Plague":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          },
+          "Scare":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          },
+          "Subvert":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          },
+          "Suffocate":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          },
+          "Triumphant Return":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"9"
+            }
+          },
+          "Umbral Edge":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Unseen Agent":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Vile Varmint":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"18"
+            }
+          },
+          "Warlock's Brew":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          }
+        }
+      }
+    },
+    "Praxis":{
+      "factions":["Fire","Time", "Mixed"],
+      "cards":{
+        "Kept":{
+          "Marshal Izia":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Moment of Creation":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Málaga Amphitheatre":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Noble Firemane":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Praxis Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Sandglass Sentinel":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Searing Strike":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Impulse":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Speardancer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Stoneshell Walker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Talir's Choice":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+        }
+      }
+    },
+    "Combrei":{
+      "factions":["Time","Justice", "Mixed"],
+      "cards":{
+        "Kept":{
+          "Auric Record Keeper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Awakened Student":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"18"
+            }
+          },
+          "Combrei Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Combrei Healer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Copperhall Elite":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Gavel's Insight":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Karmic Guardian":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Nobles' Enforcer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Penitent Bull":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Progress":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Teryius, Martial Master":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Desert Marshal":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"6"
+            }
+          }
+        }
+      }
+    },
+    "Hooru":{
+      "factions":["Justice","Primal", "Mixed"],
+      "cards":{
+        "Kept":{
+          "Bring Down":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Duelist's Blade":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Eilyn, Clan Mother":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Electrostatic Distortion":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Freeze Out":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Highwind Glider":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Hooru Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Kothon, the Far-Watcher":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Raildriver Trainee":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Order":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Stormhalt Concoction":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Yojimba, Ghostblade":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Aid of the Hooru":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          }
+        }
+      }
+    },
+    "Feln":{
+      "factions":["Primal","Shadow", "Mixed"],
+      "cards":{
+        "Kept":{
+          "Darktalon Wyvarch":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Feln Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Foraging Tri-Toe":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Gorgon Swiftblade":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Midnight Gale":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Nightmaw, Sight Unseen":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Rindra's Choice":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Seat of Cunning":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Sindar, the Corruptor":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Spell Swipe":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Surprise Raid":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Trickster's Cloak":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Voltage Generator":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Withering Witch":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Bloodscent Avisaur":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Twilight Raptor":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          }
+        }
+      }
+    },
+    "Stonescar":{
+      "factions":["Fire","Shadow", "Mixed"],
+      "cards":{
+        "Kept":{
+          "Bloodrite Kalis":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Combust":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Cremate":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Disgraced Cadet":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Metalfang":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Obsidian Golem":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Sanguine Reaper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Scraptank":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Chaos":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Skullbreaker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Statuary Maiden":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Stonescar Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Voprex's Choice":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+        }
+      }
+    },
+    "Rakano":{
+      "factions":["Fire","Justice", "Mixed"],
+      "cards":{
+        "Kept":{
+          "Field Captain":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Ijin's Choice":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Longhorn Sergeant":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Mechanized Constructor":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Overclocked Sentinel":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Pisto, Ever-Churning":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Queen's Elite":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"9"
+            }
+          },
+          "Rakano Artisan":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Rakano Banner":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"9"
+            }
+          },
+          "Rakano Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Renegade Valkyrie":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"9"
+            }
+          },
+          "Seat of Glory":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Tinker Dronedropper":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+        }
+      }
+    },
+    "Elysian":{
+      "factions":["Time","Primal", "Mixed"],
+      "cards":{
+        "Kept":{
+          "Call the Ancients":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Cirso, the Great Glutton":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Elysian Banner":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"9"
+            }
+          },
+          "Elysian Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Entratius, Beckoning":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "False Prince":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Hunting Pteriax":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Launching Asri":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Mandatory Retirement":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Ring of Glamour":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Seat of Wisdom":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Storm Lynx":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Torgov's Trading Post":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Twinning Ritual":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Majestic Skies":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          }
+        }
+      }
+    },
+    "Argenport":{
+      "factions":["Justice","Primal", "Mixed"],
+      "cards":{
+        "Kept":{
+          "A Life For A Life":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Argenport Banner":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"9"
+            }
+          },
+          "Argenport Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Collapse":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"12"
+            }
+          },
+          "Crownwatch Traitor":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "D'Angolo Racketeers":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"18"
+            }
+          },
+          "Death's Doorstep":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Seat of Vengeance":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Slay":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Unfinished Business":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Auric Vigilante":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          }
+        }
+      }
+    },
+    "Skycrag":{
+      "factions":["Fire","Primal", "Mixed"],
+      "cards":{
+        "Kept":{
+          "Burnished Grenahawk":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Calderan Cradle":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Crill, Merciless Pillager":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Hunter's Harpoon":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Iceberg Warchief":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Kaleb's Choice":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Kaleb, Reborn":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Prowling Amaruq":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Fury":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Skycrag Banner":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"9"
+            }
+          },
+          "Skycrag Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Tandem Training":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"6"
+            }
+          },
+          "Topaz Drake":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Blood-Sun Staff":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          }
+        }
+      }
+    },
+    "Xenan":{
+      "factions":["Time","Shadow", "Mixed"],
+      "cards":{
+        "Kept":{
+          "Ayan, the Abductor":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Aymar, Dark Summoner":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Blistersting Wasp":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Clinging Scavenger":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Endless Nightmare":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Express Route":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Lurking Feeder":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Nahid's Choice":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Nahid's Faithful":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Nahid, the Immortal":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Preserver of Dualities":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Seat of Mystery":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Shadowlands Bonepicker":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Siphon Vitality":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Unraveler of Destinies":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Worldjoiner":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Xenan Augury":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Xenan Banner":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"9"
+            }
+          },
+          "Xenan Blueprints":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Xenan Cupbearer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Agile Deathjaw":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"3"
+            }
+          },
+          "Duskwalker":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          },
+          "Vara's Choice":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"1"
+            }
+          }
+        }
+      }
+    },
+    "Mixed":{
+      "factions":["Fire","Time","Justice","Primal","Shadow", "Mixed"],
+      "cards":{
+        "Kept":{
+        },
+        "Removed":{
+        },
+        "Added":{
+        }
+      }
+    },
+    "Neutral":{
+      "factions":["Neutral"],
+      "cards":{
+        "Kept":{
+          "Alchemical Blast":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Ancient Manual":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Astromancer's Compass":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Bannerman":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          },
+          "Camouflaged Soldier":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Hired Cutthroat":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"9"
+            }
+          },
+          "Manufactured Force":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"9"
+            }
+          },
+          "Momentum Builder":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Prism Stone":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Rotorcycle":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Rumbling Contraption":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"1",
+              "after":"1"
+            }
+          },
+          "Sacred Seal":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Seek Power":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"9"
+            }
+          },
+          "Spiked Helm":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Tools of Oppression":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"6"
+            }
+          },
+          "Undercover Enforcer":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"3",
+              "after":"3"
+            }
+          },
+          "Worn Shield":{
+            "expedition": "Kept",
+            "draft": "Kept",
+            "draft-weights":{
+              "before":"6",
+              "after":"1"
+            }
+          }
+        },
+        "Removed":{
+        },
+        "Added":{
+          "Diplomatic Seal":{
+            "expedition": "Added",
+            "draft": "Added",
+            "draft-weights":{
+              "before":"-",
+              "after":"12"
+            }
+          }
+        }
+      }
+    }
+  }
+}

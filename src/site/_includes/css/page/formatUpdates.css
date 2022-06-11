@@ -25,28 +25,27 @@
 .formatUpdates.textcol {
   width: 100%;
   margin: 0;
-  padding: 0 30px 30px;
+  padding-inline-end: 30px;
   display: grid;
-  grid-template-columns: 250px 600px auto;
-  column-gap: 30px;
+  grid-template-columns: 310px auto;
 }
 
-.formatUpdates > * { /* everything goes into the 2nd, 'main' column unless otherwise specified */
+.formatUpdates > header,
+.formatUpdates > .description {
+  width: 600px;
+}
+.description {
+  margin-block-end: 1em;
+}
+
+.formatUpdates > * {
   grid-column: 2;
 }
-.formatUpdates .main-col-full { /* expand to fill main + right (empty) column */
-  grid-column: 2 / -1;
-}
-.formatUpdates > .article-thumbnail { /* place in 1st column */
+.formatUpdates > .sideImage {
   grid-column: 1;
-  grid-row: 1 / span 5;
+  grid-row: 1 / 3;
 }
-.formatUpdates > .article-thumbnail img {
-  width: 250px;
-  height: auto;
-  object-fit: contain;
-}
-.formatUpdates > #toc { /* place in 1st column */
+.formatUpdates > #toc {
   grid-column: 1;
   grid-row: span 2;
 }
@@ -65,6 +64,7 @@
   top: 0;
   max-height: 100vh;
   overflow-y: scroll;
+  margin: 0 30px;
 }
 /* heading & 'back to the top' link */
 #toc .toc-header {
@@ -99,13 +99,25 @@
 }
 
 /* filters styles */
+#updateList header {
+  border: 1px solid #f8c368;
+  padding: .5em;
+}
+#updateList header summary {
+  font-size: 1.2em;
+}
+
 #filters {
-  display: grid;
-    grid-template-columns: auto 1fr;
+  display: flex;
+    flex-wrap: wrap;
+  /* display: grid; */
+    /* grid-template-columns: auto 1fr; */
     gap: 1em 3em;
     justify-items: start;
+  margin-block-start: .5em;
 }
-#factionFilters {
+#factionFilters,
+#rarityFilters {
   grid-column: span 2;
 }
 #filters fieldset {
@@ -119,6 +131,7 @@
   margin-inline-start: 1em;
   font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
   font-size: 1em;
+  width: max-content;
 }
 
 .filterSet {
@@ -147,6 +160,7 @@
     /* gap: .5ch; /* gap on flexbox isn't supported in Chrome yet, using margin-right on children instead */
   align-items: center;
   position: relative; /* lets inner elements be positioned relative to parent */
+  width: max-content;
 }
 .checkbox label > span::before,
 .pillbox label > span::before {
@@ -203,6 +217,30 @@
 .neutral::before { background-image: url(/images/icon-neutral.png); }
 .mixed::before { background-image: url(/images/icon-mixed.png); }
 
+.power::before { background-image: url(/images/icon-power.png); }
+.unit::before { background-image: url(/images/icon-unit.png); }
+.spell::before { background-image: url(/images/icon-spell.png); }
+.attachment::before { background-image: url(/images/icon-attachment.png); }
+.site::before { background-image: url(/images/icon-site.png); }
+
+/* rarity checkbox filters */
+#rarityFilters label > span::before,
+#typeFilters label > span::before {
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.common::before { background-image: url(/images/icon-common.png); }
+.uncommon::before { background-image: url(/images/icon-uncommon.png); }
+.rare::before { background-image: url(/images/icon-rare.png); }
+.legendary::before { background-image: url(/images/icon-legendary.png); }
+.promo::before { background-image: url(/images/icon-promo.png); }
+
+/* hide the promo rarity while in 'draft' mode (promos shouldn't appear in draft anyway) */
+[data-show-format="draft"] .promo {
+  opacity: 50%;
+}
+
 /* format toggle */
 .radioSet {
   gap: 0;
@@ -231,7 +269,8 @@
 .radio-select:hover, .radio-select:focus-within,
 .filter input[type="checkbox"]:hover + span::before,
 .filter input[type="checkbox"]:focus + span::before {
-  box-shadow: 0 0 4px 0px rgba(250, 250, 250, .8); 
+  /* box-shadow: 0 0 4px 0px rgba(250, 250, 250, .8); */
+  filter: drop-shadow(0px 0px 3px rgba(250, 250, 250, .8));
 }
 .filter input[type="checkbox"]:not(:checked) + span,
 .radio-select input[type="radio"]:not(:checked) + span {
@@ -255,12 +294,57 @@
 [data-show-factions]:not([data-show-factions~="Mixed"]) [data-factions~="Mixed"] {
   display: none;
 }
+/* hide rarities not included in the "show-rarities" lists */
+[data-show-rarities]:not([data-show-rarities~="Common"]) [data-rarity~="Common"],
+[data-show-rarities]:not([data-show-rarities~="Uncommon"]) [data-rarity~="Uncommon"],
+[data-show-rarities]:not([data-show-rarities~="Rare"]) [data-rarity~="Rare"],
+[data-show-rarities]:not([data-show-rarities~="Legendary"]) [data-rarity~="Legendary"],
+[data-show-rarities]:not([data-show-rarities~="Promo"]) [data-rarity~="Promo"] {
+  display: none;
+}
+/* hide types not included in the "show-types" lists */
+[data-show-types]:not([data-show-types~="Power"]) [data-type~="Power"],
+[data-show-types]:not([data-show-types~="Unit"]) [data-type~="Unit"],
+[data-show-types]:not([data-show-types~="Site"]) [data-type~="Site"],
+[data-show-types]:not([data-show-types~="Spell"]) [data-type~="Spell"],
+[data-show-types]:not([data-show-types~="Attachment"]) [data-type~="Weapon"],
+[data-show-types]:not([data-show-types~="Attachment"]) [data-type~="Curse"],
+[data-show-types]:not([data-show-types~="Attachment"]) [data-type~="Relic"] {
+  display: none;
+}
+/* hide weightings not included in the "show-weightings" lists, while in the 'draft' format */
+[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="1"]) [data-weight-after~="1"],
+[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="3"]) [data-weight-after~="3"],
+[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="5"]) [data-weight-after~="5"],
+[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="6"]) [data-weight-after~="6"],
+[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="9"]) [data-weight-after~="9"],
+[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="10"]) [data-weight-after~="10"],
+[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="12"]) [data-weight-after~="12"],
+[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="18"]) [data-weight-after~="18"],
+[data-show-format="draft"][data-show-weightings]:not([data-show-weightings~="20"]) [data-weight-after~="20"] {
+  display: none;
+}
+/* hide weighting changes not included in the "show-weighting-changes" lists, while in the 'draft' format */
+[data-show-format="draft"][data-show-draft-kept-changes]:not([data-show-draft-kept-changes~="None"]) [data-draft-kept-change~="None"],
+[data-show-format="draft"][data-show-draft-kept-changes]:not([data-show-draft-kept-changes~="Raised"]) [data-draft-kept-change~="Raised"],
+[data-show-format="draft"][data-show-draft-kept-changes]:not([data-show-draft-kept-changes~="Lowered"]) [data-draft-kept-change~="Lowered"] {
+  display: none;
+}
+
+[data-show-format="draft"]:not([data-show-states~="Kept"]) #weightingChangeFilters {
+  display: none;
+}
 
 /* hide format not specified in the "show-format" value */
 [data-show-format="expedition"] .card:not([data-expedition-state]) {
   display: none;
 }
 [data-show-format="draft"] .card:not([data-draft-state]) {
+  display: none;
+}
+
+/* hide everything else when the 'show fast' toggle is enabled */
+[data-show-fast-only=true] .card:not([data-fast]) {
   display: none;
 }
 
@@ -352,7 +436,8 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
 }
 .weighting-info {
   position: absolute;
-  bottom: .5em;
+  top: 1.5em;
+  right: 0;
   display: grid;
     align-items: end;
   --weighting-info-size: 3.2em;
@@ -361,6 +446,7 @@ h2#Xenan { --bannerColor1: var(--TimeYellow); --bannerColor2: var(--ShadowPurple
   overflow: hidden;
   background: green;
   box-shadow: 0 0 4px 1px rgba(0,0,0,0.5);
+  outline: 1px gray solid;
 }
 .weighting {
   display: flex;

@@ -1,4 +1,5 @@
 {
+  "weightingList":[1, 5, 10],
   "updates":{
     "Fire":{
       "factions":["Fire"],

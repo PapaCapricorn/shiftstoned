@@ -1,3 +1,5 @@
 {
-    "layout": "layouts/formatUpdates.njk"
+    "layout": "layouts/formatUpdates.njk",
+    "page_style": "formatUpdates.css",
+    "page_script": "formatUpdates.js"
 }

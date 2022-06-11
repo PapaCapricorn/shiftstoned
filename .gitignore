@@ -10,3 +10,6 @@
 
 # secrets and errors
 .env
+
+# misc
+/.vscode
