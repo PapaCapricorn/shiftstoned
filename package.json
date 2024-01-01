@@ -13,7 +13,7 @@
     "url": "git+https://github.com/PapaCapricorn/shiftstoned.git"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "markdown-it-attrs": "^4.1.3",
     "markdown-it-bracketed-spans": "^1.0.1",
     "markdown-it-implicit-figures": "^0.10.0"
